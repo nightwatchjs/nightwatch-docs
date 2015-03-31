@@ -1,0 +1,11 @@
+{
+  "name": "nightwatch-docs",
+  "version": "0.0.1",
+  "description": "Documentation source for nightwatchjs.org website",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {},
+  "author": "Andrei Rusu",
+  "license": "MIT"
+}
