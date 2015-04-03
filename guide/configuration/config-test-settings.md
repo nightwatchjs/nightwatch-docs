@@ -165,6 +165,12 @@ This can be useful if you need to have different settings for your local machine
      <td>false</td>
      <td>Use xpath as the default locator strategy</td>
    </tr>
-
-   </tbody>
- </table>
+   
+   <tr>
+     <td>cli_args<br><span class="optional">since v0.6.1</span></td>
+     <td>object</td>
+     <td>none</td>
+     <td>Same as Selenium settings `cli_args`. You can override the global `cli_args` on a per-environment basis.</td>
+   </tr>
+  </tbody>
+</table>

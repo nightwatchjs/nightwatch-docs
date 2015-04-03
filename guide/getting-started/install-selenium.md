@@ -4,7 +4,10 @@ The Selenium WebDriver server is simply a Java servlet which runs separately on 
 
 #### Download Selenium
 
-Download the latest version of the`selenium-server-standalone-{VERSION}.jar` file from the [Selenium downloads page](http://selenium-release.storage.googleapis.com/index.html) and place it on the computer with the browser you want to test.
+Download the latest version of the `selenium-server-standalone-{VERSION}.jar` file from the [Selenium downloads page](http://selenium-release.storage.googleapis.com/index.html) and place it on the computer with the browser you want to test.
+In most cases this will be on your local machine and typically inside your project's source folder. 
+
+A good practice is to create a separate subfolder (e.g. `bin`) and place it there as you might have to download other driver binaries if you want to test multiple browsers.  
 
 #### Running Selenium Automatically
 

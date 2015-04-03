@@ -1,6 +1,6 @@
 ### External Globals
 
-In addition to having globals defined in your `nightwatch.json`, sometimes it's useful to have also an external globals file, specified in the`globals_path` property.
+In addition to having globals defined in your `nightwatch.json`, sometimes it's useful to have also an external globals file, specified in the `globals_path` property.
 
 You can overwrite globals per environment as needed. Say you have your tests running locally and also against a remote cloud selenium server. Most of the times you will need some different setting up.
 

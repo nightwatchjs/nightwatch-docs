@@ -21,6 +21,13 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>Whether or not to manage the selenium process automatically.</td>
  </tr>
  <tr>
+  <td>start_session<br><span class="optional">since v0.6.1</span></td>
+  <td>boolean</td>
+  <td>true</td>
+  <td>Whether or not to automatically start the Selenium session.</td>
+ </tr>
+ 
+ <tr>
    <td>server_path</td>
    <td>string</td>
    <td>none</td>

@@ -1,12 +1,13 @@
-The test runner expects a configuration file to be passed, using by default a`nightwatch.json` file from the current directory, if present. So let's create one in the same folder as the previous`nightwatch` runner file.
+The test runner expects a configuration file to be passed, using by default a `nightwatch.json` file from the current directory, if present. Let's create one in the project's root folder.
 
 The `nightwatch.json` file will look like this:
 
 <pre><code class="language-javascript">{
-  <strong>"src_folders"</strong> : ["examples/tests"],
-  <strong>"output_folder"</strong> : "examples/reports",
+  <strong>"src_folders"</strong> : ["tests"],
+  <strong>"output_folder"</strong> : "reports",
   <strong>"custom_commands_path"</strong> : "",
   <strong>"custom_assertions_path"</strong> : "",
+  <strong>"page_objects_path"</strong> : "",
   <strong>"globals_path"</strong> : "",
 
   <strong>"selenium"</strong> : {

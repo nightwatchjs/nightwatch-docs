@@ -30,6 +30,12 @@ The test runner supports a number of run-time options to be passed at. To view a
        <td>The location where the JUnit XML reports will be saved.</td>
      </tr>
      <tr>
+        <td><code>--reporter</code></td>
+        <td><code>-r</code></td>
+        <td><code>junit</code></td>
+        <td>Name of a predefined reporter (e.g. junit) or path to a custom reporter file to use.</td>
+     </tr>
+     <tr>
        <td><code>--env</code></td>
        <td><code>-e</code></td>
        <td><code>default</code></td>
@@ -46,6 +52,12 @@ The test runner supports a number of run-time options to be passed at. To view a
        <td><code>-t</code></td>
        <td></td>
        <td>Runs only the specified test. By default it will attempt to run all tests in the folder and its subfolders.</td>
+     </tr>
+     <tr>
+       <td><code>--testcase</code></td>
+       <td></td>
+       <td></td>
+       <td>Used only together with `--test`. Runs the specified testcase from the current suite/module.</td>
      </tr>
      <tr>
        <td><code>--group</code></td>

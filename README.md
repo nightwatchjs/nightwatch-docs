@@ -23,21 +23,24 @@ Getting started
   ├── Install Node.js
   ├── Install Nightwatch
   ├── Selenium Server
+Configuration
+  ├── Basic Settings
+  ├── Selenium Settings
+  ├── Test Settings  
 Using Nightwatch
   ├── Writing Tests
   ├── Using Xpath
+  ├── Using Page Objects
+  ├── Test Hooks
+  ├── Asynchronous Test Hooks
+  ├── External Globals  
+Running Tests
   ├── Nightwatch Runner
   ├── Command-line Options
   ├── Test Groups
   ├── Test Tags
-  ├── Test Hooks
-  ├── AsynchronousTest Hooks
-Configuration
-  ├── Basic Settings
-  ├── Selenium Settings
-  ├── Test Settings
-  ├── External Globals
   ├── Parallel Running
+  ├── Using Grunt
 Extending Nightwatch
   ├── Custom commands
   ├── Custom assertions

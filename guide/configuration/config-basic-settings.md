@@ -35,6 +35,12 @@
      <td>Location(s) where custom assertions will be loaded from.</td>
    </tr>
    <tr>
+    <td>page_objects_path <br><span class="optional">Optional</span> <span class="optional">since v6.0.1</span></td>
+    <td>string</td>
+    <td>none</td>
+    <td>Location(s) where page object files will be loaded from.</td>
+  </tr>
+   <tr>
      <td>globals_path <br><span class="optional">Optional</span> <span class="optional">since v0.4.8</span></td>
      <td>string</td>
      <td>none</td>
@@ -72,4 +78,3 @@
    </tr>
   </tbody>
 </table>
-</div>
