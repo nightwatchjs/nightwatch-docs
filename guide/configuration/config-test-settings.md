@@ -159,6 +159,14 @@ This can be useful if you need to have different settings for your local machine
         <code>"filter" : "tests/\*-smoke.js"</code><br>
      </td>
    </tr>
+   
+   <tr>
+      <td>log_screenshot_data</td>
+      <td>boolean</td>
+      <td>false</td>
+      <td>Do not show the Base64 image data in the (verbose) log when taking screenshots.</td>
+   </tr>
+   
    <tr>
      <td>use_xpath<br><span class="optional">since v0.5.1</span></td>
      <td>boolean</td>
@@ -172,5 +180,12 @@ This can be useful if you need to have different settings for your local machine
      <td>none</td>
      <td>Same as Selenium settings `cli_args`. You can override the global `cli_args` on a per-environment basis.</td>
    </tr>
+   
+   <tr>
+     <td>end_session_on_fail<br><span class="optional">since v0.6.5</span></td>
+     <td>boolean</td>
+     <td>true</td>
+     <td>End the session automatically when the test is being terminated, usually after a failed assertion.</td>
+  </tr>
   </tbody>
 </table>
