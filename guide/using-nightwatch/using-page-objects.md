@@ -5,7 +5,7 @@ The purpose of a page object is to allow a software client to do anything and se
 
 #### A Simple Page Object
 
-As of [TODO insert version] Nightwatch provides a qclean and simple DSL for creating a page objects. The page object is simply an object containing properties that describe the page. Each page object needs to be located in a separate file, located into a designated folder.
+As of [TODO insert version] Nightwatch provides a clean and simple DSL for creating a page objects. The page object is simply an object containing properties that describe the page. Each page object needs to be located in a separate file, located into a designated folder.
 Nightwatch reads the page objects from the folder specified in the `page_objects_path` configuration property.
 
 The `page_objects_path` property can also be an array of folders, allowing you thus to logically split the page objects into smaller groups.
