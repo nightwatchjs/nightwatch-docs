@@ -78,11 +78,17 @@ The test runner supports a number of run-time options to be passed at. To view a
        <td>Specify a filter (glob expression) as the file name format to use when loading the test files.</td>
      </tr>
      <tr>
-       <td><code>--tags</code></td>
+       <td><code>--tag</code></td>
        <td><code>-a</code></td>
        <td></td>
        <td>Filter test modules by tags. Only tests that have the specified tags will be loaded.</td>
      </tr>
+     <tr>
+        <td><code>--skiptags</code></td>
+        <td></td>
+        <td></td>
+        <td>Skips tests that have the specified tag or tags (comma separated).</td>
+      </tr>
     </tbody>
   </table>
 </div>
