@@ -17,7 +17,7 @@ The `page_objects_path` property can also be an array of folders, allowing you t
 
 ##### Url
 
-You can optionally add a `url` property that designates the page's URL. To navigate to the page, you can call the `goTo` method on the page object.
+You can optionally add a `url` property that designates the page's URL. To navigate to the page, you can call the `navigate` method on the page object.
 
 The URL can be a string:
 
@@ -56,7 +56,7 @@ module.exports = {
 </code></pre>
 </div>
 
-Using the `elements` property allows you to refer to the element by its name, rather than selector, when calling element commands and assertions (`click`, etc). This also works for any custom commands or assertions you have loaded into Nightwatch so when calling a custom command or assertion in the context of a page, Nightwatch will assume the first argument is an element name.
+Using the `elements` property allows you to refer to the element by its name with an "@" prefix, rather than selector, when calling element commands and assertions (`click`, etc).
 
 Putting `elements` and `url` together, say you have the following defined above saved as a google.js file:
 
@@ -79,11 +79,11 @@ In your tests you will use it as follows:
 module.exports = {
   'Test': function (client) {
     var google = client.page.google();
-    google.goTo()
+    google.navigate()
       .assert.title('Google')
-      .assert.visible('searchBar')
-      .setValue('searchBar', 'nightwatch')
-      .click('submit');
+      .assert.visible('@searchBar')
+      .setValue('@searchBar', 'nightwatch')
+      .click('@submit');
 
     client.end();
   }
@@ -123,13 +123,13 @@ Your tests would use it as follows:
 module.exports = {
   'Test': function (client) {
     var google = client.page.google();
-    google.expect.section('menu').to.be.visible;
+    google.expect.section('@menu').to.be.visible;
 
     var menuSection = google.section.menu;
-    menuSection.expect.element('mail').to.be.visible;
-    menuSection.expect.element('images').to.be.visible;
+    menuSection.expect.element('@mail').to.be.visible;
+    menuSection.expect.element('@images').to.be.visible;
 
-    menuSection.click('mail');
+    menuSection.click('@mail');
 
     client.end();
   }
@@ -139,27 +139,27 @@ module.exports = {
 
 Note that every command and assertion on a section (except Chai assertions) returns that section for chaining. If desired, you can nest sections under other sections for complex DOM structures.
 
-##### Mixins
+##### Commands
 
-You can add mixin functions to your page object using the `mixins` property. This is a useful way to encapsulate logic about the page that would otherwise live in a test, or multiple tests.
+You can add commands to your page object using the `commands` property. This is a useful way to encapsulate logic about the page that would otherwise live in a test, or multiple tests.
 
-Nightwatch will call the mixin function in the context of the page or section. Client commands like `pause` are available via `this.api`. For chaining, each function should return the page object or section.
+Nightwatch will call the command on the context of the page or section. Client commands like `pause` are available via `this.api`. For chaining, each function should return the page object or section.
 
 In this case, a mixin is used to encapsulate logic for clicking the submit button:
 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
-var googleMixins = {
+var googleCommands = {
   submit: function() {
     this.api.pause(1000);
-    return this.waitForElementVisible('submitButton', 1000)
-      .click('submitButton')
-      .waitForElementNotPresent('submitButton');
+    return this.waitForElementVisible('@submitButton', 1000)
+      .click('@submitButton')
+      .waitForElementNotPresent('@submitButton');
   }
 };
 
 module.exports = {
-  mixins: [googleMixins],
+  commands: [googleCommands],
   elements: {
     searchBar: { selector: 'input[type=text]' },
     submitButton: { selector: 'button[name=btnG]' }
@@ -175,7 +175,7 @@ Then the test is simply:
 module.exports = {
   'Test': function (client) {
     var google = client.page.google();
-    google.setValue('searchBar', 'nightwatch')
+    google.setValue('@searchBar', 'nightwatch')
       .submit();
 
     client.end();
