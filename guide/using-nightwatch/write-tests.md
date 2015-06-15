@@ -22,7 +22,7 @@ module.exports = {
 </div>
 <br>
 <p class="alert alert-warning">
-Remember **always** to call the `.end()` method when you want to close your test, in order for the selenium session to be properly closed.
+Remember **always** to call the `.end()` method when you want to close your test, in order for the Selenium session to be properly closed.
 </p>
 
 A test can have multiple steps, if needed:
