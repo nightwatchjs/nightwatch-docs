@@ -97,8 +97,8 @@ This can be useful if you need to have different settings for your local machine
      <td>screenshots</td>
      <td>object</td>
      <td>none</td>
-     <td>Selenium generates screenshots when command errors occur. These can be saved somewhere on the disk.
-       <br>Example: <code>"screenshots" : {"enabled" : true, "path" : ""}</code></td>
+     <td>Selenium generates screenshots when command errors occur. <br><br>With <code>on_failure</code> set to true, also generates screenshots for failing or erroring tests. These are saved on the disk.
+       <br>Example: <code>"screenshots" : {"enabled" : true, "on_failure" : true, "path" : ""}</code></td>
    </tr>
    <tr>
      <td>username</td>

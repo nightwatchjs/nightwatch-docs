@@ -36,7 +36,7 @@
    </tr>
    <tr>
     <td>page_objects_path <br><span class="optional">Optional</span> <span class="optional">since v6.0.1</span></td>
-    <td>string</td>
+    <td>string|array</td>
     <td>none</td>
     <td>Location(s) where page object files will be loaded from.</td>
   </tr>
@@ -75,6 +75,14 @@
      <td>integer</td>
      <td>10</td>
      <td>Specifies the delay(in milliseconds) between starting the child processes when running in parallel mode.</td>
+   </tr>
+   <tr>
+     <td>test_workers <br><span class="optional">Optional</span></td> <span class="optional">since v0.7.0</span></td>
+     <td>boolean|object</td>
+     <td>false</td>
+     <td>Whether or not to run individual test files in parallel. If set to true, runs in parallel and determines the number of cores automatically. If set to an object, can specify specify the number of workers as <code>auto</code> or an integer.
+       <br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code>
+       <br>Currently test output is not aggregated and may be difficult to follow so this feature is most useful in CI where stdout matters less.</td>
    </tr>
   </tbody>
 </table>

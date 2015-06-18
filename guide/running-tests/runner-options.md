@@ -89,6 +89,12 @@ The test runner supports a number of run-time options to be passed at. To view a
         <td></td>
         <td>Skips tests that have the specified tag or tags (comma separated).</td>
       </tr>
+     <tr>
+        <td><code>--retries</code></td>
+        <td></td>
+        <td></td>
+        <td>Retries failed or errored testcases up the specified number of times.</td>
+      </tr>
     </tbody>
   </table>
 </div>
