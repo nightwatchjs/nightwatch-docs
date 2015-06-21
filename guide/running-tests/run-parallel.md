@@ -19,3 +19,33 @@ To make the output easier to read, Nightwatch by default buffers the output from
 <div class="alert alert-info">
   You can create a separate environment per browser (by chaining <code>desiredCapabilities</code>) and then run them in parallel. In addition, using the <code>filter</code> and <code>exclude</code> options tests can be split per environment in order to be ran in parallel.
 </div>
+
+#### Via Workers
+
+Version `v0.7` introduces a new feature which allows the tests to be run in parallel. When this is enabled the test runner will launch a configurable number of child processes and then distribute the loaded tests over to be ran in parallel.
+  
+To enable test workers, set the `test_workers` top-level property, like so:
+   
+<pre><code class="language-javascript">
+"test_workers": {
+  "enabled": true,
+  "workers": "auto"
+}   
+</code></pre>
+
+or, simply:
+
+<pre><code class="language-javascript">
+"test_workers": true 
+</code></pre>
+<br>
+The `workers` option configures how many child processes can run concurrently.
+
+* `"auto"` - determined by number of CPUs e.g. 4 CPUs means 4 workers
+* `{number}` - specifies an exact number of workers
+
+Test concurrency is done at the file level. Each test file will fill a test worker slot. Individual tests/steps in a test file will not run concurrently.
+
+<div class="alert alert-warning">
+Currently test output is not aggregated and may be difficult to follow; this feature would be most useful in a CI environment where stdout matters less. Another limitation is this feature won't work as desired when using Nightwatch for running unit tests.  
+</div>

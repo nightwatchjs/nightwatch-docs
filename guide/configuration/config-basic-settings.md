@@ -77,12 +77,11 @@
      <td>Specifies the delay(in milliseconds) between starting the child processes when running in parallel mode.</td>
    </tr>
    <tr>
-     <td>test_workers <br><span class="optional">Optional</span></td> <span class="optional">since v0.7.0</span></td>
+     <td>test_workers <br><span class="optional">Optional</span> <span class="optional">since v0.7.0</span></td>
      <td>boolean|object</td>
      <td>false</td>
-     <td>Whether or not to run individual test files in parallel. If set to true, runs in parallel and determines the number of cores automatically. If set to an object, can specify specify the number of workers as <code>auto</code> or an integer.
-       <br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code>
-       <br>Currently test output is not aggregated and may be difficult to follow so this feature is most useful in CI where stdout matters less.</td>
+     <td>Whether or not to run individual test files in parallel. If set to `true`, runs the tests in parallel and determines the number of workers automatically. <br>If set to an object, can specify specify the number of workers as `"auto"` or a `number`.
+       <br><br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code></td>
    </tr>
   </tbody>
 </table>

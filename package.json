@@ -4,6 +4,7 @@
   "description": "Documentation source for nightwatchjs.org website",
   "main": "index.js",
   "dependencies": {
+    "swig": "^1.4.2"
   },
   "devDependencies": {},
   "author": "Andrei Rusu",
