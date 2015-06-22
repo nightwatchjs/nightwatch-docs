@@ -187,5 +187,13 @@ This can be useful if you need to have different settings for your local machine
      <td>true</td>
      <td>End the session automatically when the test is being terminated, usually after a failed assertion.</td>
   </tr>
+  
+  <tr>
+     <td>skip_testcases_on_fail<br><span class="optional">since v0.7.0</span></td>
+     <td>boolean</td>
+     <td>true</td>
+     <td>Skip the rest of testcases (if any) when one testcase fails..</td>
+  </tr>
+  
   </tbody>
 </table>
