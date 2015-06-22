@@ -18,7 +18,7 @@ var googleCommands = {
 };
 
 module.exports = {
-  commands: [googleMixins],
+  commands: [googleCommands],
   elements: {
     searchBar: {
       selector: 'input[type=text]'
