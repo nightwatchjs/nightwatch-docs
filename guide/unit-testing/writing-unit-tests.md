@@ -16,7 +16,7 @@ Below there's a unit test for the `utils.js` Nightwatch module:
 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
-var Utils = require('ib/util/utils.js');
+var Utils = require('lib/util/utils.js');
 module.exports = {
   testFormatElapsedTime : function(client) {
     var test = client.assert;
