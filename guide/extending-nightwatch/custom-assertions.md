@@ -57,6 +57,6 @@ exports.assertion = function() {
 </div>
 
 <p class="alert alert-success">Both custom assertions and custom commands inherit from <a href="http://nodejs.org/api/events.html" target="_blank">EventEmitter</a> if defined in the form above.<br>
-If, however, your command/assertion is defined in the constructor style, then you must inherit manually, similarly to the <a href="https://github.com/beatfactor/nightwatch/blob/master/lib/api/commands/pause.js" target="_blank">pause command</a>.</p>
+If, however, your command/assertion is defined in the constructor style, then you must inherit manually, similarly to the <a href="https://github.com/beatfactor/nightwatch/blob/master/lib/api/client-commands/pause.js" target="_blank">pause command</a>.</p>
 
 <p class="alert alert-info">To see some examples, check the assertions module source-code on Github:<br><a href="https://github.com/beatfactor/nightwatch/tree/master/lib/api/assertions" target="_blank">/nightwatch/tree/master/lib/selenium/assertions</a></p>
