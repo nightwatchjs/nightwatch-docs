@@ -97,8 +97,8 @@ This can be useful if you need to have different settings for your local machine
      <td>screenshots</td>
      <td>object</td>
      <td>none</td>
-     <td>Selenium generates screenshots when command errors occur. <br><br>With <code>on_failure</code> set to true, also generates screenshots for failing or erroring tests. These are saved on the disk.
-       <br>Example: <code>"screenshots" : {"enabled" : true, "on_failure" : true, "path" : ""}</code></td>
+     <td>Selenium generates screenshots when command errors occur. With <code>on_failure</code> set to true, also generates screenshots for failing or erroring tests. These are saved on the disk. <br><br>Since `v0.7.5` you can disable screenshots for command errors by setting `"on_error"` to `false`.
+    <br><br>Example:<br><br><code>"screenshots" : {<br>&nbsp;&nbsp;"enabled" : true,<br>&nbsp;&nbsp;"on_failure" : true,<br>&nbsp;&nbsp;"on_error" : false,<br>&nbsp;&nbsp;"path" : ""<br>}</code></td>
    </tr>
    <tr>
      <td>username</td>
@@ -159,41 +159,41 @@ This can be useful if you need to have different settings for your local machine
         <code>"filter" : "tests/\*-smoke.js"</code><br>
      </td>
    </tr>
-   
+
    <tr>
       <td>log_screenshot_data</td>
       <td>boolean</td>
       <td>false</td>
       <td>Do not show the Base64 image data in the (verbose) log when taking screenshots.</td>
    </tr>
-   
+
    <tr>
      <td>use_xpath<br><span class="optional">since v0.5.1</span></td>
      <td>boolean</td>
      <td>false</td>
      <td>Use xpath as the default locator strategy</td>
    </tr>
-   
+
    <tr>
      <td>cli_args<br><span class="optional">since v0.6.1</span></td>
      <td>object</td>
      <td>none</td>
      <td>Same as Selenium settings `cli_args`. You can override the global `cli_args` on a per-environment basis.</td>
    </tr>
-   
+
    <tr>
      <td>end_session_on_fail<br><span class="optional">since v0.6.5</span></td>
      <td>boolean</td>
      <td>true</td>
      <td>End the session automatically when the test is being terminated, usually after a failed assertion.</td>
   </tr>
-  
+
   <tr>
      <td>skip_testcases_on_fail<br><span class="optional">since v0.7.0</span></td>
      <td>boolean</td>
      <td>true</td>
      <td>Skip the rest of testcases (if any) when one testcase fails..</td>
   </tr>
-  
+
   </tbody>
 </table>
