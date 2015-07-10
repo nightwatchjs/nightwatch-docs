@@ -121,7 +121,7 @@ This can be useful if you need to have different settings for your local machine
      <td>desiredCapabilities</td>
      <td>object</td>
      <td></td>
-     <td>An object wich will be passed to the Selenium WebDriver when a new session will be created. You can specify browser name for instance along with other capabilities.
+     <td>An object which will be passed to the Selenium WebDriver when a new session will be created. You can specify browser name for instance along with other capabilities.
        <br>Example:<br><br>
 <code>"desiredCapabilities" : {<br>
 &nbsp;&nbsp;"browserName" : "firefox", <br>&nbsp;&nbsp;"acceptSslCerts" : true<br>}</code><br>
@@ -133,7 +133,7 @@ This can be useful if you need to have different settings for your local machine
      <td>globals<br><span class="optional">since v0.4.8</span></td>
      <td>object</td>
      <td></td>
-     <td>An object wich will be made available within the test and can be overwritten per environment. Example:<br><br>
+     <td>An object which will be made available within the test and can be overwritten per environment. Example:<br><br>
 <code>"globals" : {<br>&nbsp;&nbsp;"myGlobal" : "some_global"<br>}</code>
      </td>
    </tr>
