@@ -39,6 +39,7 @@ Running Tests
   ├── Command-line Options
   ├── Test Groups
   ├── Test Tags
+  ├── Disabling Tests
   ├── Parallel Running
   ├── Using Grunt
 Extending Nightwatch
