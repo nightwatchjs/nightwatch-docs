@@ -21,3 +21,11 @@ To select which tags to run, use the `--tag` command line flag:
 Specify multiple tags as:
 
 <pre><code class="language-bash">$ nightwatch --tag login --tag something_else</code></pre>
+
+To skip running tests with a speciic tag, use the `--skiptags` flag:
+
+<pre><code class="language-bash">$ nightwatch --skiptags login</code></pre>
+
+Or to skip multiple tags, add each tag you want to skip as comma-separated:
+
+<pre><code class="language-bash">$ nightwatch --skiptags login,something_else</code></pre>
