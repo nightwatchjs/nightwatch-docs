@@ -21,6 +21,19 @@ module.exports = {
 </div>
 
 <br>
+Or if you're creating elements with the same locate strategy as is default, you can use the shorthand:
+
+<div class="sample-test">
+<pre data-language="javascript"><code class="language-javascript">
+module.exports = {
+  elements: {
+    searchBar: 'input[type=text]'
+  }
+};
+</code></pre>
+</div>
+
+<br>
 Using the `elements` property allows you to refer to the element by its name with an _"@" prefix_, rather than selector, when calling element commands and assertions (`click`, etc).
 
 Putting `elements` and `url` together, say you have the following defined above saved as a `google.js` file:
