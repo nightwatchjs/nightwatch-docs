@@ -83,5 +83,12 @@
      <td>Whether or not to run individual test files in parallel. If set to `true`, runs the tests in parallel and determines the number of workers automatically. <br>If set to an object, can specify specify the number of workers as `"auto"` or a `number`.
        <br><br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code></td>
    </tr>
+   <tr>
+    <td>test_runner <br><span class="optional">Optional</span> <span class="optional">since v0.8.0</span></td>
+    <td>string|object</td>
+    <td>"default"</td>
+    <td>Specifies which test runner to use when running the tests. Values can be either `default` (built in nightwatch runner) or `mocha`.  
+      <br><br>Example: <code>"test_runner" : {"type" : "mocha", "options" : {"ui" : "tdd"}}</code></td>
+    </tr>
   </tbody>
 </table>
