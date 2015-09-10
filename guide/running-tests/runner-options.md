@@ -93,8 +93,15 @@ The test runner supports a number of run-time options to be passed at. To view a
         <td><code>--retries</code></td>
         <td></td>
         <td></td>
-        <td>Retries failed or errored testcases up to the specified number of times.</td>
+        <td>Retries failed or errored testcases up to the specified number of times. Retrying a testcase will also retry the `beforeEach` and `afterEach` hooks, if any.</td>
       </tr>
+      <tr>
+       <td><code>--suiteRetries</code></td>
+       <td></td>
+       <td></td>
+       <td>Retries failed or errored testsuites (test modules) up to the specified number of times. Retrying a testsuite will also retry the `before` and `after` hooks (in addition to the global beforeEach and afterEach respectively), if any are defined on the testsuite.</td>
+     </tr>
+
     </tbody>
   </table>
 </div>
