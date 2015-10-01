@@ -35,7 +35,7 @@ Your tests would use it as follows:
 module.exports = {
   'Test': function (client) {
     var google = client.page.google();
-    google.expect.section('menu').to.be.visible;
+    google.expect.section('@menu').to.be.visible;
   
     var menuSection = google.section.menu;
     menuSection.expect.element('@mail').to.be.visible;
