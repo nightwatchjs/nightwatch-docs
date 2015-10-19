@@ -118,7 +118,7 @@ This can be useful if you need to have different settings for your local machine
    </tr>
   
   <tr>
-     <td>proxy<br><span class="optional">since v0.8.7</span></td>
+     <td>proxy<br><span class="optional">since v0.8.6</span></td>
      <td>string</td>
      <td>none</td>
      <td>Proxy requests to the selenium server. http, https, socks(v5), socks5, sock4, and pac are accepted. Uses <a href="https://github.com/TooTallNate/node-proxy-agent" target="_blank">node-proxy-agent</a>.<br><br>Example: <code>http://user:pass@host:port</code></td>
