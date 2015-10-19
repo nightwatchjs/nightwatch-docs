@@ -51,6 +51,12 @@ This can be useful if you need to have different settings for your local machine
      <td>The port number on which the selenium server is accepting connections.</td>
    </tr>
    <tr>
+     <td>proxy</td>
+     <td>string</td>
+     <td>none</td>
+     <td>Proxy requests to the selenium server. http, https, socks(v5), socks5, sock4, and pac are accepted. Uses <a href="https://github.com/TooTallNate/node-proxy-agent" target="_blank">node-proxy-agent</a>.<br><br>Example: <code>http://user:pass@host:port</code></td>
+   </tr>
+   <tr>
      <td>silent</td>
      <td>boolean</td>
      <td>true</td>
