@@ -43,9 +43,15 @@ The test runner supports a number of run-time options to be passed at. To view a
      </tr>
      <tr>
        <td><code>--verbose</code></td>
-       <td><code>-v</code></td>
+       <td><code></code></td>
        <td></td>
        <td>Shows extended selenium command logging during the session</td>
+     </tr>
+     <tr>
+       <td><code>--version</code></td>
+       <td><code>-v</code></td>
+       <td></td>
+       <td>Shows the version number</td>
      </tr>
      <tr>
        <td><code>--test</code></td>
