@@ -37,7 +37,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>log_path</td>
    <td>string|boolean</td>
    <td>none</td>
-   <td>The location where the selenium <code>selenium-debug.log</code> file will be placed. Defaults to current directory.<br>To disable Selenium logging, set this to <code>false</code></td>
+   <td>The location where the selenium <code>output.log</code> file will be placed. Defaults to current directory.<br>To disable Selenium logging, set this to <code>false</code></td>
  </tr>
  <tr>
    <td>host</td>

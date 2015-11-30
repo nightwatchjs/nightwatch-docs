@@ -43,13 +43,7 @@ The `nightwatch.json` file will look like this:
       "desiredCapabilities": {
         "browserName": "chrome",
         "javascriptEnabled": true,
-        "acceptSslCerts": true,
-		"loggingPrefs": {
-		 "browser":"ALL"
-		}
-		"chromeOptions": {
-		 "args":["--incognito"]
-		}
+        "acceptSslCerts": true
       }
     }
   }
