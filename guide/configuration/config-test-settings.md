@@ -195,5 +195,12 @@ This can be useful if you need to have different settings for your local machine
      <td>Skip the rest of testcases (if any) when one testcase fails..</td>
   </tr>
 
+  <tr>
+     <td>hide_stack_trace<br><span class="optional">since v0.8.16</span><td>
+     <td>boolean</td>
+     <td>false</td>
+     <td>Do not show a stack trace on error.</td>
+  </tr>
+
   </tbody>
 </table>
