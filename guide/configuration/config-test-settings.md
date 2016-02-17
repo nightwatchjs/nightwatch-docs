@@ -201,6 +201,13 @@ This can be useful if you need to have different settings for your local machine
      <td>true</td>
      <td>Skip the rest of testcases (if any) when one testcase fails..</td>
   </tr>
-
+  
+  <tr>
+     <td>output_folder<br><span class="optional">since v0.8.17</span></td>
+     <td>string|boolean</td>
+     <td></td>
+     <td>Define the location where the JUnit XML report files will be saved. This will overwrite any value defined in the Basic Settings section. If you'd like to disable the reports completely inside a specific environment, set this to `false`.</td>
+  </tr>
+    
   </tbody>
 </table>
