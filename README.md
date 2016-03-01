@@ -42,6 +42,7 @@ Running Tests
   ├── Disabling Tests
   ├── Parallel Running
   ├── Using Grunt
+  ├── Integration with BrowserStack
 Extending Nightwatch
   ├── Custom commands
   ├── Custom assertions
