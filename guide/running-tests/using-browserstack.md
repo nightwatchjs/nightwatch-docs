@@ -6,7 +6,7 @@ When you want to perform web testing on multiple browsers and operating systems,
 
 You can use the BrowserStack infrastructure to run your tests directly from NightWatch. This is done by configuring `nightwatch.json`.
 
-<div class="sample-test"> 
+<div class="sample-test">
 <pre><code class="language-javascript">
 {
   ...
@@ -42,7 +42,7 @@ You can use the BrowserStack infrastructure to run your tests directly from Nigh
 </code></pre>
 </div>
 
-You need to replace BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY with yur username and access key. 
+You need to replace BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY with yur username and access key.
 Custom options can also be specified for BrowserStack in desiredCapabilties. A complete list of BrowserStack capabilities that are supported can be found [here](http://www.browserstack.com/automate/capabilities).
 
 Also, if you can also run parallel tests on Browserstack.
@@ -141,4 +141,4 @@ To run the parallel tests, use the command:
 <pre><code class="language-bash">$ nightwatch -e browserstack_firefox,browserstack_chrome,browserstack_safari,browserstack_ie</code></pre>
 
 #### Example
-You can check out [BrowserStack's repository](https://github.com/browserstack/nightwatch-browserstack) for a sample test. 
+You can check out [BrowserStack's repository](https://github.com/browserstack/nightwatch-browserstack) for a sample test.
