@@ -7,6 +7,8 @@ A comprehensive introduction to Page Objects can be found in <a href="http://mar
 
 <div class="alert alert-info">
 As of version `0.7` Nightwatch provides an enhanced and more powerful interface for creating page objects, significantly improved over the previous support. Page objects created prior to `v0.7` will still continue to work however we recommend upgrading to the new version.
+
+To use the new version, your page object must contain either the `elements` or `sections` property. Otherwise, Nightwatch will defer to the old.
 </div>
 
 
@@ -26,7 +28,8 @@ The URL will usually be defined as a string:
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
-  url: 'http://google.com'
+  url: 'http://google.com',
+  elements: {}
 };
 </code></pre>
 </div>
@@ -38,7 +41,8 @@ It can also be a function in case the URL is dynamic. One use case for this is t
 module.exports = {
   url: function() { 
     return this.api.launchUrl + '/login'; 
-  }
+  },
+  elements: {}
 };
 </code></pre>
 </div>
