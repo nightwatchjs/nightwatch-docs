@@ -63,3 +63,5 @@ this.demoTestGoogle = function (browser) {
     .end();
 };</code></pre>
 </div>
+
+Note that the order of execution of these steps is not guarenteed, since an object's key ordering in Javascript is implementation dependant. In V8, steps with names that can be parsed as numbers will be run before any others. 
