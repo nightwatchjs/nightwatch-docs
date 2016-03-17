@@ -67,9 +67,15 @@
    <tr>
      <td>disable_colors <br><span class="optional">Optional</span></td>
      <td>boolean</td>
-     <td>false</td>
+     <td>true</td>
      <td>Controls whether or not to disable coloring of the cli output globally.</td>
    </tr>
+   <tr>
+     <td>log_timestamp<br><span class="optional">Optional</span></td>
+     <td>boolean</td>
+     <td>false</td>
+     <td>Controls whether or not to disable timestamp of the cli output globally.</td>
+     </tr>
    <tr>
      <td>parallel_process_delay <br><span class="optional">Optional</span></td>
      <td>integer</td>
