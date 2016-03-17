@@ -36,6 +36,24 @@ module.exports = {
 <br>
 Using the `elements` property allows you to refer to the element by its name with an _"@" prefix_, rather than selector, when calling element commands and assertions (`click`, etc).
 
+Optionally, you can define an array of objects:
+
+<div class="sample-test">
+<pre data-language="javascript"><code class="language-javascript">
+var sharedElements = {
+  mailLink: 'a[href*="mail.google.com"]'
+};
+
+module.exports = {
+  elements: [
+    sharedElements,
+    { searchBar: 'input[type=text]' }
+  ]
+};
+</code></pre>
+</div>
+
+<br>
 Putting `elements` and `url` together, say you have the following defined above saved as a `google.js` file:
 
 <div class="sample-test">
