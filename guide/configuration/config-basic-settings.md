@@ -67,7 +67,7 @@
    <tr>
      <td>disable_colors <br><span class="optional">Optional</span></td>
      <td>boolean</td>
-     <td>true</td>
+     <td>false</td>
      <td>Controls whether or not to disable coloring of the cli output globally.</td>
    </tr>
    <tr>
