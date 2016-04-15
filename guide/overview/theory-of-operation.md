@@ -4,4 +4,4 @@ Nightwatch works by sending HTTP requests to the Selenium server with the right 
 
 ![Theory of Operation](http://nightwatchjs.org/img/operation.png)
 
-Most of the times, Nightwatch needs to send at least 2 requests to the Selenium server in order to perform a command or assetion, the first one being the request to locate an element given a CSS selector (or Xpath expression) and the next to perform the actual command/assertion on the given element.
+Most of the times, Nightwatch needs to send at least 2 requests to the Selenium server in order to perform a command or assertion, the first one being the request to locate an element given a CSS selector (or Xpath expression) and the next to perform the actual command/assertion on the given element.
