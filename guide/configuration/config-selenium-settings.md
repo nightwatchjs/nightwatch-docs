@@ -26,7 +26,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
   <td>true</td>
   <td>Whether or not to automatically start the Selenium session.</td>
  </tr>
- 
+
  <tr>
    <td>server_path</td>
    <td>string</td>
@@ -59,7 +59,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
      <ul>
        <li>
          <code>webdriver.firefox.profile</code>: Selenium will be default create a new Firefox profile for each session. If you wish to use an existing Firefox profile you can specify its name here.<br>
-         Complete list of Firefox Driver arguments available <a href="https://code.google.com/p/selenium/wiki/FirefoxDriver" target="_blank">here</a>.
+         Complete list of Firefox Driver arguments available <a href="https://github.com/SeleniumHQ/selenium/wiki/FirefoxDriver" target="_blank">here</a>.
        </li>
        <li>
          <code>webdriver.chrome.driver</code>: Nightwatch can run the tests using <strong>Chrome</strong> browser also. To enable this you have to download the <a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank">ChromeDriver binary</a> and specify it's location here.
@@ -68,7 +68,8 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
        </li>
        <li>
          <code>webdriver.ie.driver</code>:
-         Nightwatch has support for <strong>Internet Explorer</strong> also. To enable this you have to download the <a href="https://code.google.com/p/selenium/wiki/InternetExplorerDriver" target="_blank">IE Driver binary</a> and specify it's location here.
+         Nightwatch has support for <strong>Internet Explorer</strong> also. To enable this you have to download the <a href=
+         "https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver" target="_blank">IE Driver binary</a> and specify it's location here.
      Also don't forget to specify "internet explorer" as the browser name in the <code>desiredCapabilities</code> object.
        </li>
      </ul>
