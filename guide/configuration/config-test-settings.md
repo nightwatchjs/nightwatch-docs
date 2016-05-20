@@ -132,7 +132,7 @@ This can be useful if you need to have different settings for your local machine
        <br>Example:<br><br>
 <code>"desiredCapabilities" : {<br>
 &nbsp;&nbsp;"browserName" : "firefox", <br>&nbsp;&nbsp;"acceptSslCerts" : true<br>}</code><br>
-       You can view the complete list of capabilities <a href="https://code.google.com/p/selenium/wiki/DesiredCapabilities" target="_blank">here</a>.
+       You can view the complete list of capabilities <a href="https://github.com/SeleniumHQ/selenium/wiki/DesiredCapabilities" target="_blank">here</a>.
      </td>
    </tr>
 
