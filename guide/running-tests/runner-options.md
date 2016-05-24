@@ -1,10 +1,8 @@
 ### Command-line Options
 
-The test runner supports a number of run-time options to be passed at. To view all, run the following:
+The test runner supports a number of run-time options to be passed to. To view all, run the following:
 
-<pre><code class="language-bash">$ ./nightwatch --help</code></pre>
-
-<div class="table-responsive">
+<pre><code class="language-bash">$ nightwatch --help</code></pre>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">

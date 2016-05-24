@@ -1,6 +1,6 @@
-The test runner expects a configuration file to be passed, using by default a `nightwatch.json` file from the current directory, if present. Let's create one in the project's root folder.
+The test runner expects a configuration file to be passed, using by default a `nightwatch.json` file from the current directory, if present. A `nigthwatch.conf.js` file will also be loaded by default, if found.
 
-The `nightwatch.json` file will look like this:
+Let's create the `nightwatch.json` in the project's root folder and this inside:
 
 <pre><code class="language-javascript">{
   <strong>"src_folders"</strong> : ["tests"],
@@ -48,3 +48,14 @@ The `nightwatch.json` file will look like this:
     }
   }
 }</code></pre>
+
+<br>
+Using both configuration files is also possible, with `nightwatch.conf.js` always taking precedence if both are found.
+#### Example
+
+<pre><code class="language-javascript">
+module.exports = (function(settings) {
+  settings.test_workers = false;
+  return settings;
+})(require('./nightwatch.json'));
+</code></pre>

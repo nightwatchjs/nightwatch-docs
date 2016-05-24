@@ -23,16 +23,16 @@ module.exports = {
 
   },
 
-  afterEach : function(browser) {
-
+  afterEach : function() {
+  
   },
 
-  "step one" : function (browser) {
+  'step one' : function (browser) {
     browser
      // ...
   },
 
-  "step two" : function (browser) {
+  'step two' : function (browser) {
     browser
     // ...
       .end();
@@ -40,4 +40,9 @@ module.exports = {
 };</code></pre>
 </div>
 
-In the example above the sequence of method calls will be as follows: `before(), beforeEach(), "step one", afterEach(), beforeEach(), "step two", afterEach(), after()`
+In the example above the sequence of method calls will be as follows: `before(), beforeEach(), "step one", afterEach(), beforeEach(), "step two", afterEach(), after()`.
+
+
+<p class="alert alert-warning">
+For backwards compatibility reasons, the `afterEach` hook can receive the `browser` object only in its async form - `afterEach(browser, done) { .. }`
+</p>

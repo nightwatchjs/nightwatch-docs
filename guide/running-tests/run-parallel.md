@@ -23,9 +23,9 @@ To make the output easier to read, Nightwatch by default buffers the output from
 #### Via Workers
 
 Version `v0.7` introduces a new feature which allows the tests to be run in parallel. When this is enabled the test runner will launch a configurable number of child processes and then distribute the loaded tests over to be ran in parallel.
-  
+
 To enable test workers, set the `test_workers` top-level property, like so:
-   
+
 <pre><code class="language-javascript">
 "test_workers": {
   "enabled": true,
@@ -36,7 +36,7 @@ To enable test workers, set the `test_workers` top-level property, like so:
 or, simply:
 
 <pre><code class="language-javascript">
-"test_workers": true 
+"test_workers": true
 </code></pre>
 <br>
 The `workers` option configures how many child processes can run concurrently.
@@ -47,5 +47,5 @@ The `workers` option configures how many child processes can run concurrently.
 Test concurrency is done at the file level. Each test file will fill a test worker slot. Individual tests/steps in a test file will not run concurrently.
 
 <div class="alert alert-warning">
-Currently test output is not aggregated and may be difficult to follow; this feature would be most useful in a CI environment where stdout matters less. Another limitation is this feature won't work as desired when using Nightwatch for running unit tests.  
+Version 0.9 brings improved support for displaying output when running tests in parallel. We recommend setting `detailed_option` to `false` in your test settings for improved output readability.
 </div>

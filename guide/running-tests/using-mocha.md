@@ -1,16 +1,15 @@
 ### Using Mocha
 
-Starting with version `0.8` Nightwatch is bundled with a custom version of the popular Mocha test runner which allows running tests using Mocha, thus  
-taking advantage of its interfaces and reporters.
+Starting with version `0.8` Nightwatch is bundled with a custom version of the popular Mocha test runner which allows running tests using Mocha, thus taking advantage of its interfaces and reporters.
 
 #### Usage
-There are two main ways in which you can use Mocha with Nightwatch. 
+There are two main ways in which you can use Mocha with Nightwatch.
 
 #### From Nightwatch
 Mocha is used as an alternative test runner to the built-in one. This is done by specifying the `"test_runner"` option in the `nightwatch.json` configuration file.
- 
+
 Custom options can also be specified for Mocha:
- 
+
 <div class="sample-test">
 <pre><code class="language-javascript">
 {
@@ -63,7 +62,7 @@ The `test_runner` option can also be specified at test environment level:
 </div>
 
 #### Example
-Writing a test in Mocha is the same as writing it in Nightwatch. Each testcase receives the `client` object, `hooks` also receiving a `done` callback for async operations. 
+Writing a test in Mocha is the same as writing it in Nightwatch. Each testcase receives the `client` object, `hooks` also receiving a `done` callback for async operations.
 
 <div class="sample-test">
 <pre><code class="language-javascript">
@@ -117,13 +116,13 @@ describe('Github', function() {
   var client = nightwatch.initClient({
     silent : true
   });
-  
+
   var browser = client.api();
 
   this.timeout(99999999);
 
   before(function() {
-    
+
     browser.perform(function() {
       console.log('beforeAll')
     });

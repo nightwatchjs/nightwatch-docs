@@ -13,3 +13,22 @@ module.exports = {
 </code></pre>
 
 This can be useful if you don't want to run certain tests that are known to be failing.
+
+#### Disabling Individual Testcases
+
+Disabling individual testcases isn't currently supported out of the box. However it can be achieved relatively straightforward with a simple work-around. By simply converting the test method to a string, Nightwatch will ignore it.
+
+Here's an example:
+
+<pre><code class="language-javascript">
+module.exports = {
+  'sample test': function (client) {
+    // test code
+  },
+
+  // disabled
+  'other sample test': ''+function (client) {
+    // test code
+  }
+};
+</code></pre>

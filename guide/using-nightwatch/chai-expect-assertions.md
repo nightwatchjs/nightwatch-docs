@@ -34,7 +34,7 @@ module.exports = {
 </div>
 
 <br>
-The `expect` interface provides a much more flexible and fluid language for defining assertions, significantly improved over the existing `assert` interface. The only downside is that it's not possible to chain assertions anymore and at this point custom message aren't yet supported.
+The `expect` interface provides a much more flexible and fluid language for defining assertions, significantly improved over the existing `assert` interface. The only downside is that it's not possible to chain assertions anymore and at this point custom messages aren't yet supported.
 
 <br>
 For a complete list of available `expect` assertions, refer to the [API docs](/api/#expect).

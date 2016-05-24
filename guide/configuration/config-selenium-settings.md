@@ -24,7 +24,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
   <td>start_session<br><span class="optional">since v0.6.1</span></td>
   <td>boolean</td>
   <td>true</td>
-  <td>Whether or not to automatically start the Selenium session.</td>
+  <td>Whether or not to automatically start the Selenium session. This will typically be set to `false` when running unit/integration tests that don't interact with the Selenium server.</td>
  </tr>
 
  <tr>
