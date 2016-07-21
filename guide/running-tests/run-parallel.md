@@ -47,5 +47,5 @@ The `workers` option configures how many child processes can run concurrently.
 Test concurrency is done at the file level. Each test file will fill a test worker slot. Individual tests/steps in a test file will not run concurrently.
 
 <div class="alert alert-warning">
-Version 0.9 brings improved support for displaying output when running tests in parallel. We recommend setting `detailed_option` to `false` in your test settings for improved output readability.
+Version 0.9 brings improved support for displaying output when running tests in parallel. We recommend setting `detailed_output` to `false` in your test settings for improved output readability.
 </div>
