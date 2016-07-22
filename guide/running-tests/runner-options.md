@@ -55,7 +55,7 @@ The test runner supports a number of run-time options to be passed to. To view a
        <td><code>--test</code></td>
        <td><code>-t</code></td>
        <td></td>
-       <td>Runs only the specified test. By default it will attempt to run all tests in the folder and its subfolders.</td>
+       <td>Runs only the specified test suite/module. By default the runner will attempt to run all tests in the <code>src_folders</code> settings folder(s) and their subfolders.</td>
      </tr>
      <tr>
        <td><code>--testcase</code></td>
