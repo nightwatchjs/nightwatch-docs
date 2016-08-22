@@ -17,7 +17,7 @@ Custom options can also be specified for Mocha:
   "test_runner" : {
     "type" : "mocha",
     "options" : {
-      "ui" : "tdd",
+      "ui" : "bdd",
       "reporter" : "list"
     }
   }
