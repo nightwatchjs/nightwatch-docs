@@ -1,4 +1,4 @@
-The test runner expects a configuration file to be passed, using by default a `nightwatch.json` file from the current directory, if present. A `nigthwatch.conf.js` file will also be loaded by default, if found.
+The test runner expects a configuration file to be passed, using by default a `nightwatch.json` file from the current directory, if present. A `nightwatch.conf.js` file will also be loaded by default, if found.
 
 Let's create the `nightwatch.json` in the project's root folder and this inside:
 
