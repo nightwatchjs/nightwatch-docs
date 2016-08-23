@@ -214,7 +214,7 @@ module.exports = {
      <td>filter<br><span class="optional">since v0.5.1</span></td>
      <td>string</td>
      <td></td>
-     <td>Folder or file pattern to be used when loading the tests. Files that don't match this patter will be ignored.<br>
+     <td>Folder or file pattern to be used when loading the tests. Files that don't match this pattern will be ignored.<br>
        Example:<br><br>
         <code>"filter" : "tests/\*-smoke.js"</code><br>
      </td>
