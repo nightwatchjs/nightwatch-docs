@@ -126,7 +126,7 @@ module.exports = {
      <td>string|boolean</td>
      <td>none</td>
      <td>
-       <i>This options has been deprecated in favor of the <code>cli_args</code> object on the <code>selenium</code> settings object.</i>
+       <i>This option has been deprecated in favor of the <code>cli_args</code> object on the <code>selenium</code> settings object.</i>
      </td>
    </tr>
    <tr>
@@ -134,7 +134,7 @@ module.exports = {
      <td>string</td>
      <td>none</td>
      <td>
-       <i>This options has been deprecated in favor of the <code>cli_args</code> object on the <code>selenium</code> settings object.</i>
+       <i>This option has been deprecated in favor of the <code>cli_args</code> object on the <code>selenium</code> settings object.</i>
      </td>
    </tr>
    <tr>
@@ -142,7 +142,7 @@ module.exports = {
      <td>string</td>
      <td>none</td>
      <td>
-       <i>This options has been deprecated in favor of the <code>cli_args</code> object on the <code>selenium</code> settings object.</i>
+       <i>This option has been deprecated in favor of the <code>cli_args</code> object on the <code>selenium</code> settings object.</i>
      </td>
    </tr>
 
