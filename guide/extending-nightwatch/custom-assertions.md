@@ -2,7 +2,7 @@
 
 Nightwatch allows you to even define your own assertions, extending the available `.assert` and `.verify` namespaces.
 
-Beginning with v0.4 assertions have a very simple interface which is shared between built-in assertions and custom ones. Therefore, custom assertions must implement the following interface:
+Assertions implement a simple interface which is shared between built-in assertions and custom ones:
 
 <div class="sample-test" style="width: 500px">
 
@@ -56,7 +56,4 @@ exports.assertion = function() {
 
 </div>
 
-<p class="alert alert-success">Both custom assertions and custom commands inherit from <a href="http://nodejs.org/api/events.html" target="_blank">EventEmitter</a> if defined in the form above.<br>
-If, however, your command/assertion is defined in the constructor style, then you must inherit manually, similarly to the <a href="https://github.com/beatfactor/nightwatch/blob/master/lib/api/client-commands/pause.js" target="_blank">pause command</a>.</p>
-
-<p class="alert alert-info">To see some examples, check the assertions module source-code on Github:<br><a href="https://github.com/beatfactor/nightwatch/tree/master/lib/api/assertions" target="_blank">/nightwatch/tree/master/lib/selenium/assertions</a></p>
+<p class="alert alert-info">Custom assertions also inherit from <a href="http://nodejs.org/api/events.html" target="_blank">EventEmitter</a>. To see some examples, check the assertions module on Github:<br><a href="https://github.com/beatfactor/nightwatch/tree/master/lib/api/assertions" target="_blank">/nightwatch/tree/master/lib/selenium/assertions</a></p>

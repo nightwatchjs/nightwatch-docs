@@ -1,6 +1,6 @@
 The test runner expects a configuration file to be passed, using by default a `nightwatch.json` file from the current directory, if present. A `nightwatch.conf.js` file will also be loaded by default, if found.
 
-Let's create the `nightwatch.json` in the project's root folder and this inside:
+Let's create the `nightwatch.json` in the project's root folder and add this inside:
 
 <pre><code class="language-javascript">{
   <strong>"src_folders"</strong> : ["tests"],
@@ -14,11 +14,11 @@ Let's create the `nightwatch.json` in the project's root folder and this inside:
     "start_process" : false,
     "server_path" : "",
     "log_path" : "",
-    "host" : "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
       "webdriver.chrome.driver" : "",
-      "webdriver.ie.driver" : ""
+      "webdriver.gecko.driver" : "",
+      "webdriver.edge.driver" : ""
     }
   },
 
@@ -34,16 +34,19 @@ Let's create the `nightwatch.json` in the project's root folder and this inside:
       },
       "desiredCapabilities": {
         "browserName": "firefox",
-        "javascriptEnabled": true,
-        "acceptSslCerts": true
+        "marionette": true
       }
     },
 
     "chrome" : {
       "desiredCapabilities": {
-        "browserName": "chrome",
-        "javascriptEnabled": true,
-        "acceptSslCerts": true
+        "browserName": "chrome"
+      }
+    },
+
+    "edge" : {
+      "desiredCapabilities": {
+        "browserName": "MicrosoftEdge"
       }
     }
   }
@@ -51,6 +54,7 @@ Let's create the `nightwatch.json` in the project's root folder and this inside:
 
 <br>
 Using both configuration files is also possible, with `nightwatch.conf.js` always taking precedence if both are found.
+
 #### Example
 
 <pre><code class="language-javascript">

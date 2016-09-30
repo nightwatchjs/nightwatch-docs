@@ -21,7 +21,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>Whether or not to manage the selenium process automatically.</td>
  </tr>
  <tr>
-  <td>start_session<br><span class="optional">since v0.6.1</span></td>
+  <td>start_session</td>
   <td>boolean</td>
   <td>true</td>
   <td>Whether or not to automatically start the Selenium session. This will typically be set to `false` when running unit/integration tests that don't interact with the Selenium server.</td>
@@ -31,7 +31,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>server_path</td>
    <td>string</td>
    <td>none</td>
-   <td>The location of the selenium <code>jar</code> file. This needs to be specified if <code>start_process</code> is enabled.<br>E.g.: <code>lib/selenium-server-standalone-2.43.0.jar</code></td>
+   <td>The location of the selenium <code>jar</code> file. This needs to be specified if <code>start_process</code> is enabled.<br>E.g.: <code>bin/selenium-server-standalone-2.43.0.jar</code></td>
  </tr>
  <tr>
    <td>log_path</td>
@@ -40,19 +40,13 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>The location where the selenium <code>output.log</code> file will be placed. Defaults to current directory.<br>To disable Selenium logging, set this to <code>false</code></td>
  </tr>
  <tr>
-   <td>host</td>
-   <td>string</td>
-   <td>127.0.0.1</td>
-   <td>Usually not required and only used if <code>start_process</code> is <code>true</code>. Specify the IP address you wish Selenium to listen on.</td>
- </tr>
- <tr>
    <td>port</td>
    <td>integer</td>
    <td>4444</td>
    <td>The port number Selenium will listen on.</td>
  </tr>
  <tr>
-   <td>cli_args<br><span class="optional">since v0.5.1</span></td>
+   <td>cli_args</td>
    <td>object</td>
    <td>none</td>
    <td>List of cli arguments to be passed to the Selenium process. Here you can set various options for browser drivers, such as:<br><br>

@@ -116,7 +116,7 @@ module.exports = {
      <td>Use to disable terminal output completely.</td>
    </tr>
    <tr>
-     <td>disable_colors<br><span class="optional">since v0.4.13</span></td>
+     <td>disable_colors</td>
      <td>boolean</td>
      <td>false</td>
      <td>Use to disable colored output in the terminal.</td>
@@ -190,7 +190,7 @@ module.exports = {
    </tr>
 
    <tr>
-     <td>globals<br><span class="optional">since v0.4.8</span></td>
+     <td>globals</td>
      <td>object</td>
      <td></td>
      <td>An object which will be made available within the test and can be overwritten per environment. Example:<br><br>
@@ -199,7 +199,7 @@ module.exports = {
    </tr>
 
    <tr>
-     <td>exclude<br><span class="optional">since v0.4.9</span></td>
+     <td>exclude</td>
      <td>array</td>
      <td></td>
      <td>An array of folders or file patterns to be skipped (relative to the main source folder).<br>
@@ -211,7 +211,7 @@ module.exports = {
    </tr>
 
    <tr>
-     <td>filter<br><span class="optional">since v0.5.1</span></td>
+     <td>filter</td>
      <td>string</td>
      <td></td>
      <td>Folder or file pattern to be used when loading the tests. Files that don't match this pattern will be ignored.<br>
@@ -228,28 +228,28 @@ module.exports = {
    </tr>
 
    <tr>
-     <td>use_xpath<br><span class="optional">since v0.5.1</span></td>
+     <td>use_xpath</td>
      <td>boolean</td>
      <td>false</td>
      <td>Use xpath as the default locator strategy</td>
    </tr>
 
    <tr>
-     <td>cli_args<br><span class="optional">since v0.6.1</span></td>
+     <td>cli_args</td>
      <td>object</td>
      <td>none</td>
      <td>Same as Selenium settings `cli_args`. You can override the global `cli_args` on a per-environment basis.</td>
    </tr>
 
    <tr>
-     <td>end_session_on_fail<br><span class="optional">since v0.6.5</span></td>
+     <td>end_session_on_fail</td>
      <td>boolean</td>
      <td>true</td>
      <td>End the session automatically when the test is being terminated, usually after a failed assertion.</td>
   </tr>
 
   <tr>
-     <td>skip_testcases_on_fail<br><span class="optional">since v0.7.0</span></td>
+     <td>skip_testcases_on_fail</td>
      <td>boolean</td>
      <td>true</td>
      <td>Skip the remaining testcases (or test steps) from the same test suite (i.e. test file), when one testcase fails.</td>

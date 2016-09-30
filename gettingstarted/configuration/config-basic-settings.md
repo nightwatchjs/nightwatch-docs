@@ -35,13 +35,13 @@
      <td>Location(s) where custom assertions will be loaded from.</td>
    </tr>
    <tr>
-    <td>page_objects_path <br><span class="optional">Optional</span> <span class="optional">since v6.0.1</span></td>
+    <td>page_objects_path <br><span class="optional">Optional</span></td>
     <td>string|array</td>
     <td>none</td>
     <td>Location(s) where page object files will be loaded from.</td>
   </tr>
    <tr>
-     <td>globals_path <br><span class="optional">Optional</span> <span class="optional">since v0.4.8</span></td>
+     <td>globals_path <br><span class="optional">Optional</span></td>
      <td>string</td>
      <td>none</td>
      <td>Location of an external globals module which will be loaded and made available to the test as a property <code>globals</code> on the main client instance. <br><br>Globals can also be defined/overwritten inside a <code>test_settings</code> environment.</td>
@@ -77,7 +77,7 @@
      <td>Specifies the delay(in milliseconds) between starting the child processes when running in parallel mode.</td>
    </tr>
    <tr>
-     <td>test_workers <br><span class="optional">Optional</span> <span class="optional">since v0.7.0</span></td>
+     <td>test_workers <br><span class="optional">Optional</span></td>
      <td>boolean|object</td>
      <td>false</td>
      <td>Whether or not to run individual test files in parallel. If set to `true`, runs the tests in parallel and determines the number of workers automatically. <br>If set to an object, can specify specify the number of workers as `"auto"` or a `number`.
