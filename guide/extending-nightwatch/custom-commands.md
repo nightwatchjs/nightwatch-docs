@@ -7,7 +7,7 @@ Then specify the path to that folder inside the `nightwatch.json` file, as the `
 There are two main ways in which you can define a custom command:
 
 #### 1) Function-style commands
-This is the simplest form in which commands are defined, however they are also quite limited. Your command module needs to export a `command` function, which needs to call at least one Nightwatch api method (such as `.execute()`). This is due to a limitation of how the asynchronous queueing system of commands works. You can also use wrap everything in a `perform()` call.
+This is the simplest form in which commands are defined, however they are also quite limited. Your command module needs to export a `command` function, which needs to call at least one Nightwatch api method (such as `.execute()`). This is due to a limitation of how the asynchronous queueing system of commands works. You can also use wrap everything in a `.perform()` call. Client commands like `execute` and `perform` are available via `this`.
 
 <div class="sample-test" style="width: 600px">
 <pre class="language-javascript" data-language="javascript"><code class="language-javascript">
@@ -65,9 +65,9 @@ module.exports = {
 </div>
 
 #### 2) Class-style commands
-This is how most of the Nightwatch's own commands are written. Commands written like this need to inherit from `EventEmitter` manually and need to signal the `complete` event, which needs to be done asynchronously (e.g. using `setTimeout`).
+This is how most of the Nightwatch's own commands are written. Your command module needs to export a class constructor with a `command` instance method representing the command function. Commands written like this should inherit from `EventEmitter` and manually signal the `complete` event, which needs to be done asynchronously (e.g. using `setTimeout`), to indicate command completion. Command classes that do not extend `EventEmitter` will be treated similar to command functions, requiring that the `command` method calls at least one Nightwatch api method to be able to complete.
 
-The test `api` object is available as `this.client.api`, where `this.client` is the Nightwatch instance itself.
+Class-based `command` methods are run in the context (the value of `this`) of the class instance. The test `api` object with client commands such as `pause` is available as `this.api` or `this.client.api`, where `this.client` is the Nightwatch instance itself.
 
 Using ES6 classes as custom commands is not supported at the moment. See [nightwatchjs#1199](https://github.com/nightwatchjs/nightwatch/issues/1199) for more details. The example below is the `.pause()` command:
 
