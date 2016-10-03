@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 </div>
 
 #### Task Configuration and Targets
-The Nightwatch task will have one more more targets which can be used in various ways, one way being to map them to environments. Available settings are:
+The Nightwatch task will have one or more targets which can be used in various ways, one way being to map them to environments. Available settings are:
 
 * `options` - the only available option so far is `cwd` - current working directory
 * `argv` - command-line arguments that would normally be passed to the Nightwatch runner (e.g.: `env`);
