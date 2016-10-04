@@ -35,19 +35,19 @@ module.exports = {
 <div class="sample-test">
 <pre><code class="language-javascript">
 // globals.js beforeEach
-beforeEach: (done) {
+beforeEach: function(done) {
     // no browser, just a done
 }
 // or...
-beforeEach: (browser, done) {
+beforeEach: function(browser, done) {
     // browser and a done
 }
 // globals.js afterEach
-afterEach: (done) {
+afterEach: function(done) {
     // no browser, just a done
 }
 // or...
-afterEach: (browser, done) {
+afterEach: function(browser, done) {
     // browser and a done
 }
 </code></pre>
