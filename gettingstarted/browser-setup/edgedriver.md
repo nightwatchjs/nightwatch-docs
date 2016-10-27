@@ -18,7 +18,7 @@ If you're using Microsoft WebDriver through Selenium Server, simply set the cli 
     "log_path" : "",
     "port" : 4444,
     "cli_args" : {
-      "webdriver.chrome.driver" : "bin/MicrosoftWebDriver.exe"
+      "webdriver.edge.driver" : "bin/MicrosoftWebDriver.exe"
     }
   },
   <strong>"test_settings"</strong> : {
