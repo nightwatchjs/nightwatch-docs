@@ -223,7 +223,7 @@ module.exports = {
    <tr>
       <td>log_screenshot_data</td>
       <td>boolean</td>
-      <td>false</td>
+      <td>true</td>
       <td>Do not show the Base64 image data in the (verbose) log when taking screenshots.</td>
    </tr>
 
