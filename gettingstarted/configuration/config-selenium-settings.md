@@ -69,5 +69,20 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
      </ul>
    </td>
  </tr>
+ <tr>
+   <td>request_timeout_options <br><span class="optional">since v0.9.11</span></td>
+   <td>object</td>
+   <td>none</td>
+   <td>
+     <ul>
+       <li>
+         <code>timeout</code>: Specifies the timeout trying to establish a connection to the selenium server
+       </li>
+       <li>
+         <code>retry_attempts</code>: Amount of retries when it fails to establish a connection to the selenium server
+       </li>
+     </ul>
+   </td>
+ </tr>
  </tbody>
 </table>
