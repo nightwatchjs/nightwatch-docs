@@ -8,7 +8,7 @@ The tagging can be accomplished by adding the `@tags` property to a test module:
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
   '@tags': ['login', 'sanity'],
-  'demo login test': function (client) {
+  'demo login test': function (browser) {
      // test code
   }
 };</code></pre>

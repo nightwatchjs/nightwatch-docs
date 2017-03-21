@@ -6,7 +6,7 @@ To prevent a test module from running, simply set the `disabled` attribute in th
 module.exports = {
   '@disabled': true, // This will prevent the test module from running.
 
-  'sample test': function (client) {
+  'sample test': function (browser) {
     // test code
   }
 };
@@ -22,12 +22,12 @@ Here's an example:
 
 <pre><code class="language-javascript">
 module.exports = {
-  'sample test': function (client) {
+  'sample test': function (browser) {
     // test code
   },
 
   // disabled
-  'other sample test': ''+function (client) {
+  'other sample test': ''+function (browser) {
     // test code
   }
 };

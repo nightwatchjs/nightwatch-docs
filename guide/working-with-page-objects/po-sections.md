@@ -33,8 +33,8 @@ Your tests would use it as follows:
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
-  'Test': function (client) {
-    var google = client.page.google();
+  'Test': function (browser) {
+    var google = browser.page.google();
     google.expect.section('@menu').to.be.visible;
 
     var menuSection = google.section.menu;
@@ -43,7 +43,7 @@ module.exports = {
 
     menuSection.click('@mail');
 
-    client.end();
+    browser.end();
   }
 };
 </code></pre>
@@ -95,8 +95,8 @@ Using a nested section in your test is straightforward:
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
-  'Test': function (client) {
-    var google = client.page.google();
+  'Test': function (browser) {
+    var google = browser.page.google();
     google.expect.section('@menu').to.be.visible;
 
     var menuSection = google.section.menu;
@@ -106,7 +106,7 @@ module.exports = {
     appSection.expect.element('@myAccount').to.be.visible;
     appSection.expect.element('@googlePlus').to.be.visible;
 
-    client.end();
+    browser.end();
   }
 };
 </code></pre>

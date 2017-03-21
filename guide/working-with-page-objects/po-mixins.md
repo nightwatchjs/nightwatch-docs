@@ -37,12 +37,12 @@ Then the test is simply:
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
-  'Test': function (client) {
-    var google = client.page.google();
+  'Test': function (browser) {
+    var google = browser.page.google();
     google.setValue('@searchBar', 'nightwatch')
       .submit();
-  
-    client.end();
+
+    browser.end();
   }
 };
 </code></pre>

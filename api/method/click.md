@@ -7,14 +7,14 @@ The example below navigates to google.com, searches for the term "nightwatch.js"
 <div class="sample-test">
 <pre data-language="javascript" class=" language-javascript"><code class=" language-javascript">
 module.exports = {
-  before : function(client) {
+  before : function(browser) {
     // see https://github.com/nightwatchjs/nightwatch/blob/master/examples/globalsModule.js#L12
-    client.globals.waitForConditionTimeout = 5000;
+    browser.globals.waitForConditionTimeout = 5000;
   },
 
-  'click example test' : function (client) {
+  'click example test' : function (browser) {
 
-    client
+    browser
       .url('https://google.com')
       .waitForElementVisible('input[type=text]')
       .setValue('input[type=text]', 'nightwatch.js')
@@ -24,8 +24,8 @@ module.exports = {
       .expect.element('#rcnt').text.to.contain('nightwatchjs.org/');
   },
 
-  after : function(client) {
-    client.end();
+  after : function(browser) {
+    browser.end();
   }
 };
 </code></pre>
@@ -53,14 +53,14 @@ The `click` command is also used to select an option from a drop down list. The 
 <div class="sample-test">
 <pre data-language="javascript" class=" language-javascript"><code class=" language-javascript">
 module.exports = {
-  before : function(client) {
+  before : function(browser) {
     // see https://github.com/nightwatchjs/nightwatch/blob/master/examples/globalsModule.js#L12
-    client.globals.waitForConditionTimeout = 5000;
+    browser.globals.waitForConditionTimeout = 5000;
   },
 
-  'click option from drop down list' : function (client) {
+  'click option from drop down list' : function (browser) {
 
-    client
+    browser
       .url('https://www.w3.org/')
       .waitForElementVisible('#region_form')
       .click('#region_form select')
@@ -70,8 +70,8 @@ module.exports = {
       });
   },
 
-  after : function(client) {
-    client.end();
+  after : function(browser) {
+    browser.end();
   }
 };
 </code></pre>
