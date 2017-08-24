@@ -67,7 +67,7 @@ The test runner supports a number of run-time options to be passed to. To view a
        <td><code>--group</code></td>
        <td><code>-g</code></td>
        <td></td>
-       <td>Runs only the specified group of tests (subfolder). Tests are grouped by being placed in the same subfolder.</td>
+       <td>Runs only the specified group or several (comma separated) of tests (subfolder). Tests are grouped by being placed in the same subfolder.</td>
      </tr>
      <tr>
        <td><code>--skipgroup</code></td>
