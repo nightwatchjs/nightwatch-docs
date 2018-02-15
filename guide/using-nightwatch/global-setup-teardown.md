@@ -8,8 +8,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
 
 #### Example of the globals file with before & after:
 
-<div class="sample-test">
-<pre><code class="language-javascript">
+```js
 module.exports = {
   someGlobal : 'Here I am',
 
@@ -28,7 +27,7 @@ module.exports = {
       done();
     }, 200);
   }
-};</code></pre>
-</div>
+};
+```
 
 Refer to the [External Globals](#config-external-globals) section for more info on globals.
