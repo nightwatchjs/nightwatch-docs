@@ -105,7 +105,8 @@ module.exports = Pause;</code></pre>
 </div>
 
 <br>
+
 ##### The "complete" event
 Signaling the `complete` event needs to be done inside an asynchronous action (e.g. a `setTimeout` call). Command classes that do not extend `EventEmitter` will be treated similar to command functions, requiring that the `command` method calls at least one Nightwatch api method to be able to complete.
 
-<p class="alert alert-warning">Using ES6 classes as custom commands is not supported at the moment. See [nightwatchjs#1199](https://github.com/nightwatchjs/nightwatch/issues/1199) for more details.</p>
+<p class="alert alert-warning">Using ES6 classes as custom commands is not supported at the moment. See <a href="https://github.com/nightwatchjs/nightwatch/issues/1199">nightwatchjs#1199</a> for more details.</p>
