@@ -2,6 +2,10 @@
 
 Starting with version `0.8` Nightwatch is bundled with a custom version of the popular Mocha test runner which allows running tests using Mocha, thus taking advantage of its interfaces and reporters.
 
+<div class="alert alert-warning">
+Be careful when using custom commands and Mocha. Currently there is a <a href="https://github.com/nightwatchjs/nightwatch/issues/1527">bug</a> which swallows errors happening inside a custom command and makes the test pass when it shouldn't.
+</div>
+
 #### Usage
 There are two main ways in which you can use Mocha with Nightwatch.
 
