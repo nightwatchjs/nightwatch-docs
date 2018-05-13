@@ -24,7 +24,7 @@ module.exports = {
       selector: 'input[type=text]'
     },
     submitButton: {
-      selector: 'button[name=btnG]'
+      selector: 'input[name=btnK]'
     }
   }
 };
