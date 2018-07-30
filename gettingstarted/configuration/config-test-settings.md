@@ -104,6 +104,19 @@ module.exports = {
      <td>The port number on which the selenium server is accepting connections.</td>
    </tr>
    <tr>
+     <td>request_timeout_options</td>
+     <td>object</td>
+     <td>
+       timeout: 60000
+       <br>
+       retry_attempts: 0
+     </td>
+     <td>Requests to selenium will timeout in `timeout` ms; A retry to selenium will happen `retry_attempts` number of times.
+     <br><br>Example:<br><br>
+     <code>{timeout: 15000, retry_attempts: 5}</code>
+     </td>
+   </tr>
+   <tr>
      <td>silent</td>
      <td>boolean</td>
      <td>true</td>
