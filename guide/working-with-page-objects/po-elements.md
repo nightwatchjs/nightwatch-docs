@@ -8,12 +8,12 @@ Switching between css and xpath locate strategies is handled internally so you d
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
   elements: {
-    searchBar: { 
-      selector: 'input[type=text]' 
+    searchBar: {
+      selector: 'input[type=text]'
     },
-    submit: { 
-      selector: '//[@name="q"]', 
-      locateStrategy: 'xpath' 
+    submit: {
+      selector: '//[@name="q"]',
+      locateStrategy: 'xpath'
     }
   }
 };
@@ -61,12 +61,12 @@ Putting `elements` and `url` together, say you have the following defined above 
 module.exports = {
   url: 'http://google.com',
   elements: {
-    searchBar: { 
-      selector: 'input[type=text]' 
+    searchBar: {
+      selector: 'input[type=text]'
     },
-    submit: { 
-      selector: '//[@name="q"]', 
-      locateStrategy: 'xpath' 
+    submit: {
+      selector: '//[@name="q"]',
+      locateStrategy: 'xpath'
     }
   }
 };
@@ -79,16 +79,16 @@ In your tests you will use it as follows:
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
-  'Test': function (client) {
-    var google = client.page.google();
-    
+  'Test': function (browser) {
+    var google = browser.page.google();
+
     google.navigate()
       .assert.title('Google')
       .assert.visible('@searchBar')
       .setValue('@searchBar', 'nightwatch')
       .click('@submit');
 
-    client.end();
+    browser.end();
   }
 };
 </code></pre>

@@ -5,27 +5,27 @@ The example below navigates to google.com, searches for the term "nightwatch.js"
 <div class="sample-test">
 <pre data-language="javascript" class=" language-javascript"><code class=" language-javascript">
 module.exports = {
-  before : function(client) {
+  before : function(browser) {
     // see https://github.com/nightwatchjs/nightwatch/blob/master/examples/globalsModule.js#L12
-    client.globals.waitForConditionTimeout = 5000;
+    browser.globals.waitForConditionTimeout = 5000;
   },
 
-  'clearValue example test' : function (client) {
+  'clearValue example test' : function (browser) {
 
-    client
+    browser
       .url('https://google.com')
       .waitForElementVisible('input[type=text]')
       .setValue('input[type=text]', 'nightwatch.js')
       .click('button[type=submit]')
       .expect.element('#rcnt').text.to.contain('nightwatchjs.org/');
 
-    client
+    browser
       .clearValue('input[type=text]')
       .expect.element('#rcnt').text.to.equal('');
   },
 
-  after : function(client) {
-    client.end();
+  after : function(browser) {
+    browser.end();
   }
 };
 </code></pre>

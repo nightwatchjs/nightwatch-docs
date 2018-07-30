@@ -3,14 +3,14 @@
 <div class="sample-test">
 <pre data-language="javascript" class=" language-javascript"><code class=" language-javascript">
 module.exports = {
-  before : function(client) {
+  before : function(browser) {
     // see https://github.com/nightwatchjs/nightwatch/blob/master/examples/globalsModule.js#L12
-    client.globals.waitForConditionTimeout = 5000;
+    browser.globals.waitForConditionTimeout = 5000;
   },
 
-  'executeAsync example test' : function (client) {
+  'executeAsync example test' : function (browser) {
 
-    client
+    browser
       .timeoutsAsyncScript(10000)
       .executeAsync(function (inputVal, done) {
           // ... do stuff with window ...
@@ -23,8 +23,8 @@ module.exports = {
       );
   },
 
-  after : function(client) {
-    client.end();
+  after : function(browser) {
+    browser.end();
   }
 };
 </code></pre></div>

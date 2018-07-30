@@ -62,7 +62,7 @@ The `test_runner` option can also be specified at test environment level:
 </div>
 
 #### Example
-Writing a test in Mocha is the same as writing it in Nightwatch. Each testcase receives the `client` object, `hooks` also receiving a `done` callback for async operations.
+Writing a test in Mocha is the same as writing it in Nightwatch. Each testcase receives the `browser` object, `hooks` also receiving a `done` callback for async operations.
 
 <div class="sample-test">
 <pre><code class="language-javascript">
@@ -70,30 +70,30 @@ describe('Google demo test for Mocha', function() {
 
   describe('with Nightwatch', function() {
 
-    before(function(client, done) {
+    before(function(browser, done) {
       done();
     });
 
-    after(function(client, done) {
-      client.end(function() {
+    after(function(browser, done) {
+      browser.end(function() {
         done();
       });
     });
 
-    afterEach(function(client, done) {
+    afterEach(function(browser, done) {
       done();
     });
 
-    beforeEach(function(client, done) {
+    beforeEach(function(browser, done) {
       done();
     });
 
-    it('uses BDD to run the Google simple test', function(client) {
-      client
+    it('uses BDD to run the Google simple test', function(browser) {
+      browser
         .url('http://google.com')
         .expect.element('body').to.be.present.before(1000);
 
-      client.setValue('input[type=text]', ['nightwatch', client.Keys.ENTER])
+      browser.setValue('input[type=text]', ['nightwatch', browser.Keys.ENTER])
         .pause(1000)
         .assert.containsText('#main', 'Night Watch');
     });
