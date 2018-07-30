@@ -41,6 +41,8 @@ This requires a bit more configuration:<br><br>
 }
 </code></pre>
 
+Note that you still need to keep `start_session` set to true, if you intend to interact with the Selenium server (e.g. issue Webdriver commands).
+
 
 ##### 2) Configure the port and default path prefix.
 
