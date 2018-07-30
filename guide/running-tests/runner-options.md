@@ -105,7 +105,6 @@ The test runner supports a number of run-time options to be passed to. To view a
        <td></td>
        <td>Retries failed or errored testsuites (test modules) up to the specified number of times. Retrying a testsuite will also retry the `before` and `after` hooks (in addition to the global beforeEach and afterEach respectively), if any are defined on the testsuite.</td>
      </tr>
-
     </tbody>
   </table>
 </div>
