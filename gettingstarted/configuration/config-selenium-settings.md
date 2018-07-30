@@ -52,7 +52,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>List of cli arguments to be passed to the Selenium process. Here you can set various options for browser drivers, such as:<br><br>
      <ul>
        <li>
-         <code>webdriver.firefox.profile</code>: Selenium will be default create a new Firefox profile for each session. If you wish to use an existing Firefox profile you can specify its name here.<br>
+         <code>webdriver.firefox.profile</code>: Selenium will by default create a new Firefox profile for each session. If you wish to use an existing Firefox profile you can specify its name here.<br>
          Complete list of Firefox Driver arguments available <a href="https://github.com/SeleniumHQ/selenium/wiki/FirefoxDriver" target="_blank">here</a>.
        </li>
        <li>
