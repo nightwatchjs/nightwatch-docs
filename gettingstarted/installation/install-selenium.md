@@ -1,6 +1,6 @@
 ### Selenium Server Setup
 
-The most common WebDriver implementation is the Selenium Server. This allows you to manage multiple browser configurations in one place. However, you can also run the individual browser drivers directly, such as the ChromeDriver, more details are available in the [Browser Drivers Setup](http://nightwatchjs.org/getingstarted#browser-drivers-setup) section.
+The most common WebDriver implementation is the Selenium Server. This allows you to manage multiple browser configurations in one place. However, you can also run the individual browser drivers directly, such as the ChromeDriver, more details are available in the [Browser Drivers Setup](http://nightwatchjs.org/gettingstarted#browser-drivers-setup) section.
 
 #### Selenium Server
 
