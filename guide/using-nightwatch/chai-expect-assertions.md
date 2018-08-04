@@ -1,6 +1,6 @@
-### BDD Expect Assertions
+### Expect Assertions
 
-Nightwatch introduces starting with version `v0.7` a new BDD-style assertion library which greatly improves the flexibility as well as readability of the assertions.
+The Nightwatch API supports out of the box a BDD-style `expect` assertion library which greatly improves the flexibility as well as readability of the assertions.
 
 The `expect` assertions use a subset of the `Expect` api from the [Chai framework](http://chaijs.com/api/bdd/) and are available for elements only at this point. Here's an example:
 

@@ -1,6 +1,6 @@
 ### Theory of Operation
 
-Nightwatch works by communicating over a restful HTTP api with a WebDriver server (typically the Selenium server). The restful API protocol is defined by the [W3C WebDriver API](https://www.w3.org/TR/webdriver/). See below for an example workflow for browser initialization.
+Nightwatch works by communicating over a restful HTTP API with a WebDriver server (such as ChromeDriver or Selenium Server). The protocol is defined by the [W3C WebDriver spec](https://www.w3.org/TR/webdriver/), which is derived from [JSON Wire](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) protocol. See below for an example workflow for browser initialization.
 
 ![Theory of Operation](http://nightwatchjs.org/img/operation.png)
 

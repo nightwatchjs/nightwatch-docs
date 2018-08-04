@@ -1,56 +1,28 @@
-The test runner expects a configuration file to be passed, using by default a `nightwatch.json` file from the current directory, if present. A `nightwatch.conf.js` file will also be loaded by default, if found.
+The `nightwatch` test runner expects a configuration file to be passed, using by default a `nightwatch.json` file from the current directory, if present. A `nightwatch.conf.js` file will also be loaded by default, if found.
 
-Let's create the `nightwatch.json` in the project's root folder and add this inside:
+At this point you should have at least one WebDriver service downloaded and available in your project.
 
+Let's create the `nightwatch.json` in the project's root folder. Assuming you have downloaded or installed the ChromeDriver service, the simplest `nightwatch.json` file will look like this,
+where `node_modules/.bin/chromedriver` is the path where ChromeDriver is installed:
 <pre><code class="language-javascript">{
   <strong>"src_folders"</strong> : ["tests"],
-  <strong>"output_folder"</strong> : "reports",
-  <strong>"custom_commands_path"</strong> : "",
-  <strong>"custom_assertions_path"</strong> : "",
-  <strong>"page_objects_path"</strong> : "",
-  <strong>"globals_path"</strong> : "",
-
-  <strong>"selenium"</strong> : {
-    "start_process" : false,
-    "server_path" : "",
-    "log_path" : "",
-    "port" : 4444,
-    "cli_args" : {
-      "webdriver.chrome.driver" : "",
-      "webdriver.gecko.driver" : "",
-      "webdriver.edge.driver" : ""
-    }
+  
+  <strong>"webdriver"</strong> : {
+    "start_process": true,
+    "server_path": "node_modules/.bin/chromedriver",
+    "port": 9515
   },
 
   <strong>"test_settings"</strong> : {
     "default" : {
-      "launch_url" : "http://localhost",
-      "selenium_port"  : 4444,
-      "selenium_host"  : "localhost",
-      "silent": true,
-      "screenshots" : {
-        "enabled" : false,
-        "path" : ""
-      },
-      "desiredCapabilities": {
-        "browserName": "firefox",
-        "marionette": true
-      }
-    },
-
-    "chrome" : {
       "desiredCapabilities": {
         "browserName": "chrome"
-      }
-    },
-
-    "edge" : {
-      "desiredCapabilities": {
-        "browserName": "MicrosoftEdge"
       }
     }
   }
 }</code></pre>
+
+
 
 <br>
 Using both configuration files is also possible, with `nightwatch.conf.js` always taking precedence if both are found.

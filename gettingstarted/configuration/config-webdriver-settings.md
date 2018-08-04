@@ -1,6 +1,6 @@
-### Selenium settings
+## WebDriver Settings
 
-Below are a number of options for the selenium server process. Nightwatch can start and stop the Selenium process automatically which is very convenient as you don't have to manage this yourself and focus only on the tests.
+Below are a number of options for the WebDriver process. Nightwatch can start and stop the WebDriver process automatically which is very convenient as you don't have to manage this yourself and focus only on the tests.
 
 If you'd like to enable this, set `start_process` to `true` and specify the location of the `jar` file inside `server_path`.
 
@@ -18,8 +18,67 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>start_process</td>
    <td>boolean</td>
    <td>false</td>
-   <td>Whether or not to manage the selenium process automatically.</td>
+   <td>Whether or not to manage the WebDriver process automatically.</td>
  </tr>
+ 
+ <tr>
+  <td>start_session</td>
+  <td>boolean</td>
+  <td>true</td>
+  <td>Whether or not to automatically start the WebDriver session. This will typically be set to `false` when running unit/integration tests that don't interact with the Selenium server.</td>
+ </tr>
+
+ <tr>
+   <td>server_path</td>
+   <td>string</td>
+   <td>none</td>
+   <td>The location of the WebDriver binary. This needs to be specified if <code>start_process</code> is enabled.<br>E.g.: <code>bin/chromedriver</code></td>
+ </tr>
+ 
+ <tr>
+   <td>log_path</td>
+   <td>string|boolean</td>
+   <td>none</td>
+   <td>The location where the WebDriver service log file <code>output.log</code> file will be placed. Defaults to current directory.<br>To disable WebDriver logging, set this to <code>false</code></td>
+ </tr>
+ 
+ <tr>
+   <td>port</td>
+   <td>integer</td>
+   <td>9515|4444</td>
+   <td>The port number on which the WebDriver service will listen.</td>
+ </tr>
+ 
+ <tr>
+   <td>cli_args</td>
+   <td>object</td>
+   <td>none</td>
+   <td>List of cli arguments to be passed to the WebDriver process. This varies for each WebDriver implementation.</td>
+ </tr>
+ </tbody>
+</table>
+
+### Selenium Settings
+
+The Selenium Server can still be used as prior to Nightwatch v1. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged onto the `webdriver` ones. 
+
+<table class="table table-bordered table-striped">
+<thead>
+ <tr>
+   <th style="width: 100px;">Name</th>
+   <th style="width: 100px;">type</th>
+   <th style="width: 50px;">default</th>
+   <th>description</th>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+   <td>start_process</td>
+   <td>boolean</td>
+   <td>false</td>
+   <td>Whether or not to manage the Selenium process automatically.</td>
+ </tr>
+ 
  <tr>
   <td>start_session</td>
   <td>boolean</td>
@@ -33,18 +92,21 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>none</td>
    <td>The location of the selenium <code>jar</code> file. This needs to be specified if <code>start_process</code> is enabled.<br>E.g.: <code>bin/selenium-server-standalone-2.43.0.jar</code></td>
  </tr>
+ 
  <tr>
    <td>log_path</td>
    <td>string|boolean</td>
    <td>none</td>
-   <td>The location where the selenium <code>output.log</code> file will be placed. Defaults to current directory.<br>To disable Selenium logging, set this to <code>false</code></td>
+   <td>The location where the Selenium <code>output.log</code> file will be placed. Defaults to current directory.<br>To disable Selenium logging, set this to <code>false</code></td>
  </tr>
+ 
  <tr>
    <td>port</td>
    <td>integer</td>
    <td>4444</td>
    <td>The port number Selenium will listen on.</td>
  </tr>
+ 
  <tr>
    <td>cli_args</td>
    <td>object</td>
@@ -71,3 +133,4 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
  </tr>
  </tbody>
 </table>
+

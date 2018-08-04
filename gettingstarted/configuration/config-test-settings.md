@@ -1,4 +1,4 @@
-### Test settings
+## Test Settings
 
 Below are a number of settings that will be passed to the Nightwatch instance. You can define multiple sections (environments) of test settings so you could overwrite specific values per environment.
 

@@ -1,23 +1,47 @@
 ### Writing Unit Tests
 
-Unit testing in Nightwatch has been refined in version `0.9`. Unit tests now written in Nightwatch are also fully compatible with [Mocha's Exports](https://mochajs.org/#exports) interface, so you can use either test runners. In fact, all Nightwatch's unit tests have been rewritten so they can be ran with either Nightwatch or Mocha.
+Unit testing in Nightwatch has been refined in version `0.9`. Unit tests now written in Nightwatch are also fully compatible with [Mocha's Exports](https://mochajs.org/#exports) interface, so you can use either test runners.
 
-<div class="alert alert-info">
-For backwards compatibility reasons, to take advantage of the improved unit testing support you need to set the toggle setting `compatible_testcase_support` to `true` in your test settings.
+#### Unit Tests Mode
+Nightwatch automatically attempts to connect to the WebDriver server and create a session. When running unit tests this needs to be disabled and the runner needs to be made aware that it is operating in unit testing mode.
+
+This can be done in two ways:
+
+#### Setting unit_tests_mode=true
+
+This is a global option. Set the `unit_tests_mode` option to `true` in the `nightwatch.json`:
+
+<pre><code class="language-javascript">{
+  <strong>"src_folders"</strong> : ["tests"],
+  
+  "unit_tests_mode": true
+}</code></pre>
+
+#### Adding @unitTest property per test
+
+You can set the `@unitTest` property to true if you'd like to have individual test suites as unit tests.
+
+<div class="sample-test">
+<pre data-language="javascript"><code class="language-javascript">
+const assert = require('assert');
+
+module.exports = {
+  '@unitTest' : true,
+
+  'demo UnitTest' : function (done) {
+    assert.equal('TEST', 'TEST');
+    setTimeout(function() {
+      done();
+    }, 10);
+  }
+};
+</code></pre>
 </div>
 
-Unit tests written in versions prior to `0.9` will still continue to work however we recommend upgrading them.
-
-#### Disabling automatic selenium session
-Nightwatch automatically attempts to connect to the specified selenium server and create a session.
-When running unit tests this needs to be disabled by setting the `start_session` property to `false` inside the `selenium` settings group either on the root level or inside a specific environment.
-
 #### Assertion framework
-Starting with `0.9`, in the improved support for unit tests, the `client` object is no longer passed as an argument to the test. The only argument passed now is the `done` callback to be used for asynchronous tests.
+Starting with `0.9`, in the improved support for unit tests, the `browser` object is no longer passed as an argument to the test. The only argument passed now is the `done` callback to be used for asynchronous tests.
 
-You can use whatever assertion framework you like. [Chai.js](http://chaijs.com/) is quite a good one and very flexible. We use the internal Node.js `assert` module in the Nightwatch unit tests.
-
-You can still refer the `client` object via `this.client` in your tests.
+You can use whatever assertion framework you like. [Chai.js](http://chaijs.com/) is quite a good one and very flexible.
 
 #### Example
 Here's a subset of the unit test for the `utils.js` Nightwatch module:

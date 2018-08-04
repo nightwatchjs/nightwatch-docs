@@ -93,3 +93,45 @@ module.exports = {
 };
 </code></pre>
 </div>
+
+#### Using the Element index Property
+
+The index is used to target a specific element in a query that results in multiple elements returned. Normally, only the first element is used (index = 0) but using the `index` property, you can specify any element within the result.
+
+Say in the example above, the `searchBar` element selector returns 3 elements and you are interested in the second element.
+
+<div class="sample-test">
+<pre data-language="javascript"><code class="language-javascript">
+module.exports = {
+  elements: {
+    searchBar: {
+      selector: 'input[type=text]',
+      index: 2
+    }
+  }
+};
+</code></pre>
+</div>
+
+You can also override what the page element defined by specifying the element as an object selectors in commands, which can also receive the `index`:
+
+<div class="sample-test">
+<pre data-language="javascript"><code class="language-javascript">
+module.exports = {
+  'Test': function (browser) {
+    var google = browser.page.google();
+
+    google
+      .navigate()
+      .assert.title('Google');
+      
+    google.waitForElementVisible('@searchBar') // 2nd input element
+    google.waitForElementVisible({selector:'@searchBar', index:1}, function(result){}); // 1st div
+      
+    google.click('@submit');
+
+    browser.end();
+  }
+};
+</code></pre>
+</div>

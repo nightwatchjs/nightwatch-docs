@@ -1,4 +1,4 @@
-### Basic settings
+## Basic Settings
 
 <table class="table table-bordered table-striped">
   <thead>
@@ -16,6 +16,18 @@
      <td>none</td>
      <td>An array of folders (excluding subfolders) where the tests are located.</td>
    </tr>
+  <tr>
+    <td>webdriver</td>
+    <td>object</td>
+    <td></td>
+    <td>An object containing WebDriver related configuration options. See the next section for details.</td>
+  </tr>
+   <tr>
+    <td>test_settings</td>
+    <td>object</td>
+    <td></td>
+    <td>This object contains all the test related options. See below for details.</td>
+  </tr>
    <tr>
      <td>output_folder <br><span class="optional">Optional</span></td>
      <td>string</td>
@@ -47,18 +59,6 @@
      <td>Location of an external globals module which will be loaded and made available to the test as a property <code>globals</code> on the main client instance. <br><br>Globals can also be defined/overwritten inside a <code>test_settings</code> environment.</td>
    </tr>
    <tr>
-     <td>selenium <br><span class="optional">Optional</span></td>
-     <td>object</td>
-     <td></td>
-     <td>An object containing Selenium Server related configuration options. See below for details.</td>
-   </tr>
-    <tr>
-     <td>test_settings</td>
-     <td>object</td>
-     <td></td>
-     <td>This object contains all the test related options. See below for details.</td>
-   </tr>
-   <tr>
      <td>live_output <br><span class="optional">Optional</span></td>
      <td>boolean</td>
      <td>false</td>
@@ -84,11 +84,17 @@
        <br><br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code></td>
    </tr>
    <tr>
-    <td>test_runner <br><span class="optional">Optional</span> <span class="optional">since v0.8.0</span></td>
+    <td>test_runner <br><span class="optional">Optional</span></td>
     <td>string|object</td>
     <td>"default"</td>
-    <td>Specifies which test runner to use when running the tests. Values can be either `default` (built in nightwatch runner) or `mocha`.  
+    <td>Specifies which test runner to use when running the tests. Values can be either `default` (built-in nightwatch runner) or `mocha`.  
       <br><br>Example: <code>"test_runner" : {"type" : "mocha", "options" : {"ui" : "tdd"}}</code></td>
     </tr>
+     <tr>
+       <td>unit_tests_mode <br><span class="optional">Optional</span></td>
+       <td>boolean</td>
+       <td>false</td>
+       <td>Controls whether to run tests in unit testing mode, which means the session will not automatically be created.</td>
+     </tr>
   </tbody>
 </table>

@@ -1,11 +1,15 @@
-### Microsoft WebDriver
+## Microsoft WebDriver
 
 #### Overview
-[Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) is a standalone server which implements the W3C WebDriver wire protocol for the Edge browser. It is supported by Windows 10 and onwards.
+[Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) is a standalone server which implements the WebDriver protocol for the Edge browser. It is supported by Windows 10 and onwards.
 
 #### Download
 
-Binaries are available for download on the [Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) homepage.
+WebDriver for Microsoft Edge is now a Windows Feature on Demand. To install run the following in an elevated command prompt:
+
+<pre>$ DISM.exe /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0</pre>
+
+More details about installation and usage documentation are available on the official [Microsoft WebDriver homepage](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
 
 #### Selenium Server Usage
 
@@ -33,8 +37,6 @@ If you're using Microsoft WebDriver through Selenium Server, simply set the cli 
     }
   }
 }</code></pre>
-
-
 
 
 #### Standalone Usage
@@ -87,5 +89,5 @@ Full command line usage:
 Usage:
  MicrosoftWebDriver.exe --host=<HostName> --port=<PortNumber> --package=<Package> --verbose</code></pre>
 
-#### Implementation Status
-EdgeDriver is not yet feature complete, which means it does not yet offer full conformance with the WebDriver standard or complete compatibility with Selenium. Implementation status can be tracked on the [Microsoft WebDriver homepage](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/webdriver-commands/).
+##### Implementation Status
+EdgeDriver is not yet feature complete, which means it does not yet offer full conformance with the WebDriver standard or complete compatibility with Selenium. Implementation status can be tracked on the [Microsoft WebDriver homepage](https://docs.microsoft.com/en-us/microsoft-edge/webdriver).

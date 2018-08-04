@@ -4,7 +4,7 @@ Nightwatch allows you to even define your own assertions, extending the availabl
 
 Assertions implement a simple interface which is shared between built-in assertions and custom ones:
 
-<div class="sample-test" style="width: 500px">
+<div class="sample-test" style="width: 680px">
 
 <pre data-language="javascript"><code class="language-javascript">
 exports.assertion = function() {

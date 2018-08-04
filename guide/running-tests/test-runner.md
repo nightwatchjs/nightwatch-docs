@@ -1,4 +1,4 @@
-### Test Runner
+### Nightwatch Runner
 
 Nightwatch includes a command-line test runner which makes it easy to run tests and generate useful output. There are a few different options on how to use the test runner, depending on your installation type.
 
