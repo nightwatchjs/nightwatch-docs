@@ -11,8 +11,7 @@ This is the simplest form in which commands are defined, however they are also q
 
 The command module needs to export a `command` function, which needs to call at least one Nightwatch api method (such as `.execute()`). This is due to a limitation of how the asynchronous queueing system of commands works. You can also wrap everything in a `.perform()` call. Client commands like `execute` and `perform` are available via `this`.
 
-<div class="sample-test" style="width: 600px">
-<pre class="language-javascript" data-language="javascript"><code class="language-javascript">
+```JavaScript
 exports.command = function(file, callback) {
   var self = this;
   var imageData;
@@ -44,16 +43,13 @@ exports.command = function(file, callback) {
 
   return this;
 };
-</code>
-</pre>
-</div>
+```
 
 The example above defines a command (e.g. resizePicture.js) which loads an image file as `data-URI` and calls a method named `resizePicture` (via `.execute()`), defined inside the application.
 
 With this command, the test will look something like:
 
-<div class="sample-test" style="width: 600px">
-<pre data-language="javascript"><code class="language-javascript">
+```JavaScript
 module.exports = {
   "testing resize picture" : function (browser) {
     browser
@@ -63,8 +59,8 @@ module.exports = {
       .assert.element(".container .picture-large")
       .end();
   }
-};</code></pre>
-</div>
+};
+```
 
 #### 2) Class-style commands
 This is how most of the Nightwatch's own commands are written. Your command module needs to export a class constructor with a `command` instance method representing the command function. Commands written like this should inherit from `EventEmitter` and manually signal the `complete` event, to indicate command completion.
@@ -73,8 +69,7 @@ Class-based `command` methods are run in the context (the value of `this`) of th
 
 The example below is the `.pause()` command, written as an ES6 class:
 
-<div class="sample-test" style="width: 680px">
-<pre data-language="javascript"><code class="language-javascript">
+```JavaScript
 const EventEmitter = require('events');
 
 class Pause extends EventEmitter {
@@ -98,8 +93,8 @@ class Pause extends EventEmitter {
   }
 } 
 
-module.exports = Pause;</code></pre>
-</div>
+module.exports = Pause;
+```
 
 <br>
 ##### The "complete" event
