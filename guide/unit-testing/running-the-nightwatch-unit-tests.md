@@ -10,15 +10,11 @@ Here's the configuration needed to run them:
 <pre data-language="javascript"><code class="language-javascript">
 {
   "src_folders" : ["./test/src"],
-  "selenium" : {
-    "start_process" : false,
-    "start_session" : false
-  },
 
   "test_settings" : {
     "default" : {
       "filter" : "**/*.js",
-      "compatible_testcase_support" : true
+      "unit_tests_mode" : true
     }
   }
 }

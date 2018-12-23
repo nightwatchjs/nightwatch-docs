@@ -10,11 +10,11 @@ It is available for Chrome on Android and Chrome on Desktop (Mac, Linux, Windows
 
 ChromeDriver can be downloaded from the [ChromeDriver Downloads](http://chromedriver.chromium.org/downloads) page. Or you can use the [chromedriver](https://www.npmjs.com/package/chromedriver) NPM package as a dependency in your project:
 
-<pre>$ npm install chromedriver --save-dev</pre>
+<pre>npm install chromedriver --save-dev</pre>
 
 #### Standalone Usage 
 
-Nightwatch can manage the ChromeDriver service automatically, as with other WebDriver services, such as GeckoDriver. To use ChromeDriver directly, add this to your `nightwatch.json`:
+Nightwatch can manage the ChromeDriver service automatically, as with other WebDriver services, such as GeckoDriver. To use ChromeDriver directly, configure Nightwatch as below:
 
 <pre><code class="language-javascript">{ 
   <strong>"webdriver"</strong>: {
@@ -51,7 +51,9 @@ If you're using ChromeDriver through Selenium Server, simply set the cli argumen
   }
 }</code></pre>
 
-##### ChromeOptions
+<p></p>
+
+#### ChromeOptions
 You can specify Chrome options or switches using the `chromeOptions` dictionary, under the `desiredCapabilities`. Refer to the [ChromeDriver website](https://sites.google.com/a/chromium.org/chromedriver/capabilities#TOC-chromeOptions-object) for a fill list of supported capabilities and options.
 
 ##### Example of detailed config

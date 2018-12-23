@@ -34,7 +34,7 @@ By default the `done` invocation timeout is set to 10 seconds (2 seconds for uni
 For an example, refer to the provided [globalsModule](https://github.com/nightwatchjs/nightwatch/blob/master/examples/globalsModule.js#L20) example.
 
 #### Explicitly failing the test
-Failing the test intentionally in a test hook is achievable by simply calling `done` with an `Error` argument:
+Failing the test intentionally in a test hook can be achieved by calling `done` with an `Error` argument:
 
 <div class="sample-test">
 <pre><code class="language-javascript">
@@ -44,6 +44,7 @@ module.exports = {
     performAsync(function(err) {
       if (err) {
         done(err);
+        return;
       }
       // ...
     });

@@ -36,7 +36,7 @@ Version 0.9 brings improved support for displaying output when running tests in 
 
 #### Multiple Environments
 
-<pre><code class="language-bash">$ nightwatch -e default,chrome</code></pre>
+<pre><code class="language-bash">nightwatch -e default,chrome</code></pre>
 
 The above will run two environments named `default` and `chrome` in parallel.
 

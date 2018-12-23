@@ -2,7 +2,7 @@
 
 The test runner supports a number of run-time options to be passed to. To view all, run the following:
 
-<pre><code class="language-bash">$ nightwatch --help</code></pre>
+<pre><code class="language-bash">nightwatch --help</code></pre>
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
@@ -31,7 +31,12 @@ The test runner supports a number of run-time options to be passed to. To view a
         <td><code>--reporter</code></td>
         <td><code>-r</code></td>
         <td><code>junit</code></td>
-        <td>Name of a predefined reporter (e.g. junit) or path to a custom reporter file to use.</td>
+        <td>Name of a predefined reporter (e.g. junit) or path to a custom reporter file to use.<br><br>
+        The custom reporter interface looks like:<br><code><pre>module.exports = {
+  write(results, options, done) {
+    done();
+  }
+};</pre></code></td>
      </tr>
      <tr>
        <td><code>--env</code></td>

@@ -7,7 +7,7 @@
 
 WebDriver for Microsoft Edge is now a Windows Feature on Demand. To install run the following in an elevated command prompt:
 
-<pre>$ DISM.exe /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0</pre>
+<pre class="windows-cmd">DISM.exe /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0</pre>
 
 More details about installation and usage documentation are available on the official [Microsoft WebDriver homepage](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
 
@@ -90,4 +90,4 @@ Usage:
  MicrosoftWebDriver.exe --host=<HostName> --port=<PortNumber> --package=<Package> --verbose</code></pre>
 
 ##### Implementation Status
-EdgeDriver is not yet feature complete, which means it does not yet offer full conformance with the WebDriver standard or complete compatibility with Selenium. Implementation status can be tracked on the [Microsoft WebDriver homepage](https://docs.microsoft.com/en-us/microsoft-edge/webdriver).
+EdgeDriver is not yet feature complete, which means it does not yet offer full conformance with the WebDriver standard or complete compatibility with Selenium. Implementation status can be tracked on the <a href="https://docs.microsoft.com/en-us/microsoft-edge/webdriver" target="_blank">Microsoft WebDriver homepage</a>.

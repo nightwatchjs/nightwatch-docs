@@ -67,3 +67,17 @@ module.exports = {
   }
 };</code></pre>
 </div>
+
+#### Global Reporter
+The global reporter is invoked before calling the built-in junit reporter (or a custom reporter specified using the `--reporter` CLI option).
+
+#### Example:
+<div class="sample-test">
+<pre><code class="language-javascript">
+module.exports = {
+  reporter : function(results, cb) {
+    console.log('results', results);
+    cb();
+  }
+};</code></pre>
+</div>

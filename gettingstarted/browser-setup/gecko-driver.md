@@ -9,7 +9,7 @@ Starting with Firefox 48, GeckoDriver is the only way to automate Firefox, the l
 
 GeckoDriver can be downloaded from the [Releases page](https://github.com/mozilla/geckodriver/releases) on GitHub. Release notes are also available there. Or you can use the [geckodriver](https://www.npmjs.com/package/geckodriver) NPM package as a dependency in your project:
 
-<pre>$ npm install geckodriver --save-dev</pre>
+<pre>npm install geckodriver --save-dev</pre>
 
 Selenium 2.x users are advised to use version __v0.9__, whereas Selenium 3 users should use the latest version.
 
@@ -20,7 +20,7 @@ Nightwatch can manage the GeckoDriver service automatically, as with other WebDr
 <pre><code class="language-javascript">{ 
   <strong>"webdriver"</strong>: {
     "start_process" : true,
-    "server_path": "./bin/geckodriver-0.21",
+    "server_path": "./bin/geckodriver-0.23",
     "cli_args": [
       "--log", "debug"
     ],
@@ -59,11 +59,11 @@ GeckoDriver can also be used as a standalone application. Usage steps are docume
 <br><br>
 ##### Command line usage
 
-<pre><code>$ ./bin/geckodriver-0.10 -help
-geckodriver 0.10.0
+<pre><code>$ ./bin/geckodriver-0.23 -help
+geckodriver 0.23.0
 
 USAGE:
-    geckodriver-0.10 [FLAGS] [OPTIONS]
+    geckodriver-0.23 [FLAGS] [OPTIONS]
 
 FLAGS:
         --connect-existing    Connect to an existing Firefox instance

@@ -27,12 +27,12 @@ tests/
 
 To run only the `smoketests` group you would do the following:
 
-<pre><code class="language-bash">$ nightwatch --group smoketests</code></pre>
+<pre><code class="language-bash">nightwatch --group smoketests</code></pre>
 
 Also, if you would want to skip running the `smoketests` group you would do the following:
 
-<pre><code class="language-bash">$ nightwatch --skipgroup smoketests</code></pre>
+<pre><code class="language-bash">nightwatch --skipgroup smoketests</code></pre>
 
 To skip multiple groups, just add them as comma-separated:
 
-<pre><code class="language-bash">$ nightwatch --skipgroup addressbook,chat</code></pre>
+<pre><code class="language-bash">nightwatch --skipgroup addressbook,chat</code></pre>

@@ -1,9 +1,10 @@
-The `nightwatch` test runner expects a configuration file to be passed, using by default a `nightwatch.json` file from the current directory, if present. A `nightwatch.conf.js` file will also be loaded by default, if found.
+The `nightwatch` test runner binary expects a configuration file, using by default a `nightwatch.json` file from the current working directory. A `nightwatch.conf.js` file will also be loaded by default, if found.
+### nightwatch.json
+At this point you should have at least one WebDriver service setup in your project.
 
-At this point you should have at least one WebDriver service downloaded and available in your project.
+Create the `nightwatch.json` in the project's root folder. 
 
-Let's create the `nightwatch.json` in the project's root folder. Assuming you have downloaded or installed the ChromeDriver service, the simplest `nightwatch.json` file will look like this,
-where `node_modules/.bin/chromedriver` is the path where ChromeDriver is installed:
+Assuming you have downloaded or installed the ChromeDriver service, the simplest `nightwatch.json` file will look like this, where `node_modules/.bin/chromedriver` is the path where ChromeDriver is installed:
 <pre><code class="language-javascript">{
   <strong>"src_folders"</strong> : ["tests"],
   
@@ -23,12 +24,10 @@ where `node_modules/.bin/chromedriver` is the path where ChromeDriver is install
 }</code></pre>
 
 
-
 <br>
 Using both configuration files is also possible, with `nightwatch.conf.js` always taking precedence if both are found.
 
-#### Example
-
+#### nightwatch.conf.js
 <pre><code class="language-javascript">
 module.exports = (function(settings) {
   settings.test_workers = false;

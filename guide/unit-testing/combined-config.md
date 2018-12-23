@@ -9,41 +9,24 @@ An empty `exclude` means we want to reset its value and rely only on `filter`.
   <strong>"src_folders"</strong> : ["./examples/tests", "./examples/unittests"],
   <strong>"output_folder"</strong> : "./examples/reports",
 
-  <strong>"selenium"</strong> : {
-    "start_process" : true,
-    "server_path" : "./bin/selenium-server-standalone.jar",
-    "log_path" : "",
-    "host" : "127.0.0.1",
-    "port" : 4444,
-    "cli_args" : {
-      "webdriver.chrome.driver" : "",
-      "webdriver.ie.driver" : ""
-    }
+  
+  "webdriver" : {
+    "start_process": true,
+    "server_path": "node_modules/.bin/chromedriver",
+    "port": 9515
   },
 
   <strong>"test_settings"</strong> : {
     "default" : {
       "launch_url" : "http://localhost",
-      "selenium_port"  : 4444,
-      "selenium_host"  : "localhost",
-      "silent": true,
-      "screenshots" : {
-        "enabled" : false,
-        "path" : ""
-      },
       "desiredCapabilities": {
-        "browserName": "firefox",
-        "javascriptEnabled": true,
-        "acceptSslCerts": true
+        "browserName": "chrome"
       },
       "exclude" : "./examples/unittests/*"
     },
 
     "unittests" : {
-      "selenium" : {
-        "start_process" : false,
-        "start_session" : false
-      },
+      "unit_tests_mode" : true,
       "filter" : "./examples/unittests/*",
       "exclude" : ""
     }

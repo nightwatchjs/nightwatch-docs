@@ -62,10 +62,10 @@ grunt.initConfig({
 <br>
 
 Run the task as follows:
-<pre><code class="language-bash">$ grunt nightwatch:default</code></pre> 
+<pre><code class="language-bash">grunt nightwatch:default</code></pre> 
 or 
 
-<pre><code class="language-bash">$ grunt nightwatch:browserstack</code></pre>
+<pre><code class="language-bash">grunt nightwatch:browserstack</code></pre>
 
 <br>
 
