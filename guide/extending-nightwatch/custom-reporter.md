@@ -1,4 +1,4 @@
-### Custom Reporter
+## Custom Reporter
 If you'd like to define your own reporter in addition to the built-in ones (stdout and junit-xml) you can do so in two ways:
 
 #### The `--reporter` command-line argument

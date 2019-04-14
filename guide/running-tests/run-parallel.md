@@ -1,6 +1,8 @@
-### Parallel Running
+## Parallel Running
 
-Nightwatch supports the tests to be run in parallel. This can be achieved either via test workers or by running multiple test environments in parallel.
+Nightwatch supports running the tests in parallel in two main ways: 
+- via test workers
+- by running multiple test environments in parallel
 
 #### Via Workers
 
@@ -8,18 +10,17 @@ When this is enabled the test runner will launch a configurable number of child 
 
 To enable test workers, set the `test_workers` top-level property, like so:
 
-<pre><code class="language-javascript">
-"test_workers": {
-  "enabled": true,
-  "workers": "auto"
+<pre><code class="language-javascript">{
+  "test_workers": {
+    "enabled": true,
+    "workers": "auto"
+  }
 }
 </code></pre>
 
 or, simply:
 
-<pre><code class="language-javascript">
-"test_workers": true
-</code></pre>
+<pre><code class="language-javascript">{"test_workers": true}</code></pre>
 
 <br>
 

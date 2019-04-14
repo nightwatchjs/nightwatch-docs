@@ -1,4 +1,4 @@
-### Command-line Options
+## Command-line Options
 
 The test runner supports a number of run-time options to be passed to. To view all, run the following:
 

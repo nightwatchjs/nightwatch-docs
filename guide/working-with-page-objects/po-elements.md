@@ -1,4 +1,4 @@
-### Defining Elements
+## Defining Elements
 
 Most of the time, you will want to define elements on your page that your tests will interact with through commands and assertions. This is made simple using the `elements` property so that all your elements are defined in a single place. Especially in larger integration tests, using `elements` will go a long way to keep test code DRY.
 
@@ -94,9 +94,17 @@ module.exports = {
 </code></pre>
 </div>
 
-#### Using the Element index Property
+### Element Properties
 
-The index is used to target a specific element in a query that results in multiple elements returned. Normally, only the first element is used (index = 0) but using the `index` property, you can specify any element within the result.
+To support greater flexibility in interacting with page object elements, an element can be specified as an object, which needs to contain at least the `selector` property. 
+Next to the selector, other properties can be specified. Here's the full list:
+
+- **selector** - the element selector name (e.g.: '@searchBar')
+- **locateStrategy** - e.g. 'css selector'
+- **index** - used to target a specific element in a query that results in multiple elements returned. Normally, only the first element is used (index = 0) but using the `index` property, you can specify any element within the result. 
+- **abortOnFailure** - used to overwrite this setting when using `waitForElement*` commands
+- **timeout** - used to overwrite the default timeout for when using `waitForElement*` commands or assertions
+- **retryInterval** - used to overwrite the default retry interval for when using `waitForElement*` commands or assertions
 
 Say in the example above, the `searchBar` element selector returns 3 elements and you are interested in the second element.
 
@@ -131,6 +139,24 @@ module.exports = {
     google.click('@submit');
 
     browser.end();
+  }
+};
+</code></pre>
+</div>
+
+<br>
+
+#### Pseudo-selectors [beta]
+
+When using named page object elements (starting with '@') you can also use CSS pseudo-selectors (starting with `v1.1`).
+
+<div class="sample-test">
+<pre data-language="javascript"><code class="language-javascript">
+module.exports = {
+  'Test': function (browser) {
+    google.waitForElementVisible('@searchBar:first-child');
+    
+    google.waitForElementVisible('@searchBar:nth-child(1)');
   }
 };
 </code></pre>

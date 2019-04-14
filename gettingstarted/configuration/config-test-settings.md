@@ -7,8 +7,7 @@ More on test environments under the [Nightwatch Runner](http://nightwatchjs.org/
 If you run your tests specifying the `integration` environment (with `--env integration`) the `launch_url` will be set to `http://staging.host`, as per the configuration. Otherwise it will have the value defined in the `default` environment (i.e. `http://localhost`).
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Demo test' : function (browser) {
     browser
       .url(browser.launchUrl)
@@ -25,8 +24,7 @@ Like the `launch_url` property, this is made available directly on the Nightwatc
 If we still pass the `--env integration` option to the runner, then our globals object will look like below:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Demo test' : function (browser) {
 
     console.log(browser.globals);

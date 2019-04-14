@@ -9,8 +9,7 @@ All methods have the Nightwatch instance passed as argument.
 #### Example:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
   before : function(browser) {
     console.log('Setting up...');
   },
@@ -24,7 +23,7 @@ module.exports = {
   },
 
   afterEach : function(browser) {
-  
+
   },
 
   'step one' : function (browser) {

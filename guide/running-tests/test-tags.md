@@ -5,8 +5,7 @@ You can also selectively target tests to run based on tags, such that a test may
 The tagging can be accomplished by adding the `@tags` property to a test module:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   '@tags': ['login', 'sanity'],
   'demo login test': function (browser) {
      // test code
@@ -18,6 +17,7 @@ To select which tags to run, use the `--tag` command line flag:
 
 <pre><code class="language-bash">nightwatch --tag login</code></pre>
 
+<br>
 Specify multiple tags as:
 
 <pre><code class="language-bash">nightwatch --tag login --tag something_else</code></pre>
@@ -26,7 +26,7 @@ Specify multiple tags as:
 To skip running tests with a specific tag, use the `--skiptags` flag:
 
 <pre><code class="language-bash">nightwatch --skiptags login</code></pre>
-
+<br>
 Or to skip multiple tags, add each tag you want to skip as comma-separated:
 
 <pre><code class="language-bash">nightwatch --skiptags login,something_else</code></pre>

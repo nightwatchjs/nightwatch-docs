@@ -1,4 +1,4 @@
-### Writing Commands
+## Writing Commands
 
 You can add commands to your page object using the `commands` property. This is a useful way to encapsulate logic about the page that would otherwise live in a test, or multiple tests.
 

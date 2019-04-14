@@ -134,9 +134,8 @@ You can overwrite any test setting for each environment as needed. More on test 
 Nightwatch includes a sample configuration file, which contains multiple environments for various type of requirements. It is located inside the [Github repo](https://github.com/nightwatchjs/nightwatch/blob/master/bin/nightwatch.json):
 
 Here's an extract. By default it is using Firefox as the target browser, but it includes configuration for Chrome and Selenium Server as well:
-
-<pre><code class="language-javascript">
-{
+<div class="sample-test">
+<pre><code class="language-javascript">{
   "src_folders" : ["./examples/tests", "./examples/mocha", "./examples/unittests"],
   "custom_commands_path" : "./examples/custom-commands",
   "custom_assertions_path" : "./examples/custom-assertions",
@@ -195,4 +194,4 @@ Here's an extract. By default it is using Firefox as the target browser, but it 
       }
     }
   }
-}</code></pre>
+}</code></pre></div>

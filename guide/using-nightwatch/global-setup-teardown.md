@@ -9,8 +9,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
 #### Example of the globals file with before & after:
 
 <div class="sample-test">
-<pre><code class="language-javascript">
-module.exports = {
+<pre class="line-numbers"><code class="language-javascript">module.exports = {
   someGlobal : 'Here I am',
 
   before: function(done) {

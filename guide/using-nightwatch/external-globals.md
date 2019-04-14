@@ -13,8 +13,7 @@ There are a number of globals which are holding test settings and can control te
 
 #### Example:
 <div class="sample-test">
-<pre><code class="language-javascript">
-module.exports = {
+<pre class="line-numbers"><code class="language-javascript">module.exports = {
   'default' : {
     isLocal : true,
   },
@@ -73,8 +72,7 @@ The global reporter is invoked before calling the built-in junit reporter (or a 
 
 #### Example:
 <div class="sample-test">
-<pre><code class="language-javascript">
-module.exports = {
+<pre class="line-numbers"><code class="language-javascript">module.exports = {
   reporter : function(results, cb) {
     console.log('results', results);
     cb();

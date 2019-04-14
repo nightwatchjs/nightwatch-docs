@@ -8,8 +8,7 @@ The <code>done</code> function <strong>must be called</strong> as the last step 
 
 <h4>Example with beforeEach &amp; afterEach:</h4>
 <div class="sample-test">
-<pre><code class="language-javascript">
-module.exports = {
+<pre class="line-numbers"><code class="language-javascript">module.exports = {
   beforeEach: function(browser, done) {
     // performing an async operation
     setTimeout(function() {
@@ -37,8 +36,7 @@ For an example, refer to the provided [globalsModule](https://github.com/nightwa
 Failing the test intentionally in a test hook can be achieved by calling `done` with an `Error` argument:
 
 <div class="sample-test">
-<pre><code class="language-javascript">
-module.exports = {
+<pre class="line-numbers"><code class="language-javascript">module.exports = {
   afterEach: function(browser, done) {
     // performing an async operation
     performAsync(function(err) {
