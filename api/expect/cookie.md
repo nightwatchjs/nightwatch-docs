@@ -4,9 +4,17 @@ Expect assertions operating on a single cookie after retrieving the entire cooki
 
 ##### Syntax:
 <div class="sample-test" style="max-width:600px">
-  <pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">browser.cookie('cookie-name', ['cookie-domain'])</code></pre>
+  <pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">browser.expect.cookie('cookie-name', ['cookie-domain'])</code></pre>
 </div>
 
+<div class="sample-test">
+ <pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
+  browser.expect.cookie('cookie-name').to.contain('cookie-value');
+  browser.expect.cookie('cookie-name').to.match(/regex/);
+  browser.expect.cookie('loginCookie', 'example.org').to.contain('cookie-value');
+};</code></pre>
+</div>
+   
 ##### Parameters:
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
