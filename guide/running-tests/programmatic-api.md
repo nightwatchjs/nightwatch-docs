@@ -39,8 +39,8 @@ Nightwatch.cli(function(argv) {
   runner
     .setup()
     .startWebDriver()
-    .then(_ => runner.runTests())
-    .then(_ => runner.stopWebDriver())
+    .then(() => runner.runTests())
+    .then(() => runner.stopWebDriver())
     .catch(err => console.error(err));
 });
 </code></pre></div>
