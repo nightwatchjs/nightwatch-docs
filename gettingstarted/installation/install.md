@@ -97,7 +97,7 @@ More details are available on the [Apple Developer website](https://developer.ap
 
 ### Using Selenium Server
 
-Using Selenium Standalone Server used to be the de-factor standard for managing the various browser drivers and services, but starting with Nightwatch 1.0 is no longer required, nor is it recommended, unless you are testing against legacy browsers, such as Internet Explorer. 
+Using Selenium Standalone Server used to be the de facto standard for managing the various browser drivers and services, but starting with Nightwatch 1.0 is no longer required, nor is it recommended, unless you are testing against legacy browsers, such as Internet Explorer. 
 
 It might be required if you have a [Selenium Grid](https://github.com/SeleniumHQ/selenium/wiki/Grid2) environment. 
 
