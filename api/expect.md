@@ -1,6 +1,6 @@
 ## Expect API
 
-Nightwatch provides a fluent BDD-style interface for performing assertions on elements, defined on the <code>expect</code> namespace on the main Nightwatch instance. It is based on the <a href="http://chaijs.com/api/bdd/" target="_blank">Chai Expect</a> assertion library and provides a greater level of flexibility, also adding new capabilities over the classic <code>assert</code> interface.
+Nightwatch provides a fluent BDD-style interface for performing assertions on elements, defined on the <code>expect</code> namespace on the main Nightwatch instance. It is based on the <a href="https://chaijs.com/api/bdd/" target="_blank">Chai Expect</a> assertion library and provides a greater level of flexibility, also adding new capabilities over the classic <code>assert</code> interface.
 
 It uses a chain-able language to construct assertions given an element specified by a css/xpath selector. A simple example looks like the following:
 

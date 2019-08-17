@@ -2,7 +2,7 @@
 
 ### Nightwatch Runner
 
-Nightwatch includes a command-line test runner which makes it easy to run tests and generate useful output. Please refer to the [Installation](http://new.nightwatchjs.org/gettingstarted/#installation) section for details on how to get the runner installed. There are a few different options on how to use the test runner, depending on your installation type.
+Nightwatch includes a command-line test runner which makes it easy to run tests and generate useful output. Please refer to the [Installation](https://new.nightwatchjs.org/gettingstarted/#installation) section for details on how to get the runner installed. There are a few different options on how to use the test runner, depending on your installation type.
 
 #### Global
 If you have installed Nightwatch globally (with `-g` option), the binary `nightwatch` will be available anywhere:

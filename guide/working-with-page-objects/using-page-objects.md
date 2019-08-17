@@ -5,7 +5,7 @@
 The Page Objects methodology is a popular pattern to write end-to-end tests by wrapping the pages or page fragments of a web app into objects.
 The purpose of a page object is to allow a software client to do anything and see anything that a human can by abstracting away the underlying html actions needed to access and manipulate the page.
 
-A comprehensive introduction to Page Objects can be found in <a href="http://martinfowler.com/bliki/PageObject.html" target="_blank">this article</a>.
+A comprehensive introduction to Page Objects can be found in <a href="https://martinfowler.com/bliki/PageObject.html" target="_blank">this article</a>.
 
 <div class="alert alert-warning">
 As of version `1.0` Nightwatch does not support legacy page objects written prior to version `0.7`.
@@ -28,7 +28,7 @@ The URL will usually be defined as a string:
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
-  url: 'http://google.com',
+  url: 'https://google.com',
   elements: {}
 };
 </code></pre>

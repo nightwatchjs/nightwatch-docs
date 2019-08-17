@@ -2,11 +2,11 @@
 
 ### Install Node.js
 
-From [nodejs.org](http://nodejs.org/):
+From [nodejs.org](https://nodejs.org/):
 
 > "Node.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient, perfect for data-intensive real-time applications that run across distributed devices."
 
-There are installation packages and instructions for most major Operating systems on its website [nodejs.org](http://nodejs.org/). Remember to install also the **npm** tool, which is the node package manager and is distributed with the Node.js installer.
+There are installation packages and instructions for most major Operating systems on its website [nodejs.org](https://nodejs.org/). Remember to install also the **npm** tool, which is the node package manager and is distributed with the Node.js installer.
 
 ### Install Nightwatch
 To install the latest version using the <code>npm</code> command line tool, run the following:
@@ -34,25 +34,25 @@ Depending on your target browser, you will need a specific WebDriver server. You
 <tbody>
   <tr>
     <td><a href="https://github.com/mozilla/geckodriver/releases">GeckoDriver</a></td>
-    <td class="browser"><img alt="Mozilla Firefox" src="http://nightwatchjs.org/img/logos/Firefox_Logo_2017.png"/></td>
+    <td class="browser"><img alt="Mozilla Firefox" src="https://nightwatchjs.org/img/logos/Firefox_Logo_2017.png"/></td>
     <td>Standalone server which implements the [W3C WebDriver protocol](https://w3c.github.io/webdriver/#protocol) to communicate with Gecko browsers, such as Firefox.</td>
   </tr>
   
   <tr>
-    <td><a href="http://chromedriver.chromium.org/" target="_blank">ChromeDriver</a></td>
-    <td class="browser"><img alt="Google Chrome" src="http://nightwatchjs.org/img/logos/1200px-Google_Chrome_icon.svg.png"/></td>
+    <td><a href="https://chromedriver.chromium.org/" target="_blank">ChromeDriver</a></td>
+    <td class="browser"><img alt="Google Chrome" src="https://nightwatchjs.org/img/logos/1200px-Google_Chrome_icon.svg.png"/></td>
     <td>Standalone server which implements the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for Chromium, however it is currently in the process of transitioning to the W3C WebDriver spec.<br><br>Available for Chrome on Android and Chrome on Desktop (Mac, Linux, Windows and ChromeOS).</td>
   </tr>
   
   <tr>
      <td><a href="https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/" target="_blank">Microsoft WebDriver</a></td>
-     <td class="browser"><img alt="Microsoft Edge" src="http://nightwatchjs.org/img/logos/Microsoft_Edge_logo.svg.png"/></td>
+     <td class="browser"><img alt="Microsoft Edge" src="https://nightwatchjs.org/img/logos/Microsoft_Edge_logo.svg.png"/></td>
      <td>Windows executable which supports both the W3C WebDriver spec and JSON Wire Protocol for running tests against Microsoft Edge.</td>
   </tr>
   
   <tr>
     <td><a href="https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari" target="_blank">SafariDriver</a></td>
-    <td class="browser"><img alt="Microsoft Edge" src="http://nightwatchjs.org/img/logos/safari_icon_large_2x.png"/></td>
+    <td class="browser"><img alt="Microsoft Edge" src="https://nightwatchjs.org/img/logos/safari_icon_large_2x.png"/></td>
     <td>The `/usr/bin/safaridriver` binary comes pre-installed with recent versions of Mac OS and it's available to use following the instructions on [Apple Developer website](https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari).
     <br><br>More information is available on <a href="https://developer.apple.com/documentation/webkit/about_webdriver_for_safari" target="_blank">About WebDriver for Safari</a> page.
     </td>
@@ -73,7 +73,7 @@ GeckoDriver can be downloaded from the [Releases page](https://github.com/mozill
 
 <h4>ChromeDriver</h4>
 
-ChromeDriver can be downloaded from the [ChromeDriver Downloads](http://chromedriver.chromium.org/downloads) page. Or you can use the [chromedriver](https://www.npmjs.com/package/chromedriver) NPM package as a dependency in your project:
+ChromeDriver can be downloaded from the [ChromeDriver Downloads](https://chromedriver.chromium.org/downloads) page. Or you can use the [chromedriver](https://www.npmjs.com/package/chromedriver) NPM package as a dependency in your project:
 
 <pre>npm install chromedriver --save-dev</pre>
 
@@ -102,18 +102,18 @@ Using Selenium Standalone Server used to be the de-factor standard for managing 
 It might be required if you have a [Selenium Grid](https://github.com/SeleniumHQ/selenium/wiki/Grid2) environment. 
 
 #### Download Java
-Selenium Server is a Java application, which means you will also need to have the [Java Development Kit (JDK)](http://www.oracle.com/technetwork/java/javase/downloads/index.html) installed, minimum required version is 7. You can check this by running `java -version` from the command line.
+Selenium Server is a Java application, which means you will also need to have the [Java Development Kit (JDK)](https://www.oracle.com/technetwork/java/javase/downloads/index.html) installed, minimum required version is 7. You can check this by running `java -version` from the command line.
 
 #### Download Selenium
 
-Download the latest version of the `selenium-server-standalone-{VERSION}.jar` file from the [Selenium downloads page](http://selenium-release.storage.googleapis.com/index.html) and place it on the computer with the browser you want to test.
+Download the latest version of the `selenium-server-standalone-{VERSION}.jar` file from the [Selenium downloads page](https://selenium-release.storage.googleapis.com/index.html) and place it on the computer with the browser you want to test.
 In most cases this will be on your local machine and typically inside your project's source folder.
 
 A good practice is to create a separate subfolder (e.g. `bin`) and place it there as you might have to download other driver binaries if you want to test multiple browsers.  
 
 ##### Running Selenium Automatically
 
-If the server is on the same machine where Nightwatch is running, it can be started/stopped directly by the [Nightwatch Test Runner](http://nightwatchjs.org/guide#test-runner).
+If the server is on the same machine where Nightwatch is running, it can be started/stopped directly by the [Nightwatch Test Runner](https://nightwatchjs.org/guide#test-runner).
 
 ##### Running Selenium Manually
 

@@ -43,7 +43,7 @@ The above will run two environments named `default` and `chrome` in parallel.
 
 #### Terminal Output
 
-Each environment will be run as a separate [`child_process`](http://nodejs.org/api/child_process.html) and the output will be sent to the main process.
+Each environment will be run as a separate [`child_process`](https://nodejs.org/api/child_process.html) and the output will be sent to the main process.
 
 To make the output easier to read, Nightwatch by default buffers the output from each child process and displays everything at the end, grouped by environment.
 

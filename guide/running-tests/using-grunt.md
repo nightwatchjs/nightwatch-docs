@@ -4,7 +4,7 @@
   Support for Grunt has been deprecated and removed from Nightwatch v1.
 </div>
 
-<a href="http://gruntjs.com/" target="_blank">Grunt</a> is a popular JavaScript task runner. Starting with version `0.6` Nightwatch is bundled with 
+<a href="https://gruntjs.com/" target="_blank">Grunt</a> is a popular JavaScript task runner. Starting with version `0.6` Nightwatch is bundled with 
 an easy to use Grunt task which can be used in your existing Grunt-based build configuration for running the tests.
 
 #### Usage

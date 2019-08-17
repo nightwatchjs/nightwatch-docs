@@ -24,7 +24,7 @@ Below are the default settings that will be passed to the Nightwatch instance.
      <td>
       An array of folders (excluding subfolders) where the tests are located.
       <br><br>
-      If this is not specified, the test source must be passed inline as the second argument to the [test runner](http://nightwatchjs.org/guide#nightwatch-runner).
+      If this is not specified, the test source must be passed inline as the second argument to the [test runner](https://nightwatchjs.org/guide#nightwatch-runner).
      </td>
   </tr>
   <tr>
@@ -129,7 +129,7 @@ Below are the default settings that will be passed to the Nightwatch instance.
 
 #### Environment specific settings
 It is likely you will run your tests against multiple environments, and so Nightwatch makes it convenient to define environment specific test settings (under the `"test_settings"` dictionary). 
-You can overwrite any test setting for each environment as needed. More on test environments under the [Nightwatch Runner](http://nightwatchjs.org/guide#test-environments) section. 
+You can overwrite any test setting for each environment as needed. More on test environments under the [Nightwatch Runner](https://nightwatchjs.org/guide#test-environments) section. 
 
 Nightwatch includes a sample configuration file, which contains multiple environments for various type of requirements. It is located inside the [Github repo](https://github.com/nightwatchjs/nightwatch/blob/master/bin/nightwatch.json):
 

@@ -56,4 +56,4 @@ exports.assertion = function() {
 
 </div>
 
-<p class="alert alert-info">Custom assertions also inherit from <a href="http://nodejs.org/api/events.html" target="_blank">EventEmitter</a>. To see some examples, check the assertions module on Github:<br><a href="https://github.com/beatfactor/nightwatch/tree/master/lib/api/assertions" target="_blank">/nightwatch/tree/master/lib/selenium/assertions</a></p>
+<p class="alert alert-info">Custom assertions also inherit from <a href="https://nodejs.org/api/events.html" target="_blank">EventEmitter</a>. To see some examples, check the assertions module on Github:<br><a href="https://github.com/beatfactor/nightwatch/tree/master/lib/api/assertions" target="_blank">/nightwatch/tree/master/lib/selenium/assertions</a></p>

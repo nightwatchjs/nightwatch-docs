@@ -59,7 +59,7 @@ Putting `elements` and `url` together, say you have the following defined above 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
-  url: 'http://google.com',
+  url: 'https://google.com',
   elements: {
     searchBar: {
       selector: 'input[type=text]'
@@ -105,6 +105,7 @@ Next to the selector, other properties can be specified. Here's the full list:
 - **abortOnFailure** - used to overwrite this setting when using `waitForElement*` commands
 - **timeout** - used to overwrite the default timeout for when using `waitForElement*` commands or assertions
 - **retryInterval** - used to overwrite the default retry interval for when using `waitForElement*` commands or assertions
+- **suppressNotFoundErrors** - Some element commands like `.click()` or `.getText()` will throw a `NoSuchElement` error if the element cannot be located, causing the test to fail. If this option is set to `true` then this error is ignored.
 
 Say in the example above, the `searchBar` element selector returns 3 elements and you are interested in the second element.
 

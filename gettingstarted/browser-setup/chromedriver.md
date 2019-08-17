@@ -8,7 +8,7 @@ It is available for Chrome on Android and Chrome on Desktop (Mac, Linux, Windows
 
 #### Download
 
-ChromeDriver can be downloaded from the [ChromeDriver Downloads](http://chromedriver.chromium.org/downloads) page. Or you can use the [chromedriver](https://www.npmjs.com/package/chromedriver) NPM package as a dependency in your project:
+ChromeDriver can be downloaded from the [ChromeDriver Downloads](https://chromedriver.chromium.org/downloads) page. Or you can use the [chromedriver](https://www.npmjs.com/package/chromedriver) NPM package as a dependency in your project:
 
 <pre>npm install chromedriver --save-dev</pre>
 

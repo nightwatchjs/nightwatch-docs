@@ -15,7 +15,7 @@ However this will just log the failure and continue:<br>
 
 #### Node.js Assert Module
 
-The methods from the <a href="http://nodejs.org/api/assert.html" target="_blank">Node.js assert module</a> are also available on the `.assert`/`.verify` namespaces and can be used.
+The methods from the <a href="https://nodejs.org/api/assert.html" target="_blank">Node.js assert module</a> are also available on the `.assert`/`.verify` namespaces and can be used.
 
 #### Automatically retrying failed assertions
 

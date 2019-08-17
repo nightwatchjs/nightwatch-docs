@@ -85,7 +85,7 @@ Writing a test in Mocha is the same as writing it in Nightwatch. Each testcase r
 
     it('uses BDD to run the Google simple test', function(browser) {
       browser
-        .url('http://google.com')
+        .url('https://google.com')
         .expect.element('body').to.be.present.before(1000);
 
       browser.setValue('input[type=text]', ['nightwatch', browser.Keys.ENTER])

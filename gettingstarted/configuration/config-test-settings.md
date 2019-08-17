@@ -2,7 +2,7 @@
 
 #### The `launch_url` property
 This property will be made available to the main Nightwatch api which is used in the tests. Its value depends on which environment is used.
-More on test environments under the [Nightwatch Runner](http://nightwatchjs.org/guide#test-environments) section.
+More on test environments under the [Nightwatch Runner](https://nightwatchjs.org/guide#test-environments) section.
 
 If you run your tests specifying the `integration` environment (with `--env integration`) the `launch_url` will be set to `http://staging.host`, as per the configuration. Otherwise it will have the value defined in the `default` environment (i.e. `http://localhost`).
 
@@ -44,7 +44,7 @@ If we still pass the `--env integration` option to the runner, then our globals 
 #### External Test Globals
 Test globals can also be defined in an external file, specified in the `globals_path` property. 
 
-The external globals file can also contain global test hooks, a custom reporter and other test specific settings. More on [External Globals](http://nightwatchjs.org/guide#external-globals). 
+The external globals file can also contain global test hooks, a custom reporter and other test specific settings. More on [External Globals](https://nightwatchjs.org/guide#external-globals). 
 
 ### Full list of settings
 
@@ -91,7 +91,7 @@ The external globals file can also contain global test hooks, a custom reporter 
     <td>
     Run Nightwatch in unit testing mode, that is no WebDriver session will be created and the tests will not receive the `browser` api object. 
     
-    More on [writing unit tests](http://new.nightwatchjs.org/guide/#unit-testing) in Nightwatch.
+    More on [writing unit tests](https://new.nightwatchjs.org/guide/#unit-testing) in Nightwatch.
     </td>
    </tr>
     
@@ -110,7 +110,7 @@ The external globals file can also contain global test hooks, a custom reporter 
      <td>An object which will be made available within the test and can be overwritten per environment. Example:<br><br>
 <code>"globals" : {<br>&nbsp;&nbsp;"myGlobal" : "some_global"<br>}</code>
 
-Globals can also be defined in an external file. More on [External Globals](http://nightwatchjs.org/guide#external-globals).
+Globals can also be defined in an external file. More on [External Globals](https://nightwatchjs.org/guide#external-globals).
      </td>
    </tr>
 

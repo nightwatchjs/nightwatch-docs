@@ -12,10 +12,38 @@ Each method below allows a `callback` argument to be passed as the last argument
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 this.demoTest = function (browser) {
-  browser.click("#main ul li a.first", function(response) {
+  browser.click("#main ul li a.first", function(result) {
     this.assert.ok(browser === this);
-    this.assert.ok(typeof response == "object");
+    this.assert.ok(typeof result == "object");
   });
+};</code></pre></div>
+
+### Promise in callback
+If the callback returns a `Promise`, the test runner will wait for the promise to settles (i.e. either resolve or reject) before continuing with the rest of the commands.
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
+module.exports = {
+  demoTest: function (browser) {
+    browser
+      .init()
+      .getText("#main ul li", function(result) {
+        return new Promise(function(resolve, reject) {
+          setTimeout(function() {
+            console.log('Value:', result.value);
+            resolve();
+          }, 1000);
+        });
+      })
+      .click('#login button');
+  },
+  
+  demoTestAsync: async function(browser) {
+    await browser.init();
+    const text = await browser.getText("#main ul li", function(result) {
+      return Promise.resolve(resolve.value);
+    });              
+    
+    console.log('text', text);
+  }
 };</code></pre></div>
 
 <p class="alert alert-warning">
