@@ -167,7 +167,7 @@ Globals can also be defined in an external file. More on [External Globals](http
    <tr>
       <td>log_screenshot_data</td>
       <td>boolean</td>
-      <td>false</td>
+      <td>true</td>
       <td>Do not show the Base64 image data in the (verbose) log when taking screenshots.</td>
    </tr>
 
