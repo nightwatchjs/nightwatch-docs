@@ -98,7 +98,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
     <td>`default_path_prefix` <span class="optional">Optional</span></td>
     <td>string</td>
     <td></td>
-    <td>Needed sometimes when using a Selenium Server. The prefix to be added to to all requests (e.g. /wd/hub). 
+    <td>Needed sometimes when using a Selenium Server. The prefix to be added to to all requests (e.g. /wd/hub). When using WebDriver, set this to "" 
     </td>
   </tr>
       
@@ -187,4 +187,3 @@ The Selenium Server can still be used as prior to Nightwatch v1. If both `webdri
  </tr>
  </tbody>
 </table>
-
