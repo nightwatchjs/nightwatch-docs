@@ -7,15 +7,36 @@ The built-in extendable `assert`/`verify` library is available on the Nightwatch
 
 <br>  
 The following will end the test:<br>
-<code>browser.assert.visible('.non_existing');</code>
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">browser.assert.visible('.non_existing');</code></pre></div> 
 
 However this will just log the failure and continue:<br>
-<code>browser.verify.visible('.non_existing');</code>
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">browser.verify.visible('.non_existing');</code></pre></div>
 
-
-#### Node.js Assert Module
+#### Basic Assertions
 
 The methods from the <a href="https://nodejs.org/api/assert.html" target="_blank">Node.js assert module</a> are also available on the `.assert`/`.verify` namespaces and can be used.
+
+#### Negate (".not") Assertions
+
+Since version **1.3**, all the assertions (including custom defined ones) will also have a `".not"` counterpart, which can be used to assert the opposite.
+
+And thus, assertions like `elementNotPresent`, `cssClassNotPresent`, `hidden` are obsolete and have been deprecated.
+
+**Example:**
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
+module.exports = {
+  demoTest: function(browser) {
+    browser.init();
+    
+    browser
+      .assert.not.elementPresent('.not_present') // previously .assert.elementNotPresent()
+      .assert.not.visible('.non_visible'); // previously .assert.hidden()
+      .assert.not.urlContains('http://');
+    
+    // ...
+  }
+}
+</code></pre></div>
 
 #### Automatically retrying failed assertions
 

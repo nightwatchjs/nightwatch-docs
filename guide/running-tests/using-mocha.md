@@ -1,8 +1,9 @@
 ## Using Mocha
 
-Starting with version `0.8` Nightwatch is bundled with a custom version of the popular Mocha test runner which allows running tests using Mocha, thus taking advantage of its interfaces and reporters.
+Starting with version `1.3` Nightwatch is supports writing tests using the BDD _describe_ interface which perhaps removes the need for using Mocha.
+ 
+Still, you can use Mocha and take advantage of its interfaces and reporters.
 
-### Usage
 There are two main ways in which you can use Mocha with Nightwatch.
 
 ### From Nightwatch

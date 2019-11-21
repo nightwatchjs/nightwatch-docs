@@ -63,17 +63,34 @@ With this command, the test will look something like:
 };</code></pre>
 </div>
 
+#### Using async/await in custom commands
+You can also use ES6 `async`/`await` syntax inside function-style custom commands. Here's an example:
+
+<div class="sample-test">
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
+  command: async function () {
+    this.url('http://nightwatchjs.org');
+    this.waitForElementVisible('section#index-container');
+
+    const result = await this.elements('css selector', '#index-container ul.features li');
+    this.assert.strictEqual(result.value.length, 7, 'Feature elements number is correct');
+  }
+};
+</code></pre>
+</div>
+
 #### 2. Class-style commands
-This is how most of the Nightwatch's own commands are written. Your command module needs to export a class constructor with a `command` instance method representing the command function. Commands written like this should inherit from `EventEmitter` and manually signal the `complete` event, to indicate command completion.
+This is how most of the Nightwatch's own commands are written. Your command module needs to export a class constructor with a `command` instance method representing the command function. Class-based custom commands should inherit from `EventEmitter` and have to manually signal the `complete` in order to indicate command completion.
 
 Class-based `command` methods are run in the context (the value of `this`) of the class instance. The `browser` object is available as `this.api`.
 
 The example below is the `.pause()` command, written as an ES6 class:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">const EventEmitter = require('events');
+<pre data-language="javascript"><code class="language-javascript">
+const Events = require('events');
 
-class Pause extends EventEmitter {
+module.exports = class CustomPause extends Events {
   command(ms, cb) {
     // If we don't pass the milliseconds, the client will
     // be suspended indefinitely
@@ -89,14 +106,6 @@ class Pause extends EventEmitter {
 
       this.emit('complete');
     }, ms);
-
-    return this;
   }
-}
-
-module.exports = Pause;</code></pre>
+}</code></pre>
 </div>
-
-<br>
-##### The "complete" event
-Signaling the `complete` event needs to be done inside an asynchronous action (e.g. a `setTimeout` call). Command classes that do not extend `EventEmitter` will be treated similar to command functions, requiring that the `command` method calls at least one Nightwatch api method to be able to complete.

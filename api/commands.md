@@ -18,8 +18,8 @@ this.demoTest = function (browser) {
   });
 };</code></pre></div>
 
-### Promise in callback
-If the callback returns a `Promise`, the test runner will wait for the promise to settles (i.e. either resolve or reject) before continuing with the rest of the commands.
+### Promises in callbacks
+If the callback happens to return a `Promise`, the test runner will wait for the promise to settle (i.e. resolve or reject) before continuing with the rest of the commands.
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 module.exports = {
   demoTest: function (browser) {
