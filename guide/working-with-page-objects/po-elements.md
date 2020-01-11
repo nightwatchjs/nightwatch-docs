@@ -115,7 +115,7 @@ module.exports = {
   elements: {
     searchBar: {
       selector: 'input[type=text]',
-      index: 2
+      index: 1
     }
   }
 };
