@@ -2,7 +2,7 @@
 
 If the Selenium Server is used, then the connection related settings should be placed under the `"selenium""`. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged with the `webdriver` ones. 
 
-The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers, such as [Browserstack][1], [SauceLabs][2] or [CrossBrowserTesting][3]. 
+The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers, such as [Browserstack][1], [LambdaTest][10] [SauceLabs][2] or [CrossBrowserTesting][3]. 
 
 <table class="table table-bordered table-striped">
 <thead>
@@ -223,3 +223,4 @@ Remember to also enable HTTP keepalive for improved network performance.
 [7]:	https://www.npmjs.com/package/iedriver
 [8]:	https://browserstack.com
 [9]:	https://www.npmjs.com/package/dotenv
+[10]: https://www.lambdatest.com/
