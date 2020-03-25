@@ -101,7 +101,7 @@ Writing a test in Mocha is the same as writing it in Nightwatch. Each testcase r
 <p class="alert alert-warning">When using the mocha test runner from Nightwatch some cli options are not available, like `--retries`, `--suiteRetries`, `--reporter`.</p>
 
 ### Using the standard Mocha
-Running Nightwatch tests with the standard Mocha it's also possible, though a bit more boilerplate code is involved and you need to manage the selenium server.
+Running Nightwatch tests with the standard Mocha is also possible, though a bit more boilerplate code is involved and you need to manage the selenium server.
 
 #### Example
 <div class="sample-test">
