@@ -85,7 +85,7 @@ Assertions are what determines if the test passes or not. Assertions are differe
  
 Assertions are also automatically retried using the same mechanism as for implicit waiting on finding elements. 
 
-In the example above there are four assertions: `waitForElementVisible`, `assert.atitleContains`, `assert.visible` on two separate elements, and `assert.containsText`.
+In the example above there are four assertions: `waitForElementVisible`, `assert.titleContains`, `assert.visible` on two separate elements, and `assert.containsText`.
   
 Assertions and their status (pass/fail) are displayed in the terminal. Commands (such as `setValue` or `url`) are only shown in the verbose output.
 
