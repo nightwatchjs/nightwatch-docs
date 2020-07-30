@@ -55,7 +55,7 @@ The following are provided as chainable getters to improve the readability of yo
 
 <div class="sample-test">
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
-  browser.expect.element('#main').text.to.endWith('Watch');
+  browser.expect.element('#main').text.to.endsWith('Watch');
 
   browser.expect.element('#main').text.to.startWith('The');
 };</code></pre>
