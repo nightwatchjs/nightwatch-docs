@@ -49,13 +49,13 @@ The following are provided as chainable getters to improve the readability of yo
 </div>
 
 <div class="apimethod">
-<h3 id="expect-startend">.startsWith(value)/.endsWith(value)</h3>
+<h3 id="expect-startend">.startWith(value)/.endWith(value)</h3>
 
 <p>Same as `equal` / `contain` / `match`.</p>
 
 <div class="sample-test">
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
-  browser.expect.element('#main').text.to.endsWith('Watch');
+  browser.expect.element('#main').text.to.endWith('Watch');
 
   browser.expect.element('#main').text.to.startWith('The');
 };</code></pre>
