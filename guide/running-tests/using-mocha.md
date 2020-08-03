@@ -1,6 +1,6 @@
 ## Using Mocha
 
-Starting with version `1.3` Nightwatch is supports writing tests using the BDD _describe_ interface which perhaps removes the need for using Mocha.
+Starting with version `1.3` Nightwatch supports writing tests using the BDD _describe_ interface which perhaps removes the need for using Mocha.
  
 Still, you can use Mocha and take advantage of its interfaces and reporters.
 
