@@ -180,7 +180,7 @@ Remember to also enable HTTP keepalive for improved network performance.
       }
     },
     
-    browserstack.chrome': {
+    'browserstack.chrome': {
       extends: 'browserstack',
       desiredCapabilities: {
         browserName: 'chrome',

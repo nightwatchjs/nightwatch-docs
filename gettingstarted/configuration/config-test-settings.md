@@ -166,6 +166,13 @@ If you run your tests specifying the `integration` environment (with `--env inte
      <td>false</td>
      <td>Use xpath as the default locator strategy</td>
    </tr>
+
+    <tr>
+     <td>`use_ssl`</td>
+     <td>boolean</td>
+     <td>false</td>
+     <td>Set to true if connecting to a remote Grid server and terminating ssl (https). Set `port` to 443</td>
+   </tr>
    
    <tr>
       <td>`sync_test_names`<br></td>
