@@ -57,7 +57,16 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
      <td>none</td>
      <td>List of cli arguments to be passed to the Webdriver process. This varies for each Webdriver implementation.</td>
    </tr>
-    
+   
+   <tr>
+    <td>`keep_alive` <span class="optional">Optional</span></td>
+    <td>boolean|object</td>
+    <td>false</td>
+    <td>Enable [HTTP Keep-Alive](https://nodejs.org/api/http.html#http_new_agent_options). If set to `true` the keepAlive option is enabled with default settings (`keepAliveMsecs` = 3000). 
+    <br>If set to an object, can specify specify the `keepAliveMsecs` value.
+     <br><br>Example: <code>"keep_alive" : {"enabled" : true, "keepAliveMsecs" : 2000}</code></td>
+  </tr>
+       
   <tr>
     <td>`request_timeout_options` <span class="optional">Optional</span></td>
     <td>object</td>

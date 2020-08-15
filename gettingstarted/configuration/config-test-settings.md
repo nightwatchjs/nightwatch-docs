@@ -31,8 +31,27 @@ The below settings are used to control the way the built-in CLI test runner work
      <td>`test_workers` <br><span class="optional">Optional</span></td>
      <td>boolean|object</td>
      <td>false</td>
-     <td>Whether or not to run individual test suites in parallel using a test worker for each. If set to `true`, runs the tests in parallel and determines the number of workers automatically. <br>If set to an object, can specify specify the number of workers as `"auto"` or a `number`.
-       <br><br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code></td>
+     <td>Whether or not to run individual test suites in parallel using a test worker for each. If set to `true`, runs the tests in parallel and determines the number of workers automatically. 
+       <br><br>If set to an object, can specify specify the number of workers as `"auto"` or a `number`.
+       <br><br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code>
+       <p>Since v1.3.7 you can specify node options to be passed to individual test worker processes, using the `node_options` property.
+       
+       <br><br>Example:<br><br>- This will pass all of `process.execArgv`:<br><br>
+       
+<code>"test_workers": {<br>
+&nbsp;&nbsp;"enabled": true,<br>
+&nbsp;&nbsp;"workers": "auto",<br>
+&nbsp;&nbsp;"node_options": "inherit"<br>
+},</code>
+       
+       <br><br>- This will pass only the specified cli options:<br><br>
+<code>"test_workers": {<br>
+&nbsp;&nbsp;"enabled": true,<br>
+&nbsp;&nbsp;"workers": "auto",<br>
+&nbsp;&nbsp;"node_options": ["--inspect"]<br>
+},</code>
+       </p>
+     </td>
    </tr>
    
     <tr>
@@ -287,6 +306,13 @@ The below settings can be used to control the output and logging when running te
     <td>boolean</td>
     <td>false</td>
     <td>Set this to true if you'd like to not display errors during the execution of the test (they are shown at the end always).</td>
+  </tr> 
+  
+  <tr>
+    <td>`output_timestamp`</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>Set this to true if you'd like to see timestamps next to the logging output.</td>
   </tr> 
   
   <tr>
