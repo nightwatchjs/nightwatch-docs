@@ -45,21 +45,28 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
   </tr>
   
   <tr>
-     <td>`log_path` <span class="optional">Optional</span></td>
+     <td>`ssl`</td>
+     <td>boolean</td>
+     <td></td>
+     <td>Should be set to `true` if connecting to a remote (cloud) service via HTTPS. Also don't forget to set port to 443.</td>
+  </tr>
+    
+  <tr>
+     <td>`log_path`</td>
      <td>string|boolean</td>
      <td>none</td>
      <td>The location where the Webdriver service log file <code>output.log</code> file will be placed. Defaults to current directory.<br>To disable Webdriver logging, set this to <code>false</code></td>
    </tr>
   
    <tr>
-     <td>`cli_args` <span class="optional">Optional</span></td>
+     <td>`cli_args`</td>
      <td>object</td>
      <td>none</td>
      <td>List of cli arguments to be passed to the Webdriver process. This varies for each Webdriver implementation.</td>
    </tr>
    
    <tr>
-    <td>`keep_alive` <span class="optional">Optional</span></td>
+    <td>`keep_alive`</td>
     <td>boolean|object</td>
     <td>false</td>
     <td>Enable [HTTP Keep-Alive](https://nodejs.org/api/http.html#http_new_agent_options). If set to `true` the keepAlive option is enabled with default settings (`keepAliveMsecs` = 3000). 
@@ -68,15 +75,15 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
   </tr>
        
   <tr>
-    <td>`request_timeout_options` <span class="optional">Optional</span></td>
+    <td>`timeout_options`</td>
     <td>object</td>
     <td>
       timeout: 60000
       <br>
       retry_attempts: 0
     </td>
-    <td>Requests to the Webdriver service will timeout in `timeout` ms; A retry will happen `retry_attempts` number of times.
-    <br><br>Example:<br><br>
+    <td>Requests to the Webdriver service will timeout in `timeout` miliseconds; a retry will happen `retry_attempts` number of times.
+    <br><br>Example:<br>
     <code>{timeout: 15000, retry_attempts: 5}</code>
     </td>
   </tr>
@@ -103,7 +110,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    </tr>
   
    <tr>
-     <td>`username` <span class="optional">Optional</span></td>
+     <td>`username`</td>
      <td>string</td>
      <td>none</td>
      <td>Usually only needed for cloud testing Selenium services. In case the server requires credentials this username will be used to compute the <code>Authorization</code> header. <br><br>The value can be also an environment variable, in which case it will look like this:<br>
@@ -112,7 +119,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    </tr>
    
    <tr>
-     <td>`access_key` <span class="optional">Optional</span></td>
+     <td>`access_key`</td>
      <td>string</td>
      <td>none</td>
      <td>This field will be used together with <code>username</code> to compute the <code>Authorization</code> header. <br><br>Like <code>username</code>, the value can be also an environment variable:<br>
@@ -121,14 +128,14 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    </tr>
    
    <tr>
-      <td>`proxy` <span class="optional">Optional</span></td>
+      <td>`proxy`</td>
       <td>string</td>
       <td>none</td>
       <td>Proxy requests to the Webdriver (or Selenium) service. http, https, socks(v5), socks5, sock4, and pac are accepted. Uses <a href="https://github.com/TooTallNate/node-proxy-agent" target="_blank">node-proxy-agent</a>.<br><br>Example: <code>http://user:pass@host:port</code></td>
    </tr>
 
    <tr>
-    <td>`default_path_prefix` <span class="optional">Optional</span></td>
+    <td>`default_path_prefix`</td>
     <td>string</td>
     <td></td>
     <td>Needed sometimes when using a Selenium Server. The prefix to be added to to all requests (e.g. /wd/hub). 
@@ -136,7 +143,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
   </tr>
       
  <tr>
-   <td>`use_legacy_jsonwire` <span class="optional">Optional</span></td>
+   <td>`use_legacy_jsonwire`</td>
    <td>boolean</td>
    <td>false</td>
    <td>Some Webdriver implementations (Safari, Edge) support both the <a href="https://www.w3.org/TR/webdriver/" target="_blank">W3C Webdriver API</a> as well as the legacy <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol" target="_blank">JSON Wire</a> (Selenium) API.</td>

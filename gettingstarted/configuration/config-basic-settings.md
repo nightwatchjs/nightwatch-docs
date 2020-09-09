@@ -24,7 +24,7 @@ Below are the default settings that will be passed to the Nightwatch instance du
     <td>An object containing **WebDriver** related configuration options.</td>
   </tr>
   <tr>
-     <td>`src_folders` <span class="optional">Optional</span></td>
+     <td>`src_folders`</td>
      <td>string|array</td>
      <td>none</td>
      <td>
@@ -34,7 +34,7 @@ Below are the default settings that will be passed to the Nightwatch instance du
      </td>
   </tr>
   <tr>
-    <td>`selenium` <span class="optional">Optional</span></td>
+    <td>`selenium`</td>
     <td>object</td>
     <td></td>
     <td>
@@ -45,28 +45,28 @@ Below are the default settings that will be passed to the Nightwatch instance du
   </tr>
   
    <tr>
-     <td>`custom_commands_path` <span class="optional">Optional</span></td>
+     <td>`custom_commands_path`</td>
      <td>string|array</td>
      <td>none</td>
      <td>Location(s) where custom commands will be loaded from.</td>
    </tr>
    
    <tr>
-     <td>`custom_assertions_path` <span class="optional">Optional</span></td>
+     <td>`custom_assertions_path`</td>
      <td>string|array</td>
      <td>none</td>
      <td>Location(s) where custom assertions will be loaded from.</td>
    </tr>
    
    <tr>
-    <td>`page_objects_path` <br><span class="optional">Optional</span></td>
+    <td>`page_objects_path`</td>
     <td>string|array</td>
     <td>none</td>
     <td>Location(s) where page object files will be loaded from.</td>
   </tr>
   
    <tr>
-     <td>`globals_path` <br><span class="optional">Optional</span></td>
+     <td>`globals_path`</td>
      <td>string</td>
      <td>none</td>
      <td>Location of an external globals module which will be loaded and made available to the test as a property <code>globals</code> on the main client instance. <br><br>Globals can also be defined/overwritten inside a <code>test_settings</code> environment.</td>

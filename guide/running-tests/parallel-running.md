@@ -1,4 +1,4 @@
-## Parallel Running
+### Parallel Running
 
 Nightwatch supports running the tests in parallel in two main ways: 
 - via test workers
@@ -54,3 +54,6 @@ To make the output easier to read, Nightwatch by default buffers the output from
 <div class="alert alert-info">
   You can create a separate environment per browser (by chaining <code>desiredCapabilities</code>) and then run them in parallel. In addition, using the <code>filter</code> and <code>exclude</code> options tests can be split per environment in order to be ran in parallel.
 </div>
+
+- Previous: [Using test tags](/guide/running-tests/test-tags.html)
+- Next: [Disabling or skipping Tests](/guide/running-tests/disabling-tests.html)

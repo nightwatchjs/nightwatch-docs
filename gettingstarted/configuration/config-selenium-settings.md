@@ -1,8 +1,8 @@
 ## Selenium Server Settings
 
-If the Selenium Server is used, then the connection related settings should be placed under the `"selenium""`. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged with the `webdriver` ones. 
+If Selenium Server is being used, then the connection related settings should be placed under the `"selenium""`. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged with the `webdriver` ones. 
 
-The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers, such as [Browserstack][1], [SauceLabs][2], [CrossBrowserTesting][3], or [LambdaTest][4]. 
+The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers, such as [BrowserStack][1], [SauceLabs][2], [CrossBrowserTesting][3], or [LambdaTest][4]. 
 
 <table class="table table-bordered table-striped">
 <thead>
@@ -140,7 +140,7 @@ The following **NPM** packages are assumed to be installed in the current projec
   }
 }</code></pre></div>
 
-### Browserstack Example Configuration
+### BrowserStack Example Configuration
 
 [Browserstack][9] is one of the most popular cloud testing platforms. Using it with Nightwatch is very straightforward and there is configuration in the auto-generated `nightwatch.conf.js` file.
 
@@ -155,7 +155,11 @@ Remember to also enable HTTP keepalive for improved network performance.
   src_folders: [],
   
   webdriver: {
-    keep_alive: true
+    keep_alive: true,
+    timeout_options: {
+      timeout: 60000,
+      retry_attempts: 3
+    }
   }
     
   test_settings: {

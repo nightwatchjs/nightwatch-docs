@@ -52,6 +52,11 @@ The following global properties can used to control the behaviour of the test ru
     // expect assertions
     waitForConditionTimeout : 5000,
 
+    // since 1.4.0 – this controls whether to abort the test execution when an element cannot be located; an error
+    // is logged in all cases, but this also enables skipping the rest of the testcase;
+    // it's being used in element commands such as .click() or .getText()
+    abortOnElementLocateError: false,
+    
     // this will cause waitFor commands on elements to throw an error if multiple
     // elements are found using the given locate strategy and selector
     throwOnMultipleElementsReturned: false,
@@ -130,4 +135,4 @@ If we still pass the `--env integration` option to the runner, then our globals 
 ### External Test Globals
 Test globals can also be defined in an external file, specified by the `"globals_path"` settings in your configuration file. 
 
-The external globals file can also contain global test hooks, a custom reporter and other test specific settings. Refer to the [External Globals](https://nightwatchjs.org/guide#external-globals) section for more details. 
+The external globals file can also contain global test hooks, a custom reporter and other test specific settings. Refer to the [External Globals](/guide/using-nightwatch/external-globals.html) section for more details. 
