@@ -9,7 +9,6 @@ It uses a chain-able language to construct assertions given an element specified
   // start with identifying the element
   // and then assert the element is present
   browser.expect.element('#main').to.be.present;
-
   // or assert the element is visible
   browser.expect.element('#main').to.be.visible;
 };</code></pre></div>
@@ -40,9 +39,7 @@ The following are provided as chainable getters to improve the readability of yo
 <div class="sample-test">
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
   browser.expect.element('#main').text.to.equal('The Night Watch');
-
   browser.expect.element('#main').text.to.contain('The Night Watch');
-
   browser.expect.element('#main').to.have.css('display').which.equals('block');
 };</code></pre>
 </div>
@@ -56,7 +53,6 @@ The following are provided as chainable getters to improve the readability of yo
 <div class="sample-test">
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
   browser.expect.element('#main').text.to.endWith('Watch');
-
   browser.expect.element('#main').text.to.startWith('The');
 };</code></pre>
   </div>
@@ -69,9 +65,7 @@ The following are provided as chainable getters to improve the readability of yo
   <div class="sample-test">
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
   browser.expect.element('#main').text.to.not.equal('The Night Watch');
-
   browser.expect.element('#main').text.to.not.contain('The Night Watch');
-
   browser.expect.element('#main').to.have.css('display').which.does.not.equal('block');
 };</code></pre>
   </div>
@@ -87,7 +81,6 @@ The following are provided as chainable getters to improve the readability of yo
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
   browser.expect.element('#main').text.to.contain('The Night Watch').before(1000);
-
   browser.expect.element('#main').text.to.not.contain('The Night Watch').after(500);
 };</code></pre>
   </div>

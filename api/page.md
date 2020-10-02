@@ -11,8 +11,7 @@ Page objects provide an additional layer of abstraction for test case creation. 
   },
   elements: {
     // shorthand, specifies selector
-    mySubmitButton: 'input[type=submit]'
-
+    mySubmitButton: 'input[type=submit]',
     // full
     myTextInput: {
       selector: 'input[type=text]',
@@ -30,7 +29,6 @@ Page objects provide an additional layer of abstraction for test case creation. 
   props: {
     myPauseTime: 1000
   },
-
   sections: {
     myFooterSection: {
       selector: '#my-footer',
@@ -125,7 +123,6 @@ Every time a factory function like MyPage above is called, a new instance of the
     </tr>
     </thead>
     <tbody>
-
     <tr>
       <td>`api`</td>
       <td>`Object`</td>
@@ -151,13 +148,11 @@ Every time a factory function like MyPage above is called, a new instance of the
       <td>`Object`</td>
       <td>A map of Sections objects defined for the page object. This will only contain sections within the page object module's root `sections` definition. Nested sections are accessible through their parent section's own `section` reference.</td>
     </tr>
-
     <tr>
       <td>`url`</td>
       <td>`string`|`Function`</td>
       <td>The url value from the page object module, either a string or a function depending on how it was defined there.</td>
     </tr>
-
     </tbody>
   </table>
 </div>
@@ -193,13 +188,11 @@ The Nightwatch command and assertions API is inherited by page objects.
     </tr>
     </thead>
     <tbody>
-
     <tr>
       <td>`commands`</td>
       <td>Array</td>
       <td>A list of objects containing functions to represent methods added to the page object instance.</td>
     </tr>
-
     </tbody>
   </table>
 </div>

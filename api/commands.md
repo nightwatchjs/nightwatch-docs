@@ -10,8 +10,7 @@ Some of them are basic commands (such as `url` and `execute`) and others are int
 ### Callback function
 Each method below allows a `callback` argument to be passed as the last argument. The callback function will then be called after the command is completed with the main API (`browser`) as the context and the response object as argument.
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-this.demoTest = function (browser) {
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
   browser.click("#main ul li a.first", function(result) {
     this.assert.ok(browser === this);
     this.assert.ok(typeof result == "object");
@@ -20,8 +19,7 @@ this.demoTest = function (browser) {
 
 ### Promises in callbacks
 If the callback happens to return a `Promise`, the test runner will wait for the promise to settle (i.e. resolve or reject) before continuing with the rest of the commands.
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">module.exports = {
   demoTest: function (browser) {
     browser
       .init()
@@ -35,13 +33,11 @@ module.exports = {
       })
       .click('#login button');
   },
-  
   demoTestAsync: async function(browser) {
     await browser.init();
     const text = await browser.getText("#main ul li", function(result) {
-      return Promise.resolve(resolve.value);
+      return Promise.resolve(result.value);
     });              
-    
     console.log('text', text);
   }
 };</code></pre></div>

@@ -27,12 +27,10 @@ And thus, assertions like `elementNotPresent`, `cssClassNotPresent`, `hidden` ar
 module.exports = {
   demoTest: function(browser) {
     browser.init();
-    
     browser
       .assert.not.elementPresent('.not_present') // previously .assert.elementNotPresent()
       .assert.not.visible('.non_visible') // previously .assert.hidden()
       .assert.not.urlContains('http://');
-    
     // ...
   }
 }
