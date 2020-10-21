@@ -49,7 +49,7 @@ The following are provided as chainable getters to improve the readability of yo
 </div>
 
 <div class="apimethod">
-<h3 id="expect-startend">.startsWith(value)/.endsWith(value)</h3>
+<h3 id="expect-startend">.startWith(value)/.endWith(value)</h3>
 
 <p>Same as `equal` / `contain` / `match`.</p>
 

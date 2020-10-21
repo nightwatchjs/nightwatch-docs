@@ -1,8 +1,8 @@
 ## Selenium Server Settings
 
-If the Selenium Server is used, then the connection related settings should be placed under the `"selenium""`. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged with the `webdriver` ones. 
+If Selenium Server is being used, then the connection related settings should be placed under the `"selenium""`. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged with the `webdriver` ones. 
 
-The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers, such as [Browserstack][1], [SauceLabs][2] or [CrossBrowserTesting][3]. 
+The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers, such as [BrowserStack][1], [SauceLabs][2], [CrossBrowserTesting][3], or [LambdaTest][4]. 
 
 <table class="table table-bordered table-striped">
 <thead>
@@ -83,10 +83,10 @@ Here's an example configuration as part of the `nightwatch.conf.js` which uses a
 
 The following **NPM** packages are assumed to be installed in the current project:
 
-- [geckodriver][4] 
-- [chromedriver][5]
-- [selenium-server][6]
-- [iedriver][7]
+- [geckodriver][5] 
+- [chromedriver][6]
+- [selenium-server][7]
+- [iedriver][8]
 
 <div class="sample-test">
 <pre><code class="language-javascript">module.exports = {
@@ -140,11 +140,11 @@ The following **NPM** packages are assumed to be installed in the current projec
   }
 }</code></pre></div>
 
-### Browserstack Example Configuration
+### BrowserStack Example Configuration
 
-[Browserstack][8] is one of the most popular cloud testing platforms. Using it with Nightwatch is very straightforward and there is configuration in the auto-generated `nightwatch.conf.js` file.
+[Browserstack][9] is one of the most popular cloud testing platforms. Using it with Nightwatch is very straightforward and there is configuration in the auto-generated `nightwatch.conf.js` file.
 
-Once you have an account, you need to set the following environment variables. [Dotenv][9] files are also supported by Nightwatch.
+Once you have an account, you need to set the following environment variables. [Dotenv][10] files are also supported by Nightwatch.
 - `BROWSERSTACK_USER`
 - `BROWSERSTACK_KEY`  
 
@@ -155,7 +155,11 @@ Remember to also enable HTTP keepalive for improved network performance.
   src_folders: [],
   
   webdriver: {
-    keep_alive: true
+    keep_alive: true,
+    timeout_options: {
+      timeout: 60000,
+      retry_attempts: 3
+    }
   }
     
   test_settings: {
@@ -180,7 +184,7 @@ Remember to also enable HTTP keepalive for improved network performance.
       }
     },
     
-    browserstack.chrome': {
+    'browserstack.chrome': {
       extends: 'browserstack',
       desiredCapabilities: {
         browserName: 'chrome',
@@ -217,9 +221,10 @@ Remember to also enable HTTP keepalive for improved network performance.
 [1]:	https://browserstack.com
 [2]:	https://saucelabs.com/
 [3]:	https://crossbrowsertesting.com/
-[4]:	https://www.npmjs.com/package/geckodriver
-[5]:	https://www.npmjs.com/package/chromedriver
-[6]:	https://www.npmjs.com/package/selenium-server
-[7]:	https://www.npmjs.com/package/iedriver
-[8]:	https://browserstack.com
-[9]:	https://www.npmjs.com/package/dotenv
+[4]:  https://www.lambdatest.com/
+[5]:	https://www.npmjs.com/package/geckodriver
+[6]:	https://www.npmjs.com/package/chromedriver
+[7]:	https://www.npmjs.com/package/selenium-server
+[8]:	https://www.npmjs.com/package/iedriver
+[9]:	https://browserstack.com
+[10]:	https://www.npmjs.com/package/dotenv

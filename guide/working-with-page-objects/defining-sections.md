@@ -1,4 +1,4 @@
-## Defining Sections
+### Defining Sections
 
 Sometimes it is useful to define sections of a page. Sections do 2 things:
 

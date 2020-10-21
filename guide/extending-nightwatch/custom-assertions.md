@@ -1,4 +1,4 @@
-## Writing Custom Assertions
+### Writing Custom Assertions
 
 Nightwatch allows you to even define your own assertions, extending the available `.assert` and `.verify` namespaces.
 

@@ -1,6 +1,4 @@
-## Running Tests
-
-### Nightwatch Runner
+### Nightwatch CLI Runner
 
 Nightwatch includes a command-line test runner which makes it easy to run tests and generate useful output. Please refer to the [Installation](https://new.nightwatchjs.org/gettingstarted/#installation) section for details on how to get the runner installed. There are a few different options on how to use the test runner, depending on your installation type.
 
@@ -10,7 +8,9 @@ If you have installed Nightwatch globally (with `-g` option), the binary `nightw
 <pre><code class="language-bash">nightwatch [source] [options]</code></pre>
 
 #### Project specific
-If you have Nightwatch installed as a dependency of your project, you can refer the binary from the `node_modules/.bin` folder:
+If you have Nightwatch installed as a dependency of your project, you can refer the binary from the `node_modules/.bin` folder or use the [`npx`](https://www.npmjs.com/package/npx) command which is provided by NPM.
+
+<pre><code class="language-bash">npx nightwatch [source] [options]</code></pre>
 
 ##### Linux and MacOSX:
 <pre><code class="language-bash">./node_modules/.bin/nightwatch [source] [options]</code></pre>
@@ -36,3 +36,5 @@ The optional `source` argument can be either one or more files or an entire fold
 
 ##### Example - 1 individual test and 1 folder:
 <pre><code class="language-bash">nightwatch tests/one/test.js tests/utils</code></pre>
+
+- Next: [Command-line Options](/guide/running-tests/command-line-options.html)
