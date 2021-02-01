@@ -36,7 +36,7 @@ The communication can also be facilitated by the [Selenium Server][13] (also kno
 
 ![Selenium Server Operation][image-2]
 
-Nightwatch is sometimes incorrectly described as a "Selenium binding" library. While it's true that Nightwatch can be (and is often) used together with the [Selenium Server][18] it's important to remember that Nightwatch is a complete testing solution which contains a built-in CLI test runner, an extendible command and assertion library, and support for page object model.  
+Nightwatch is sometimes incorrectly described as a "Selenium binding" library. While it's true that Nightwatch can be (and is often) used together with the [Selenium Server][18] it's important to remember that Nightwatch is a complete testing solution which contains a built-in CLI test runner, an extendable command and assertion library, and support for page object model.  
 
 
 [1]:	https://nodejs.org/
