@@ -48,7 +48,7 @@ Considering this setup, to run tests, for instance, against Safari, we would run
 
 <pre><code class="language-bash">nightwatch --env safari</code></pre>
 
-Refer to the [Running Tests][1] documentation section to learn more about how to user the Nightwatch test runner.
+Refer to the [Running Tests][1] documentation section to learn more about how to use the Nightwatch test runner.
 
 ### Extending Test Environments
 
