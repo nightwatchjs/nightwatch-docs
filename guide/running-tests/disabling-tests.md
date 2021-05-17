@@ -51,7 +51,7 @@ Here's an example:
 
 #### Running only a certain test case
 
-If you're interested in running a particular test case inside an entire test suite (i.e. an `it()` or `test()` function inside a `describe()` block), use either the `it.only()
+If you're interested in running a particular test case inside an entire test suite (i.e. an `it()` or `test()` function inside a `describe()` block), use either the `it.only()`
 or the `test.only()` functions, which are equivalent.
 
 ##### Example
