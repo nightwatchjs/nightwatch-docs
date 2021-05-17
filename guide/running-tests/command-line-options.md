@@ -137,5 +137,5 @@ write(results, options, done) {
   </table>
 </div>
 
-- Previous: [Using the Nightwatch CLI runner](/guide/unning-tests/nightwatch-runner.html)
+- Previous: [Using the Nightwatch CLI runner](/guide/running-tests/nightwatch-runner.html)
 - Next: [Using Test Environments](/guide/running-tests/test-environments.html)
