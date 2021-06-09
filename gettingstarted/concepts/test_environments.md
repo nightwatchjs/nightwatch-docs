@@ -48,13 +48,13 @@ Considering this setup, to run tests, for instance, against Safari, we would run
 
 <pre><code class="language-bash">nightwatch --env safari</code></pre>
 
-Refer to the [Running Tests][1] documentation section to learn more about how to user the Nightwatch test runner.
+Refer to the [Running Tests][1] documentation section to learn more about how to use the Nightwatch test runner.
 
 ### Extending Test Environments
 
 In some cases, you will need to extend another environment which is not the `default` one. A common scenario for this use case is the situation when you are using the Selenium Server or a cloud-based testing service (such as [Sauce Labs][2] or [Browserstack][3]). 
 
-In this case you will need most likely need a base environment for common settings (such as `host` or `port`) and several sub-environments for each target browser (e.g. Firefox, Chrome). 
+In this case you will most likely need a base environment for common settings (such as `host` or `port`) and several sub-environments for each target browser (e.g. Firefox, Chrome). 
 
 Going back to the auto-generated configuration file, `nightwatch.conf.js`, we have provided an example structure for using the Selenium Server with Chrome and Firefox.  
 
