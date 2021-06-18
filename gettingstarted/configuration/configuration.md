@@ -10,9 +10,9 @@ Since version **1.3**, Nightwatch will generate a `nightwatch.conf.js` config fi
 
 So far, we have included support for Chrome, Firefox, Safari, and Internet Explorer. The following packages can be used from NPM and, if installed, Nightwatch will automatically detect and configure the test runner:
 
-- [geckodriver][2] - for running tests in Firefox
-- [chromedriver][3] - for running tests in Chrome
-- [selenium-server][4] - for using Selenium Server
+- [geckodriver][2] – for running tests in Firefox
+- [chromedriver][3] – for running tests in Chrome
+- [selenium-server][4] – for using Selenium Server
 
 ### Manual Configuration
 Create the `nightwatch.json` in the project's root folder.
@@ -76,6 +76,10 @@ Here's an example config file which uses Firefox as target browser.
   }
 };
 </code></pre></div>
+
+### Defaults
+Nightwatch has a default configuration object with pre-defined values. These values can be overwritten as needed. 
+You can view the entire defaults config [on Github](https://github.com/nightwatchjs/nightwatch/blob/master/lib/settings/defaults.js). 
 
 [1]:	/gettingstarted/installation/#install-webdriver
 [2]:	https://www.npmjs.com/package/geckodriver

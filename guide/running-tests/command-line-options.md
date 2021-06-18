@@ -1,4 +1,4 @@
-## Command-line Options
+### Command-line Options
 
 The test runner supports a number of run-time options to be passed to. To view all, run the following:
 
@@ -136,3 +136,6 @@ write(results, options, done) {
     </tbody>
   </table>
 </div>
+
+- Previous: [Using the Nightwatch CLI runner](/guide/running-tests/nightwatch-runner.html)
+- Next: [Using Test Environments](/guide/running-tests/test-environments.html)

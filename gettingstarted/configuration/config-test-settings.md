@@ -13,7 +13,7 @@ The below settings are used to control the way the built-in CLI test runner work
   </thead>
   <tbody>
     <tr>
-      <td>`test_runner` <br><span class="optional">Optional</span></td>
+      <td>`test_runner`</td>
       <td>string|object</td>
       <td>"default"</td>
       <td>Specifies which test runner to use when running the tests. Values can be either `default` (built-in nightwatch runner) or `mocha`.  
@@ -21,22 +21,41 @@ The below settings are used to control the way the built-in CLI test runner work
      </tr>
     
     <tr>
-     <td>`parallel_process_delay` <br><span class="optional">Optional</span></td>
+     <td>`parallel_process_delay`</td>
      <td>integer</td>
      <td>10</td>
      <td>Specifies the delay(in milliseconds) between starting the child processes when running in parallel mode.</td>
    </tr>
    
    <tr>
-     <td>`test_workers` <br><span class="optional">Optional</span></td>
+     <td>`test_workers`</td>
      <td>boolean|object</td>
      <td>false</td>
-     <td>Whether or not to run individual test suites in parallel using a test worker for each. If set to `true`, runs the tests in parallel and determines the number of workers automatically. <br>If set to an object, can specify specify the number of workers as `"auto"` or a `number`.
-       <br><br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code></td>
+     <td>Whether or not to run individual test suites in parallel using a test worker for each. If set to `true`, runs the tests in parallel and determines the number of workers automatically. 
+       <br><br>If set to an object, can specify specify the number of workers as `"auto"` or a `number`.
+       <br><br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code>
+       <p>Since v1.3.7 you can specify node options to be passed to individual test worker processes, using the `node_options` property.
+       
+       <br><br>Example:<br><br>- This will pass all of `process.execArgv`:<br><br>
+       
+<code>"test_workers": {<br>
+&nbsp;&nbsp;"enabled": true,<br>
+&nbsp;&nbsp;"workers": "auto",<br>
+&nbsp;&nbsp;"node_options": "inherit"<br>
+},</code>
+       
+       <br><br>- This will pass only the specified cli options:<br><br>
+<code>"test_workers": {<br>
+&nbsp;&nbsp;"enabled": true,<br>
+&nbsp;&nbsp;"workers": "auto",<br>
+&nbsp;&nbsp;"node_options": ["--inspect"]<br>
+},</code>
+       </p>
+     </td>
    </tr>
    
     <tr>
-     <td>`unit_tests_mode` <br><span class="optional">Optional</span></td>
+     <td>`unit_tests_mode`</td>
      <td>boolean</td>
      <td>false</td>
      <td>Controls whether to run tests in unit testing mode, which means the session will not automatically be created.</td>
@@ -147,6 +166,13 @@ If you run your tests specifying the `integration` environment (with `--env inte
      <td>false</td>
      <td>Use xpath as the default locator strategy</td>
    </tr>
+
+    <tr>
+     <td>`use_ssl`</td>
+     <td>boolean</td>
+     <td>false</td>
+     <td>Set to true if connecting to a remote Grid server via https. Also don't forget to set `port` to 443.</td>
+   </tr>
    
    <tr>
       <td>`sync_test_names`<br></td>
@@ -156,11 +182,11 @@ If you run your tests specifying the `integration` environment (with `--env inte
    </tr>
    
    <tr>
-        <td>`persist_globals`</td>
-        <td>boolean</td>
-        <td>false</td>
-        <td>Set this to `true` if you'd like to persist the same globals object between testsuite runs or have a (deep) copy of it per each testsuite.</td>
-       </tr>
+      <td>`persist_globals`</td>
+      <td>boolean</td>
+      <td>false</td>
+      <td>Set this to `true` if you'd like to persist the same globals object between testsuite runs or have a (deep) copy of it per each testsuite.</td>
+     </tr>
        
     <tr>
       <td>`selenium_host` <br><span class="optional">Deprecated</span> - use `selenium.host`</td>
@@ -191,7 +217,7 @@ The below settings can be used to define ways of filtering test files.
   </thead>
   <tbody>
     <tr>
-      <td>exclude</td>
+      <td>`exclude`</td>
       <td>array</td>
       <td></td>
       <td>An array of folders or file patterns to be skipped (relative to the main source folder).<br>
@@ -203,7 +229,7 @@ The below settings can be used to define ways of filtering test files.
     </tr>
 
   <tr>
-    <td>filter</td>
+    <td>`filter`</td>
     <td>string</td>
     <td></td>
     <td>Folder or file pattern to be used when loading the tests. Files that don't match this pattern will be ignored.<br>
@@ -213,17 +239,17 @@ The below settings can be used to define ways of filtering test files.
   </tr>    
   
   <tr>
-     <td>skipgroup<br></td>
+     <td>`skipgroup`<br></td>
      <td>string</td>
      <td></td>
      <td>Skip a group of tests (a subfolder); can be a list of comma-separated values (no space).</td>
   </tr>
   
   <tr>
-     <td>skiptags<br></td>
+     <td>`skiptags`<br></td>
      <td>string</td>
      <td></td>
-     <td>Skip tests by tag name; can be a list of comma-separated values (no space)</td>
+     <td>Skip tests by tag name; can be a list of comma-separated values (no space).</td>
   </tr>  
   </tbody>
 </table>
@@ -287,6 +313,13 @@ The below settings can be used to control the output and logging when running te
     <td>boolean</td>
     <td>false</td>
     <td>Set this to true if you'd like to not display errors during the execution of the test (they are shown at the end always).</td>
+  </tr> 
+  
+  <tr>
+    <td>`output_timestamp`</td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>Set this to true if you'd like to see timestamps next to the logging output.</td>
   </tr> 
   
   <tr>

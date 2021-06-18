@@ -32,11 +32,11 @@ Most of the times, Nightwatch needs to send at least 2 requests to the WebDriver
 
 <h3 id="nightwatch-selenium-server"><span>Nightwatch &amp; Selenium Server</span></h3>
 
-The communication can also be facilitated by the [Selenium Server][13] (also known as Selenium Grid) or a compatible cloud-based testing platform (like [Browserstack][14], [SauceLabs][15] or [CrossBrowserTesting][16]).
+The communication can also be facilitated by the [Selenium Server][13] (also known as Selenium Grid) or a compatible cloud-based testing platform (like [Browserstack][14], [SauceLabs][15], [CrossBrowserTesting][16], or [LambdaTest][17]).
 
 ![Selenium Server Operation][image-2]
 
-Nightwatch is sometimes incorrectly described as a "Selenium binding" library. While it's true that Nightwatch can be (and is often) used together with the [Selenium Server][17] it's important to remember that Nightwatch is a complete testing solution which contains a built-in CLI test runner, an extendible command and assertion library, and support for page object model.  
+Nightwatch is sometimes incorrectly described as a "Selenium binding" library. While it's true that Nightwatch can be (and is often) used together with the [Selenium Server][18] it's important to remember that Nightwatch is a complete testing solution which contains a built-in CLI test runner, an extendible command and assertion library, and support for page object model.  
 
 
 [1]:	https://nodejs.org/
@@ -55,7 +55,8 @@ Nightwatch is sometimes incorrectly described as a "Selenium binding" library. W
 [14]:	https://www.browserstack.com/
 [15]:	https://saucelabs.com/
 [16]:	https://crossbrowsertesting.com/
-[17]:	https://selenium.dev/downloads/
+[17]: https://www.lambdatest.com/
+[18]:	https://selenium.dev/downloads/
 
 [image-1]:	/img/operation.png
 [image-2]:	/img/operation-cloud.png

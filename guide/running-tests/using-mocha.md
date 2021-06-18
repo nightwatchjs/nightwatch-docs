@@ -1,12 +1,12 @@
-## Using Mocha
+### Using mocha as a test runner
 
-Starting with version `1.3` Nightwatch is supports writing tests using the BDD _describe_ interface which perhaps removes the need for using Mocha.
+Starting with version `1.3` Nightwatch supports writing tests using the BDD _describe_ interface which perhaps removes the need for using Mocha.
  
 Still, you can use Mocha and take advantage of its interfaces and reporters.
 
 There are two main ways in which you can use Mocha with Nightwatch.
 
-### From Nightwatch
+#### From Nightwatch
 Mocha is used as an alternative test runner to the built-in one. This is done by specifying the `"test_runner"` option in the `nightwatch.json` configuration file.
 
 Custom options can also be specified for Mocha:
@@ -58,7 +58,7 @@ The `test_runner` option can also be specified at test environment level:
 </code></pre>
 </div>
 
-#### Example
+##### Example:
 Writing a test in Mocha is the same as writing it in Nightwatch. Each testcase receives the `browser` object, `hooks` also receiving a `done` callback for async operations.
 
 <div class="sample-test">
@@ -100,10 +100,12 @@ Writing a test in Mocha is the same as writing it in Nightwatch. Each testcase r
 
 <p class="alert alert-warning">When using the mocha test runner from Nightwatch some cli options are not available, like `--retries`, `--suiteRetries`, `--reporter`.</p>
 
+
 ### Using the standard Mocha
 Running Nightwatch tests with the standard Mocha is also possible, though a bit more boilerplate code is involved and you need to manage the selenium server.
 
-#### Example
+
+##### Example:
 <div class="sample-test">
 <pre><code class="language-javascript">
 var nightwatch = require('nightwatch');
@@ -164,3 +166,5 @@ describe('Github', function() {
 
 </code></pre>
 </div>
+
+- Previous: [Using the Nightwatch programmatic API ](/guide/running-tests/programmatic-api.html)

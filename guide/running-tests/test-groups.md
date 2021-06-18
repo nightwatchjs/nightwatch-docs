@@ -1,8 +1,8 @@
-## Test Groups
+### Using Test Groups
 
 Nightwatch makes it possible to organize your test scripts into groups and run them as needed. To group tests together just place them in the same sub-folder. The folder name is the name of the group.
 
-### Example:
+#### Example:
 <pre>
 lib/
   ├── selenium-server-standalone.jar
@@ -36,3 +36,6 @@ Also, if you would want to skip running the `smoketests` group you would do the 
 To skip multiple groups, just add them as comma-separated:
 
 <pre><code class="language-bash">nightwatch --skipgroup addressbook,chat</code></pre>
+
+- Previous: [Using Test Environments](/guide/running-tests/test-environments.html)
+- Next: [Using Test Tags](/guide/running-tests/test-tags.html)

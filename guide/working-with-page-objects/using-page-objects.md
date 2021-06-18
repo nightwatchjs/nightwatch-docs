@@ -1,5 +1,3 @@
-## Working with Page Objects
-
 ### Using Page Objects
 
 The Page Objects methodology is a popular pattern to write end-to-end tests by wrapping the pages or page fragments of a web app into objects.

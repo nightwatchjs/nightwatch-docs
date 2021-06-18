@@ -1,6 +1,4 @@
-## Unit Testing with Nightwatch
-
-### Writing Unit Tests
+### Writing Unit Tests with Nightwatch
 Unit testing in Nightwatch has been refined in version `0.9`. Unit tests now written in Nightwatch are also fully compatible with [Mocha's Exports](https://mochajs.org/#exports) interface, so you can use either test runners.
 
 #### Unit Tests Mode
@@ -26,7 +24,7 @@ You can set the `@unitTest` property to true if you'd like to have individual te
 <pre data-language="javascript"><code class="language-javascript">const assert = require('assert');
 
 module.exports = {
-  '@unitTest' : true,
+  '@unitTest': true,
 
   'demo UnitTest' : function (done) {
     assert.equal('TEST', 'TEST');
@@ -39,7 +37,7 @@ module.exports = {
 </div>
 
 #### Assertion framework
-Starting with `0.9`, in the improved support for unit tests, the `browser` object is no longer passed as an argument to the test. The only argument passed now is the `done` callback to be used for asynchronous tests.
+For unit tests, the `browser` object is not passed as an argument to the test case. The only argument passed is the `done` callback to be used for asynchronous tests.
 
 You can use whatever assertion framework you like. [Chai.js](https://chaijs.com/) is quite a good one and very flexible.
 
@@ -156,4 +154,3 @@ In the meantime you can write a custom reporter which will output coverage data.
 There are some hosted services which provide the reporting and metrics for you in a modern web interface. These services will typically require coverage data in LCOV format. Nightwatch uses [coveralls.io](https://coveralls.io/github/nightwatchjs/nightwatch?branch=master).
 
 For details on how an LCOV reporter should look like and how to integrate with your project, you can check out the [mocha-lcov-reporter](https://www.npmjs.com/package/mocha-lcov-reporter).
-
