@@ -75,4 +75,4 @@ Below are the default settings that will be passed to the Nightwatch instance du
 </table>
 
 [1]:	https://nightwatchjs.org/guide#test-environments
-[2]:	https://github.com/nightwatchjs/nightwatch/blob/master/bin/nightwatch.json
+[2]:	https://github.com/nightwatchjs/nightwatch/blob/main/bin/nightwatch.json

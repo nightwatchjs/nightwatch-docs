@@ -79,7 +79,7 @@ Here's an example config file which uses Firefox as target browser.
 
 ### Defaults
 Nightwatch has a default configuration object with pre-defined values. These values can be overwritten as needed. 
-You can view the entire defaults config [on Github](https://github.com/nightwatchjs/nightwatch/blob/master/lib/settings/defaults.js). 
+You can view the entire defaults config [on Github](https://github.com/nightwatchjs/nightwatch/blob/main/lib/settings/defaults.js). 
 
 [1]:	/gettingstarted/installation/#install-webdriver
 [2]:	https://www.npmjs.com/package/geckodriver

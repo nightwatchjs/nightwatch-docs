@@ -73,7 +73,7 @@ The <code>done</code> function <strong>must be called</strong> as the last step 
 #### Controlling the `done` invocation timeout
 By default the `done` invocation timeout is set to 10 seconds (2 seconds for unit tests). In some cases this might not be sufficient and to avoid a timeout error, you can increase this timeout by defining an `asyncHookTimeout` property (in milliseconds) in your external globals file (see below for details on external globals).
 
-For an example, refer to the provided [globalsModule](https://github.com/nightwatchjs/nightwatch/blob/master/examples/globalsModule.js#L20) example.
+For an example, refer to the provided [globalsModule](https://github.com/nightwatchjs/nightwatch/blob/main/examples/globalsModule.js#L20) example.
 
 #### Explicitly failing the test
 Failing the test intentionally in a test hook can be achieved by calling `done` with an `Error` argument:

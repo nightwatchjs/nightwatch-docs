@@ -10,7 +10,7 @@ You can overwrite globals per environment as needed. Say you have your tests run
 
 For scenarios where greater flexibility is needed, there are a number of globals which are holding test settings and can control test execution.
 
-Here's the entire global object with the default values, which can be overwritten as needed. You can also view the source code on Github: [github.com/nightwatchjs/nightwatch/blob/master/lib/settings/defaults.js](https://github.com/nightwatchjs/nightwatch/blob/master/lib/settings/defaults.js).
+Here's the entire global object with the default values, which can be overwritten as needed. You can also view the source code on Github: [github.com/nightwatchjs/nightwatch/blob/main/lib/settings/defaults.js](https://github.com/nightwatchjs/nightwatch/blob/main/lib/settings/defaults.js).
 
 <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">module.exports = {
     // An object which will be made available on the main test api, throughout the test execution

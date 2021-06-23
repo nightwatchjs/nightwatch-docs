@@ -18,7 +18,7 @@ To enable test workers, set the `test_workers` top-level property, like so:
 }
 </code></pre>
 
-or, simply:
+or:
 
 <pre><code class="language-javascript">{"test_workers": true}</code></pre>
 
@@ -29,17 +29,21 @@ The `workers` option configures how many child processes can run concurrently.
 - `"auto"` - determined by number of CPUs e.g. 4 CPUs means 4 workers
 - `{number}` - specifies an exact number of workers
 
+<br>
+Another way is to pass the `--parallel` cli switch:
+<pre><code class="language-bash">nightwatch --parallel</code></pre>
+
 Test concurrency is done at the file level. Each test file will fill a test worker slot. Individual tests/steps in a test file will not run concurrently.
 
 <div class="alert alert-warning">
-Version 0.9 brings improved support for displaying output when running tests in parallel. We recommend setting `detailed_output` to `false` in your test settings for improved output readability.
+To improve support for displaying the output when running tests in parallel, we recommend setting `detailed_output` to `false` in your test settings (and also make sure `live_output` is enabled.
 </div>
 
 #### Multiple Environments
 
-<pre><code class="language-bash">nightwatch -e default,chrome</code></pre>
+<pre><code class="language-bash">nightwatch -e firefox,chrome</code></pre>
 
-The above will run two environments named `default` and `chrome` in parallel.
+The above will run two environments named `firefox` and `chrome` in parallel.
 
 #### Terminal Output
 
@@ -54,6 +58,14 @@ To make the output easier to read, Nightwatch by default buffers the output from
 <div class="alert alert-info">
   You can create a separate environment per browser (by chaining <code>desiredCapabilities</code>) and then run them in parallel. In addition, using the <code>filter</code> and <code>exclude</code> options tests can be split per environment in order to be ran in parallel.
 </div>
+
+#### Via Workers + Multiple Environments
+
+It is very useful to be able to run your tests against multiple browsers in parallel and also distribute your testcases across multiple workers.
+From **v1.7** you are able to do just that.
+<pre><code class="language-bash">nightwatch -e firefox,chrome --parallel</code></pre>
+
+The above will run two environments named `firefox` and `chrome` in parallel.
 
 - Previous: [Using test tags](/guide/running-tests/test-tags.html)
 - Next: [Disabling or skipping Tests](/guide/running-tests/disabling-tests.html)

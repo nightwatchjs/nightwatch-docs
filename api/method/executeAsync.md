@@ -4,7 +4,7 @@
 <pre data-language="javascript" class=" language-javascript"><code class=" language-javascript">
 module.exports = {
   before : function(browser) {
-    // see https://github.com/nightwatchjs/nightwatch/blob/master/examples/globalsModule.js#L12
+    // see https://github.com/nightwatchjs/nightwatch/blob/main/examples/globalsModule.js#L12
     browser.globals.waitForConditionTimeout = 5000;
   },
 

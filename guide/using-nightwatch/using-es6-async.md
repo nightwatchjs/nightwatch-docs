@@ -3,11 +3,7 @@
 Starting with version `v1.1` it is also possible to write tests as an ES6 [async function][8].
 Simply by doing so, it will enable the API commands to return a promise and thus making it possible to use the [`await`][9] operator to retrieve the result, instead of the callback, as it is by default.
 
-This greatly improves the readability and ease of writing of tests. However, please note that it will no longer be possible to chain the API commands when using an async function.
-
-<div class="alert alert-info">
-  The `assert` and `expect` APIs will still work as before `v1.1` and they will support chaining, since the assertions do not return anything.
-</div>
+This greatly improves the readability and ease of writing of tests. Chaining the API commands when using an async function is possible since version 1.7.
 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">module.exports = {

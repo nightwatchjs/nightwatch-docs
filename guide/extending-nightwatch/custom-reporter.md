@@ -18,7 +18,7 @@ module.exports = {
 
 Add your reporter in the external globals file. Read more about [external globals](/guide/using-nightwatch/external-globals.html).
 
-See the provided [globalsModule.js](https://github.com/beatfactor/nightwatch/blob/master/examples/globalsModule.js) for an example.
+See the provided [globalsModule.js](https://github.com/nightwatchjs/nightwatch/blob/main/examples/globalsModule.js) for an example.
 
 #### Example:
 <div class="sample-test">

@@ -19,9 +19,9 @@ To install the latest version using the <code>npm</code> command line tool, run 
 <li>add **`--save-dev`** option to save `nightwatch` as a `devDependency` in your <a href="https://docs.npmjs.com/files/package.json" target="_blank">package.json</a>.</li>
 </ul>
 
-<h3 id="install-webdriver"><span>Install WebDriver</span></h3>
+<h3 id="install-webdriver"><span>Install Browser Drivers</span></h3>
 
-Depending on your target browser, you will need a specific WebDriver package. Below there are the most popular ones that you can install from [NPM][3] or download and configure separately.
+Depending on your target browser(s), you will need one or more specific WebDriver packages. Below there are the most popular ones that you can install from [NPM][3] or download and configure separately.
 
 <div class="alert alert-info" style="margin-top:20px">
 Since version **`1.3`**, a configuration file `nightwatch.conf.js` is generated automatically if no config file is found in the current folder. The file contains all the necessary settings for the available browser drivers, including setup for running with Selenium Server.
@@ -30,32 +30,32 @@ Since version **`1.3`**, a configuration file `nightwatch.conf.js` is generated 
 <table class="table table-bordered table-striped">
 <thead>
  <tr>
-   <th style="width: 200px;">WebDriver Binary</th>
+   <th style="width: 200px;">Browser Driver</th>
    <th style="width: 100px; text-align:center">Browser</th>
    <th>Description</th>
  </tr>
 </thead>
 <tbody>
   <tr>
-    <td><a href="/gettingstarted/installation/#install-geckodriver">GeckoDriver</a></td>
+    <td><a class="local-nav" href="/gettingstarted/installation/#install-geckodriver">GeckoDriver</a></td>
     <td class="browser"><img alt="Mozilla Firefox" src="https://nightwatchjs.org/img/logos/Firefox_Logo_2017.png"/></td>
-    <td>Standalone server which implements the [W3C WebDriver protocol](https://w3c.github.io/webdriver/#protocol) to communicate with Gecko browsers, such as Firefox.</td>
+    <td>Standalone application which implements the [W3C WebDriver protocol](https://w3c.github.io/webdriver/#protocol) to communicate with Gecko browsers, such as Firefox.</td>
   </tr>
   
   <tr>
-    <td><a href="/gettingstarted/installation/#install-chromedriver">ChromeDriver</a></td>
+    <td><a class="local-nav" href="/gettingstarted/installation/#install-chromedriver">ChromeDriver</a></td>
     <td class="browser"><img alt="Google Chrome" src="https://nightwatchjs.org/img/logos/1200px-Google_Chrome_icon.svg.png"/></td>
-    <td>Standalone server which implements the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for Chromium, however it is currently in the process of transitioning to the W3C WebDriver spec.<br><br>Available for Chrome on Android and Chrome on Desktop (Mac, Linux, Windows and ChromeOS).</td>
+    <td>Standalone application which implements the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for Chromium, however it is currently in the process of transitioning to the W3C WebDriver spec.<br><br>Available for Chrome on Android and Chrome on Desktop (Mac, Linux, Windows and ChromeOS).</td>
   </tr>
   
   <tr>
-     <td><a href="/gettingstarted/installation/#install-microsoftedge">Microsoft WebDriver</a></td>
+     <td><a class="local-nav" href="/gettingstarted/installation/#install-microsoftedge">Microsoft Edge Driver</a></td>
      <td class="browser"><img alt="Microsoft Edge" src="https://nightwatchjs.org/img/logos/Microsoft_Edge_logo.svg.png"/></td>
-     <td>Windows executable which supports both the W3C WebDriver spec and JSON Wire Protocol for running tests against Microsoft Edge.</td>
+     <td>Standalone application which is used to drive the recent Edge browser, based on Chromium, which works similar to ChromeDriver.</td>
   </tr>
   
   <tr>
-    <td><a href="/gettingstarted/installation/#install-safaridriver">SafariDriver</a></td>
+    <td><a class="local-nav" href="/gettingstarted/installation/#install-safaridriver">SafariDriver</a></td>
     <td class="browser"><img alt="Microsoft Edge" src="https://nightwatchjs.org/img/logos/safari_icon_large_2x.png"/></td>
     <td>The `/usr/bin/safaridriver` binary comes pre-installed with recent versions of Mac OS and it's available to use following the instructions on [Apple Developer website](https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari).
     <br><br>More information is available on <a href="https://developer.apple.com/documentation/webkit/about_webdriver_for_safari" target="_blank">About WebDriver for Safari</a> page.
@@ -83,13 +83,9 @@ Alternatively, it can be downloaded from the [ChromeDriver Downloads][7] page.
 
 <pre><code class="language-bash">npm install chromedriver --save-dev</code></pre>
 
-<h4 id="install-microsoftedge">Microsoft WebDriver</h4>
+<h4 id="install-microsoftedge">Microsoft Edge Driver</h4>
 
-WebDriver for Microsoft Edge is now a Windows Feature on Demand. To install run the following in an elevated command prompt:
-
-<pre class="windows-cmd"><code class="language-bash">DISM.exe /Online /Add-Capability /CapabilityName:Microsoft.WebDriver~~~~0.0.1.0</code></pre>
-
-More details about installation and usage documentation are available on the official [Microsoft WebDriver][8] homepage.
+The Edge Driver can be downloaded from the official [Microsoft Edge Driver][8] homepage.
 
 <h4 id="install-safaridriver">SafariDriver</h4>
 

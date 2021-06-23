@@ -135,7 +135,7 @@ module.exports = class CustomCommand {
 
 ##### Directly calling Selenium/Webdriver endpoints
 Also, since **v1.4** you can (via `this.httpRequest(options)`) directly call the HTTP endpoints available on the Selenium/Webdriver server from custom commands. 
-This can be a convenient way to extend the provided API protocol, since it is using the same [HTTP request](https://github.com/nightwatchjs/nightwatch/blob/master/lib/http/request.js) interface as for the other protocol actions. 
+This can be a convenient way to extend the provided API protocol, since it is using the same [HTTP request](https://github.com/nightwatchjs/nightwatch/blob/main/lib/http/request.js) interface as for the other protocol actions. 
 
 It can be especially useful when using a service which provides additional endpoints, like [Appium](http://appium.io/).
 

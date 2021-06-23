@@ -37,12 +37,11 @@ module.exports = {
   },
   
   demoTestAsync: async function(browser) {
-    await browser.init();
-    const text = await browser.getText("#main ul li", function(result) {
-      return Promise.resolve(resolve.value);
+    const text = await browser.init().getText("#main ul li", function(result) {
+      return Promise.resolve(result.value);
     });              
     
-    console.log('text', text);
+    console.log('The text is', text);
   }
 };</code></pre></div>
 

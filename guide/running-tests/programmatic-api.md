@@ -13,7 +13,7 @@ You don't need to specify a configuration file, although starting with v1.3, one
 
 If you need to pass settings, please note that you cannot specify environment related settings and the settings passed here are merged onto the final configuration, after the current [test environment](/guide/running-tests/test-environments.html) (or the "default" one) is parsed.   
 
-The programmatic api is used extensively in the Nightwatch unit tests (which use mocha as a test runner). For example, have a look at this unit test which covers various basic functions of the Nightwatch runner: [test/src/runner/testRunTestcase.js](https://github.com/nightwatchjs/nightwatch/blob/master/test/src/runner/testRunTestcase.js). Keep in mind that when using the programmatic api, you have to manage the Webdriver/Selenium server yourself. See below for a custom runner example.
+The programmatic api is used extensively in the Nightwatch unit tests (which use mocha as a test runner). For example, have a look at this unit test which covers various basic functions of the Nightwatch runner: [test/src/runner/testRunTestcase.js](https://github.com/nightwatchjs/nightwatch/blob/main/test/src/runner/testRunTestcase.js). Keep in mind that when using the programmatic api, you have to manage the Webdriver/Selenium server yourself. See below for a custom runner example.
 
 #### Examples
 
