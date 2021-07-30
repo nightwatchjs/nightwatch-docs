@@ -7,7 +7,7 @@ author_image_url: https://avatars.githubusercontent.com/u/419506?v=4
 tags:
 description: Automated end-to-end testing can help you to dramatically reduce your feedback loops in your development process.
 draft: false
-date: 2021-07-26
+date: 2021-07-30
 image: https://nightwatchjs.org/img/blog/test_engineering.png
 link_to_discussions: https://github.com/nightwatchjs/nightwatch-docs/discussions/133
 ---
