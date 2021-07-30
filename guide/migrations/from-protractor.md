@@ -28,7 +28,7 @@ The main features offered by Nightwatch are:
 
 ## Getting Started
 
-We recommend using our official Nightwatch Angular schematic to add cypress to your angular project.
+We recommend using our official Nightwatch Angular schematic to add Nightwatch to your angular project.
 
 ```sh
 ng add @nightwatch/schematics
@@ -50,6 +50,279 @@ ng run {your-project-name}:nightwatch-run
 
 > Check out our [Nightwatch Schematic documentation][NightwatchSchematicDocumentation] for more details like running tests in a specific browser, etc.
 
+## Working with the DOM
+
+### Getting the DOM Elements
+
+#### Getting a single element
+
+---
+
+In e2e tests, one of the most common things to do in a webpage is to get one or more HTML elements. In Nightwatch, you can fetch different elements using `browser.element`.
+
+<span>Before: Protractor</span>
+
+```js
+// Find an element using a css selector.
+element(by.css('.myclass'))
+
+// Find an element with the given id.
+element(by.id('myid'))
+
+// Find an element using an input name selector.
+element(by.name('input_name'))
+
+// Find an element containing a specific text (only for link elements)
+element(by.linkText('anchor_link'))
+
+// Find an element using a tag name
+element(by.tagName('tag'))
+
+// Find an element using xpath
+element(by.xpath('//element1/element2'))
+```
+
+<span>After: Nightwatch</span>
+
+```js
+// Find an element using a css selector.
+browser.element('css selector', '.myclass')
+
+// Find an element with the given id.
+browser.element('css selector', 'myid')
+
+// Find an element using an input name selector.
+browser.element('tag name', 'input_name')
+
+// Find an element containing a specific text (only for link elements)
+browser.element('link_text', 'anchor_link')
+
+// Find an element using a tag name
+browser.element('tag name', 'tag')
+
+// Find an element using xpath
+browser.element('xpath', '//element1/element2')
+```
+
+#### Getting multiple elements
+
+---
+
+If you need to access more than one element on the page, you must chain the .all() method. However, in Nightwatch, you can use `browser.elements`.
+
+<span>Before: Protractor</span>
+
+```js
+// Find elements using a css selector.
+element.all(by.css('.myclass'))
+
+// Find elements with the given id.
+element.all(by.id('myid'))
+
+// Find elements using an input name selector.
+element.all(by.name('input_name'))
+
+// Find elements containing a specific text (only for link elements)
+element.all(by.linkText('anchor_link'))
+
+// Find elements using a tag name
+element.all(by.tagName('tag'))
+
+// Find elements using xpath
+element.all(by.xpath('//element1/element2'))
+```
+
+<span>After: Nightwatch</span>
+
+```js
+// Find an element using a css selector.
+browser.elements('css selector', '.myclass')
+
+// Find an element with the given id.
+browser.elements('css selector', 'myid')
+
+// Find an element using an input name selector.
+browser.elements('tag name', 'input_name')
+
+// Find an element containing a specific text (only for link elements)
+browser.elements('link_text', 'anchor_link')
+
+// Find an element using a tag name
+browser.elements('tag name', 'tag')
+
+// Find an element using xpath
+browser.elements('xpath', '//element1/element2')
+```
+
+> You can learn more about in our [official documentation][ElementDocumentationLink]
+
+### Interaction with DOM Elements
+
+<span>Before: Protractor</span>
+
+```js
+// Click on the element
+element(by.css('button')).click()
+
+// Clear the text in an element (usually an input).
+element(by.css('input')).clear()
+
+// Check the first checkbox on a page
+element.all(by.css('[type="checkbox"]')).first().click()
+
+// Scroll an element into view
+browser
+  .actions()
+  .mouseMove(element(by.id('my-id')))
+  .perform()
+```
+
+<span>After: Nightwatch</span>
+
+```js
+// Click on the element
+browser.click('.button')
+
+// Clear the text in an element (usually an input).
+browser.clearValue('.input')
+
+// Check the first checkbox on a page
+// Nightwatch by default search for first element, and perform click event if there are multiple element present
+browser.click('[type="checkbox"]')
+
+// Scroll an element into view
+browser.moveToElement('#my-id', 0, 0)
+```
+
+> You can learn more about interacting with DOM elements in our [official documentation][ElementInteractionDocLink]
+
+## Assertions
+
+### Length
+
+<span>Before: Protractor</span>
+
+```js
+const list = element.all(by.css('custom-class'))
+expect(list.count()).toBe(3)
+```
+
+<span>After: Nightwatch</span>
+
+```js
+browser.elements('.custom-class' ,function(result) {
+  browser.assert.equal(result.value.length, 3);
+});
+```
+
+### Value
+
+<span>Before: Protractor</span>
+
+```js
+expect(element(by.tagName('input[name="first_name"]'))).getAttribute('value')).toBe('foo')
+```
+
+<span>After: Nightwatch</span>
+
+```js
+browser.getValue('input[name="first_name"]', function(result){
+  browser.assert.equal(result.value, 'foo');
+});
+```
+
+### Text Content
+
+<span>Before: Protractor</span>
+
+```js
+// assert the element\'s text content is exactly the given text
+expect(element(by.id('user-name')).getText()).toBe('John Doe')
+```
+
+<span>After: Nightwatch</span>
+
+```js
+browser.getText('#user-name' ,function(result) {
+  this.assert.strictEqual(result.value, 'John Doe')
+});
+```
+
+### Visibility
+
+<span>Before: Protractor</span>
+
+```js
+// assert button is visible
+expect(element(by.tagName('#main ul li a.first')).isDisplayed()).toBe(true)
+```
+
+<span>After: Nightwatch</span>
+
+```js
+// The following will end the test:
+browser.assert.visible('#main ul li a.first');
+
+// However this will just log the failure and continue:
+browser.verify.visible('#main ul li a.first');
+```
+
+### Existence
+
+<span>Before: Protractor</span>
+
+```js
+// assert the spinner no longer exists
+expect(element(by.id('loading')).isPresent()).toBe(false)
+```
+
+<span>After: Nightwatch</span>
+
+```js
+browser.assert.not.elementPresent('.not_present')
+```
+
+### CSS
+
+<span>Before: Protractor</span>
+
+```js
+// assert #main ul li a.first has css style "block" for "display" property
+expect(element(by.css('#main ul li a.first')).getCssValue('display')).toBe('block')
+```
+
+<span>After: Nightwatch</span>
+
+```js
+browser.getCssProperty('#main ul li a.first', 'display', function(result) {
+  this.assert.equal(result.value, 'block')
+});
+```
+
+### Navigating Websites
+
+when you want to visit a page, you can use following code
+
+<span>Before: Protractor</span>
+
+```js
+it('visits a page', () => {
+  browser.get('/about')
+  browser.navigate().forward()
+  browser.navigate().back()
+})
+```
+
+<span>After: Nightwatch</span>
+
+```js
+it('visits a page', () => {
+  browser.url('/about')
+  browser.forward()
+  browser.back()
+})
+```
+
 ## Questions or having issues?
 
 The best way to ask for questions or report issues related to Nightwatch Angular Schematic is to [open an issue][GithubIssueLink].
@@ -60,3 +333,5 @@ The best way to ask for questions or report issues related to Nightwatch Angular
 [WebdriverIOPluginExtendLink]:https://nightwatchjs.org/guide/extending-nightwatch/using-with-webdriverio.html
 [NightwatchSchematicDocumentation]:https://github.com/nightwatchjs/nightwatch-schematics#readme
 [GithubIssueLink]:https://github.com/nightwatchjs/nightwatch-schematics/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
+[ElementDocumentationLink]:https://nightwatchjs.org/api/element.html
+[ElementInteractionDocLink]:https://nightwatchjs.org/api/commands/#elementinteraction-headline
