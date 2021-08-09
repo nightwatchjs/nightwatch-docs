@@ -1,9 +1,16 @@
 # Migrating from Protractor to Nightwatch
 
-## Introduction 
+## Introduction
 
 Protractor was a popular end-to-end test framework for Angular and 
 Protractor was a popular end-to-end test framework for Angular and AngularJS applications. However, Protractor will [no longer be shipped][AngualarRFC] with the new Angular Projects as of Angular 12. We've got you covered with this migration guide to help make the transition from Protector on your team to Nightwatch easier.
+
+
+### What is Nightwatch?
+
+Nightwatch.js is an automated end-to-end testing framework for web applications and websites. It is written in Node.js and uses the W3C WebDriver API (formerly Selenium WebDriver) for interacting with various browsers.
+
+It is a complete testing solution which aims to simplify writing tests and setting up Continuous Integration and Continuous Delivery. Nightwatch can also be used for writing Node.js unit and integration tests. Read more about how Nightwatch was created here.
 
 > If you believe this migration guide has any missing information or is wrongly misrepresented, then please raise an issue here.
 
@@ -47,6 +54,18 @@ You can also use the following command to run Nightwatch alternatively.
 ```sh
 ng run {your-project-name}:nightwatch-run
 ```
+
+## Next Steps
+
+After you add a Nightwatch to your angular project. Your existing e2e tests will be migrated to a new location i.e. `Protractor`. Sample tests will be added to the `Nightwatch` folder to get you started with your first test in Nightwatch.
+
+You will see these changes in your project, after you had run schematics on your project.
+
+![NightwatchSchematicsChanges](./folder_changes.png)
+
+1. Now, You need to modify your existing tests to Nightwatch. To being with you can start with [Assertions][AssertionLink], [Expect][ExceptLink], [Page Objects][PageObjectLink] and [API commands][APICommandsLink].
+
+2. We had added few examples in this guide, but if you need more information please visit: https://nightwatchjs.org/api/
 
 > Check out our [Nightwatch Schematic documentation][NightwatchSchematicDocumentation] for more details like running tests in a specific browser, etc.
 
@@ -335,3 +354,7 @@ The best way to ask for questions or report issues related to Nightwatch Angular
 [GithubIssueLink]:https://github.com/nightwatchjs/nightwatch-schematics/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
 [ElementDocumentationLink]:https://nightwatchjs.org/api/element.html
 [ElementInteractionDocLink]:https://nightwatchjs.org/api/commands/#elementinteraction-headline
+[AssertionLink]:https://nightwatchjs.org/api/
+[ExceptLink]:https://nightwatchjs.org/api/expect/
+[PageObjectLink]:https://nightwatchjs.org/api/pageobject/
+[APICommandsLink]:https://nightwatchjs.org/api/commands/
