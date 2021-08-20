@@ -32,7 +32,7 @@ Most of the times, Nightwatch needs to send at least 2 requests to the WebDriver
 
 <h3 id="nightwatch-selenium-server"><span>Nightwatch &amp; Selenium Server</span></h3>
 
-The communication can also be facilitated by the [Selenium Server][13] (also known as Selenium Grid) or a compatible cloud-based testing platform (like [Browserstack][14], [SauceLabs][15], [CrossBrowserTesting][16], or [LambdaTest][17]).
+The communication can also be facilitated by the [Selenium Server][13] (also known as Selenium Grid) or a compatible cloud-based testing platform (like [Browserstack][14], [SauceLabs][15], [CrossBrowserTesting][16], [LambdaTest][17] or [TestingBot][19]).
 
 ![Selenium Server Operation][image-2]
 
@@ -57,6 +57,7 @@ Nightwatch is sometimes incorrectly described as a "Selenium binding" library. W
 [16]:	https://crossbrowsertesting.com/
 [17]: https://www.lambdatest.com/
 [18]:	https://selenium.dev/downloads/
+[19]:	https://testingbot.com/
 
 [image-1]:	/img/operation.png
 [image-2]:	/img/operation-cloud.png
