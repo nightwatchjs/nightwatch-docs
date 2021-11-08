@@ -56,12 +56,3 @@ describe('Nightwatch Website tests', function() {
 ### Execute Test
 
 Now that you have appium server installed, run Appium server locally using command `appium` and run your test against the env `appium_ios`
-
-
-
-
-
-
-
-
-
