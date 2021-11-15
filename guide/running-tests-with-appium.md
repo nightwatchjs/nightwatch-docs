@@ -61,3 +61,38 @@ describe('Nightwatch Website tests', function() {
 ### Execute Test
 
 Now that you have appium server installed, run Appium server locally using command `appium` and run your test against the env `appium_ios`
+
+## Using Gestures
+Gestures are widely used while interacting with mobile devices. There are two ways to generate gestures on mobile devices.
+
+1. Using non-standard APIs from appium. These APIs are platform specific. You can refer more on this on [Appium docs](https://appium.io/docs/en/about-appium/intro/).
+To generate a swipe gesture on an iOS device the command would look like:
+```js
+browser.execute('mobile: swipe', args);
+```
+
+2. Using Actions API from Nightwatch that is based on [W3C Webdriver Spec](https://w3c.github.io/webdriver/#actions). Actions API is very general and platform independent. It relies on the concept of input sources(key, pointer, wheel). Following code generates a swipe and a pinch zoom gesture using Actions API.
+
+```js
+it('swipe down and zoom in the page - w3c actions api ', async function(){
+    //Scroll down the page
+    await  browser.perform(function(){
+      const actions = this.actions();
+      
+      return actions.move({x: 100, y: 100}).press().move({origin: 'pointer', y: -300, duration: 50}).release();
+    });
+
+    await browser.pause(2000);
+    
+    //Pinch zoom
+    await browser.perform(function(){
+      const actions= this.actions();
+      const pointer1 = new Device('finger-1', 'touch');
+      const pointer2 = new Device('finger-2', 'touch');
+      actions.insert(pointer1, pointer1.move({duration: 0, x: 100, y: 70}), pointer1.press(), {type: 'pause', duration: 500}, pointer1.move({duration: 1000, origin: 'pointer', x: 0, y: -20}), pointer1.release());
+      actions.insert(pointer2, pointer2.move({duration: 0, x: 100, y: 100}), pointer2.press(), {type: 'pause', duration: 500}, pointer2.move({duration: 1000, origin: 'pointer', x: 0, y: 20}), pointer2.release());
+
+      return actions;       
+    });
+  });
+```
