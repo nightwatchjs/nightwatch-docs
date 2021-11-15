@@ -74,16 +74,17 @@ browser.execute('mobile: swipe', args);
 2. Using Actions API from Nightwatch that is based on [W3C Webdriver Spec](https://w3c.github.io/webdriver/#actions). Actions API is very general and platform independent. It relies on the concept of input sources(key, pointer, wheel). Following code generates a swipe and a pinch zoom gesture using Actions API.
 
 ```js
-it('swipe down and zoom in the page - w3c actions api ', async function(){
+describe('W3C Actions API', function(){
+  it('swipe down and zoom in the page - w3c actions api ', async function(){
     //Scroll down the page
     await  browser.perform(function(){
       const actions = this.actions();
-      
+  
       return actions.move({x: 100, y: 100}).press().move({origin: 'pointer', y: -300, duration: 50}).release();
     });
 
     await browser.pause(2000);
-    
+
     //Pinch zoom
     await browser.perform(function(){
       const actions= this.actions();
@@ -95,4 +96,6 @@ it('swipe down and zoom in the page - w3c actions api ', async function(){
       return actions;       
     });
   });
+});
+
 ```
