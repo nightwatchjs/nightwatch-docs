@@ -20,6 +20,9 @@ Consider an infrastructure setup with different browsers on different operation 
 Selenium Grid is a central point that aids in distributed testing, scaling multiple environments, and load-balancing incoming tests. Grid improves testing efficiency by supporting parallel testing across multiple browser-os combinations. All tests point to the Grid, and it intelligently routes them to run on the underlying infrastructure.
 If you have a local or a cloud device farm, Selenium Grid will handle all the delegation needs for web testing.
 
+![Grid Architecture](https://user-images.githubusercontent.com/10705590/143004524-87117f3e-3fd3-4d75-a107-b875b4e75a96.png)
+
+
 Selenium Grid's functionality is divided into various components as follows:
 
 ### Router
