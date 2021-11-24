@@ -1,0 +1,1 @@
+## Installing Browser Extensions
