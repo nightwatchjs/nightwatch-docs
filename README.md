@@ -1,4 +1,4 @@
-# Nightwatch Documentation
+# Nightwatch v2.0 Documentation
 
 Documentation sources for [nightwatchjs.org](http://nightwatchjs.org) website.
 
@@ -20,35 +20,5 @@ Documentation sources for [nightwatchjs.org](http://nightwatchjs.org) website.
 ## Current structure
 
 ```
-Overview
-  ├── What is Nightwatch?
-  ├── Overview of Selenium
-  ├── Theory of Operation
-Getting started
-  ├── Install Node.js
-  ├── Install Nightwatch
-  ├── Selenium Server
-Configuration
-  ├── Basic Settings
-  ├── Selenium Settings
-  ├── Test Settings  
-Using Nightwatch
-  ├── Writing Tests
-  ├── Using Xpath
-  ├── Using Page Objects
-  ├── Test Hooks
-  ├── Asynchronous Test Hooks
-  ├── External Globals  
-Running Tests
-  ├── Nightwatch Runner
-  ├── Command-line Options
-  ├── Test Groups
-  ├── Test Tags
-  ├── Disabling Tests
-  ├── Parallel Running
-  ├── Using Grunt
-Extending Nightwatch
-  ├── Custom commands
-  ├── Custom assertions
-  └── Custom reporter
+TBA
 ```
