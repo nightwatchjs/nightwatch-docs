@@ -1,4 +1,4 @@
-# Nightwatch Documentation
+# Nightwatch 1.x Documentation 
 
 Documentation sources for [nightwatchjs.org](http://nightwatchjs.org) website.
 
