@@ -77,7 +77,7 @@ You will see these changes in your project, after you had run schematics on your
 
 ---
 
-In e2e tests, one of the most common things to do in a webpage is to get one or more HTML elements. In Nightwatch, you can fetch different elements using `browser.element`.
+In e2e tests, one of the most common things to do in a webpage is to get one or more HTML elements. In Nightwatch, you don't need to make any changes here, as everything works as before.
 
 <span>Before: Protractor</span>
 
@@ -105,22 +105,22 @@ element(by.xpath('//element1/element2'))
 
 ```js
 // Find an element using a css selector.
-browser.element('css selector', '.myclass')
+element(by.css('.myclass'))
 
 // Find an element with the given id.
-browser.element('css selector', 'myid')
+element(by.id('myid'))
 
 // Find an element using an input name selector.
-browser.element('tag name', 'input_name')
+element(by.name('input_name'))
 
 // Find an element containing a specific text (only for link elements)
-browser.element('link_text', 'anchor_link')
+element(by.linkText('anchor_link'))
 
 // Find an element using a tag name
-browser.element('tag name', 'tag')
+element(by.tagName('tag'))
 
 // Find an element using xpath
-browser.element('xpath', '//element1/element2')
+element(by.xpath('//element1/element2'))
 ```
 
 #### Getting multiple elements
@@ -200,17 +200,17 @@ browser
 
 ```js
 // Click on the element
-browser.click('.button')
+browser.click(element(by.css('button')))
 
 // Clear the text in an element (usually an input).
-browser.clearValue('.input')
+browser.clearValue(element(by.css('input')))
 
 // Check the first checkbox on a page
 // Nightwatch by default search for first element, and perform click event if there are multiple element present
-browser.click('[type="checkbox"]')
+browser.click(element(by.css('[type="checkbox"]')))
 
 // Scroll an element into view
-browser.moveToElement('#my-id', 0, 0)
+browser.moveToElement(element(by.id('my-id'), 0, 0)
 ```
 
 > You can learn more about interacting with DOM elements in our [official documentation][ElementInteractionDocLink]
@@ -229,9 +229,7 @@ expect(list.count()).toBe(3)
 <span>After: Nightwatch</span>
 
 ```js
-browser.elements('.custom-class' ,function(result) {
-  browser.assert.equal(result.value.length, 3);
-});
+expect.elements('.custom-class').count.to.equal(3);
 ```
 
 ### Value
@@ -245,9 +243,7 @@ expect(element(by.tagName('input[name="first_name"]'))).getAttribute('value')).t
 <span>After: Nightwatch</span>
 
 ```js
-browser.getValue('input[name="first_name"]', function(result){
-  browser.assert.equal(result.value, 'foo');
-});
+browser.expect.element('input[name="first_name"]').to.have.attribute('value').equals('foo');
 ```
 
 ### Text Content
@@ -262,9 +258,7 @@ expect(element(by.id('user-name')).getText()).toBe('John Doe')
 <span>After: Nightwatch</span>
 
 ```js
-browser.getText('#user-name' ,function(result) {
-  this.assert.strictEqual(result.value, 'John Doe')
-});
+browser.expect.element('#user-name').text.to.equal('John Doe');
 ```
 
 ### Visibility
@@ -279,6 +273,8 @@ expect(element(by.tagName('#main ul li a.first')).isDisplayed()).toBe(true)
 <span>After: Nightwatch</span>
 
 ```js
+browser.expect.element('#main ul li a.first').to.be.visible;
+
 // The following will end the test:
 browser.assert.visible('#main ul li a.first');
 
