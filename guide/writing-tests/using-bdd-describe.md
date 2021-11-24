@@ -1,17 +1,24 @@
-<h3 id="using-bdd-describe-beta-"><span>BDD describe</span></h3>
+## Using describe() Interface
+
+<h3 id="overview">Overview</h3>
 
 Starting with version **1.3** Nightwatch has native support for using the popular BDD interface for writing tests. No further configuration is necessary. 
 
-It is also possible to run tests written in BDD describe and Exports interfaces together. Prior to this version, users had to use the Mocha test runner but now it is possible without additional plugins or libraries. The BDD interface in Nightwatch provides the common `describe()`, `context()`, `test()`, `it()`, `specify()`, `before()`, `after()`, `beforeEach()`, and `afterEach()` functions. 
+It is also possible to run tests written in BDD describe and Exports interfaces together. Prior to this version, users had to use the Mocha test runner but now it is possible without additional plugins or libraries. 
+
+The BDD interface in Nightwatch provides the common `describe()`, `context()`, `test()`, `it()`, `specify()`, `before()`, `after()`, `beforeEach()`, and `afterEach()` functions. 
 
 At this point Nightwatch doesn't support nested `describe`/`context` declarations. Only the top-level one is supported, which defines the name for the test suite. 
 
-**Basic Example:**
+<h4 id="basic-example">Basic Example:</h4>
+
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 describe('Ecosia', function() {
 
-  test('demo test', function(browser) {
+  // test() and specify() is also available
+
+  it('demo test', function(browser) {
     browser
       .url('https://www.ecosia.org/')
       .setValue('input[type=search]', 'nightwatch')
@@ -24,9 +31,13 @@ describe('Ecosia', function() {
 </code></pre>
 </div>
 
+
+
 In addition to the usual BDD syntax, Nightwatch provides a few ways for defining own behaviour.
 
-**• Test suite specific capabilities**
+
+#### Test suite specific capabilities
+
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 describe('homepage test with describe', function() {
@@ -35,22 +46,25 @@ describe('homepage test with describe', function() {
     browserName: 'firefox'
   };
   
-  test('...', function() {...});
+  it('...', function() {...});
 });
 </code></pre></div>
 
-**• Test suite specific tags**
+
+#### Test suite specific tags
+
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 describe('homepage test with describe', function() {
   // defining tags using bdd
   this.tags = ['login', 'authentication''];
   
-  test('...', function() {...});
+  it('...', function() {...});
 });
 </code></pre></div>
   
-**• Test suite specific retries**
+#### • Test suite specific retries
+
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
 describe('homepage test with describe', function() {
@@ -60,11 +74,11 @@ describe('homepage test with describe', function() {
    // how many times to retry the current test suite in case of an assertion failure or error
    this.suiteRetries(2);
    
-   test('...', function() {...});
+   it('...', function() {...});
 });
 </code></pre></div>
 
-#### Complete BDD Syntax
+<h3 id="complete-syntax">Complete BDD Syntax</h3>
 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">
@@ -100,7 +114,7 @@ describe('homepage test with describe', function() {
     this.homepage = browser.page.home();
   });
 
-  test('startHomepage', () => {
+  it('startHomepage', () => {
     this.homepage.navigate();
     this.homepage.expect.section('@indexContainer').to.be.not.visible;
   });
@@ -108,7 +122,7 @@ describe('homepage test with describe', function() {
   
   // Run only this testcase
   /*
-  test.only('startHomepage', () => {
+  it.only('startHomepage', () => {
     this.homepage.navigate();
   });
   */ 

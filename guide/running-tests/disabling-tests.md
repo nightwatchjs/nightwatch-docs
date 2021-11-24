@@ -1,4 +1,4 @@
-### Disabling Tests
+## Disabling Tests
 
 To prevent a test module from running, simply set the `disabled` attribute in that module to `true`, like so:
 

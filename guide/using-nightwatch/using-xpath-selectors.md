@@ -1,4 +1,4 @@
-<h3 id="using-xpath-selectors"><span>XPath selectors</span></h3>
+## Using XPath selectors
 
 <a href="https://developer.mozilla.org/en-US/docs/Web/XPath" target="_blank">XPath</a> stands for XML Path Language. It uses a non-XML syntax to provide a flexible way of finding elements in a web page. 
  

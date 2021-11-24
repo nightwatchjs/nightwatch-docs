@@ -46,7 +46,7 @@ Feedback loops are everywhere in software development and beyond. I’ve first h
 
 One of founding texts of cognitive science, Plans and the Structure of Behavior (1960), introduced an early form of the feedback loop as a fundamental unit of behaviour in humans. The authors identified  the following steps: Test-Operate-Test-Exit which make a TOTE unit. As they described, “in its weakest form, the TOTE asserts simply  that the operations an organism performs are constantly guided by the outcomes of various tests.” <sup><a id="ffn1" href="#fn1" class="footnote">1</a></sup>
 <figure style="max-width: 650px; margin: 0 auto 20px;">
-![The TOTE unit](/img/blog/tote.002.png "The TOTE unit")
+![The TOTE unit](https://nightwatchjs.org/img/blog/tote.002.png "The TOTE unit")
 <figcaption>The TOTE Unit</figcaption>
 </figure>
 
@@ -60,7 +60,7 @@ Say you’re a developer building the Browserstack Automate UI dashboard and you
 
 Considering the above TOTE unit, the _Test_ phase will be quite complex and will involve a few different operations that are needed before asserting if the feature is implemented successfully (the condition which will stop the loop). There are even some sub-feedback loops in there.
 <figure>
-![The TOTE unit](/img/blog/tote.001.png "The TOTE unit")
+![The TOTE unit](https://nightwatchjs.org/img/blog/tote.001.png "The TOTE unit")
 <figcaption>Implementing a new feature as a TOTE unit</figcaption>
 </figure>
 
@@ -76,7 +76,7 @@ The implementation phase is variable at each iteration, but the testing phase is
 
 Thankfully now we can automate all the manual steps involved in the preparation phase and we can also add a test assertion to verify if the condition was met (the test script that was executed appears in the dashboard list). Then the actual _Test_ phase of the feedback loop will consist of only running this newly created automated script.
 <figure>
-![The TOTE unit](/img/blog/tote.003.png "The TOTE unit")
+![The TOTE unit](https://nightwatchjs.org/img/blog/tote.003.png "The TOTE unit")
 <figcaption>Automating the Test phase</figcaption>
 </figure>
 

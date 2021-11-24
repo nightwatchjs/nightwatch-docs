@@ -1,4 +1,4 @@
-### Using mocha as a test runner
+## Using mocha as a test runner
 
 Starting with version `1.3` Nightwatch supports writing tests using the BDD _describe_ interface which perhaps removes the need for using Mocha.
  

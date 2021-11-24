@@ -1,6 +1,8 @@
-### Test Hooks – before[Each] and after[Each]
+## Using Test Hooks
 
 Nightwatch provides the standard `before`/`after` and `beforeEach`/`afterEach` hooks to be used in the tests.
+
+### before, beforeEach, after, afterEach
 
 The `before` and `after` will run before and after the execution of the test suite respectively, while `beforeEach` and `afterEach` are ran before and after each testcase (test step).
 
@@ -41,7 +43,7 @@ All methods have the Nightwatch instance passed as argument.
 
 In the example above the sequence of method calls will be as follows: `before(), beforeEach(), "step one", afterEach(), beforeEach(), "step two", afterEach(), after()`.
 
-### Asynchronous before[Each] and after[Each]
+<h3 id="asynchronous-test-hooks">Asynchronous before[Each] and after[Each]</h3>
 
 All the `before[Each]` and `after[Each]` methods can also perform asynchronous operations, in which case they will require the `callback` passed as the second argument.
 

@@ -1,4 +1,4 @@
-### Parallel Running
+## Parallel Running
 
 Nightwatch supports running the tests in parallel in two main ways: 
 - via test workers

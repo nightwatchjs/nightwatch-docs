@@ -46,40 +46,37 @@ Here's an example config file which uses Firefox as target browser.
   // if this is not specified, the test source must be passed as the second argument to the test runner.
   src_folders: [],
 
-  webdriver: {
-    start_process: true,
-    port: 4444,
-    server_path: require('geckodriver').path,
-    cli_args: [
-      // very verbose geckodriver logs
-      // '-vv'
-    ]
-  },
-  
-  test_settings: {
-    default: {
-      launch_url: 'https://nightwatchjs.org',
-      desiredCapabilities : {
-        browserName : 'firefox',
-        alwaysMatch: {
-          // Enable this if you encounter unexpected SSL certificate errors in Firefox
-          // acceptInsecureCerts: true,
-          'moz:firefoxOptions': {
-            args: [
-              // '-headless',
-              // '-verbose'
-            ],
-          }
-        }
-      }
-    }
-  }
+webdriver: {
+start_process: true,
+port: 4444,
+server_path: require('geckodriver').path,
+cli_args: [
+// very verbose geckodriver logs
+// '-vv'
+]
+},
+
+test_settings: {
+default: {
+launch_url: 'https://nightwatchjs.org',
+desiredCapabilities : {
+browserName : 'firefox',
+alwaysMatch: {
+// Enable this if you encounter unexpected SSL certificate errors in Firefox
+// acceptInsecureCerts: true,
+'moz:firefoxOptions': {
+args: [
+// '-headless',
+// '-verbose'
+],
+}
+}
+}
+}
+}
 };
 </code></pre></div>
 
-### Defaults
-Nightwatch has a default configuration object with pre-defined values. These values can be overwritten as needed. 
-You can view the entire defaults config [on Github](https://github.com/nightwatchjs/nightwatch/blob/main/lib/settings/defaults.js). 
 
 [1]:	/gettingstarted/installation/#install-webdriver
 [2]:	https://www.npmjs.com/package/geckodriver
