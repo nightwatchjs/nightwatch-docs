@@ -11,10 +11,10 @@ Here’s an extract:
 
 <div class="sample-test">
 <pre><code class="language-javascript">module.exports = {
-    src_folders: [],
+  src_folders: [],
 
-    test_settings: {
-      default: {
+  test_settings: {
+    default: {
       launch_url: 'https://nightwatchjs.org'
     },
 
@@ -43,7 +43,7 @@ Here’s an extract:
         server_path: require('geckodriver').path
       }
     }
-}
+  }
 }</code></pre></div>
 
 Considering this setup, to run tests, for instance, against Safari, we would run the following the command-line:
@@ -213,21 +213,21 @@ Like other test settings, globals have the ability to be overwritten per test en
   "src_folders": [],
 
   "test_settings": {
-"default": {
-  "launch_url": "https://nightwatchjs.org",
+    "default": {
+      "launch_url": "https://nightwatchjs.org",
 
-  "globals": {
-    "myGlobalVar" : "some value",
-    "otherGlobal" : "some other value"
+      "globals": {
+        "myGlobalVar" : "some value",
+        "otherGlobal" : "some other value"
+      }
+    },
+
+    "integration": {
+      "globals": {
+        "myGlobalVar" : "integrated global"
+      }  
+    }
   }
-},
-
-"integration": {
-  "globals": {
-    "myGlobalVar" : "integrated global"
-  }  
-}
-}
 }</code></pre>
 </div> 
 

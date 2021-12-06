@@ -16,16 +16,15 @@ However this will just log the failure and continue:<br>
 
 The methods from the <a href="https://nodejs.org/api/assert.html" target="_blank">Node.js assert module</a> are also available on the `.assert`/`.verify` namespaces and can be used.
 
-#### Negate (".not") Assertions
+### Negate (".not") Assertions
 
-Since version **1.3**, all the assertions (including custom defined ones) will also have a `".not"` counterpart, which can be used to assert the opposite.
+Since version **1.3**, all the assertions (including custom defined ones) have a `".not"` counterpart, which can be used to assert the opposite.
 
 And thus, assertions like `elementNotPresent`, `cssClassNotPresent`, `hidden` are obsolete and have been deprecated.
 
-**Example:**
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-module.exports = {
-  demoTest: function(browser) {
+##### Example:
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">describe('Demo .not assertion', function() {
+  it('demo test', function(browser) {
     browser.init();
     
     browser
@@ -34,15 +33,31 @@ module.exports = {
       .assert.not.urlContains('http://');
     
     // ...
+  })
+})</code></pre></div>
+
+### Automatic Retries
+
+By default, Nightwatch will automatically retry failed assertions for up to 5000ms. This can be configured by setting the property `retryAssertionTimeout` (in milliseconds) in your `globals` (see also [working with test globals](https://v2.nightwatchjs.org/guide/using-nightwatch/external-globals.html).  
+
+If the given timeout is reached test runner will give up retrying and will mark the assertion as failed.
+
+##### Example config:
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
+{
+  src_folders: ['tests'],
+
+  test_settings: {
+    default: {
+      launch_url: 'https://nightwatchjs.org',
+
+      globals: {
+        myGlobalVar: 'some value',
+        retryAssertionTimeout: 5000
+      }
+    }
   }
 }
 </code></pre></div>
 
-#### Automatically retrying failed assertions
-
-You can tell Nightwatch to automatically retry failed assertions until a given timeout is reached, before the test runner gives up and fails the test.
-This can be accomplished by setting the property `retryAssertionTimeout` (in milliseconds) in the `globals` file.
-
-<br>
-For example: <code>retryAssertionTimeout = 2000</code>
 

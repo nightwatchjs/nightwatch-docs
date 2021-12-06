@@ -1,4 +1,4 @@
-### Using Page Objects
+## Using Page Objects
 
 The Page Objects methodology is a popular pattern to write end-to-end tests by wrapping the pages or page fragments of a web app into objects.
 The purpose of a page object is to allow a software client to do anything and see anything that a human can by abstracting away the underlying html actions needed to access and manipulate the page.
@@ -10,7 +10,7 @@ As of version `1.0` Nightwatch does not support legacy page objects written prio
 </div>
 
 
-#### Configuring Page Objects
+### Configuring Page Objects
 
 To create a page object simply create an object with properties that describe the page. Each page object should be located in a separate file, located in a designated folder. Nightwatch reads the page objects from the folder (or folders) specified in the `page_objects_path` configuration property.
 

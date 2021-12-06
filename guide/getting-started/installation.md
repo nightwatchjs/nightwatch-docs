@@ -107,4 +107,4 @@ More info about running the Selenium Server can be found here on the official [S
 [11]:	https://www.oracle.com/technetwork/java/javase/downloads/index.html
 [12]:	https://www.npmjs.com/package/selenium-server
 [13]:	https://selenium-release.storage.googleapis.com/index.html
-[14]:	https://nightwatchjs.org/guide#test-runner
+[14]:	https://v2.nightwatchjs.org/guide/running-tests/nightwatch-runner.html

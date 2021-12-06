@@ -1,8 +1,8 @@
-## expect.cookie()
-
+<h2 id="expect-cookie-">expect.cookie()</h2>
+<div class="apimethod">
 Expect assertions operating on a single cookie after retrieving the entire cookie string, using `.getCookies()`.
 
-##### Syntax:
+<h5>Syntax:</h5>
 <div class="sample-test" style="max-width:600px">
   <pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">browser.expect.cookie('cookie-name', ['cookie-domain'])</code></pre>
 </div>
@@ -15,7 +15,7 @@ Expect assertions operating on a single cookie after retrieving the entire cooki
 };</code></pre>
 </div>
    
-##### Parameters:
+<h5>Parameters:</h5>
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
     <thead>
@@ -38,4 +38,5 @@ Expect assertions operating on a single cookie after retrieving the entire cooki
     </tr>
     </tbody>
   </table>
+</div>
 </div>

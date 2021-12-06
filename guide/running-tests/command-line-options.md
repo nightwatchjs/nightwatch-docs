@@ -39,6 +39,12 @@ The test runner supports a number of run-time options to be passed to. To view a
       <td></td>
       <td>Used only together with `--test`. Runs the specified testcase from the current suite/module.</td>
     </tr>
+    <tr>
+      <td><code>--fail-fast</code></td>
+      <td></td>
+      <td></td>
+      <td>Run in "fail-fast" mode: if a test suite cannot be started, the rest will be aborted.</td>
+    </tr>
      <tr>
        <td><code>--group</code></td>
        <td><code>-g</code></td>

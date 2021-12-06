@@ -5,17 +5,27 @@ Below are the default settings that will be passed to the Nightwatch instance du
   <thead>
    <tr>
      <th style="width: 100px;">Name</th>
-     <th style="width: 100px;">type</th>
+     <th style="width: 150px;">type</th>
      <th style="width: 50px;">default</th>
      <th>description</th>
    </tr>
   </thead>
   <tbody>
   <tr>
+     <td>`src_folders`</td>
+     <td>string | Array | `glob pattern`</td>
+     <td>none</td>
+     <td>
+      An array of folders (excluding subfolders) where the tests are located.
+      <br><br>
+      If this is not specified, the test source must be passed inline as the second argument to the [test runner](/guide/running-tests/nightwatch-runner.html).
+     </td>
+  </tr>
+  <tr>
     <td>`test_settings`</td>
     <td>object</td>
     <td></td>
-    <td>An object in which all the test environments are defined, each overwriting test settings as needed. A `default` environment is always required, from which the other environments inherit settings from. See [Defining Test Environments](/gettingstarted/configuration/#defining-test-environments) below for details.</td>
+    <td>An object in which all the test environments are defined, each overwriting test settings as needed. A `default` environment is always required, from which the other environments inherit settings from. <br><br>See [Defining Test Environments](/guide/using-nightwatch/concepts.html#defining-test-environments) for details.</td>
   </tr>
   <tr>
     <td>`webdriver`</td>
@@ -24,43 +34,33 @@ Below are the default settings that will be passed to the Nightwatch instance du
     <td>An object containing **WebDriver** related configuration options.</td>
   </tr>
   <tr>
-     <td>`src_folders`</td>
-     <td>string|array</td>
-     <td>none</td>
-     <td>
-      An array of folders (excluding subfolders) where the tests are located.
-      <br><br>
-      If this is not specified, the test source must be passed inline as the second argument to the [test runner](/guide/running-tests/#nightwatch-runner).
-     </td>
-  </tr>
-  <tr>
     <td>`selenium`</td>
     <td>object</td>
     <td></td>
     <td>
-    An object containing **Selenium Server** related configuration options. If Selenium is not used, `webdriver` options should be set instead.
-    <br> 
+    An object containing **Selenium Server** related configuration options. If Selenium Server is not used, `webdriver` options should be set instead.
+    <br>
     Starting with Nightwatch 1.0, Selenium is only required when testing against a Grid setup or a cloud testing service (such as <a href="https://saucelabs.com/" target="_blank">SauceLabs</a> or <a href="https://www.browserstack.com/" target="_blank">BrowserStack</a>).
     </td>
   </tr>
 
    <tr>
      <td>`custom_commands_path`</td>
-     <td>string|array</td>
+     <td>string | Array | `glob pattern`</td>
      <td>none</td>
      <td>Location(s) where custom commands will be loaded from.</td>
    </tr>
 
    <tr>
      <td>`custom_assertions_path`</td>
-     <td>string|array</td>
+     <td>string | Array | `glob pattern`</td>
      <td>none</td>
      <td>Location(s) where custom assertions will be loaded from.</td>
    </tr>
 
    <tr>
     <td>`page_objects_path`</td>
-    <td>string|array</td>
+    <td>string | Array | `glob pattern`</td>
     <td>none</td>
     <td>Location(s) where page object files will be loaded from.</td>
   </tr>
@@ -70,6 +70,19 @@ Below are the default settings that will be passed to the Nightwatch instance du
      <td>string</td>
      <td>none</td>
      <td>Location of an external globals module which will be loaded and made available to the test as a property <code>globals</code> on the main client instance. <br><br>Globals can also be defined/overwritten inside a <code>test_settings</code> environment.</td>
+   </tr>
+
+    <tr>
+     <td>`backwards_compatibility_mode`<br><span class="optional">since v1.2.2</span></td>
+     <td>boolean</td>
+     <td>false</td>
+     <td>In Nightwatch v1.x, when used with `await` operator, API commands will return the full result object as `{value: `<VALUE>`}` whereas in v2, the value is return directly. If using a callback, the behaviour remains unchanged.</td>
+   </tr>
+    <tr>
+     <td>`disable_global_apis`<br><span class="optional">since v1.2.2</span></td>
+     <td>boolean</td>
+     <td>false</td>
+     <td>Disable the global apis like `"browser"`, `"element()"`, `"expect()"`; this might be needed if using Nightwatch with third-party libraries.</td>
    </tr>
   </tbody>
 </table>
@@ -103,11 +116,18 @@ The below settings are used to control the way the built-in CLI test runner work
      <td>Specifies the delay(in milliseconds) between starting the child processes when running in parallel mode.</td>
    </tr>
 
+  <tr>
+     <td>`enable_fail_fast`<br><span class="optional">since v1.2.2</span></td>
+     <td>boolean</td>
+     <td>false</td>
+     <td>Enable aborting the test run execution when the first test failure occurs; the remaining test suites will be skipped.</td>
+   </tr>
+
    <tr>
      <td>`test_workers`</td>
      <td>boolean|object</td>
      <td>false</td>
-     <td>Whether or not to run individual test suites in parallel using a test worker for each. If set to `true`, runs the tests in parallel and determines the number of workers automatically. 
+     <td>Whether or not to run individual test suites in parallel using a test worker for each. If set to `true`, runs the tests in parallel and determines the number of workers automatically.
        <br><br>If set to an object, can specify specify the number of workers as `"auto"` or a `number`.
        <br><br>Example: <code>"test_workers" : {"enabled" : true, "workers" : "auto"}</code>
        <p>Since v1.3.7 you can specify node options to be passed to individual test worker processes, using the `node_options` property.
@@ -143,17 +163,17 @@ The below settings are used to control the way the built-in CLI test runner work
 ### Test Session Settings
 These settings are used to fine tune the behaviour of a test session and define properties which may be available during the course of it.
 
-#### The `launch_url` property
-This property will be made available to the main Nightwatch api which is used in the tests. Its value depends on which environment is used.
-More on test environments under the [Nightwatch Runner](https://nightwatchjs.org/guide#test-environments) section.
+#### Setting the `baseUrl` property
+This `baseUrl` (or `launchUrl`) property will be made available to the main Nightwatch api which is used in the tests. Its value depends on which environment is used.
+More on test environments under the [Nightwatch Runner](https://v2.nightwatchjs.org/guide/using-nightwatch/concepts.html#defining-test-environments) section.
 
-If you run your tests specifying the `integration` environment (with `--env integration`) the `launch_url` will be set to `http://staging.host`, as per the configuration. Otherwise it will have the value defined in the `default` environment (i.e. `http://localhost`).
+If you run your tests specifying the `integration` environment (with `--env integration`) the `baseUrl` will be set to `http://staging.host`, as per the configuration. Otherwise it will have the value defined in the `default` environment (i.e. `http://localhost`).
 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Demo test' : function (browser) {
     browser
-      .url(browser.launchUrl)
+      .url(browser.baseUrl)
       // ...
       .end();
   }
@@ -171,28 +191,59 @@ If you run your tests specifying the `integration` environment (with `--env inte
   </thead>
   <tbody>
     <tr>
-       <td>`launch_url`</td>
+       <td>`baseUrl`</td>
        <td>string</td>
        <td>none</td>
-       <td>A url which can be used later in the tests as the main url to load. Can be useful if your tests will run on different environments, each one with a different url.</td>
+       <td>A url which can be used later in the tests as the main url to load. Can be useful if your tests will run on different environments, each one with a different url.<br><br>
+        Aliases: `base_url`, `launch_url`, `launchUrl`.</td>
      </tr>
 
     <tr>
-      <td>`start_session`</td>
-      <td>boolean</td>
-      <td>true</td>
-      <td>Whether or not to automatically start the WebDriver session. This will typically be set to `false` when running unit/integration tests that don't interact with the Webdriver server.</td>
-    </tr>
-    
-    <tr>
-      <td>`desiredCapabilities`</td>
-      <td>object</td>
+      <td>`desiredCapabilities` <br>alias: `capabilities`</td>
+      <td>object | function | [Selenium Capabilities](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/capabilities_exports_Capabilities.html)</td>
       <td></td>
-      <td>The WebDriver capabilities when a new session will be created. You can specify browser name for instance along with other capabilities.
+      <td>The WebDriver capabilities for when a new session will be created. You can specify browser name for instance along with other capabilities.
         <br>Example:<br><br>
 <code>"desiredCapabilities" : {<br>
 &nbsp;&nbsp;"browserName" : "firefox", <br>&nbsp;&nbsp;"acceptInsecureCerts" : true<br>}</code><br>
 You can view the complete list of capabilities <a href="https://w3c.github.io/webdriver/#capabilities" target="_blank">here</a>.
+<br><br>
+Since v2.0, [Selenium Capabilities](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/capabilities_exports_Capabilities.html) objects can also be specified. Example:<br>
+
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">const firefox = require('selenium-webdriver/firefox');
+
+const options = new firefox.Options()
+  .addExtensions('/path/to/extension.xpi');
+
+module.exports = {
+  src_folders: ['tests'],
+  test_settings: {
+    default: {
+      browserName: 'firefox',
+      desiredCapabilities: options
+    }
+  }
+};
+</code></pre></div>
+<br>Or as a function:
+
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">module.exports = {
+  src_folders: ['tests'],
+  test_settings: {
+    default: {
+      browserName: 'firefox',
+      desiredCapabilities() {
+        const firefox = require('selenium-webdriver/firefox');
+
+        const options = new firefox.Options()
+          .addExtensions('/path/to/extension.xpi');
+
+        return options;
+      }
+    }
+  }
+};
+</code></pre></div>
 </td>
 </tr>
 
@@ -203,7 +254,7 @@ You can view the complete list of capabilities <a href="https://w3c.github.io/we
        <td>Selenium generates screenshots when command errors occur. With <code>on_failure</code> set to true, also generates screenshots for failing or erroring tests. These are saved on the disk. <br><br>Since `v0.7.5` you can disable screenshots for command errors by setting `"on_error"` to `false`.
       <br><br>Example:<br><br><code>"screenshots" : {<br>&nbsp;&nbsp;"enabled" : true,<br>&nbsp;&nbsp;"on_failure" : true,<br>&nbsp;&nbsp;"on_error" : false,<br>&nbsp;&nbsp;"path" : ""<br>}</code></td>
      </tr>
-  
+
      <tr>
        <td>`globals`</td>
        <td>object</td>
@@ -211,7 +262,7 @@ You can view the complete list of capabilities <a href="https://w3c.github.io/we
        <td>An object which will be made available within the test and can be overwritten per environment. Example:<br><br>
 <code>"globals" : {<br>&nbsp;&nbsp;"myGlobal" : "some_global"<br>}</code>
 
-Globals can also be defined in an external file. More on [External Globals](https://nightwatchjs.org/guide#external-globals).
+<br><br>Globals can also be defined in an external file. More on [External Globals](https://v2.nightwatchjs.org/guide/using-nightwatch/external-globals.html).
 </td>
 </tr>
 
@@ -221,7 +272,12 @@ Globals can also be defined in an external file. More on [External Globals](http
        <td>false</td>
        <td>Set this to `true` if you'd like to persist the same globals object between testsuite runs or have a (deep) copy of it per each testsuite.</td>
     </tr>
-    
+    <tr>
+      <td>`start_session`</td>
+      <td>boolean</td>
+      <td>true</td>
+      <td>Whether or not to automatically start the WebDriver session. This will typically be set to `false` when running unit/integration tests that don't interact with the Webdriver server.</td>
+    </tr>
     <tr>
      <td>`end_session_on_fail`</td>
      <td>boolean</td>
@@ -235,7 +291,7 @@ Globals can also be defined in an external file. More on [External Globals](http
        <td>true</td>
        <td>Skip the remaining testcases (or test steps) from the same test suite (i.e. test file), when one testcase fails.</td>
     </tr>
-  
+
     <tr>
      <td>`use_xpath`</td>
      <td>boolean</td>
@@ -270,7 +326,7 @@ Globals can also be defined in an external file. More on [External Globals](http
       <td>localhost</td>
       <td>The hostname/IP on which the Selenium Server is accepting connections.</td>
     </tr>
-    
+
     <tr>
       <td>`selenium_port` <br><span class="optional">Deprecated</span> - use `selenium.port`</td>
       <td>integer</td>
@@ -389,14 +445,14 @@ The below settings can be used to control the output and logging when running te
     <td>boolean</td>
     <td>false</td>
     <td>Set this to true if you'd like to not display errors during the execution of the test (they are shown at the end always).</td>
-  </tr> 
+  </tr>
 
   <tr>
     <td>`output_timestamp`</td>
     <td>boolean</td>
     <td>false</td>
     <td>Set this to true if you'd like to see timestamps next to the logging output.</td>
-  </tr> 
+  </tr>
 
   <tr>
     <td>`log_screenshot_data`</td>
@@ -428,7 +484,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>boolean</td>
    <td>false</td>
    <td>When this is enabled, the Webdriver server is run in background in a [child process](https://nodejs.org/api/child_process.html) and started/stopped automatically.
-    <br>Nightwatch includes support for managing Chromedriver, Geckodriver (Firefox), Safaridriver, and Selenium Server. Please refer to the [Install Webdriver](https://nightwatchjs.org/gettingstarted/installation/#webdriver-service) section for details.  
+    <br>Nightwatch includes support for managing Chromedriver, Geckodriver (Firefox), Safaridriver, and Selenium Server. Please refer to the [Install Webdriver](https://v2.nightwatchjs.org/gettingstarted/installation/#webdriver-service) section for details.  
    </td>
  </tr>
 
@@ -460,11 +516,18 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
      <td>Should be set to `true` if connecting to a remote (cloud) service via HTTPS. Also don't forget to set port to 443.</td>
   </tr>
 
-  <tr>
+   <tr>
      <td>`log_path`</td>
      <td>string|boolean</td>
      <td>none</td>
      <td>The location where the Webdriver service log file <code>output.log</code> file will be placed. Defaults to current directory.<br>To disable Webdriver logging, set this to <code>false</code></td>
+   </tr>
+
+   <tr>
+     <td>`log_file_name`</td>
+     <td>string|none</td>
+     <td>none</td>
+     <td>By default, the log file name will be the same as the testsuite file name, but a different filename can be specified as well.</td>
    </tr>
 
    <tr>
@@ -478,7 +541,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
     <td>`keep_alive`</td>
     <td>boolean|object</td>
     <td>false</td>
-    <td>Enable [HTTP Keep-Alive](https://nodejs.org/api/http.html#http_new_agent_options). If set to `true` the keepAlive option is enabled with default settings (`keepAliveMsecs` = 3000). 
+    <td>Enable [HTTP Keep-Alive](https://nodejs.org/api/http.html#http_new_agent_options). If set to `true` the keepAlive option is enabled with default settings (`keepAliveMsecs` = 3000).
     <br>If set to an object, can specify specify the `keepAliveMsecs` value.
      <br><br>Example: <code>"keep_alive" : {"enabled" : true, "keepAliveMsecs" : 2000}</code></td>
   </tr>
@@ -540,23 +603,18 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
       <td>`proxy`</td>
       <td>string</td>
       <td>none</td>
-      <td>Proxy requests to the Webdriver (or Selenium) service. http, https, socks(v5), socks5, sock4, and pac are accepted. Uses <a href="https://github.com/TooTallNate/node-proxy-agent" target="_blank">node-proxy-agent</a>.<br><br>Example: <code>http://user:pass@host:port</code></td>
+      <td>Proxy requests to the Webdriver (or Selenium) service. http, https, socks(v5), socks5, sock4, and pac are accepted. 
+<br>Uses <a href="https://www.npmjs.com/package/proxy-agent" target="_blank">proxy-agent</a> which needs to be installed as a separate package from NPM.
+<br><br>Example: <code>http://user:pass@host:port</code></td>
    </tr>
 
    <tr>
     <td>`default_path_prefix`</td>
     <td>string</td>
     <td></td>
-    <td>Needed sometimes when using a Selenium Server. The prefix to be added to to all requests (e.g. /wd/hub). 
+    <td>Needed sometimes when using a Selenium Server. The prefix to be added to to all requests (e.g. /wd/hub).
     </td>
   </tr>
-
- <tr>
-   <td>`use_legacy_jsonwire`</td>
-   <td>boolean</td>
-   <td>false</td>
-   <td>Some Webdriver implementations (Safari, Edge) support both the <a href="https://www.w3.org/TR/webdriver/" target="_blank">W3C Webdriver API</a> as well as the legacy <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol" target="_blank">JSON Wire</a> (Selenium) API.</td>
- </tr> 
 
  </tbody>
 </table>
@@ -677,7 +735,7 @@ The following **NPM** packages are assumed to be installed in the current projec
       start_process: false
     }
   },
-  
+
   'selenium.chrome': {
     extends: 'selenium',
     desiredCapabilities: {
@@ -687,14 +745,14 @@ The following **NPM** packages are assumed to be installed in the current projec
       }
     }
   },
-  
+
   'selenium.firefox': {
     extends: 'selenium',
     desiredCapabilities: {
       browserName: 'firefox'
     }
   },
-  
+
   'selenium.ie': {
     extends: 'selenium',
     desiredCapabilities: {
@@ -717,7 +775,7 @@ Remember to also enable HTTP keepalive for improved network performance.
 <div class="sample-test">
 <pre><code class="language-javascript">module.exports = {
   src_folders: [],
-  
+
   webdriver: {
     keep_alive: true,
     timeout_options: {
@@ -725,18 +783,18 @@ Remember to also enable HTTP keepalive for improved network performance.
       retry_attempts: 3
     }
   }
-  
+
   test_settings: {
     default: {
       launch_url: 'https://nightwatchjs.org'
     },
-  
+
     browserstack: {
       selenium: {
         host: 'hub-cloud.browserstack.com',
         port: 443
       },
-    
+
       // More info on configuring capabilities can be found on:
       // https://www.browserstack.com/automate/capabilities?tag=selenium-4
       desiredCapabilities: {
@@ -747,7 +805,7 @@ Remember to also enable HTTP keepalive for improved network performance.
         }
       }
     },
-  
+
     'browserstack.chrome': {
       extends: 'browserstack',
       desiredCapabilities: {
@@ -757,14 +815,14 @@ Remember to also enable HTTP keepalive for improved network performance.
         }
       }
     },
-  
+
     'browserstack.firefox': {
       extends: 'browserstack',
       desiredCapabilities: {
         browserName: 'firefox'
       }
     },
-  
+
     'browserstack.ie': {
       extends: 'browserstack',
       desiredCapabilities: {
@@ -795,5 +853,5 @@ Remember to also enable HTTP keepalive for improved network performance.
 [9]:	https://browserstack.com
 [10]:	https://www.npmjs.com/package/dotenv
 
-[1]:	https://nightwatchjs.org/guide#test-environments
+[1]:	https://v2.nightwatchjs.org/guide/using-nightwatch/concepts.html#defining-test-environments
 [2]:	https://github.com/nightwatchjs/nightwatch/blob/main/bin/nightwatch.json

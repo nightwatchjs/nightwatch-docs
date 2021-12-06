@@ -1,10 +1,25 @@
-### External Globals
+## External Globals
 
-> Globals are a useful concept which Nightwatch provides to be used for data operations between or outside of test runs. For a complete overview of what globals are and how they can be used, please refer to the [Using test globals](/gettingstarted/concepts/#using-test-globals) page in the Getting Started section. 
+Globals are a useful concept which Nightwatch provides to be used for data operations between or outside of test runs. For a complete overview of what globals are and how they can be used, please refer to the [Using test globals](https://v2.nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals) page in the Getting Started section. 
 
-Most of the time it's more useful to have your globals defined in an external file, specified in the `globals_path` property, instead of having them defined in `nightwatch.json`.
+Most of the time it's more useful to have your globals defined in an external file, specified in the `globals_path` config settings, instead of having them defined directly in the config file.
+
+<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">module.exports = {
+  globals_path: './nightwatch/globals.js'
+};</code></pre></div>
 
 You can overwrite globals per environment as needed. Say you have your tests running locally and also against a remote staging server. Most of the times you will need some different setting up.
+
+#### Example:
+<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">module.exports = {
+  'default' : {
+    isLocal : true,
+  },
+
+  'integration' : {
+    isLocal : false
+  }
+};</code></pre></div>
 
 #### Global Test Settings
 
@@ -65,7 +80,7 @@ Here's the entire global object with the default values, which can be overwritte
   }
 };</code></pre></div>
 
-#### Global Test Hooks
+### Global Test Hooks
 The same set of hooks as per test suite is also available globally, outside the scope of the test. In the case of global hooks, the `beforeEach` and `afterEach` refers to a test suite (i.e. test file), and are ran before and after a _test suite_.
 
 #### Global before[Each] and after[Each]
@@ -87,7 +102,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
   },
 
   // External before hook is ran at the beginning of the tests run, before creating the Selenium session
-  before: function(done) {
+  before(done) {
     // run this only for the local-env
     if (this.isLocal) {
       // start the local server
@@ -101,7 +116,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
   },
 
   // External after hook is ran at the very end of the tests run, after closing the Selenium session
-  after: function(done) {
+  after(done) {
     // run this only for the local-env
     if (this.isLocal) {
       // start the local server
@@ -115,7 +130,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
   },
 
   // This will be run before each test suite is started
-  beforeEach: function(browser, done) {
+  beforeEach(browser, done) {
     // getting the session info
     browser.status(function(result) {
       console.log(result.value);
@@ -124,9 +139,19 @@ The methods are defined in the external `globals` file and invoked using the `gl
   },
 
   // This will be run after each test suite is finished
-  afterEach: function(browser, done) {
+  afterEach(browser, done) {
     console.log(browser.currentTest);
     done();
+  },
+  
+  // Called right after the command .navigateTo() is finished
+  async onBrowserNavigate(browser) {
+    return Promise.resolve();
+  },
+
+  // Called right before the command .quite() is finished
+  async onBrowserQuit(browser) {
+    return Promise.resolve();
   }
 };</code></pre></div>
 

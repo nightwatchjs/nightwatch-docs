@@ -14,10 +14,9 @@ It uses a chain-able language to construct assertions given an element specified
   browser.expect.element('#main').to.be.visible;
 };</code></pre></div>
 
-<div class="apimethod">
 <h3 id="expect-chains">Language Chains</h3>
+
 The following are provided as chainable getters to improve the readability of your assertions. They do not provide testing capabilities and the order is not important.
-</div>
 
 - to
 - be
@@ -33,8 +32,9 @@ The following are provided as chainable getters to improve the readability of yo
 - does
 - of
 
+
 <div class="apimethod">
-<h3 id="expect-matchers">.equal(value)/.contain(value)/.match(regex)</h3>
+<h3 id="expect-matchers">.equal(`value`)/.contain(`value`)/.match(`regex`)</h3>
 <p>These methods will perform assertions on the specified target on the current element. The targets can be an attribute value, the element's inner text and a css property.</p>
 
 <div class="sample-test">
@@ -49,7 +49,7 @@ The following are provided as chainable getters to improve the readability of yo
 </div>
 
 <div class="apimethod">
-<h3 id="expect-startend">.startWith(value)/.endWith(value)</h3>
+<h3 id="expect-startend">.startWith(`value`)/.endWith(`value`)</h3>
 
 <p>Same as `equal` / `contain` / `match`.</p>
 
@@ -78,7 +78,7 @@ The following are provided as chainable getters to improve the readability of yo
 </div>
 
 <div class="apimethod">
-  <h3 id="expect-before">.before(ms)/.after(ms)</h3>
+  <h3 id="expect-before">.before(`ms`)/.after(`ms`)</h3>
   <p>These methods perform the same thing which is essentially retrying the assertion for the given amount of time (in milliseconds). <code>before</code> or <code>after</code> can be chained to any assertion and thus adding retry capability.</p>
 
   <p>You can change the polling interval by defining a <code>waitForConditionPollInterval</code> property (in milliseconds) as a global property in your <code>nightwatch.json</code> or in your external globals file.

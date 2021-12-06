@@ -80,9 +80,7 @@ describe('homepage test with describe', function() {
 
 <h3 id="complete-syntax">Complete BDD Syntax</h3>
 
-<div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-describe('homepage test with describe', function() {
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   // All current settings are available via this.settings
   // console.log('Settings', this.settings);
   
@@ -141,8 +139,7 @@ describe('homepage test with describe', function() {
   });
 
   after(browser => browser.end());
-});
-</code></pre></div>
+});</code></pre></div>
 
 - Previous: [Writing Tests](/guide/using-nightwatch/writing-tests.html)
 - Next: [Using ES6 async/await](/guide/using-nightwatch/using-es6-async.html)

@@ -128,7 +128,7 @@ module.exports = {
   // Whether or not to run individual test files in parallel.
   test_workers: false,
 
-  /*
+  `/*`
   test_workers: {
     enabled: true,
 
@@ -144,7 +144,7 @@ module.exports = {
     // selectively pass node arguments to individual worker processes
     node_options: ['--inspect']
   },
-  */
+  `*/`
 
   // Specifies which test runner to use: default|mocha
   test_runner: 'default',
@@ -247,6 +247,16 @@ module.exports = {
 
   unit_tests_mode: false,
 
-  default_reporter: 'junit'
+  default_reporter: 'junit',
+  
+  // In Nightwatch v1.x, when used with "await" operator, API commands will return the full result object as {value: `<VALUE>`}
+  // whereas in v2, the value is return directly; if using a callback, the behaviour remains unchanged
+  backwards_compatibility_mode: false,
+
+  // disable the global apis like "browser", "element()", "expect()"; this might be needed if using Nightwatch with third-party libraries
+  disable_global_apis: false,
+  
+  // enable aborting the test run execution when the first test failure occurs; the remaining test suites will be skipped
+  enable_fail_fast: false
 }</code></pre></div>
 

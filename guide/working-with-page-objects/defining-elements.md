@@ -1,4 +1,4 @@
-### Defining Elements
+## Defining Elements
 
 Most of the time, you will want to define elements on your page that your tests will interact with through commands and assertions. This is made simple using the `elements` property so that all your elements are defined in a single place. Especially in larger integration tests, using `elements` will go a long way to keep test code DRY.
 

@@ -5,7 +5,7 @@ author_title: Selenium contributor
 author_url: https://github.com/pujagani
 tags: [nightwatch-v2]
 description: Leveraging Grid with Nightwatch for distributed testing
-draft: false
+draft: true
 date: 2021-11-18
 ---
 
