@@ -243,7 +243,7 @@ it('visits a page', () => {
 
 ```js
 it('visits a page', () => {
-  browser.url('/about')
+  browser.navigateTo('/about')
   browser.forward()
   browser.back()
 })
