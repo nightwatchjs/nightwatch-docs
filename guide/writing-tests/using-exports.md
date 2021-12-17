@@ -1,4 +1,6 @@
-<h3 id="writing-tests"><span>Writing Tests</span></h3>
+## Writing Tests
+
+<h3 id="writing-tests"><span>Using "exports" Interface</span></h3>
 
 Nightwatch makes it very easy to write automated End-to-End tests using the preferred CSS selector model to locate elements on a page.
 

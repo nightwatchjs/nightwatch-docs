@@ -1,3 +1,5 @@
+## Working with DOM Elements
+
 <h3 id="finding-amp-interacting-with-elements"><span>Finding &amp; Interacting with Elements</span></h3>
 
 Finding elements on a page is by far one of the most common functions during an end-to-end test. Nightwatch provides several techniques of locating elements and also an extensible assertion framework to perform verifications on them. 
@@ -7,7 +9,7 @@ Elements are searched for from the document root, using either a CSS selector or
 Elements are internally identified using a _[web element reference id][3]_. When interacting with elements, this step happens behind the scenes and Nightwatch has automatic retry mechanisms for locating the element before interacting with it or performing assertions.
 
 <div class="alert alert-info">
-<h5>Implicit Waits</h5>
+<h5>Element Retries</h5>
 When interacting with elements, Nightwatch polls the DOM for a configurable duration when trying to find any element. If the element is not found, a `NoSuchElementError` error is thrown. 
 </div>
 

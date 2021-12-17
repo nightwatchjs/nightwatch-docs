@@ -1,4 +1,4 @@
-### Using Test Tags
+## Using Test Tags
 
 You can also selectively target tests to run based on tags, such that a test may be belong to multiple tags. For example, you might have a login test that belongs to a login suite as well as a sanity suite.
 

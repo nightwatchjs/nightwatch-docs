@@ -1,4 +1,4 @@
-### Using Test Environments
+## Using Test Environments
 
 > Test environments are a useful concept which Nightwatch provides to be used for a better structure of configuration for using large-scale projects. For a complete overview of what test environments are and how they can be used, please refer to the [Defining test environments](/gettingstarted/concepts/#defining-test-environments) page in the Getting Started section.
 

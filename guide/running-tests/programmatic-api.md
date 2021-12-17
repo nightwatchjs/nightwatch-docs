@@ -1,4 +1,4 @@
-### Programmatic API
+## Programmatic API
 
 When included as a regular library package, Nightwatch exports an API through which it may be used programmatically. 
 

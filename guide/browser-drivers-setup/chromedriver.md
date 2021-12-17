@@ -4,15 +4,15 @@
 ChromeDriver is a standalone server which implements the [JSON Wire Protocol](https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol) for Chromium, however it is currently in the process of transitioning to the W3C WebDriver spec.
 
 It is available for Chrome on Android and Chrome on Desktop (Mac, Linux, Windows and ChromeOS).
- 
+
 
 #### Download
 
 ChromeDriver can be downloaded from the [ChromeDriver Downloads](https://chromedriver.chromium.org/downloads) page. Or you can use the [chromedriver](https://www.npmjs.com/package/chromedriver) NPM package as a dependency in your project:
 
-<pre>npm install chromedriver --save-dev</pre>
+<pre><code class="language-bash">npm install chromedriver --save-dev</code></pre>
 
-#### Standalone Usage 
+#### Standalone Usage
 
 Nightwatch can manage the ChromeDriver service automatically, as with other WebDriver services, such as GeckoDriver. To use ChromeDriver directly, configure Nightwatch as below:
 
@@ -62,7 +62,8 @@ You can specify Chrome options or switches using the `chromeOptions` dictionary,
     "default" : {
       "desiredCapabilities" : {
         "browserName" : "chrome",
-        "chromeOptions": {
+        "goog:chromeOptions": {
+          "w3c": true,
           "args" : ["--no-sandbox"]
         },
         "loggingPrefs": {"driver": "INFO", "server": "OFF", "browser": "INFO"}

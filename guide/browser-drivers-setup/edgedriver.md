@@ -1,7 +1,7 @@
-## Microsoft WebDriver
+## Edge Driver
 
 #### Overview
-[Microsoft WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) is a standalone server which implements the WebDriver protocol for the Edge browser. It is supported by Windows 10 and onwards.
+[Microsoft Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) is a standalone server which implements the WebDriver protocol for the Edge browser. It is supported by Windows 10 and onwards.
 
 #### Download
 
@@ -57,7 +57,7 @@ This requires a bit more configuration and you will need to start/stop the EdgeD
 
 ##### 2) Configure the port and default path prefix.
 
-Microsoft WebDriver runs by default on port 9515. We also need to clear the `default_path_prefix`, as it is set by default to `/wd/hub`, which is what selenium is using.
+EdgeDriver runs by default on port 9515. We also need to clear the `default_path_prefix`, as it is set by default to `/wd/hub`, which is what selenium is using.
 
 <pre><code class="language-javascript">{
   <strong>"test_settings"</strong> : {
