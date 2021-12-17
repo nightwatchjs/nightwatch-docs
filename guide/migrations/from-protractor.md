@@ -148,13 +148,13 @@ expect.elements(by.css('custom-class')).count.to.equal(3);
 <span>Before: Protractor</span>
 
 ```js
-expect(element(by.tagName('input[name="first_name"]'))).getAttribute('value')).toBe('foo')
+expect(element(by.css('input[name="first_name"]'))).getAttribute('value')).toBe('foo')
 ```
 
 <span>After: Nightwatch</span>
 
 ```js
-browser.expect.element(by.tagName('input[name="first_name"]')).to.have.attribute('value').equals('foo');
+browser.expect.element(by.css('input[name="first_name"]')).to.have.attribute('value').equals('foo');
 ```
 
 ### Text Content
