@@ -6,7 +6,7 @@ Protractor was a popular end-to-end test framework for Angular and AngularJS app
 
 ## Getting Started
 
-Install the Nightwatch Angular schematic to add Nightwatch to your angular project.
+Install the Nightwatch Angular schematic to add Nightwatch to your Angular project.
 
 ```sh
 ng add @nightwatch/schematics
