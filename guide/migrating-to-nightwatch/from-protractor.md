@@ -2,7 +2,7 @@
 
 ### Introduction
 
-Protractor was a popular end-to-end test framework for Angular and AngularJS applications. However, Protractor will [no longer be shipped][AngualarRFC] with the new Angular Projects as of Angular 12. This migration guide to help make the transition from Protector on your team to Nightwatch easier.
+Protractor was a popular end-to-end test framework for Angular and AngularJS applications. However, Protractor will [no longer be shipped][AngualarRFC] with the new Angular Projects as of Angular 12. This migration guide to help make the transition from Protractor on your team to Nightwatch easier.
 
 ### Getting Started
 
