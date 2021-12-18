@@ -4,7 +4,7 @@ Appium is an open-source tool for automating native, mobile web, and hybrid appl
 
 ### Theory of Operation
 
-Appium is a Node JS based servcer that exposes REST APIs compliant with Web driver protocol that wraps automation libraries from vendors (UIAutomator2/Espresso, Apple XCUITest/UIAutomation). In an end-end scenario Nightwatch makes request to Appium server, server talks to native framework using different platform drivers for executing commands and finally returns HTTP response back to Nightwatch.
+Appium is a Node JS based server that exposes REST APIs compliant with Web driver protocol that wraps automation libraries from vendors (UIAutomator2/Espresso, Apple XCUITest/UIAutomation). In an end-end scenario Nightwatch makes request to Appium server, server talks to native framework using different platform drivers for executing commands and finally returns HTTP response back to Nightwatch.
 
 
 ![appium-nightwatch](https://user-images.githubusercontent.com/28780767/141315676-148b9da3-7785-4eea-91f9-d1107e88696b.png)
