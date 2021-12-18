@@ -47,14 +47,28 @@ You may find more details regarding capabilities and list of all capabilities th
 
 ### Writing a basic test
 
-Here is a basic test that navigates to Nightwatch website and checks the latest version of Nightwatch version available.
+Here is a demo test that searches Night Watch on Rijks Museum website.
 
 ```js
 describe('Nightwatch Website tests', function() {
-    it('Check verison of nightwatch ', function(){
-        browser.url('https://nightwatchjs.org')
-        .assert.attributeContains('#bd-versions','text','1.7.11');
-    })
+ 
+  it('Searching the Rijksmuseum ', async function(){
+    browser.navigateTo('https://www.rijksmuseum.nl/en');
+    const cookieDialogVisible = await browser.isVisible({
+      selector: '.cookie-consent-bar-wrap',
+      suppressNotFoundErrors: true
+    });
+ 
+    if (cookieDialogVisible) {
+      browser.click('.cookie-consent-bar-wrap button.link');
+    }
+    browser.pause(1000).click('a[aria-label="Search"]');
+
+    return browser.setValue('input.search-bar-input[type=text]', ['night watch'])
+      .click('button.button.search-bar-button')
+      .pause(1000)
+      .assert.containsText('.search-results', 'The Night Watch, Rembrandt van Rijn, 1642');
+  });
 });
 ```
 
