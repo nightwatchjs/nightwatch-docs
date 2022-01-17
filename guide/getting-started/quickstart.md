@@ -80,6 +80,6 @@ You can also run in all available browsers in parallel using one command. You on
 That's about it for now. Hope you head a great first experience with Nightwatch. Let us know your thoughts on [Twitter](https://twitter.com/nightwatchjs) or you can chat with us on [Gitter](https://gitter.im/nightwatchjs/nightwatch).
 
 #### Next Steps:
-- [Start Using Nightwatch](/guide/using-nightwatch/overview.html)
+- [Start Using Nightwatch](/guide/using-nightwatch/concepts.html)
 - [Learn about Working with DOM Elements in Nightwatch](/guide/using-nightwatch/finding-and-interacting-with-elements.html)
 - [Running Tests with Nightwatch](/guide/running-tests/nightwatch-runner.html)
