@@ -119,7 +119,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
   after(done) {
     // run this only for the local-env
     if (this.isLocal) {
-      // start the local server
+      // stop the local server
       App.stopServer(function() {
         // shutting down
         done();

@@ -48,7 +48,7 @@ Say in the example above, the `input[type=search]` element selector returns 3 el
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">>module.exports = {
   'Demo test ecosia.org': function (browser) {
-    browser.setValue({selector: 'input[type=search]', index: 2}, 'nightwatch')
+    browser.setValue({selector: 'input[type=search]', index: 1}, 'nightwatch')
   }
 };</code></pre>
 </div>
