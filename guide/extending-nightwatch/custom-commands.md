@@ -1,4 +1,4 @@
-### Writing Custom Commands
+## Writing Custom Commands
 
 Most of the time you will need to extend the Nightwatch commands to suit your own application needs. Doing that is only a matter of creating a separate folder and defining your own commands inside, each in its own file.
 
@@ -6,7 +6,7 @@ Then specify the path to that folder in the `nightwatch.json` file, as the `cust
 
 There are two main ways in which you can define a custom command:
 
-#### 1. Class-style commands
+#### 1) Class-style commands
 This is the recommended style of writing custom commands and it's also how most of the Nightwatch's own commands are written. Your command module needs to export a class constructor with a `command` instance method representing the command function. 
 
 All Nightwatch commands are asynchronous which means that custom commands must signal the completion (in the `command` method). This can be achieved in two ways:

@@ -1,5 +1,9 @@
-## Custom Reporter
-If you'd like to define your own reporter in addition to the built-in ones (stdout and jUnit-xml) you can do so in two ways:
+## Plugin API (alpha)
+Nightwatch `v2.0` also introduces a new interface for defining plugins and extending the base functionality of Nightwatch with your own custom commands and assertions. 
+
+Plugins are essentially wrappers over custom commands and assertions. Plugins are installed in your `node_modules` folder.
+
+#### Authoring a New Nightwatch Plugin
 
 #### Using The `--reporter` command-line argument
 Define your reporter in a separate file, using the below interface, and then specify the path to the file using the `--reporter` cli argument.
