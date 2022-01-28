@@ -1,36 +1,50 @@
-## Plugin API (alpha)
+## Plugin API (beta)
 Nightwatch `v2.0` also introduces a new interface for defining plugins and extending the base functionality of Nightwatch with your own custom commands and assertions. 
 
-Plugins are essentially wrappers over custom commands and assertions. Plugins are installed in your `node_modules` folder.
+Plugins are essentially wrappers over custom commands and assertions. Plugins are installed in your `node_modules` folder. The plugin API is still in beta at the moment. 
 
-#### Authoring a New Nightwatch Plugin
+#### Authoring a Nightwatch plugin
+If you're new to publishing NPM packages, read the [Creating and publishing unscoped public packages](https://docs.npmjs.com/creating-and-publishing-unscoped-public-packages) guide first.
 
-#### Using The `--reporter` command-line argument
-Define your reporter in a separate file, using the below interface, and then specify the path to the file using the `--reporter` cli argument.
+A Nightwatch plugin needs to be installed from NPM in the same project where Nightwatch is used (or as a global NPM package).
 
-##### Interface:
-<div class="sample-test">
-<pre><code class="language-javascript">
-module.exports = {
-  write : function(results, options, done) {
-    done();
-  }
-};</code></pre>
-</div>
+##### Folder structure:
+The folder structure is very simple and looks like this:
 
-#### The `reporter` method in your external globals
+<pre>
+nightwatch/
+  ├── custom-commands/
+  |   ├── my_new_custom_command.js
+  |   └── my_other_custom_command.js
+  ├── custom-assertions/
+  |   ├── my_new_custom_assertions.js
+  |   └── my_other_custom_command.js
+  ├── index.js
+  ├── LICENSE.md
+  ├── package.json
+  └── README.md
+</pre>
 
-Add your reporter in the external globals file. Read more about [external globals](/guide/using-nightwatch/external-globals.html).
+The Nightwatch runner will pick up the custom commands and assertions automatically if the plugin is defined with the above structure.
 
-See the provided [globalsModule.js](https://github.com/nightwatchjs/nightwatch/blob/main/examples/globalsModule.js) for an example.
+#### Installing a new plugin
+Once the plugin will is available in NPM (or another package repository), you can simply install it in your project folder and then update the Nightwatch config file by adding it to the `plugins` Array.
 
-#### Example:
-<div class="sample-test">
-<pre><code class="language-javascript">
-module.exports = {
-  reporter : function(results, done) {
-    console.log(results);
-    done();
-  }
-};</code></pre>
-</div>
+First, install the plugin from NPM:
+
+<div class="sample-test"><pre data-language="bash"><code class="language-bash">npm i my-new-plugin --save-dev</code></pre></div>
+
+Then update your `nightwatch.conf.js` (or `nightwatch.json`) and add it to the `plugins` list:
+
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">{
+  src_folders: [...],
+    
+  plugins: ['my-new-plugin']
+  
+  // other nightwatch config options
+
+}
+</code></pre></div>
+
+#### Example
+See our new `Vite` plugin [vite-plugin-nightwatch](https://github.com/nightwatchjs/vite-plugin-nightwatch) for an example.

@@ -73,13 +73,13 @@ Below are the default settings that will be passed to the Nightwatch instance du
    </tr>
 
     <tr>
-     <td>`backwards_compatibility_mode`<br><span class="optional">since v1.2.2</span></td>
+     <td>`backwards_compatibility_mode`<br><span class="optional">since v2.0</span></td>
      <td>boolean</td>
      <td>false</td>
      <td>In Nightwatch v1.x, when used with `await` operator, API commands will return the full result object as `{value: `<VALUE>`}` whereas in v2, the value is return directly. If using a callback, the behaviour remains unchanged.</td>
    </tr>
     <tr>
-     <td>`disable_global_apis`<br><span class="optional">since v1.2.2</span></td>
+     <td>`disable_global_apis`<br><span class="optional">since v2.0</span></td>
      <td>boolean</td>
      <td>false</td>
      <td>Disable the global apis like `"browser"`, `"element()"`, `"expect()"`; this might be needed if using Nightwatch with third-party libraries.</td>
@@ -117,7 +117,7 @@ The below settings are used to control the way the built-in CLI test runner work
    </tr>
 
   <tr>
-     <td>`enable_fail_fast`<br><span class="optional">since v1.2.2</span></td>
+     <td>`enable_fail_fast`<br><span class="optional">since v2.0</span></td>
      <td>boolean</td>
      <td>false</td>
      <td>Enable aborting the test run execution when the first test failure occurs; the remaining test suites will be skipped.</td>
