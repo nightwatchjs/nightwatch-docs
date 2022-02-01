@@ -5,7 +5,7 @@ Nightwatch provides a fluent BDD-style interface for performing assertions on va
 As you would expect (pun intended) from <a href="https://chaijs.com/api/bdd/" target="_blank">Chai</a>, you can use it to check text values directly:
 
 <div class="sample-test">
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">test('delete node from search and ensure it disappears (focused & from search)', function(browser) {
+<pre class="line-numbers" data-language="javascript"><code class="language-javascript">test('delete node from search and ensure it is gone', function(browser) {
   browser
     .assert.textContains(`${targetNodeSelector} #nodeContent`, targetNodeContent)
     .click({ selector: `${targetNodeSelector} #moreOptionsButton`, index: 0 })
