@@ -23,7 +23,7 @@ To install the latest version using the <code>npm</code> command line tool, run 
 
 <h3 id="install-webdriver"><span>Install Browser Drivers</span></h3>
 
-Depending on your target browsers, you will need one or more specific WebDriver packages. Tou can install them from [NPM][3] or download separately. 
+Depending on your target browsers, you will need one or more specific WebDriver packages. You can install them from [NPM][3] or download separately. 
 
 <h4 id="install-geckodriver">GeckoDriver</h4>
 
