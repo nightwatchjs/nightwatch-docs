@@ -28,6 +28,44 @@ In the example below, the command `setValue` is first performing internally the 
 };</code></pre>
 </div>
 
+#### Relative Locators
+
+These locators are helpful when it is not easy to construct a locator for the desired element, but easy to describe spatially where the element is in relation to another element that does have an easily constructed locator.
+
+For example if we wanted to find the password field below the username we would do.
+
+<div class="sample-test">
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
+  'Demo test ecosia.org': function (browser) {
+    browser
+      .url('https://my.site')
+      .setValue(locateWith(By.tagName('input')).below(By.id('username'))), 'password')
+      .click('button[type=submit]')
+      .assert.containsText('.mainline-results', 'logged in')
+      .end();
+  }
+};</code></pre>
+</div>
+
+You can also use the following commands
+
+* `above`
+* `below`
+* `toRightOf`
+* `toLeftOf`
+* `near`
+
+##### Chaining Relative Locators
+
+You can chain relative locators as necessary as sometimes the element could be above and to the right of the starting element.
+
+<pre data-language="javascript"><code class="language-javascript">
+
+locateWith(By.tagName('button'))
+  .below(By.id('email')
+  .toRightOf(By.css('#cancel')));
+</code></pre>
+
 #### Element Properties
 
 An element can also be specified as an object if greater flexibility in locating and interacting with elements is needed. The object definition needs to contain at least the `selector` property. 
