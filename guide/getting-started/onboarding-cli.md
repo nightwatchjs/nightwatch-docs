@@ -32,3 +32,16 @@ npm init nightwatch -- -y</code></pre>
 <pre><code class="language-bash">npm init nightwatch path/to/new/project -- --yes
 # or
 npm init nightwatch path/to/new/project -- -y</code></pre>
+
+
+#### Generating a new config file
+
+While it's completely safe to run `npm init nightwatch` again in your existing Nightwatch project, if you want to just generate a new config file and install all the required dependencies and nothing else, you can use this tool with the `--generate-config` flag:
+
+##### 1) Generate new config file based on your preferences:
+
+<pre><code class="language-bash">npm init nightwatch -- --generate-config</code></pre>
+
+##### 2) Generate new config file with default configurations:
+
+<pre><code class="language-bash">npm init nightwatch -- --generate-config --yes</code></pre>
