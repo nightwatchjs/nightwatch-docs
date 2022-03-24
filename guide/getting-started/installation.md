@@ -65,16 +65,44 @@ You will only need Selenium Server when testing against Internet Explorer, if yo
 
 Selenium Server is a Java application, which means you will also need to have the [Java Development Kit (JDK)][11] installed, minimum required version is 7. You can check this by running `java -version` from the command line.
 
-#### Install From NPM
+#### Download Selenium
+
+Selenium server can be downloaded in the following two ways:
+
+##### Install From NPM
 The easiest way to install the Selenium Server is from [NPM][12]. Nightwatch automatic configuration is already prepared for usage with this package against Chrome, Firefox, and Internet Explorer.
 
-<pre><code class="language-bash">npm install selenium-server --save-dev</code></pre>
+<pre><code class="language-bash">npm install @nightwatch/selenium-server --save-dev</code></pre>
 
-#### Download Selenium
+##### Download from Selenium website
 
 You can find the latest Selenium Server stable and alpha version on the [Selenium downloads][13] page.
 
 Download the `selenium-server-standalone-{VERSION}.jar` file and place it on the computer with the browser you want to test. In most cases this will be on your local machine and typically inside your project's source folder. A good practice is to create a separate subfolder (e.g. `bin`) and place it there as you might have to download other driver binaries if you want to test multiple browsers.
+
+#### Configure Selenium in Nightwatch
+
+To use Nightwatch with Selenium Server, you can configure it as below:
+
+<pre><code class="language-javascript">{
+  <strong>"selenium"</strong>: {
+      "start_process": true,
+      "port": 4444,
+      "server_path": "",
+      "command": "standalone",
+      "cli_args": {
+        "webdriver.gecko.driver": "",
+        "webdriver.chrome.driver": "",
+      }
+    },
+    <strong>"webdriver"</strong>: {
+      "start_process": false,
+      "default_path_prefix": "/wd/hub"
+    }
+  }
+}</code></pre>
+
+**Note:** The above code-block assumes that you are using `@nightwatch/selenium-server` package with Selenium 4. If you are using selenium-server standalone jar file instead (downloaded from Selenium website), set the `server_path` property of `selenium` to point to the location of the jar file. And if you are using Selenium 3, remove the `command` property from `selenium`.
 
 #### Running Selenium Automatically
 
@@ -85,6 +113,8 @@ If the server is on the same machine where Nightwatch is running, it can be star
 To run the Selenium Server manually, from the directory with the jar run the following:
 
 <pre><code class="language-bash">java -jar selenium-server-standalone-{VERSION}.jar</code></pre>
+
+In this case, set the `start_process` property of `selenium` in the Nightwatch config above to `false`, so that Nightwatch does not try to start Selenium server automatically.
 
 #### Using Selenium Standalone Server
 For viewing all the run-time options, run the previous command adding the `-help`:
