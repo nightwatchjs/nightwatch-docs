@@ -74,15 +74,15 @@ The easiest way to install the Selenium Server is from [NPM][12]. Nightwatch aut
 
 <pre><code class="language-bash">npm install @nightwatch/selenium-server --save-dev</code></pre>
 
-##### Download from Selenium website
+##### Download from Selenium GitHub Releases
 
-You can find the latest Selenium Server stable and alpha version on the [Selenium downloads][13] page.
+You can find the latest Selenium Server stable and other versions on the [Selenium GitHub Releases][13] page.
 
-Download the `selenium-server-standalone-{VERSION}.jar` file and place it on the computer with the browser you want to test. In most cases this will be on your local machine and typically inside your project's source folder. A good practice is to create a separate subfolder (e.g. `bin`) and place it there as you might have to download other driver binaries if you want to test multiple browsers.
+Download the `selenium-server-{VERSION}.jar` file and place it on the computer with the browser you want to test. In most cases this will be on your local machine and typically inside your project's source folder. A good practice is to create a separate subfolder (e.g. `bin`) and place it there as you might have to download other driver binaries if you want to test multiple browsers.
 
 #### Configure Selenium in Nightwatch
 
-To use Nightwatch with Selenium Server, you can configure it as below:
+To use Nightwatch with Selenium Server, you can configure it as below. No additional config is required if you use `@nightwatch/selenium-sever` package to download Selenium.
 
 <pre><code class="language-javascript">{
   <strong>"selenium"</strong>: {
@@ -102,7 +102,11 @@ To use Nightwatch with Selenium Server, you can configure it as below:
   }
 }</code></pre>
 
-**Note:** The above code-block assumes that you are using `@nightwatch/selenium-server` package with Selenium 4. If you are using selenium-server standalone jar file instead (downloaded from Selenium website), set the `server_path` property of `selenium` to point to the location of the jar file. And if you are using Selenium 3, remove the `command` property from `selenium`.
+**Note:**
+
+The above configuration assumes that you are using `@nightwatch/selenium-server` package, which comes with Selenium 4 by default. You can install `@nightwatch/selenium-server` package with Selenium 3 by using the command `npm i @nightwatch/selenium-server@3`.
+
+If you are using selenium-server jar file instead (downloaded from Selenium website or Selenium GitHub Releases), set the `server_path` property of `selenium` to point to the location of the jar file. And if you are using Selenium 3 (through `@nightwatch/selenium-server` package or downloaded jar file), remove the `command` property from `selenium`.
 
 #### Running Selenium Automatically
 
@@ -136,5 +140,5 @@ More info about running the Selenium Server can be found here on the official [S
 [10]:	https://selenium.dev/documentation/en/grid/
 [11]:	https://www.oracle.com/technetwork/java/javase/downloads/index.html
 [12]:	https://www.npmjs.com/package/selenium-server
-[13]:	https://selenium-release.storage.googleapis.com/index.html
+[13]:	https://github.com/SeleniumHQ/selenium/releases
 [14]:	https://v2.nightwatchjs.org/guide/running-tests/nightwatch-runner.html
