@@ -1,19 +1,19 @@
 ## Edge Driver
 
 #### Overview
-[Microsoft Edge Driver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) is a standalone server which implements the WebDriver protocol for the Edge browser. It is supported by Windows 10 and onwards and is now available for Mac and Linux platforms also.
+[Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) is a standalone server which implements the WebDriver protocol for the Edge browser. It is supported by Windows 10 and onwards and is now available for Mac and Linux platforms also.
 
 #### Download
 
-Follow the [Download Microsoft Edge Driver](https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-webdriver) section on the official Microsoft Edge documentation to download the Edge Driver.
+Follow the [Download Microsoft Edge WebDriver](https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-webdriver) section on the official Microsoft Edge documentation to download the Edge WebDriver.
 
 After the download completes, extract the `msedgedriver` to your preferred location inside the project and follow the next steps on this page.
 
-More details about installation and usage documentation are available on the official [Microsoft WebDriver homepage](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
+More details about installation and usage documentation are available on the official [Microsoft Edge WebDriver homepage](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
 
 #### Nightwatch Usage
 
-Nightwatch can manage the EdgeDriver service automatically, as with other WebDriver services, such as GeckoDriver. To use EdgeDriver directly, configure Nightwatch as below and set the `server_path` property of `webdriver` to the location of the extracted `msedgedriver` in your project:
+Nightwatch can manage the EdgeDriver service automatically, as with other WebDriver services, such as GeckoDriver. To use Microsoft Edge WebDriver directly, configure Nightwatch as below (already configured in [auto-generated configuration file](/guide/configuration/overview.html#auto-generated-configuration)) and set the `server_path` property of `webdriver` to the location of the extracted `msedgedriver` in your project:
 
 <pre><code class="language-javascript">{
   <strong>"test_settings"</strong>: {
@@ -46,7 +46,7 @@ and then run the tests using the following command:
 
 #### Selenium Server Usage
 
-If you're using Microsoft EdgeDriver through Selenium Server, simply set the cli argument `"webdriver.edge.driver"` to point to the location of the binary file. E.g.:
+If you're using Microsoft Edge WebDriver through Selenium Server, simply set the cli argument `"webdriver.edge.driver"` to point to the location of the binary file. E.g.:
 
 <pre><code class="language-javascript">{
   <strong>"test_settings"</strong>: {
@@ -85,13 +85,13 @@ and then run the tests using the following command:
 
 #### Standalone Usage
 
-If you're only running your tests against Edge, running the EdgeDriver standalone can be slightly faster. Also there is no dependency on Java.
+If you're only running your tests against Edge, running the Microsoft Edge WebDriver standalone can be slightly faster. Also there is no dependency on Java.
 
-This requires a bit of configuration and you will need to start/stop the EdgeDriver:<br><br>
+This requires a bit of configuration and you will need to start/stop the Microsoft Edge WebDriver:<br><br>
 
 ##### 1) Configure Nightwatch as below:
 
-EdgeDriver runs by default on port 9515.
+Microsoft Edge WebDriver runs by default on port 9515.
 
 <pre><code class="language-javascript">{
   <strong>"test_settings"</strong>: {
@@ -119,7 +119,7 @@ EdgeDriver runs by default on port 9515.
 }
 </code></pre>
 
-##### 2) Start the EdgeDriver server
+##### 2) Start the Microsoft Edge WebDriver server
 From your terminal window, simply CD to the folder where the `msedgedriver` binary is located and run:
 
 <pre><code class="language-bash">$ ./msedgedriver
