@@ -11,8 +11,7 @@ Mocha's support for advanced reporting is still unparalleled and so we've gone t
 In order to use Mocha in Nightwatch you need to set the `test_runner` config property and set the type to `mocha`. Custom options for Mocha can also be specified:
 
 #### Example:
-<div class="sample-test"><pre><code class="language-javascript">
-{
+<div class="sample-test"><pre><code class="language-javascript">{
   ...
   test_runner: {
     type : 'mocha',
@@ -122,11 +121,9 @@ Here's the complete syntax available when using Mocha in Nightwatch:
 
 
   // Run only this testcase
-  /*
-  it.only('startHomepage', () => {
-    this.homepage.navigate();
-  });
-  */
+  // it.only('startHomepage', () => {
+  //   this.homepage.navigate();
+  // });
 
   // skipped testcase: equivalent to xit()
   it.skip('async testcase', async browser => {
