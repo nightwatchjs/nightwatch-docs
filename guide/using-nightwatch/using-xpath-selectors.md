@@ -6,7 +6,7 @@ Nightwatch supports XPath selectors in locating elements. CSS selectors are used
 
 #### 1. Using .useXpath() command
 
-Using `useXpath()` command, as seen in the example below, is a convenient way. You don't need to bother with using multiple parameters on element commands, or you may have than one subsequent element commands/assertions in the same test which use XPath expressions. To switch back to CSS, call `useCss()`.
+Using `useXpath()` command, as seen in the example below, is a convenient way. You don't need to bother with using multiple parameters on element commands, or you may have more than one subsequent element commands/assertions in the same test which use XPath expressions. To switch back to CSS, call `useCss()`.
 
 <div class="sample-test"><pre data-language="javascript">
 <code class="language-javascript">module.exports = {

@@ -36,7 +36,7 @@ Another way is to pass the `--parallel` cli switch:
 Test concurrency is done at the file level. Each test file will fill a test worker slot. Individual tests/steps in a test file will not run concurrently.
 
 <div class="alert alert-warning">
-To improve support for displaying the output when running tests in parallel, we recommend setting `detailed_output` to `false` in your test settings (and also make sure `live_output` is enabled.
+To improve support for displaying the output when running tests in parallel, we recommend setting `detailed_output` to `false` in your test settings (and also make sure `live_output` is enabled).
 </div>
 
 #### Multiple Environments

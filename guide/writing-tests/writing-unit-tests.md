@@ -113,7 +113,7 @@ module.exports = {
 
 ### Using a Combined Configuration
 
-Below it's an example of how you can combine end-to-end tests and unit tests in the same `nightwatch.json` configuration file.
+Below is an example of how you can combine end-to-end tests and unit tests in the same `nightwatch.json` configuration file.
 Notice the usage of `exclude` and `filter` properties.
 
 An empty `exclude` means we want to reset its value and rely only on `filter`.

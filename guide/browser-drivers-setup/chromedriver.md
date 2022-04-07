@@ -54,7 +54,7 @@ If you're using ChromeDriver through Selenium Server, simply set the cli argumen
 <p></p>
 
 #### ChromeOptions
-You can specify Chrome options or switches using the `chromeOptions` dictionary, under the `desiredCapabilities`. Refer to the [ChromeDriver website](https://sites.google.com/a/chromium.org/chromedriver/capabilities#TOC-chromeOptions-object) for a fill list of supported capabilities and options.
+You can specify Chrome options or switches using the `chromeOptions` dictionary, under the `desiredCapabilities`. Refer to the [ChromeDriver website](https://sites.google.com/a/chromium.org/chromedriver/capabilities#TOC-chromeOptions-object) for a full list of supported capabilities and options.
 
 ##### Example of detailed config
 <pre><code class="language-javascript">{ 

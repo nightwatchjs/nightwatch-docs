@@ -156,7 +156,7 @@ Like the `launch_url` property, the `globals` object is made available directly 
 
 ### Pre-defined Globals
 
-The following global properties can used to control the behaviour of the test runner and are defined with the following default values:
+The following global properties can be used to control the behaviour of the test runner and are defined with the following default values:
 
 <div class="sample-test">
 
