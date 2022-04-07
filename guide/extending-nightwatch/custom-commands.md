@@ -23,8 +23,7 @@ You can also specify a return value, either as the argument with which the Promi
 ##### Completion via a Promise
  
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = class CustomPause {
+<pre data-language="javascript"><code class="language-javascript">module.exports = class CustomPause {
   command(ms, cb) {
     // If we don't pass the milliseconds, the client will
     // be suspended indefinitely
@@ -54,8 +53,7 @@ The `command` method can also be `async`. In this case, you only need to return 
 Here's another example:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = class CustomCommand {
+<pre data-language="javascript"><code class="language-javascript">module.exports = class CustomCommand {
   async command() {
     let returnValue;
     try {
@@ -65,10 +63,10 @@ module.exports = class CustomCommand {
       returnValue = {
         status: -1,
         error: err.message
-      }  
+      }
     }
-    
-    return returnValue;    
+
+    return returnValue;
   }
 }
 </code></pre></div>
@@ -76,8 +74,7 @@ module.exports = class CustomCommand {
 ##### Completion via the "complete" event
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-const Events = require('events');
+<pre data-language="javascript"><code class="language-javascript">const Events = require('events');
 
 module.exports = class CustomPause extends Events {
   command(ms, cb) {
@@ -110,8 +107,7 @@ Since **v1.4**, you can also directly use the protocol actions (via `this.transp
 Here's an example:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = class CustomCommand {
+<pre data-language="javascript"><code class="language-javascript">module.exports = class CustomCommand {
   async command() {
     let returnValue;
     
@@ -125,10 +121,10 @@ module.exports = class CustomCommand {
       returnValue = {
         status: -1,
         error: err.message
-      }  
+      }
     }
-    
-    return returnValue;    
+
+    return returnValue;
   }
 }
 </code></pre></div>
@@ -142,8 +138,7 @@ It can be especially useful when using a service which provides additional endpo
 Here's an example:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = class CustomCommand {
+<pre data-language="javascript"><code class="language-javascript">module.exports = class CustomCommand {
   async command() {
     let returnValue;
     
@@ -171,10 +166,10 @@ module.exports = class CustomCommand {
       returnValue = {
         status: -1,
         error: err.message
-      } 
-    } 
-        
-    return returnValue;    
+      }
+    }
+
+    return returnValue;
   }
 }
 </code></pre></div>
@@ -212,9 +207,7 @@ The command module needs to export a `command` function, which needs to call at 
   });
 
   return this;
-};
-</code>
-</pre>
+};</code></pre>
 </div>
 
 The example above defines a command (e.g. resizePicture.js) which loads an image file as `data-URI` and calls a method named `resizePicture` (via `.execute()`), defined inside the application.

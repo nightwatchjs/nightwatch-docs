@@ -6,8 +6,7 @@ Define your reporter in a separate file, using the below interface, and then spe
 
 ##### Interface:
 <div class="sample-test">
-<pre><code class="language-javascript">
-module.exports = {
+<pre><code class="language-javascript">module.exports = {
   write : function(results, options, done) {
     done();
   }
@@ -22,8 +21,7 @@ See the provided [globalsModule.js](https://github.com/nightwatchjs/nightwatch/b
 
 #### Example:
 <div class="sample-test">
-<pre><code class="language-javascript">
-module.exports = {
+<pre><code class="language-javascript">module.exports = {
   reporter : function(results, done) {
     console.log(results);
     done();
