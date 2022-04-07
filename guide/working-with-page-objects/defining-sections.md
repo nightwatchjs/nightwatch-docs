@@ -8,8 +8,7 @@ Sometimes it is useful to define sections of a page. Sections do 2 things:
 You can create sections using the `sections` property:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   sections: {
     menu: {
       selector: '#gb',
@@ -31,8 +30,7 @@ module.exports = {
 Your tests would use it as follows:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     var google = browser.page.google();
     google.expect.section('@menu').to.be.visible;
@@ -57,8 +55,7 @@ Note that every command and assertion on a section (other than `expect` assertio
 #### Example of nesting page object sections:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   sections: {
     menu: {
       selector: '#gb',
@@ -93,8 +90,7 @@ module.exports = {
 Using a nested section in your test is straightforward:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     var google = browser.page.google();
     google.expect.section('@menu').to.be.visible;

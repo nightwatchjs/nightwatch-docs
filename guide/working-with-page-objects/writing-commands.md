@@ -6,8 +6,7 @@ Nightwatch will call the command on the context of the page or section. Client c
 
 In this case, a command is used to encapsulate logic for clicking the submit button:
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-const googleCommands = {
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">const googleCommands = {
   submit: function() {
     this.api.pause(1000);
 
@@ -35,8 +34,7 @@ module.exports = {
 Then the test is simply:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     var google = browser.page.google();
     google.setValue('@searchBar', 'nightwatch')
@@ -53,7 +51,6 @@ From Nightwatch 2 it is also possible to export the page commands as an ES6 clas
 Here's a basic example:
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">module.exports = class {
-
   basicCommand() {
     return {
       basicResult: 'from-helper-class'
@@ -77,7 +74,6 @@ Here's a basic example:
 And for a more elaborate example... You can referrence the main page object via `this.page`. The class will be instantiated automatically, you don't need to do anything else besides writing it:
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">module.exports = class RealCommands {
-
   customFindElements(selector, callback = function(r) {return r}) {
     return this.page.findElements({
       selector,
