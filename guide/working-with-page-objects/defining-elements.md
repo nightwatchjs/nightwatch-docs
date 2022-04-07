@@ -109,14 +109,14 @@ Say in the example above, the `searchBar` element selector returns 3 elements an
   elements: {
     searchBar: {
       selector: 'input[type=text]',
-      index: 2
+      index: 1
     }
   }
 };
 </code></pre>
 </div>
 
-You can also override what the page element defined by specifying the element as an object selectors in commands, which can also receive the `index`:
+You can also override what is defined in the page element by specifying the element as an object selectors in commands, which can also receive the `index`:
 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">module.exports = {
