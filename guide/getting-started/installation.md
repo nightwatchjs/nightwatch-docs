@@ -43,7 +43,9 @@ Alternatively, it can be downloaded from the [ChromeDriver Downloads][7] page.
 
 <h4 id="install-microsoftedge">Microsoft Edge Driver</h4>
 
-The Edge Driver can be downloaded from the official [Microsoft Edge Driver][8] homepage.
+Follow the [Download Microsoft Edge Driver][8] section on the official Microsoft Edge documentation page to download the Edge Driver.
+
+For more instructions on using Microsoft Edge for testing with Nightwatch, follow [this](/guide/browser-drivers-setup/edgedriver.html) page.
 
 <h4 id="install-safaridriver">SafariDriver</h4>
 
@@ -101,7 +103,7 @@ More info about running the Selenium Server can be found here on the official [S
 [5]:	https://github.com/mozilla/geckodriver/releases
 [6]:	https://www.npmjs.com/package/chromedriver
 [7]:	https://chromedriver.chromium.org/downloads
-[8]:	https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
+[8]:	https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-driver
 [9]:	https://developer.apple.com/documentation/webkit/about_webdriver_for_safari/
 [10]:	https://selenium.dev/documentation/en/grid/
 [11]:	https://www.oracle.com/technetwork/java/javase/downloads/index.html
