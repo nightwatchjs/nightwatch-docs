@@ -10,9 +10,8 @@ Simply run the following in the same project where Nightwatch is also installed:
 In order to use CucumberJS in Nightwatch you need to set the `test_runner` config property and set the type to `cucumber`. You will also need to set the path to where the feature files are located.
 
 #### Example:
-<div class="sample-test"><pre><code class="language-javascript">
-```
-{
+<div class="sample-test">
+<pre><code class="language-javascript">{
   test_runner: {
     // set cucumber as the runner
     type: 'cucumber',
@@ -33,9 +32,8 @@ In order to use CucumberJS in Nightwatch you need to set the `test_runner` confi
   },
 
   src_folders: ['examples/cucumber-js/features/step_definitions']
-}
-```  
-</code></pre></div>
+}</code></pre>
+</div>
 
 ### Running Tests
 Cucumber spec files/step definition files can be provided in `src_folders` in Nightwatch config or as a CLI argument.
@@ -65,11 +63,12 @@ You might need sometimes to not start the Webdriver session automatically after 
 #### Configuration:
 
 <div class="sample-test"><pre><code class="language-javascript">{
-test_runner: {
-  type: 'cucumber',
-  options: {
-    feature_path: 'examples/cucumber-js/*/*.feature',
-    auto_start_session: false
+  test_runner: {
+    type: 'cucumber',
+    options: {
+      feature_path: 'examples/cucumber-js/*/*.feature',
+      auto_start_session: false
+    }
   }
 }</code></pre></div>
 
@@ -79,8 +78,8 @@ You can then use an extra setup file that you can pass as an extra `--require` t
 
 Remember to set the `browser` on `this` so it can be closed automatically by Nightwatch. Otherwise, remember to call `.quit()` in your own Cucumber `After()` hooks.
 
-<div class="sample-test"><pre><code class="language-javascript">
-const {Before} = require('@cucumber/cucumber');
+<div class="sample-test">
+<pre><code class="language-javascript">const {Before} = require('@cucumber/cucumber');
 
 Before(async function(testCase) {
   if (!this.client) {
@@ -119,12 +118,12 @@ By default, the `progress` formatter is used.
 
 Here's how the output looks like when running the example tests in Firefox. You can just run this in the project where Nightwatch is installed:
 
-<div class="sample-test"><pre><code class="language-bash">
-npx nightwatch examples/cucumber-js/features/step_definition
-</code></pre></div>
+<div class="sample-test">
+<pre><code class="language-bash">npx nightwatch examples/cucumber-js/features/step_definition</code></pre>
+</div>
 
-<div class="sample-test"><pre class="hide-indicator language-bash"><code>
-ℹ Connected to GeckoDriver on port 4444 (1740ms).
+<div class="sample-test">
+<pre class="hide-indicator language-bash"><code>ℹ Connected to GeckoDriver on port 4444 (1740ms).
 Using: firefox (92.0.1) on MAC (20.6.0).
 
 ..  ✔ Testing if the page title equals 'Rijksmuseum Amsterdam, home of the Dutch masters' (4ms)
@@ -138,4 +137,5 @@ Using: firefox (92.0.1) on MAC (20.6.0).
 2 scenarios (2 passed)
 10 steps (10 passed)
 0m13.024s (executing steps: 0m12.998s)
-</code></pre></div>
+</code></pre>
+</div>

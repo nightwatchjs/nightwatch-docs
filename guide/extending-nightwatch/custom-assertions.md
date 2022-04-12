@@ -6,8 +6,7 @@ Nightwatch allows you to even define your own assertions, extending the availabl
 
 Assertions implement a simple interface which is shared between built-in assertions and custom ones:
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-exports.assertion = function(definition, expectedText, msg) {
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">exports.assertion = function(definition, expectedText, msg) {
   
   // If the custom commands operates with DOM elements, this options should be set
   // this.options = {

@@ -56,7 +56,7 @@ The newly added element() global object adds to Nightwatch 2 the commands from t
 - added support to use Selenium Capabilities objects in Nightwatch config
 
 #### Breaking changes:
-We have tried to keep the breaking changes to a minimum, however some changes where unavoidable. See the [migrate to v2 guide](https://github.com/nightwatchjs/nightwatch/wiki/Migrating-to-Nightwatch-2.0) for details.
+We have tried to keep the breaking changes to a minimum, however some changes were unavoidable. See the [migrate to v2 guide](https://github.com/nightwatchjs/nightwatch/wiki/Migrating-to-Nightwatch-2.0) for details.
 
 #### From the Blog:
 <ul>

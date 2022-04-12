@@ -27,58 +27,61 @@ For scenarios where greater flexibility is needed, there are a number of globals
 
 Here's the entire global object with the default values, which can be overwritten as needed. You can also view the source code on Github: [github.com/nightwatchjs/nightwatch/blob/main/lib/settings/defaults.js](https://github.com/nightwatchjs/nightwatch/blob/main/lib/settings/defaults.js).
 
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">module.exports = {
-    // An object which will be made available on the main test api, throughout the test execution
-    globals: {
-      // this controls whether to abort the test execution when an assertion failed and skip the rest
-      // it's being used in waitFor commands and expect assertions
-      abortOnAssertionFailure: true,
-  
-      // this controls whether to abort the test execution when an element cannot be located; an error
-      // is logged in all cases, but this also enables skipping the rest of the testcase;
-      // it's being used in element commands such as .click() or .getText()
-      abortOnElementLocateError: false,
-  
-      // this will overwrite the default polling interval (currently 500ms) for waitFor commands
-      // and expect assertions that use retry
-      waitForConditionPollInterval: 500,
-  
-      // default timeout value in milliseconds for waitFor commands and implicit waitFor value for
-      // expect assertions
-      waitForConditionTimeout: 5000,
-  
-      // since 1.4.0 – this controls whether to abort the test execution when an element cannot be located; an error
-      // is logged in all cases, but this also enables skipping the rest of the testcase;
-      // it's being used in element commands such as .click() or .getText()
-      abortOnElementLocateError: false,
-      
-      // this will cause waitFor commands on elements to throw an error if multiple
-      // elements are found using the given locate strategy and selector
-      throwOnMultipleElementsReturned: false,
-  
-      // By default a warning is printed if multiple elements are found using the given locate strategy
-      // and selector; set this to true to suppress those warnings
-      suppressWarningsOnMultipleElementsReturned: false,
-  
-      // controls the timeout value for async hooks. Expects the done() callback to be invoked within this time
-      // or an error is thrown
-      asyncHookTimeout : 10000,
-  
-      // controls the timeout value for when running async unit tests. Expects the done() callback to be invoked within this time
-      // or an error is thrown
-      unitTestsTimeout : 2000,
-  
-      // controls the timeout value for when executing the global async reporter. Expects the done() callback to be invoked within this time
-      // or an error is thrown
-      customReporterCallbackTimeout: 20000,
-  
-      // Automatically retrying failed assertions - You can tell Nightwatch to automatically retry failed assertions until a given timeout is reached, before the test runner gives up and fails the test.
-      retryAssertionTimeout: 5000,
-  
-      reporter: function(results, cb) {cb(results);}
-    }
+<div class="sample-test">
+
+<pre class="line-numbers"><code class="language-javascript">module.exports = {
+  // An object which will be made available on the main test api, throughout the test execution
+  globals: {
+    // this controls whether to abort the test execution when an assertion failed and skip the rest
+    // it's being used in waitFor commands and expect assertions
+    abortOnAssertionFailure: true,
+
+    // this controls whether to abort the test execution when an element cannot be located; an error
+    // is logged in all cases, but this also enables skipping the rest of the testcase;
+    // it's being used in element commands such as .click() or .getText()
+    abortOnElementLocateError: false,
+
+    // this will overwrite the default polling interval (currently 500ms) for waitFor commands
+    // and expect assertions that use retry
+    waitForConditionPollInterval: 500,
+
+    // default timeout value in milliseconds for waitFor commands and implicit waitFor value for
+    // expect assertions
+    waitForConditionTimeout: 5000,
+
+    // since 1.4.0 – this controls whether to abort the test execution when an element cannot be located; an error
+    // is logged in all cases, but this also enables skipping the rest of the testcase;
+    // it's being used in element commands such as .click() or .getText()
+    abortOnElementLocateError: false,
+    
+    // this will cause waitFor commands on elements to throw an error if multiple
+    // elements are found using the given locate strategy and selector
+    throwOnMultipleElementsReturned: false,
+
+    // By default a warning is printed if multiple elements are found using the given locate strategy
+    // and selector; set this to true to suppress those warnings
+    suppressWarningsOnMultipleElementsReturned: false,
+
+    // controls the timeout value for async hooks. Expects the done() callback to be invoked within this time
+    // or an error is thrown
+    asyncHookTimeout : 10000,
+
+    // controls the timeout value for when running async unit tests. Expects the done() callback to be invoked within this time
+    // or an error is thrown
+    unitTestsTimeout : 2000,
+
+    // controls the timeout value for when executing the global async reporter. Expects the done() callback to be invoked within this time
+    // or an error is thrown
+    customReporterCallbackTimeout: 20000,
+
+    // Automatically retrying failed assertions - You can tell Nightwatch to automatically retry failed assertions until a given timeout is reached, before the test runner gives up and fails the test.
+    retryAssertionTimeout: 5000,
+
+    reporter: function(results, cb) {cb(results);}
   }
-};</code></pre></div>
+};</code></pre>
+
+</div>
 
 ### Global Test Hooks
 The same set of hooks as per test suite is also available globally, outside the scope of the test. In the case of global hooks, the `beforeEach` and `afterEach` refers to a test suite (i.e. test file), and are ran before and after a _test suite_.
@@ -119,7 +122,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
   after(done) {
     // run this only for the local-env
     if (this.isLocal) {
-      // start the local server
+      // stop the local server
       App.stopServer(function() {
         // shutting down
         done();

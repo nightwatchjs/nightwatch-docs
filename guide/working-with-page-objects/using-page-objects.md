@@ -24,8 +24,7 @@ You can optionally add a `url` property that designates the page's URL. To navig
 The URL will usually be defined as a string:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   url: 'https://google.com',
   elements: {}
 };
@@ -35,8 +34,7 @@ module.exports = {
 It can also be a function in case the URL is dynamic. One use case for this is to support different test environments. You can create a function that gets called in the context of the page, thus allowing you to do:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   url: function() { 
     return this.api.launchUrl + '/login'; 
   },

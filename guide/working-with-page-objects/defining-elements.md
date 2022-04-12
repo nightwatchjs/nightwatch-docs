@@ -5,8 +5,7 @@ Most of the time, you will want to define elements on your page that your tests 
 Switching between css and xpath locate strategies is handled internally so you don't need to call `useXpath` and `useCss` in your tests. The default `locateStrategy` is css but you can also specify xpath:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   elements: {
     searchBar: {
       selector: 'input[type=text]'
@@ -24,8 +23,7 @@ module.exports = {
 Or if you're creating elements with the same locate strategy as is default, you can use the shorthand:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   elements: {
     searchBar: 'input[type=text]'
   }
@@ -39,8 +37,7 @@ Using the `elements` property allows you to refer to the element by its name wit
 Optionally, you can define an array of objects:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-var sharedElements = {
+<pre data-language="javascript"><code class="language-javascript">var sharedElements = {
   mailLink: 'a[href*="mail.google.com"]'
 };
 
@@ -57,8 +54,7 @@ module.exports = {
 Putting `elements` and `url` together, say you have the following defined above saved as a `google.js` file:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   url: 'https://google.com',
   elements: {
     searchBar: {
@@ -77,8 +73,7 @@ module.exports = {
 In your tests you will use it as follows:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     var google = browser.page.google();
 
@@ -110,23 +105,21 @@ Next to the selector, other properties can be specified. Here's the full list:
 Say in the example above, the `searchBar` element selector returns 3 elements and you are interested in the second element.
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   elements: {
     searchBar: {
       selector: 'input[type=text]',
-      index: 2
+      index: 1
     }
   }
 };
 </code></pre>
 </div>
 
-You can also override what the page element defined by specifying the element as an object selectors in commands, which can also receive the `index`:
+You can also override what is defined in the page element by specifying the element as an object selectors in commands, which can also receive the `index`:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     var google = browser.page.google();
 
@@ -152,8 +145,7 @@ module.exports = {
 When using named page object elements (starting with '@') you can also use CSS pseudo-selectors (starting with `v1.1`).
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">
-module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     google.waitForElementVisible('@searchBar:first-child');
     

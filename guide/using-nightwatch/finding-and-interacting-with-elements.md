@@ -82,9 +82,9 @@ Here's the full list:
 Say in the example above, the `input[type=search]` element selector returns 3 elements and you are interested in the second element. The element can be specified like so:
 
 <div class="sample-test">
-<pre data-language="javascript"><code class="language-javascript">>module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Demo test ecosia.org': function (browser) {
-    browser.setValue({selector: 'input[type=search]', index: 2}, 'nightwatch')
+    browser.setValue({selector: 'input[type=search]', index: 1}, 'nightwatch')
   }
 };</code></pre>
 </div>
