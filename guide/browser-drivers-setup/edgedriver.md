@@ -1,4 +1,4 @@
-## Edge Driver
+## Microsoft Edge WebDriver
 
 #### Overview
 [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) is a standalone server which implements the WebDriver protocol for the Edge browser. It is supported by Windows 10 and onwards and is now available for Mac and Linux platforms also.
