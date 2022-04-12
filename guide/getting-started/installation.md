@@ -61,54 +61,59 @@ More details are available on the [Apple Developer website][9]. See also this tu
 
 Using Selenium Standalone Server used to be the de-facto standard for managing the various browser drivers and services, but starting with Nightwatch 1.0 is no longer required, nor is it recommended for testing against a single browser.
 
-You will only need Selenium Server when testing against Internet Explorer, if you wish to run tests in parallel in multiple browsers, or in a [Selenium Grid][10] environment.
-
-**Download Java**
-
-Selenium Server is a Java application, which means you will also need to have the [Java Development Kit (JDK)][11] installed, minimum required version is 7. You can check this by running `java -version` from the command line.
-
-#### Download Selenium
+<div class="alert alert-warning"><strong>Install Java</strong><br>Selenium Server is a Java application, which means you will also need to have the [Java Development Kit (JDK)][11] installed, minimum required version is 7. You can check this by running `java -version` from the command line.</div>
 
 Selenium server can be downloaded in the following two ways:
 
-##### Install From NPM
-The easiest way to install the Selenium Server is from [NPM][12]. Nightwatch automatic configuration is already prepared for usage with this package against Chrome, Firefox, and Internet Explorer.
+#### From NPM
+The easiest way to install the Selenium Server is from [NPM][12] using the `@nightwatch/selenium-server` package which is maintained by the Nightwatch team. Nightwatch automatic configuration is already prepared for usage with this package against Chrome, Firefox, and Internet Explorer.
 
-<pre><code class="language-bash">npm install @nightwatch/selenium-server --save-dev</code></pre>
+By default, the NPM package will install Selenium version 4. 
 
-##### Download from Selenium GitHub Releases
+<pre><code class="language-bash">npm install @nightwatch/selenium-server</code></pre>
+
+If Selenium version 3 is needed, run:
+
+<pre><code class="language-bash">npm install @nightwatch/selenium-server@3</code></pre>
+
+For more details, see our [selenium-server-ja-download](https://github.com/nightwatchjs/selenium-server-jar-download) Github page. 
+
+#### From Selenium GitHub Releases
 
 You can find the latest Selenium Server stable and other versions on the [Selenium GitHub Releases][13] page.
 
 Download the `selenium-server-{VERSION}.jar` file and place it on the computer with the browser you want to test. In most cases this will be on your local machine and typically inside your project's source folder. A good practice is to create a separate subfolder (e.g. `bin`) and place it there as you might have to download other driver binaries if you want to test multiple browsers.
 
-#### Configure Selenium in Nightwatch
+#### Configure the Selenium Server 
 
 To use Nightwatch with Selenium Server, you can configure it as below. No additional config is required if you use `@nightwatch/selenium-sever` package to download Selenium.
 
-<pre><code class="language-javascript">{
-  <strong>"selenium"</strong>: {
-      "start_process": true,
-      "port": 4444,
-      "server_path": "",
-      "command": "standalone",
-      "cli_args": {
-        "webdriver.gecko.driver": "",
-        "webdriver.chrome.driver": "",
-      }
-    },
-    <strong>"webdriver"</strong>: {
-      "start_process": false,
-      "default_path_prefix": "/wd/hub"
+<pre><code class="language-javascript">selenium_server: {
+  // Selenium Server is running locally and is managed by Nightwatch
+  // Install the NPM package @nightwatch/selenium-server 
+  //  or download the selenium server jar file from https://github.com/SeleniumHQ/selenium/releases/
+  selenium: {
+    start_process: true,
+    port: 4444,
+    server_path: '', // Leave empty if @nightwatch/selenium-server is installed
+    command: 'standalone', // Selenium 4 only
+    cli_args: {
+      // Configure the paths to individual drivers below:
+      //
+      // 'webdriver.gecko.driver': '',
+      // 'webdriver.chrome.driver': ''
+      // 'webdriver.edge.driver': ''
     }
+  },
+  webdriver: {
+    start_process: false,
+    default_path_prefix: '/wd/hub'
   }
 }</code></pre>
 
 **Note:**
 
-The above configuration assumes that you are using `@nightwatch/selenium-server` package, which comes with Selenium 4 by default. You can install `@nightwatch/selenium-server` package with Selenium 3 by using the command `npm i @nightwatch/selenium-server@3`.
-
-If you are using selenium-server jar file instead (downloaded from Selenium website or Selenium GitHub Releases), set the `server_path` property of `selenium` to point to the location of the jar file. And if you are using Selenium 3 (through `@nightwatch/selenium-server` package or downloaded jar file), remove the `command` property from `selenium`.
+If you are using selenium-server jar file instead (downloaded from Selenium website or Selenium GitHub Releases), set the `server_path` property of `selenium` to point to the location of the jar file.
 
 #### Running Selenium Automatically
 
