@@ -14,8 +14,8 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
         const actions = this.actions({async: true});
 
         return actions
-         .keyDown(Key.SHIFT)
-         .keyUp(Key.SHIFT);
+         .keyDown(Keys.SHIFT)
+         .keyUp(Keys.SHIFT);
       });
   })
 })
@@ -451,11 +451,11 @@ By default, action sequences will be synchronized so only one device has a defin
         const actions = this.actions({async: true});
 
         return actions
-          .keyDown(Key.SHIFT)
+          .keyDown(Keys.SHIFT)
           .move({origin: el})
           .press()
           .release()
-          .keyUp(Key.SHIFT);
+          .keyUp(Keys.SHIFT);
       });
     })
 })
