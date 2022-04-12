@@ -5,15 +5,11 @@
 
 #### Download
 
-Follow the [Download Microsoft Edge WebDriver](https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-webdriver) section on the official Microsoft Edge documentation to download the Edge WebDriver.
+Download the desired version from the [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) downloads page. After the download completes, extract the zip archive and place `msedgedriver` to your preferred location inside the project.
 
-After the download completes, extract the `msedgedriver` to your preferred location inside the project and follow the next steps on this page.
+#### Standalone Usage
 
-More details about installation and usage documentation are available on the official [Microsoft Edge WebDriver homepage](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
-
-#### Nightwatch Usage
-
-Nightwatch can manage the EdgeDriver service automatically, as with other WebDriver services, such as GeckoDriver. To use Microsoft Edge WebDriver directly, configure Nightwatch as below (already configured in [auto-generated configuration file](/guide/configuration/overview.html#auto-generated-configuration)) and set the `server_path` property of `webdriver` to the location of the extracted `msedgedriver` in your project:
+Nightwatch can manage the EdgeDriver service automatically, as with other WebDriver services, such as ChromeDriver. To use Microsoft Edge WebDriver directly, configure Nightwatch as below (already configured in [auto-generated configuration file](/guide/configuration/overview.html#auto-generated-configuration)) and set the `server_path` property of `webdriver` to the location of the extracted `msedgedriver` in your project:
 
 <pre><code class="language-javascript">{
   <strong>"test_settings"</strong>: {
@@ -42,7 +38,7 @@ Nightwatch can manage the EdgeDriver service automatically, as with other WebDri
 
 and then run the tests using the following command:
 
-<pre><code class="language-bash">$ npx nightwatch path/to/tests --env edge</code></pre>
+<pre><code class="language-bash">npx nightwatch --env edge</code></pre>
 
 #### Selenium Server Usage
 
@@ -78,16 +74,14 @@ If you're using Microsoft Edge WebDriver through Selenium Server, simply set the
 
 and then run the tests using the following command:
 
-<pre><code class="language-bash">$ npx nightwatch path/to/tests --env selenium.edge</code></pre>
+<pre><code class="language-bash">npx nightwatch --env selenium.edge</code></pre>
 
 **Note:** The above code-block assumes that you are using `@nightwatch/selenium-server` package with Selenium 4. If you are using selenium-server standalone jar file instead, set the `server_path` property of `selenium` to point to the location of the jar file. And if you are using Selenium 3, remove the `command` property from `selenium`.
 
 
-#### Standalone Usage
+#### Running EdgeDriver Standalone
 
-If you're only running your tests against Edge, running the Microsoft Edge WebDriver standalone can be slightly faster. Also there is no dependency on Java.
-
-This requires a bit of configuration and you will need to start/stop the Microsoft Edge WebDriver:<br><br>
+If you're only running your tests against Edge, running the Microsoft Edge WebDriver standalone can be slightly faster. Also there is no dependency on Java. This requires a bit of configuration and you will need to start/stop the EdgeDriver:<br><br>
 
 ##### 1) Configure Nightwatch as below:
 
@@ -119,24 +113,25 @@ Microsoft Edge WebDriver runs by default on port 9515.
 }
 </code></pre>
 
-##### 2) Start the Microsoft Edge WebDriver server
-From your terminal window, simply CD to the folder where the `msedgedriver` binary is located and run:
+##### 2) Start EdgeDriver
+From your terminal window, simply cd to the folder where the `msedgedriver` binary is located and run (Linux/MacOS):
+<pre><code class="language-bash">./msedgedriver</code></pre>
 
-<pre><code class="language-bash">$ ./msedgedriver
-Starting MSEdgeDriver 98.0.1108.62 (86b4ba0c0a320a2c0c88adba983ad3b5ce15710f) on port 9515
+Output should look like:
+<div class="sample-test"><pre class="hide-indicator language-bash"><code>Starting MSEdgeDriver 98.0.1108.62 (86b4ba0c0a320a2c0c88adba983ad3b5ce15710f) on port 9515
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping MSEdgeDriver safe.
 MSEdgeDriver was started successfully.
-</code></pre>
+</code></pre></div>
 
 ##### 3) Run your tests against Edge
 
-<pre><code class="language-bash">$ npx nightwatch path/to/tests --env edge</code></pre>
+<pre><code class="language-bash">npx nightwatch --env edge</code></pre>
 
 
-##### Full command line usage:
+Here's the full command line usage:
 
-<pre><code>$ ./mdedgedriver -h
+<pre><code>./mdedgedriver -h
 Usage: ./msedgedriver [OPTIONS]
 
 Options
