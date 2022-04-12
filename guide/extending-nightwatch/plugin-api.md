@@ -9,23 +9,22 @@ If you're new to publishing NPM packages, read the [Creating and publishing unsc
 A Nightwatch plugin needs to be installed from NPM in the same project where Nightwatch is used (or as a global NPM package).
 
 ##### Folder structure:
-The folder structure is very simple and looks like this:
+The folder structure is very simple and looks like below. A `nightwatch` folder needs to be present in the plugin where the custom commands and assertions will be automatically loaded from.
 
-<pre>
-nightwatch/
-  ├── custom-commands/
-  |   ├── my_new_custom_command.js
-  |   └── my_other_custom_command.js
-  ├── custom-assertions/
-  |   ├── my_new_custom_assertions.js
-  |   └── my_other_custom_command.js
+<div class="sample-test"><pre class="hide-indicator language-bash"><code>  ├── nightwatch/ 
+  |   ├── custom-commands/
+  |   |    ├── my_new_custom_command.js
+  |   |    └── my_other_custom_command.js
+  |   └── custom-assertions/
+  |        ├── my_new_custom_assertions.js
+  |        └── my_other_custom_command.js
   ├── index.js
   ├── LICENSE.md
   ├── package.json
   └── README.md
-</pre>
+</code></pre></div>
 
-The Nightwatch runner will pick up the custom commands and assertions automatically if the plugin is defined with the above structure.
+The Nightwatch runner will pick up the custom commands and assertions __automatically__ if the plugin is defined with the above structure.
 
 #### Installing a new plugin
 Once the plugin will is available in NPM (or another package repository), you can simply install it in your project folder and then update the Nightwatch config file by adding it to the `plugins` Array.
