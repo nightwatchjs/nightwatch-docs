@@ -12,10 +12,10 @@ A Nightwatch plugin needs to be installed from NPM in the same project where Nig
 The folder structure is very simple and looks like below. A `nightwatch` folder needs to be present in the plugin where the custom commands and assertions will be automatically loaded from.
 
 <div class="sample-test"><pre class="hide-indicator language-bash"><code>  ├── nightwatch/ 
-  |   ├── custom-commands/
+  |   ├── commands/
   |   |    ├── my_new_custom_command.js
   |   |    └── my_other_custom_command.js
-  |   └── custom-assertions/
+  |   └── assertions/
   |        ├── my_new_custom_assertions.js
   |        └── my_other_custom_command.js
   ├── index.js
