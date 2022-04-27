@@ -91,7 +91,7 @@ Nightwatch also can be integrated with cloud-based testing platforms like [Brows
 [5]:	https://selenium.dev/
 [6]:	https://www.w3.org/TR/webdriver
 [7]:	https://www.w3.org/TR/webdriver
-[8]:	https://sites.google.com/a/chromium.org/chromedriver/
+[8]:	https://sites.google.com/chromium.org/driver/home
 [9]:	https://github.com/mozilla/geckodriver
 [10]:	https://www.w3.org/TR/webdriver/
 [11]:	https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol
