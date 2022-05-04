@@ -195,7 +195,7 @@ Mochawesome reporter options can be defined in main Nightwatch config under the 
     type : 'mocha',
     options : {
       ui : 'bdd',
-      reporter : 'list',
+      reporter : 'mochawesome',
       reporterOptions: {
         reporterDir: './output'
       }
