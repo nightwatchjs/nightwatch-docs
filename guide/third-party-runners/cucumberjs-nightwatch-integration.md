@@ -36,6 +36,10 @@ In order to use CucumberJS in Nightwatch you need to set the `test_runner` confi
 </div>
 
 ### Running Tests
+The easiest way to run cucumber tests from examples is:
+
+<div class="sample-test"><pre><code class="language-bash">npx nightwatch --env cucumber-js</code></pre></div>
+
 Cucumber spec files/step definition files can be provided in `src_folders` in Nightwatch config or as a CLI argument.
 
 With `src_folders` defined:
@@ -113,6 +117,14 @@ Nightwatch reporters (like JUnit XML reports or the [global custom reporter](htt
 Nightwatch will forward `--format` and `--format-options` CLI arguments, if present, to Cucumber.
 
 By default, the `progress` formatter is used. 
+
+For example:
+
+<div class="sample-test"><pre><code class="language-bash">npx nightwatch --env cucumber-js --format @cucumber/pretty-formatter</code></pre></div>
+
+or:
+
+<div class="sample-test"><pre><code class="language-bash">npx nightwatch --env cucumber-js --require cucumber.conf.js --format json:report/cucumber_report.json</code></pre></div>
 
 #### Example  Output
 
