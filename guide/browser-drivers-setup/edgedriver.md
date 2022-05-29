@@ -5,7 +5,7 @@
 
 #### Download
 
-Download the desired version from the [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) downloads page. After the download completes, extract the zip archive and place `msedgedriver` to your preferred location inside the project.
+Download the version matching your Edge browser's version from the [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/) downloads page. After the download completes, extract the zip archive and place `msedgedriver` to your preferred location inside the project.
 
 #### Standalone Usage
 
