@@ -1,100 +1,79 @@
-## Programmatic API
+---
+title: Using the programmatic API
+description: Learn how to build a custom test runner programmatically using Nightwatch APIs
+summary_image: https://nightwatchjs.org/img/banner.png
+---
 
-When included as a regular library package, Nightwatch exports an API through which it may be used programmatically. 
+<div class="page-header"><h2>Using the programmatic API</h2></div>
 
-You don't need to specify a configuration file, although starting with v1.3, one will be created by default (`nightwatch.conf.js`). The `runTests()` public method which may be used for running tests inside a custom runner or a script. The return value is a `Promise`. 
+### Overview
+When Nightwatch is imported as a regular library package, an API is exported so that you can use Nightwatch programmatically. When doing so, individual config settings can be supplied inline. So, there is no need to supply a configuration file. However, starting with version 1.3, a nightwatch.conf.js is created by default for your project.
 
-#### Syntax
-<pre><code class="language-javascript">Nightwatch.runTests([testSource], [settings]);</code></pre>
+### Syntax
+Nightwatch 2 brings in a brand new programmatic API, which makes it very easy to use Nightwatch externally. You can use it either by creating your custom runner or by using external test runners such as Jest, Mocha, or Ava. 
 
-##### Options:
-- **testSource**: can be a an array of files or a single file name/directory where tests are loaded from 
-- **settings**: additional config settings which can be used to overwrite existing ones (which are either defaults or loaded from a config file, e.g. nightwatch.json)
+<div class="apimethod">
+  <h4>Nightwatch.createClient([options])</h4>
 
-If you need to pass settings, please note that you cannot specify environment related settings and the settings passed here are merged onto the final configuration, after the current [test environment](/guide/running-tests/test-environments.html) (or the "default" one) is parsed.   
+  <p>Creates a new Nightwatch client that can be used to create WebDriver sessions.</p>
 
-The programmatic api is used extensively in the Nightwatch's own unit tests (which use mocha as a test runner). For example, have a look at this unit test which covers various basic functions of the Nightwatch runner: [test/src/runner/testRunTestcase.js](https://github.com/nightwatchjs/nightwatch/blob/main/test/src/runner/testRunTestcase.js). Keep in mind that when using the programmatic api, you have to manage the Webdriver/Selenium server yourself. See below for a custom runner example.
+  <h5>Syntax:</h5>
 
-#### Examples
+<div class="sample-test"><i>custom_test_runner.js</i><pre class="line-numbers" data-language="javascript"><code class="default-theme language-javascript">const Nightwatch = require('nightwatch');
 
-Without specifying the source:
+const client = Nightwatch.createClient({
+  headless: true,
+  output: true,
+  silent: true, // set to false to enable verbose logging
+  browserName: 'firefox', // can be either: firefox, chrome, safari, or edge
 
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">const Nightwatch = require('nightwatch');
+  // set the global timeout to be used with waitFor commands and when retrying assertions/expects
+  timeout: 10000,
 
-Nightwatch.runTests({
-  // various settings
-}).then(function() {
-  // Tests finished
-}).catch(function(err) {
-  // An error occurred
-});
-</code></pre></div>
+  // set the current test environment from the nightwatch config
+  env: null,
 
-With specifying both the source and additional settings:
-
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">const Nightwatch = require('nightwatch');
-
-Nightwatch.runTests('/path/to/tests_folder', {
-  // various settings
-}).then(function() {
-  // Tests finished
-}).catch(function(err) {
-  // An error occurred
-});
-</code></pre></div>
-
-#### Custom Runner Example
-You can also build your complete custom runner, based on the Nightwatch CLI runner. Using the `startWebDriver` and `stopWebDriver` methods available on the `CliRunner` instance, you can also manage the webdriver server.
-
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">const Nightwatch = require('nightwatch');
-
-const settings = {
-  webdriver: {
-    //...
-  },
+  // any additional capabilities needed
   desiredCapabilities: {
-    browserName: 'firefox'
-  }
-};
+    
+  },
 
-(async function() {
-  const runner = Nightwatch.CliRunner({
-    // optionally specify the test source (will overwrite the value of src_folders config setting)
-    &lowbar;source: &lbrack;'testFile1.js', 'testFile2.js'&rbrack;
-  });
+  // can define/overwrite test globals here; 
+  // when using a third-party test runner only the global hooks onBrowserNavigate/onBrowserQuit are supported
+  globals: {},
 
-  await runner.setup(settings).startWebDriver();
-
-  try {
-    await runner.runTests();
-  } catch (err) {
-    console.error('An error occurred:', err);
-  }
-
-  await runner.stopWebDriver();
-})();
-</code></pre></div>
-
-#### Reading the CLI options
-If you need to read and pass on to Nightwatch the arguments from the CLI, you can use the `Nightwatch.cli()` method, like so:
-
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">const Nightwatch = require('nightwatch');
-// read the CLI arguments
-Nightwatch.cli(async function(argv) {
-  argv.&lowbar;source = argv&lbrack;'&lowbar;'&rbrack;.slice(0);
-
-  const runner = Nightwatch.CliRunner(argv);
-  await runner.setup(settings).startWebDriver();
+  // when the test runner used supports running tests in parallel; 
+  // set to true if you need the webdriver port to be randomly generated
+  parallel: false, 
   
-  try {
-    await runner.runTests();
-  } catch (err) {
-    console.error('An error occurred:', err);
-  }
-  
-  await runner.stopWebDriver();
+  // All other Nightwatch config settings can be overwritten here, such as:
+  disable_colors: false
 });
 </code></pre></div>
+</div>
 
-- Previous: [Disabling or skipping Tests](/guide/running-tests/disabling-tests.html)
-- Next: [Using mocha as a test runner](/guide/third-party-runners/using-mocha.html)
+<div class="apimethod">
+  <h4>client.updateCapabilities([options])</h4>
+
+  <p>Given an existing `client` created using the `createClient()` method listed above, this can be used to update the initially specified capabilities.</p>
+
+<h5>Syntax:</h5>
+
+<div class="sample-test"><pre data-language="javascript" class="line-numbers"><code class="default-theme language-javascript">client.updateCapabilities({
+  testCapability: 'one, two, three'
+});
+</code></pre></div>
+</div>
+
+<div class="apimethod">
+  <h4>client.launchBrowser()</h4>
+
+  <p>Given an existing `client` created using the `createClient()` method listed above, this can be used to create a new browser session.</p>
+<p>The returned object will be the Nightwatch [browser API](https://v2.nightwatchjs.org/api/#the-browser-object) object.</p>
+
+<h5>Syntax:</h5>
+
+<div class="sample-test"><pre data-language="javascript" class="line-numbers"><code class="default-theme language-javascript">
+const browser = await client.launchBrowser();
+</code></pre></div>
+</div>
