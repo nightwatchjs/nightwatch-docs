@@ -7,7 +7,7 @@ summary_image: https://nightwatchjs.org/img/banner.png
 <div class="page-header"><h2>Test globals</h2></div>
 
 ### Overview
-Test globals are a useful concept that Nightwatch provides for persisting data between test suites and also to define global test hooks. In its most simple form, it is a dictionary of name-value pairs which is defined in your configuration file.
+Nightwatch supports data persistence between test suites and global test hooks definitions via test globals. In its most simple form, it is a dictionary of name-value pairs which is defined in your configuration file.
 
 Globals can be defined either as a `"globals"` property in your config file or as an external file which is specified as the `"globals_path"` property.
 
@@ -32,7 +32,7 @@ Here's an example definition using the `globals` property in the `nightwatch.jso
 }</code></pre></div>
 
 <p></p>
-<p>The `globals` object is loaded directly onto the Nightwatch api object which is passed to the tests and available via `browser.globals`.</p>
+<p>The `globals` object is loaded directly onto the Nightwatch API object which is passed to the tests and is available via `browser.globals`.</p>
 
 <div class="sample-test"><i>sampleTest.js</i>
 <pre data-language="javascript"><code class="language-javascript">describe('test globals example', function() {
@@ -65,7 +65,7 @@ The external globals file can also contain:
 
 ### Pre-defined Globals
 
-The following `globals` can be used to control the behaviour of the test runner and are defined with the below default values.
+The following `globals` can be used to control the behaviour of the test runner and are defined with the below-mentioned default values.
 
 You can define these in two ways: 
 - in your external globals file, specified by the `globals_path` config property, e.g. `lib/globals.js`
@@ -183,7 +183,7 @@ Consider this configuration:
 }</code></pre>
 </div> 
 
-Add a very basic test:
+Let's try this out with a very basic test:
 
 <div class="sample-test"><i>sampleTest.js</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
@@ -196,7 +196,7 @@ Pass the `--env integration` option to the runner:
 
 <pre><code class="language-bash">npx nightwatch --env integration</code></pre>
 
-Then our globals object will look like below:
+Then our globals object will look like:
 
 ```
 myGlobalVar is: "integrated global"
