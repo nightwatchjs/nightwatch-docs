@@ -55,7 +55,7 @@ In e2e tests, one of the most common things to do in a webpage is to get one or 
 element(by.css('.myclass'))
 ```
 
-<span>After: Nightwatch 2</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 // Find an element using a css selector.
@@ -73,7 +73,7 @@ If you need to access more than one element on the page, you must chain the .all
 element.all(by.css('.myclass'))
 ```
 
-<span>After: Nightwatch 2</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 // Find mulltiple elements using a css selector.
@@ -104,7 +104,7 @@ browser
   .perform()
 ```
 
-<span>After: Nightwatch 2</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 // Click on the element
@@ -143,7 +143,7 @@ const list = element.all(by.css('.custom-class'))
 expect(list.count()).toBe(3)
 ```
 
-<span>After: Nightwatch 2</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 expect.elements('.custom-class').count.to.equal(3);
@@ -157,7 +157,7 @@ expect.elements('.custom-class').count.to.equal(3);
 expect(element(by.css('input[name="first_name"]'))).getAttribute('value')).toBe('foo')
 ```
 
-<span>After: Nightwatch 2</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 expect(element('input[name="first_name"]')).attribute('value').toEqual('foo');
@@ -172,7 +172,7 @@ expect(element('input[name="first_name"]')).attribute('value').toEqual('foo');
 expect(element(by.id('user-name')).getText()).toBe('John Doe')
 ```
 
-<span>After: Nightwatch 2</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 expect.element(by.id('user-name')).text.toEqual('John Doe');
@@ -187,7 +187,7 @@ expect.element(by.id('user-name')).text.toEqual('John Doe');
 expect(element(by.css('#main ul li a.first')).isDisplayed()).toBe(true)
 ```
 
-<span>After: Nightwatch 2</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 expect('#main ul li a.first').to.be.visible;
@@ -208,7 +208,7 @@ browser.verify.visible('#main ul li a.first');
 expect(element(by.id('loading')).isPresent()).toBe(false)
 ```
 
-<span>After: Nightwatch 2</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 browser.assert.not.elementPresent(by.id('loading'))
@@ -223,7 +223,7 @@ browser.assert.not.elementPresent(by.id('loading'))
 expect(element(by.css('#main ul li a.first')).getCssValue('display')).toBe('block')
 ```
 
-<span>After: Nightwatch 2</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 browser.assert.cssProperty(by.css('#main ul li a.first'), 'display', 'block');
@@ -243,7 +243,7 @@ it('visits a page', () => {
 })
 ```
 
-<span>After: Nightwatch</span>
+<span>After: Nightwatch v2</span>
 
 ```javascript
 it('visits a page', () => {
