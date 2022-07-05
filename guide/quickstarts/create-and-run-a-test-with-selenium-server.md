@@ -1,3 +1,9 @@
+---
+title: Create and run a Nightwatch test with Selenium Server
+description: Learn how to create and run tests using Nightwatch with Selenium Server
+summary_image: https://nightwatchjs.org/img/banner.png
+---
+
 <div class="page-header"><h2>Create and run a test with Selenium Server</h2></div>
 
 In this quickstart, you will learn how to create and run a Nightwatch test using a [Selenium Server][10]

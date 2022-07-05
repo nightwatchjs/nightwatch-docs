@@ -1,3 +1,9 @@
+---
+title: Create and run a Nightwatch test
+description: Learn how to create and run tests using Nightwatch
+summary_image: https://nightwatchjs.org/img/banner.png
+---
+
 <div class="page-header"><h2>Create and run a Nightwatch test</h2></div>
 
 In this quickstart, you will learn how to create and run your first Nightwatch test from scratch. 
