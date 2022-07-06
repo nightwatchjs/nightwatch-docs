@@ -1,28 +1,27 @@
 <div class="page-header"><h2>AWS Device Farm Settings</h2></div>
 
-[Aws Device Farm][1] is one of cloud testing platforms that allows users to do remove brwoser testing using selenium. It is possible to use Nightwatch with AWS using some tweaks to the configuration file auto-generated `nightwatch.conf.js` file.
+[Aws Device Farm][1] is one of cloud testing platforms that allows users to do remove browser testing using selenium. It is possible to use Nightwatch with AWS using some tweaks to the auto-generated configuration file  `nightwatch.conf.js`.
 
 ### Create a new project in AWS Device Farm
-Once you have an account with AWS, you can go to the console and nagivate to Device Farm Dashboard. From the Dashboard select *Desktop Browser Testing>Projects* and create a new project there. Once you have a project setup, note down the *Project ARN*.
+Once you have an account with AWS, you can go to the console and navigate to Device Farm Dashboard. From the Dashboard select *Desktop Browser Testing>Projects* and create a new project there. Once you have a project setup, note down the *Project ARN*.
 
 ### Setup aws-cli
 If you don't have already, install [aws-cli](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) and login to aws using the cli. This will setup the credentials directory which will be needed by the node.js library used in the configuration.
-```bash
-$ aws configure
-```
+<pre class="line-numbers"><code class="language-bash">aws configure
+</code></pre>
 
 ### Install aws-sdk
 Install the aws-node sdk in the same folder where nightwatch is setup.
-```
-npm install  aws-sdk
-```
+<pre class="line-numbers"><code class="language-bash">npm install  aws-sdk
+</code></pre>
 
 ### Configuration AWS
 
 Use this configuration as a template to connect to AWS Device Farm. Make sure up update the `PROJECT_ARN`.
 
-<pre class="line-numbers"><code class="language-javascript">// nightwatch.conf.js
-let AWS = require("aws-sdk");
+<div class="sample-test">
+<i>nightwatch.conf.js</i>
+<pre class="line-numbers"><code class="language-javascript">let AWS = require("aws-sdk");
 let PROJECT_ARN = "&lt;PROJECT_ARN&gt;";
 let devicefarm = new AWS.DeviceFarm({ region: "us-west-2" });
  
@@ -93,6 +92,6 @@ module.exports = (async function() {
  }
 })();
 </code></pre>
-
+</div>
 
 [1]:	https://aws.amazon.com/device-farm/
