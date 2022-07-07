@@ -38,7 +38,7 @@ In this example, the test is expecting that a specified number of elements exist
 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">module.exports = {
-  'demo test ecosia.org'(browser) {
+  'demo test ecosia.org': (browser) {
     browser
       .url('https://www.ecosia.org/')
       .expect.elements('section').count.to.equal(5);
