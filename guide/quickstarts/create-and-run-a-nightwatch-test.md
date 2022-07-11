@@ -30,7 +30,7 @@ Need to install the following packages:
   create-nightwatch
 Ok to proceed? (y)</code></pre>
 
-This installs Nightwatch, asks your preferences and sets up the nightwatch.config.js file based on your preferences as shown below
+This installs Nightwatch, asks your preferences and sets up the `nightwatch.config.js` file based on your preferences as shown below
 
 ![Nightwatch setup using CLI Utility](https://user-images.githubusercontent.com/39924567/174841680-59664ff6-da2d-44a3-a1df-52d22c69b1e2.gif)
 
