@@ -6,7 +6,7 @@ summary_image: https://nightwatchjs.org/img/banner.png
 
 <div class="page-header"><h2>Create and run a test with Selenium Server</h2></div>
 
-In this quickstart, you will learn how to create and run a Nightwatch test using a [Selenium Server][10]
+In this quickstart, you will learn how to create and run a Nightwatch test using [Selenium Server][10]
 
 <div class="alert alert-info">
 Selenium Server allows the execution of WebDriver scripts on remote machines by routing commands sent by the client to remote browser instances. It aims to provide an easy way to run tests in parallel on multiple machines.
