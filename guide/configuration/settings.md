@@ -626,7 +626,7 @@ The `"selenium"` settings should also be used when configuring connections to cl
        <li>
          <code>webdriver.chrome.driver</code>: Nightwatch can run the tests using <strong>Chrome</strong> browser also. To enable this you have to download the <a href="http://chromedriver.storage.googleapis.com/index.html" target="_blank">ChromeDriver binary</a> and specify it's location here.
      Also don't forget to specify chrome as the browser name in the <code>desiredCapabilities</code> object.<br>
-     More information can be found on the <a href="https://sites.google.com/a/chromium.org/chromedriver/" target="_blank">ChromeDriver website</a>.<br>
+     More information can be found on the <a href="https://sites.google.com/chromium.org/driver/home" target="_blank">ChromeDriver website</a>.<br>
        </li>
        <li>
          <code>webdriver.ie.driver</code>:
