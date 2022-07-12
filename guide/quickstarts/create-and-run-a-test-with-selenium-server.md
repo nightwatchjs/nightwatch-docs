@@ -1,3 +1,9 @@
+---
+title: Create and run a Nightwatch test with Selenium Server
+description: Learn how to create and run tests using Nightwatch with Selenium Server
+summary_image: https://nightwatchjs.org/img/banner.png
+---
+
 <div class="page-header"><h2>Create and run a test with Selenium Server</h2></div>
 
 In this quickstart, you will learn how to create and run a Nightwatch test using [Selenium Server][10]
@@ -6,88 +12,99 @@ In this quickstart, you will learn how to create and run a Nightwatch test using
 Selenium Server allows the execution of WebDriver scripts on remote machines by routing commands sent by the client to remote browser instances. It aims to provide an easy way to run tests in parallel on multiple machines.
 </div>
 
+
 ### Prerequisites 
-1. Make sure [Node][1] is installed on the system. The version used for this tutorial is **v16.14.2**
-2. Make sure [Java][11] is installed on the system. The version used for this tutorial is **openjdk 11.0.14**
+Make sure [Node][1] is installed on the system. The version used for this tutorial is **v16.14.2**
 
-### Step 0: create a new project
-Create a new directory and initiate a node project there.
+### Setup Nightwatch
+Create a new directory and initiate a Nightwatch project there.
 <pre>
-<code class="language-bash">mkdir nightwatch-project
-cd nightwatch-project
-npm init</code></pre>
+<code class="language-bash">mkdir &#60;directory-name&#62;
+cd &#60;directory-name&#62;
+npm init nightwatch</code></pre>
 
-### Step 1: install Nightwatch and dependencies
-Install the latest version of nightwatch
-<pre><code class="language-bash">npm install nightwatch --save-dev</code></pre>
+or directly create the project in a new directory with a single command
 
-<h4 id="install-browser-drivers">Browser Drivers</h4>
+<pre>
+<code class="language-bash">npm init nightwatch &#60;directory-name&#62;</code></pre>
 
-Depending on your target browsers (make sure you have the browser installed and updated), you will need one or more specific WebDriver packages. Dependenging on you browser run one of the following:
+Press `y` when you see the prompt to install create-nightwatch
 
-<h4 id="install-geckodriver">Firefox</h4>
+<pre><code class="language-bash">❯ npm init nightwatch
+Need to install the following packages:
+  create-nightwatch
+Ok to proceed? (y)</code></pre>
 
-<pre><code class="language-bash">npm install geckodriver --save-dev</code></pre>
+This installs Nightwatch, asks your preferences and sets up the nightwatch.config.js file based on your preferences as shown below
 
-<h4 id="install-chromedriver">Chrome</h4>
+![Nightwatch setup using CLI Utility](https://user-images.githubusercontent.com/39924567/174841680-59664ff6-da2d-44a3-a1df-52d22c69b1e2.gif)
 
-<pre><code class="language-bash">npm install chromedriver --save-dev</code></pre>
+### Preferences
+  
+#### Test Runner
 
-<h4 id="install-microsoftedge">Microsoft Edge Driver</h4>
+Nightwatch also supports other test runners. You can also pick [Mocha][15] or [Cucumber JS][16] as a test runner apart from Nightwatch.
 
-Follow the [Download Microsoft Edge Driver][8] section on the official Microsoft Edge documentation page to download the Edge Driver.
+#### Language - Javascript/Typescript
+
+Nightwatch [supports typescript][17] for test files after v1.6.0. So you can choose to have the test setup in Javascript or Typescript.
+
+<pre><code class="language-bash"> What is your Language - Test Runner setup? (Use arrow keys)
+❯ JavaScript - Nightwatch Test Runner
+  JavaScript - Mocha Test Runner
+  JavaScript - CucumberJS Test Runner
+  TypeScript - Nightwatch Test Runner
+  TypeScript - Mocha Test Runner</code></pre>
+
+#### Run on Local/Remote (Cloud)
+
+You can configure Nightwatch to run locally on your machine, remotely on a cloud machine or both
+
+<pre><code class="language-bash"> Where do you want to run your e2e tests? (Use arrow keys)
+❯ On my local machine
+  On a remote machine (cloud)
+  Both</code></pre>
+
+For remote testing, host and port details will be automatically added in case you select `BrowserStack` or `Sauce Labs`. However if you select to run on your own remote selenium server or any other cloud provider, you will have to manually configure the host & port details in the `nightwatch.conf.js` file. 
+
+#### Browser Selection
+
+You can pick the browsers you'll be testing on, and the config will be automatically created for them. We provide a multi-selection option so you can pick as many browsers you want to test on. You can also use the selenium-server when testing on the local machine.
 
 
-<h4 id="install-safaridriver">SafariDriver</h4>
+<pre><code class="language-bash"> Where you'll be testing on? (Press &#60;space&#62; to select, &#60;a&#62; to toggle all, &#60;i&#62; to invert selection,
+ and &#60;enter&#60; to proceed)
+❯◯ Firefox
+ ◯ Chrome
+ ◯ Edge
+ ◯ Safari
+ ◯ Local selenium-server</code></pre>
 
-The `safaridriver` binary is already installed on recent versions of Mac OS, however some manual configuration is needed before tests can be run against Safari.
+ Check the `Local selenium-server` option from the list on top of the selected browsers.
 
-You will need to run the following once, before using the safaridriver:
+#### Test Folder Name
 
-<pre><code class="language-bash">safaridriver --enable</code></pre>
+Next you can name the folder where you want the tests to reside. The default value is tests.
 
-### Step 2: install Selenium Server
-<div class="alert alert-warning">Selenium Server is a Java application, which means you will also need to have the [Java Development Kit (JDK)][11] installed, minimum required version is 7. You can check this by running `java -version` from the command line.</div>
+<pre><code class="language-bash"> Where do you plan to keep your end-to-end tests? (tests)</code></pre>
 
-The easiest way to install the Selenium Server is from [NPM][12] using the `@nightwatch/selenium-server` package which is maintained by the Nightwatch team. Nightwatch automatic configuration is already prepared for usage with this package against Chrome, Firefox, and Internet Explorer.
+#### Base URL
 
-<pre><code class="language-bash">npm install @nightwatch/selenium-server</code></pre>
+Add the base URL that the tests will run against. This preference will default to http://localhost
 
-### Step 3: write a test
-Create a new folder called `tests` inside `nightwatch-project` folder.
+<pre><code class="language-bash"> What is the base_url of your project? (http://localhost)</code></pre>
 
-<pre><code class="language-bash">mkdir tests</code></pre>
+Once you select this preference, Nightwatch setup will begin. It will also generate sample tests for you to get started. 
 
-Then create a file called `ecosia.js` inside the tests folder and put the following code in that file:
-<div class="sample-test">
-<i>tests/ecosia.js</i>
-<pre class="line-numbers language-javascript"  data-language="javascript"><code class="language-javascript">describe('Ecosia.org Demo', function() {
+If you are running from a Mac, safaridriver is present by default but must be enabled. You will be presented with the following option.
 
-  before(browser => browser.navigateTo('https://www.ecosia.org/'));
+<pre><code class="language-bash">? Enable safaridriver (requires sudo password)? (Use arrow keys)
+ ❯Yes
+  No, I'll do that later.</code></pre>
 
-  it('Demo test ecosia.org', function(browser) {
-    browser
-      .waitForElementVisible('body')
-      .assert.titleContains('Ecosia')
-      .assert.visible('input[type=search]')
-      .setValue('input[type=search]', 'nightwatch')
-      .assert.visible('button[type=submit]')
-      .click('button[type=submit]')
-      .assert.textContains('.layout__content', 'Nightwatch.js');
-  });
+### Run a test
 
-  after(browser => browser.end());
-});
-</code></pre>
-</div>
-
-<div class="alert alert-info">
-The above test opens the search engine [Ecosia.org](https://www.ecosia.org/), types the term "nightwatch" into the search input field, then verifies if the results page contains the text "Nightwatch.js".
-</div>
-
-### Step 4: run the test
-
-Use the bundled `npx` tool from NPM to quickly run the `nightwatch` command:
+Once your setup is done, you can run tests with this command
 
 ##### Firefox
 <pre><code class="language-bash">npx nightwatch tests/ecosia.js --env selenium.firefox</code></pre>
