@@ -94,6 +94,6 @@ Use the `--open` command line argument to open the generated HTML report generat
 ### Recommended content
 - [How-to guides > Use reporters > Junit-XML reporter](/guide/reporters/use-junit-reporter.html)
 - [Configuration > Output settings](/guide/configuration/customising-test-output.html)
-- [Configuration > Default settings](/guide/configuration-reference/defaults.html)
+- [Configuration > Default settings](/guide/reference/defaults.html)
 - [Reference > Nightwatch CLI](/guide/nightwatch-cli/command-line-options.html)
 
