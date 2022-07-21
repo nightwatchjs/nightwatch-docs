@@ -1,8 +1,24 @@
 ## Expect API
 
-Nightwatch provides a fluent BDD-style interface for performing assertions on elements, defined on the <code>expect</code> namespace on the main Nightwatch instance. It is based on the <a href="https://chaijs.com/api/bdd/" target="_blank">Chai Expect</a> assertion library and provides a greater level of flexibility, also adding new capabilities over the classic <code>assert</code> interface.
+Nightwatch provides a fluent BDD-style interface for performing assertions on values and elements with the <code>expect</code> namespace on the main Nightwatch instance. It is based on the <a href="https://chaijs.com/api/bdd/" target="_blank">Chai Expect</a> assertion library and provides a greater level of flexibility, also adding new capabilities over the classic <code>assert</code> interface. It uses a chain-able language to construct assertions given a value or element.
 
-It uses a chain-able language to construct assertions given an element specified by a css/xpath selector. A simple example looks like the following:
+As you would expect (pun intended) from <a href="https://chaijs.com/api/bdd/" target="_blank">Chai</a>, you can use it to check text values directly:
+
+<div class="sample-test">
+<pre class="line-numbers" data-language="javascript"><code class="language-javascript">test('delete node from search and ensure it is gone', function(browser) {
+  browser
+    .assert.textContains(`${targetNodeSelector} #nodeContent`, targetNodeContent)
+    .click({ selector: `${targetNodeSelector} #moreOptionsButton`, index: 0 })
+    .click({ selector: `${targetNodeSelector} #nodeDeleteButton`, index: 0 })
+    .click({ selector: `${targetNodeSelector} #confirmNodeDeleteButton`, index: 0 })
+    .findElements(`${targetNodeSelector} #nodeCard #nodeContent`, nodeContents => {
+      nodeContents.value.forEach(item => {
+        browser.elementIdText(item.getId(), text => browser.expect(text.value).to.not.equal(targetNodeContent))
+      })
+    })
+};</code></pre></div>
+
+But you may also target an element specified by a css/xpath selector. A simple example looks like the following:
 
 <div class="sample-test">
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
