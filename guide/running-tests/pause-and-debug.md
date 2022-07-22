@@ -21,7 +21,7 @@ And with the [`.debug()`](https://nightwatchjs.org/api/debug.html) command, it g
 
 In addition to pausing the test execution for a fixed amount of time (passed as an argument in milliseconds), the pause command now offers many more functionalities.
 
-[`.pause()`](https://nightwatchjs.org/api/pause.html) command can now be used to pause the test execution for an unrestricted (but also required) amount of time. Doing so will allow users to jump over to the browser and check the state of the application at that point in the test or use DevTools to debug the application.
+[`.pause()`](https://nightwatchjs.org/api/pause.html) command can now be used to pause the test execution for an unrestricted (but only desired) amount of time. Doing so will allow users to jump over to the browser and check the state of the application at that point in the test or use DevTools to debug the application.
 
 When done, back at the terminal, users will have a bunch of options to go from there:
 
