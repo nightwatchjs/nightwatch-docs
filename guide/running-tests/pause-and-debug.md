@@ -7,26 +7,31 @@ description: Learn how to pause your test at specific points and debug by access
 
 ### Overview
 
-Starting with v2.3.0, Nightwatch presents a more powerful test script debugging experience, by modifying the functionality of the existing `.pause()` command (without breaking changes) and introducing a new `.debug()` command.
+Starting with v2.3.0, Nightwatch presents a more powerful test script debugging experience, with modified `.pause()` command (without any breaking changes) and a new `.debug()` command.
 
-With the modified [`.pause()`](https://nightwatchjs.org/api/pause.html) command, users can now pause and then resume their tests on-demand while debugging. Not only that, they can now also step over to the next test step (execute the next test step) and pause again.
+With the modified [`.pause()`](https://nightwatchjs.org/api/pause.html) command, users can now also resume their paused tests on-demand while debugging. Along with that, they can now also step over to the next test step (execute the next test step) and pause again.
 
-And with the [`.debug()`](https://nightwatchjs.org/api/debug.html) command, it goes one step further and provide users with a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) interface where they can try out any of the available Nightwatch commands or assertions while their main test is paused and see them get executed against the running browser in real-time.
+And with the [`.debug()`](https://nightwatchjs.org/api/debug.html) command, it goes one step further and provide users with a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) interface where they can try out any of the available Nightwatch commands or assertions and see them get executed in the running browser in real-time.
 
 <iframe src="https://player.vimeo.com/video/732086808?loop=1&byline=0&portrait=0&title=0" style="width:100%;height:560px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 
 ### Use `.pause()` command
 
-In addition to pausing the test execution for a fixed amount of time (passed as an argument in milliseconds), the pause command now offers many more functionalities.
+[`.pause()`](https://nightwatchjs.org/api/pause.html) command allows users to pause their test execution, either for a fixed amount of time (by passing the duration in milliseconds as an argument) or for an unrestricted amount of time with an option to resume anytime.
 
-[`.pause()`](https://nightwatchjs.org/api/pause.html) command can now be used to pause the test execution for an unrestricted amount of time. Doing so will allow users to jump over to the browser and check the state of the application at that point in the test or use DevTools to debug the application.
+<pre class="language-javascript"><code class="language-javascript">it('demos pause command', function(browser) {
+  // pause for 300 ms
+  browser.pause(300);
+  // pause indefinitely, until resumed
+  browser.pause();
+});
+</code></pre>
 
-When done, back at the terminal, users will have a bunch of options to go from there:
+While the `.pause(ms)` command is mostly used programmatically to pause the test for a small duration of time before performing the next test step, `.pause()` command can be used while debugging, giving enough time to jump over to the browser and check the state of the application at that point in test or use DevTools to debug, and when done, a bunch of options will be available at the terminal to go from there:
 
 * Resume the test normally from the point where it was left off.
-* Step over to the next test step and pause again.  
-  (Stepping over to the next test step will allow users to see what exactly changed when the next test command/assertion was executed. They can also use DevTools to monitor those changes, like the network calls that were made (if any) during the execution of that test step, etc.)
+* Step over to the next test step and pause again.
 * Exit from the test run.
 
 ### Example
@@ -51,20 +56,25 @@ When done, back at the terminal, users will have a bunch of options to go from t
 
 ### Use `.debug()` command
 
-This is a new command added in Nightwatch v2.3.0, which allows users to pause their test at any point (by using [`.debug()`](https://nightwatchjs.org/api/debug.html) command as a breakpoint) and use a REPL interface made available right in their terminal to try out different Nightwatch commands or assertions and see them get executed against the running browser in real-time. While doing that, they can also interact with the browser or use DevTools to debug.
+This is a new command added in Nightwatch v2.3.0, which allows users to pause their test at any point (by using [`.debug()`](https://nightwatchjs.org/api/debug.html) command as a breakpoint) and use a REPL interface (made available in the terminal) to try out the available Nightwatch commands and assertions and see them get executed against the running browser in real-time. While doing that, they can also interact with the browser and use DevTools to debug.
 
-This can be very useful while debugging test failures, such as why a certain command is not working as expected or why a certain assertion is failing, by trying out the commands and assertions in different ways and seeing their result in real-time.
+The interface also supports multi-line code input and auto-complete feature.
 
-Along with debugging tests, this interface can also act as a playground for new users to learn and get familiar with the Nightwatch APIs.
+<pre class="language-javascript"><code class="language-javascript">it('demos debug command', function(browser) {
+  browser.debug();
+
+  // with no auto-complete
+  browser.debug({preview: false});
+
+  // with a timeout of 6000 ms (time for which the interface
+  // would wait for a result, default is 5500ms).
+  browser.debug({timeout: 6000})
+});
+</code></pre>
 
 <div class="alert alert-info">
   While using the `.debug` command, please put your tests inside an `async` function, otherwise the results won’t get returned properly.
 </div>
-
-The interface comes with multi-line code support, as well as auto-complete support which can be turned of by passing `{preview: false}` as an argument to the command.
-
-<pre class="language-javascript"><code class="language-javascript">browser.debug({preview: false})</code></pre>
-
 
 ### Example
 
