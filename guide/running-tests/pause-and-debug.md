@@ -13,8 +13,7 @@ With the modified [`.pause()`](https://nightwatchjs.org/api/pause.html) command,
 
 And with the [`.debug()`](https://nightwatchjs.org/api/debug.html) command, it goes one step further and provide users with a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) interface where they can try out any of the available Nightwatch commands or assertions while their main test is paused and see them get executed against the running browser in real-time.
 
-
-![Pause and Debug](https://vimeo.com/732086808)
+<iframe src="https://player.vimeo.com/video/732086808?loop=1&byline=0&portrait=0&title=0" style="width:100%;height:560px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 
 ### Use `.pause()` command
