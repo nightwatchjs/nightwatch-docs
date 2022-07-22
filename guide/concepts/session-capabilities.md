@@ -1,3 +1,8 @@
+---
+title: Session Capabilities
+description: Session capabilities in the nightwatch.
+---
+
 <div class="page-header"><h2>Session Capabilities</h2></div>
 
 Session capabilities is a request/response model used by Nightwatch (and other W3C WebDriver clients) to define which browser features it requires from the WebDriver implementation or Selenium server. 

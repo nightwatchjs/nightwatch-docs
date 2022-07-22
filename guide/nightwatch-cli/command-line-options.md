@@ -1,3 +1,8 @@
+---
+title: Command-line options
+description: List of command-line options supported by nightwatch test runner
+---
+
 <div class="page-header"><h2>Command-line options</h2></div>
 
 The Nightwatch test runner supports a number of run-time options to be passed to. To view all, run the following:

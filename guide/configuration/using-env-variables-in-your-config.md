@@ -1,3 +1,7 @@
+---
+title: Use ENV variables.
+description: Learn about how to specify Environment varaibles in config file.
+---
 ## Use ENV variables
 
 Any config value in either `nightwatch.conf.js` or `nightwatch.json` can be specified as the name of an environment variables. Nightwatch will automatically populate the value, if found, from `process.env`.

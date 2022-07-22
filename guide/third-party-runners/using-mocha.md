@@ -1,3 +1,8 @@
+---
+title: Using Mocha as a Test Runner
+description: Learn how to configure and use Mocha as a test runner.
+---
+
 ## Using Mocha as a Test Runner
 
 In Nightwatch 2, the integrated Mocha runner has been upgraded to use **Mocha v9** and also the implementation has been updated to match most of the features that Nightwatch offers in its own default test runner, like the ability to use tags or global test hooks.

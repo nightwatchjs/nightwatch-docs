@@ -1,3 +1,8 @@
+---
+title: Nightwatch Settings
+description: Reference to list of settings received by nightwatch instance during test execution.
+---
+
 ### Base Settings
 Below are the default settings that will be passed to the Nightwatch instance during test execution.
 

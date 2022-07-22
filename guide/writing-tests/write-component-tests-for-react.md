@@ -1,3 +1,7 @@
+---
+title: Write component tests for react
+description: Learn about how to write component tests for react.
+---
 ## React component tests
 
 ### React component

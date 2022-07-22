@@ -1,3 +1,8 @@
+---
+title: BDD test syntax
+description: Reference to complete BDD syantx.
+---
+
 <div class="page-header"><h2>BDD test syntax</h2></div>
 
 ### Overview
