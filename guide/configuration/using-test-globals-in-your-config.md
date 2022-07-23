@@ -1,3 +1,8 @@
+---
+title: Using test globals in your config
+description: Learn how to use test globals in configuration file
+---
+
 <div class="page-header"><h2>Using test globals in your config</h2></div>
 
 Another useful concept that Nightwatch provides is test globals. In its most simple form, it is a dictionary of name-value pairs which is defined in your configuration file.

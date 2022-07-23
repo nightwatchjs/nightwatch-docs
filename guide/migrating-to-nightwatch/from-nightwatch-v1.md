@@ -1,3 +1,8 @@
+---
+title: Migrating from Nightwatch v1.x
+description: List of Major changes in version 2.0
+---
+
 ## Migrating from Nightwatch v1.x
 
 Below is a list of potentially breaking changes in version 2.0 and deprecated functionality which was removed. All attempts have been made to ensure a complete and accurate list, but there might be things which we overlooked.

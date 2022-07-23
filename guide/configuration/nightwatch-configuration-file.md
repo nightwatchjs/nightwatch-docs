@@ -1,3 +1,8 @@
+---
+title: Nightwatch Configuration File
+description: Learn how to create nightwatch configuration file
+---
+
 <div class="page-header"><h2>Nightwatch Configuration File</h2></div>
 
 ### Overview

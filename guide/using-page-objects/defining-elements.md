@@ -1,3 +1,7 @@
+---
+title: Define Page Elements
+description: Learn about how to define page elements.
+---
 ## Define Page Elements
 
 ### Declaring elements

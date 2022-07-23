@@ -1,3 +1,8 @@
+---
+title: Browserstack Settings
+description: Learn how to connfigure browserstack settings in nightwatch
+---
+
 <div class="page-header"><h2>Browserstack Settings</h2></div>
 
 [Browserstack][1] is one of the most popular cloud testing platforms. Using it with Nightwatch is very straightforward and there is configuration in the auto-generated `nightwatch.conf.js` file.

@@ -1,3 +1,8 @@
+---
+title: Parallel testing in Nightwatch
+description: Learn how to do parallel testing in nightwatch.
+---
+
 <div class="page-header"><h2>Parallel testing in Nightwatch</h2></div>
 
 Nightwatch supports running the tests in parallel in two main ways: 

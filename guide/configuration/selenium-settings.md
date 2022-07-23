@@ -1,3 +1,8 @@
+---
+title: Selenium Settings
+description: List of selenium settings
+---
+
 <div class="page-header"><h2>Selenium Settings</h2></div>
 
 If Selenium Server is being used, then the connection related settings should be placed under the `"selenium""`. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged with the `webdriver` ones.

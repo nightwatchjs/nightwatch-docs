@@ -1,3 +1,8 @@
+---
+title: Migrating from Protractor to Nightwatch
+description: In depth guide on how to migrate from protractor to nightwatch
+---
+
 ## Migrating from Protractor to Nightwatch
 
 ### Introduction
