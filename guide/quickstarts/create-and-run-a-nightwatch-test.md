@@ -12,25 +12,31 @@ In this quickstart, you will learn how to create and run your first Nightwatch t
 Make sure [Node][1] is installed on the system. The version used for this tutorial is **v16.14.2**
 
 ### Setup Nightwatch
-Create a new directory and initiate a Nightwatch project there.
-<pre>
-<code class="language-bash">mkdir &#60;directory-name&#62;
-cd &#60;directory-name&#62;
-npm init nightwatch</code></pre>
 
-or directly create the project in a new directory with a single command
+Nightwatch can be installed with just one command line, either as a new project or in an existing location. 
 
-<pre>
-<code class="language-bash">npm init nightwatch &#60;directory-name&#62;</code></pre>
+##### 1. As a new project:
+
+To setup Nightwatch as a new project, simply run:
+
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm init nightwatch</code> <code style="color: #aaa9a2; font-size: 20px">&#60;directory-name&#62;</code></pre>
+
+##### 2. In an existing project:
+
+<pre class="hide-indicator"><code class="language-bash">cd &#60;directory-name&#62; 
+npm init nightwatch
+</code></pre>
+
+<p><br></p>
 
 Press `y` when you see the prompt to install create-nightwatch
 
-<pre><code class="language-bash">❯ npm init nightwatch
+<pre class="hide-indicator"><code>❯ npm init nightwatch
 Need to install the following packages:
   create-nightwatch
 Ok to proceed? (y)</code></pre>
 
-This installs Nightwatch, asks your preferences and sets up the `nightwatch.config.js` file based on your preferences as shown below
+This installs Nightwatch, asks your preferences and sets up the `nightwatch.conf.js` file based on your preferences as shown below
 
 ![Nightwatch setup using CLI Utility](https://user-images.githubusercontent.com/39924567/174841680-59664ff6-da2d-44a3-a1df-52d22c69b1e2.gif)
 
@@ -44,7 +50,7 @@ Nightwatch also supports other test runners. You can also pick [Mocha][15] or [C
 
 Nightwatch [supports typescript][17] for test files after v1.6.0. So you can choose to have the test setup in Javascript or Typescript.
 
-<pre><code class="language-bash"> What is your Language - Test Runner setup? (Use arrow keys)
+<pre class="hide-indicator"><code class="language-bash">? What is your Language - Test Runner setup? (Use arrow keys)
 ❯ JavaScript - Nightwatch Test Runner
   JavaScript - Mocha Test Runner
   JavaScript - CucumberJS Test Runner
@@ -55,7 +61,7 @@ Nightwatch [supports typescript][17] for test files after v1.6.0. So you can cho
 
 You can configure Nightwatch to run locally on your machine, remotely on a cloud machine or both
 
-<pre><code class="language-bash"> Where do you want to run your e2e tests? (Use arrow keys)
+<pre class="hide-indicator"><code class="language-bash">? Where do you want to run your e2e tests? (Use arrow keys)
 ❯ On my local machine
   On a remote machine (cloud)
   Both</code></pre>
@@ -67,7 +73,7 @@ For remote testing, host and port details will be automatically added in case yo
 You can pick the browsers you'll be testing on, and the config will be automatically created for them. We provide a multi-selection option so you can pick as many browsers you want to test on. You can also use the selenium-server when testing on the local machine.
 
 
-<pre><code class="language-bash"> Where you'll be testing on? (Press &#60;space&#62; to select, &#60;a&#62; to toggle all, &#60;i&#62; to invert selection,
+<pre class="hide-indicator"><code class="language-bash">? Where you'll be testing on? (Press &#60;space&#62; to select, &#60;a&#62; to toggle all, &#60;i&#62; to invert selection,
  and &#60;enter&#60; to proceed)
 ❯◯ Firefox
  ◯ Chrome
@@ -78,19 +84,19 @@ You can pick the browsers you'll be testing on, and the config will be automatic
 
 Next you can name the folder where you want the tests to reside. The default value is tests.
 
-<pre><code class="language-bash"> Where do you plan to keep your end-to-end tests? (tests)</code></pre>
+<pre class="hide-indicator"><code class="language-bash">? Where do you plan to keep your end-to-end tests? (tests)</code></pre>
 
 #### Base URL
 
 Add the base URL that the tests will run against. This preference will default to http://localhost
 
-<pre><code class="language-bash"> What is the base_url of your project? (http://localhost)</code></pre>
+<pre class="hide-indicator"><code class="language-bash">? What is the base_url of your project? (http://localhost)</code></pre>
 
 Once you select this preference, Nightwatch setup will begin. It will also generate sample tests for you to get started. 
 
 If you are running from a Mac, safaridriver is present by default but must be enabled. You will be presented with the following option.
 
-<pre><code class="language-bash">? Enable safaridriver (requires sudo password)? (Use arrow keys)
+<pre class="hide-indicator"><code class="language-bash">? Enable safaridriver (requires sudo password)? (Use arrow keys)
  ❯Yes
   No, I'll do that later.</code></pre>
 

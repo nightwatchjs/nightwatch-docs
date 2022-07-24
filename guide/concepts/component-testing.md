@@ -33,7 +33,7 @@ Either one of the above approaches are fine in terms of running tests and debugg
 
 - Using **JSDom rendering** the limitation is clear: no real browser. However, advantages to consider are speed and access to OS-level APIs, which would make tasks like loading files or generating advanced reports more straightforward.
 
-- On the other hand, when using the **Karma Runner** or similar approach the advantage is clear: everything is happening in the browser and thus the test is more reliable. However, the disadvantage is that working with external files is not straightforward and also reporting is limited. I also found configuration to be quite difficult, as normally you have to combine several tools together in the setup just to get it working.
+- On the other hand, when using the **Karma Runner** or similar approach the advantage is clear: everything is happening in the browser and thus the test is more reliable. However, the disadvantage is that working with external files is not straightforward, reporting is limited, and configuration can be quite difficult.
 
 ### Rendering in Nightwatch
 
@@ -41,17 +41,17 @@ What Nightwatch aims to provide is a combination of both approaches by extending
 
 Here’s what Nightwatch does to run a component test:
 
-- the CLI test runner launches a real browser and navigates to a basic HTML page (the test renderer)
-- inside the test renderer, it injects the Vue or React test utils and then mounts the component which needs to be tested, optionally specifying a list of plugins–in case of Vue, such as a `store` or a `router`– or `props` in case of React
-- once the component has been successfully rendered a reference to the DOM element will be sent back to the Nightwatch CLI runner
-- the CLI runner continues running the test in the same way it does for end-to-end testing; the assertions are run in the Node.js context
+1. the CLI test runner launches a real browser and navigates to a basic HTML page (the test renderer)
+2. inside the test renderer, it injects the Vue or React test utils and then mounts the component which needs to be tested, optionally specifying a list of plugins–in case of Vue, such as a `store` or a `router`– or `props` in case of React
+3. once the component has been successfully rendered a reference to the DOM element will be sent back to the Nightwatch CLI runner
+4. the CLI runner continues running the test in the same way it does for end-to-end testing; the assertions are run in the Node.js context
 
 ![https://blog.nightwatchjs.org/content/images/2022/02/component-testing.003.png](https://blog.nightwatchjs.org/content/images/2022/02/component-testing.003.png)
 
 ### Advantages of Using Nightwatch for Component Testing
 
 ##### Ease of use and consistency
-The main advantage and motivation for using Nightwatch as component testing is the easy to use and consistent with how end-to-end testing is done. With Nightwatch, you have everything installed so there is nothing more to configure in terms of testing.
+The main advantage and motivation for using Nightwatch as component testing is the easy to use and consistency with how end-to-end testing is done. With Nightwatch, you have everything installed so there is nothing more to configure in terms of testing.
 
 ##### Access to OS-level APIs
 And since the testing is done by the CLI test runner, we have also access to **OS-level APIs** and we also have access to the **Vite** runner APIs, so we could do more advanced integration directly between Vite and Nightwatch.
@@ -68,5 +68,5 @@ However, for when running the tests in Chrome, you can use the DevTools to do de
 - `--devtools` - when this is on, the Chrome DevTools will open automatically
 - `--debug` - this will cause the test execution to pause right after the component is rendered
 
-### Recommended content:
+### Recommended content
 - [Blog > Introducing Component Testing in Nightwatch](https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/)
