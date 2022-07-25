@@ -13,15 +13,17 @@ While doing that, users can also interact with the browser and use DevTools to d
 
 ### Usage
 
-<pre class="language-javascript"><code class="language-javascript">it('demos debug command', function(browser) {
-  browser.debug();
+**Note:** Please use `async/await` while using the `.debug()` command, otherwise proper results won't be returned back to the interface.
+
+<pre class="language-javascript"><code class="language-javascript">it('demos debug command', async function(browser) {
+  await browser.debug();
 
   // with no auto-complete
-  browser.debug({preview: false});
+  await browser.debug({preview: false});
 
   // with a timeout of 6000 ms (time for which the interface
   // would wait for a result, default is 5500ms).
-  browser.debug({timeout: 6000})
+  await browser.debug({timeout: 6000})
 });
 </code></pre>
 
@@ -29,8 +31,9 @@ While doing that, users can also interact with the browser and use DevTools to d
 
 <div class="sample-test"><i>tests/duckDuckGo.js</i>
 <pre class="line-numbers language-javascript"><code class="language-javascript">describe('duckduckgo debug example', function() {
+  // function passed as second argument to `it` should be `async`.
   it('Search Nightwatch.js and check results', async function(browser) {
-    browser
+    await browser
       .url('https://duckduckgo.com')
       .debug()
       .waitForElementVisible('#search_form_input_homepage')
