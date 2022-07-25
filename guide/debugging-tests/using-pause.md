@@ -27,17 +27,17 @@ To suspend the text execution indefinitely, until resumed, write:
 
 ### Usage
 
-While the `.pause(ms)` command is mostly used programmatically to pause the test for a small duration of time before performing the next command, it can be used while debugging.
+While the `.pause(ms)` command is mostly used programmatically to pause the test for a small duration of time before performing the next command, `pause()` command (without any argument) can be used while debugging.
 
-Once suspended, the following operations are available:
+While using the `pause()` command without any argument, the following operations are available:
 
 - resume the test normally from the point where it was left off
-- step over to the next command and pause again
+- step over to the next command/assertion and pause again
 - exit from the test run
 
 <div class="sample-test"><i>tests/duckDuckGo.js</i>
 <pre class="line-numbers language-javascript"><code class="language-javascript">describe('duckduckgo pause example', function() {
-  it('Search Nightwatch.js and check results', async function(browser) {
+  it('Search Nightwatch.js and check results', function(browser) {
     browser
       .url('https://duckduckgo.com')
       .pause()

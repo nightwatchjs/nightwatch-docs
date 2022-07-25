@@ -11,11 +11,11 @@ Starting with v2.3.0, Nightwatch presents a more powerful test script debugging 
 
 #### Updated .pause() command 
 
-The new [`.pause()`](https://nightwatchjs.org/api/pause.html) provides the ability to resume paused tests on-demand while debugging. In addition, users can now also step over to the next command (execute the next command) and pause again.
+The [`.pause()`](https://nightwatchjs.org/api/pause.html) command now provides the ability to resume paused tests on-demand while debugging. In addition, users can also step over to the next test step (execute the next test step) and pause again.
 
 #### New .debug() command 
 
-The [`.debug()`](https://nightwatchjs.org/api/debug.html) command provides a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) interface where users can try out any of the available Nightwatch commands or assertions and see them get executed in the running browser, in real-time.
+The new [`.debug()`](https://nightwatchjs.org/api/debug.html) command provides a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) interface where users can try out any of the available Nightwatch commands or assertions and see them get executed in the running browser, in real-time.
 
 <iframe src="https://player.vimeo.com/video/732086808?loop=1&byline=0&portrait=0&title=0" style="width:100%;height:560px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
