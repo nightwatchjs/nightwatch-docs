@@ -19,6 +19,13 @@ The below settings can be used to control the output and logging when running te
      <td>The location where the JUnit XML report files will be saved.</td>
    </tr>
 
+    <tr>
+     <td>`folder_format`</td>
+     <td>string/function</td>
+     <td>undefined</td>
+     <td>Used as a prefix for HTML report folder. This can be utilised to retain HTML report across test runs</td>
+   </tr>
+    
    <tr>
      <td>`disable_colors`</td>
      <td>boolean</td>
