@@ -27,6 +27,6 @@ Changes in the result object:
   See https://github.com/nightwatchjs/nightwatch/issues/2918
 - remove setting `webdriver.use_legacy_jsonwire`
 - removed event `nightwatch:finished` from main client instance
-- no longer possible to use Nightwatch with Webdriver.io, as was advertised [here](https://nightwatchjs.org/guide/extending-nightwatch/using-with-webdriverio.html).
+- no longer possible to use Nightwatch with Webdriver.io, as was advertised [here](https://v17.nightwatchjs.org/guide/extending-nightwatch/using-with-webdriverio.html).
 
 <ul style="display: none"></ul>
