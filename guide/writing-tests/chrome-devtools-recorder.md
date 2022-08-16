@@ -69,12 +69,9 @@ You can also export it as a Nightwatch test script right away. There are two way
 
 - You can convert the JSON recording to the Nightwatch test with the following CLI command.
 
-<div class="sample-test"><i>tests/sampleTest.js</i>
-<pre class="line-numbers" data-language="bash"><code class="language-bash">npm install -g @nightwatch/chrome-recorder
+<pre style="max-width: 500px; margin-left: 30px;"><code class="language-bash">npm install -g @nightwatch/chrome-recorder
 
-npx @nightwatch/chrome-recorder <path to the chrome devtools recording>
-</code></pre>
-</div>
+npx @nightwatch/chrome-recorder</code></pre>
 
 - The output from the tool will be written to the "Nightwatch" folder. Once we have the test file, we can run the Nightwatch tests using the CLI.
 
