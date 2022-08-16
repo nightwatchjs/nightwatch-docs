@@ -79,6 +79,11 @@ You can convert the JSON recording to the Nightwatch test with the following CLI
 npx @nightwatch/chrome-recorder
 </code></pre>
 
+The tool will ask for your devtool recording location and output the result to the specified directory.
+
+![CLI question image](https://user-images.githubusercontent.com/8705386/184905445-20139eab-d7b1-4dfb-8156-cea9fe299368.png)
+
+
 The output from the tool will be written to the "Nightwatch" folder. Once we have the test file, we can run the Nightwatch tests using the CLI.
 
 ### Reference
