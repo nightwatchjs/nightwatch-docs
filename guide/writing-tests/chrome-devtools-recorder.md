@@ -22,12 +22,16 @@ We will use the [Coffee Cart](https://coffee-cart.netlify.app/) website to recor
 - Open the [Coffee Cart](https://coffee-cart.netlify.app/) website. We will use this as a demo page to record our first test.
 - [Open Chrome Devtool ](https://developer.chrome.com/docs/devtools/open/)(you can right-click on the webpage and click on inspect)
 - Now, click on the Recorder tab
+
 ![Recorder-tab](https://user-images.githubusercontent.com/8705386/184881801-30dcd61f-5ace-47e8-9432-670771fc09ae.png)
 
 - Click on the **Start new recording** button to begin recording the test
-~![Start New Recording](https://user-images.githubusercontent.com/8705386/184881819-381edd0c-3b76-4d60-a526-9af7913ba993.png)
+
+![Start New Recording](https://user-images.githubusercontent.com/8705386/184881819-381edd0c-3b76-4d60-a526-9af7913ba993.png)
+
 - Enter your recording name and click on **Start a new recording** button at the bottom
 - Just play with the website, try to add some of the coffee and then click on the cart. Press total, fill out the payment details and click on the submit button.
+
 ![User Action Gif](https://user-images.githubusercontent.com/8705386/184881835-a995e805-49df-4d76-90c7-ebe40e4581fa.gif)
 
 - Remember: Every interaction with the webpage will be recorded by the Recorder, like switching webpage, clicking on a button, double click, and much more.
@@ -65,11 +69,12 @@ You can also export it as a Nightwatch test script right away. There are two way
 
 - You can convert the JSON recording to the Nightwatch test with the following CLI command.
 
-```sh
-npm install -g @nightwatch/chrome-recorder
+<div class="sample-test"><i>tests/sampleTest.js</i>
+<pre class="line-numbers" data-language="bash"><code class="language-bash">npm install -g @nightwatch/chrome-recorder
 
 npx @nightwatch/chrome-recorder <path to the chrome devtools recording>
-```
+</code></pre>
+</div>
 
 - The output from the tool will be written to the "Nightwatch" folder. Once we have the test file, we can run the Nightwatch tests using the CLI.
 
