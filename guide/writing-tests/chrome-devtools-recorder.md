@@ -1,6 +1,6 @@
 ---
-title: Nightwatch assertions  
-description: Learn how to do assertions with Nightwatch
+title: Create Nightwatch test using Google Chrome Devtools Recorder
+description: Learn how to do create nightwatch test using Google Chrome devtools recorder
 summary_image: https://user-images.githubusercontent.com/8705386/184881833-dcc2d0d6-4012-4f9e-8fff-27f888adbd1d.png
 ---
 
