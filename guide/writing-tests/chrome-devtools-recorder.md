@@ -7,21 +7,21 @@ summary_image: https://user-images.githubusercontent.com/8705386/184881833-dcc2d
 <div class="page-header"><h2>Create Nightwatch test using Google Chrome Devtools Recorder</h2></div>
 
 
-Google recently launched the Recorder tool in its Devtools ecosystem, letting users record all their test actions.
+Google launched the Recorder tool in its Devtools ecosystem, letting users record all their test actions.
 
 ### What is Chrome Devtools Recorder?
 
 Chrome Devtools Recorder is a tool which allows you to record and replay test actions directly in the browser and also export them as JSON (or export them in e2e test), as well as measure test performance. If you want to know more about the DevTools Recorder, you can read all about it [here](https://developer.chrome.com/docs/devtools/recorder/).
 
-The tool is straightforward, and since it’s plugged into the Browser, we have the convenience of not switching the context or dealing with any third-party tool. Let's see how you can easily and quickly record your test actions and run your first test.
+The tool is straightforward, and since it’s plugged into the browser, we have the convenience of not switching the context or dealing with any third-party tool. Let's see how you can easily and quickly record your test actions and run your first test.
 
 We will use the [Coffee Cart](https://coffee-cart.netlify.app/) website to record our first test and export it as a Nightwatch test script.
 
-### How to Record a test with Chrome Devtools Recorder?
+### How to record a test with Chrome Devtools recorder?
 
 - Open the [Coffee Cart](https://coffee-cart.netlify.app/) website. We will use this as a demo page to record our first test.
-- [Open Chrome Devtool ](https://developer.chrome.com/docs/devtools/open/)(you can right-click on the webpage and click on inspect)
-- Now, click on the Recorder tab
+- [Open Chrome Devtools](https://developer.chrome.com/docs/devtools/open/)(you can right-click on the webpage and click on inspect)
+- Now, click on the `Recorder` tab
 <br>
 ![Recorder-tab](https://user-images.githubusercontent.com/8705386/184881801-30dcd61f-5ace-47e8-9432-670771fc09ae.png)
 <br>
@@ -38,7 +38,7 @@ We will use the [Coffee Cart](https://coffee-cart.netlify.app/) website to recor
 <br>
 <br>
 - Remember: Every interaction with the webpage will be recorded by the Recorder, like switching webpage, clicking on a button, double click, and much more.
-- Click on the stop recording button in the Recorder after you are done with the recording.
+- Click on the stop recording button in the recorder after you are done with the recording.
 
 Once the recording is done, we have our first automated recording script ready to run.
 
@@ -51,7 +51,7 @@ We have multiple options before us:
 ![Chrome Devtools Recorder](https://user-images.githubusercontent.com/8705386/184881824-bc10260b-0d52-4c9e-96b0-68be943eecd1.png)
 <br>
 <br>
-### Exports the recorded test
+### How to export the recorded test?
 
 Let's talk about the option to export the test as a JSON file. This excellent feature allows you to share your test recordings with other users. They can import the JSON file and replay the tests as they recorded them. This is a nifty feature if you came across the bug and wanted to share the reproduction steps.
 
@@ -59,7 +59,7 @@ You can also export it as a Nightwatch test script right away. There are two way
 
 #### Using Nightwatch Recorder Extension
 
-- Firstly, you need to [download the extension](https://chrome.google.com/webstore/detail/nightwatch-chrome-recorde/nhbccjfogdgkahamfohokdhcnemjafjk/) from Chrome Webstore. It goes by the name of **Nightwatch Chrome Recorder**.
+- Firstly, you need to [download the extension](https://chrome.google.com/webstore/detail/nightwatch-chrome-recorde/nhbccjfogdgkahamfohokdhcnemjafjk/) from Chrome Webstore.
 - After you have installed the extension, open the **Recorder Panel** in the Devtools.
 - Click on your saved recording, and then click on the export button (Down arrow button)
 - You will see the **Export as Nightwatch test script** option
@@ -89,3 +89,4 @@ The output from the tool will be written to the "Nightwatch" folder. Once we hav
 ### Reference
 
 - https://developers.google.com/codelabs/devtools-recorder#0
+- https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#run-a-test
