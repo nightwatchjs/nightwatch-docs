@@ -32,7 +32,7 @@ We will use the [Coffee Cart](https://coffee-cart.netlify.app/) website to recor
 - Enter your recording name and click on **Start a new recording** button at the bottom
 - Just play with the website, try to add some of the coffee and then click on the cart. Press total, fill out the payment details and click on the submit button.
 <br>
-![User Action Gif](https://user-images.githubusercontent.com/8705386/184898597-2c5a4779-7526-4626-bbd9-0c59db0771f7.gif)
+![User Action Gif](https://user-images.githubusercontent.com/8705386/184901473-537178d3-449c-469a-9d9d-b0781f3cfa93.gif)
 <br>
 - Remember: Every interaction with the webpage will be recorded by the Recorder, like switching webpage, clicking on a button, double click, and much more.
 - Click on the stop recording button in the Recorder after you are done with the recording.
