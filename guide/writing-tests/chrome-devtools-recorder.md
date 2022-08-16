@@ -4,7 +4,7 @@ description: Learn how to do assertions with Nightwatch
 summary_image: https://user-images.githubusercontent.com/8705386/184881833-dcc2d0d6-4012-4f9e-8fff-27f888adbd1d.png
 ---
 
-<div class="page-header"><h2>Create your first test with Nightwatch using Google Chrome Devtools Recorder</h2></div>
+<div class="page-header"><h2>Create Nightwatch test using Google Chrome Devtools Recorder</h2></div>
 
 
 Google recently launched the Recorder tool in its Devtools ecosystem, letting users record all their test actions.
@@ -25,14 +25,17 @@ We will use the [Coffee Cart](https://coffee-cart.netlify.app/) website to recor
 <br>
 ![Recorder-tab](https://user-images.githubusercontent.com/8705386/184881801-30dcd61f-5ace-47e8-9432-670771fc09ae.png)
 <br>
+<br>
 - Click on the **Start new recording** button to begin recording the test
 <br>
 ![Start New Recording](https://user-images.githubusercontent.com/8705386/184881819-381edd0c-3b76-4d60-a526-9af7913ba993.png)
+<br>
 <br>
 - Enter your recording name and click on **Start a new recording** button at the bottom
 - Just play with the website, try to add some of the coffee and then click on the cart. Press total, fill out the payment details and click on the submit button.
 <br>
 ![User Action Gif](https://user-images.githubusercontent.com/8705386/184901473-537178d3-449c-469a-9d9d-b0781f3cfa93.gif)
+<br>
 <br>
 - Remember: Every interaction with the webpage will be recorded by the Recorder, like switching webpage, clicking on a button, double click, and much more.
 - Click on the stop recording button in the Recorder after you are done with the recording.
@@ -46,6 +49,7 @@ We have multiple options before us:
 3. **Edit and add steps** - We can manually edit our test steps. For example, if we want to change the selector, we have a selector tool or add a timeout—all without changing the code.
 <br>
 ![Chrome Devtools Recorder](https://user-images.githubusercontent.com/8705386/184881824-bc10260b-0d52-4c9e-96b0-68be943eecd1.png)
+<br>
 <br>
 ### Exports the recorded test
 
@@ -62,19 +66,20 @@ You can also export it as a Nightwatch test script right away. There are two way
 <br>
 ![Export Nightwatch Test](https://user-images.githubusercontent.com/8705386/184881833-dcc2d0d6-4012-4f9e-8fff-27f888adbd1d.png)
 <br>
+<br>
 - When you click on the option, you have successfully exported your current recording to Nightwatch tests.
 - Now you can  [run your first tests](https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html#tests-source) with Nightwatch
 
 #### Using `@nightwatch/chrome-recorder` tool
 
-- You can convert the JSON recording to the Nightwatch test with the following CLI command.
+You can convert the JSON recording to the Nightwatch test with the following CLI command.
 
 <pre class="hide-indicator"><code class="language-bash">npm install -g @nightwatch/chrome-recorder
 
 npx @nightwatch/chrome-recorder
 </code></pre>
 
-- The output from the tool will be written to the "Nightwatch" folder. Once we have the test file, we can run the Nightwatch tests using the CLI.
+The output from the tool will be written to the "Nightwatch" folder. Once we have the test file, we can run the Nightwatch tests using the CLI.
 
 ### Reference
 
