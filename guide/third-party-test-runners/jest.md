@@ -3,7 +3,7 @@ title: Jest Test Runner
 description: Learn how to use Jest Test Runner in Nightwatch.
 ---
 
-<div class="page-header"><h2>Jest Test Runner</h2></div>
+<div class="page-header"><h2>Using Jest as a test runner</h2></div>
 
 ### Overview
 **Jest** is a javascript testing framework which is used to easily write unit tests whereas ***Nightwatch.js*** is an integrated test framework for performing automated end-to-end testing on web applications and websites, across all major browsers.
@@ -33,7 +33,7 @@ Available properties/methods:
 #### Step 0: install Nightwatch
 Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](​​https://vimeo.com/714406223) to install Nightwatch from scratch.
 
-#### Step 1: Install jest
+#### Step 1: Install Jest
 <div class="sample-test"><pre><code class="language-bash">npm i jest --save-dev</code></pre></div>
 
 And make sure you have included the following script in your ***package.json*** file in order to run jest tests.
@@ -44,7 +44,7 @@ And make sure you have included the following script in your ***package.json*** 
  }
 }</code></pre>
 
-#### Step 2: Install and configure the Jest Nightwatch package
+#### Step 2: Install and configure the [jest-environment-nightwatch](https://github.com/nightwatchjs/jest-environment-nightwatch) package
 In order to use Nightwatch with Jest, you need to install the  `jest-environment-nightwatch`. Install Jest and other dependencies needed for testing.
 
 <div class="sample-test"><pre><code class="language-bash">npm i jest-environment-nightwatch --save-dev</code></pre></div>
@@ -245,5 +245,5 @@ Consider the below example test :
 
 
 ### Related articles
-- [How-to guides > Write tests > Use CucumberJS reporter](/guide/writing-tests/using-cucumberjs.html#using-cucumberjs-with-nightwatch)
+- [How-to guides > Write tests > Use Jest as a test runner](/guide/writing-tests/using-ava.html)
 - [How-to guides > Write tests > Use Mocha as a test runner](/guide/writing-tests/using-mocha.html)

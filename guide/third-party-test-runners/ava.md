@@ -3,7 +3,7 @@ title: Ava Test Runner
 description: Learn how to use Ava Test Runner in Nightwatch.
 ---
 
-<div class="page-header"><h2>Jest Test Runner</h2></div>
+<div class="page-header"><h2>Using Ava as a test runner</h2></div>
 
 ### Overview
 **Ava** is a test runner for Node.js with a concise API, which embraces new language features, has detailed error output and process isolation. While Ava is mostly used to run unit tests, it can be configured with ***Nightwatch.js*** to function as an integrated test framework for performing automated end-to-end tests on web applications across all major browsers.
@@ -44,9 +44,6 @@ You can configure all the CLI options in either `package.json` file or can creat
 			"MY_ENVIRONMENT_VARIABLE": "some value"
 		},
 		"verbose": true,
-		"require": [
-			"./_setup-nightwatch-env.js"
-		],
 		"nodeArguments": [
 			"--trace-deprecation",
 			"--napi-modules"
@@ -55,7 +52,7 @@ You can configure all the CLI options in either `package.json` file or can creat
 }</code></pre>
 
 #### Step 3: Nightwatch environment setup for Ava
-You have to create an environment of Nightwatch to make it compatible with Ava. You need to write a `_setup-nightwatch-env.js` file and make sure it has been included inside require key of Ava config:
+You have to create an environment of Nightwatch to make it compatible with Ava. You need to write a `_setup-nightwatch-env.js` file and make sure it has been included in your tests files :
 
 <pre class="line-numbers"><code class="language-javascript">const Nightwatch = require('nightwatch');
 
@@ -105,7 +102,14 @@ const createNightwatchClient = function({
   return client.launchBrowser();
 };
 
-global.browser = createNightwatchClient();</code></pre>
+module.exports = async (t, run) => {
+ global.browser = await createNightwatchClient();
+ try {
+   await run(t);
+ } finally {
+   await global.browser.end();
+ }
+};</code></pre>
 
 #### Nightwatch options
 The default behavior of Nightwatch can be modified by supplying any of the following configuration options. Below is a list of available options and their default values.
@@ -246,12 +250,9 @@ The default behavior of Nightwatch can be modified by supplying any of the follo
 Consider the below example test :
 
 <pre class="line-numbers"><code class="language-javascript">const test = require('ava');
+const await_nightwatch_browser = require('../../../_setup-nightwatch-env.js');
 
-test.before(async (t) => {
- global.browser = await browser;
-});
-
-test('duckduckgo example', async function(t) {
+test('duckduckgo example', await_nightwatch_browser, async function(t) {
  browser
    .navigateTo('https://www.ecosia.org/')
    .waitForElementVisible('body')
@@ -263,23 +264,22 @@ test('duckduckgo example', async function(t) {
  t.is(visible.passed, true);
 
  t.pass();
-});
-
-test.after((t) => browser.end());</code></pre>
-
-**Note :**
-- Ava has different naming conventions so you should confirm that your tests are following this [guide](https://github.com/avajs/ava/blob/main/docs/01-writing-tests.md).
-
-- We have a limitation to writing before hook code for all tests. This is a transient problem that will be addressed in future editions of Nightwatch.
-
-<pre class="line-numbers"><code class="language-javascript">test.before(async (t) => {
- global.browser = await browser;
 });</code></pre>
+
+To run the tests you can use the following commands :
+<div class="sample-test"><pre><code class="language-bash">npm test</code></pre></div>
+
+or
+
+<div class="sample-test"><pre><code class="language-bash">npx ava</code></pre></div>
+
+**Note :** ***Ava has different naming conventions so you should confirm that your tests are following this [guide](https://github.com/avajs/ava/blob/main/docs/01-writing-tests.md)***
+
 
 #### Step 5: View the results of Ava test runner
 <img width="1266" src="https://user-images.githubusercontent.com/94462364/184708209-694f108c-f264-454a-b784-42a0a68211c4.png">
 
 
 Related articles
-- [How-to guides > Write tests > Use CucumberJS reporter](/guide/writing-tests/using-cucumberjs.html#using-cucumberjs-with-nightwatch)
+- [How-to guides > Write tests > Use Jest as a test runner](/guide/writing-tests/using-jest.html)
 - [How-to guides > Write tests > Use Mocha as a test runner](/guide/writing-tests/using-mocha.html)

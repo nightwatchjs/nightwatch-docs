@@ -83,7 +83,7 @@ After editing and reviewing the .yml file you should click on the `save and run`
 
 Then click `save and run` button to commit .yml file after filling out the form accordingly.  
 
-<img width="1266" height="450" src="https://user-images.githubusercontent.com/94462364/184718444-efc1dc1e-a431-4063-af8b-8b8a522d0003.png">
+<img width="1266" src="https://user-images.githubusercontent.com/94462364/184718444-efc1dc1e-a431-4063-af8b-8b8a522d0003.png">
 
 Once you push your changes and click on save and run button, the pipeline will start and your tests will run automatically. 
 
