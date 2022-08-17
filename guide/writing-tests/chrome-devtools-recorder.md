@@ -7,7 +7,7 @@ summary_image: https://user-images.githubusercontent.com/8705386/184881833-dcc2d
 <div class="page-header"><h2>Create Nightwatch test using Google Chrome Devtools Recorder</h2></div>
 
 
-Google launched the Recorder tool in its Devtools ecosystem, letting users record all their test actions.
+The Chrome Devtools has a recorder functionality which lets users record all their test actions. These recorded actions can then be used to generate Nightwatch tests with the help of `@nightwatch/chrome-recorder`. The following sections describes the process to help you get started with devtools recorder.
 
 ### What is Chrome Devtools Recorder?
 
