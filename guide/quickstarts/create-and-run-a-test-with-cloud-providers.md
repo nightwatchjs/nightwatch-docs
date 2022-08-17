@@ -177,3 +177,7 @@ If you are trying to set this up for an existing project, you will have to add t
 </code></pre></div>
 
 Once the configuration block is added, replace the remote host, port & credentials with yours and get started!
+
+<div class="alert alert-info">
+For additional help you can jump on to our [Discord Server](https://discord.gg/9m44kM5u).
+</div>
