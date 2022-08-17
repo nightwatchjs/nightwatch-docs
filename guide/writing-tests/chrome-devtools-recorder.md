@@ -8,7 +8,7 @@ summary_image: https://user-images.githubusercontent.com/8705386/184881833-dcc2d
 
 <iframe width="100%" height="515px" src="https://www.youtube.com/embed/eYj4vuEjlRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Chrome DevTools](https://goo.gle/devtools] has a [Recorder](https://goo.gle/devtools-recorder) panel lets users records their user flows, and export them as JSON files or other custom formats.
+[Chrome DevTools](https://goo.gle/devtools] has a [Recorder](https://goo.gle/devtools-recorder) panel which lets users records their user flows, and export them as JSON files or other custom formats.
 
 You can convert the these user flows to Nightwatch test scripts by:
 
