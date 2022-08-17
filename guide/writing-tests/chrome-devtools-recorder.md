@@ -12,7 +12,7 @@ summary_image: https://user-images.githubusercontent.com/8705386/184881833-dcc2d
 You can convert the these user flows to Nightwatch test scripts by:
 
 - Installing the [Nightwatch Recorder Extension](https://chrome.google.com/webstore/detail/nightwatch-chrome-recorde/nhbccjfogdgkahamfohokdhcnemjafjk/), and export it straight away from the Chrome DevTools, or
-- Using the [@nightwatch/chrome-recorder](https://github.com/nightwatchjs/nightwatch-chrome-recorder) library to convert the scripts programmatically.
+- Using the [@nightwatch/chrome-recorder](https://www.npmjs.com/package/@nightwatch/chrome-recorder) library to convert the scripts programmatically.
 
 The following sections help you get started with the Chrome Devtools Recorder, and exporting the user flows to Nightwatch.
 
