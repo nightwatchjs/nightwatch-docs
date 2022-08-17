@@ -75,6 +75,7 @@ module.exports = {
     write: function(results, options, done) {
         teamCityFormatter(results);
         reporter.fn(results, done);
+        done();
     }
 };</code>
 </pre>
