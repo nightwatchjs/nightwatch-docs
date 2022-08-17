@@ -9,7 +9,7 @@ summary_image: https://user-images.githubusercontent.com/8705386/184881833-dcc2d
 
 The Chrome DevTools has a recorder functionality which lets users record all their test actions. These recorded actions can then be used to generate Nightwatch tests with the help of [Nightwatch Recorder Extension](https://chrome.google.com/webstore/detail/nightwatch-chrome-recorde/nhbccjfogdgkahamfohokdhcnemjafjk/) or using the [@nightwatch/chrome-recorder](https://www.npmjs.com/package/@nightwatch/chrome-recorder) tool. The following sections describes the process to help you get started with devtools recorder.
 
-### What is Chrome Devtools Recorder?
+### What is Chrome DevTools Recorder?
 
 Chrome Devtools Recorder is a tool which allows you to record and replay test actions directly in the browser and also export them as JSON (or export them in e2e test), as well as measure test performance. If you want to know more about the DevTools Recorder, you can read all about it [here](https://developer.chrome.com/docs/devtools/recorder/).
 
