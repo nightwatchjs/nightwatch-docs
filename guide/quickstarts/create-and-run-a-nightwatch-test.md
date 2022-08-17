@@ -126,12 +126,15 @@ The output should look similar to this:
 OK. 5 assertions passed. (1.838s)
 </code></pre>
 
-For additional help you can jump on to our [Discord Server](https://discord.gg/9m44kM5u).
-
 
 ### Record test actions and generate Nightwatch test script automatically
 
 Alternatively, Nightwatch provides tools to help you get started by recording your test actions on screen and generate Nightwatch test scripts automatically. See [Create Nightwatch test using Google Chrome DevTools Recorder](/guide/writing-tests/chrome-devtools-recorder.html) for more information.
+
+
+<div class="alert alert-info">
+For additional help you can jump on to our [Discord Server](https://discord.gg/9m44kM5u).
+</div>
 
 [1]:	https://nodejs.org/
 [2]:	https://nodejs.org/
