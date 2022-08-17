@@ -70,6 +70,12 @@ You can also export it as a Nightwatch test script right away. There are two way
 - When you click on the option, you have successfully exported your current recording to Nightwatch tests.
 - Now you can  [run your first tests](https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html#tests-source) with Nightwatch
 
+<br>
+![Run first test](https://user-images.githubusercontent.com/2018070/185052499-44f3cde6-13d6-4809-9083-994575288264.gif)
+<br>
+<br>
+<br>
+
 #### Using `@nightwatch/chrome-recorder` tool
 
 You can convert the JSON recording to the Nightwatch test with the following CLI command.
