@@ -44,7 +44,7 @@ After installation, now you can sign in to the admin and create a plan after cli
 
     <img width="1266" src="https://user-images.githubusercontent.com/94462364/184720011-5d4949c9-4cff-4963-8eae-fc8b4a99dcd3.png">
 
-3. And then select the agent environmen
+3. And then select the agent environment
 
     <img width="1266" src="https://user-images.githubusercontent.com/94462364/184720172-33ebe5c2-149d-4a65-aa0f-4023ea949bf4.png">
 
