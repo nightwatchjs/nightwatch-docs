@@ -18,7 +18,7 @@ Install `nightwatch-slack-reporter` as a dependency in your nightwatch project.
 
 
 #### Step 2: Slack app setup
-In order to integrate **nightwatch-slack-reporter** with slack, you are required to set up an incoming webhook to send messages. Once you create the app on slack, you will get a  ***slack_webhook_url*** to interact with slack. For more info you can refer to [slack webhook](https://api.slack.com/messaging/webhooks) guide.
+In order to integrate **nightwatch-slack-reporter** with Slack, you are required to set up an incoming webhook to send messages. Once you create the app on Slack, you will get a  ***slack_webhook_url*** to interact with Slack. For more info you can refer to [Slack webhook](https://api.slack.com/messaging/webhooks) guide.
 
 You must follow the steps to setup the app :
 1. Navigate to [url](https://api.slack.com/messaging/webhooks) and click on ***Create your Slack app*** button :
@@ -61,7 +61,7 @@ You must follow the steps to setup the app :
 `nightwatch-slack-reporter` requires an option object which will contain **slack_message** and **slack_webhook_url**. You can configure  **slack_message** accordingly either as a function or message and also to set the value of **slack_webhook_url** which you made in ***step 2***
 
 ##### via globals.js file 
-Make sure your `globals.js` is configured already; if not please follow the [setup guide](https://nightwatchjs.org/guide/concepts/test-globals.html#external-test-globals).
+Make sure your `globals.js` is configured already; if not, please follow the [setup guide](https://nightwatchjs.org/guide/concepts/test-globals.html#external-test-globals).
 
 <div class="sample-test"><i>globals.js</i>
 <pre class="line-numbers language-javascript"><code class="language-javascript">const options = {
@@ -122,12 +122,12 @@ Consider the `duckDuckGo.js` example test :
 });
 </code></pre>
 
-You don't need to do anything extra because you've configured the slack reporter to be global. Run the tests as usual :
+You don't need to do anything extra because you've configured the Slack reporter to be global. Run the tests as usual :
 
 <pre class="language-bash"><code class="language-bash">npx nightwatch examples/tests/duckDuckGo.js --env chrome</code></pre>
 
 
-#### Step 2: view the reports on Slack
+#### Step 2: View the reports on Slack
 ![reports](https://user-images.githubusercontent.com/94462364/185097245-963261e2-5253-43b5-975f-87a0c06cf1de.png)
 
 ### Recommended content
