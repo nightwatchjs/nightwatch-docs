@@ -10,7 +10,7 @@ TeamCity formatter for ***Nightwatch.js*** end-to-end testing framework. Its out
 
 ### Example with Configuration
 
-#### Step 0: install Nightwatch
+#### Step 0: Install Nightwatch
 Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](​​https://vimeo.com/714406223) to install Nightwatch from scratch.
 
 #### Step 1: Installing Nightwatch Teamcity Reporter

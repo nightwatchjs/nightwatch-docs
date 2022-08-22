@@ -83,7 +83,7 @@ After installation, now you can sign in to the admin and create a plan after cli
     <img width="1266" src="https://user-images.githubusercontent.com/94462364/184720851-73c6eec8-8965-4f2f-8b25-dd83c5022567.png">
 
  
-#### Step 4 : view the results of Bamboo Integration
+#### Step 4 : View the results of Bamboo Integration
 
 ![Bamboo-results](https://user-images.githubusercontent.com/94462364/184720721-734423c4-bd4d-4efc-b265-304792e77473.png)
 
