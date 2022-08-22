@@ -15,7 +15,8 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 
         return actions
          .keyDown(Keys.SHIFT)
-         .keyUp(Keys.SHIFT);
+         .keyUp(Keys.SHIFT)
+         .perform();
       });
   })
 })
@@ -438,6 +439,11 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
   </div>
 </div>
 
+<div class="apimethod">
+  <h3>.perform()</h3>
+<p>Performs the configured action sequence.</p>
+</div>
+
 ### Working with Action Ticks
 Action sequences are divided into a series of "ticks". At each tick, the browser driver will perform a single action for each device included in the action sequence. At tick 0, the driver will perform the first action defined for each device, at tick 1 the second action for each device, and so on until all actions have been executed. If an individual device does not have an action defined at a particular tick, it will automatically pause.
 
@@ -455,7 +461,8 @@ By default, action sequences will be synchronized so only one device has a defin
           .move({origin: el})
           .press()
           .release()
-          .keyUp(Keys.SHIFT);
+          .keyUp(Keys.SHIFT)
+          .perform();
       });
     })
 })
