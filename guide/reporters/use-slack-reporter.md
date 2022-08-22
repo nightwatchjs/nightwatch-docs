@@ -11,7 +11,7 @@ Slack Integration allows you to see your Nightwatch.js test results directly in 
 
 ### Configuration
 
-#### Step 1: Install [Nightwatch-Slack-Reporter](https://github.com/ngs/nightwatch-slack-reporter)
+#### Step 1: Install [Nightwatch-Slack-Reporter](https://github.com/nightwatchjs-community/nightwatch-slack-reporter)
 Install `nightwatch-slack-reporter` as a dependency in your nightwatch project.
 
 <pre class="language-bash"><code class="language-bash">npm i nightwatch-slack-reporter --save-dev</code></pre>
