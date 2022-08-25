@@ -108,13 +108,13 @@ If you are running from a Mac, safaridriver is present by default but must be en
 Once your setup is done, you can run tests with this command
 
 ##### Firefox
-<pre><code class="language-bash">npx nightwatch tests/ecosia.js --env selenium.firefox</code></pre>
+<pre><code class="language-bash">npx nightwatch tests/specs/basic/ecosia.js --env selenium.firefox</code></pre>
 
 ##### Chrome
-<pre><code class="language-bash">npx nightwatch tests/ecosia.js --env selenium.chrome</code></pre>
+<pre><code class="language-bash">npx nightwatch tests/specs/basic/ecosia.js --env selenium.chrome</code></pre>
 
 ##### Safari
-<pre><code class="language-bash">npx nightwatch tests/ecosia.js --env selenium.safari</code></pre>
+<pre><code class="language-bash">npx nightwatch tests/specs/basic/ecosia.js --env selenium.safari</code></pre>
 
 The output should look similar to this:
 <pre class="hide-indicator" ><code class="language-bash">
