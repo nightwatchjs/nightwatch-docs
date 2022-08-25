@@ -105,7 +105,7 @@ If you are running from a Mac, safaridriver is present by default but must be en
 
 Once your setup is done, you can run tests with this command
 
-<pre><code class="language-bash">npx nightwatch tests/ecosia.js --env safari</code></pre>
+<pre><code class="language-bash">npx nightwatch tests/specs/basic/ecosia.js --env safari</code></pre>
 
 The output should look similar to this:
 
