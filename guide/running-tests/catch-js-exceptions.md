@@ -45,24 +45,25 @@ Use the `browser.captureBrowserExceptions()` command with the required parameter
 ### Example
 
 <div class="sample-test"><i>tests/catch-js-exceptions.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
- describe('catch errors', function() {
-  it('does', async function (browser) {
-     await browser.captureBrowserExceptions((event) => {
-       console.log('>>> Exception:', event);
-     });
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">describe('catch browser exceptions', function() {
+  it('captures the js exceptions thrown in the browser', async function() {
+    await browser.captureBrowserExceptions((event) => {
+      console.log('>>> Exception:', event);
+    });
 
-     await browser.navigateTo('https://duckduckgo.com/');
-     const aboutLink = await browser.findElement('#logo_homepage_link');
+    await browser.navigateTo('https://duckduckgo.com/');
 
-     await browser.executeScript(function(aboutLink) {
-       aboutLink.setAttribute('onclick', 'throw new Error("Hello world!")');
-     }, [aboutLink]);
+    const searchBoxElement = await browser.findElement('input[name=q]');
+    await browser.executeScript(function(_searchBoxElement) {
+      _searchBoxElement.setAttribute('onclick', 'throw new Error("Hello world!")');
+    }, [searchBoxElement]);
 
-     await browser.click(aboutLink);
+    await browser.elementIdClick(searchBoxElement.getId());
   });
 });
-</code></pre></div>
+</code>
+</pre></div>
 
 Output of the example above:
 

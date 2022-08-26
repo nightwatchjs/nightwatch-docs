@@ -56,19 +56,21 @@ All you need to do is call the `browser.setGeolocation()` command with the requi
 ### Example
 
 <div class="sample-test"><i>tests/mock-geolocation.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-describe('mock geolocation', function() {
-  // Set the geolocation to Tokyo, Japan
-  browser
-    .setGeolocation({
-      latitude: 35.689487,
-      longitude: 139.691706,
-      accuracy: 100
-    })
-    .navigateTo('https://www.gps-coordinates.net/my-location')
-    .pause(3000);
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">describe('mock geolocation', function() {
+  it('sets the geolocation to Tokyo, Japan', () => {
+    browser
+      .setGeolocation({
+        latitude: 35.689487,
+        longitude: 139.691706,
+        accuracy: 100
+      })
+      .navigateTo('https://www.gps-coordinates.net/my-location')
+      .pause(3000);
+  });
 });
-</code></pre></div>
+</code>
+</pre></div>
 
 
 ### Reset Geolocation
@@ -78,21 +80,24 @@ After overriding the geolocation of your browser, if you now want to reset the g
 #### Example:
 
 <div class="sample-test"><i>tests/mock-and-reset-geolocation.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-describe('mock and reset geolocation', function() {
-  browser
-    .setGeolocation({
-      latitude: 35.689487,
-      longitude: 139.691706,
-      accuracy: 100
-    })  // sets the geolocation to Tokyo, Japan
-    .navigateTo('https://www.gps-coordinates.net/my-location')
-    .pause(3000)
-    .setGeolocation()  // resets the geolocation
-    .navigateTo('https://www.gps-coordinates.net/my-location')
-    .pause(3000);
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">describe('mock and reset geolocation', function() {
+  it('sets the geolocation to Tokyo, Japan and then resets it', () => {
+    browser
+      .setGeolocation({
+        latitude: 35.689487,
+        longitude: 139.691706,
+        accuracy: 100
+      })  // sets the geolocation to Tokyo, Japan
+      .navigateTo('https://www.gps-coordinates.net/my-location')
+      .pause(3000)
+      .setGeolocation()  // resets the geolocation
+      .navigateTo('https://www.gps-coordinates.net/my-location')
+      .pause(3000);
+  });
 });
-</code></pre></div>
+</code>
+</pre></div>
 
 ### Recommended content
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)

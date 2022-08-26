@@ -28,28 +28,33 @@ Call the `browser.takeHeapSnapshot()` command with the required parameters anyti
 ### Example
 
 <div class="sample-test"><i>tests/take-heap-snapshot.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-describe('Take heap snapshot', function() {
-  browser
-    .navigateTo('https://www.google.com')
-    .takeHeapSnapshot('heap_snaps/snapshot-1.heapsnapshot');
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">describe('take heap snapshot', function() {
+  it('takes heap snapshot and saves it as snapshot1.heapsnapshot file', function() {
+    browser
+      .navigateTo('https://www.google.com')
+      .takeHeapSnapshot('heap_snaps/snapshot1.heapsnapshot');
+  });
 });
-</code></pre></div>
+</code>
+</pre></div>
 
 When used with `async`/`await` syntax, `takeHeapSnapshot` command returns the contents of the heap snapshot, which then can be saved manually to a `.heapsnapshot` file.
 
 <div class="sample-test"><i>tests/take-heap-snapshot-async-await.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-const fs = require('fs');
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">const fs = require('fs');
 
-describe('Take heap snapshot with async/await', async function() {
-  await browser.navigateTo('https://www.google.com');
+describe('take heap snapshot with async/await', function() {
+  it('takes heap snapshot and returns the snapshot content', async function() {
+    await browser.navigateTo('https://www.google.com');
 
-  const heapSnapshot = await browser.takeHeapSnapshot();
-  
-  fs.writeFileSync('snap.heapsnapshot', heapSnapshot);
+    const heapSnapshot = await browser.takeHeapSnapshot();
+    fs.writeFileSync('heap_snaps/snapshot2.heapsnapshot', heapSnapshot);
+  });
 });
-</code></pre></div>
+</code>
+</pre></div>
 
 ### Recommended content
 

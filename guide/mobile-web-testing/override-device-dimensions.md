@@ -63,18 +63,22 @@ All you need to do is call the `browser.setDeviceDimensions()` command with the 
 ### Example
 
 <div class="sample-test"><i>tests/modify-device-dimensions.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-describe('modify device dimensions', function() {
-  browser
-    .setDeviceDimensions({
-      width: 400,
-      height: 600,
-      deviceScaleFactor: 50,
-      mobile: true
-    })
-    .navigateTo('https://www.google.com');
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">describe('modify device dimensions', function() {
+  it('modifies the device dimensions', function() {
+    browser
+      .setDeviceDimensions({
+        width: 400,
+        height: 600,
+        deviceScaleFactor: 50,
+        mobile: true
+      })
+      .navigateTo('https://www.google.com')
+      .pause(1000);
+  });
 });
-</code></pre></div>
+</code>
+</pre></div>
 
 ### Reset device dimensions
 
@@ -83,19 +87,22 @@ To reset the device dimensions back to original, you can again call the `browser
 #### Example:
 
 <div class="sample-test"><i>tests/modify-and-reset-device-dimensions.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-describe('modify and reset device dimensions', function() {
-  browser
-    .setDeviceDimensions({
-      width: 400,
-      height: 600,
-      deviceScaleFactor: 50,
-      mobile: true
-    })
-    .navigateTo('https://www.google.com')
-    .pause(1000)
-    .setDeviceDimensions()  // resets the device dimensions
-    .navigateTo('https://www.google.com')
-    .pause(1000);
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">describe('modify device dimensions', function() {
+  it('modifies the device dimensions and then resets it', function() {
+    browser
+      .setDeviceDimensions({
+        width: 400,
+        height: 600,
+        deviceScaleFactor: 50,
+        mobile: true
+      })
+      .navigateTo('https://www.google.com')
+      .pause(1000)
+      .setDeviceDimensions()  // resets the device dimensions
+      .navigateTo('https://www.google.com')
+      .pause(1000);
+  });
 });
-</code></pre></div>
+</code>
+</pre></div>

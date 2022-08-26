@@ -56,18 +56,21 @@ All you need to do is call the `browser.captureBrowserConsoleLogs()` command wit
 ### Example
 
 <div class="sample-test"><i>tests/capture-console-messages.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-describe('Capture console messages', function() {
-  browser
-    .captureBrowserConsoleLogs((event) => {
-      console.log(event.type, event.timestamp, event.args[0].value);
-    })
-    .navigateTo('https://www.google.com')
-    .executeScript(function() {
-      console.error('here');
-    }, []);
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">describe('capture console events', function() {
+  it('captures and logs console.log event', function() {
+    browser
+      .captureBrowserConsoleLogs((event) => {
+        console.log(event.type, event.timestamp, event.args[0].value);
+      })
+      .navigateTo('https://www.google.com')
+      .executeScript(function() {
+        console.log('here');
+      }, []);
+  });
 });
-</code></pre></div>
+</code>
+</pre></div>
 
 Output of the example above:
 
