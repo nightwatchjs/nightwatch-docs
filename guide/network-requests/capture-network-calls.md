@@ -53,19 +53,22 @@ All you need to do is call the `browser.captureNetworkRequests()` command with t
 ### Example
 
 <div class="sample-test"><i>tests/capture-network-calls.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-describe('Capture network requests', function() {
-  this.requestCount = 1;
-  browser
-    .captureNetworkRequests((requestParams) => {
-      console.log('Request Number:', this.requestCount++);
-      console.log('Request URL:', requestParams.request.url);
-      console.log('Request method:', requestParams.request.method);
-      console.log('Request headers:', requestParams.request.headers);
-    })
-    .navigateTo('https://www.google.com');
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">describe('capture network requests', function() {
+  it('captures and logs network requests as they occur', function() {
+    this.requestCount = 1;
+    browser
+      .captureNetworkRequests((requestParams) => {
+        console.log('Request Number:', this.requestCount!++);
+        console.log('Request URL:', requestParams.request.url);
+        console.log('Request method:', requestParams.request.method);
+        console.log('Request headers:', requestParams.request.headers);
+      })
+      .navigateTo('https://www.google.com');
+  });
 });
-</code></pre></div>
+</code>
+</pre></div>
 
 Output from one of the network calls in the example above:
 

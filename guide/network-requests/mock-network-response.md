@@ -57,19 +57,23 @@ All you need to do is call the `browser.mockNetworkResponse()` command with the 
 ### Example
 
 <div class="sample-test"><i>tests/mock-network-response.js</i>
-<pre class="line-numbers language-javascript"><code class="language-javascript">
-describe('Mock network response', function() {
-  browser
-    .mockNetworkResponse('https://www.google.com/', {
-      status: 200,
-      headers: {
-        'Content-Type': 'UTF-8'
-      },
-      body: 'Hello there!'
-    })
-    .navigateTo('https://www.google.com/');
+<pre class="line-numbers language-javascript">
+<code class="language-javascript">describe('mock network response', function() {
+  it('intercepts the request made to Google search and mocks its response', function() {
+    browser
+      .mockNetworkResponse('https://www.google.com/', {
+        status: 200,
+        headers: {
+          'Content-Type': 'UTF-8'
+        },
+        body: 'Hello there!'
+      })
+      .navigateTo('https://www.google.com/')
+      .pause(2000);
+  });
 });
-</code></pre></div>
+</code>
+</pre></div>
 
 ### Recommended content
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
