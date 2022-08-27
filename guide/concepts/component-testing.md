@@ -1,11 +1,11 @@
 ---
-title: Component Testting
+title: Component Testing in Nightwatch
 description: Learn how to do component testing using nightwatch.
 ---
 
-<div class="page-header"><h2>Component Testing</h2></div>
+<div class="page-header"><h1>Component Testing in Nightwatch</h1></div>
  
-Component testing is used to test individual components in isolation. It has become crucial with the rise of reusable component UI frameworks. There are some added benefits of component testing. 
+Component testing is used to test individual components in isolation. It has become crucial with the rise of reusable component UI frameworks. 
 
 ### Overview
 
