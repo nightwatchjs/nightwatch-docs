@@ -3,7 +3,7 @@ title: Define Test Environments
 description: Learn how to define and use test environments in nightwatch
 ---
 
-<div class="page-header"><h2>Define and use test environments</h2></div>
+<div class="page-header"><h1>Define and use test environments</h1></div>
 
 ### Overview
 The environments are located under the `"test_settings"` dictionary in the configuration file. A `default` environment is always required from which the other environments inherit the settings. You can overwrite any test setting for each environment as needed.
@@ -124,3 +124,5 @@ OK. 1 assertions passed. (5.604s)
 ### Recommended content
 - [Concepts > Test environments](/guide/concepts/test-environments.html)
 - [Reference > Browser Drivers > ChormeDriver](/guide/browser-drivers/chrome-driver.html)
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)

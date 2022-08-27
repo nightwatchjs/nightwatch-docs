@@ -4,7 +4,7 @@ description: Learn how to enable taking screenshots on failures/errors in Nightw
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-## Taking screenshots on failures/errors
+<div class="page-header"><h1>Taking screenshots on failures/errors</h1></div>
 
 If test failures or errors exist and screenshots are enabled, then screenshots are taken prior to sending the `DELETE`.
 
@@ -25,3 +25,8 @@ To enable screenshots for test failures/errors, set the `screenshots` property i
 }
 </code></pre>
 </div>
+
+
+### Recommended content
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)

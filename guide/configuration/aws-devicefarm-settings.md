@@ -3,7 +3,7 @@ title: AWS Device Farm Settings
 description: Learn how to configure AWS device farm settings in Nightwatch
 ---
 
-<div class="page-header"><h2>AWS Device Farm Settings</h2></div>
+<div class="page-header"><h1>AWS Device Farm Settings</h1></div>
 
 [Aws Device Farm][1] is one of cloud testing platforms that allows users to do remove browser testing using selenium. It is possible to use Nightwatch with AWS using some tweaks to the auto-generated configuration file  `nightwatch.conf.js`.
 
@@ -100,3 +100,7 @@ module.exports = (async function() {
 </div>
 
 [1]:	https://aws.amazon.com/device-farm/
+
+### Recommended content
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)

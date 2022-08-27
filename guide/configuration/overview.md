@@ -1,4 +1,4 @@
-## Configuration
+<div class="page-header"><h1>Nightwatch Configuration</h1></div>
 
 ### nightwatch.conf.js
 
@@ -207,3 +207,7 @@ Assuming you have downloaded or installed the ChromeDriver service, the simplest
 [2]:	https://www.npmjs.com/package/geckodriver
 [3]:	https://www.npmjs.com/package/chromedriver
 [4]:	https://www.npmjs.com/package/selenium-server
+
+### Recommended content
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)

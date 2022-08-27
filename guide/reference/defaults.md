@@ -1,4 +1,5 @@
-### Defaults
+
+<div class="page-header"><h1>Default Settings</h1></div>
 
 Nightwatch has a [default configuration](https://github.com/nightwatchjs/nightwatch/blob/main/lib/settings/defaults.js) object with pre-defined values. These values can be overwritten as needed.
 

@@ -3,7 +3,9 @@ title: Nightwatch Settings
 description: Reference to list of settings received by nightwatch instance during test execution.
 ---
 
-### Base Settings
+<div class="page-header"><h1>Config Settings</h1></div>
+
+### Base settings
 Below are the default settings that will be passed to the Nightwatch instance during test execution.
 
 <table class="table table-bordered table-striped">
@@ -92,9 +94,7 @@ Below are the default settings that will be passed to the Nightwatch instance du
   </tbody>
 </table>
 
-## Extended Settings
-
-### Test Runner Settings
+### Test Runner settings
 The below settings are used to control the way the built-in CLI test runner works.
 <table class="table table-bordered table-striped">
   <thead>
@@ -166,9 +166,10 @@ The below settings are used to control the way the built-in CLI test runner work
 </table>
 
 ### Test Session Settings
+
 These settings are used to fine tune the behaviour of a test session and define properties which may be available during the course of it.
 
-#### Setting the `baseUrl` property
+### Setting the `baseUrl` property
 This `baseUrl` (or `launchUrl`) property will be made available to the main Nightwatch api which is used in the tests. Its value depends on which environment is used.
 More on test environments under the [Nightwatch Runner](https://v2.nightwatchjs.org/guide/using-nightwatch/concepts.html#defining-test-environments) section.
 
@@ -468,7 +469,7 @@ The below settings can be used to control the output and logging when running te
   </tbody>
 </table>
 
-## WebDriver Settings
+### WebDriver Settings
 
 Below are a number of options for the Webdriver service. Nightwatch can start and stop the Webdriver process automatically which is very convenient as you don't have to manage this yourself and focus only on the tests.
 
@@ -625,7 +626,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
 </table>
 
 
-## Selenium Server Settings
+### Selenium Server Settings
 
 If Selenium Server is being used, then the connection related settings should be placed under the `"selenium""`. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged with the `webdriver` ones.
 

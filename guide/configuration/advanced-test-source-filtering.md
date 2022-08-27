@@ -3,9 +3,10 @@ title: Advance Test Source Filtering
 description: Learn how to define test files
 ---
 
-<div class="page-header"><h2>Advanced Test Source Filtering</h2></div>
+<div class="page-header"><h1>Advanced Test Source Filtering</h1></div>
 
 The below settings can be used to define ways of filtering test files.
+
 <table class="table table-bordered table-striped">
   <thead>
    <tr>
@@ -53,3 +54,7 @@ The below settings can be used to define ways of filtering test files.
   </tr>  
   </tbody>
 </table>
+
+### Recommended content
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)

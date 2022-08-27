@@ -1,13 +1,13 @@
 ---
 title: Selenium Settings
-description: List of selenium settings
+description: List of Selenium settings in Nightwatch.
 ---
 
-<div class="page-header"><h2>Selenium Settings</h2></div>
+<div class="page-header"><h1>Selenium Settings</h1></div>
 
 If Selenium Server is being used, then the connection related settings should be placed under the `"selenium""`. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged with the `webdriver` ones.
 
-The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers, such as [BrowserStack][1], [SauceLabs][2], [CrossBrowserTesting][3], or [LambdaTest][4].
+The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers.
 
 <table class="table table-bordered table-striped">
 <thead>
@@ -144,3 +144,7 @@ The following **NPM** packages are assumed to be installed in the current projec
   }
 }
 }</code></pre></div>
+
+### Recommended content
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)

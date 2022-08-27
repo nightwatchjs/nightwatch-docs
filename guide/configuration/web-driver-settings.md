@@ -1,9 +1,9 @@
 ---
 title: Webdriver Settings
-description: List of webdriver testings
+description: List of webdriver settings in Nightwatch
 ---
 
-<div class="page-header"><h2>WebDriver Settings</h2></div>
+<div class="page-header"><h1>WebDriver Settings</h1></div>
 
 
 Below are a number of options for the Webdriver service. Nightwatch can start and stop the Webdriver process automatically which is very convenient as you don't have to manage this yourself and focus only on the tests.
@@ -159,3 +159,8 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
 
  </tbody>
 </table>
+
+
+### Recommended content
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)

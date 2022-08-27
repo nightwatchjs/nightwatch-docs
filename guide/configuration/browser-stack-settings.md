@@ -1,9 +1,9 @@
 ---
 title: Browserstack Settings
-description: Learn how to connfigure browserstack settings in nightwatch
+description: Learn how to configure Browserstack settings in Nightwatch
 ---
 
-<div class="page-header"><h2>Browserstack Settings</h2></div>
+<div class="page-header"><h1>Browserstack Settings</h1></div>
 
 [Browserstack][1] is one of the most popular cloud testing platforms. Using it with Nightwatch is very straightforward and there is configuration in the auto-generated `nightwatch.conf.js` file.
 
@@ -123,3 +123,7 @@ You can specify proxy settings in Nightwatch by adding the `proxy` key in your `
 [2]:	https://www.npmjs.com/package/dotenv
 [3]:    https://github.com/browserstack/nightwatch-browserstack/blob/master/scripts/local.runner.js
 [4]:    https://www.npmjs.com/package/browserstack-local
+
+### Recommended content
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)

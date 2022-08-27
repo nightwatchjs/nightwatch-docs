@@ -1,4 +1,9 @@
-## Output Settings
+---
+title: Customize Output Settings
+description: Learn how to customize output settings in Nightwatch.
+---
+
+<div class="page-header"><h1>Output Settings</h1></div>
 
 The below settings can be used to control the output and logging when running tests.
 
@@ -83,3 +88,7 @@ The below settings can be used to control the output and logging when running te
   </tr>         
   </tbody>
 </table>
+
+### Recommended content
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)

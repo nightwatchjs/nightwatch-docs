@@ -1,9 +1,9 @@
 ---
 title: Nightwatch Configuration File
-description: Learn how to create nightwatch configuration file
+description: Learn how to write the Nightwatch configuration file.
 ---
 
-<div class="page-header"><h2>Nightwatch Configuration File</h2></div>
+<div class="page-header"><h1>Nightwatch Configuration File</h1></div>
 
 ### Overview
 The Nightwatch test runner binary expects a configuration file, using by default either a `nightwatch.conf.js` or `nightwatch.json` file from the current working directory. `nightwatch.conf.js` is taking precedence if both files are found.
@@ -58,3 +58,8 @@ The following packages can be used from NPM and, if installed, Nightwatch will a
 [2]:	https://www.npmjs.com/package/geckodriver
 [3]:	https://www.npmjs.com/package/chromedriver
 [4]:	https://www.npmjs.com/package/@nightwatch/selenium-server
+
+
+### Recommended content
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)
