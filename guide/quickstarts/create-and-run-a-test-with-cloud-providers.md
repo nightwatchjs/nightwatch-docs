@@ -4,7 +4,7 @@ description: Learn how to run Nightwatch tests on remote Selenium grids or Cloud
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-<div class="page-header"><h2>Create and run a Nightwatch test with a cloud provider</h2></div>
+<div class="page-header"><h1>Run a Nightwatch test with a cloud provider</h1></div>
 
 Nightwatch can be configured to run on remote Selenium grids or cloud providers such as BrowserStack and Sauce Labs.
 
@@ -128,7 +128,7 @@ If you are trying to run Nightwatch on Sauce Labs for an existing project, you w
 
 Once the Sauce Labs block is present in the Nightwatch configuration file, replace the Sauce Labs username and access key with your credentials.
 
-### Running on remote Selenium server or other providers
+### Running on remote Selenium server
 
 If you are installing Nightwatch using the `create-nightwatch` utility and you select to run against a remote selenium server or other cloud providers, the remote host settings will be automatically added to test_settings with place holder values.
 
@@ -179,5 +179,5 @@ If you are trying to set this up for an existing project, you will have to add t
 Once the configuration block is added, replace the remote host, port & credentials with yours and get started!
 
 <div class="alert alert-info">
-For additional help you can jump on to our [Discord Server](https://discord.gg/9m44kM5u).
+For additional help you can jump on to our [Discord Server](https://discord.gg/SN8Da2X).
 </div>

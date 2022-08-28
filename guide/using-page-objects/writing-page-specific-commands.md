@@ -103,7 +103,8 @@ And for a more elaborate example... You can reference the main page object via `
 };</code></pre></div>
 
 ### Recommended content
-- [Concepts > Page object model](/guide/concepts/page-object-model.html)
+- [Getting started with page objects](/guide/using-page-objects/getting-started.html)
 - [Define page elements](/guide/using-page-objects/defining-elements.html)
 - [Define sections](/guide/using-page-objects/defining-sections.html)
+- [Concepts > Page object model](/guide/concepts/page-object-model.html)
 

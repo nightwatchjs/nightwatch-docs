@@ -1,12 +1,12 @@
 ---
-title: Create and run a Nightwatch test
-description: Learn how to create and run tests using Nightwatch
+title: Getting Started
+description: Get started with Nightwatch and run your first end-to-end test.
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-<div class="page-header"><h2>Create and run a Nightwatch test</h2></div>
+<div class="page-header"><h1>Run Your First End-to-End Test</h1></div>
 
-In this quickstart, you will learn how to create and run your first Nightwatch test from scratch. 
+Getting started with Nightwatch takes only a few short minutes. Here's how to be up and running with your first end-to-end test. 
 
 ### Prerequisites 
 Make sure [Node][1] is installed on the system. The version used for this tutorial is **v16.14.2**
@@ -48,9 +48,9 @@ Nightwatch also supports other test runners. You can also pick [Mocha][15] or [C
 
 #### Language - Javascript/Typescript
 
-Nightwatch [supports typescript][17] for test files after v1.6.0. So you can choose to have the test setup in Javascript or Typescript.
+Nightwatch [supports TypeScript][17] for test files after v1.6.0. So you can choose to have the test setup in Javascript or Typescript.
 
-<pre class="hide-indicator"><code class="language-bash">? What is your Language - Test Runner setup? (Use arrow keys)
+<pre class="hide-indicator"><code>? What is your Language - Test Runner setup? (Use arrow keys)
 ❯ JavaScript - Nightwatch Test Runner
   JavaScript - Mocha Test Runner
   JavaScript - CucumberJS Test Runner
@@ -61,7 +61,7 @@ Nightwatch [supports typescript][17] for test files after v1.6.0. So you can cho
 
 You can configure Nightwatch to run locally on your machine, remotely on a cloud machine or both
 
-<pre class="hide-indicator"><code class="language-bash">? Where do you want to run your e2e tests? (Use arrow keys)
+<pre class="hide-indicator"><code>? Where do you want to run your e2e tests? (Use arrow keys)
 ❯ On my local machine
   On a remote machine (cloud)
   Both</code></pre>
@@ -73,35 +73,35 @@ For remote testing, host and port details will be automatically added in case yo
 You can pick the browsers you'll be testing on, and the config will be automatically created for them. We provide a multi-selection option so you can pick as many browsers you want to test on. You can also use the selenium-server when testing on the local machine.
 
 
-<pre class="hide-indicator"><code class="language-bash">? Where you'll be testing on? (Press &#60;space&#62; to select, &#60;a&#62; to toggle all, &#60;i&#62; to invert selection,
+<pre class="hide-indicator"><code>? Where you'll be testing on? (Press &#60;space&#62; to select, &#60;a&#62; to toggle all, &#60;i&#62; to invert selection,
  and &#60;enter&#60; to proceed)
 ❯◯ Firefox
  ◯ Chrome
  ◯ Edge
  ◯ Safari</code></pre>
 
-#### Test Folder Name
+#### Test Folder
 
 Next you can name the folder where you want the tests to reside. The default value is tests.
 
-<pre class="hide-indicator"><code class="language-bash">? Where do you plan to keep your end-to-end tests? (tests)</code></pre>
+<pre class="hide-indicator"><code>? Where do you plan to keep your end-to-end tests? (tests)</code></pre>
 
 #### Base URL
 
 Add the base URL that the tests will run against. This preference will default to http://localhost
 
-<pre class="hide-indicator"><code class="language-bash">? What is the base_url of your project? (http://localhost)</code></pre>
+<pre class="hide-indicator"><code>? What is the base_url of your project? (http://localhost)</code></pre>
 
 Once you select this preference, Nightwatch setup will begin. It will also generate sample tests for you to get started. 
 
 If you are running from a Mac, safaridriver is present by default but must be enabled. You will be presented with the following option.
 
-<pre class="hide-indicator"><code class="language-bash">? Enable safaridriver (requires sudo password)? (Use arrow keys)
+<pre class="hide-indicator"><code>? Enable safaridriver (requires sudo password)? (Use arrow keys)
  ❯Yes
   No, I'll do that later.</code></pre>
 
 
-### Run a test
+### Run your first end-to-end test
 
 Once your setup is done, you can run tests with this command
 
@@ -109,7 +109,7 @@ Once your setup is done, you can run tests with this command
 
 The output should look similar to this:
 
-<pre class="hide-indicator"><code class="language-bash">
+<pre class="hide-indicator"><code>
 [Ecosia.org Demo] Test Suite
 ============================
 ℹ Connected to localhost on port 4444 (2153ms).
@@ -127,13 +127,12 @@ OK. 5 assertions passed. (1.838s)
 </code></pre>
 
 
-### Record test actions and generate Nightwatch test script automatically
+### Use the Google Chrome DevTools Recorder
 
 Alternatively, Nightwatch provides tools to help you get started by recording your test actions on screen and generate Nightwatch test scripts automatically. See [Create Nightwatch test using Google Chrome DevTools Recorder](/guide/writing-tests/chrome-devtools-recorder.html) for more information.
 
-
 <div class="alert alert-info">
-For additional help you can jump on to our [Discord Server](https://discord.gg/9m44kM5u).
+For additional help you can jump on to our [Discord Server](https://discord.gg/SN8Da2X).
 </div>
 
 [1]:	https://nodejs.org/

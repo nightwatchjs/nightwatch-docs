@@ -1,9 +1,9 @@
 ---
 title: Page Object Model
-description: Learn how to create page object model in nightwatch.
+description: Learn how to create and use page objects in Nightwatch.
 ---
 
-<div class="page-header"><h2>Page Object Model</h2></div>
+<div class="page-header"><h1>Page Object Model</h1></div>
 
 The Page Objects methodology is a popular pattern to write end-to-end tests by wrapping the pages or page fragments of a web app into objects.
 

@@ -113,6 +113,7 @@ Using a nested section in your test is straightforward:
 </code></pre></div>
 
 ### Recommended content
-- [Concepts > Page object model](/guide/concepts/page-object-model.html)
+- [Getting started with page objects](/guide/using-page-objects/getting-started.html)
 - [Define page elements](/guide/using-page-objects/defining-elements.html)
 - [Add page-specific commands](/guide/using-page-objects/writing-page-specific-commands.html)
+- [Concepts > Page object model](/guide/concepts/page-object-model.html)

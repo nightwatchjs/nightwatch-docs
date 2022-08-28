@@ -1,7 +1,8 @@
 ---
-title: Define Page Elements
-description: Learn about how to define page elements.
+title: Page Object Elements
+description: Learn about how to define page object elements.
 ---
+
 ## Define Page Elements
 
 ### Declaring elements
@@ -156,6 +157,7 @@ When using named page object elements (starting with '@') you can also use CSS p
 </code></pre></div>
 
 ### Recommended content
-- [Concepts > Page object model](/guide/concepts/page-object-model.html)
+- [Getting started with page objects](/guide/using-page-objects/getting-started.html)
 - [Define sections](/guide/using-page-objects/defining-sections.html)
 - [Add page-specific commands](/guide/using-page-objects/writing-page-specific-commands.html)
+- [Concepts > Page object model](/guide/concepts/page-object-model.html)
