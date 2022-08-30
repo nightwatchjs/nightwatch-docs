@@ -218,7 +218,7 @@ In the below example we will retrieve the [WebDriver Session](see https://www.se
 <div class="apimethod">
   <h3>`[Object]` .options</h3>
 
-  <p>The processed Nightwatch config object which contains all the currently used properties and settings. See the [Configuration section](https://v2.nightwatchjs.org/guide/reference/settings.html) for details.</p>
+  <p>The processed Nightwatch config object which contains all the currently used properties and settings. See the [Configuration section](https://nightwatchjs.org/guide/reference/settings.html) for details.</p>
 
 </div>
 
