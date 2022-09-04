@@ -91,3 +91,9 @@ Nightwatch is sometimes inaccurately described as a "Selenium binding" library. 
 
 [image-1]:	/img/operation.png
 [image-2]:	/img/operation-cloud.png
+
+### Recommended content
+- [Nightwatch release notes](/guide/overview/whats-new.html)
+- [Selenium WebDriver Docs](https://www.selenium.dev/documentation/webdriver/)
+- [WebDriver Docs on MDN](https://developer.mozilla.org/en-US/docs/Web/WebDriver)
+

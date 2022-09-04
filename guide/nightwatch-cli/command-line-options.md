@@ -3,11 +3,15 @@ title: Command-line options
 description: List of command-line options supported by nightwatch test runner
 ---
 
-<div class="page-header"><h2>Command-line options</h2></div>
+<div class="page-header"><h1>Command-line options</h1></div>
+
+### Overview
 
 The Nightwatch test runner supports a number of run-time options to be passed to. To view all, run the following:
 
 <pre><code class="language-bash">nightwatch --help</code></pre>
+
+### Options
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
@@ -157,3 +161,7 @@ write(results, options, done) {
     </tbody>
   </table>
 </div>
+
+### Recommended content
+- [Configuration](/guide/reference/settings.html)
+- [Nightwatch release notes](/guide/overview/whats-new.html)

@@ -1,7 +1,11 @@
 
 <div class="page-header"><h1>Default Settings</h1></div>
 
+### Overview
+
 Nightwatch has a [default configuration](https://github.com/nightwatchjs/nightwatch/blob/main/lib/settings/defaults.js) object with pre-defined values. These values can be overwritten as needed.
+
+### Settings
 
 <div class="sample-test"><pre class="language-javascript"><code class="language-javascript">
 const filename_format = function ({testSuite = '', testCase = '', isError = false, dateObject = new Date()} = {}) {
@@ -261,3 +265,6 @@ module.exports = {
   enable_fail_fast: false
 }</code></pre></div>
 
+### Recommended content
+- [Configuration](/guide/reference/settings.html)
+- [CLI options](/guide/nightwatch-cli/command-line-options.html)

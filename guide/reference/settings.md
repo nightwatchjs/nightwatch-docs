@@ -861,3 +861,7 @@ Remember to also enable HTTP keepalive for improved network performance.
 
 [1]:	https://v2.nightwatchjs.org/guide/using-nightwatch/concepts.html#defining-test-environments
 [2]:	https://github.com/nightwatchjs/nightwatch/blob/main/bin/nightwatch.json
+
+### Recommended content
+- [Default configuration](/guide/reference/defaults.html)
+- [CLI options](/guide/nightwatch-cli/command-line-options.html)

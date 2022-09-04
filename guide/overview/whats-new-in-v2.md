@@ -63,11 +63,9 @@ We have tried to keep the breaking changes to a minimum, however some changes we
 
 #### Release notes
 Please refer to the release notes section for information about the latest changes.
-[Releases Notes](https://github.com/nightwatchjs/nightwatch/releases).
+[Releases Notes](/guide/overview/whats-new.html).
 
 ### Recommended content
-<ul>
-<li>[A First Look at Nightwatch v2.0](https://nightwatchjs.org/blog/a-first-look-at-nightwatch-v2.html)</li>
-<li>[Nightwatch v2.0-alpha is Released](https://nightwatchjs.org/blog/nightwatch-v2-alpha-is-released.html)</li>
-<li>[Nightwatch v2 is Now in Beta](https://nightwatchjs.org/blog/nightwatch-v2-beta-is-available.html)</li>
-</ul>
+- [Nightwatch release notes](/guide/overview/whats-new.html)
+- [A First Look at Nightwatch v2.0](https://nightwatchjs.org/blog/a-first-look-at-nightwatch-v2.html)
+- [Nightwatch v2 is Now in Beta](https://nightwatchjs.org/blog/nightwatch-v2-beta-is-available.html)
