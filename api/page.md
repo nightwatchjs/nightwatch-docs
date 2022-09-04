@@ -2,66 +2,6 @@
 
 Page objects provide an additional layer of abstraction for test case creation. Page objects are defined in modules and parsed into factory functions that create page object instances. These factories are accessible through the <code>page</code> reference within the command API (accessible through the <code>browser</code> object) using the name of the module that defines them.
 
-#### Example:
-<div class="sample-test">
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
-  // can be string or function
-  url: function () {
-    return this.api.launchUrl;
-  },
-  elements: {
-    // shorthand, specifies selector
-    mySubmitButton: 'input[type=submit]'
-
-    // full
-    myTextInput: {
-      selector: 'input[type=text]',
-      locateStrategy: 'css selector'
-    }
-  },
-  commands: [
-    {
-      myCustomPause: function () {
-        this.api.pause(this.props.myPauseTime);
-      }
-    }
-  ],
-  // object version (best considered immutable)
-  props: {
-    myPauseTime: 1000
-  },
-
-  sections: {
-    myFooterSection: {
-      selector: '#my-footer',
-      locateStrategy: 'css selector',
-      elements: {
-        myLogo: {
-          selector: '.my-logo',
-          locateStrategy: 'css selector'
-        }
-      },
-      commands: [
-        {
-          myMoveToLogo: function () {
-            this.moveToElement('@myLogo', this.props.myLogoX, this.props.myLogoY);
-          }
-        }
-      ],
-      // function version (recommended)
-      props: function () {
-        return {
-          myLogoX: 10,
-          myLogoY: 10
-        };
-      },
-      sections: {
-        // additional, nested sections
-      }
-    }
-  }
-};</code></pre></div>
-
 #### Page Object Module
 
 <div class="table-responsive">
@@ -161,6 +101,66 @@ Every time a factory function like MyPage above is called, a new instance of the
     </tbody>
   </table>
 </div>
+
+#### Example:
+<div class="sample-test">
+<pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
+  // can be string or function
+  url: function () {
+    return this.api.launchUrl;
+  },
+  elements: {
+    // shorthand, specifies selector
+    mySubmitButton: 'input[type=submit]'
+
+    // full
+    myTextInput: {
+      selector: 'input[type=text]',
+      locateStrategy: 'css selector'
+    }
+  },
+  commands: [
+    {
+      myCustomPause: function () {
+        this.api.pause(this.props.myPauseTime);
+      }
+    }
+  ],
+  // object version (best considered immutable)
+  props: {
+    myPauseTime: 1000
+  },
+
+  sections: {
+    myFooterSection: {
+      selector: '#my-footer',
+      locateStrategy: 'css selector',
+      elements: {
+        myLogo: {
+          selector: '.my-logo',
+          locateStrategy: 'css selector'
+        }
+      },
+      commands: [
+        {
+          myMoveToLogo: function () {
+            this.moveToElement('@myLogo', this.props.myLogoX, this.props.myLogoY);
+          }
+        }
+      ],
+      // function version (recommended)
+      props: function () {
+        return {
+          myLogoX: 10,
+          myLogoY: 10
+        };
+      },
+      sections: {
+        // additional, nested sections
+      }
+    }
+  }
+};</code></pre></div>
 
 ### Page Object Methods
 

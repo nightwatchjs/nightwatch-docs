@@ -1,19 +1,17 @@
 ---
-title: What's new in Nightwatch v2?
+title: What's new in Nightwatch 2?
 description: Nightwatch 2.0 contains a wide range of new features and improvements for writing and running tests as well as full cross-browser testing support.
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 
-<div class="page-header"><h2>What's new in v2?</h2></div>
+<div class="page-header"><h2>What's new in Nightwatch v2?</h2></div>
 
-<p>Nightwatch 2.0 contains a wide range of new features and improvements for writing and running tests as well as full cross-browser testing support for [W3C WebDriver](https://w3c.github.io/webdriver/) compliant browsers.</p>
+<p>Nightwatch v2 contains a wide range of new features and improvements for writing and running tests as well as full cross-browser testing support for [W3C WebDriver](https://w3c.github.io/webdriver/) compliant browsers.</p>
 
 <p>We have reworked the underlying architecture, which communicates with the browsers, to build on top of the official [Selenium-Webdriver](https://www.npmjs.com/package/selenium-webdriver) Node.js library. It means that Nightwatch is now much better equipped for cross-browser integration and DOM element handling, and can deliver more stable and faster tests overall.</p>
 
-<p>Since Nightwatch 2 builds on top of [Selenium](https://www.selenium.dev/) now, it is never behind any new WebDriver API. </p>
-
-<h3 class="whatsnew-h3">Nightwatch 2.0.0-beta.1</h3>
+<p>Since Nightwatch v2 builds on top of [Selenium](https://www.selenium.dev/) now, it is never behind any new WebDriver API. </p>
 
 ### New Features
 
@@ -63,7 +61,7 @@ The newly added element() global object adds to Nightwatch 2 the commands from t
 ### Breaking changes
 We have tried to keep the breaking changes to a minimum, however some changes were unavoidable. See the [migrate to v2 guide](https://github.com/nightwatchjs/nightwatch/wiki/Migrating-to-Nightwatch-2.0) for details.
 
-### Release notes
+#### Release notes
 Please refer to the release notes section for information about the latest changes.
 [Releases Notes](https://github.com/nightwatchjs/nightwatch/releases).
 
