@@ -1,7 +1,12 @@
-<div class="page-header"><h2>Use 'exports' test syntax</h2></div>
+---
+title: Writing tests
+description: Nightwatch provides the easiest test syntax available for writing your tests. 
+---
+
+<div class="page-header"><h1>Using 'exports' test syntax to write tests</h1></div>
 
 ### Overview
-Nightwatch default interface for writing tests has been the `exports` syntax, which makes it very easy to write end-to-end tests. 
+Nightwatch default interface for writing tests has been the `exports` syntax, which makes it very easy to write tests. 
 
 While this format is slightly easier to understand and work with, it is also more limited than the BDD `describe()` interface. Due to the widespread usage of `describe()` as a test format and compatibility with tools like Mocha, we recommend using the BDD `describe()`, however `exports` will also continue to work just fine.     
 
@@ -46,42 +51,6 @@ You can also include multiple steps in a test as follows:<br><br>
   }
 };</code></pre></div>
 
-### Test tags
-
-You can also selectively target tests to run based on tags, such that a test may belong to multiple tags. For example, you might have a login test that belongs to a `login` suite as well as a `sanity` suite.
-
-The tagging can be accomplished by adding the `@tags` property to a test module:
-
-<div class="sample-test"><i>tests/sampleTest.js</i>
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
-  '@tags': ['login', 'sanity'],
-  'demo login test': function (browser) {
-     // test code
-  }
-};</code></pre>
-</div>
-
-To select which tags to run, use the `--tag` command line flag:
-
-<pre><code class="language-bash">nightwatch --tag login</code></pre>
-
-<br>
-Specify multiple tags as:
-
-<pre><code class="language-bash">nightwatch --tag login --tag something_else</code></pre>
-
-<br>
-To skip running tests with a specific tag, use the `--skiptags` flag:
-
-<pre><code class="language-bash">nightwatch --skiptags login</code></pre>
-<br>
-Or to skip multiple tags, add each tag you want to skip as comma-separated:
-
-<pre><code class="language-bash">nightwatch --skiptags login,something_else</code></pre>
-
-
 ### Recommended content
 - [BDD test syntax](/guide/writing-tests/test-syntax-bdd.html)
 - [Using async/await](/guide/writing-tests/using-es-6-async-await.html)
-
-[1]:	https://www.ecosia.org/

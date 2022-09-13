@@ -1,18 +1,21 @@
-## Expect API
+## .expect API
 
+### Overview
 Nightwatch provides a fluent BDD-style interface for performing assertions on elements, defined on the <code>expect</code> namespace on the main Nightwatch instance. It is based on the <a href="https://chaijs.com/api/bdd/" target="_blank">Chai Expect</a> assertion library and provides a greater level of flexibility, also adding new capabilities over the classic <code>assert</code> interface.
 
 It uses a chain-able language to construct assertions given an element specified by a css/xpath selector. A simple example looks like the following:
 
 <div class="sample-test">
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
-  // start with identifying the element
-  // and then assert the element is present
-  browser.expect.element('#main').to.be.present;
+<pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('expect example', function() {
+  it('sample test', function (browser) {
+    // start with identifying the element
+    // and then assert the element is present
+    browser.expect.element('#main').to.be.present;
 
-  // or assert the element is visible
-  browser.expect.element('#main').to.be.visible;
-};</code></pre></div>
+    // or assert the element is visible
+    browser.expect.element('#main').to.be.visible;
+  });
+}</code></pre></div>
 
 <h3 id="expect-chains">Language Chains</h3>
 

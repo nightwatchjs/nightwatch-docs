@@ -1,27 +1,9 @@
-## User Actions API
+# User Actions API
 
-Nightwatch 2 brings support for working with the newer Actions API from Selenium WebDriver for performing complex user gestures.
+### Overview
+The [Actions API](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Actions.html) from Selenium is available and ready to use in Nightwatch via the existing [`.perform()`](https://nightwatchjs.org/api/perform.html) command.
 
-The new API is available and ready to use in Nightwatch via the existing [`.perform()`](https://nightwatchjs.org/api/perform.html) command. The previous functionality of the perform() command is still there and working in the same way as before.
-
-#### Basic Example:
-<div class="sample-test" style="max-width:600px"><pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">describe('user actions api', function() {
-
-  it('demo test', function() {
-    browser
-      .navigateTo('https://nightwatchjs.org')
-      .perform(function() {
-        const actions = this.actions({async: true});
-
-        return actions
-         .keyDown(Keys.SHIFT)
-         .keyUp(Keys.SHIFT);
-      });
-  })
-})
-</code></pre></div>
-
-### Available Actions:
+### Available Actions
 
 <div class="apimethod" style="border:1px solid #ccc;">
   <h3>.clear()</h3>
@@ -495,3 +477,30 @@ This produces the following sequence of ticks:
 </table>
 
 More information on action ticks is available on the [Selenium docs](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Actions.html).
+
+### Working example
+<div class="sample-test copy-to-clipboard-button line-numbers"><i>tests/sampleTest.js</i>
+<pre data-language="javascript"><code class="language-javascript">describe('example with user actions api', function () {
+
+  before(browser => browser.navigateTo('https://nightwatchjs.org'));
+
+  it('demo test', async function (browser) {
+    // retrieve the element; the actions api requires Selenium WebElement objects,
+    //  which can be retrieved using the global element() utility
+    const btnElement = await element('a.btn-github').findElement();
+
+    await browser.perform(function() {
+      // initiate the actions chain
+      const actions = this.actions({async: true});
+
+      return actions
+        .dragAndDrop(btnElement, {x: 100, y: 100})
+        .pause(500)
+        .contextClick(btnElement)
+        .pause(500)
+        .doubleClick(btnElement)
+        .pause(500)
+    });
+  });
+});
+</code></pre></div>

@@ -4,7 +4,7 @@ description: Learn how to use the `async` function with Nightwatch
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-<div class="page-header"><h2>Using ES6 async/await</h2></div>
+<div class="page-header"><h1>Using ES6 async/await</h1></div>
 
 ### Overview
 Starting with Nightwatch version `1.1`, you can write tests as an ES6 [async function][8].
@@ -47,10 +47,14 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
   }
 };</code></pre></div>
 
+
 ### Recommended content
 - [Writing tests > BDD describe test syntax](/guide/writing-tests/test-syntax-bdd.html)
 - [Writing tests > Exports test syntax](/guide/writing-tests/test-syntax-exports.html)
 - [Finding & interacting with DOM Elements](/guide/writing-tests/finding-interacting-with-dom-elements.html)
+
+- Previous: [Using BDD describe](/guide/using-nightwatch/using-bdd-describe.html)
+- Next: [Finding & Interacting with Elements](/guide/using-nightwatch/finding-and-interacting-with-elements.html)
 
 
 [8]:	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function

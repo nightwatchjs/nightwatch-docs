@@ -1,8 +1,11 @@
 ## Page Object API
 
-Page objects provide an additional layer of abstraction for test case creation. Page objects are defined in modules and parsed into factory functions that create page object instances. These factories are accessible through the <code>page</code> reference within the command API (accessible through the <code>browser</code> object) using the name of the module that defines them.
+### Overview
+Page objects provide an additional layer of abstraction for test case creation. Page objects are defined in modules and parsed into factory functions that create page object instances. 
 
-#### Page Object Module
+For an introduction to the Page Object Model in Nightwatch, refer to the [Getting started](https://nightwatchjs.org/guide/using-page-objects/getting-started.html) guide.
+
+### Page object module
 
 <div class="table-responsive">
 <table class="table table-bordered table-striped">
@@ -45,7 +48,7 @@ Page objects provide an additional layer of abstraction for test case creation. 
 </table>
 </div>
 
-### Page Object Instance
+### Page object instance
 
 Page object module definitions are used to define page object instances when their respective factory functions within the `page` reference of the standard command API is called.
 
@@ -53,7 +56,7 @@ Page object module definitions are used to define page object instances when the
 
 Every time a factory function like MyPage above is called, a new instance of the page object is created.
 
-#### Page Object Properties
+#### Properties
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
@@ -102,7 +105,7 @@ Every time a factory function like MyPage above is called, a new instance of the
   </table>
 </div>
 
-#### Example:
+#### Example
 <div class="sample-test">
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
   // can be string or function
@@ -162,7 +165,7 @@ Every time a factory function like MyPage above is called, a new instance of the
   }
 };</code></pre></div>
 
-### Page Object Methods
+#### Page Object Methods
 
 <h4 id="page-navigate"><code>.navigate()</code></h4>
 Navigates to the resolved url defined for the page object using the command API's <code>url()</code> command. This command is generally used in place of the command API's <code>url()</code> when working with page objects because the `url` member of the page object is the user-defined url string or function and not the call used to navigate to a url.
@@ -173,15 +176,18 @@ Element instances encapsulate the definition used to handle element selectors. G
 
 #### Section Instances
 
-Page object section instances are accessed from the `section` property of a page object instance (note that this is the singular version of "section" whereas the plural version, "sections", was used in the module definition). Sections are created automatically through the page object factory and are available directly as properties from the `section` reference.
+For an introduction to creating sections, see the [Define Sections](https://nightwatchjs.org/guide/using-page-objects/defining-sections.html) guide page.
+
+Page object section instances are accessed from the `section` property of a page object instance (note that this is the singular version of "section" whereas the plural version, "sections", was used in the module definition). 
+
+Sections are created automatically through the page object factory and are available directly as properties from the `section` reference.
 
 <pre style="padding-top: 10px"><code class="language-javascript">const myPageObject = browser.page.MyPage();
 const mySection = myPageObject.section.MySection; // from a `sections: {}` block in page object</code></pre>
 
 <h3 id="page-commands">Page Object Commands</h3>
-The Nightwatch command and assertions API is inherited by page objects.
 
-#### Custom Commands
+For an introduction to writing page object custom commands, see the [Writing page-specific commands](https://nightwatchjs.org/guide/using-page-objects/writing-page-specific-commands.html) guide page.
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">
@@ -204,9 +210,10 @@ The Nightwatch command and assertions API is inherited by page objects.
   </table>
 </div>
 
-#### Page object commands considerations:
-- <strong>Access:</strong> Page object commands are defined within page object modules. They can be in the module root object within the commands list or within section definitions (also in a commands), but only exist for the definition they're within.
-<br><br>Page object commands in the module root commands are not available in child sections and section commands are not available in parent sections or the root page object.
-- <strong>Context:</strong> Page object command context (the value of this) is the page object (for sections its the section object).
-- <strong>Execution:</strong> Page object commands are not called from within the command queue. Code in a page object command is executed immediately when the function is called.
+#### Page object commands considerations
+
+Page object commands in the module root commands are not available in child sections and section commands are not available in parent sections or the root page object.
+
+- <strong>Context:</strong> Page object command context (the value of `this`) is the page object (for sections it's the section instance);
+- <strong>Execution:</strong> Page object commands are not called from within the command queue. Code in a page object command is executed immediately when the function is called;
 - <strong>Chaining:</strong> Page object commands must return a value for chaining. This can be anything, but it's recommended you stick to `this` to allow your commands to be chained in the context of the page object instance.

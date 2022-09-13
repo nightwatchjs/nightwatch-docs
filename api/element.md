@@ -1,35 +1,43 @@
 ## element() global API
 
+### Overview
 The newly added `element()` global object adds to Nightwatch 2 the functionality present in the [Selenium WebElement](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html) class.
 
 It supports all the usual ways of locating elements in Nightwatch, as well as the Selenium locators built using `By()`, which is also available in Nightwatch as a global named `by()`.
 
-### Syntax:
+### Usage
 
-**Using regular CSS (or Xpath) selectors:**
+##### Using regular CSS (or Xpath) selectors
 
-<div class="sample-test" style="max-width:600px"><pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">const addButtonEl = element('button[type="submit"]');
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" style="padding-top: 10px" class="language-javascript"><code class="language-javascript">const addButtonEl = element('button[type="submit"]');
 </code></pre></div>
 
-**Using Nightwatch selector objects:**
+##### Using Nightwatch selector objects
 
-<div class="sample-test" style="max-width:600px"><pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">const addButtonEl = element({
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" style="padding-top: 10px" class="language-javascript"><code class="language-javascript">const addButtonEl = element({
   selector: 'button[type="button"]',
   index: 0
 });
 </code></pre></div>
 
-**Using Selenium locators:**
+##### Selenium locators
 
-<div class="sample-test" style="max-width:600px"><pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">const locator = by.css('button[type="button"]');
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" style="padding-top: 10px" class="language-javascript"><code class="language-javascript">const locator = by.css('button[type="button"]');
 const addButtonEl = element(locator);
 </code></pre></div>
 
-**Using Selenium WebElements:**
+##### Selenium WebElements as arguments
 
-<div class="sample-test" style="max-width:600px"><pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">// webElement is an instance of WebElement class from Selenium
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" style="padding-top: 10px" class="language-javascript"><code class="language-javascript">// webElement is an instance of WebElement class from Selenium
 const addButtonEl = element(webElement);
 </code></pre></div>
+
+##### Retrieve the Selenium WebElement instance
+
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" style="padding-top: 10px" class="language-javascript"><code class="language-javascript">const addButtonEl = element('button[type="submit"]');
+const instance = await addButtonEl.findElement();   
+</code></pre></div>
+
 
 ### API Commands
 All the existing methods from a regular [WebElement](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html) instance are available. If a method is called, it will be added to the Nightwatch queue accordingly.
@@ -57,7 +65,7 @@ All the existing methods from a regular [WebElement](https://www.selenium.dev/se
 
 The example below navigates to the AngularJS homepage and adds a new to-do item in the sample ToDo App available there.
 
-<div class="sample-test" style="max-width:800px"><pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">describe('angularjs homepage todo list', function() {
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" style="padding-top: 10px" class="language-javascript"><code class="language-javascript">describe('angularjs homepage todo list', function() {
 
   // using the new element() global utility in Nightwatch 2 to init elements
   // before tests and use them later

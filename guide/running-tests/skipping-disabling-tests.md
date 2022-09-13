@@ -66,11 +66,11 @@ The below will only run the `startHomepage` testcase and ignore the rest.
 <div class="sample-test"><i>tests/sampleTest.js</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   
-  test.only('startHomepage', () => {
+  it.only('startHomepage', () => {
     // ...
   });
   
-  test('other testcase', () => {
+  it('other testcase', () => {
     // ...
   });
 });

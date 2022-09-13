@@ -1,13 +1,15 @@
 ## Ensure API
 
-The new `.ensure` API available in Nightwatch 2.0 is a direct mapping to the existing [until](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html) module from Selenium.
+### Overview
+
+The new `.ensure` API available since Nightwatch 2.0 is mapping the existing [until](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/until.html) module from Selenium.
 
 It works similar to the existing `.assert` library and provides much of the same functionality, but it might offer an extra level of flexibility. It may also be more familiar to users already working with the `until` api from Selenium..
 
 <h5>Basic Example:</h5>
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-describe('demo test for .ensure', function() {
-  test('basic test', function(browser) {
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">describe('demo test for .ensure', function() {
+
+  it('basic test', function(browser) {
     browser
       .url('https://nightwatchjs.org')
       .ensure.titleMatches(/Nightwatch\.js/)
@@ -15,7 +17,7 @@ describe('demo test for .ensure', function() {
   });
 });</code></pre></div>
 
-### Available Assertions:
+### Available Assertions
 
 <div class="apimethod">
   <h3>.ableToSwitchToFrame(<code>frame</code>)</h3>
