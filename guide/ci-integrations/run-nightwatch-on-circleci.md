@@ -18,7 +18,7 @@ CircleCI is a CI/CD platform that can be used to create an automated testing pip
 
 
 ### Setup Guide
-I’m taking the [nightwatch-examples](https://github.com/nightwatchjs/nightwatch-examples) repo for demonstration. Now, let's configure CI by following the procedures below :
+We will be taking the [nightwatch-examples](https://github.com/nightwatchjs/nightwatch-examples) repo for demonstration. Now, let's configure CI by following the procedures below :
 
 
 #### Step 1:  Setup CircleCI Project
