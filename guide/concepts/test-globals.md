@@ -115,6 +115,9 @@ You can define these in two ways:
     // until a given timeout is reached, before the test runner gives up and fails the test.
     retryAssertionTimeout: 5000,
 
+    // use the same browser session to run the individual  test suites
+    reuseBrowserSession: false,
+
     // Custom reporter
     reporter: function(results, done) {
       // do something with the results
