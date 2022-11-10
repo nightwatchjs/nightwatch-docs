@@ -186,12 +186,12 @@ If you run your tests specifying the `integration` environment (with `--env inte
 };</code></pre>
 </div>
 
-<table class="table table-bordered table-striped">
+<table class="table table-bordered table-striped" style="table-layout: fixed;">
   <thead>
    <tr>
-     <th style="width: 100px;">Name</th>
+     <th style="width: 110px;">Name</th>
      <th style="width: 100px;">type</th>
-     <th style="width: 50px;">default</th>
+     <th style="width: 75px;">default</th>
      <th>description</th>
    </tr>
   </thead>
