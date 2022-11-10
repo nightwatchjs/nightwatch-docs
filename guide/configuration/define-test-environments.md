@@ -122,7 +122,28 @@ OK. 1 assertions passed. (5.604s)
 ```
 
 ### Recommended content
-- [Concepts > Test environments](/guide/concepts/test-environments.html)
-- [Reference > Browser Drivers > ChormeDriver](/guide/browser-drivers/chrome-driver.html)
-- [Reference > All configuration settings](/guide/reference/settings.html)
-- [Reference > Configuration defaults](/guide/reference/defaults.html)
+- [Concepts > Test environments](https://nightwatchjs.org/guide/concepts/test-environments.html)
+- [Reference > Browser Drivers > ChormeDriver](https://nightwatchjs.org/guide/browser-drivers/chrome-driver.html)
+- [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
+- [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/configuration/nightwatch-configuration-file.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Nightwatch configuration file</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/configuration/using-env-variables-in-your-config.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use ENV variables</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

@@ -85,6 +85,27 @@ The `index.js` file needs to implement the same interface as the file-based cust
 <pre class="language-bash"><code class="language-bash">nightwatch --reporter=&lt;nightwatch-custom-reporter&gt;</code></pre>
 
 ### Recommended content
-- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
-- [How-to guides > Use reporters > JUnit-XML reporter](/guide/reporters/use-junit-reporter.html)
-- [Reference > Nightwatch CLI](/guide/nightwatch-cli/command-line-options.html)
+- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
+- [How-to guides > Use reporters > JUnit-XML reporter](https://nightwatchjs.org/guide/reporters/use-junit-reporter.html)
+- [Reference > Nightwatch CLI](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.orghttps://nightwatchjs.org/guide/reporters/use-teamcity-reporter.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Teamcity Reporter</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/mobile-web-testing/with-appium.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use Nightwatch with Appium</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

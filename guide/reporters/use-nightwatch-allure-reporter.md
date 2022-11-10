@@ -11,7 +11,7 @@ description: Learn how to use allure reporter in Nightwatch.
 ### Example with Configuration
 
 #### Step 0: Install Nightwatch
-Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](​​https://vimeo.com/714406223) to install Nightwatch from scratch.
+Follow the [guide](https://nightwatchjs.orghttps://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](​​https://vimeo.com/714406223) to install Nightwatch from scratch.
 
 #### Step 1: Installing Allure
 In order to use Allure reporter you must ensure that [Allure](https://docs.qameta.io/allure/) CLI is already installed in your machine; if not, follow Allure's installation [guide] (https://docs.qameta.io/allure/#_installing_a_commandline).
@@ -71,6 +71,27 @@ Visit the URL provided in the terminal to view the report :
 
 
 ### Recommended content
-- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
-- [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
+- [How-to guides > Use reporters > Add custom reporter](https://nightwatchjs.org/guide/reporters/create-custom-reporter.html)
 - [Nightwatch Allure on github](https://github.com/kushmangal/Nightwatch-Allure-Reporter)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/reporters/use-slack-reporter.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Slack Reporter</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/reporters/use-teamcity-reporter.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Teamcity Reporter</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

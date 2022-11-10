@@ -36,5 +36,5 @@ This can be useful if you need to have different settings for your local machine
 
 ### Further Reading:
 - [Understanding Test Environments](/gettingstarted/concepts/#defining-test-environments)
-- Previous: [Command-line Options](/guide/running-tests/command-line-options.html)
-- Next: [Using Test Groups](/guide/running-tests/test-groups.html)
+- Previous: [Command-line Options](https://nightwatchjs.org/guide/running-tests/command-line-options.html)
+- Next: [Using Test Groups](https://nightwatchjs.org/guide/running-tests/test-groups.html)

@@ -29,3 +29,24 @@ Changes in the result object:
 - no longer possible to use Nightwatch with Webdriver.io, as was advertised [here](https://v17.nightwatchjs.org/guide/extending-nightwatch/using-with-webdriverio.html).
 
 <ul style="display: none"></ul>
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/contributing/styleguide.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Style Guide</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/migrating-to-nightwatch/from-protractor.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">From Protractor</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

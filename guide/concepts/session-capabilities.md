@@ -69,3 +69,24 @@ The Selenium docs provide apple documentation on all the capabilities, both shar
 - [Capabilities specific to Safari](https://www.selenium.dev/documentation/webdriver/capabilities/safari/)
 - [Capabilities specific to Internet Explorer](https://www.selenium.dev/documentation/webdriver/capabilities/internet_explorer/)
 - [Capabilities negotiation](https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities#capabilities_negotiation)
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/concepts/test-globals.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Test globals</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/concepts/parallel-testing-in-nightwatch.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Parallel testing in Nightwatch</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

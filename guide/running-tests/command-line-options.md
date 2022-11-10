@@ -1,5 +1,6 @@
 ---
-description: Reference to list of command line options supported by nightwatch test runner
+title: Nightwatch CLI Options
+description: Reference to list of command line options supported by Nightwatch test runner.
 ---
 
 ## Command-line Options
@@ -17,8 +18,10 @@ The test runner supports a number of run-time options to be passed to. To view a
        <th style="width: 50px;">default</th>
        <th>description</th>
      </tr>
+
     </thead>
     <tbody>
+    </tr>
     <tr>
      <td><code>--env</code></td>
      <td><code>-e</code></td>
@@ -147,5 +150,3 @@ write(results, options, done) {
   </table>
 </div>
 
-- Previous: [Using the Nightwatch CLI runner](/guide/running-tests/nightwatch-runner.html)
-- Next: [Using Test Environments](/guide/running-tests/test-environments.html)

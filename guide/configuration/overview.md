@@ -98,7 +98,7 @@ Considering this setup, to run tests, for instance, against Safari, we would run
 
 <pre><code class="language-bash">nightwatch --env safari</code></pre>
 
-Refer to the [Defining Test Environments](/guide/using-nightwatch/concepts.html#defining-test-environments) page to learn more about how to use test environments.
+Refer to the [Defining Test Environments](https://nightwatchjs.org/guide/using-nightwatch/concepts.html#defining-test-environments) page to learn more about how to use test environments.
 
 ### Working with Test Globals
 Another useful concept that Nightwatch provides is test globals. In its most simple form, it is a dictionary of name-value pairs which is defined in your configuration file.
@@ -135,7 +135,7 @@ Like the `launch_url` property, the `globals` object is made available directly 
 };</code></pre>
 </div>
 
-Refer to the [Using Test Globals](/guide/using-nightwatch/concepts.html#using-test-globals) page to learn more about how to use test globals.
+Refer to the [Using Test Globals](https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals) page to learn more about how to use test globals.
 
 ### Using Env variables
 Any config value in either `nightwatch.conf.js` or `nightwatch.json` can be specified as the name of an environment variables. Nightwatch will automatically populate the value, if found, from `process.env`.
@@ -199,8 +199,8 @@ Assuming you have downloaded or installed the ChromeDriver service, the simplest
 #### Further Reading
 
 <ul class="introduction">
-    <li>[Defining Test Environments](/guide/using-nightwatch/concepts.html#using-test-globals)</li>
-    <li>[Using Test Globals](/guide/using-nightwatch/concepts.html#using-test-globals)</li>
+    <li>[Defining Test Environments](https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals)</li>
+    <li>[Using Test Globals](https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals)</li>
 </ul>
 
 [1]:	/gettingstarted/installation/#install-webdriver
@@ -209,5 +209,5 @@ Assuming you have downloaded or installed the ChromeDriver service, the simplest
 [4]:	https://www.npmjs.com/package/selenium-server
 
 ### Recommended content
-- [Reference > All configuration settings](/guide/reference/settings.html)
-- [Reference > Configuration defaults](/guide/reference/defaults.html)
+- [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
+- [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)

@@ -172,5 +172,5 @@ The global reporter is invoked at the end of the test run, before calling the bu
 </div>
 
 ### Further Reading:
-- [Using Test Globals](/guide/using-nightwatch/concepts.html#using-test-globals)
-- Previous: [Test Hooks](/guide/using-nightwatch/using-test-hooks.html)
+- [Using Test Globals](https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals)
+- Previous: [Test Hooks](https://nightwatchjs.org/guide/using-nightwatch/using-test-hooks.html)

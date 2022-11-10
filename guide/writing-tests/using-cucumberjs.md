@@ -147,3 +147,24 @@ Using: firefox (92.0.1) on MAC (20.6.0).
 10 steps (10 passed)
 0m13.024s (executing steps: 0m12.998s)
 </pre></div>
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/write-complex-user-actions.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Write complex user actions</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-mocha.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use Mocha as a test runner</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

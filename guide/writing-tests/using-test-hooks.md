@@ -104,3 +104,24 @@ Failing the test intentionally in a test hook can be achieved by calling `done` 
 ### Global Test Hooks
 
 The same set of test hooks as per test suite is also available globally, outside the scope of the test. Refer to the next section for details.
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-mocha.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Use Mocha as a test runner</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-test-globals.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use test globals</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

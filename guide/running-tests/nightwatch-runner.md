@@ -37,4 +37,4 @@ The optional `source` argument can be either one or more files or an entire fold
 ##### Example - 1 individual test and 1 folder:
 <pre><code class="language-bash">nightwatch tests/one/test.js tests/utils</code></pre>
 
-- Next: [Command-line Options](/guide/running-tests/command-line-options.html)
+- Next: [Command-line Options](https://nightwatchjs.org/guide/running-tests/command-line-options.html)

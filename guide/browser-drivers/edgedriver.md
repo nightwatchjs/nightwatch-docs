@@ -36,3 +36,24 @@ Run your Nightwatch.js tests in Edge can be achieved using the  [Microsoft Edge 
 ### Learn more
 
 For more information about the Microsoft Edge WebDriver refer to the [Official documentation](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/tools/webDriver/).
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/browser-drivers/safaridriver.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">SafariDriver</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Command-line Options</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

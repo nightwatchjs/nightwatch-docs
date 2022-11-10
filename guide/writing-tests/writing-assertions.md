@@ -33,10 +33,10 @@ However, if you wish to keep the browser window open whenever an assertion failu
 
 Refer to the [Configuration][7] section for details.
 
-- Previous: [Finding & Interacting with Elements](/guide/using-nightwatch/finding-and-interacting-with-elements.html)
-- Next: [Using Expect Assertions](/guide/using-nightwatch/expect-assertions.html)
+- Previous: [Finding & Interacting with Elements](https://nightwatchjs.org/guide/using-nightwatch/finding-and-interacting-with-elements.html)
+- Next: [Using Expect Assertions](https://nightwatchjs.org/guide/using-nightwatch/expect-assertions.html)
 
-[5]:	/guide/using-nightwatch/finding-and-interacting-with-elements.html#element-properties
+[5]:	https://nightwatchjs.org/guide/using-nightwatch/finding-and-interacting-with-elements.html#element-properties
 [6]:	/gettingstarted/configuration/#extended-settings
 [7]:	/gettingstarted/configuration/#extended-settings
 

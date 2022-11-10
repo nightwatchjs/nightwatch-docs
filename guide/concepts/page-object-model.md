@@ -89,6 +89,27 @@ Nightwatch will call the command on the context of the page or section. Client c
 From Nightwatch 2 it is also possible to export the page commands as an ES6 class.
 
 ### Recommended content
-- [Define page elements](/guide/using-page-objects/defining-elements.html)
-- [Define sections](/guide/using-page-objects/defining-sections.html)
-- [Add page-specific commands](/guide/using-page-objects/writing-page-specific-commands.html)
+- [Define page elements](https://nightwatchjs.org/guide/using-page-objects/defining-elements.html)
+- [Define sections](https://nightwatchjs.org/guide/using-page-objects/defining-sections.html)
+- [Add page-specific commands](https://nightwatchjs.org/guide/using-page-objects/writing-page-specific-commands.html)
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/concepts/parallel-testing-in-nightwatch.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Parallel testing in Nightwatch</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/concepts/component-testing.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Component testing</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

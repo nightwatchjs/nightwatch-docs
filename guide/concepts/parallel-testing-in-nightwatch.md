@@ -27,5 +27,26 @@ It is very useful to be able to run your tests against multiple browsers in para
 From **v1.7** you are able to do just that.
 
 ### Recommended content
-- [Define and use test environments](/guide/configuration/define-test-environments.html)
-- [How-to guide > Run tests in parallel](/guide/running-tests/parallel-running.html)
+- [Define and use test environments](https://nightwatchjs.org/guide/configuration/define-test-environments.html)
+- [How-to guide > Run tests in parallel](https://nightwatchjs.org/guide/running-tests/parallel-running.html)
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/concepts/session-capabilities.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Session capabilities</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/concepts/page-object-model.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Page Object Model</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

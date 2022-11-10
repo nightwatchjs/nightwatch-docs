@@ -89,7 +89,7 @@ If you're not already using external globals with Nightwatch, go ahead and creat
 }
 </code></pre></div>
 
-Read more about [test globals](/guide/concepts/test-globals.html).
+Read more about [test globals](https://nightwatchjs.org/guide/concepts/test-globals.html).
 
 <div class="sample-test">
 <i>test/globals.js</i><pre class="line-numbers"><code class="language-javascript">const {setup} = require('@nightwatch/react');
@@ -131,7 +131,28 @@ Below is a basic test for the Form component. In this test we mount a component 
 </code></pre></div>
 
 ### Recommended content
-- [Concepts > Component testing](/guide/concepts/component-testing.html)
+- [Concepts > Component testing](https://nightwatchjs.org/guide/concepts/component-testing.html)
 - [Nightwatch React plugin on Github](https://github.com/nightwatchjs/nightwatch-plugin-react)
 - [Sample todo app built with React and Vite and using Nightwatch for end-to-end & component tests](https://github.com/nightwatchjs-community/todo-react)
 - [Blog > Introducing Component Testing in Nightwatch](https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/global-test-hooks.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Use global hooks</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/writing-tests/write-nodejs-unit-integration-tests.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Write unit & integrations tests</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

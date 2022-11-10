@@ -102,3 +102,24 @@ After overriding the geolocation of your browser, if you now want to reset the g
 ### Recommended content
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
 
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/network-requests/mock-network-response.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Mock network response</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/reporters/use-junit-reporter.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">JUnit XML Reporter</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>
+

@@ -32,7 +32,7 @@ Below are the default settings that will be passed to the Nightwatch instance du
     <td>`test_settings`</td>
     <td>object</td>
     <td></td>
-    <td>An object in which all the test environments are defined, each overwriting test settings as needed. A `default` environment is always required, from which the other environments inherit settings from. <br><br>See [Defining Test Environments](/guide/using-nightwatch/concepts.html#defining-test-environments) for details.</td>
+    <td>An object in which all the test environments are defined, each overwriting test settings as needed. A `default` environment is always required, from which the other environments inherit settings from. <br><br>See [Defining Test Environments](https://nightwatchjs.org/guide/using-nightwatch/concepts.html#defining-test-environments) for details.</td>
   </tr>
   <tr>
     <td>`webdriver`</td>
@@ -863,5 +863,26 @@ Remember to also enable HTTP keepalive for improved network performance.
 [2]:	https://github.com/nightwatchjs/nightwatch/blob/main/bin/nightwatch.json
 
 ### Recommended content
-- [Default configuration](/guide/reference/defaults.html)
-- [CLI options](/guide/nightwatch-cli/command-line-options.html)
+- [Default configuration](https://nightwatchjs.org/guide/reference/defaults.html)
+- [CLI options](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Command-line Options</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/reference/defaults.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Default Settings</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

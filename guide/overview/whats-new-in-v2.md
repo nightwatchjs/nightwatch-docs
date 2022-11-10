@@ -18,11 +18,11 @@ summary_image: https://nightwatchjs.org/img/banner.png
 - ##### [New user actions API](/api/useractions/)
 Nightwatch 2 brings support for working with the newer Actions API from Selenium WebDriver for performing complex user gestures.
 
-- ##### [Integrated test runner for CucumberJS](/guide/third-party-runners/cucumberjs-nightwatch-integration.html)
+- ##### [Integrated test runner for CucumberJS](https://nightwatchjs.org/guide/third-party-runners/cucumberjs-nightwatch-integration.html)
 Nightwatch 2 brings integrated support for using Cucumber.js directly as an alternative test runner. No other plugins are necessary, other than the Cucumber library itself (version 7.3 or higher).
 
-- ##### [Improved Mocha test runner](/guide/third-party-runners/using-mocha.html)
-We have upgraded the integrated Mocha runner to Mocha v9. We have also updated the implementation to match most of the features that Nightwatch offers in its own default test runner, such as the ability to use tags or global test hooks. You can now also use reporters such as [Mochawesome](/guide/third-party-runners/using-mocha.html#using-the-mochawesome-reporter).
+- ##### [Improved Mocha test runner](https://nightwatchjs.org/guide/third-party-runners/using-mocha.html)
+We have upgraded the integrated Mocha runner to Mocha v9. We have also updated the implementation to match most of the features that Nightwatch offers in its own default test runner, such as the ability to use tags or global test hooks. You can now also use reporters such as [Mochawesome](https://nightwatchjs.org/guide/third-party-runners/using-mocha.html#using-the-mochawesome-reporter).
 
 - ##### [Support for Chrome DevTools Protocol](/api/commands/#using-chrome-devtools-protocol)
 When using ChromeDriver or EdgeDriver it is now possible to execute commands via the [Chrome DevTools protocol](https://chromedevtools.github.io/devtools-protocol/).
@@ -63,9 +63,30 @@ We have tried to keep the breaking changes to a minimum, however some changes we
 
 #### Release notes
 Please refer to the release notes section for information about the latest changes.
-[Releases Notes](/guide/overview/whats-new.html).
+[Releases Notes](https://nightwatchjs.org/guide/overview/whats-new.html).
 
 ### Recommended content
-- [Nightwatch release notes](/guide/overview/whats-new.html)
+- [Nightwatch release notes](https://nightwatchjs.org/guide/overview/whats-new.html)
 - [A First Look at Nightwatch v2.0](https://nightwatchjs.org/blog/a-first-look-at-nightwatch-v2.html)
 - [Nightwatch v2 is Now in Beta](https://nightwatchjs.org/blog/nightwatch-v2-beta-is-available.html)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/overview/what-is-nightwatch.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">What is Nightwatch?</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/overview/whats-new.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Release notes</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

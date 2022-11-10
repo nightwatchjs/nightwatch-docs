@@ -306,4 +306,4 @@ describe('Github', function() {
 
 </code></pre></div>
 
-- Previous: [Using the Nightwatch programmatic API ](/guide/running-tests/programmatic-api.html)
+- Previous: [Using the Nightwatch programmatic API ](https://nightwatchjs.org/guide/running-tests/programmatic-api.html)

@@ -66,14 +66,35 @@ The below will only run the `startHomepage` testcase and ignore the rest.
 <div class="sample-test"><i>tests/sampleTest.js</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   
-  it.only('startHomepage', () => {
+  test.only('startHomepage', () => {
     // ...
   });
   
-  it('other testcase', () => {
+  test('other testcase', () => {
     // ...
   });
 });
 
 </code></pre></div>
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Use the CLI test runner</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/running-tests/parallel-running.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Run tests in parallel</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>
 

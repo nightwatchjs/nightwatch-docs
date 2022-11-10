@@ -93,3 +93,24 @@ Specifying the firefox profile can be done by setting the `profile` property in 
 
 ##### Implementation Status
 GeckoDriver is not yet feature complete, which means it does not yet offer full conformance with the WebDriver standard or complete compatibility with Selenium. Implementation status can be tracked on the [Marionette MDN page](https://developer.mozilla.org/en-US/docs/Mozilla/QA/Marionette/WebDriver/status).
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Create Nightwatch plugins</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/browser-drivers/chromedriver.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">ChromeDriver</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

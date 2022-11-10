@@ -57,8 +57,8 @@ The `expect` interface provides a much more flexible and fluid language for defi
 <br>
 For a complete list of available `expect` assertions, refer to the [API docs][13].
 
-- Previous: [Writing Assertions](/guide/using-nightwatch/writing-assertions.html)
-- Next: [Using XPath selectors](/guide/using-nightwatch/using-xpath-selectors.html)
+- Previous: [Writing Assertions](https://nightwatchjs.org/guide/using-nightwatch/writing-assertions.html)
+- Next: [Using XPath selectors](https://nightwatchjs.org/guide/using-nightwatch/using-xpath-selectors.html)
 
 [12]:	https://chaijs.com/api/bdd/
 [13]:	/api/#expect-api

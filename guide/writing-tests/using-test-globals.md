@@ -144,3 +144,24 @@ If we still pass the `--env integration` option to the runner, then our globals 
 };</code></pre>
 
 </div>
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-test-hooks.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Use test hooks</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/writing-tests/global-test-hooks.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use global hooks</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

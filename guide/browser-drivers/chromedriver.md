@@ -108,3 +108,25 @@ If your tests require a Chrome instance running inside a [Docker](https://www.do
   "args" : ["--no-sandbox"]
 } 
 </code></pre>
+
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/browser-drivers/geckodriver.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">GeckoDriver (Firefox)</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/browser-drivers/safaridriver.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">SafariDriver</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

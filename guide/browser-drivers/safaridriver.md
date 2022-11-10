@@ -36,3 +36,24 @@ Learn more about [Safari-specific capabilities](https://github.com/SeleniumHQ/se
 
 [1]: http://selenium-release.storage.googleapis.com/index.html
 [2]: https://github.com/SeleniumHQ/selenium/issues/2725
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/browser-drivers/chromedriver.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">ChromeDriver</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/browser-drivers/edgedriver.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">EdgeDriver</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

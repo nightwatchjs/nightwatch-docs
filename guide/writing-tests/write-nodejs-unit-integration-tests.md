@@ -157,3 +157,24 @@ In the meantime you can write a custom reporter which will output coverage data.
 There are some hosted services which provide the reporting and metrics for you in a modern web interface. These services will typically require coverage data in LCOV format. Nightwatch uses [coveralls.io](https://coveralls.io/github/nightwatchjs/nightwatch?branch=main).
 
 For details on how an LCOV reporter should look like and how to integrate with your project, you can check out the [mocha-lcov-reporter](https://www.npmjs.com/package/mocha-lcov-reporter).
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/write-component-tests-for-react.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Write component tests (React)</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/writing-tests/chrome-devtools-recorder.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Using Chrome Devtools Recorder</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

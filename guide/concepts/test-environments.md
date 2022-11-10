@@ -96,4 +96,25 @@ Here’s an extract from the `nightwatch.conf.js` config file available as part 
 }</code></pre></div>
 
 ### Recommended content
- - [Define and use test environments](/guide/running-tests/define-test-environments.html)
+ - [Define and use test environments](https://nightwatchjs.org/guide/running-tests/define-test-environments.html)
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Run a test with a cloud provider</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/concepts/test-globals.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Test globals</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

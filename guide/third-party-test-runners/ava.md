@@ -281,5 +281,5 @@ or
 
 
 Related articles
-- [How-to guides > Write tests > Use Jest as a test runner](/guide/writing-tests/using-jest.html)
-- [How-to guides > Write tests > Use Mocha as a test runner](/guide/writing-tests/using-mocha.html)
+- [How-to guides > Write tests > Use Jest as a test runner](https://nightwatchjs.org/guide/writing-tests/using-jest.html)
+- [How-to guides > Write tests > Use Mocha as a test runner](https://nightwatchjs.org/guide/writing-tests/using-mocha.html)

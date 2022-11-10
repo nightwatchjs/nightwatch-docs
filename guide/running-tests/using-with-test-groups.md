@@ -44,3 +44,24 @@ To skip multiple groups, just add them as comma-separated:
 
 <pre><code class="language-bash">nightwatch --skipgroup addressbook,chat</code></pre>
 
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/running-tests/filtering-by-test-tags.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Filter by test tags</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/running-tests/programmatic-api.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use the programmatic API</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>
+

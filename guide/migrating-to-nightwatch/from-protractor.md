@@ -272,3 +272,15 @@ The best way to ask for questions or report issues related to Nightwatch Angular
 [ExceptLink]:https://v2.nightwatchjs.org/api/expect/
 [PageObjectLink]:https://v2.nightwatchjs.org/api/pageobject/
 [APICommandsLink]:https://v2.nightwatchjs.org/api/commands/
+
+<div class="doc-pagination justify-content-start pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/migrating-to-nightwatch/from-nightwatch-v1.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">From Nightwatch v1</span>
+        </div>
+    </a>
+  </div>
+</div>

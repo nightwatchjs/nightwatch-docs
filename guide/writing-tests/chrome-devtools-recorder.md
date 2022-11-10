@@ -109,3 +109,24 @@ If you find any situations where it generates unexpected results or something se
 - https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#run-a-test
 - https://github.com/nightwatchjs/nightwatch-recorder-extension
 - https://github.com/nightwatchjs/nightwatch-chrome-recorder
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/write-nodejs-unit-integration-tests.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Write unit & integration test</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/using-page-objects/getting-started.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Getting Started</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

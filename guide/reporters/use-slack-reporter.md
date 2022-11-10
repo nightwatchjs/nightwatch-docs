@@ -131,6 +131,27 @@ You don't need to do anything extra because you've configured the Slack reporter
 ![reports](https://user-images.githubusercontent.com/94462364/185097245-963261e2-5253-43b5-975f-87a0c06cf1de.png)
 
 ### Recommended content
-- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
-- [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
+- [How-to guides > Use reporters > Add custom reporter](https://nightwatchjs.org/guide/reporters/create-custom-reporter.html)
 - [Nightwatch Allure on github](https://github.com/kushmangal/Nightwatch-Allure-Reporter)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/reporters/use-mochawesome-reporter.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Mochawesome Reporter</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/reporters/use-nightwatch-allure-reporter.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Allure Reporter</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

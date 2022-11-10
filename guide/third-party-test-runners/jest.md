@@ -245,5 +245,5 @@ Consider the below example test :
 
 
 ### Related articles
-- [How-to guides > Write tests > Use Jest as a test runner](/guide/writing-tests/using-ava.html)
-- [How-to guides > Write tests > Use Mocha as a test runner](/guide/writing-tests/using-mocha.html)
+- [How-to guides > Write tests > Use Jest as a test runner](https://nightwatchjs.org/guide/writing-tests/using-ava.html)
+- [How-to guides > Write tests > Use Mocha as a test runner](https://nightwatchjs.org/guide/writing-tests/using-mocha.html)

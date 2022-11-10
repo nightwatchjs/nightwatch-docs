@@ -6,10 +6,16 @@ description: Learn how to write the Nightwatch configuration file.
 <div class="page-header"><h1>Nightwatch Configuration File</h1></div>
 
 ### Overview
-The Nightwatch test runner binary expects a configuration file, using by default either a `nightwatch.conf.js` or `nightwatch.json` file from the current working directory. `nightwatch.conf.js` is taking precedence if both files are found.
+The Nightwatch test runner binary expects a configuration file located in the current working directory. The following is a list of possible file names that are loaded by default, if found:
+- `nightwatch.conf.js`
+- `nightwatch.conf.cjs` (when using ES Modules)
+- `nightwatch.conf.ts` (when using TypeScript)
+- `nightwatch.json`
+
+You can always specify a config file location via the `--config` CLI argument. Read more about CLI options on the [Reference > Nightwatch CLI](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html) page.
 
 <div class="alert alert-info">
-From Nightwatch 2, you can also specify the config file to return a Promise and the test runner will wait for it to resolve.
+From Nightwatch 2, you can also specify the config file to return a Promise and the result will be `await`-ed.
 </div>
 
 ### Example
@@ -61,5 +67,26 @@ The following packages can be used from NPM and, if installed, Nightwatch will a
 
 
 ### Recommended content
-- [Reference > All configuration settings](/guide/reference/settings.html)
-- [Reference > Configuration defaults](/guide/reference/defaults.html)
+- [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
+- [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/concepts/component-testing.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Component Testing</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/configuration/define-test-environments.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Define test environments</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

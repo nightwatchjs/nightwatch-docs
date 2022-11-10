@@ -24,6 +24,7 @@ The Nightwatch test runner supports a number of run-time options to be passed to
      </tr>
     </thead>
     <tbody>
+    <tr><th colspan="4">Main options</th></tr>
     <tr>
      <td><code>--env</code></td>
      <td><code>-e</code></td>
@@ -49,11 +50,72 @@ The Nightwatch test runner supports a number of run-time options to be passed to
       <td>Used only together with `--test`. Runs the specified testcase from the current suite/module.</td>
     </tr>
     <tr>
+      <td><code>--mocha</code></td>
+      <td></td>
+      <td></td>
+      <td>Set the test runner to use Mocha.</td>
+    </tr>
+    <tr>
+     <td><code>--timeout</code></td>
+     <td></td>
+     <td></td>
+     <td>Set the global timeout for assertion retries before an assertion fails. The various timeout values are defined in the [Globals](/gettingstarted/concepts/#using-test-globals) section.</td>
+    </tr>
+    <tr>
+     <td><code>--reuse-browser</code></td>
+     <td></td>
+     <td></td>
+     <td>Use the same browser session to run the individual test suites (serial mode only).</td>
+    </tr>
+
+   <tr>
+     <td><code>--workers</code></td>
+     <td></td>
+     <td></td>
+     <td>Max number of test files running at the same time (default: CPU cores; e.g. workers=4)</td>
+    </tr>
+
+   <tr>
+     <td><code>--serial</code></td>
+     <td></td>
+     <td></td>
+     <td>Executes tests serially (disables parallel mode).</td>
+    </tr>
+    <tr>
+      <td><code>--headless</code></td>
+      <td></td>
+      <td></td>
+      <td>Launch the browser (Chrome or Firefox) in headless mode.</td>
+    </tr>
+    <tr>
+      <td><code>--devtools</code></td>
+      <td></td>
+      <td></td>
+      <td>Automatically open devtools when launching the browser (Chrome, Edge, or Safari).</td>
+    </tr>
+    <tr>
+      <td><code>--verbose</code></td>
+      <td><code></code></td>
+      <td></td>
+      <td>Shows extended selenium command logging during the session.</td>
+    </tr>
+
+    <tr>
       <td><code>--fail-fast</code></td>
       <td></td>
       <td></td>
       <td>Run in "fail-fast" mode: if a test suite cannot be started, the rest will be aborted.</td>
     </tr>
+
+    <tr>
+      <td><code>--list-files</code></td>
+      <td></td>
+      <td></td>
+      <td>Shows list of files present in the project.</td>
+    </tr>
+
+    <tr><th colspan="4">Tags & filtering</th></tr>
+
      <tr>
        <td><code>--group</code></td>
        <td><code>-g</code></td>
@@ -66,6 +128,7 @@ The Nightwatch test runner supports a number of run-time options to be passed to
        <td></td>
        <td>Skip one or several (comma separated) group of tests.</td>
      </tr>
+     
      <tr>
        <td><code>--filter</code></td>
        <td><code>-f</code></td>
@@ -84,6 +147,9 @@ The Nightwatch test runner supports a number of run-time options to be passed to
         <td></td>
         <td>Skips tests that have the specified tag or tags (comma separated).</td>
       </tr>
+
+    <tr><th colspan="4">Retrying</th></tr>
+
      <tr>
         <td><code>--retries</code></td>
         <td></td>
@@ -97,12 +163,7 @@ The Nightwatch test runner supports a number of run-time options to be passed to
        <td>Retries failed or errored testsuites (test modules) up to the specified number of times. Retrying a testsuite will also retry the `before` and `after` hooks (in addition to the global beforeEach and afterEach respectively), if any are defined on the testsuite.</td>
      </tr>
    
-   <tr>
-     <td><code>--timeout</code></td>
-     <td></td>
-     <td></td>
-     <td>Set the global timeout for assertion retries before an assertion fails. The various timeout values are defined in the [Globals](/gettingstarted/concepts/#using-test-globals) section.</td>
-   </tr>
+   <tr><th colspan="4">Reporting</th></tr>
    
      <tr>
       <td><code>--reporter</code></td>
@@ -124,19 +185,33 @@ write(results, options, done) {
     </tr>
     
     <tr>
-      <td><code>--headless</code></td>
-      <td></td>
-      <td></td>
-      <td>Launch the browser (Chrome or Firefox) in headless mode.</td>
-    </tr>
-    
-    <tr>
-      <td><code>--verbose</code></td>
+      <td><code>--open</code></td>
       <td><code></code></td>
       <td></td>
-      <td>Shows extended selenium command logging during the session</td>
+      <td>Opens the HTML report generated in the default browser at the end of test run</td>
     </tr>
     
+    <tr><th colspan="4">Component Testing</th></tr>
+    <tr>
+      <td><code>--debug</code></td>
+      <td><code></code></td>
+      <td></td>
+      <td>Automatically pause the test execution after mounting the component and open the Nightwatch debug REPL interface.</td>
+    </tr>    
+    <tr>
+      <td><code>--story</code></td>
+      <td><code></code></td>
+      <td></td>
+      <td>Allows to specify which story to run from the current file (when using Storybook or JSX written in component story format).</td>
+    </tr>
+    <tr>
+      <td><code>--preview</code></td>
+      <td><code></code></td>
+      <td></td>
+      <td>Used to preview a component story/test; automatically pause the test execution after mounting the component.</td>
+    </tr>
+
+    <tr><th colspan="4">Info &amp; Help</th></tr>
     <tr>
       <td><code>--help</code></td>
       <td><code>-h</code></td>
@@ -151,17 +226,34 @@ write(results, options, done) {
       <td>Shows the version number</td>
     </tr>
       
-    <tr>
-      <td><code>--open</code></td>
-      <td><code></code></td>
-      <td></td>
-      <td>Opens the HTML report generated in the default browser at the end of test run</td>
-    </tr>
+    
       
     </tbody>
   </table>
 </div>
 
 ### Recommended content
-- [Configuration](/guide/reference/settings.html)
-- [Nightwatch release notes](/guide/overview/whats-new.html)
+- [CLI Test Runner](https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html)
+- [Configuration](https://nightwatchjs.org/guide/reference/settings.html)
+- [Nightwatch release notes](https://nightwatchjs.org/guide/overview/whats-new.html)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/browser-drivers/edgedriver.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">EdgeDriver</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/reference/settings.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">All Settings</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

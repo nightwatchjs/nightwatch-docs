@@ -54,3 +54,24 @@ Then update your `nightwatch.conf.js` (or `nightwatch.json`) and add it to the `
 ### Recommended content
 - [vite-plugin-nightwatch on Github](https://github.com/nightwatchjs/vite-plugin-nightwatch)
 - [Nightwatch React plugin on Github](https://github.com/nightwatchjs/nightwatch-plugin-react)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-reporters.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Create custom reporters</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/browser-drivers/geckodriver.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">GeckoDriver (Firefox)</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

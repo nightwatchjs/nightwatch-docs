@@ -137,3 +137,24 @@ For a complete list of available `expect` assertions, refer to the [API docs][13
 [12]:	https://chaijs.com/api/bdd/
 [13]:	/api/#expect-api
 
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Find & interact with DOM elements</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-xpath-selectors.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use Xpath selectors</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>
+

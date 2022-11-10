@@ -44,5 +44,5 @@ Like the `launch_url` property, the `globals` object is made available directly 
 
 
 ### Recommended content
-- [Reference > All configuration settings](/guide/reference/settings.html)
-- [Reference > Configuration defaults](/guide/reference/defaults.html)
+- [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
+- [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)

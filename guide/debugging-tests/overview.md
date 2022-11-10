@@ -22,3 +22,24 @@ The new [`.debug()`](https://nightwatchjs.org/api/debug.html) command provides a
 ### Recommended content
 - [API docs > `.pause()`](https://nightwatchjs.org/api/pause.html)
 - [API docs > `.debug()`](https://nightwatchjs.org/api/debug.html)
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/running-tests/take-heap-snapshot.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Take heap snapshot</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/debugging-tests/using-pause.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use.pause()</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

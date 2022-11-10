@@ -4,7 +4,7 @@ description: Get started with Nightwatch and run your first end-to-end test.
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-<div class="page-header"><h1>Run Your First End-to-End Test</h1></div>
+<div class="page-header"><h1>Install Nightwatch</h1></div>
 
 Getting started with Nightwatch takes only a few short minutes. Here's how to be up and running with your first end-to-end test. 
 
@@ -38,7 +38,7 @@ Ok to proceed? (y)</code></pre>
 
 This installs Nightwatch, asks your preferences and sets up the `nightwatch.conf.js` file based on your preferences as shown below
 
-![Nightwatch setup using CLI Utility](https://user-images.githubusercontent.com/39924567/174841680-59664ff6-da2d-44a3-a1df-52d22c69b1e2.gif)
+<a href="https://user-images.githubusercontent.com/39924567/174841680-59664ff6-da2d-44a3-a1df-52d22c69b1e2.gif"><img alt="Nightwatch setup using CLI Utility" src="https://user-images.githubusercontent.com/39924567/174841680-59664ff6-da2d-44a3-a1df-52d22c69b1e2.gif" class="img-with-dropshadow"></a>
 
 ### Preferences
   
@@ -129,7 +129,7 @@ OK. 5 assertions passed. (1.838s)
 
 ### Use the Google Chrome DevTools Recorder
 
-Alternatively, Nightwatch provides tools to help you get started by recording your test actions on screen and generate Nightwatch test scripts automatically. See [Create Nightwatch test using Google Chrome DevTools Recorder](/guide/writing-tests/chrome-devtools-recorder.html) for more information.
+Alternatively, Nightwatch provides tools to help you get started by recording your test actions on screen and generate Nightwatch test scripts automatically. See [Create Nightwatch test using Google Chrome DevTools Recorder](https://nightwatchjs.org/guide/writing-tests/chrome-devtools-recorder.html) for more information.
 
 <div class="alert alert-info">
 For additional help you can jump on to our [Discord Server](https://discord.gg/SN8Da2X).
@@ -152,3 +152,24 @@ For additional help you can jump on to our [Discord Server](https://discord.gg/S
 [15]: https://nightwatchjs.org/guide/third-party-runners/using-mocha.html
 [16]: https://nightwatchjs.org/blog/running-cucumber-tests-with-nightwatch/
 [17]: https://github.com/nightwatchjs/nightwatch/releases/tag/v1.6.0
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/overview/whats-new.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Release notes</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Run a test with Selenium Server</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

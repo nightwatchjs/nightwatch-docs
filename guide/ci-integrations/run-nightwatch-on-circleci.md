@@ -81,3 +81,24 @@ Click on the pipeline build that just ran followed by the job name i.e. `test`. 
 
 ### Related articles
 - [How-to guides > Write tests > Run on CI Servers > Jenkins ](/guide/ci-integrations/run-nightwatch-on-jenkins.html)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-azure-pipelines.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Azure Pipelines</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/network-requests/capture-network-calls.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Capture network calls</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

@@ -69,7 +69,7 @@ Here's the list of supported arguments presently:
 <div class="sample-test"><pre><code class="language-bash">npx nightwatch examples/tests/ --reporter mochawesome</code></pre></div>
 
 ### Extended describe() Syntax
-The new Mocha support in Nightwatch 2 has been built to match as close as possible the extended syntax which is available in the [built-in Nightwatch `describes()` syntax](/guide/writing-tests/test-syntax-bdd.html).
+The new Mocha support in Nightwatch 2 has been built to match as close as possible the extended syntax which is available in the [built-in Nightwatch `describes()` syntax](https://nightwatchjs.org/guide/writing-tests/test-syntax-bdd.html).
 
 Here's the complete syntax available when using Mocha in Nightwatch:
 
@@ -231,5 +231,26 @@ You only need to install it from NPM and it's ready to go. You may optionally co
 To use it as a reporter simply pass the `--reporter mocha-junit-reporter` argument as follows:
 
 <div class="sample-test"><pre><code class="language-bash">npx nightwatch examples/tests/ --reporter mocha-junit-reporter</code></pre></div>
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-cucumberjs.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Use CucumberJS</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-test-hooks.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use test hooks</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>
 
 

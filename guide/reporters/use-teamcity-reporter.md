@@ -82,6 +82,27 @@ module.exports = {
 </div>
 
 Recommended content
-- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
-- [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
+- [How-to guides > Use reporters > Add custom reporter](https://nightwatchjs.org/guide/reporters/create-custom-reporter.html)
 - [Nightwatch Teamcity on github](https://www.npmjs.com/package/nightwatch-teamcity)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/reporters/use-nightwatch-allure-reporter.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Allure Reporter</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/reporters/create-custom-reporter.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Add custom reporter</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

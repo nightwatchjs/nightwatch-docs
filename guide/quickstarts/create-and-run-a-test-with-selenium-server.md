@@ -4,30 +4,28 @@ description: Learn how to create and run tests using Nightwatch with Selenium Se
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-<div class="page-header"><h1>Run a test with Selenium Server</h1></div>
+<div class="page-header"><h1>Using Selenium Server with Nightwatch</h1></div>
 
-In this quickstart, you will learn how to create and run a Nightwatch test using [Selenium Server][10]
+Nightwatch can also be used for distributed cross-browser end-to-end testing at scale together with the [Selenium Server][13] (also known as **Selenium Grid**). Selenium Server is an open-source project written in Java that manages a network of WebDriver nodes.
 
-<div class="alert alert-info">
-Selenium Server allows the execution of WebDriver scripts on remote machines by routing commands sent by the client to remote browser instances. It aims to provide an easy way to run tests in parallel on multiple machines.
-</div>
+It aims to provide an easy way to run tests in parallel on multiple machines.
 
+![Selenium Server Operation][image-2]
 
 ### Prerequisites
-1. Make sure [Node][1] is installed on the system. The version used for this tutorial is **v16.14.2**
-2. Make sure [Java][11] is installed on the system. The version used for this tutorial is **openjdk 11.0.14**
+1. Make sure [Node][1] is installed on the system. The version used for this guide is **v16.14.2**
+2. Make sure [Java][11] is installed on the system. The version used for this guide is **openjdk 11.0.14**
 
 ### Setup Nightwatch
-Create a new directory and initiate a Nightwatch project there.
-<pre>
-<code class="language-bash">mkdir &#60;directory-name&#62;
+Create a new directory and initiate a Nightwatch project there:
+
+<div class="hide-indicator"><pre><code class="language-bash">mkdir &#60;directory-name&#62;
 cd &#60;directory-name&#62;
-npm init nightwatch@latest</code></pre>
+npm init nightwatch@latest</code></pre></div>
 
-or directly create the project in a new directory with a single command
+or directly create the project in a new directory with a single command:
 
-<pre>
-<code class="language-bash">npm init nightwatch &#60;directory-name&#62;</code></pre>
+<pre><code class="language-bash">npm init nightwatch &#60;directory-name&#62;</code></pre>
 
 Press `y` when you see the prompt to install create-nightwatch
 
@@ -38,7 +36,7 @@ Ok to proceed? (y)</code></pre>
 
 This installs Nightwatch, asks your preferences and sets up the `nightwatch.conf.js` file based on your preferences as shown below
 
-![Nightwatch setup using CLI Utility](https://user-images.githubusercontent.com/39924567/174841680-59664ff6-da2d-44a3-a1df-52d22c69b1e2.gif)
+<a href="https://user-images.githubusercontent.com/39924567/174841680-59664ff6-da2d-44a3-a1df-52d22c69b1e2.gif"><img alt="Nightwatch setup using CLI Utility" src="https://user-images.githubusercontent.com/39924567/174841680-59664ff6-da2d-44a3-a1df-52d22c69b1e2.gif" class="img-with-dropshadow"></a>
 
 ### Preferences
   
@@ -153,3 +151,30 @@ For additional help you can jump on to our [Discord Server](https://discord.gg/S
 [12]:	https://www.npmjs.com/package/selenium-server
 [13]:	https://github.com/SeleniumHQ/selenium/releases
 [14]:	https://v2.nightwatchjs.org/guide/running-tests/nightwatch-runner.html
+
+[image-2]:	/img/operation-cloud.png
+
+### Recommended content
+- [Blog: Cross-browser Testing at Scale with Nightwatch and Selenium Grid](https://nightwatchjs.org/blog/cross-browser-testing-at-scale-with-nightwatch-and-selenium-grid/)
+
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Run your first end-to-end test</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Run a test with a cloud provider</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

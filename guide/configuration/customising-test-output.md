@@ -90,5 +90,26 @@ The below settings can be used to control the output and logging when running te
 </table>
 
 ### Recommended content
-- [Reference > All configuration settings](/guide/reference/settings.html)
-- [Reference > Configuration defaults](/guide/reference/defaults.html)
+- [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
+- [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/configuration/taking-screenshots-on-fail.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Take screenshots on test failure</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/configuration/advanced-test-source-filtering.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Advanced test source filtering</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

@@ -56,6 +56,27 @@ Mochawesome reporter options can be defined in main Nightwatch config under the 
 </code></pre></div>
 
 ### Recommended content
-- [How-to guides > Use reporters > Junit-XML reporter](/guide/reporters/use-junit-reporter.html)
-- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html) 
+- [How-to guides > Use reporters > Junit-XML reporter](https://nightwatchjs.org/guide/reporters/use-junit-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html) 
 - [Mochawesome on Github](https://github.com/adamgruber/mochawesome)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/reporters/use-json-reporter.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">JSON Reporter</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/reporters/use-slack-reporter.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Slack Reporter</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

@@ -82,5 +82,26 @@ No assertions ran.
 ```
 
 ### Recommended content
-- [Capture Browser JS Exceptions](/guide/running-tests/catch-js-exceptions.html)
+- [Capture Browser JS Exceptions](https://nightwatchjs.org/guide/running-tests/catch-js-exceptions.html)
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/running-tests/programmatic-api.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Use programmatic API</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/running-tests/catch-js-exceptions.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Capture browser exceptions</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

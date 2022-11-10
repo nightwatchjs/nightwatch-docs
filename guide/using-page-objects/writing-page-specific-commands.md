@@ -103,8 +103,31 @@ And for a more elaborate example... You can reference the main page object via `
 };</code></pre></div>
 
 ### Recommended content
-- [Getting started with page objects](/guide/using-page-objects/getting-started.html)
-- [Define page elements](/guide/using-page-objects/defining-elements.html)
-- [Define sections](/guide/using-page-objects/defining-sections.html)
-- [Concepts > Page object model](/guide/concepts/page-object-model.html)
+- [Getting started with page objects](https://nightwatchjs.org/guide/using-page-objects/getting-started.html)
+- [Define page elements](https://nightwatchjs.org/guide/using-page-objects/defining-elements.html)
+- [Define sections](https://nightwatchjs.org/guide/using-page-objects/defining-sections.html)
+- [Concepts > Page object model](https://nightwatchjs.org/guide/concepts/page-object-model.html)
+
+
+
+ <div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.orghttps://nightwatchjs.org/guide/using-page-objects/defining-sections.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Define sections</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.orghttps://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Use the CLI test runner</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>
 

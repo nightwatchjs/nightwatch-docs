@@ -37,5 +37,5 @@ To skip multiple groups, just add them as comma-separated:
 
 <pre><code class="language-bash">nightwatch --skipgroup addressbook,chat</code></pre>
 
-- Previous: [Using Test Environments](/guide/running-tests/test-environments.html)
-- Next: [Using Test Tags](/guide/running-tests/test-tags.html)
+- Previous: [Using Test Environments](https://nightwatchjs.org/guide/running-tests/test-environments.html)
+- Next: [Using Test Tags](https://nightwatchjs.org/guide/running-tests/test-tags.html)

@@ -99,5 +99,5 @@ Failing the test intentionally in a test hook can be achieved by calling `done` 
 
 The same set of test hooks as per test suite is also available globally, outside the scope of the test. Refer to the next section for details.
 
-- Previous: [Using XPath selectors](/guide/using-nightwatch/using-xpath-selectors.html)
-- Next: [Using external globals](/guide/using-nightwatch/external-globals.html)
+- Previous: [Using XPath selectors](https://nightwatchjs.org/guide/using-nightwatch/using-xpath-selectors.html)
+- Next: [Using external globals](https://nightwatchjs.org/guide/using-nightwatch/external-globals.html)

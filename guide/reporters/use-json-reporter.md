@@ -77,6 +77,27 @@ The JSON report should have been generated in the local `tests_output` folder in
 <img width="1266" src="https://user-images.githubusercontent.com/94462364/184344214-1932c43e-fb58-4e5b-8bc9-a2426eaa7cdc.png">
 
 ### Recommended content
-- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
-- [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
-- [How-to guides > Use reporters > Mochawesome reporter reporter](/guide/reporters/use-mochawesome-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
+- [How-to guides > Use reporters > Add custom reporter](https://nightwatchjs.org/guide/reporters/create-custom-reporter.html)
+- [How-to guides > Use reporters > Mochawesome reporter reporter](https://nightwatchjs.org/guide/reporters/use-mochawesome-reporter.html)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/reporters/use-html-reporter.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">HTML Reporter</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/reporters/use-mochawesome-reporter.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Mochawesome Reporter</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

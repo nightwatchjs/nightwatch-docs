@@ -16,7 +16,7 @@ This can be useful if you don't want to run certain tests that are known to be f
 
 #### Skipping individual test cases
 
-Disabling/skipping individual testcases is supported only when using [BDD Describes](/guide/using-nightwatch/using-bdd-describe.html) interface. To skip a testcase, simply mark it as such, using one of:
+Disabling/skipping individual testcases is supported only when using [BDD Describes](https://nightwatchjs.org/guide/using-nightwatch/using-bdd-describe.html) interface. To skip a testcase, simply mark it as such, using one of:
 `test.skip()`, `it.skip()`, `xtest()`, or `xit()`, which are all equivalent. 
 
 ##### Example
@@ -71,5 +71,5 @@ The below will only run the `startHomepage` testcase and ignore the rest.
 
 </code></pre></div>
 
-- Previous: [Running in parallel](/guide/running-tests/parallel-running.html)
-- Next: [Using the Nightwatch programmatic API ](/guide/running-tests/programmatic-api.html)
+- Previous: [Running in parallel](https://nightwatchjs.org/guide/running-tests/parallel-running.html)
+- Next: [Using the Nightwatch programmatic API ](https://nightwatchjs.org/guide/running-tests/programmatic-api.html)

@@ -41,8 +41,8 @@ You can also use Xpath directly on a single command or assertion, by either pass
 
 If you mostly are using XPath expressions and you want to avoid configuring the strategy in your tests all the time, you can also use XPath by default by setting the property `use_xpath: true` in your [config][10].
 
-- Previous: [Using expect assertions](/guide/using-nightwatch/expect-assertions.html)
-- Next: [Using test hooks](/guide/using-nightwatch/using-test-hooks.html)
+- Previous: [Using expect assertions](https://nightwatchjs.org/guide/using-nightwatch/expect-assertions.html)
+- Next: [Using test hooks](https://nightwatchjs.org/guide/using-nightwatch/using-test-hooks.html)
 
 [10]:	/gettingstarted/configuration/#extended-settings
-[11]:	/guide/working-with-page-objects/#element-properties
+[11]:	https://nightwatchjs.org/guide/working-with-page-objects/#element-properties

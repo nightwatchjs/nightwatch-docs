@@ -19,46 +19,6 @@ Nightwatch.js is an integrated framework for performing automated end-to-end tes
 
 <p class="secondary-text">Nightwatch was created in 2014 in Amsterdam, The Netherlands, and the name was inspired by the famous painting [The Night Watch](https://www.rijksmuseum.nl/en/collection/SK-C-5) by Dutch 17th century artist [Rembrandt van Rijn](https://www.rembrandthuis.nl/en/meet-rembrandt/). The masterpiece is prominently displayed in the Rijksmuseum, in Amsterdam. Read more about how Nightwatch was created [here][4].</p>
 
-### Why choose Nightwatch?
-
-<ul>
-  <li class="syntax">
-    <h4>Clean Syntax</h4>
-    <p>
-      Simple but powerful syntax which enables you to write tests very quickly, using Javascript (Node.js) and CSS or Xpath selectors. Typescript is supported as well.
-    </p>
-  </li>
-
-  <li class="syntax">
-    <h4>Integrated Test Runner</h4>
-    <p>
-      Built-in command-line test runner which runs the tests either sequentially or in parallel, with retries and implicit waits. Also supports grouping of test suites and tags. 
-    </p>
-  </li>
-
-  <li class="cloudtesting">
-    <h4>Cloud Testing Support</h4>
-    <p>
-      Works with <a href="https://www.browserstack.com" target="_blank" rel="noreferrer">BrowserStack</a> out of the box. Other cloud testing providers, such as <a href="https://saucelabs.com/" rel="noreferrer" target="_blank">SauceLabs</a> or <a href="https://www.lambdatest.com/" rel="noreferrer" target="_blank">LambdaTest</a> are easy to add as well.
-    </p>
-  </li>
-
-  <li class="selectors">
-    <h4>Page Objects Support</h4>
-    <p>
-      Fluent and easy to work with, has Page Object Model support to better organise elements and sections, and also supports both CSS or Xpath selectors.
-    </p>
-  </li>
-
-  <li class="plugins">
-    <h4>Plugin API</h4>
-    <p>
-      Flexible command and assertion framework, which makes it easy to implement your own plugins and extend the built-in commands and assertions APIs.
-    </p>
-  </li>
-
-</ul>
-
 ### Architecture overview
 
 Nightwatch is distributed as an easy to use CLI tool and has built-in support for all major browsers: Chrome, Firefox, Safari, and Edge.  
@@ -67,7 +27,65 @@ Nightwatch performs the browser automation by taking advantage of the industry s
 
 ![Theory of Operation][image-1]
 
-Nightwatch is sometimes inaccurately described as a "Selenium binding" library. While it's true that Nightwatch can be (and is often) used together with the [Selenium Server][18] it's important to remember that Nightwatch is a complete testing solution which contains a built-in CLI test runner, an extendable command and assertion library, and support for page object model.
+## What is WebDriver?
+
+<p class="whatis-logo w3c-logo"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C WebDriver" title="W3C WebDriver" class="whatis"></p>
+
+<p>[WebDriver][7] is a general purpose library for automating web browsers, part of the [Selenium][5] project. It is now a [W3C specification][10] which standardises browser automation, providing a reliable and consistent protocol to remotely control web browsers via a restful **HTTP API**.</p>
+
+<p>Created more than a decade ago, **Selenium** is by far the most widely used project in the automated testing industry, providing a comprehensive set of tools for browser automation, initially written for Java but now with support for most programming languages.</p>
+
+Internally, Nightwatch uses the [W3C WebDriver API][6] to perform the browser automation related tasks, such as opening windows or clicking links.
+
+### Support for Selenium Grid and Cloud Providers
+
+Nightwatch can also be used for distributed cross-browser end-to-end testing at scale together with the [Selenium Server][13] (also known as **Selenium Grid**), which is an open-source project written in Java that manages a network of WebDriver nodes.
+
+Nightwatch also can be integrated with cloud-based testing platforms like [Browserstack][14], [SauceLabs][15], [CrossBrowserTesting][16], or [LambdaTest][17].
+
+![Selenium Server Operation][image-2]
+
+### Supported browsers
+
+WebDriver is implemented by all major browser vendors as a W3C compliant HTTP service.
+
+<table class="table table-bordered table-striped">
+<thead>
+ <tr>
+   <th style="width: 200px;">Browser Driver</th>
+   <th style="width: 100px; text-align:center">Browser</th>
+   <th>Description</th>
+ </tr>
+</thead>
+<tbody>
+  <tr>
+    <td><a class="local-nav" href="/gettingstarted/installation/#install-geckodriver">GeckoDriver</a></td>
+    <td class="browser"><img alt="Mozilla Firefox" src="https://nightwatchjs.org/img/logos/Firefox_Logo_2017.png"/></td>
+    <td>Standalone application which implements the [W3C WebDriver API](https://w3c.github.io/webdriver/#protocol) to communicate with Firefox.</td>
+  </tr>
+
+  <tr>
+    <td><a class="local-nav" href="/gettingstarted/installation/#install-chromedriver">ChromeDriver</a></td>
+    <td class="browser"><img alt="Google Chrome" src="https://nightwatchjs.org/img/logos/1200px-Google_Chrome_icon.svg.png"/></td>
+    <td>Standalone application which implements the [W3C WebDriver API](https://w3c.github.io/webdriver/#protocol) for Chromium.<br><br>Available for Chrome on Android and Chrome on Desktop (Mac, Linux, Windows and ChromeOS).</td>
+  </tr>
+
+  <tr>
+     <td><a class="local-nav" href="/gettingstarted/installation/#install-microsoftedge">Microsoft Edge Driver</a></td>
+     <td class="browser"><img alt="Microsoft Edge" src="https://nightwatchjs.org/img/logos/Microsoft_Edge_logo.svg.png"/></td>
+     <td>Standalone application which is used to drive the recent Edge browser, based on Chromium, which works similar to ChromeDriver.</td>
+  </tr>
+
+  <tr>
+    <td><a class="local-nav" href="/gettingstarted/installation/#install-safaridriver">SafariDriver</a></td>
+    <td class="browser"><img alt="Microsoft Edge" src="https://nightwatchjs.org/img/logos/safari_icon_large_2x.png"/></td>
+    <td>The `/usr/bin/safaridriver` binary comes pre-installed with recent versions of MacOS and it's available to use following the instructions on [Apple Developer website](https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari).
+    <br><br>More information is available on <a href="https://developer.apple.com/documentation/webkit/about_webdriver_for_safari" target="_blank">About WebDriver for Safari</a> page.
+    </td>
+  </tr>
+
+ </tbody>
+</table>
 
 [1]:	https://nodejs.org/
 [2]:	https://www.w3.org/TR/webdriver/
@@ -96,4 +114,13 @@ Nightwatch is sometimes inaccurately described as a "Selenium binding" library. 
 - [Nightwatch release notes](/guide/overview/whats-new.html)
 - [Selenium WebDriver Docs](https://www.selenium.dev/documentation/webdriver/)
 - [WebDriver Docs on MDN](https://developer.mozilla.org/en-US/docs/Web/WebDriver)
+
+<div class="doc-pagination justify-content-end pt-40">
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/overview/whats-new-in-v2.html">
+        <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">What's new in v2?</span></div>
+        <span>→</span>
+    </a>
+  </div>
+</div>
 

@@ -23,7 +23,7 @@ Define your reporter in a separate file, using the below interface, and then spe
 
 ### via external globals
 
-Add your reporter in the external globals file. Read more about [external globals](/guide/concepts/test-globals.html).
+Add your reporter in the external globals file. Read more about [external globals](https://nightwatchjs.org/guide/concepts/test-globals.html).
 
 See the provided [globalsModule.js](https://github.com/nightwatchjs/nightwatch/blob/main/examples/globalsModule.js) for an example.
 
@@ -35,4 +35,25 @@ See the provided [globalsModule.js](https://github.com/nightwatchjs/nightwatch/b
     done();
   }
 };</code></pre>
+</div>
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Define custom assertions</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Create Nightwatch plugins</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
 </div>

@@ -1,6 +1,6 @@
 ## Working with DOM Elements
 
-<h3 id="finding-amp-interacting-with-elements"><span>Finding &amp; Interacting with Elements</span></h3>
+<div class="page-header"><h1>Finding &amp; Interacting with Elements</h1></div>
 
 Finding elements on a page is by far one of the most common functions during an end-to-end test. Nightwatch provides several techniques of locating elements and also an extensible assertion framework to perform verifications on them. 
 
@@ -89,8 +89,8 @@ Say in the example above, the `input[type=search]` element selector returns 3 el
 };</code></pre>
 </div>
 
-- Previous: [Using ES6 async/await](/guide/using-nightwatch/using-es6-async.html)
-- Next: [Writing Assertions](/guide/using-nightwatch/writing-assertions.html)
+- Previous: [Using ES6 async/await](https://nightwatchjs.org/guide/using-nightwatch/using-es6-async.html)
+- Next: [Writing Assertions](https://nightwatchjs.org/guide/using-nightwatch/writing-assertions.html)
 
 [2]:	https://www.w3.org/TR/webdriver/#locator-strategies
 [3]:	https://www.w3.org/TR/webdriver/#elements

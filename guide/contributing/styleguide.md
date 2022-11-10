@@ -64,3 +64,24 @@ Apart from the guidelines mentioned here, if you are confused, defer on the [Goo
     * Embed BrowserStack test results in your job results
 * Do not use a bullet (number or symbol) when there is only one item; there must be a least two
 items to make a list. In such cases, convert it to a sentence.
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/reference/defaults.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Default Settings</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/migrating-to-nightwatch/from-nightwatch-v1.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">From Nightwatch v1</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

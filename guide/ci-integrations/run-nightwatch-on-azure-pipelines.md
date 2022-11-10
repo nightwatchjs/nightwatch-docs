@@ -92,3 +92,24 @@ Once you push your changes and click on save and run button, the pipeline will s
  
 Related articles
 - [How-to guides > Write tests > Run on CI Servers > Jenkins ](/guide/ci-integrations/run-nightwatch-on-jenkins.html)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-bamboo.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Bamboo</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-circleci.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">CircleCI</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

@@ -98,4 +98,25 @@ Request headers: {
 
 ### Recommended content
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
-- [Intercept network responses](/guide/network-requests/mock-network-response.html)
+- [Intercept network responses](https://nightwatchjs.org/guide/network-requests/mock-network-response.html)
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-circleci.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">CircleCI</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/network-requests/mock-network-response.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Mock network response</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>
