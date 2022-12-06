@@ -1,11 +1,11 @@
 ---
-title: Browserstack Settings
-description: Learn how to configure Browserstack settings in Nightwatch
+title: BrowserStack Settings
+description: Learn how to configure BrowserStack settings in Nightwatch
 ---
 
-<div class="page-header"><h1>Browserstack Settings</h1></div>
+<div class="page-header"><h1>BrowserStack Settings</h1></div>
 
-[Browserstack][1] is one of the most popular cloud testing platforms. Using it with Nightwatch is very straightforward and there is configuration in the auto-generated `nightwatch.conf.js` file.
+[BrowserStack][1] is one of the most popular cloud testing platforms. Using it with Nightwatch is very straightforward and there is configuration in the auto-generated `nightwatch.conf.js` file.
 
 Once you have an account, you can set the following environment variables. [Dotenv][2] files are also supported by Nightwatch.
 - `BROWSERSTACK_USERNAME`
