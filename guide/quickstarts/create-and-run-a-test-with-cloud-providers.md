@@ -72,93 +72,6 @@ If you are trying to run Nightwatch on BrowserStack for an existing project, you
 
 Once the BrowerStack block is present in the Nightwatch configuration file, replace the BrowserStack username and access key with your credentials and you are ready to run your tests on the BrowserStack infrastructure.
 
-### Running on LambdaTest
-
-If you are trying to run Nightwatch on LambdaTest for an existing project, you will have to add the following block in the `nightwatch.json` file as shown below.
-
-<div class="sample-test">
-<i>nightwatch.json</i><pre class="line-numbers"><code class="language-json">{
-  "src_folders": ["tests"],
-  "output_folder": "reports",
-  "page_objects_path": "",
-  "globals_path": "",
-  "selenium": {
-    "start_process": false,
-    "server_path": "",
-    "log_path": "",
-    "host": "hub.lambdatest.com",
-    "port": 80,
-    "cli_args": {
-      "webdriver.chrome.driver": "",
-      "webdriver.ie.driver": "",
-      "webdriver.firefox.profile": ""
-    }
-  },
-  "test_workers": {
-    "enabled": true,
-    "workers": "auto"
-  },
-  "test_settings": {
-    "default": {
-      "request_timeout_options": {
-        "timeout": 1000000
-      },
-      "launch_url": "https://lambdatest.com",
-      "selenium_port": 80,
-      "selenium_host": "hub.lambdatest.com",
-      "silent": false,
-      "screenshots": {
-        "enabled": true,
-        "path": ""
-      },
-      "username": "",
-      "access_key": "",
-      "skip_testcases_on_fail": false,
-      "desiredCapabilities": {
-        "build": "test-name",
-        "visual": false,
-        "console": false,
-        "network": false,
-        "geoLocation" : "US"
-      }
-    },
-    // More info on configuring capabilities can be found on:
-   // https://www.lambdatest.com/capabilities-generator/
-    "chrome": {
-      "desiredCapabilities": {
-        "platformName": "Windows 10",
-        "browserName": "chrome",
-        "browserVersion": "latest",
-        "geoLocation" : "US"
-       }
-     }
-    }
-  }
-}
-</code></pre></div>
-
-Define access key, username, host in `nightwatch.conf.js `file.
-
-<div class="sample-test">
-<i>nightwatch.json</i><pre class="line-numbers"><code class="language-json">module.exports = (function(settings) {
-  console.log(settings["test_settings"]["default"]["username"])
-  if (process.env.LT_USERNAME) {
-    settings["test_settings"]["default"]["username"] = process.env.LT_USERNAME;
-  }
-  if (process.env.LT_ACCESS_KEY) {
-    settings["test_settings"]["default"]["access_key"] = process.env.LT_ACCESS_KEY;
-  }
-  if (process.env.SELENIUM_HOST) {
-	settings.selenium.host = process.env.SELENIUM_HOST;
-  }
-  if (process.env.SELENIUM_PORT) {
-	settings.selenium.host = process.env.SELENIUM_PORT;
-  }
-  return settings;
-})(require('./nightwatch.json'));
-
-</code></pre></div>
-
 ### Running on Sauce Labs
 
 If you select Sauce Labs as the cloud provider while setting up Nightwatch via the CLI utility, the test settings will be automatically added.
@@ -198,6 +111,7 @@ If you are trying to run Nightwatch on Sauce Labs for an existing project, you w
                 start_process: false
             }
         },
+
         'saucelabs.firefox': {
             extends: 'saucelabs',
             desiredCapabilities: {
