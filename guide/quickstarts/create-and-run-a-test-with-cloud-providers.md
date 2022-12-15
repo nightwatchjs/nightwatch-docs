@@ -81,46 +81,46 @@ If you are trying to run Nightwatch on LambdaTest for an existing project, you w
     ...,
     test_settings: {
         ...,
-            lambdatest: {
+        lambdatest: {
             selenium: {
                 host: 'hub.lambdatest.com',
                 port: 443
-              },
-            "username": '${LAMBDATEST_USERNAME}',
-            "access_key": '${LAMBDATEST_ACCESS_KEY}',
             },
-             // More info on configuring capabilities can be found on:
-            // https://www.lambdatest.com/capabilities-generator/
-            "lambdatest.chrome": {
+            'username': '${LAMBDATEST_USERNAME}',
+            'access_key': '${LAMBDATEST_ACCESS_KEY}',
+        },
+        // More info on configuring capabilities can be found on:
+        // https://www.lambdatest.com/capabilities-generator/
+        'lambdatest.chrome': {
             extends: 'lambdatest',
             desiredCapabilities: {
                 browserName: 'chrome',
                 'LT:Options': {
-                    "platformName": "Windows 10",
-                    "browserVersion": "108.0",
-                    "project": 'Project',
-                    }
-                 }
-            },
+                    'platformName': 'Windows 10',
+                    'browserVersion': '108.0',
+                    'project': 'Project',
+                }
+            }
+        },
 
-            "lambdatest.firefox": {
+        'lambdatest.firefox': {
             extends: 'lambdatest',
             desiredCapabilities: {
                 browserName: 'firefox',
                 'LT:Options': {
-                    "platformName": "Windows 10",
-                    "browserVersion": "108.0",
-                    "project": 'Untitled',
-                    }
-                 }
-            },
+                    'platformName': 'Windows 10',
+                    'browserVersion': '108.0',
+                    'project': 'Untitled',
+                }
+            }
+        },
         ...
     }
 }
 
 </code></pre></div>
 
-Once you have added LambdaTest configurations is present in the `nightwatch.conf.js` replace the LambdaTest username and access_key with your credentials and you are ready to run your tests on the LambdaTest Cloud grid.
+Once you have added LambdaTest configurations in the `nightwatch.conf.js` replace the LambdaTest username and access_key with your credentials and you are ready to run your tests on the LambdaTest Cloud grid.
 
 You can also configure and add your desired capabilities with the help of [automation capabilty generator](https://www.lambdatest.com/capabilities-generator/).
 
