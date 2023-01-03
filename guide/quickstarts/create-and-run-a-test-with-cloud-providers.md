@@ -15,7 +15,7 @@ If you are installing Nightwatch using the CLI utility and you select to run on 
 If you are trying to run Nightwatch on BrowserStack for an existing project, you will have to add a `browserstack` block in the `nightwatch.conf.js` file as a child property to `test_settings`.
 
 <div class="sample-test">
-<i>nightwatch.json</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
+<i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
     ...,
     test_settings: {
         ...,
@@ -72,6 +72,58 @@ If you are trying to run Nightwatch on BrowserStack for an existing project, you
 
 Once the BrowerStack block is present in the Nightwatch configuration file, replace the BrowserStack username and access key with your credentials and you are ready to run your tests on the BrowserStack infrastructure.
 
+### Running on LambdaTest
+
+If you are trying to run Nightwatch on LambdaTest for an existing project, you will have to add a `lambdatest` block in the `nightwatch.conf.js` file as a child property to `test_settings`.
+
+<div class="sample-test">
+<i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
+    ...,
+    test_settings: {
+        ...,
+        lambdatest: {
+            selenium: {
+                host: 'hub.lambdatest.com',
+                port: 443
+            },
+            'username': '${LAMBDATEST_USERNAME}',
+            'access_key': '${LAMBDATEST_ACCESS_KEY}',
+        },
+        // More info on configuring capabilities can be found on:
+        // https://www.lambdatest.com/capabilities-generator/
+        'lambdatest.chrome': {
+            extends: 'lambdatest',
+            desiredCapabilities: {
+                browserName: 'chrome',
+                'LT:Options': {
+                    'platformName': 'Windows 10',
+                    'browserVersion': '108.0',
+                    'project': 'Project',
+                }
+            }
+        },
+
+        'lambdatest.firefox': {
+            extends: 'lambdatest',
+            desiredCapabilities: {
+                browserName: 'firefox',
+                'LT:Options': {
+                    'platformName': 'Windows 10',
+                    'browserVersion': '108.0',
+                    'project': 'Untitled',
+                }
+            }
+        },
+        ...
+    }
+}
+
+</code></pre></div>
+
+Once you have added LambdaTest configurations in the `nightwatch.conf.js` replace the LambdaTest username and access_key with your credentials and you are ready to run your tests on the LambdaTest Cloud grid.
+
+You can also configure and add your desired capabilities with the help of [automation capabilty generator](https://www.lambdatest.com/capabilities-generator/).
+
 ### Running on Sauce Labs
 
 If you select Sauce Labs as the cloud provider while setting up Nightwatch via the CLI utility, the test settings will be automatically added.
@@ -79,7 +131,7 @@ If you select Sauce Labs as the cloud provider while setting up Nightwatch via t
 If you are trying to run Nightwatch on Sauce Labs for an existing project, you will have to add the following block in the `nightwatch.conf.js` file as shown below.
 
 <div class="sample-test">
-<i>nightwatch.json</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
+<i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
     ...,
     test_settings: {
         ...,
@@ -135,7 +187,7 @@ If you are installing Nightwatch using the `create-nightwatch` utility and you s
 If you are trying to set this up for an existing project, you will have to add the following block in the `nightwatch.conf.js` file under the `test_settings` property as shown below.
 
 <div class="sample-test">
-<i>nightwatch.json</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
+<i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
     ...,
     test_settings : {
         ...,
