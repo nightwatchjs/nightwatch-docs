@@ -59,7 +59,7 @@ All you need to do is call the `browser.captureNetworkRequests()` command with t
     this.requestCount = 1;
     browser
       .captureNetworkRequests((requestParams) => {
-        console.log('Request Number:', this.requestCount!++);
+        console.log('Request Number:', this.requestCount++);
         console.log('Request URL:', requestParams.request.url);
         console.log('Request method:', requestParams.request.method);
         console.log('Request headers:', requestParams.request.headers);
