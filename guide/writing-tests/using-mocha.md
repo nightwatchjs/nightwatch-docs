@@ -196,7 +196,7 @@ Mochawesome reporter options can be defined in main Nightwatch config under the 
       ui : 'bdd',
       reporter : 'mochawesome',
       reporterOptions: {
-        reporterDir: './output'
+        reportDir: './output'
       }
     }
   }
@@ -219,7 +219,7 @@ You only need to install it from NPM and it's ready to go. You may optionally co
     type : 'mocha',
     options : {
       reporterOptions: {
-        reporterDir: './output'
+        reportDir: './output'
       }
     }
   }
