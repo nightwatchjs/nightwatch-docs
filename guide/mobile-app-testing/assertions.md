@@ -163,11 +163,11 @@ Verify if an element is present in the render tree with `app.assert.elementsPres
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Assert if the element with id `org.wikipedia:id/button` is present in the render tree
-const isPresent = await app.assert.elementsPresent({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+app.assert.elementsPresent({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Assert if the element with id `org.wikipedia:id/button` is present in the render tree
-const isPresent = await app.assert.elementsPresent({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+app.assert.elementsPresent({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre></div>
 
 ### Chai Expects
