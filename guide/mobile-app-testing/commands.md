@@ -8,7 +8,7 @@ summary_image: https://nightwatchjs.org/img/banner.png
 
 ### Overview
 
-Using commands, you can interact with elements in the mobile application or the OS itself. Inorder to use commands to interact with elements, you would need selectors to locate the elements. Please refer to this [guide][1] to understand how selectors work in the context of native mobile applications. 
+Using commands, you can interact with elements in the mobile application or the OS itself by specifying selectors. Please refer to this [guide][1] to understand how selectors work in the context of native mobile applications. 
 
 ### App related commands
 

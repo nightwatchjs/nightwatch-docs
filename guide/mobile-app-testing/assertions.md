@@ -111,11 +111,11 @@ Verify if an element is in a selected state with `app.assert.selected(selector)`
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Assert if the element with id `org.wikipedia:id/button` is selected
-const isSelected = await app.assert.selected({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+app.assert.selected({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Assert if the element with id `org.wikipedia:id/button` is selected
-const isSelected = await app.assert.selected({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+app.assert.selected({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre></div>
 
 ### Enabled
@@ -124,11 +124,11 @@ Verify if an element is in an enabled state with `app.assert.enabled(selector)` 
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Assert if the element with id `org.wikipedia:id/button` is enabled
-const isEnabled = await app.assert.enabled({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+app.assert.enabled({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Assert if the element with id `org.wikipedia:id/button` is enabled
-const isEnabled = await app.assert.enabled({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+app.assert.enabled({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre></div>
 
 ### Visible
@@ -137,11 +137,11 @@ Verify if an element is visible with `app.assert.visible(selector)` method.
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Assert if the element with id `org.wikipedia:id/button` is visible
-const isVisible = await app.assert.visible({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+await app.assert.visible({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Assert if the element with id `org.wikipedia:id/button` is visible
-const isVisible = await app.assert.visible({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+await app.assert.visible({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre></div>
 
 ### Elements count
