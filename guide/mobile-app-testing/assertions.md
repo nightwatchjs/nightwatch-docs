@@ -137,11 +137,11 @@ Verify if an element is visible with `app.assert.visible(selector)` method.
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Assert if the element with id `org.wikipedia:id/button` is visible
-await app.assert.visible({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+app.assert.visible({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Assert if the element with id `org.wikipedia:id/button` is visible
-await app.assert.visible({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
+app.assert.visible({selector: 'org.wikipedia:id/button', locateStrategy: 'id'});
 </code></pre></div>
 
 ### Elements count
