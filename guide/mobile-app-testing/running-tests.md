@@ -189,7 +189,14 @@ Ensure that you replace the following values
 4. appWaitActivity
 5. udid `needed to identify the device where the tests need to run`
 
-#### Step 3
+### Step 3
+
+Ensure that your device is setup correctly to communicate with Nightwatch with the following steps:
+1. [Turn on USB Debugging][2] on your Android Device and connect it to your system via data cable.
+2. Make sure latest version of Chrome browser is installed on your Android device. If not, install from Google Play Store.
+3. Make sure latest version of chromedriver NPM package is installed in your project. If not, install by running:
+
+#### Step 4
 
 Run the test using the following command
 
@@ -267,7 +274,7 @@ test_settings:{
       'bstack:options': {
         userName: '<username>',
         accessKey: '<access_key>',
-        appiumVersion: '1.22.0'
+        appiumVersion: '2.0.0'
       }
     },
     disable_error_log: false,
@@ -293,7 +300,8 @@ test_settings:{
         platformVersion: '11.0',
         deviceName: 'Google Pixel 5'
       },
-      appUploadUrl: 'https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.apk' // url of app to be uploaded to BrowserStack before starting the test
+      appUploadUrl: 'https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.apk', // url of app to be uploaded to BrowserStack before starting the test
+      // appUploadPath: '/path/to/app_name.apk' // if the app needs to be uploaded to BrowserStack from local system
     }
   },
   'browserstack.ios': {
@@ -307,7 +315,8 @@ test_settings:{
         platformVersion: '16',
         deviceName: 'iPhone 14'
       },
-      appUploadUrl: 'https://www.browserstack.com/app-automate/sample-apps/ios/BStackSampleApp.ipa'
+      appUploadUrl: 'https://www.browserstack.com/app-automate/sample-apps/ios/BStackSampleApp.ipa',
+      // appUploadPath: '/path/to/app_name.ipa'
     }
   ...
 }
@@ -324,7 +333,7 @@ Ensure that you replace the following with the values corresponding to your app
 6. appWaitActivity
 7. deviceName
 8. platformVersion
-9. appUploadUrl `needed to install the app`
+9. appUploadUrl `(public url of app under test)`
 
 #### Step 3
 
@@ -336,10 +345,11 @@ npx nightwatch &#60;path to tests&#62; --env browserstack.ios
 
 ### Recommended next steps
 
-Learn [how to debug mobile app tests][2]
+Learn [how to debug mobile app tests][3]
 
 [1]:    /guide/concepts/test-environments.html
-[2]:    /guide/mobile-app-testing/debug-tests.html
+[2]:    https://developer.android.com/studio/debug/dev-options#enable
+[3]:    /guide/mobile-app-testing/debug-tests.html
 
 
 <div class="doc-pagination pt-40">

@@ -20,17 +20,19 @@ This is the native element id i.e. `resource-id` on Android & `name` for iOS . E
 
 As you can see the highlighted element has an id value `org.wikipedia:id/search_src_text`
 
-To interact with that element, selector strategy would be id and selector string would be `org.wikipedia:id/search_src_text`.
+To interact with that element, selector strategy would be `id` and selector string would be `org.wikipedia:id/search_src_text`.
 
 ### XPath
 
-Apart from ID, you can also locate an element using the XPath. We do not recommend using XPath as it can make your test cases very fragile as even a small change in layout of the application can render the XPath incorrect. You should use XPath only if no other selectors are applicable. 
+Apart from ID, you can also locate an element using the XPath.
 
 ![Example of xPath selector][image-2]
 
+Xpath in Appium analyzes the XML structure of the app and then locates the element. Xpath should only be used when there is no ID, Name, or accessibility ID assigned to a specific UI element. Although XPath allows for the formulation of complex queries, using XPath is not recommended because it has stability and performance issues (as mentioned in the [official documentation][1]).
+
 ### Selecting nth element
 
-Nightwatch selectors also accept a JSON value instead of a string where more options can be provided. You can select an element at nth index from a list of elements. For e.g. in case you have a list with multiple list items, you can select the nth element by sending a JSON object instead of the selector string.
+Nightwatch selectors also accept a [selector object][2] instead of a string where more options can be provided. You can select an element at nth index from a list of elements. For e.g. in case you have a list with multiple list items, you can select the nth element by sending a selector object instead of a selector string.
 
 <div class="sample-test">
 <i>Select nth element</i><pre class="line-numbers"><code class="language-javascript">app.click({selector: 'org.wikipedia:id/page_list_item_title', locateStrategy: 'id', index: n})
@@ -40,11 +42,14 @@ Nightwatch selectors also accept a JSON value instead of a string where more opt
 
 Now that you understand selectors, you can use them to write commands & assertions.  
 
-[Command][1] </br>
-[Assertions][2]
+[Command][2] </br>
+[Assertions][3]
 
-[1]:  /guide/mobile-app-testing/commands.html
-[2]:  /guide/mobile-app-testing/assertions.html
+
+[1]:  https://appium.io/docs/en/commands/element/find-elements/index.html#selector-strategies
+[2]:  https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html#element-properties
+[3]:  /guide/mobile-app-testing/commands.html
+[4]:  /guide/mobile-app-testing/assertions.html
 
 [image-1]:  https://user-images.githubusercontent.com/1677755/220292896-8acdac83-47a2-447c-924b-95240959e695.png
 [image-2]:  https://user-images.githubusercontent.com/1677755/220293322-e0db2a87-ffd4-4009-8738-709cd91b2be5.png

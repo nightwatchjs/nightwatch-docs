@@ -83,7 +83,6 @@ Commands for testing native mobile apps can be divided into 2 categories
 - app.clearValue('selector strategy','selector value') 
 - app.setValue('selector strategy','selector value') 
 - app.appium.getContexts() 
-- app.appium.getContexts() 
 - app.appium.getContext()
 - app.appium.setContext()
 

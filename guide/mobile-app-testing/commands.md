@@ -37,7 +37,7 @@ app.click("id","org.wikipedia:id/search_container")
 app.click({selector: 'org.wikipedia:id/page_list_item_title', locateStrategy: 'id', index: n})
 </code></pre></div>
 
-### Type/ Send Keys
+### Type/Send Keys
 
 If your app contains fields that need text input, you can interact with such elements by using `app.sendKeys("selector strategy","selector","text")`  or `app.sendKeys(selector object, text)`.
 
@@ -108,7 +108,7 @@ app.setValue({selector: 'org.wikipedia:id/search_src_text', locateStrategy: 'id'
 
 ### Contexts
 
-A single application can have multiple contexts such as web view or native app. Managing contexts would be essential for some flows such as `Authentication`
+A single application can have multiple contexts such as web view or native app. Managing contexts would be essential for some flows such as `Authentication`, which may load a web view in your native app.
 
 #### Get Context
 
