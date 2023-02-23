@@ -187,7 +187,7 @@ Ensure that you replace the following values
 2. appPackage
 3. appActivity
 4. appWaitActivity
-5. udid `needed to identify the device where the tests need to run`
+5. udid `needed to identify the device where the tests need to run, if multiple devices are online`
 
 ### Step 3
 
@@ -244,7 +244,7 @@ Ensure that you replace the following with the values corresponding to your app
 1. app
 2. deviceName
 3. bundleId
-4. udid `needed to identify the device where the tests need to run`
+4. udid `needed to identify the device where the tests need to run, if multiple devices are online`
 
 #### Step 3
 
@@ -333,7 +333,7 @@ Ensure that you replace the following with the values corresponding to your app
 6. appWaitActivity
 7. deviceName
 8. platformVersion
-9. appUploadUrl `(public url of app under test)`
+9. appUploadUrl `public url of app under test`
 
 #### Step 3
 
