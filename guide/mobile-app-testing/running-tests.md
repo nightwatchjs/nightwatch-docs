@@ -196,6 +196,10 @@ Ensure that your device is setup correctly to communicate with Nightwatch with t
 2. Make sure latest version of Chrome browser is installed on your Android device. If not, install from Google Play Store.
 3. Make sure latest version of chromedriver NPM package is installed in your project. If not, install by running:
 
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i chromedriver@latest --save-dev
+</code></pre>
+
+
 #### Step 4
 
 Run the test using the following command

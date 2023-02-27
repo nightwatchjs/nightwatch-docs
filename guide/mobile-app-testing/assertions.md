@@ -1,14 +1,14 @@
 ---
 title: Assertions for native mobile app tests
-description:  Introduction to assertions for native mobile apps
+description:  How to write assertions when testing native mobile apps.
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-<div class="page-header"><h2>Introduction to assertions for native mobile apps test</h2></div>
+<div class="page-header"><h2>Write assertions for native mobile apps tests</h2></div>
 
 ### Overview
 
-The goal of any automated test would be to write assertions and ensure that the logic is working. In Nightwatch there are 2 ways in which assertions can be done
+The goal of any automated test is to write assertions and ensure that the logic is working. In Nightwatch there are 2 ways in which assertions can be done
 - app.assert.command(params)
 - expects
 
@@ -172,7 +172,7 @@ app.assert.elementsPresent({selector: 'org.wikipedia:id/button', locateStrategy:
 
 ### Chai Expects
 
-In addition to the assertions under the .assert namespace, Nightwatch also supports BDD style expect assertions. For e.g.
+In addition to the assertions under the .assert namespace, Nightwatch also supports BDD style expect assertions. E.g.:
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 app.appium.getCurrentActivity((activity)=>{
