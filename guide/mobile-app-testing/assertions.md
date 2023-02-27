@@ -8,7 +8,7 @@ summary_image: https://nightwatchjs.org/img/banner.png
 
 ### Overview
 
-The goal of any automated test would be to write assertions and ensure that the logic is working. In Nightwatch there are 2 ways in which assertions can be done
+The goal of any automated test would be to write assertions and ensure that the logic is working. In Nightwatch there are 2 ways in which assertions can be done:
 - app.assert.command(params)
 - expects
 
