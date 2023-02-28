@@ -107,12 +107,12 @@ Detailed examples can be found [here][6]
 Finally, the goal of writing tests is to add assertions so that the end to end functional flows can be validated. Assertions for native mobile apps are again very similar to assertions for web. 
 
 #### Assert library
-- app.assert.textContains(selector,"text")
-- app.assert.textEquals(selector,"text")
-- app.assert.textMatches(selector, "text")
-- app.assert.attributeContains(selector,"attribute","value")
-- app.assert.attributeEquals(selector,"attribute","value")
-- app.assert.attributeMatches(selector, "attribute","value")
+- app.assert.textContains(selector,'text')
+- app.assert.textEquals(selector,'text')
+- app.assert.textMatches(selector, 'text')
+- app.assert.attributeContains(selector,'attribute','value')
+- app.assert.attributeEquals(selector,'attribute','value')
+- app.assert.attributeMatches(selector, 'attribute','value')
 - app.assert.selected(selector)
 - app.assert.enabled(selector)
 - app.assert.visible(selector)
@@ -126,7 +126,7 @@ Additionally you can also use `Chai` style assertions
 For e.g.
 <div class="sample-test">
 <i>Sample Chai Exception</i><pre class="line-numbers"><code class="language-javascript">app.appium.getCurrentActivity(function(activity){
-    expect(activity.value).to.equal(".page.PageActivity")
+    expect(activity.value).to.equal('.page.PageActivity')
 })
 </code></pre></div>
 
