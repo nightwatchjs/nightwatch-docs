@@ -8,7 +8,7 @@ summary_image: https://nightwatchjs.org/img/banner.png
 
 ### Overview
 
-Using commands, you can interact with elements in the mobile application or the OS itself by specifying selectors. Please refer to this [guide][1] to understand how selectors work in the context of native mobile applications. 
+Using commands,you can interact with elements in the mobile application or the OS itself by specifying selectors. Please refer to this [guide][1] to understand how selectors work in the context of native mobile applications. 
 
 ### App related commands
 
@@ -16,99 +16,99 @@ These commands can be used to interact with the mobile application
 
 ### Click
 
-To click on an element, simply use `app.click("selector strategy","selector")`  or `app.click(selector object)` . You can find the element using Appium inspector
+To click on an element,simply use `app.click('selector strategy','selector')`  or `app.click(selector object)` . You can find the element using Appium inspector
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Mention the selector strategy followed by the selector itself
 //Click on the element with id `org.wikipedia:id/search_container`
-app.click("id","org.wikipedia:id/search_container")
+app.click('id','org.wikipedia:id/search_container')
 
 //Mention a selector object and index
 //Click on the nth element with id `org.wikipedia:id/page_list_item_title`
-app.click({selector: 'org.wikipedia:id/page_list_item_title', locateStrategy: 'id', index: n})
+app.click({selector: 'org.wikipedia:id/page_list_item_title',locateStrategy: 'id',index: n})
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Mention the selector strategy followed by the selector itself
 //Click on the element with id `org.wikipedia:id/search_container`
-app.click("id","org.wikipedia:id/search_container")
+app.click('id','org.wikipedia:id/search_container')
 
 //Mention a selector object and index
 //Click on the nth element with id `org.wikipedia:id/page_list_item_title`
-app.click({selector: 'org.wikipedia:id/page_list_item_title', locateStrategy: 'id', index: n})
+app.click({selector: 'org.wikipedia:id/page_list_item_title',locateStrategy: 'id',index: n})
 </code></pre></div>
 
 ### Type/Send Keys
 
-If your app contains fields that need text input, you can interact with such elements by using `app.sendKeys("selector strategy","selector","text")`  or `app.sendKeys(selector object, text)`.
+If your app contains fields that need text input,you can interact with such elements by using `app.sendKeys('selector strategy','selector','text')`  or `app.sendKeys(selector object,text)`.
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Mention the selector strategy followed by the selector itself
-//Type the text "Test" the element with id `org.wikipedia:id/search_container`
-app.sendKeys("id","org.wikipedia:id/search_src_text", "Test")
+//Type the text 'Test' the element with id `org.wikipedia:id/search_container`
+app.sendKeys('id','org.wikipedia:id/search_src_text','Test')
 
 //Mention a selector object and index
-//Type "Test" in the nth element with id `org.wikipedia:id/search_src_text`
-app.sendKeys({selector: 'org.wikipedia:id/search_src_text', locateStrategy: 'id', index: n}, "Test")
+//Type 'Test' in the nth element with id `org.wikipedia:id/search_src_text`
+app.sendKeys({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n},'Test')
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Mention the selector strategy followed by the selector itself
-//Type the text "Test" the element with id `org.wikipedia:id/search_container`
-app.sendKeys("id","org.wikipedia:id/search_src_text", "Test")
+//Type the text 'Test' the element with id `org.wikipedia:id/search_container`
+app.sendKeys('id','org.wikipedia:id/search_src_text','Test')
 
 //Mention a selector object and index
-//Type "Test" in the nth element with id `org.wikipedia:id/search_src_text`
-app.sendKeys({selector: 'org.wikipedia:id/search_src_text', locateStrategy: 'id', index: n}, "Test")
+//Type 'Test' in the nth element with id `org.wikipedia:id/search_src_text`
+app.sendKeys({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n},'Test')
 </code></pre></div>
 
 ### Clear Value
 
-To clear the value of an element, simply use `app.clearValue("selector strategy","selector")`  or `app.clearValue(selector object)`. You can find the element using Appium inspector
+To clear the value of an element,simply use `app.clearValue('selector strategy','selector')`  or `app.clearValue(selector object)`. You can find the element using Appium inspector
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Mention the selector strategy followed by the selector itself
 //Clear the value of the element with id `org.wikipedia:id/search_src_text`
-app.clearValue("id","org.wikipedia:id/search_src_text")
+app.clearValue('id','org.wikipedia:id/search_src_text')
 
 //Mention a selector object and index
 //Click on the nth element with id `org.wikipedia:id/search_src_text`
-app.clearValue({selector: 'org.wikipedia:id/search_src_text', locateStrategy: 'id', index: n})
+app.clearValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n})
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Mention the selector strategy followed by the selector itself
 //Clear the value of the element with id `org.wikipedia:id/search_src_text`
-app.clearValue("id","org.wikipedia:id/search_src_text")
+app.clearValue('id','org.wikipedia:id/search_src_text')
 
 //Mention a selector object and index
 //Click on the nth element with id `org.wikipedia:id/search_src_text`
-app.clearValue({selector: 'org.wikipedia:id/search_src_text', locateStrategy: 'id', index: n})
+app.clearValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n})
 </code></pre></div>
 
 ### Set Value
 
-You can directly set the value of an element by using `app.setValue("selector strategy","selector","value")`  or `app.setValue(selector object, "value")`.
+You can directly set the value of an element by using `app.setValue('selector strategy','selector','value')`  or `app.setValue(selector object,'value')`.
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Mention the selector strategy followed by the selector itself
-//Type the text "Value" the element with id `org.wikipedia:id/search_container`
-app.setValue("id","org.wikipedia:id/search_src_text", "Value")
+//Type the text 'Value' the element with id `org.wikipedia:id/search_container`
+app.setValue('id','org.wikipedia:id/search_src_text','Value')
 
 //Mention a selector object and index
-//Type "Value" in the nth element with id `org.wikipedia:id/search_src_text`
-app.setValue({selector: 'org.wikipedia:id/search_src_text', locateStrategy: 'id', index: n}, "Value")
+//Type 'Value' in the nth element with id `org.wikipedia:id/search_src_text`
+app.setValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n},'Value')
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Mention the selector strategy followed by the selector itself
-//Type the text "Value" the element with id `org.wikipedia:id/search_container`
-app.setValue("id","org.wikipedia:id/search_src_text", "Value")
+//Type the text 'Value' the element with id `org.wikipedia:id/search_container`
+app.setValue('id','org.wikipedia:id/search_src_text','Value')
 
 //Mention a selector object and index
-//Type "Value" in the nth element with id `org.wikipedia:id/search_src_text`
-app.setValue({selector: 'org.wikipedia:id/search_src_text', locateStrategy: 'id', index: n}, "Value")
+//Type 'Value' in the nth element with id `org.wikipedia:id/search_src_text`
+app.setValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n},'Value')
 </code></pre></div>
 
 ### Contexts
 
-A single application can have multiple contexts such as web view or native app. Managing contexts would be essential for some flows such as `Authentication`, which may load a web view in your native app.
+A single application can have multiple contexts such as web view or native app. Managing contexts would be essential for some flows such as `Authentication`,which may load a web view in your native app.
 
 #### Get Context
 
@@ -168,17 +168,17 @@ You can start a new Activity by using `app.appium.startActivity(options)`. Optio
 9. dontStopAppOnReset `BOOLEAN`: Should the app stop on reset
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-//Start an Activity with package name `com.example` & activity name "Activity"
+//Start an Activity with package name `com.example` & activity name 'Activity'
 app.appium.startActivity({
-  appPackage: "com.example",
-  appActivity: "Activity"
+  appPackage: 'com.example',
+  appActivity: 'Activity'
 })
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
-//Start an Activity with package name `com.example` & activity name "Activity"
+//Start an Activity with package name `com.example` & activity name 'Activity'
 app.appium.startActivity({
-  appPackage: "com.example",
-  appActivity: "Activity"
+  appPackage: 'com.example',
+  appActivity: 'Activity'
 })
 </code></pre></div>
 
@@ -227,16 +227,16 @@ Set the orientation of the device to `LANDSCAPE` or `POTRAIT`
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Set current orientation to LANDSCAPE
-await app.appium.setOrientation("LANDSCAPE");
+await app.appium.setOrientation('LANDSCAPE');
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Set current orientation to LANDSCAPE
-await app.appium.setOrientation("LANDSCAPE");
+await app.appium.setOrientation('LANDSCAPE');
 </code></pre></div>
 
 ### Get Geolocation
 
-Retrieve the current geolocation of the device. The returned value will contain `latitude`, `longitude` and `altitude`.
+Retrieve the current geolocation of the device. The returned value will contain `latitude`,`longitude` and `altitude`.
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Get current geolocation
@@ -249,15 +249,15 @@ const geolocation =  await app.appium.getGeolocation();
 
 ### Set Geolocation
 
-Set the geolocation of device using `latitude`, `longitude` & `altitude`
+Set the geolocation of device using `latitude`,`longitude` & `altitude`
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Set current geolocation
-await app.appium.setGeolocation({latitude:23.03, longitude: 34.23, altitude: 35.03});
+await app.appium.setGeolocation({latitude:23.03,longitude: 34.23,altitude: 35.03});
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 //Set current geolocation
-await app.appium.setGeolocation({latitude:23.03, longitude: 34.23, altitude: 35.03});
+await app.appium.setGeolocation({latitude:23.03,longitude: 34.23,altitude: 35.03});
 </code></pre></div>
 
 ### Keyboard Related
@@ -320,7 +320,7 @@ const keyboardShown = await app.appium.isKeyboardShown();
 
 ### Recommended next steps
 
-Now that you understand selectors and commands, you can proceed towards understanding how assertions work with Nightwatch  
+Now that you understand selectors and commands,you can proceed towards understanding how assertions work with Nightwatch  
 
 [Assertions][3]
 

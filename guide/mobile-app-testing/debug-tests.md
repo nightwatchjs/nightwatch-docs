@@ -8,7 +8,7 @@ summary_image: https://nightwatchjs.org/img/banner.png
 
 ### Overview
 
-Debugging mobile app tests is not as straightforward as the web as dev tools is not available. Inorder to debug mobile app tests, Appium inspector will have to be setup and attached to a test session
+Debugging mobile app tests is not as straightforward as the web as dev tools is not available. Inorder to debug mobile app tests,Appium inspector will have to be setup and attached to a test session
 
 ### Pre-requisites
 
@@ -25,7 +25,7 @@ Add a debug point just before the error using `.debug()` command in the test scr
 app
   .useXpath()
   .click('//XCUIElementTypeSearchField[@name="Search Wikipedia"]')
-  .sendKeys('//XCUIElementTypeSearchField[@name="Search Wikipedia"]', 'browserstack')
+  .sendKeys('//XCUIElementTypeSearchField[@name="Search Wikipedia"]','browserstack')
   .click('//XCUIElementTypeStaticText[@name="BrowserStack"]')
   .debug()
 </code></pre></div>
@@ -46,7 +46,7 @@ That's it! Your test session has been setup for debugging
 
 #### Step 4
 
-Once the tests session is attached, you can select elements in the left pane to highlight it in the `App Source` pane and view all the details & attributes in the `Selected Element` pane as shown below.
+Once the tests session is attached,you can select elements in the left pane to highlight it in the `App Source` pane and view all the details & attributes in the `Selected Element` pane as shown below.
 
 ![Debugging with Appium Inspector][image-2]
 
@@ -67,7 +67,7 @@ Add a debug point just before the error using `.debug()` command in the test scr
 app
   .useXpath()
   .click('//XCUIElementTypeSearchField[@name="Search Wikipedia"]')
-  .sendKeys('//XCUIElementTypeSearchField[@name="Search Wikipedia"]', 'browserstack')
+  .sendKeys('//XCUIElementTypeSearchField[@name="Search Wikipedia"]','browserstack')
   .click('//XCUIElementTypeStaticText[@name="BrowserStack"]')
   .debug()
 </code></pre></div>

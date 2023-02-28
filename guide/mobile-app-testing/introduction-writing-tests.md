@@ -125,7 +125,7 @@ Additionally you can also use `Chai` style assertions
 
 For e.g.
 <div class="sample-test">
-<i>Sample Chai Exception</i><pre class="line-numbers"><code class="language-javascript">app.appium.getCurrentActivity((activity)=>{
+<i>Sample Chai Exception</i><pre class="line-numbers"><code class="language-javascript">app.appium.getCurrentActivity(function(activity){
     expect(activity.value).to.equal(".page.PageActivity")
 })
 </code></pre></div>

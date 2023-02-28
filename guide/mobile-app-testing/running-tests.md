@@ -8,7 +8,7 @@ summary_image: https://nightwatchjs.org/img/banner.png
 
 ### Overview
 
-Nightwatch tests can be run on Android emulators, iOS simulators, real Android & iOS devices as well as on cloud providers. Similar to web automation, native mobile app automation also leverages the concept of [environments][1] . To run your test suite anywhere, you just have to configure the environment once and use in the test run commands. 
+Nightwatch tests can be run on Android emulators,iOS simulators,real Android & iOS devices as well as on cloud providers. Similar to web automation,native mobile app automation also leverages the concept of [environments][1] . To run your test suite anywhere,you just have to configure the environment once and use in the test run commands. 
 
 ### Android Emulator
 
@@ -50,14 +50,14 @@ test_settings:{
         // More capabilities can be found at https://github.com/appium/appium-uiautomator2-driver#capabilities
         browserName: null,
         platformName: 'android',
-        // `appium:options` is not natively supported in Appium v1, but works with Nightwatch.
-        // If copying these capabilities elsewhere while using Appium v1, make sure to remove `appium:options`
-        // and add `appium:` prefix to each one of its capabilities, e.g. change 'app' to 'appium:app'.
+        // `appium:options` is not natively supported in Appium v1,but works with Nightwatch.
+        // If copying these capabilities elsewhere while using Appium v1,make sure to remove `appium:options`
+        // and add `appium:` prefix to each one of its capabilities,e.g. change 'app' to 'appium:app'.
         'appium:options': {
           automationName: 'UiAutomator2',
           // Android Virtual Device to run tests on
           avd: 'nightwatch-android-11',
-          // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
+          // While Appium v1 supports relative paths,it's more safe to use absolute paths instead.
           // Appium v2 does not support relative paths.
           app: `${__dirname}/nightwatch/sample-apps/wikipedia.apk`,
           appPackage: 'org.wikipedia',
@@ -104,14 +104,14 @@ test_setting:{
         // More capabilities can be found at https://github.com/appium/appium-xcuitest-driver#capabilities
         browserName: null,
         platformName: 'ios',
-        // `appium:options` is not natively supported in Appium v1, but works with Nightwatch.
-        // If copying these capabilities elsewhere while using Appium v1, make sure to remove `appium:options`
-        // and add `appium:` prefix to each one of its capabilities, e.g. change 'app' to 'appium:app'.
+        // `appium:options` is not natively supported in Appium v1,but works with Nightwatch.
+        // If copying these capabilities elsewhere while using Appium v1,make sure to remove `appium:options`
+        // and add `appium:` prefix to each one of its capabilities,e.g. change 'app' to 'appium:app'.
         'appium:options': {
           automationName: 'XCUITest',
           // platformVersion: '15.5',
           deviceName: 'iPhone 13',
-          // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
+          // While Appium v1 supports relative paths,it's more safe to use absolute paths instead.
           // Appium v2 does not support relative paths.
           app: `${__dirname}/nightwatch/sample-apps/wikipedia.zip`,
           bundleId: 'org.wikimedia.wikipedia',
@@ -153,12 +153,12 @@ Add the environment in the `nightwatch.conf.js` file. Ensure that the `app` bloc
       // More capabilities can be found at https://github.com/appium/appium-uiautomator2-driver#capabilities
       browserName: null,
       platformName: 'android',
-      // `appium:options` is not natively supported in Appium v1, but works with Nightwatch.
-      // If copying these capabilities elsewhere while using Appium v1, make sure to remove `appium:options`
-      // and add `appium:` prefix to each one of its capabilities, e.g. change 'app' to 'appium:app'.
+      // `appium:options` is not natively supported in Appium v1,but works with Nightwatch.
+      // If copying these capabilities elsewhere while using Appium v1,make sure to remove `appium:options`
+      // and add `appium:` prefix to each one of its capabilities,e.g. change 'app' to 'appium:app'.
       'appium:options': {
         automationName: 'UiAutomator2',
-        // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
+        // While Appium v1 supports relative paths,it's more safe to use absolute paths instead.
         // Appium v2 does not support relative paths.
         app: `${__dirname}/nightwatch/sample-apps/wikipedia.apk`,
         appPackage: 'org.wikipedia',
@@ -167,12 +167,12 @@ Add the environment in the `nightwatch.conf.js` file. Ensure that the `app` bloc
         // 'chromedriver' binary is required while testing hybrid mobile apps.
         // 
         // Set `chromedriverExecutable` to '' to use binary from `chromedriver` NPM package (if installed).
-        // Or, put '--allow-insecure=chromedriver_autodownload' in `cli_args` property of `selenium`
+        // Or,put '--allow-insecure=chromedriver_autodownload' in `cli_args` property of `selenium`
         // config (see 'app' env above) to automatically download the required version of chromedriver
         // (delete `chromedriverExecutable` capability below in that case).
         chromedriverExecutable: '',
         newCommandTimeout: 0,
-        // add device id of the device to run tests on, if multiple devices are online
+        // add device id of the device to run tests on,if multiple devices are online
         // Run command: `$ANDROID_HOME/platform-tools/adb devices` to get all connected devices
         // udid: '',
       }
@@ -187,14 +187,14 @@ Ensure that you replace the following values
 2. appPackage
 3. appActivity
 4. appWaitActivity
-5. udid `needed to identify the device where the tests need to run, if multiple devices are online`
+5. udid `needed to identify the device where the tests need to run,if multiple devices are online`
 
 ### Step 3
 
 Ensure that your device is setup correctly to communicate with Nightwatch with the following steps:
 1. [Turn on USB Debugging][2] on your Android Device and connect it to your system via data cable.
-2. Make sure latest version of Chrome browser is installed on your Android device. If not, install from Google Play Store.
-3. Make sure latest version of chromedriver NPM package is installed in your project. If not, install by running:
+2. Make sure latest version of Chrome browser is installed on your Android device. If not,install from Google Play Store.
+3. Make sure latest version of chromedriver NPM package is installed in your project. If not,install by running:
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i chromedriver@latest --save-dev
 </code></pre>
@@ -209,7 +209,7 @@ Run the test using the following command
 
 ### iOS real devices
 
-Similar to running tests on real Android devices, you can also run your Nightwatch tests on real iOS devices. 
+Similar to running tests on real Android devices,you can also run your Nightwatch tests on real iOS devices. 
 
 #### Step 1
 
@@ -224,18 +224,18 @@ Add the environment in the `nightwatch.conf.js` file. Ensure that the `app` bloc
       // More capabilities can be found at https://github.com/appium/appium-xcuitest-driver#capabilities
       browserName: null,
       platformName: 'ios',
-      // `appium:options` is not natively supported in Appium v1, but works with Nightwatch.
-      // If copying these capabilities elsewhere while using Appium v1, make sure to remove `appium:options`
-      // and add `appium:` prefix to each one of its capabilities, e.g. change 'app' to 'appium:app'.
+      // `appium:options` is not natively supported in Appium v1,but works with Nightwatch.
+      // If copying these capabilities elsewhere while using Appium v1,make sure to remove `appium:options`
+      // and add `appium:` prefix to each one of its capabilities,e.g. change 'app' to 'appium:app'.
       'appium:options': {
         automationName: 'XCUITest',
-        // While Appium v1 supports relative paths, it's more safe to use absolute paths instead.
+        // While Appium v1 supports relative paths,it's more safe to use absolute paths instead.
         // Appium v2 does not support relative paths.
         app: `${__dirname}/nightwatch/sample-apps/wikipedia.zip`,
         bundleId: 'org.wikimedia.wikipedia',
         newCommandTimeout: 0,
-        // add udid of the device to run tests on. Or, pass the id to `--deviceId` flag when running tests.
-        // device id could be retrieved from Xcode > Window > "Devices and Simulators" window.
+        // add udid of the device to run tests on. Or,pass the id to `--deviceId` flag when running tests.
+        // device id could be retrieved from Xcode > Window > 'Devices and Simulators' window.
         // udid: '00008030-00024C2C3453402E'
       }
     }
@@ -248,7 +248,7 @@ Ensure that you replace the following with the values corresponding to your app
 1. app
 2. deviceName
 3. bundleId
-4. udid `needed to identify the device where the tests need to run, if multiple devices are online`
+4. udid `needed to identify the device where the tests need to run,if multiple devices are online`
 
 #### Step 3
 
@@ -297,14 +297,14 @@ test_settings:{
       browserName: null,
       'appium:options': {
         automationName: 'UiAutomator2',
-        app: 'wikipedia-sample-app', // custom-id of the uploaded app
+        app: 'wikipedia-sample-app',// custom-id of the uploaded app
         appPackage: 'org.wikipedia',
         appActivity: 'org.wikipedia.main.MainActivity',
         appWaitActivity: 'org.wikipedia.onboarding.InitialOnboardingActivity',
         platformVersion: '11.0',
         deviceName: 'Google Pixel 5'
       },
-      appUploadUrl: 'https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.apk', // url of app to be uploaded to BrowserStack before starting the test
+      appUploadUrl: 'https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.apk',// url of app to be uploaded to BrowserStack before starting the test
       // appUploadPath: '/path/to/app_name.apk' // if the app needs to be uploaded to BrowserStack from local system
     }
   },
