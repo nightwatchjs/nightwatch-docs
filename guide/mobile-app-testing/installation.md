@@ -1,6 +1,6 @@
 ---
-title: Mobile app testing installation for Nightwatch
-description: Learn how to install Appium,SDKs,AVDs and all the other tools to run Nightwatch tests on mobile devices
+title: Mobile app testing installation
+description: Learn how to install Appium, SDKs, AVDs and all the other tools to run Nightwatch tests on mobile devices.
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
@@ -8,14 +8,14 @@ summary_image: https://nightwatchjs.org/img/banner.png
 
 ### Overview
 
-Inorder to run mobile app testing with Nightwatch,there are a few things that need to be installed
+In order to run mobile app testing with Nightwatch, there are a few things that need to be installed:
 
 1. Appium
 2. Command line tools
 3. SDKs for respective platforms
 4. Virtual devices
 
-However,Nightwatch simplifies the setup of all these via the Mobile Helper tool. 
+However, Nightwatch simplifies the setup of all these via the Mobile Helper tool. 
 
 [Mobile Helper Github][1]
 
@@ -68,10 +68,10 @@ to your existing setup (if any):
 (/Users/vishal/Library/Android/sdk) </code></pre>s
 
 <b>Step 3</b></br>
-After verification if all requirementss are not met or if there is an error,follow the instructions to resolve them. 
+After verification if all requirements are not met or if there is an error, follow the instructions to resolve them. 
 
 <b>Step 4</b></br>
-Next,setup Appium 2 in your project with the following command.
+Next, setup Appium 2 in your project with the following command.
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium@next --save-dev</code></pre>
 
@@ -83,7 +83,7 @@ Install Appium UiAutomator2 driver for Android
 <b>Step 6</b></br>
 Download the sample [wikipedia app][3] and save it in your project's root directory (alongside nightwatch.conf.js file).
 
-<b>Step  7</b></b>
+<b>Step 7</b></b>
 Add Nightwatch environments for Android emulators and real devices.
 
 <div class="sample-test">
@@ -175,8 +175,8 @@ Add Nightwatch environments for Android emulators and real devices.
 }
 </code></pre></div>
 
-<b>Step  8</b></b>
-Add the following sample test file under the `nightwatch/examples/mobile-app-tests/wikipedia-android.js` file
+<b>Step 8</b></b>
+Add the following sample test file under the `nightwatch/examples/mobile-app-tests/wikipedia-android.js` file:
 
 <div class="sample-test">
 <i>nightwatch/examples/mobile-app-tests/wikipedia-android.js</i><pre class="line-numbers"><code class="language-javascript">

@@ -1,14 +1,14 @@
 ---
-title: Introduction to running native mobile app tests
-description:  Introduction to running native mobile app Nightwatch tests on real,virtual and cloud devices
+title: Running native mobile app tests
+description:  Introduction to running native mobile app Nightwatch tests on real, virtual and cloud devices.
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-<div class="page-header"><h2>Introduction to running tests on real,virtual & cloud devices</h2></div>
+<div class="page-header"><h2>Run tests on real, virtual, and cloud devices</h2></div>
 
 ### Overview
 
-Nightwatch tests can be run on Android emulators,iOS simulators,real Android & iOS devices as well as on cloud providers. Similar to web automation,native mobile app automation also leverages the concept of [environments][1] . To run your test suite anywhere,you just have to configure the environment once and use in the test run commands. 
+Nightwatch tests can be run on Android emulators, iOS simulators, real Android, and iOS devices as well as on cloud providers. Similar to web automation, native mobile app automation also leverages the concept of [environments][1 . To run your test suite anywhere, you just have to configure the environment once and use in the test run commands. 
 
 ### Android Emulator
 
@@ -17,8 +17,7 @@ Nightwatch tests can be run on Android emulators,iOS simulators,real Android & i
 Ensure that the environment is added in the `nightwatch.conf.js` file
 
 <div class="sample-test">
-<i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">
-test_settings:{
+<i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">test_settings: {
   ...
   app: {
       selenium: {
@@ -43,8 +42,9 @@ test_settings:{
         keep_alive: false,
         start_process: false
       }
-    },
-  'app.android.emulator': {
+  },
+  
+   'app.android.emulator': {
       extends: 'app',
       'desiredCapabilities': {
         // More capabilities can be found at https://github.com/appium/appium-uiautomator2-driver#capabilities
@@ -125,7 +125,7 @@ test_setting:{
 
 #### Step 2
 
-Ensure that you replace the following with the values corresponding to your app
+Ensure that you replace the following with the values corresponding to your app:
 1. app
 2. deviceName
 3. bundleId
@@ -328,7 +328,7 @@ test_settings:{
 
 #### Step 2
 
-Ensure that you replace the following with the values corresponding to your app
+Ensure that you replace the following with the values corresponding to your app:
 1. Browserstack username
 2. BrowserStack key
 3. app
@@ -341,11 +341,10 @@ Ensure that you replace the following with the values corresponding to your app
 
 #### Step 3
 
-Run the tests using the following command
+Run the tests using the following commands:
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch &#60;path to tests&#62; --env browserstack.android
-npx nightwatch &#60;path to tests&#62; --env browserstack.ios
-</code></pre>
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch &#60;path to tests&#62; --env browserstack.android</code></pre>
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch &#60;path to tests&#62; --env browserstack.ios</code></pre>
 
 ### Recommended next steps
 

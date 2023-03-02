@@ -1,14 +1,14 @@
 ---
 title: Commands for native mobile app tests
-description:  Introduction to commands that can be used for native mobile apps
+description:  Introduction to commands that can be used for native mobile apps.
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-<div class="page-header"><h2>Introduction to commands for native mobile apps test</h2></div>
+<div class="page-header"><h2>Commands for native mobile apps test</h2></div>
 
 ### Overview
 
-Using commands,you can interact with elements in the mobile application or the OS itself by specifying selectors. Please refer to this [guide][1] to understand how selectors work in the context of native mobile applications. 
+Using commands, you can interact with elements in the mobile application or the OS itself by specifying selectors. Please refer to this [guide][1] to understand how selectors work in the context of native mobile applications. 
 
 ### App related commands
 
@@ -16,24 +16,25 @@ These commands can be used to interact with the mobile application
 
 ### Click
 
-To click on an element,simply use `app.click('selector strategy','selector')`  or `app.click(selector object)` . You can find the element using Appium inspector
+To click on an element,simply use `app.click('selector strategy','selector')`  or `app.click(selector object)` . You can find the element using Appium inspector.
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-//Mention the selector strategy followed by the selector itself
-//Click on the element with id `org.wikipedia:id/search_container`
+// Mention the selector strategy followed by the selector itself
+// Click on the element with id `org.wikipedia:id/search_container`
 app.click('id','org.wikipedia:id/search_container')
 
-//Mention a selector object and index
-//Click on the nth element with id `org.wikipedia:id/page_list_item_title`
+// Mention a selector object and index.
+// Click on the nth element with id `org.wikipedia:id/page_list_item_title`
 app.click({selector: 'org.wikipedia:id/page_list_item_title',locateStrategy: 'id',index: n})
 </code></pre>
+
 <pre data-language="typescript"><code class="language-typescript">
-//Mention the selector strategy followed by the selector itself
-//Click on the element with id `org.wikipedia:id/search_container`
+// Mention the selector strategy followed by the selector itself
+// Click on the element with id `org.wikipedia:id/search_container`
 app.click('id','org.wikipedia:id/search_container')
 
-//Mention a selector object and index
-//Click on the nth element with id `org.wikipedia:id/page_list_item_title`
+// Mention a selector object and index
+// Click on the nth element with id `org.wikipedia:id/page_list_item_title`
 app.click({selector: 'org.wikipedia:id/page_list_item_title',locateStrategy: 'id',index: n})
 </code></pre></div>
 
@@ -108,7 +109,7 @@ app.setValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',
 
 ### Contexts
 
-A single application can have multiple contexts such as web view or native app. Managing contexts would be essential for some flows such as `Authentication`,which may load a web view in your native app.
+A single application can have multiple contexts such as web view or native app. Managing contexts would be essential for some flows such as `Authentication`, which may load a web view in your native app.
 
 #### Get Context
 
@@ -190,10 +191,6 @@ Retrieve the current activity name using `app.appium.getCurrentActivity()`
 //Get current activity name
 const activity =  await app.appium.getCurrentActivity();
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Get current activity name
-const activity =  await app.appium.getCurrentActivity();
-</code></pre></div>
 
 ### Get Current Package
 
@@ -203,10 +200,6 @@ Retrieve the current package name using `app.appium.getCurrentPackage()`
 //Get current package name
 const package =  await app.appium.getCurrentPackage();
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Get current package name
-const package =  await app.appium.getCurrentPackage();
-</code></pre></div>
 
 ### Get Orientation
 
@@ -216,10 +209,6 @@ Retrieve the current orientation of the device. The returned value will be `POTR
 //Get current orientation
 const orientation =  await app.appium.getCurrentOrientation();
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Get current orientation
-const orientation =  await app.appium.getCurrentOrientation();
-</code></pre></div>
 
 ### Set Orientation
 
@@ -229,10 +218,6 @@ Set the orientation of the device to `LANDSCAPE` or `POTRAIT`
 //Set current orientation to LANDSCAPE
 await app.appium.setOrientation('LANDSCAPE');
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Set current orientation to LANDSCAPE
-await app.appium.setOrientation('LANDSCAPE');
-</code></pre></div>
 
 ### Get Geolocation
 
@@ -242,10 +227,6 @@ Retrieve the current geolocation of the device. The returned value will contain 
 //Get current geolocation
 const geolocation =  await app.appium.getGeolocation();
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Get current geolocation
-const geolocation =  await app.appium.getGeolocation();
-</code></pre></div>
 
 ### Set Geolocation
 
@@ -255,10 +236,6 @@ Set the geolocation of device using `latitude`,`longitude` & `altitude`
 //Set current geolocation
 await app.appium.setGeolocation({latitude:23.03,longitude: 34.23,altitude: 35.03});
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Set current geolocation
-await app.appium.setGeolocation({latitude:23.03,longitude: 34.23,altitude: 35.03});
-</code></pre></div>
 
 ### Keyboard Related
 
@@ -270,10 +247,6 @@ Press a particular key on the keyboard using app.appium.pressKeyCode(key code). 
 //Press Keycode Back 
 await app.appium.pressKeyCode(4);
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Press Keycode Back 
-await app.appium.pressKeyCode(4);
-</code></pre></div>
 
 <p class="alert alert-info">This works only on Android</p>
 
@@ -285,10 +258,6 @@ Long press a particular key on the keyboard using app.appium.longPressKeyCode(ke
 //Press Keycode Back 
 await app.appium.longPressKeyCode(4);
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Press Keycode Back 
-await app.appium.longPressKeyCode(4);
-</code></pre></div>
 
 <p class="alert alert-info">This works only on Android</p>
 
@@ -300,10 +269,6 @@ Hide the keyboard using app.appium.hideKeyboard()
  //Hide keyboard 
 await app.appium.hideKeyboard();
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Hide keyboard 
-await app.appium.hideKeyboard();
-</code></pre></div>
 
 #### Is Keyboard Shown
 
@@ -313,10 +278,6 @@ Check if the keyboard is shown or not using `app.appium.isKeyboardShown()`. This
  //Is keyboard shown 
 const keyboardShown = await app.appium.isKeyboardShown();
 </code></pre>
-<pre data-language="typescript"><code class="language-typescript">
-//Is keyboard shown 
-const keyboardShown = await app.appium.isKeyboardShown();
-</code></pre></div>
 
 ### Recommended next steps
 

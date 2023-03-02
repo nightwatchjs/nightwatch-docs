@@ -1,14 +1,14 @@
 ---
 title: Selectors for native mobile app tests
-description:  Introduction to selectors to find elements for native mobile apps
+description:  Introduction to selectors to find elements for native mobile apps.
 summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
-<div class="page-header"><h2>Introduction to selectors for native mobile apps test</h2></div>
+<div class="page-header"><h2>Selectors for native mobile apps test</h2></div>
 
 ### Overview
 
-Selectors are at the core of finding elements before you can interact with them or assert using them. Nightwatch supports the following selectors strategies, which can be used to locate your elements
+Selectors are at the core of finding elements before you can interact with them or assert using them. Nightwatch supports the following selectors strategies, which can be used to locate your elements:
 - id
 - xpath
 
@@ -18,7 +18,7 @@ This is the native element id i.e. `resource-id` on Android & `name` for iOS . E
 
 ![Example of ID selector][image-1]
 
-As you can see the highlighted element has an id value `org.wikipedia:id/search_src_text`
+As you can see the highlighted element has an id value `org.wikipedia:id/search_src_text`.
 
 To interact with that element, selector strategy would be `id` and selector string would be `org.wikipedia:id/search_src_text`.
 

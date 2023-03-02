@@ -8,13 +8,13 @@ summary_image: https://nightwatchjs.org/img/banner.png
 
 ### Overview
 
-The goal of any automated test is to write assertions and ensure that the logic is working. In Nightwatch there are 2 ways in which assertions can be done
+The goal of any automated test is to write assertions and ensure that the logic is working. In Nightwatch there are 2 ways in which assertions can be done:
 - app.assert.command(params)
 - expects
 
 ### Assertions
 
-All assertions are organised under the `.assert` namespace
+All assertions are organised under the `.assert` namespace.
 
 ### Text Related
 
@@ -185,7 +185,7 @@ app.appium.getCurrentActivity(function(activity){
 })
 </code></pre></div>
 
-The way to use expects with mobile apps is the same as web. Please refer to the [guide][1] for more details
+The way to use expects with mobile apps is the same as web. Please refer to the [guide][1] for more details.
 
 ### Recommended next steps
 
