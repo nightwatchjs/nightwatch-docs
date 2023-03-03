@@ -119,11 +119,11 @@ This shows how the baseline image and along with the diff. Every pixel that did 
 
 ![Baseline & Diff][image-1]
 
-As you can notice, the diff % is also shown. If the threshold value is below the diff%, VRT engine will not mark the test as failed. 
+As you can notice, the diff % is also shown. If the diff% is less than the threshold, VRT engine will not mark the test as failed. 
 
 #### Baseline & Latest
 
-This shows how the current image differs from the baseline image
+This shows how the current image differs from the baseline image.
 
 ![Baseline & Latest][image-2]
 
