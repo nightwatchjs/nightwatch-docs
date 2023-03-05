@@ -1,7 +1,7 @@
 ---
 title: Accessibility Testing
 description: Learn about how to do Accessibility testing with Nightwatch
-summary_image: https://nightwatchjs.org/img/a11y-testing.png
+summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Accessibility (A11y) testing in Nightwatch</h1></div>

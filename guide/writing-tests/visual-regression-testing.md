@@ -1,7 +1,7 @@
 ---
 title: Visual Regression Testing
-description: Learn about how to do Visual Regression Testing testing with Nightwatch
-summary_image: https://nightwatchjs.org/img/a11y-testing.png
+description: Learn how to do visual regression testing in Nightwatch.
+summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Visual Regression Testing (VRT) using Nightwatch</h1></div>
@@ -11,6 +11,7 @@ summary_image: https://nightwatchjs.org/img/a11y-testing.png
 Visual Regression Testing (VRT) is a type of software testing technique that compares screenshots or images of a user interface before and after changes have been made to the application. The goal of VRT is to detect unintended visual changes that may have been introduced during development, such as changes to layout, colour, typography, or other visual elements.
 
 Visual Regression Testing typically involves the following steps:
+
 1. Capture screenshots of the application or webpage before and after changes have been made.
 2. Compare the screenshots pixel-by-pixel to identify any differences.
 3. Review and analyse the differences to determine whether they are intentional or unintentional.
@@ -18,9 +19,10 @@ Visual Regression Testing typically involves the following steps:
 
 ### How does it work?
 
-Nightwatch uses [JIMP][1], a Javascript image processing library with no native dependencies , to do the image comparison.
+Nightwatch uses [JIMP][1], a Javascript image processing library with no native dependencies, to do the image comparison.
 
-Nightwatch logic
+Nightwatch logic:
+
 1. Waits for the elements to be present
 2. Takes a screenshot
 3. Compares screenshot with baseline
@@ -29,10 +31,9 @@ Nightwatch logic
 ### Installation
 
 #### Step 1
-Install the plugin with this command 
+Install the plugin with this command: 
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i @nightwatch/vrt --save-dev
-</code></pre>
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i @nightwatch/vrt --save-dev</code></pre>
 
 #### Step 2
 
@@ -41,7 +42,7 @@ Update the Nightwatch configuration to add the plugin to the list
 <div class="sample-test">
 <i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
   plugins: ['@nightwatch/vrt']
-  // other nightwath settings...
+  // other nightwatch settings...
 }
 </code></pre></div>
 
@@ -49,13 +50,15 @@ Update the Nightwatch configuration to add the plugin to the list
 
 In order to use `nightwatch-vrt`, you only need to invoke the `screenshotIdenticalToBaseline` assertion and pass a css selector for the DOM element to compare. You may also pass a custom filename, `visual_regression_settings` overrides, and a custom log message.
 
-The `screenshotIdenticalToBaseline` takes 4 parameters as an input
-1. selector - Identifies the element that will be captured in the screenshot.
-2. fileName - Optional file name for this screenshot; defaults to the selector
-3. settings - Optional settings to override the defaults and `visual_regression_settings`
-4. message - Optional `message` for nightwatch to log upon completion
+The `screenshotIdenticalToBaseline` takes 4 parameters as an input:
 
-E.g. 
+1. `selector` - Identifies the element that will be captured in the screenshot
+2. `fileName` - Optional file name for this screenshot; defaults to the selector
+3. `settings` - Optional settings to override the defaults and `visual_regression_settings`
+4. `message` - Optional `message` for nightwatch to log upon completion
+
+E.g.:
+
 <div class="sample-test">
 <i>vrt-demo.js</i><pre class="line-numbers"><code class="language-javascript">describe('VRT demo test', function() {
     it('Test Google UI loads correctly', function(browser) {
@@ -71,7 +74,7 @@ E.g.
 
 ### Visual Regression Settings
 
-Nightwatch VRT ships with carefully thought through default settings. Here is the list: -
+Nightwatch VRT ships with carefully thought through default settings. Here is the list: 
 
 1. generate_screenshot_path `default none` - Passed function that will generate a screenshot path
 2. latest_screenshots_path `default "vrt/latest"` - Path to the most recently captured screenshots
@@ -84,16 +87,13 @@ Nightwatch VRT ships with carefully thought through default settings. Here is th
 9. prompt `default false` - If true, the user will be prompted to override baseline screenshot when the recently captured screenshot differs
 10. updateScreenshots `default false` - If true, recently captured screenshots will always override the baseline
 
-However, these can be overridden globally via `nightwatch.conf.js` as shown `below`
+However, these can be overridden globally via `nightwatch.conf.js` as shown `below`:
 
-<div class="sample-test">
-<i>vrt-demo.js</i><pre class="line-numbers"><code class="language-javascript">//nightwatch.conf.js
+<div class="sample-test"><i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
 
-module.exports = {
-    
-    //... other config
+  //... other config
 
-   '@nightwatch/vrt': {
+  '@nightwatch/vrt': {
     latest_screenshots_path: 'vrt/latest',
     latest_suffix: '',
     baseline_screenshots_path: 'vrt/baseline',
@@ -107,7 +107,7 @@ module.exports = {
 }
 </code></pre></div>
 
-Further the settings can also be overriden passing as a JSON object (settings argument) as shown in the [example][2] as part of the `screenshotIdenticalToBaseline` assertion. Settings passed as a function argument will override the ones in the config file & default values.
+Further the settings can also be overridden passing as a JSON object (settings argument) as shown in the [example][2] as part of the `screenshotIdenticalToBaseline` assertion. Settings passed as a function argument will override the ones in the config file & default values.
 
 ### Review
 
@@ -131,9 +131,8 @@ This shows how the current image differs from the baseline image.
 
 Once you have reviewed that all visual changes are intentional, you can update the baseline by using the `--update-screenshots` flag. This is important as all further comparisons will happen against the new baseline.
 
-E.g. 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch &#60;path to tests&#62; --update-screenshots
-</code></pre>
+E.g.: 
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch &#60;path to tests&#62; --update-screenshots</code></pre>
 
 
 [1]:  https://www.npmjs.com/package/jimp
