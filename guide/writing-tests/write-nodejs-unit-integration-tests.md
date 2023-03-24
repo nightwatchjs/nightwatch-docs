@@ -160,21 +160,12 @@ For details on how an LCOV reporter should look like and how to integrate with y
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/write-component-tests-for-react.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/api-testing.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Write component tests (React)</span>
+          <span class="bigT">API testing</span>
         </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/chrome-devtools-recorder.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Using Chrome Devtools Recorder</span>
-        </div>
-        <span>→</span>
     </a>
   </div>
 </div>

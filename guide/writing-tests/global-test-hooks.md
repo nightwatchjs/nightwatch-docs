@@ -92,10 +92,10 @@ The methods are defined in the external `globals` file and invoked using the `gl
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/write-component-tests-for-react.html">
+    <a href="https://nightwatchjs.org/guide/using-nightwatch/accessibility-testing.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Write component tests (React)</span>
+          <span class="bigT">Accessibility testing</span>
         </div>
         <span>→</span>
     </a>

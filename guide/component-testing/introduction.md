@@ -9,7 +9,7 @@ summary\_image: /img/banners/component-testing-overview.png
 ### Overview
 Component testing is used to test individual components in isolation. It has become crucial with the rise of reusable component UI frameworks. Unit testing single page front-end applications usually presents an entire set of issues to deal with over regular approaches of unit testing. In order to reliably test a web component in isolation, we need to be able to render it first.
 
-### How Does it Work?
+### How does it work?
 Component testing in Nightwatch is built out of our vite-plugin-nightwatch plugin. The plugin can be used in projects that are using Vite. 
 
 <div style="text-align: center; max-width: 80%; margin-bottom: 30px">
@@ -26,7 +26,7 @@ Our initial aim is to support React and Vue components and once Vue and React su
 ### Rendering components
 When testing web components, the crucial aspect is how the component is rendered. In many cases, rendering using a real browser might seem like an overkill and something clumsy that will slow everything down. For instance, a large project might have a dedicated QA team who takes care of the end-to-end testing and in such a case, it might seem unnecessary to write component tests using real browsers, especially if it’s overly complicated or slow.
 
-#### Rendering Using JSDom
+#### Rendering using JSDom
 
 [JSDom][3] is tool which offers the possibility to render a web component using a Node.js virtual renderer, without the need of a real browser. Everything happens in the CLI and it’s usually pretty fast. Here’s how it normally looks like:
 <div style="text-align: center">![https://blog.nightwatchjs.org/content/images/2022/02/component-testing.001.png][image-1]</div>
