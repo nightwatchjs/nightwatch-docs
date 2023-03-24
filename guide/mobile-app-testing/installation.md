@@ -15,26 +15,25 @@ In order to run mobile app testing with Nightwatch, there are a few things that 
 3. SDKs for respective platforms
 4. Virtual devices
 
-However, Nightwatch simplifies the setup of all these via the Mobile Helper tool. 
+However, Nightwatch simplifies the setup of all these via the Mobile Helper tool.
 
-[Mobile Helper Github][1]
+[Mobile Helper Github](https://github.com/nightwatchjs/mobile-helper-tool)
 
 ### Setting up a new project
 
-When you run 
+When you run
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm init nightwatch</code> <code style="color: #aaa9a2; font-size: 20px">&#60;directory-name&#62;</code></pre>
 
-the 1st question presented would be 
+the 1st question presented would be
 
 <pre class="hide-indicator"><code>? Select testing type to setup for your project (Press &#60;space&#62; 
 to select,&#60;a&#62; to toggle all,&#60;i&#62; to invert selection,and 
 &#60;enter&#62; to proceed)
 ❯◯ End-to-End testing
  ◯ Component testing
- ◉ Mobile app testing</code></pre>
 
-Make sure that the Mobile app testing is selected. The rest will be a series of questions/steps that you will have to go through and Nightwatch will do the heavy-lifting of installing everything required or giving instructions wherever needed. 
+Make sure that the Mobile app testing is selected. The rest will be a series of questions/steps that you will have to go through and Nightwatch will do the heavy-lifting of installing everything required or giving instructions wherever needed.
 
 If you are planning to just do mobile app testing,you can alternatively initiate Nightwatch installation with the app mode using the command
 
@@ -44,7 +43,6 @@ In case you select Android,there is 1 important point to note. Select the defaul
 
 <pre class="hide-indicator"><code>? Where do you want the Android SDK setup? Please give the path 
 to your existing setup (if any): 
-(/Users/vishal/Library/Android/sdk) </code></pre>
 
 That’s it. Nightwatch setup for mobile app testing is complete!
 
@@ -52,38 +50,36 @@ That’s it. Nightwatch setup for mobile app testing is complete!
 
 #### Android
 
-<b>Step 1</b></br>
+Step 1
 Go the to the Nightwatch project directory and run the following command
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx @nightwatch/mobile-helper android --appium
-</code></pre>
 
-<b>Step 2</b></br>
+Step 2
 Answer the questions based on your requirements.
 
 In case you select Android,there is 1 important point to note. Select the default option only if you don’t have the SDK installed to avoid duplication of SDK download. In case you have the SDK installed,please provide the path when this question comes up
 
 <pre class="hide-indicator"><code>? Where do you want the Android SDK setup? Please give the path 
 to your existing setup (if any): 
-(/Users/vishal/Library/Android/sdk) </code></pre>s
 
-<b>Step 3</b></br>
-After verification if all requirements are not met or if there is an error, follow the instructions to resolve them. 
+Step 3
+After verification if all requirements are not met or if there is an error, follow the instructions to resolve them.
 
-<b>Step 4</b></br>
+Step 4
 Next, setup Appium 2 in your project with the following command.
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium@next --save-dev</code></pre>
 
-<b>Step 5</b></br>
+Step 5
 Install Appium UiAutomator2 driver for Android
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx appium driver install uiautomator2</code></pre>
 
-<b>Step 6</b></br>
-Download the sample [wikipedia app][3] and save it in your project's root directory (alongside nightwatch.conf.js file).
+Step 6
+Download the sample [wikipedia app](https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.apk) and save it in your project's root directory (alongside nightwatch.conf.js file).
 
-<b>Step 7</b></b>
+Step 7
 Add Nightwatch environments for Android emulators and real devices.
 
 <div class="sample-test">
@@ -175,7 +171,7 @@ Add Nightwatch environments for Android emulators and real devices.
 }
 </code></pre></div>
 
-<b>Step 8</b></b>
+Step 8
 Add the following sample test file under the `nightwatch/examples/mobile-app-tests/wikipedia-android.js` file:
 
 <div class="sample-test">
@@ -198,39 +194,38 @@ describe('Wikipedia Android app test',function(){
             .appium.setContext('WEBVIEW_org.wikipedia')
             .assert.textEquals('.pcs-edit-section-title','BrowserStack');  // command run in webview context
     });
+
 });
-</code></pre></div>
 
 And done! 🎉 Your Android setup is now complete.
 
 #### iOS
 
-<b>Step 1</b></br>
+Step 1
 Go the to the Nightwatch project directory and run the following command
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx @nightwatch/mobile-helper ios --setups
-</code></pre>
 
-<b>Step 2</b></br>
+Step 2
 Answer the questions based on your requirements.
 
-<b>Step 3</b></br>
-After verification if all requirementss are not met or if there is an error,follow the instructions to resolve them. 
+Step 3
+After verification if all requirementss are not met or if there is an error,follow the instructions to resolve them.
 
-<b>Step 4</b></br>
+Step 4
 After this,setup Appium 2 in your project using
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium@next --save-dev</code></pre>
 
-<b>Step 5</b></br>
+Step 5
 Install Appium XCUITest driver for iOS using
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx appium driver install xcuitest</code></pre>
 
-<b>Step 6</b></br>
-Download the sample [wikipedia app][4] and save it in your project's root directory (alongside nightwatch.conf.js file).
+Step 6
+Download the sample [wikipedia app](https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.zip) and save it in your project's root directory (alongside nightwatch.conf.js file).
 
-<b>Step  7</b></b>
+Step  7
 Add Nightwatch environments for iOS simulators and real devices
 
 <div class="sample-test">
@@ -284,7 +279,7 @@ Add Nightwatch environments for iOS simulators and real devices
                 }
             }
         },
-
+    
         'app.ios.real': {
             extends: 'app',
             'desiredCapabilities': {
@@ -308,10 +303,10 @@ Add Nightwatch environments for iOS simulators and real devices
             }
         },
     }
-}
-</code></pre></div>
 
-<b>Step  8</b></b>
+}
+
+Step  8
 Add the following sample test file under the `nightwatch/examples/mobile-app-tests/wikipedia-ios.js` file
 
 <div class="sample-test">
@@ -334,14 +329,14 @@ Add the following sample test file under the `nightwatch/examples/mobile-app-tes
             .perform(async function() {
             // switch to webview context
             const contexts = await this.appium.getContexts();
-
+    
             await this.appium.setContext(contexts[1]);
             })
             .useCss()
             .assert.textEquals('.pcs-edit-section-title','BrowserStack');  // command run in webview context
     });
+
 });
-</code></pre></div>
 
 Congratulations,your iOS setup is complete
 
@@ -350,40 +345,24 @@ Congratulations,your iOS setup is complete
 Once your installation is complete,validate the setup with the following command to run sample tests on Android emulators using
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch nightwatch/examples/mobile-app-tests/wikipedia-android.js --env app.android.emulator
-</code></pre>
 
 or on iOS simulators using
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch./nightwatch/examples/mobile-app-tests/wikipedia-ios.js --env app.ios.simulator
-</code></pre>
-
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch /nightwatch/examples/mobile-app-tests/wikipedia-ios.js --env app.ios.simulator
 
 ### Install Appium Inspector
 
-Appium inspector would be very helpful in identifying selectors and debugging tests. Inorder to install Appium inspector,go to [Appium Inspector releases][2]  and download the latest version. After installing,simply open Appium Inspector and you are ready to go. Below is how the application will look like on Mac. 
+Appium inspector would be very helpful in identifying selectors and debugging tests. Inorder to install Appium inspector,go to [Appium Inspector releases](https://github.com/appium/appium-inspector/releases)  and download the latest version. After installing,simply open Appium Inspector and you are ready to go. Below is how the application will look like on Mac.
 
-![Appium Inspector][image-1]
-
+![Appium Inspector](https://user-images.githubusercontent.com/1677755/220174481-f423292a-4577-4740-8518-503d1fa19dbd.png)
 
 ### Recommended next steps
 
 Now that you understand how mobile app testing works with Nightwatch,let's dive into the setup. We recommend you cover all the below listed topics to get a complete understanding on mobile app automated testing using Nightwatch.
 
-[Write tests to automate native applications][5] </br>
-[Run tests on virtual devices,real devices & cloud providers][6] </br>
-[Debug tests][7]
-
-[1]:	https://github.com/nightwatchjs/mobile-helper-tool
-[2]:	https://github.com/appium/appium-inspector/releases
-[3]:    https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.apk
-[4]:    https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.zip
-[5]:    /guide/mobile-app-testing/introduction-writing-tests.html
-[6]:    /guide/mobile-app-testing/running-tests.html
-[7]:    /guide/mobile-app-testing/debug-tests.html
-
-
-[image-1]:	https://user-images.githubusercontent.com/1677755/220174481-f423292a-4577-4740-8518-503d1fa19dbd.png
-
+[Write tests to automate native applications](/guide/mobile-app-testing/introduction-writing-tests.html) 
+[Run tests on virtual devices,real devices & cloud providers](/guide/mobile-app-testing/running-tests.html) 
+[Debug tests](/guide/mobile-app-testing/debug-tests.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">
@@ -404,4 +383,3 @@ Now that you understand how mobile app testing works with Nightwatch,let's dive 
   </div>
 </div>
 </div>
-
