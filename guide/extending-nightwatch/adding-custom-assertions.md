@@ -125,7 +125,7 @@ Assertions implement a simple interface which is shared between built-in asserti
 };</code></pre></div>
 
 
-Here is another example, potentially showing a simpler design. It polls the browser for a specific object made by another program.  
+Here is another example, it polls the browser for a specific object made by another program.  
 
 <div class="sample-test"><i>globalObjectReady.js</i>
 <pre class="line-numbers" data-language="javascript"><code class=" language-javascript">{
