@@ -208,7 +208,7 @@ And done! 🎉 Your Android setup is now complete.
 <b>Step 1</b></br>
 Go the to the Nightwatch project directory and run the following command
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx @nightwatch/mobile-helper ios --setups
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx @nightwatch/mobile-helper ios --setup
 </code></pre>
 
 <b>Step 2</b></br>
