@@ -88,24 +88,32 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Resources',
+            title: 'Nightwatch',
             items: [
               {
-                label: "What is NightwatchJS?",
-                to: "/guide/overview/what-is-nightwatch.html",
+                label: 'About',
+                to: '/about'
               },
               {
-                label: 'Guides',
-                to: '/guide',
+                label: 'Blog',
+                to: '/blog',
               },
               {
-                label: 'API Docs',
-                to: '/api'
+                label: 'Newsletter',
+                to: 'https://nightwatch.substack.com',
+              },
+              {
+                label: 'Contribute',
+                to: '/about/contribute/'
+              },
+              {
+                label: 'Release History',
+                to: '/guide/overview/whats-new.html#releases-container'
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Resources',
             items: [
               {
                 label: 'Stack Overflow',
@@ -119,23 +127,31 @@ const config = {
                 label: 'Twitter',
                 href: 'https://twitter.com/nightwatchjs',
               },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
               {
                 label: 'GitHub',
                 href: 'https://github.com/nightwatchjs/',
               },
             ],
           },
+          {
+            title: 'Get Started',
+            items: [
+              {
+                label: "What is NightwatchJS?",
+                to: "/guide/overview/what-is-nightwatch.html",
+              },
+              {
+                label: 'Guides',
+                to: '/guide',
+              },
+              {
+                label: 'API Reference',
+                to: '/api'
+              },
+            ],
+          },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} BrowserStack`,
+        copyright: `Copyright © ${new Date().getFullYear()} <img style="height:20px;" src='img/browserstack-logo.png' \> BrowserStack`,
       },
       prism: {
         theme: lightCodeTheme,
