@@ -3,7 +3,8 @@ title: Cross-browser testing with NightWatch and Selenium Grid
 author: Puja Jagani
 author_title: Selenium contributor
 author_url: https://github.com/pujagani
-tags: [nightwatch-v2]
+tags:
+    - nightwatch-v2
 description: Leveraging Grid with Nightwatch for distributed testing
 draft: true
 date: 2021-11-18
@@ -22,29 +23,34 @@ If you have a local or a cloud device farm, Selenium Grid will handle all the de
 
 ![Grid Architecture](https://user-images.githubusercontent.com/10705590/143004524-87117f3e-3fd3-4d75-a107-b875b4e75a96.png)
 
-
 Selenium Grid's functionality is divided into various components as follows:
 
 ### Router
+
 As the names suggest, the Router's primary responsibility is to route the request to the correct component. Any request to the Selenium Grid first goes to the Router. Based on the request, the Router identifies the Grid component that can handle it.
 
 ### Distributor
+
 The Distributor maintains the model of all the registered Nodes. The Distributor matches the new session request to the appropriate Node and initiates session creation. It also regularly pings the Node's health check and tracks Node's heartbeat.
 
 ### Node
+
 The Node is present on the machine that hosts the operating system and browser(s). Hence, a Node interacts with the web drivers and forwards browser commands to them. Each Node consists of a set of capabilities. A capability is a combination of browser name, browser version, and the operating system.
 
 Upon startup, the Node registers itself with the Grid. Distributor handles the Node registration.
 
 ### Session Map
+
 The Session map contains the mapping of the session-id and the Node where the session is running. For every request for an existing session, the Router uses the Session Map to look up the Node and forwards the request to the respective Node.
 
 ### New Session Queue
+
 The New Session Queue enqueues every new session request. The New Session Queue is a FIFO queue. Meanwhile, the Distributor regularly checks if any of the Nodes have the capacity for the new session. If so, the Distributor blocks the matching slot in the Node and removes the request from the New Session Queue. The Node creates the session and responds to the client.
 
 New Session Queue also has request retry and request timeout mechanisms.
 
 ### Event Bus
+
 Grid components leverage the Event bus to interact with each other using messages. Grid components communicate with each other via the Event Bus.
 
 ## Setting up Selenium Grid
@@ -52,19 +58,21 @@ Grid components leverage the Event bus to interact with each other using message
 ### Prequisites
 
  1. Ensure java is downloaded. If not, [download](https://www.java.com/en/download/help/download_options.html) and set up java on the machine that will run the Grid.
- 2. Download the latest jar from the [Selenium downloads](https://www.selenium.dev/downloads/) page. 
+ 2. Download the latest jar from the [Selenium downloads](https://www.selenium.dev/downloads/) page.
  3. Ensure that the web driver is on the system path. Refer [installing browser drivers](https://www.selenium.dev/documentation/getting_started/installing_browser_drivers/) for more details. The server will auto-detect drivers on the path. This behavior is configurable.
 
 The Selenium Grid can be set up in any of the three modes: Standalone, Hub and Node, and Fully Distributed.
 
-In all three modes, the default server address is http://localhost:4444.
+In all three modes, the default server address is <http://localhost:4444>.
 
 ### Standalone
+
 The Standalone mode has all the Grid components in one. It is the quickest way to get started with the Grid.
 
     java -jar selenium-server-<grid-version>.jar standalone
 
 ### Hub and Node
+
 Hub consists of Router, Distributor, New Session Queue, Session Map, and Event Bus. The Node consists of the Node and the Event Bus to allow communication with the Hub.
 
 #### Start the Hub
@@ -73,7 +81,7 @@ Hub consists of Router, Distributor, New Session Queue, Session Map, and Event B
 
 #### Start the Node
 
-    java -jar selenium-server-<grid-version>.jar node  
+    java -jar selenium-server-<grid-version>.jar node
 
 ### Fully Distributed
 
@@ -103,15 +111,16 @@ Each Grid component runs independently in the fully distributed mode. All the Gr
 
     java -jar selenium-server-<grid-version>.jar node
 
-  
 To check if the Grid is up, ping `http://<grid-url>/status` endpoint.
 
 Each component has configurable [CLI options](https://www.selenium.dev/documentation/grid/configuring_components/cli_options/).
 
 ### Docker
+
 Selenium Grid also supports Docker. Refer [Selenium Docker](https://github.com/SeleniumHQ/docker-selenium#docker-images-for-the-selenium-grid-server) to get started.
 
 ### Grid UI
+
 Navigate to `http://<grid-url>/ui`.
 
 Grid UI displays the Grid model with all the Nodes. A separate tab for sessions displays the ongoing sessions and sessions waiting in the queue.
@@ -119,7 +128,9 @@ Grid UI displays the Grid model with all the Nodes. A separate tab for sessions 
 ## Integrating Nightwatch tests to run on Selenium Grid
 
 #### Step 1:  [Write tests using Nightwatch.js](https://nightwatchjs.org/guide/using-nightwatch/) framework
-Example: 
+
+Example:
+
 ```
 describe('Test Ecosia website', function () {
  it('Assert search on Ecosia website', async  function () {
@@ -136,12 +147,14 @@ describe('Test Ecosia website', function () {
  });
 });
 ```
-Ensure all the test files are in the `test` folder in your project. 
+
+Ensure all the test files are in the `test` folder in your project.
 
 #### Step 2:  Set up Nightwatch configuration to use the Grid
+
 The test runner requires a configuration file. The file can have the extension ".json" or ".js". The ".js" is preferred since it has more configuration options and capabilities.
 
-Nightwatch does the heavy-lifting of generating a config file with ".js" extension if it is not present. It contains a good set of options to test with any environment. For simplicity, just the sharing the configuration file with selenium-server related options. Just ensure the the selenium-server host and port match the Grid url and you are good to go! 
+Nightwatch does the heavy-lifting of generating a config file with ".js" extension if it is not present. It contains a good set of options to test with any environment. For simplicity, just the sharing the configuration file with selenium-server related options. Just ensure the the selenium-server host and port match the Grid url and you are good to go!
 
 ```
 // Autogenerated by Nightwatch
@@ -240,6 +253,7 @@ function loadServices() {
 }
 
 ```
+
 Refer to [Nightwatch Configuration](https://nightwatchjs.org/gettingstarted/configuration/) to understand and use the configuration options.
 
 #### Step 3: Update the package.json to run in the desired environment
@@ -251,9 +265,9 @@ Update the "scripts" section as follows to run in a single environment
     "scripts": {
         "test": "node_modules/.bin/nightwatch -e selenium.chrome test"
       }
-   
+
    Run the tests on multiple browsers by passing a comma-separated list of environments
-    
+
      "scripts": {
         "test": "node_modules/.bin/nightwatch -e selenium.chrome, selenium.firefox test"
       }
@@ -262,9 +276,8 @@ Update the "scripts" section as follows to run in a single environment
 
     npm test
 
-
 ### Documentation
 
-Nightwatch: https://nightwatchjs.org/guide/using-nightwatch/writing-tests.html
+Nightwatch: <https://nightwatchjs.org/guide/using-nightwatch/writing-tests.html>
 
-Selenium Grid: https://www.selenium.dev/documentation/grid/
+Selenium Grid: <https://www.selenium.dev/documentation/grid/>
