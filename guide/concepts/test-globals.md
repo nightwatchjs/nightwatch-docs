@@ -1,7 +1,6 @@
 ---
 title: Test globals
 description: Test globals are a useful concept that Nightwatch provides for persisting data between test suites and also to define global test hooks.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Test globals</h2></div>
@@ -18,11 +17,11 @@ Here's an example definition using the `globals` property in the `nightwatch.jso
 <div class="sample-test"><i>nightwatch.json</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
-
+  <br>
   "test_settings": {
     "default": {
       "launch_url": "https://nightwatchjs.org",
-
+      <br>
       "globals": {
         "myGlobalVar" : "some value",
         "otherGlobal" : "some other value"
@@ -32,15 +31,16 @@ Here's an example definition using the `globals` property in the `nightwatch.jso
 }</code></pre></div>
 
 <p></p>
-<p>The `globals` object is loaded directly onto the Nightwatch API object which is passed to the tests and is available via `browser.globals`.</p>
+
+The `globals` object is loaded directly onto the Nightwatch API object which is passed to the tests and is available via `browser.globals`.
 
 <div class="sample-test"><i>sampleTest.js</i>
 <pre data-language="javascript"><code class="language-javascript">describe('test globals example', function() {
-  
+  <br>
   it('Demo test', function(browser) {
     console.log(browser.globals.myGlobalVar); // myGlobalVar == "some value"
   });
-
+  <br>
 })</code></pre>
 </div>
 
@@ -51,7 +51,7 @@ Test globals can also be defined in an external file, specified by the `globals_
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
   "globals_path": "lib/globals.js",
-
+  <br>
   "test_settings": {
     "default": {
     "launch_url": "https://nightwatchjs.org"
@@ -77,78 +77,78 @@ You can define these in two ways:
     // this controls whether to abort the test execution when an assertion failed and skip the rest
     // it's being used in waitFor commands and expect assertions
     abortOnAssertionFailure: true,
-
+    <br>
     // this will overwrite the default polling interval (currently 500ms) for waitFor commands
     // and expect assertions that use retry
     waitForConditionPollInterval: 500,
-
+    <br>
     // default timeout value in milliseconds for waitFor commands and implicit waitFor value for
     // expect assertions
     waitForConditionTimeout : 5000,
-
+    <br>
     // since 1.4.0 – this controls whether to abort the test execution when an element cannot be located; an error
     // is logged in all cases, but this also enables skipping the rest of the testcase;
     // it's being used in element commands such as .click() or .getText()
     abortOnElementLocateError: false,
-    
+    <br>
     // this will cause waitFor commands on elements to throw an error if multiple
     // elements are found using the given locate strategy and selector
     throwOnMultipleElementsReturned: false,
-
+    <br>
     // By default a warning is printed if multiple elements are found using the given locate strategy
     // and selector; set this to true to suppress those warnings
     suppressWarningsOnMultipleElementsReturned: false,
-
+    <br>
     // controls the timeout value for async hooks. Expects the done() callback to be invoked within this time
     // or an error is thrown
     asyncHookTimeout : 10000,
-
+    <br>
     // controls the timeout value for when running async unit tests. Expects the done() callback to be invoked within this time
     // or an error is thrown
     unitTestsTimeout : 2000,
-
+    <br>
     // controls the timeout value for when executing the global async reporter. Expects the done() callback to be 
     // invoked within this time or an error is thrown
     customReporterCallbackTimeout: 20000,
-
+    <br>
     // Automatically retrying failed assertions - You can tell Nightwatch to automatically retry failed assertions 
     // until a given timeout is reached, before the test runner gives up and fails the test.
     retryAssertionTimeout: 5000,
-
+    <br>
     // use the same browser session to run the individual  test suites
     reuseBrowserSession: false,
-
+    <br>
     // Custom reporter
     reporter: function(results, done) {
       // do something with the results
       done(results);
     },
-
+    <br>
     // External before hook is ran at the beginning of the tests run, before creating the Selenium session
     before(done) {
       done();
     },
-
+    <br>
     // External after hook is ran at the very end of the tests run, after closing the Selenium session
     after(done) {
       done();
     },
-
+    <br>
     // This will be run before each test suite is started
     beforeEach(browser, done) {
       done();
     },
-
+    <br>
     // This will be run after each test suite is finished
     afterEach(browser, done) {
       done();
     },
-
+    <br>
     // Called right after the command .navigateTo() is finished
     async onBrowserNavigate(browser) {
       return Promise.resolve();
     },
-
+    <br>
     // Called right before the command .quit() is finished
     async onBrowserQuit(browser) {
       return Promise.resolve();
@@ -166,17 +166,17 @@ Consider this configuration:
 <div class="sample-test"><i>nightwatch.json</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
-
+  <br>
   "test_settings": {
     "default": {
       "launch_url": "https://nightwatchjs.org",
-
+      <br>
       "globals": {
         "myGlobalVar" : "some value",
         "otherGlobal" : "some other value"
       }
     },
-
+    <br>
     "integration": {
       "globals": {
         "myGlobalVar" : "integrated global"

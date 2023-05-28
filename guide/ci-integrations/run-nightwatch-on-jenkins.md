@@ -1,7 +1,6 @@
 ---
 title: Run Nightwatch tests on Jenkins
 description: Learn how to run Nightwatch tests on Jenkins
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Run Nightwatch tests on Jenkins</h2></div>
@@ -30,17 +29,17 @@ Steps:
 
 ![Jenkins GIT repository setup](https://user-images.githubusercontent.com/1677755/177564242-f5d2161b-a7f8-4be9-9923-7e12cfce645b.png)
 
-<p><br><strong>3.</strong> Setup Node plugin by going to `dashboard -> Manage Jenkins -> Plugin Manager`, searching for `NodeJS Plugin` and installing it.</p>
+<br><strong>3.</strong> Setup Node plugin by going to `dashboard -> Manage Jenkins -> Plugin Manager`, searching for `NodeJS Plugin` and installing it.
 
-<p>Jenkins executes the pipeline in a blank shell instance. In order to use `npm` commands, the NodeJS plugin would have to be installed.</p>
+Jenkins executes the pipeline in a blank shell instance. In order to use `npm` commands, the NodeJS plugin would have to be installed.
 
 ![Jenkins NodeJS Plugin](https://user-images.githubusercontent.com/1677755/177565528-0d97bcf8-307d-412f-9b5f-8b091f32680f.png)
 
-<p><br><strong>4.</strong> Setup the pipeline to use the NodeJS plugin by select the Node JS option under `Build Environment`.</p>
+<br><strong>4.</strong> Setup the pipeline to use the NodeJS plugin by select the Node JS option under `Build Environment`.
 
 ![Jenkins NodeJS Plugin](https://user-images.githubusercontent.com/1677755/177566306-ff7eb83b-021e-4325-8746-1f6da9fbb058.png)
 
-<p><br><strong>5.</strong> Add an `Execute shell` build step along with following commands.</p> 
+<br><strong>5.</strong> Add an `Execute shell` build step along with following commands.
 
 <pre><code class="language-bash">npm install
 npm test</code></pre>
@@ -75,24 +74,26 @@ Once you build, the tests will be executed on BrowserStack.
 ### View JUnit XML reports
 Nightwatch publishes XML reports after test-run the same can be used in Jenkins to publish test reports.
 
-<p><strong>1.</strong> Make sure [Junit Jenkins Plugin](https://plugins.jenkins.io/junit/) is installed</p>
-<p><br><strong>2.</strong> Add a post-build action to publish the XML report. Nightwatch by default uses `the tests_output` folder to write reports.</p>
+<strong>1.</strong> Make sure [Junit Jenkins Plugin](https://plugins.jenkins.io/junit/) is installed
+
+<strong>2.</strong> Add a post-build action to publish the XML report. Nightwatch by default uses `the tests_output` folder to write reports.
 
 ![Jenkins JUnit Report Setup](https://user-images.githubusercontent.com/1677755/178725915-ec67050c-8274-4379-8a5c-771fe9239f89.png)
 
-<p><br><strong>3.</strong> Run your tests to see the JUnit report in Jenkins.</p>
+<p><strong>3.</strong> Run your tests to see the JUnit report in Jenkins.</p>
 
 ![Jenkins JUnit Report](https://user-images.githubusercontent.com/1677755/178726091-3f7a7c51-76bf-4944-88f0-5c00da8fa398.png)
 
 ### View HTML reports
 Nightwatch also publishes HTML reports which can be published to Jenkins
 
-<p><strong>1.</strong> Make sure you have installed the [HTML Jenkins plugin](https://plugins.jenkins.io/htmlpublisher/).</p>
-<p><br><strong>2.</strong> Nightwatch by default writes HTML report to `tests_output/nightwatch-html-report/` that will be used by Jenkins to publish the report.</p>
+<strong>1.</strong> Make sure you have installed the [HTML Jenkins plugin](https://plugins.jenkins.io/htmlpublisher/).
+
+<strong>2.</strong> Nightwatch by default writes HTML report to `tests_output/nightwatch-html-report/` that will be used by Jenkins to publish the report.
 
 ![Jenkins HTML reporter setup](https://user-images.githubusercontent.com/1677755/178726263-5c0cffde-85e9-41f1-93e5-dabbda9fe04e.png)
 
-<p><br><strong>3.</strong> Run your tests to see the HTML report under `Status->HTML Report`.</p>
+<strong>3.</strong> Run your tests to see the HTML report under `Status->HTML Report`.
 
 ![Jenkins HTML report](https://user-images.githubusercontent.com/1677755/178733403-8205f8ad-81a0-47d7-99aa-676e6e211aa2.png)
 

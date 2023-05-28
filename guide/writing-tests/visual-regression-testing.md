@@ -1,7 +1,6 @@
 ---
 title: Visual Regression Testing
 description: Learn how to do visual regression testing in Nightwatch.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Visual Regression Testing (VRT) using Nightwatch</h1></div>
@@ -90,9 +89,9 @@ Nightwatch VRT ships with carefully thought through default settings. Here is th
 However, these can be overridden globally via `nightwatch.conf.js` as shown `below`:
 
 <div class="sample-test"><i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
-
+  <br>
   //... other config
-
+  <br>
   '@nightwatch/vrt': {
     latest_screenshots_path: 'vrt/latest',
     latest_suffix: '',

@@ -9,13 +9,13 @@ In this case, a command is used to encapsulate logic for clicking the submit but
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">const googleCommands = {
   submit: function() {
     this.api.pause(1000);
-
+    <br>
     return this.waitForElementVisible('@submitButton', 1000)
       .click('@submitButton')
       .waitForElementNotPresent('@submitButton');
   }
 };
-
+<br>
 module.exports = {
   commands: [googleCommands],
   elements: {
@@ -39,7 +39,7 @@ Then the test is simply:
     var google = browser.page.google();
     google.setValue('@searchBar', 'nightwatch')
       .submit();
-
+    <br>
     browser.end();
   }
 };
@@ -56,15 +56,15 @@ Here's a basic example:
       basicResult: 'from-helper-class'
     };
   }
-
+  <br>
   dropdownSelect() {
     return this;
   }
-
+  <br>
   dropdownSelectByText() {
     return this;
   }
-
+  <br>
   name() {
     return this;
   }
@@ -82,13 +82,13 @@ And for a more elaborate example... You can referrence the main page object via 
       return callback(result ? result.value: []);
     });
   }
-
+  <br>
   async customFindElementsES6(selector) {
     const result = await this.page.findElements({
       selector,
       suppressNotFoundErrors: true
     });
-
+    <br>
     return result;
   }
 };

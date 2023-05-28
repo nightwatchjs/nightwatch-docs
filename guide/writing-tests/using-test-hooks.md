@@ -1,7 +1,6 @@
 ---
 title: Nightwatch test hooks 
 description: Learn how to Nightwatch standard test hooks such as before, after, before each and after each.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Using test hooks</h2></div>
@@ -21,24 +20,24 @@ All methods have the Nightwatch instance passed as argument.
   before : function(browser) {
     console.log('Setting up...');
   },
-
+  <br>
   after : function(browser) {
     console.log('Closing down...');
   },
-
+  <br>
   beforeEach : function(browser) {
-
+    <br>
   },
-
+  <br>
   afterEach : function(browser) {
-
+    <br>
   },
-
+  <br>
   'step one' : function (browser) {
     browser
      // ...
   },
-
+  <br>
   'step two' : function (browser) {
     browser
     // ...
@@ -67,7 +66,7 @@ The <code>done</code> function <strong>must be called</strong> as the last step 
       done();
     }, 100);
   },
-
+  <br>
   afterEach: function(browser, done) {
     // performing an async operation
     setTimeout(function() {

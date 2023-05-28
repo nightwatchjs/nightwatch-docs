@@ -1,7 +1,6 @@
 ---
 title: Component Testing in Nightwatch
 description: Overview of component testing in Nightwatch.
-summary\_image: /img/banners/component-testing-overview.png
 ---
 
 <div class="page-header"><h1>Component Testing in Nightwatch</h1></div>
@@ -29,7 +28,11 @@ When testing web components, the crucial aspect is how the component is rendered
 #### Rendering using JSDom
 
 [JSDom][3] is tool which offers the possibility to render a web component using a Node.js virtual renderer, without the need of a real browser. Everything happens in the CLI and it’s usually pretty fast. Here’s how it normally looks like:
-<div style="text-align: center">![https://blog.nightwatchjs.org/content/images/2022/02/component-testing.001.png][image-1]</div>
+<div style="text-align: center">
+
+![https://blog.nightwatchjs.org/content/images/2022/02/component-testing.001.png][image-1]
+
+</div>
 
 #### Rendering using Karma TestRunner/Puppeteer
 The other popular approach is to use something like the [Karma Runner][4], which is a frontend testing tool created about 10 years ago at Google. There are also variations on this theme where [Puppetter][5] and browser-based Mocha is used.
@@ -80,12 +83,12 @@ The only disadvantage would be that it’s going to be a bit slower than the *JS
   </div>
 </div>
 
-[1]:	https://nightwatchjs.org/guide/component-testing/testing-react-components.html
-[2]:	https://nightwatchjs.org/guide/component-testing/testing-vue-components.html
-[3]:	https://github.com/jsdom/jsdom
-[4]:	https://karma-runner.github.io/latest/index.html
-[5]:	https://pptr.dev/
-[6]:	https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/
+[1]:    https://nightwatchjs.org/guide/component-testing/testing-react-components.html
+[2]:    https://nightwatchjs.org/guide/component-testing/testing-vue-components.html
+[3]:    https://github.com/jsdom/jsdom
+[4]:    https://karma-runner.github.io/latest/index.html
+[5]:    https://pptr.dev/
+[6]:    https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/
 
-[image-1]:	https://blog.nightwatchjs.org/content/images/size/w1000/2022/02/component-testing.002.png
-[image-2]:	https://blog.nightwatchjs.org/content/images/2022/02/component-testing.003.png
+[image-1]:  https://blog.nightwatchjs.org/content/images/size/w1000/2022/02/component-testing.002.png
+[image-2]:  https://blog.nightwatchjs.org/content/images/2022/02/component-testing.003.png

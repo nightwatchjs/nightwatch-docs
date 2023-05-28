@@ -20,42 +20,42 @@ The `"selenium"` settings should also be used when configuring connections to cl
 </thead>
 <tbody>
  <tr>
-   <td>`start_process`</td>
+   <td><code>start_process</code></td>
    <td>boolean</td>
    <td>false</td>
    <td>Whether or not to manage the Selenium process automatically.</td>
  </tr>
 
  <tr>
-   <td>`server_path`</td>
+   <td><code>server_path</code></td>
    <td>string</td>
    <td>none</td>
    <td>The location of the Selenium <code>jar</code> file. This needs to be specified if <code>start_process</code> is enabled.<br>E.g.: <code>bin/selenium-server-standalone-2.43.0.jar</code></td>
  </tr>
 
  <tr>
-   <td>`log_path`</td>
+   <td><code>log_path</code></td>
    <td>string|boolean</td>
    <td>none</td>
    <td>The location where the Selenium <code>output.log</code> file will be placed. Defaults to current directory.<br>To disable Selenium logging, set this to <code>false</code></td>
  </tr>
 
  <tr>
-   <td>`version2`</td>
+   <td><code>version2</code></td>
    <td>boolean</td>
    <td>false</td>
-   <td>Set this to `true` if you need to use legacy Selenium Server 2.</td>
+   <td>Set this to <code>true</code> if you need to use legacy Selenium Server 2.</td>
  </tr>
 
  <tr>
-   <td>`port`</td>
+   <td><code>port</code></td>
    <td>integer</td>
    <td>4444</td>
    <td>The port number Selenium will listen on and/or Nighwatch will attempt to connect to.</td>
  </tr>
 
  <tr>
-   <td>`cli_args`</td>
+   <td><code>cli_args</code></td>
    <td>object</td>
    <td>none</td>
    <td>List of cli arguments to be passed to the Selenium process. Here you can set various options for browser drivers, such as:<br><br>
@@ -73,7 +73,7 @@ The `"selenium"` settings should also be used when configuring connections to cl
          <code>webdriver.ie.driver</code>:
          Nightwatch works with <strong>Internet Explorer</strong> also. To enable this you have to download the <a href=
          "https://github.com/SeleniumHQ/selenium/wiki/InternetExplorerDriver" target="_blank">IE Driver binary</a> and specify it's location here.<br><br>
-         Alternatively you can install the package [`iedriver`](https://www.npmjs.com/package/iedriver) from NPM.<br><br>
+         Alternatively you can install the package <a href="https://www.npmjs.com/package/iedriver"><code>iedriver</code></a> from NPM.<br><br>
      Also you need to specify "internet explorer" as the browser name in the <code>desiredCapabilities</code> object.
        </li>
      </ul>
@@ -88,20 +88,20 @@ Here's an example configuration as part of the `nightwatch.conf.js` which uses a
 
 The following **NPM** packages are assumed to be installed in the current project:
 
-- [geckodriver][5]
-- [chromedriver][6]
-- [selenium-server][7]
-- [iedriver][8]
+- geckodriver
+- chromedriver
+- selenium-server
+- iedriver
 
 <div class="sample-test">
 <pre><code class="language-javascript">module.exports = {
   src_folders: [],
-
+  <br>
   test_settings: {
     default: {
     launch_url: 'https://nightwatchjs.org'
   },
-
+  <br>
   selenium: {
     // Selenium Server is running locally and is managed by Nightwatch
     selenium: {
@@ -118,7 +118,7 @@ The following **NPM** packages are assumed to be installed in the current projec
       start_process: false
     }
   },
-
+  <br>
   'selenium.chrome': {
     extends: 'selenium',
     desiredCapabilities: {
@@ -128,14 +128,14 @@ The following **NPM** packages are assumed to be installed in the current projec
       }
     }
   },
-
+  <br>
   'selenium.firefox': {
     extends: 'selenium',
     desiredCapabilities: {
       browserName: 'firefox'
     }
   },
-
+  <br>
   'selenium.ie': {
     extends: 'selenium',
     desiredCapabilities: {

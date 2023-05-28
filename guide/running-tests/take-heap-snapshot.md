@@ -44,11 +44,11 @@ When used with `async`/`await` syntax, `takeHeapSnapshot` command returns the co
 <div class="sample-test"><i>tests/take-heap-snapshot-async-await.js</i>
 <pre class="line-numbers language-javascript">
 <code class="language-javascript">const fs = require('fs');
-
+<br>
 describe('take heap snapshot with async/await', function() {
   it('takes heap snapshot and returns the snapshot content', async function() {
     await browser.navigateTo('https://www.google.com');
-
+    <br>
     const heapSnapshot = await browser.takeHeapSnapshot();
     fs.writeFileSync('heap_snaps/snapshot2.heapsnapshot', heapSnapshot);
   });

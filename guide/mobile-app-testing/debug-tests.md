@@ -1,7 +1,6 @@
 ---
 title: Debugging Native Mobile App Tests
 description: Learn how to debug native mobile app testing with Nightwatch.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Debugging Native Mobile App Tests</h2></div>
@@ -79,9 +78,9 @@ Run the test so that the Nightwatch test session is created.
 
 Pass Nightwatch commands/assertions to Nightwatch debug console open in the terminal. 
 
-[1]:	/guide/mobile-app-testing/installation.html#install-appium-inspector
+[1]:    /guide/mobile-app-testing/installation.html#install-appium-inspector
 
-[image-1]:	https://user-images.githubusercontent.com/1677755/220331486-a8f92d50-1922-471c-9695-360394b180f5.png
+[image-1]:  https://user-images.githubusercontent.com/1677755/220331486-a8f92d50-1922-471c-9695-360394b180f5.png
 [image-2]:  https://user-images.githubusercontent.com/1677755/220332377-66b95105-25fe-4b56-a06b-5e5019fe592e.png
 [image-3]:  https://user-images.githubusercontent.com/1677755/220332726-824dd227-fd11-43f3-9247-ecc20779f94e.png
 

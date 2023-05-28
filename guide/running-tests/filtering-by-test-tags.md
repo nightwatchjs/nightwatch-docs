@@ -1,7 +1,6 @@
 ---
 title: Running tests filtered by tags
 description: Learn how to run specific tests that match particular tags.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Filtering by test tags</h2></div>
@@ -25,9 +24,9 @@ Or, if using the describe interface:
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">describe('testsuite', function() {
   this.tags = ['login', 'sanity'];
-
+  <br>
   it('demo login test', function(browser) {
-
+     <br>
   });
 });</code></pre>
 </div>

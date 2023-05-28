@@ -1,7 +1,6 @@
 ---
 title: Chrome Driver
 description: Learn about how to use Chrome Driver with Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>ChromeDriver</h2></div>
@@ -45,17 +44,17 @@ The following table provides a list of all the Chrome-specific desired capabilit
       </thead>
       <tbody>
       <tr>
-        <td>`args`</td>
+        <td><code>args</code></td>
         <td>array of strings</td>
-        <td>List of command-line arguments to use when starting Chrome. Arguments with an associated value should be separated by a '=' sign (e.g., `["start-maximized", "user-data-dir=/tmp/temp_profile"]`).</td> 
+        <td>List of command-line arguments to use when starting Chrome. Arguments with an associated value should be separated by a '=' sign (e.g., <code>["start-maximized", "user-data-dir=/tmp/temp_profile"]</code>).</td> 
       </tr>
       <tr>
-        <td>`binary`</td>
+        <td><code>binary</code></td>
         <td>string</td>
         <td>Path to the Chrome executable to use (on Mac OS X, this should be the actual binary, not just the app. e.g., '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome')</td> 
       </tr>
       <tr>    
-        <td>`extensions`</td>
+        <td><code>extensions</code></td>
         <td>array of strings</td>
         <td>A list of Chrome extensions to install on startup. Each item in the list should be a base-64 encoded packed Chrome extension (.crx)</td> 
       </tr>

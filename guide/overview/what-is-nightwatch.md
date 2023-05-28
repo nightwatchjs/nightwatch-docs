@@ -1,13 +1,11 @@
 ---
 title: What is Nightwatch?
 description: Nightwatch is an integrated framework for performing automated end-to-end testing on web applications and websites, across all major browsers.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>What is Nightwatch?</h2></div>
 
-<p><img src="/images/nightwatch-circle.png" alt="Nightwatch.js" title="Nightwatch.js" id="whatis-logo" />
-Nightwatch.js is an integrated framework for performing automated end-to-end testing on web applications and websites, across all major browsers. It is written in [Node.js][1] and uses the [W3C WebDriver API][2] to interact with various browsers.</p>
+<img src="/images/nightwatch-circle.png" alt="Nightwatch.js" title="Nightwatch.js" id="whatis-logo" />Nightwatch.js is an integrated framework for performing automated end-to-end testing on web applications and websites, across all major browsers. It is written in [Node.js][1] and uses the [W3C WebDriver API][2] to interact with various browsers.
 
 <p>It is a complete solution for end-to-end and cross-browser testing. It aims to simplify the process of writing and running various types of tests, including:</p>
 
@@ -17,11 +15,11 @@ Nightwatch.js is an integrated framework for performing automated end-to-end tes
     <li>integration tests of HTTP APIs</li>
 </ul>
 
-<p class="secondary-text">Nightwatch was created in 2014 in Amsterdam, The Netherlands, and the name was inspired by the famous painting [The Night Watch](https://www.rijksmuseum.nl/en/collection/SK-C-5) by Dutch 17th century artist [Rembrandt van Rijn](https://www.rembrandthuis.nl/en/meet-rembrandt/). The masterpiece is prominently displayed in the Rijksmuseum, in Amsterdam. Read more about how Nightwatch was created [here][4].</p>
+<p class="secondary-text">Nightwatch was created in 2014 in Amsterdam, The Netherlands, and the name was inspired by the famous painting <a href="https://www.rijksmuseum.nl/en/collection/SK-C-5">The Night Watch</a> by Dutch 17th century artist <a href="https://www.rembrandthuis.nl/en/meet-rembrandt/">Rembrandt van Rijn</a>. The masterpiece is prominently displayed in the Rijksmuseum, in Amsterdam. Read more about how Nightwatch was created <a href="/about">here</a>.</p>
 
 ### Architecture overview
 
-Nightwatch is distributed as an easy to use CLI tool and has built-in support for all major browsers: Chrome, Firefox, Safari, and Edge.  
+Nightwatch is distributed as an easy to use CLI tool and has built-in support for all major browsers: Chrome, Firefox, Safari, and Edge.
 
 Nightwatch performs the browser automation by taking advantage of the industry standard protocol **WebDriver**, which is defined as a W3C standard specification.
 
@@ -31,9 +29,9 @@ Nightwatch performs the browser automation by taking advantage of the industry s
 
 <p class="whatis-logo w3c-logo"><img src="https://www.w3.org/StyleSheets/TR/2016/logos/W3C" alt="W3C WebDriver" title="W3C WebDriver" class="whatis"></p>
 
-<p>[WebDriver][7] is a general purpose library for automating web browsers, part of the [Selenium][5] project. It is now a [W3C specification][10] which standardises browser automation, providing a reliable and consistent protocol to remotely control web browsers via a restful **HTTP API**.</p>
+[WebDriver][7] is a general purpose library for automating web browsers, part of the [Selenium][5] project. It is now a [W3C specification][10] which standardises browser automation, providing a reliable and consistent protocol to remotely control web browsers via a restful **HTTP API**.
 
-<p>Created more than a decade ago, **Selenium** is by far the most widely used project in the automated testing industry, providing a comprehensive set of tools for browser automation, initially written for Java but now with support for most programming languages.</p>
+Created more than a decade ago, **Selenium** is by far the most widely used project in the automated testing industry, providing a comprehensive set of tools for browser automation, initially written for Java but now with support for most programming languages.
 
 Internally, Nightwatch uses the [W3C WebDriver API][6] to perform the browser automation related tasks, such as opening windows or clicking links.
 
@@ -61,13 +59,13 @@ WebDriver is implemented by all major browser vendors as a W3C compliant HTTP se
   <tr>
     <td><a class="local-nav" href="/gettingstarted/installation/#install-geckodriver">GeckoDriver</a></td>
     <td class="browser"><img alt="Mozilla Firefox" src="https://nightwatchjs.org/img/logos/Firefox_Logo_2017.png"/></td>
-    <td>Standalone application which implements the [W3C WebDriver API](https://w3c.github.io/webdriver/#protocol) to communicate with Firefox.</td>
+    <td>Standalone application which implements the <a href="https://w3c.github.io/webdriver/#protocol">W3C WebDriver API</a> to communicate with Firefox.</td>
   </tr>
 
   <tr>
     <td><a class="local-nav" href="/gettingstarted/installation/#install-chromedriver">ChromeDriver</a></td>
     <td class="browser"><img alt="Google Chrome" src="https://nightwatchjs.org/img/logos/1200px-Google_Chrome_icon.svg.png"/></td>
-    <td>Standalone application which implements the [W3C WebDriver API](https://w3c.github.io/webdriver/#protocol) for Chromium.<br><br>Available for Chrome on Android and Chrome on Desktop (Mac, Linux, Windows and ChromeOS).</td>
+    <td>Standalone application which implements the <a href="https://w3c.github.io/webdriver/#protocol">W3C WebDriver API</a> for Chromium.<br><br>Available for Chrome on Android and Chrome on Desktop (Mac, Linux, Windows and ChromeOS).</td>
   </tr>
 
   <tr>
@@ -79,7 +77,7 @@ WebDriver is implemented by all major browser vendors as a W3C compliant HTTP se
   <tr>
     <td><a class="local-nav" href="/gettingstarted/installation/#install-safaridriver">SafariDriver</a></td>
     <td class="browser"><img alt="Microsoft Edge" src="https://nightwatchjs.org/img/logos/safari_icon_large_2x.png"/></td>
-    <td>The `/usr/bin/safaridriver` binary comes pre-installed with recent versions of MacOS and it's available to use following the instructions on [Apple Developer website](https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari).
+    <td>The <code>/usr/bin/safaridriver</code> binary comes pre-installed with recent versions of MacOS and it's available to use following the instructions on <a href="https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari">Apple Developer website</a>.
     <br><br>More information is available on <a href="https://developer.apple.com/documentation/webkit/about_webdriver_for_safari" target="_blank">About WebDriver for Safari</a> page.
     </td>
   </tr>
@@ -87,28 +85,28 @@ WebDriver is implemented by all major browser vendors as a W3C compliant HTTP se
  </tbody>
 </table>
 
-[1]:	https://nodejs.org/
-[2]:	https://www.w3.org/TR/webdriver/
-[3]:	https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol
-[4]:	/about
-[5]:	https://selenium.dev/
-[6]:	https://www.w3.org/TR/webdriver
-[7]:	https://www.w3.org/TR/webdriver
-[8]:	https://sites.google.com/a/chromium.org/chromedriver/
-[9]:	https://github.com/mozilla/geckodriver
-[10]:	https://www.w3.org/TR/webdriver/
-[11]:	https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol
-[12]:	/gettingstarted/installation/#webdriver-service
-[13]:	https://selenium.dev/downloads/
-[14]:	https://www.browserstack.com/
-[15]:	https://saucelabs.com/
-[16]:	https://crossbrowsertesting.com/
-[17]: https://www.lambdatest.com/
-[18]:	https://selenium.dev/downloads/
-[19]:	https://selenium.dev/downloads/
+[1]:    https://nodejs.org/
+[2]:    https://www.w3.org/TR/webdriver/
+[3]:    https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol
+[4]:    /about
+[5]:    https://selenium.dev/
+[6]:    https://www.w3.org/TR/webdriver
+[7]:    https://www.w3.org/TR/webdriver
+[8]:    https://sites.google.com/a/chromium.org/chromedriver/
+[9]:    https://github.com/mozilla/geckodriver
+[10]:   https://www.w3.org/TR/webdriver/
+[11]:   https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol
+[12]:   /gettingstarted/installation/#webdriver-service
+[13]:   https://selenium.dev/downloads/
+[14]:   https://www.browserstack.com/
+[15]:   https://saucelabs.com/
+[16]:   https://crossbrowsertesting.com/
+[17]:   https://www.lambdatest.com/
+[18]:   https://selenium.dev/downloads/
+[19]:   https://selenium.dev/downloads/
 
-[image-1]:	/img/operation.png
-[image-2]:	/img/operation-cloud.png
+[image-1]:  /img/operation.png
+[image-2]:  /img/operation-cloud.png
 
 ### Recommended content
 - [Nightwatch release notes](/guide/overview/whats-new.html)
@@ -123,4 +121,3 @@ WebDriver is implemented by all major browser vendors as a W3C compliant HTTP se
     </a>
   </div>
 </div>
-

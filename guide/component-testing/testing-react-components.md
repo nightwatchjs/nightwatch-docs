@@ -1,7 +1,6 @@
 ---
 title: React component testing
 description: Learn how to do write and execute React component tests in Nightwatch.
-summary\_image: /img/banners/react-component-testing.png
 ---
 <div class="page-header"><h1>React component testing in Nightwatch</h1></div>
 
@@ -37,7 +36,7 @@ If you already have a Vite project, then the `@nightwatch/react` plugin will try
 
 Update the `vite.config.js` and add the `vite-plugin-nightwatch` plugin:
 <div class="sample-test"><i>vite.config.js</i><pre class="line-numbers language-javascript"><code class="language-javascript">import nightwatchPlugin from 'vite-plugin-nightwatch'
-
+<br>
 export default {
   plugins: [
 	// ... other plugins, such as vue() or react()
@@ -53,14 +52,14 @@ Starting with version 2.4, Nightwatch supports running React component tests wit
 File names must use `.jsx` or `.tsx` as extension. In its simplest form, the component test looks as follows:
 
 <div class="sample-test"><i>test/sampleTest.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import Form from '../components/Form.jsx';
-
+<br>
 export default {
   title: 'Form',
   component: Form,
 }
-
+<br>
 export const FormStory = () => &lt;Form /&gt;
-
+<br>
 </code></pre></div>
 
 In component testing terms, a "story" is representation of a particular component with props or args. In our concrete case, it is a single `export const` declaration. 
@@ -72,7 +71,7 @@ In component testing terms, a "story" is representation of a particular componen
 This plugin provides only the `mountComponent` command which can be used to mount a component in isolation and optionally with a set of given props.
 
 <div class="apimethod">
-  <h4>.mountComponent(`componentPath`, `[props]`, `[callback]`)</h4>
+  <h4>.mountComponent(<code>componentPath</code>, <code>[props]</code>, <code>[callback]</code>)</h4>
 
 <h5>Parameters:</h5>
   <div class="table-responsive">
@@ -86,18 +85,18 @@ This plugin provides only the `mountComponent` command which can be used to moun
       </thead>
       <tbody>
       <tr>
-        <td>`componentPath`</td>
-        <td>`string`</td>
-        <td>Location of the component file (`.jsx`) to be mounted</td>
+        <td><code>componentPath</code></td>
+        <td><code>string</code></td>
+        <td>Location of the component file (<code>.jsx</code>) to be mounted</td>
       </tr>
 			<tr>
-        <td>`props`<br><span class="optional">Optional</span></td>
-        <td>`object` | `function`</td>
+        <td><code>props</code><br><span class="optional">Optional</span></td>
+        <td><code>object</code> | <code>function</code></td>
         <td>Properties to be passed to the React component; this can be an object which will be serialized to JSON or a function which returns the props object. The function will be executed in the browser's context.</td>
       </tr>
 			<tr>
-        <td>`callback`<br><span class="optional">Optional</span></td>
-        <td>`function`</td>
+        <td><code>callback</code><br><span class="optional">Optional</span></td>
+        <td><code>function</code></td>
         <td>An optional callback function which will be called with the component element.</td>
       </tr>
       </tbody>
@@ -144,7 +143,7 @@ Specify the path to a custom test renderer to be used. A default renderer is inc
 
 <div class="sample-test"><i>test/sampleTest.js</i><pre class="line-numbers language-javascript"><code class="language-javascript">describe('user info test', function() {
   let component;
-
+  <br>
   before(async () => {
     component = await browser.mountComponent('/src/components/UserInfo.jsx', function() {
       return {
@@ -157,7 +156,7 @@ Specify the path to a custom test renderer to be used. A default renderer is inc
       }
     });
   });
-
+  <br>
   it('should render the component without error', function() {
     browser.expect(component).to.be.visible;
   })
@@ -196,11 +195,11 @@ We've put together a basic To-do app written in React and built on top of Vite w
 ### Recommended content
 - [Blog \> Introducing Component Testing in Nightwatch][8]
 
-[1]:	https://github.com/nightwatchjs/nightwatch-plugin-react
-[2]:	https://nightwatchjs.org/guide/component-testing/vite-plugin.html
-[3]:	https://storybook.js.org/docs/react/api/csf
-[4]:	https://github.com/ComponentDriven/csf
-[5]:	https://storybook.js.org/
-[6]:	http://local-new.nightwatchjs.org/guide/component-testing/vite-plugin.html#plugin-options
-[7]:	https://github.com/nightwatchjs-community/todo-react "nightwatchjs-community/todo-react"
-[8]:	https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/
+[1]:    https://github.com/nightwatchjs/nightwatch-plugin-react
+[2]:    https://nightwatchjs.org/guide/component-testing/vite-plugin.html
+[3]:    https://storybook.js.org/docs/react/api/csf
+[4]:    https://github.com/ComponentDriven/csf
+[5]:    https://storybook.js.org/
+[6]:    http://local-new.nightwatchjs.org/guide/component-testing/vite-plugin.html#plugin-options
+[7]:    https://github.com/nightwatchjs-community/todo-react "nightwatchjs-community/todo-react"
+[8]:    https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/

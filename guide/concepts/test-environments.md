@@ -1,7 +1,6 @@
 ---
 title: Nightwatch Test Environments 
 description: Learn how to define, manage, & better large-scale projects with multiple test environments in Nightwatch.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Test Environments</h2></div>
@@ -25,7 +24,7 @@ In the example below, there are two environments:
 <div class="sample-test">
 <i>nightwatch.json</i><pre data-language="javascript"><code class="language-javascript">{
   "src_folders": ["./tests"],
-
+  <br>
   "test_settings" : {
     "default" : {
       "launch_url" : "http://localhost",

@@ -1,7 +1,6 @@
 ---
 title: Accessibility Testing
 description: Learn about how to do Accessibility testing with Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Accessibility (A11y) testing in Nightwatch</h1></div>
@@ -17,7 +16,7 @@ The `aXe` library has over 90 different around accessibility testing and automat
 Use the command [`.axeInject()`][5] to inject the `aXe` library first and the simply run all accessibility tests with [`axeRun()`][6] command as shown below:
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">describe('accessibility testing', function() {
-
+  <br>
   it('run all accessibility rules', function(browser) {
     browser
       .navigateTo('https://www.w3.org/WAI/demos/bad/after/home.html')
@@ -31,7 +30,7 @@ Use the command [`.axeInject()`][5] to inject the `aXe` library first and the si
 Alternatively, you can choose to run only a selected tests, by passing the `rule IDs` in an array as shown below:
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">describe('accessibility testing', function() {
-
+  <br>
   it('accessibility rule subset', function(browser) {
     browser
       .navigateTo('https://www.w3.org/WAI/demos/bad/after/home.html')
@@ -46,7 +45,7 @@ Alternatively, you can choose to run only a selected tests, by passing the `rule
 You can also choose to run all the tests and exclude a few tests.
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">describe('accessibility testing', function() {
-
+  <br>
   it('accessibility rule subset', function(browser) {
     browser
       .navigateTo('https://www.w3.org/WAI/demos/bad/after/home.html')
@@ -92,12 +91,12 @@ You can find the complete list of the rule IDs on the [Axe Github page][7]
   </div>
 </div>
 
-[1]:	https://www.w3.org/WAI/standards-guidelines/wcag/
-[2]:	https://www.npmjs.com/package/axe-core
-[3]:	https://www.deque.com/
-[4]:	https://www.deque.com/blog/automated-testing-study-identifies-57-percent-of-digital-accessibility-issues/
-[5]:	https://nightwatchjs.org/api/axeInject.html
-[6]:	https://nightwatchjs.org/api/axeRun.html
-[7]:	https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md
-[8]:	https://nightwatchjs.org/api/axeInject.html
-[9]:	https://nightwatchjs.org/api/axeRun.html
+[1]:    https://www.w3.org/WAI/standards-guidelines/wcag/
+[2]:    https://www.npmjs.com/package/axe-core
+[3]:    https://www.deque.com/
+[4]:    https://www.deque.com/blog/automated-testing-study-identifies-57-percent-of-digital-accessibility-issues/
+[5]:    https://nightwatchjs.org/api/axeInject.html
+[6]:    https://nightwatchjs.org/api/axeRun.html
+[7]:    https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md
+[8]:    https://nightwatchjs.org/api/axeInject.html
+[9]:    https://nightwatchjs.org/api/axeRun.html

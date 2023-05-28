@@ -14,7 +14,7 @@ Here's an example config file which uses Firefox as target browser and assumes t
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
   src_folders: [],
-
+  <br>
   webdriver: {
     start_process: true,
     port: 4444,
@@ -24,7 +24,7 @@ Here's an example config file which uses Firefox as target browser and assumes t
       // '-vv'
     ]
   },
-
+  <br>
   test_settings: {
     default: {
       launch_url: 'https://nightwatchjs.org',
@@ -60,12 +60,12 @@ Here’s an extract:
 <div class="sample-test">
 <pre><code class="language-javascript">module.exports = {
   src_folders: [],
-
+  <br>
   test_settings: {
     default: {
       launch_url: 'https://nightwatchjs.org'
     },
-
+    <br>
     safari: {
       desiredCapabilities : {
         browserName : 'safari',
@@ -79,12 +79,12 @@ Here’s an extract:
         server_path: '/usr/bin/safaridriver'
       }
     },
-
+    <br>
     firefox: {
       desiredCapabilities : {
         browserName : 'firefox'
       },
-
+      <br>
       webdriver: {
         start_process: true,
         port: 4444,
@@ -110,11 +110,11 @@ Here's an example definition using the `"globals"` property in `nightwatch.json`
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
-
+  <br>
   "test_settings": {
     "default": {
       "launch_url": "https://nightwatchjs.org",
-
+      <br>
       "globals": {
         "myGlobalVar" : "some value",
         "otherGlobal" : "some other value"
@@ -129,7 +129,7 @@ Like the `launch_url` property, the `globals` object is made available directly 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Demo test' : function (browser) {
-
+    <br>
     console.log(browser.globals.myGlobalVar); // myGlobalVar == "some value"
 }
 };</code></pre>
@@ -147,22 +147,22 @@ Here's an example from the generated `nightwatch.conf.js`:
 <div class="sample-test">
 <pre><code class="language-javascript">module.exports = {
   src_folders: [],
-
+  <br>
   test_settings: {
     default: {
       launch_url: 'https://nightwatchjs.org'
     },
-
+    <br>
     browserstack: {
       webdriver: {
         start_process: false
       },
-  
+      <br>
       selenium: {
         host: 'hub-cloud.browserstack.com',
         port: 443
       },
-  
+      <br>
       desiredCapabilities: {
          browserName: 'chrome',
         'bstack:options' : {
@@ -180,13 +180,13 @@ At this point you should have at least one WebDriver package installed in your p
 Assuming you have downloaded or installed the ChromeDriver service, the simplest `nightwatch.json` file will look like this, where `node_modules/.bin/chromedriver` is the path where ChromeDriver is installed:
 <div class="sample-test"><pre><code class="language-javascript">{
   "src_folders" : ["tests"],
-
+  <br>
   "webdriver" : {
     "start_process": true,
     "server_path": "node_modules/.bin/chromedriver",
     "port": 9515
   },
-
+  <br>
   "test_settings" : {
     "default" : {
       "desiredCapabilities": {
@@ -199,14 +199,14 @@ Assuming you have downloaded or installed the ChromeDriver service, the simplest
 #### Further Reading
 
 <ul class="introduction">
-    <li>[Defining Test Environments](https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals)</li>
-    <li>[Using Test Globals](https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals)</li>
+    <li><a href="https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals">Defining Test Environments</a></li>
+    <li><a href="https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals">Using Test Globals</a></li>
 </ul>
 
-[1]:	/gettingstarted/installation/#install-webdriver
-[2]:	https://www.npmjs.com/package/geckodriver
-[3]:	https://www.npmjs.com/package/chromedriver
-[4]:	https://www.npmjs.com/package/selenium-server
+[1]:    /gettingstarted/installation/#install-webdriver
+[2]:    https://www.npmjs.com/package/geckodriver
+[3]:    https://www.npmjs.com/package/chromedriver
+[4]:    https://www.npmjs.com/package/selenium-server
 
 ### Recommended content
 - [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)

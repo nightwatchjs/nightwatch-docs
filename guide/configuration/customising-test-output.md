@@ -18,70 +18,70 @@ The below settings can be used to control the output and logging when running te
   </thead>
   <tbody>
    <tr>
-     <td>`output_folder`</td>
+     <td><code>output_folder</code></td>
      <td>string</td>
      <td>tests_output</td>
      <td>The location where the JUnit XML report files will be saved.</td>
    </tr>
-
+    <br>
     <tr>
-     <td>`folder_format`</td>
+     <td><code>folder_format</code></td>
      <td>string/function</td>
      <td>undefined</td>
      <td>Used as a prefix for HTML report folder. This can be utilised to retain HTML report across test runs</td>
    </tr>
     
    <tr>
-     <td>`disable_colors`</td>
+     <td><code>disable_colors</code></td>
      <td>boolean</td>
      <td>false</td>
      <td>Controls whether or not to disable coloring of the CLI output globally.</td>
    </tr>
 
    <tr>
-    <td>`live_output`</td>
+    <td><code>live_output</code></td>
     <td>boolean</td>
     <td>false</td>
     <td>This option is only useful when running tests in parallel. Controls whether or not to buffer the output.</td>
   </tr>
 
   <tr>
-    <td>`silent`</td>
+    <td><code>silent</code></td>
     <td>boolean</td>
     <td>true</td>
     <td>Whether to show the extended HTTP traffic command logs from the WebDriver or Selenium server.</td>
   </tr>
 
   <tr>
-    <td>`output`</td>
+    <td><code>output</code></td>
     <td>boolean</td>
     <td>true</td>
     <td>Used to disable CLI output completely.</td>
   </tr>
 
   <tr>
-    <td>`detailed_output`</td>
+    <td><code>detailed_output</code></td>
     <td>boolean</td>
     <td>true</td>
-    <td>By default detailed assertion output is displayed while the test is running. Set this to `false` if you'd like to only see the test case name displayed and pass/fail status. Detailed output is disabled by default when running tests in parallel.</td>
+    <td>By default detailed assertion output is displayed while the test is running. Set this to <code>false</code> if you'd like to only see the test case name displayed and pass/fail status. Detailed output is disabled by default when running tests in parallel.</td>
   </tr>
 
   <tr>
-    <td>`disable_error_log`</td>
+    <td><code>disable_error_log</code></td>
     <td>boolean</td>
     <td>false</td>
     <td>Set this to true if you'd like to not display errors during the execution of the test (they are shown at the end always).</td>
   </tr>
 
   <tr>
-    <td>`output_timestamp`</td>
+    <td><code>output_timestamp</code></td>
     <td>boolean</td>
     <td>false</td>
     <td>Set this to true if you'd like to see timestamps next to the logging output.</td>
   </tr>
 
   <tr>
-    <td>`log_screenshot_data`</td>
+    <td><code>log_screenshot_data</code></td>
     <td>boolean</td>
     <td>false</td>
     <td>Used to enable showing the Base64 image data in the (verbose) log when taking screenshots.</td>

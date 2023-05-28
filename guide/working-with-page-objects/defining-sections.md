@@ -34,13 +34,13 @@ Your tests would use it as follows:
   'Test': function (browser) {
     var google = browser.page.google();
     google.expect.section('@menu').to.be.visible;
-
+    <br>
     var menuSection = google.section.menu;
     menuSection.expect.element('@mail').to.be.visible;
     menuSection.expect.element('@images').to.be.visible;
-
+    <br>
     menuSection.click('@mail');
-
+    <br>
     browser.end();
   }
 };
@@ -49,7 +49,7 @@ Your tests would use it as follows:
 
 <br>
 <div class="alert alert-info">
-Note that every command and assertion on a section (other than `expect` assertions) returns that section for chaining. If desired, you can nest sections under other sections for complex DOM structures.
+Note that every command and assertion on a section (other than <code>expect</code> assertions) returns that section for chaining. If desired, you can nest sections under other sections for complex DOM structures.
 </div>
 
 #### Example of nesting page object sections:
@@ -94,14 +94,14 @@ Using a nested section in your test is straightforward:
   'Test': function (browser) {
     var google = browser.page.google();
     google.expect.section('@menu').to.be.visible;
-
+    <br>
     var menuSection = google.section.menu;
     var appSection = menuSection.section.apps;
     menuSection.click('@appSection');
-
+    <br>
     appSection.expect.element('@myAccount').to.be.visible;
     appSection.expect.element('@googlePlus').to.be.visible;
-
+    <br>
     browser.end();
   }
 };

@@ -1,7 +1,6 @@
 ---
 title: Native Mobile App Testing
 description: Introduction to native mobile app testing with Nightwatch. Learn how to automate native mobile apps on Android and iOS devices.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Introduction to Native Mobile App Testing</h2></div>
@@ -28,7 +27,7 @@ In order to run Nightwatch using Appium the following requirements have to be fu
 **Android** </br>
 - Mac OSX or Windows or Linux - Android SDK ≥ 16
 
-<p class="alert alert-info">Don’t worry about the SDK downloads as the [Nightwatch Mobile Helper](https://github.com/nightwatchjs/mobile-helper-tool) will take care of it.</p>
+<p class="alert alert-info">Don’t worry about the SDK downloads as the <a href="https://github.com/nightwatchjs/mobile-helper-tool">Nightwatch Mobile Helper</a> will take care of it.</p>
 
 ### How does it work?
 
@@ -49,14 +48,14 @@ Now that you understand how mobile app testing works with Nightwatch, let's dive
 [Run tests on virtual devices, real devices & cloud providers][4] </br>
 [Debug tests][5]
 
-[1]:	https://appium.io/
-[2]:	/guide/mobile-app-testing/installation.html
+[1]:    https://appium.io/
+[2]:    /guide/mobile-app-testing/installation.html
 [3]:    /guide/mobile-app-testing/introduction-writing-tests.html
 [4]:    /guide/mobile-app-testing/running-tests.html
 [5]:    /guide/mobile-app-testing/debug-tests.html
 
 
-[image-1]:	https://user-images.githubusercontent.com/1677755/220147111-0c8bd102-cc70-4a7b-bda7-6e597328ace3.png
+[image-1]:  https://user-images.githubusercontent.com/1677755/220147111-0c8bd102-cc70-4a7b-bda7-6e597328ace3.png
 
 
 <div class="doc-pagination justify-content-end pt-40">

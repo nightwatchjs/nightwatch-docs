@@ -32,7 +32,7 @@ You can also use Xpath directly on a single command or assertion, by either pass
       selector: '//tr[@data-recordid]/span[text()='Search Text']',
       locateStrategy: 'xpath'
     });
-
+    <br>
     // specifying xpath strategy as first argument
     browser.click('xpath', '//tr[@data-recordid]/span[text()='Search Text']');
 }
@@ -48,8 +48,8 @@ If you mostly are using XPath expressions and you want to avoid configuring the 
 }
 </code></pre></div>
 
-[10]:	/gettingstarted/configuration/#extended-settings
-[11]:	https://nightwatchjs.org/guide/working-with-page-objects/#element-properties
+[10]:   /gettingstarted/configuration/#extended-settings
+[11]:   https://nightwatchjs.org/guide/working-with-page-objects/#element-properties
 
  <div class="doc-pagination pt-40">
   <div class="previous">

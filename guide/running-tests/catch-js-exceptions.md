@@ -30,14 +30,14 @@ Use the `browser.captureBrowserExceptions()` command with the required parameter
   </thead>
   <tbody>
     <tr>
-      <td>`timestamp`</td>
+      <td><code>timestamp</code></td>
       <td>number</td>
       <td>Time at which the JS exception was captured.</td>
     </tr>    
     <tr>
-      <td>`exceptionDetails`<br></td>
+      <td><code>exceptionDetails</code><br></td>
       <td>object</td>
-      <td>A JS object with all the details of the exception occurred.<br>Specifications of the object can be read from [here](https://chromedevtools.github.io/devtools-protocol/tot/Runtime/#type-ExceptionDetails).</td>
+      <td>A JS object with all the details of the exception occurred.<br>Specifications of the object can be read from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime/#type-ExceptionDetails">here</a>.</td>
     </tr>
   </tbody>
 </table>
@@ -51,14 +51,14 @@ Use the `browser.captureBrowserExceptions()` command with the required parameter
     await browser.captureBrowserExceptions((event) => {
       console.log('>>> Exception:', event);
     });
-
+    <br>
     await browser.navigateTo('https://duckduckgo.com/');
-
+    <br>
     const searchBoxElement = await browser.findElement('input[name=q]');
     await browser.executeScript(function(_searchBoxElement) {
       _searchBoxElement.setAttribute('onclick', 'throw new Error("Hello world!")');
     }, [searchBoxElement]);
-
+    <br>
     await browser.elementIdClick(searchBoxElement.getId());
   });
 });

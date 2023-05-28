@@ -1,7 +1,6 @@
 ---
 title: Microsoft Edge WebDriver
 description: Learn about how to use Microsoft Edge WebDriver with Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>EdgeDriver</h2></div>

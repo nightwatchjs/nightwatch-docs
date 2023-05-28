@@ -36,7 +36,7 @@ Refer to the [Configuration][7] section for details.
 - Previous: [Finding & Interacting with Elements](https://nightwatchjs.org/guide/using-nightwatch/finding-and-interacting-with-elements.html)
 - Next: [Using Expect Assertions](https://nightwatchjs.org/guide/using-nightwatch/expect-assertions.html)
 
-[5]:	https://nightwatchjs.org/guide/using-nightwatch/finding-and-interacting-with-elements.html#element-properties
-[6]:	/gettingstarted/configuration/#extended-settings
-[7]:	/gettingstarted/configuration/#extended-settings
+[5]:     https://nightwatchjs.org/guide/using-nightwatch/finding-and-interacting-with-elements.html#element-properties
+[6]:     /gettingstarted/configuration/#extended-settings
+[7]:     /gettingstarted/configuration/#extended-settings
 

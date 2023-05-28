@@ -1,7 +1,6 @@
 ---
 title: Adding plugins
 description: Learn how to extend Nightwatch capabilities by adding plugins.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Adding plugins</h2></div>
@@ -45,9 +44,9 @@ Then update your `nightwatch.conf.js` (or `nightwatch.json`) and add it to the `
 
 <div class="sample-test"><i>nightwatch.conf.js</i><pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
   plugins: ['my-new-plugin']
-  
+  <br>
   // other nightwatch config options
-
+  <br>
 }
 </code></pre></div>
 

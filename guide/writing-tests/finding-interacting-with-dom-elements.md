@@ -1,7 +1,6 @@
 ---
 title: Nightwatch DOM interactions  
 description: Learn about how to find DOM elements and interact with them in Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 
@@ -15,7 +14,7 @@ Elements are searched for from the document root, using either a CSS selector or
 Elements are internally identified using a unique _[web element reference id][3]_. When interacting with elements, Nightwatch manages this step of identifying the IDs internally and uses its automatic retry mechanisms for locating the element before interacting with it or performing any assertions.
 
 <div class="alert alert-info"><h5 style="margin-top: 0">Element Retries</h5>
-When interacting with elements, Nightwatch polls the DOM for a configurable duration when trying to find any element. If the element is not found, a `NoSuchElementError` error is thrown. 
+When interacting with elements, Nightwatch polls the DOM for a configurable duration when trying to find any element. If the element is not found, a <code>NoSuchElementError</code> error is thrown. 
 </div>
 
 ### Example
@@ -34,7 +33,7 @@ In the following example, the `setValue` command internally performs the element
 };
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">import {NightwatchTests} from 'nightwatch';
-
+<br>
 const ecosiaTest: NightwatchTests = {
 'Demo test ecosia.org': () => {
   browser
@@ -44,7 +43,7 @@ const ecosiaTest: NightwatchTests = {
     .assert.containsText('.mainline-results', 'Nightwatch.js')
     .end();
 },
-
+<br>
 export default ecosiaTest;
 </code></pre>
 </div>
@@ -59,7 +58,7 @@ If you want to find the `password` field that exists below the `username` field,
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
   'Demo test ecosia.org': function (browser) {
     const passwordElement = locateWith(By.tagName('input')).below(By.css('input[type=email]'));
-
+    <br>
     browser
       .navigateTo('https://archive.org/account/login')
       .setValue(passwordElement, 'password')
@@ -68,17 +67,17 @@ If you want to find the `password` field that exists below the `username` field,
 };
 </code></pre>
 <pre class="line-numbers" data-language="typescript"><code class="language-typescript">import {NightwatchTests} from 'nightwatch';
-
+<br>
 const ecosiaTest: NightwatchTests = {
 'Demo test ecosia.org': () => {
   const passwordElement = locateWith(By.tagName('input')).below(By.css('input[type=email]'));
-
+  <br>
   browser
     .navigateTo('https://archive.org/account/login')
     .setValue(passwordElement, 'password')
     .assert.valueEquals('input[type=password]', 'password');
 },
-
+<br>
 export default ecosiaTest;
 </code></pre></div>
 
@@ -138,8 +137,8 @@ const ecosiaTest: NightwatchTests = {
 - [BDD test syntax](https://nightwatchjs.org/guide/writing-tests/test-syntax-bdd.html)
 - [Using async/await](https://nightwatchjs.org/guide/writing-tests/using-es-6-async-await.html)
 
-[2]:	https://www.w3.org/TR/webdriver/#locator-strategies
-[3]:	https://www.w3.org/TR/webdriver/#elements
+[2]:    https://www.w3.org/TR/webdriver/#locator-strategies
+[3]:    https://www.w3.org/TR/webdriver/#elements
 
  <div class="doc-pagination pt-40">
   <div class="previous">

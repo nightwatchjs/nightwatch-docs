@@ -31,7 +31,7 @@ You can also use Xpath directly on a single command or assertion, by either pass
       selector: '//tr[@data-recordid]/span[text()='Search Text']',
       locateStrategy: 'xpath'
     });
-    
+    <br>
     // specifying xpath strategy as first argument
     browser.click('xpath', '//tr[@data-recordid]/span[text()='Search Text']');
   }
@@ -44,5 +44,5 @@ If you mostly are using XPath expressions and you want to avoid configuring the 
 - Previous: [Using expect assertions](https://nightwatchjs.org/guide/using-nightwatch/expect-assertions.html)
 - Next: [Using test hooks](https://nightwatchjs.org/guide/using-nightwatch/using-test-hooks.html)
 
-[10]:	/gettingstarted/configuration/#extended-settings
-[11]:	https://nightwatchjs.org/guide/working-with-page-objects/#element-properties
+[10]:   /gettingstarted/configuration/#extended-settings
+[11]:   https://nightwatchjs.org/guide/working-with-page-objects/#element-properties

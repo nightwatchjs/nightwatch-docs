@@ -15,22 +15,22 @@ In order to use CucumberJS in Nightwatch you need to set the `test_runner` confi
   test_runner: {
     // set cucumber as the runner
     type: 'cucumber',
-
+    <br>
     // define cucumber specific options
-
+    <br>
     options: {
       //set the feature path
       feature_path: 'examples/cucumber-js/*/*.feature',
-        
+      <br>
       // start the webdriver session automatically (enabled by default)
       auto_start_session: true,
-      
+      <br>
       // use parallel execution in Cucumber
       // set number of workers to use (can also be defined in the cli as --parallel 2
       parallel: 2 
     }
   },
-
+  <br>
   src_folders: ['examples/cucumber-js/features/step_definitions']
 }</code></pre></div>
 
@@ -81,18 +81,18 @@ Remember to set the `browser` on `this` so it can be closed automatically by Nig
 
 <div class="sample-test"><i>_extra_setup.js</i>
 <pre class="line-numbers"><code class="language-javascript">const {Before} = require('@cucumber/cucumber');
-
+<br>
 Before(async function(testCase) {
   if (!this.client) {
     console.error('Nightwatch instance was not created.');
-
+    <br>
     return;
   }
-
+  <br>
   this.client.updateCapabilities({
     testCap: 'testing'
   });
-
+  <br>
   this.browser = await this.client.launchBrowser();
 });</code></pre></div>
 
@@ -108,7 +108,7 @@ You might also want to inspect the built-in setup file that Nightwatch uses for 
 When using the integrated Cucumber test runner, you need to use the Cucumber [formatters](https://github.com/cucumber/cucumber-js/blob/main/docs/formatters.md) for generating output.
 
 <div class="alert alert-warning">
-Nightwatch reporters (like JUnit XML reports or the [global custom reporter](https://v2.nightwatchjs.org/guide/extending-nightwatch/custom-reporter.html)) are not available. The main reason is that reporting is delegated to the Cucumber CLI. You can also [write your own](https://github.com/cucumber/cucumber-js/blob/main/docs/custom_formatters.md) Cucumber formatter.
+Nightwatch reporters (like JUnit XML reports or the <a href="https://v2.nightwatchjs.org/guide/extending-nightwatch/custom-reporter.html">global custom reporter</a>) are not available. The main reason is that reporting is delegated to the Cucumber CLI. You can also <a href="https://github.com/cucumber/cucumber-js/blob/main/docs/custom_formatters.md">write your own</a> Cucumber formatter.
 </div>
 
 Nightwatch will forward `--format` and `--format-options` CLI arguments, if present, to Cucumber.

@@ -1,7 +1,6 @@
 ---
 title: Grouping tests with Nightwatch
 description: Learn how to group tests together for better organization of the test suite.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Grouping tests with Nightwatch</h2></div>

@@ -10,7 +10,7 @@ Elements are internally identified using a _[web element reference id][3]_. When
 
 <div class="alert alert-info">
 <h5>Element Retries</h5>
-When interacting with elements, Nightwatch polls the DOM for a configurable duration when trying to find any element. If the element is not found, a `NoSuchElementError` error is thrown. 
+When interacting with elements, Nightwatch polls the DOM for a configurable duration when trying to find any element. If the element is not found, a <code>NoSuchElementError</code> error is thrown. 
 </div>
 
 In the example below, the command `setValue` is first performing internally the element lookup and then calling the element set value command.  
@@ -38,7 +38,7 @@ For example if we wanted to find the password field below the username we would 
 <pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Demo test ecosia.org': function (browser) {
     const passwordElement = locateWith(By.tagName('input')).below(By.css('input[type=email]'));
-
+    <br>
     browser
       .navigateTo('https://archive.org/account/login')
       .setValue(passwordElement, 'password')
@@ -92,5 +92,5 @@ Say in the example above, the `input[type=search]` element selector returns 3 el
 - Previous: [Using ES6 async/await](https://nightwatchjs.org/guide/using-nightwatch/using-es6-async.html)
 - Next: [Writing Assertions](https://nightwatchjs.org/guide/using-nightwatch/writing-assertions.html)
 
-[2]:	https://www.w3.org/TR/webdriver/#locator-strategies
-[3]:	https://www.w3.org/TR/webdriver/#elements
+[2]:    https://www.w3.org/TR/webdriver/#locator-strategies
+[3]:    https://www.w3.org/TR/webdriver/#elements

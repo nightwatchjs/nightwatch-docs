@@ -14,22 +14,22 @@ Here's an example from the generated `nightwatch.conf.js`:
 <div class="sample-test"><i>nightwatch.conf.js</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
   src_folders: [],
-
+  <br>
   test_settings: {
     default: {
       launch_url: 'https://nightwatchjs.org'
     },
-
+    <br>
     browserstack: {
       webdriver: {
         start_process: false
       },
-  
+      <br>
       selenium: {
         host: 'hub-cloud.browserstack.com',
         port: 443
       },
-  
+      <br>
       desiredCapabilities: {
          browserName: 'chrome',
         'bstack:options' : {

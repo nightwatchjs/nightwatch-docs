@@ -1,7 +1,6 @@
 ---
 title: Create Nightwatch tests using the Chrome DevTools Recorder
 description: Learn how to do create nightwatch tests using the Google Chrome devtools recorder
-summary_image: https://user-images.githubusercontent.com/8705386/184881833-dcc2d0d6-4012-4f9e-8fff-27f888adbd1d.png
 ---
 
 <div class="page-header"><h2>Create Nightwatch tests using the Chrome DevTools Recorder</h2></div>
@@ -67,15 +66,13 @@ You can also export it as a Nightwatch test script right away. There are two way
 - install the extension and open the **Recorder Panel** in the DevTools
 - click on your saved recording, and then click on the export button (Down arrow button)
 - you will see the **Export as Nightwatch test script** option
-<br>
-<p>![Export Nightwatch Test](https://user-images.githubusercontent.com/8705386/184881833-dcc2d0d6-4012-4f9e-8fff-27f888adbd1d.png)</p>
+<br><p>![Export Nightwatch Test](https://user-images.githubusercontent.com/8705386/184881833-dcc2d0d6-4012-4f9e-8fff-27f888adbd1d.png)</p>
 
 <br>
 - When you click on the option, you have successfully exported your current recording to Nightwatch tests.
-- Now you can  [run your first tests](https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html#tests-source) with Nightwatch
+- Now you can <a href="https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html#tests-source">run your first tests</a> with Nightwatch
 
-<br>
-![Run first test](https://user-images.githubusercontent.com/2018070/185052499-44f3cde6-13d6-4809-9083-994575288264.gif)
+<br><p>![Run first test](https://user-images.githubusercontent.com/2018070/185052499-44f3cde6-13d6-4809-9083-994575288264.gif)</p>
 <br>
 <br>
 <br>

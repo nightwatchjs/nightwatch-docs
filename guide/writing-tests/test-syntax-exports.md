@@ -37,7 +37,7 @@ You can also include multiple steps in a test as follows:<br><br>
       .setValue('input[type=search]', 'nightwatch')
       .assert.visible('button[type=submit]');
   },
-
+  <br>
   'step two: click submit' : function (browser) {
     browser
       .click('button[type=submit]')
@@ -115,7 +115,7 @@ Or to skip multiple tags, add each tag you want to skip as comma-separated:
 - [BDD test syntax](https://nightwatchjs.org/guide/writing-tests/test-syntax-bdd.html)
 - [Using async/await](https://nightwatchjs.org/guide/writing-tests/using-es-6-async-await.html)
 
-[1]:	https://www.ecosia.org/
+[1]:    https://www.ecosia.org/
 
  <div class="doc-pagination pt-40">
   <div class="previous">

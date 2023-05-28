@@ -39,32 +39,32 @@ This example is based of a Storybook project with the `@nightwatch/storybook` pl
 
 <div class="sample-test"><i>Form.stories.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import { userEvent, within } from '@storybook/testing-library';
 import Form from './Form.jsx';
-
+<br>
 export default {
   title: 'Form',
   component: Form,
 }
-
+<br>
 const Template = (args) =&lt; &lt;Form {...args} /&gt;
-
+<br>
 // Component story for an empty form
 export const EmptyForm = Template.bind({});
-
+<br>
 // Component story simulating filling in the form
 export const FilledForm = Template.bind({});
-
+<br>
 FilledForm.play = async ({ canvasElement }) =&lt; {
-
+  <br>
   // Starts querying the component from its root element
   const canvas = within(canvasElement);
-  
+  <br>
   debugger;
-  
+  <br>
   // 👇 Simulate interactions with the component
   await userEvent.type(canvas.getByTestId('new-todo-input'), 'outdoors hike');
   await userEvent.click(canvas.getByRole('button'));
 };
-
+<br>
 FilledForm.test = async (browser, { component }) =&lt; {
   // 👇 Run commands and assertions in the Nightwatch context
   await expect(component).to.be.visible;
@@ -89,5 +89,5 @@ You can also use the [integrated debug console](https://nightwatchjs.org/guide/d
 	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">Storybook integration</span></div>
 	</a>
   </div>
-  
+
 </div>

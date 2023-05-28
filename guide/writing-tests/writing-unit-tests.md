@@ -15,7 +15,7 @@ This is a global option. Set the `unit_tests_mode` option to `true` in the `nigh
 
 <pre><code class="language-javascript">{
   <strong>"src_folders"</strong> : ["tests"],
-  
+  <br>
   "unit_tests_mode": true
 }</code></pre>
 
@@ -25,10 +25,10 @@ You can set the `@unitTest` property to true if you'd like to have individual te
 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">const assert = require('assert');
-
+<br>
 module.exports = {
   '@unitTest': true,
-
+  <br>
   'demo UnitTest' : function (done) {
     assert.equal('TEST', 'TEST');
     setTimeout(function() {
@@ -51,40 +51,40 @@ Here's a subset of the unit test for the `utils.js` Nightwatch module:
 <pre data-language="javascript"><code class="language-javascript">var assert = require('assert');
 var common = require('../../common.js');
 var Utils = common.require('util/utils.js');
-
+<br>
 module.exports = {
   'test Utils' : {
     testFormatElapsedTime : function() {
-
+      <br>
       var resultMs = Utils.formatElapsedTime(999);
       assert.equal(resultMs, '999ms');
-
+      <br>
       var resultSec = Utils.formatElapsedTime(1999);
       assert.equal(resultSec, '1.999s');
-
+      <br>
       var resultMin = Utils.formatElapsedTime(122299, true);
       assert.equal(resultMin, '2m 2s / 122299ms');
     },
-
+    <br>
     testMakeFnAsync : function() {
       function asyncFn(cb) {
         cb();
       }
-
+      <br>
       function syncFn() {}
-
+      <br>
       var convertedFn = Utils.makeFnAsync(1, syncFn);
       var called = false;
       convertedFn(function() {
         called = true;
       });
-
+      <br>
       assert.equal(Utils.makeFnAsync(1, asyncFn), asyncFn);
       assert.ok(called);
     }
   }
 };
-
+<br>
 </code></pre>
 </div>
 
@@ -100,11 +100,11 @@ Here's unit test which checks if Nightwatch throws an error if you don't invoke 
 <pre data-language="javascript"><code class="language-javascript">
 module.exports = {
   const assert = require('assert');
-  
+  <br>
   module.exports = {
     'demo UnitTest' : function (done) {
       assert.equal('TEST', 'TEST');
-    
+      <br>
       setTimeout(function() {  
         done();
       }, 10);
@@ -124,14 +124,14 @@ An empty `exclude` means we want to reset its value and rely only on `filter`.
 <pre><code class="language-javascript">{
   <strong>"src_folders"</strong> : ["./examples/tests", "./examples/unittests"],
   <strong>"output_folder"</strong> : "./examples/reports",
-
-  
+  <br>
+  <br>
   "webdriver" : {
     "start_process": true,
     "server_path": "node_modules/.bin/chromedriver",
     "port": 9515
   },
-
+  <br>
   <strong>"test_settings"</strong> : {
     "default" : {
       "launch_url" : "http://localhost",
@@ -140,7 +140,7 @@ An empty `exclude` means we want to reset its value and rely only on `filter`.
       },
       "exclude" : "./examples/unittests/*"
     },
-
+    <br>
     "unittests" : {
       "unit_tests_mode" : true,
       "filter" : "./examples/unittests/*",

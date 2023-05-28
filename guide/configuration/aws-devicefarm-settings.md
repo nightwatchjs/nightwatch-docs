@@ -29,60 +29,60 @@ Use this configuration as a template to connect to AWS Device Farm. Make sure up
 <pre class="line-numbers"><code class="language-javascript">let AWS = require("aws-sdk");
 let PROJECT_ARN = "&lt;PROJECT_ARN&gt;";
 let devicefarm = new AWS.DeviceFarm({ region: "us-west-2" });
- 
- 
+<br>
+<br>
 module.exports = (async function() {
  const testGridUrlResult = await devicefarm.createTestGridUrl({
      projectArn: PROJECT_ARN,
      expiresInSeconds: 86400
  }).promise();
  const testGridUrl = new URL(testGridUrlResult.url);
- 
+ <br>
  return {
    // An array of folders (excluding subfolders) where your tests are located;
    // if this is not specified, the test source must be passed as the second argument to the test runner.
    src_folders: [],
- 
+   <br>
    // See https://nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html
    page_objects_path: ['node_modules/nightwatch/examples/pages/'],
- 
+   <br>
    // See https://nightwatchjs.org/guide/extending-nightwatch/custom-commands.html
    custom_commands_path: ['node_modules/nightwatch/examples/custom-commands/'],
- 
+   <br>
    // See https://nightwatchjs.org/guide/extending-nightwatch/custom-assertions.html
    custom_assertions_path: '',
- 
+   <br>
    // See https://nightwatchjs.org/guide/extending-nightwatch/plugin-api.html
    plugins: [],
-  
+   <br>
    // See https://nightwatchjs.org/guide/#external-globals
    globals_path : '',
- 
+   <br>
    webdriver: {},
- 
+   <br>
    test_settings: {
      default: {
        disable_error_log: false,
        launch_url: 'https://nightwatchjs.org',
- 
+       <br>
        screenshots: {
          enabled: false,
          path: 'screens',
          on_failure: true
        },
- 
+       <br>
        desiredCapabilities: {
          browserName : 'chrome'
        },
      },
- 
+     <br>
      awsDeviceFarm: {
        selenium: {
          host: testGridUrl.host,
          default_path_prefix: testGridUrl.pathname,
          port: 443
        },
- 
+       <br>
        webdriver: {
          timeout_options: {
            timeout: 150000,
@@ -99,7 +99,7 @@ module.exports = (async function() {
 </code></pre>
 </div>
 
-[1]:	https://aws.amazon.com/device-farm/
+[1]:    https://aws.amazon.com/device-farm/
 
 ### Recommended content
 - [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)

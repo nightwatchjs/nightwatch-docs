@@ -1,7 +1,6 @@
 ---
 title: Run Nightwatch tests on CircleCI
 description: Learn how to run Nightwatch tests on CircleCI
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Run Nightwatch tests on CircleCI</h2></div>

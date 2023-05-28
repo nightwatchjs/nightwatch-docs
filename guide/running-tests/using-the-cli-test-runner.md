@@ -1,7 +1,6 @@
 ---
 title: Nightwatch command line test runner  
 description: Learn how to use the command-line test runner with Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Using the CLI test runner</h2></div>
@@ -75,8 +74,8 @@ Test Filters – Mocha only:
   --invert ......... Inverts --grep and --fgrep matches.                                                                                       
 
 Retrying:
-  --retries ........ Retries failed or errored testcases up <n> times.                                                                         
-  --suiteRetries ... Retries failed or errored testsuites up <n> times.                                                                        
+  --retries ........ Retries failed or errored testcases up &lt;n&gt; times.                                                                         
+  --suiteRetries ... Retries failed or errored testsuites up &lt;n&gt; times.                                                                        
 
 Reporting:
   --output, -o ..... Where to save the (JUnit XML) test reports.                                                                               
@@ -91,7 +90,7 @@ Component Tests:
 Info & help:
   --help, -h ....... Shows this help (pass COLORS=0 env variable to disable colors).                                                           
   --info ........... Shows environment info, i.e. OS, cpu, Node.js and installed browsers.                                                     
-  --version, -v .... Shows version information.    
+  --version, -v .... Shows version information.
 </code></pre>
 
 ### Recommended content

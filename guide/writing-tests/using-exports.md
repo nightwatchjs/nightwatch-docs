@@ -40,7 +40,7 @@ A test can have multiple steps, if needed:<br><br>
       .setValue('input[type=search]', 'nightwatch')
       .assert.visible('button[type=submit]');
   },
-
+  <br>
   'step two: click submit' : function (browser) {
     browser
       .click('button[type=submit]')
@@ -51,4 +51,4 @@ A test can have multiple steps, if needed:<br><br>
 
 - Next: [Using BDD describe](https://nightwatchjs.org/guide/using-nightwatch/using-bdd-describe.html)
 
-[1]:	https://www.ecosia.org/
+[1]:    https://www.ecosia.org/

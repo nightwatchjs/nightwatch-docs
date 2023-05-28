@@ -15,13 +15,13 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 
 <div class="sample-test copy-to-clipboard-button line-numbers"><i>tests/sampleTest.js</i>
 <pre data-language="javascript"><code class="language-javascript">describe('user actions api', function() {
-    
+  <br>
   it('demo test', function() {
     browser
       .navigateTo('https://nightwatchjs.org')
       .perform(function() {
         const actions = this.actions({async: true});
-
+        <br>
         return actions
          .keyDown(Keys.SHIFT)
          .keyUp(Keys.SHIFT);
@@ -118,7 +118,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 </div>
 
 <div class="apimethod">
-  <h4>.dragAndDrop(`from`, `to`)</h4>
+  <h4>.dragAndDrop(<code>from</code>, <code>to</code>)</h4>
   <div>Configures a drag-and-drop action consisting of the following steps:
     <ol>
     <li>Move to the center of the from element (element to be dragged).</li>
@@ -156,7 +156,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 </div>
 
 <div class="apimethod">
-  <h4>.insert(`device`, `...actions`)</h4>
+  <h4>.insert(<code>device</code>, <code>...actions</code>)</h4>
   <div>
     <p>Appends actions to the end of the current sequence for the given <code>device</code>. If device synchronization is enabled, after inserting the actions, pauses will be inserted for all other devices to ensure all action sequences are the same length.</p>
   </div>    
@@ -174,12 +174,12 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
       <tbody>
       <tr>
         <td><code>device</code></td>
-        <td><code>[Device](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Device.html)</code></td>
+        <td><code><a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Device.html">Device</a></code></td>
         <td>the device to update</td>
       </tr>
       <tr>
         <td><code>actions</code></td>
-        <td><code>...[Action](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Action.html)</code></td>
+        <td><code>...<a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Action.html">Action</a></code></td>
         <td>the actions to insert.</td>
       </tr>
       </tbody>
@@ -188,7 +188,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 </div>
 
 <div class="apimethod">
-  <h4>.keyDown(`key`)</h4>
+  <h4>.keyDown(<code>key</code>)</h4>
   <p>Inserts an action to press a single key.</p>
 
 <h5>Parameters:</h5>
@@ -213,7 +213,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 </div>
 
 <div class="apimethod">
-  <h4>.keyUp(`key`)</h4>
+  <h4>.keyUp(<code>key</code>)</h4>
   <p>Inserts an action to release a single key.</p>
 
 <h5>Parameters:</h5>
@@ -253,7 +253,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
       </thead>
       <tbody>
       <tr>
-        <td>[Keyboard](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Keyboard.html)</td>
+        <td><a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Keyboard.html">Keyboard</a></td>
         <td>the keyboard device handle.</td>
       </tr>
       </tbody>
@@ -277,7 +277,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
       </thead>
       <tbody>
       <tr>
-        <td>[Pointer](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Pointer.html)</td>
+        <td><a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Pointer.html">Pointer</a></td>
         <td>the mouse pointer device handle.</td>
       </tr>
       </tbody>
@@ -286,8 +286,8 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 </div>
 
 <div class="apimethod">
-  <h4>.move(`[options]`)</h4>
-  <p>Inserts an action for moving the mouse `x` and `y` pixels relative to the specified `origin`. The origin may be defined as the mouse's [current position](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Origin.html#POINTER), the [viewport](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Origin.html#VIEWPORT), or the center of a specific `WebElement`.</p>
+  <h4>.move(<code>[options]</code>)</h4>
+  <p>Inserts an action for moving the mouse <code>x</code> and <code>y</code> pixels relative to the specified <code>origin</code>. The origin may be defined as the mouse's <a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Origin.html#POINTER">current position</a>, the <a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Origin.html#VIEWPORT">viewport</a>, or the center of a specific <code>WebElement</code>.</p>
   <p>It's possible to adjust how long the browser driver should take, in milliseconds, to perform the move using the duration parameter (defaults to 100 ms).</p> 
 <h5>Parameters:</h5>
   <div class="table-responsive">
@@ -306,7 +306,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
         <td>The move options. Defaults to moving the mouse to the top-left corner of the viewport over 100ms. <br><br>Available values are:<br>
 <pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript">{
   duration: {Number|undefined}, 
-  origin: ([Origin](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Origin.html)|WebElement|undefined), 
+  origin: (<a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Origin.html">Origin</a>|WebElement|undefined), 
   x: {Number|undefined}, 
   y: {Number|undefined}
 }</pre></td>
@@ -317,7 +317,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 </div>
 
 <div class="apimethod">
-  <h4>.pause(`duration`, `...devices`)</h4>
+  <h4>.pause(<code>duration</code>, <code>...devices</code>)</h4>
   <p>Inserts a pause action for the specified devices, ensuring each device is idle for a tick. The length of the pause (in milliseconds) may be specified as the first parameter to this method (defaults to 0). Otherwise, you may just specify the individual devices that should pause.</p>
   <p>If no devices are specified, a pause action will be created (using the same duration) for every device.</p> 
 <h5>Parameters:</h5>
@@ -333,12 +333,12 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
       <tbody>
       <tr>
         <td><code>duration</code><br><span class="optional">Optional</span> </td>
-        <td>Number|[Device](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Device.html)</td>
+        <td>Number|<a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Device.html">Device</a></td>
         <td>The length of the pause to insert, in milliseconds. Alternatively, the duration may be omitted (yielding a default 0 ms pause), and the first device to pause may be specified.</td>
       </tr>
       <tr>
         <td><code>devices</code></td>
-        <td>...[Device](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Device.html)</td>
+        <td>...<a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Device.html">Device</a></td>
         <td>The devices to insert the pause for. If no devices are specified, the pause will be inserted for all devices.</td>
       </tr>
       </tbody>
@@ -347,7 +347,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 </div>
 
 <div class="apimethod">
-  <h4>.press(`[button]`)</h4>
+  <h4>.press(<code>[button]</code>)</h4>
   <p>Inserts an action to press a mouse button at the mouse's current location.</p>
 
 <h5>Parameters:</h5>
@@ -363,8 +363,8 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
       <tbody>
       <tr>
         <td><code>button</code><br><span class="optional">Optional</span> </td>
-        <td>[Button](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Button.html)</td>
-        <td>The button to press; defaults to `LEFT`.</td>
+        <td><a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Button.html">Button</a></td>
+        <td>The button to press; defaults to <code>LEFT</code>.</td>
       </tr>
       </tbody>
     </table>
@@ -372,7 +372,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 </div>
 
 <div class="apimethod">
-  <h4>.release(`[button]`)</h4>
+  <h4>.release(<code>[button]</code>)</h4>
   <p>Inserts an action to release a mouse button at the mouse's current location.</p>
 
 <h5>Parameters:</h5>
@@ -388,8 +388,8 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
       <tbody>
       <tr>
         <td><code>button</code><br><span class="optional">Optional</span> </td>
-        <td>[Button](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Button.html)</td>
-        <td>The button to release; defaults to `LEFT`.</td>
+        <td><a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Button.html">Button</a></td>
+        <td>The button to release; defaults to <code>LEFT</code>.</td>
       </tr>
       </tbody>
     </table>
@@ -398,7 +398,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 
 
 <div class="apimethod">
-  <h4>.sendKeys(`...keys`)</h4>
+  <h4>.sendKeys(<code>...keys</code>)</h4>
   <p>Inserts a sequence of actions to type the provided key sequence. For each key, this will record a pair of keyDown and keyUp actions. </p>
 
 <h5>Parameters:</h5>
@@ -423,7 +423,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
 </div>
 
 <div class="apimethod">
-  <h4>.synchronize(`...devices`)</h4>
+  <h4>.synchronize(<code>...devices</code>)</h4>
 <p>Ensures the action sequence for every device referenced in this action sequence is the same length. For devices whose sequence is too short, this will insert pauses so that every device has an explicit action defined at each tick.</p>
 
 <h5>Parameters:</h5>
@@ -439,7 +439,7 @@ The new API is available and ready to use in Nightwatch via the existing [`.perf
       <tbody>
       <tr>
         <td><code>devices</code></td>
-        <td>...[Device](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Device.html)</td>
+        <td>...<a href="https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Device.html">Device</a></td>
         <td>The specific devices to synchronize. If unspecified, the action sequences for every device will be synchronized.</td>
       </tr>
       </tbody>
@@ -454,12 +454,12 @@ By default, action sequences will be synchronized so only one device has a defin
 
 <div class="sample-test"><i>tests/sampleTest.js</i>
 <pre data-language="javascript" style="padding-top: 10px" class="line-numbers"><code class="language-javascript">describe('user actions api', function() {
-
+  <br>
   it('demo test', function() {
     browser
       .perform(function() {
         const actions = this.actions({async: true});
-
+        <br>
         return actions
           .keyDown(Keys.SHIFT)
           .move({origin: el})

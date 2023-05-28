@@ -79,7 +79,7 @@ The Nightwatch Jest environment comes with default settings. But, if needed, you
     async setup(browser) {},
     async teardown(browser) {},
   },
-
+  <br>
   testMatch: [
       "**/tests/*.[jt]s?(x)"
    ],

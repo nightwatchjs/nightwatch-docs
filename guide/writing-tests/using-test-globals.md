@@ -1,7 +1,6 @@
 ---
 title: Nightwatch test globals 
-description: Learn how to use global variables with Nightwatch tests. 
-summary_image: https://nightwatchjs.org/img/banner.png
+description: Learn how to use global variables with Nightwatch tests.
 ---
 
 <div class="page-header"><h2>Using test globals</h2></div>
@@ -15,11 +14,11 @@ Here's an example definition using the `"globals"` property in `nightwatch.json`
 <div class="sample-test"><i>nightwatch.conf.js</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
-
+  <br>
   "test_settings": {
     "default": {
       "launch_url": "https://nightwatchjs.org",
-
+      <br>
       "globals": {
         "myGlobalVar" : "some value",
         "otherGlobal" : "some other value"

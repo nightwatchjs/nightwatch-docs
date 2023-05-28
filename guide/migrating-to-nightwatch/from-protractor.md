@@ -126,13 +126,13 @@ browser.clearValue('input')
 browser.click('[type="checkbox"]')
 
 // Scroll an element into view
-browser.moveToElement(element(by.id('my-id'), 0, 0)
+browser.moveToElement(element(by.id('my-id'), 0, 0))
 
 // or, using the actions api:
 browser
   .perform(function() {
     return this.actions().mouseMove(element(by.id('my-id')))
-  }))
+  })
 ```
 
 > You can learn more about working with DOM elements in our [official documentation](https://v2.nightwatchjs.org/guide/using-nightwatch/finding-and-interacting-with-elements.html)
@@ -159,7 +159,7 @@ expect.elements('.custom-class').count.to.equal(3);
 <span>Before: Protractor</span>
 
 ```javascript
-expect(element(by.css('input[name="first_name"]'))).getAttribute('value')).toBe('foo')
+expect(element(by.css('input[name="first_name"]'))).getAttribute('value').toBe('foo')
 ```
 
 <span>After: Nightwatch v2</span>

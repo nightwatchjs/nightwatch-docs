@@ -1,7 +1,6 @@
 ---
 title: Mochawesome reporter with Nightwatch
 description: Learn how to use the Mochawesome reporter with Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Mochawesome Reporter</h2></div>

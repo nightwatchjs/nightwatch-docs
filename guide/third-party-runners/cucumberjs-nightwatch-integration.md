@@ -20,22 +20,22 @@ In order to use CucumberJS in Nightwatch you need to set the `test_runner` confi
   test_runner: {
     // set cucumber as the runner
     type: 'cucumber',
-
+    <br>
     // define cucumber specific options
-
+    <br>
     options: {
       //set the feature path
       feature_path: 'examples/cucumber-js/*/*.feature',
-        
+      <br>
       // start the webdriver session automatically (enabled by default)
       auto_start_session: true,
-      
+      <br>
       // use parallel execution in Cucumber
       // set number of workers to use (can also be defined in the cli as --parallel 2
       parallel: 2 
     }
   },
-
+  <br>
   src_folders: ['examples/cucumber-js/features/step_definitions']
 }</code></pre>
 </div>
@@ -89,18 +89,18 @@ Remember to set the `browser` on `this` so it can be closed automatically by Nig
 
 <div class="sample-test">
 <pre><code class="language-javascript">const {Before} = require('@cucumber/cucumber');
-
+<br>
 Before(async function(testCase) {
   if (!this.client) {
     console.error('Nightwatch instance was not created.');
-
+    <br>
     return;
   }
-
+  <br>
   this.client.updateCapabilities({
     testCap: 'testing'
   });
-
+  <br>
   this.browser = await this.client.launchBrowser();
 });</code></pre></div>
 
@@ -116,12 +116,12 @@ You might also want to inspect the built-in setup file that Nightwatch uses for 
 When using the integrated Cucumber test runner, you need to use the Cucumber [formatters](https://github.com/cucumber/cucumber-js/blob/main/docs/formatters.md) for generating output.
 
 <div class="alert alert-warning">
-Nightwatch reporters (like JUnit XML reports or the [global custom reporter](https://v2.nightwatchjs.org/guide/extending-nightwatch/custom-reporter.html)) are not available. The main reason is that reporting is delegated to the Cucumber CLI. You can also [write your own](https://github.com/cucumber/cucumber-js/blob/main/docs/custom_formatters.md) Cucumber formatter.
+Nightwatch reporters (like JUnit XML reports or the <a href="https://v2.nightwatchjs.org/guide/extending-nightwatch/custom-reporter.html">global custom reporter</a>) are not available. The main reason is that reporting is delegated to the Cucumber CLI. You can also <a href="https://github.com/cucumber/cucumber-js/blob/main/docs/custom_formatters.md">write your own</a> Cucumber formatter.
 </div>
 
 Nightwatch will forward `--format` and `--format-options` CLI arguments, if present, to Cucumber.
 
-By default, the `progress` formatter is used. 
+By default, the `progress` formatter is used.
 
 For example:
 
@@ -142,15 +142,15 @@ Here's how the output looks like when running the example tests in Firefox. You 
 <div class="sample-test">
 <pre class="hide-indicator language-bash"><code>ℹ Connected to GeckoDriver on port 4444 (1740ms).
 Using: firefox (92.0.1) on MAC (20.6.0).
-
+<br>
 ..  ✔ Testing if the page title equals 'Rijksmuseum Amsterdam, home of the Dutch masters' (4ms)
-.  ✔ Element <#rijksmuseum-app> was visible after 46 milliseconds.
-.  ✔ Testing if element <.search-results> contains text 'Operation Night Watch' (1994ms)
+.  ✔ Element &lt;#rijksmuseum-app&gt; was visible after 46 milliseconds.
+.  ✔ Testing if element &lt;.search-results&gt; contains text 'Operation Night Watch' (1994ms)
 ...  ✔ Testing if the page title equals 'Rijksmuseum Amsterdam, home of the Dutch masters' (8ms)
-.  ✔ Element <#rijksmuseum-app> was visible after 49 milliseconds.
-.  ✔ Testing if element <.search-results> contains text 'The Night Watch, Rembrandt van Rijn, 1642' (1427ms)
+.  ✔ Element &lt;#rijksmuseum-app&gt; was visible after 49 milliseconds.
+.  ✔ Testing if element &lt;.search-results&gt; contains text 'The Night Watch, Rembrandt van Rijn, 1642' (1427ms)
 .
-
+<br>
 2 scenarios (2 passed)
 10 steps (10 passed)
 0m13.024s (executing steps: 0m12.998s)

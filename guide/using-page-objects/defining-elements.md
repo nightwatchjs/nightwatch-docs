@@ -46,7 +46,7 @@ Optionally, you can define an array of objects:
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">var sharedElements = {
   mailLink: 'a[href*="mail.google.com"]'
 };
-
+<br>
 module.exports = {
   elements: [
     sharedElements,
@@ -55,6 +55,7 @@ module.exports = {
 };</code></pre></div>
 
 <br>
+
 Putting `elements` and `url` together, say you have the following defined above saved as a `googlePage.js` file:
 
 <div class="sample-test"><i>nightwatch/pages/googlePage.js</i>
@@ -80,13 +81,13 @@ In your tests you will use it as follows:
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('sample test with page objects', function() {
   it('Test', function (browser) {
     var google = browser.page.google();
-
+    <br>
     google.navigate()
       .assert.title('Google')
       .assert.visible('@searchBar')
       .setValue('@searchBar', 'nightwatch')
       .click('@submit');
-
+    <br>
     browser.end();
   });
 });
@@ -125,16 +126,16 @@ You can also override what is defined in the page element by specifying the elem
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('sample test with page objects', function() {
   it('Test', function (browser) {
     var google = browser.page.google();
-
+    <br>
     google
       .navigate()
       .assert.title('Google');
-      
+    <br>
     google.waitForElementVisible('@searchBar') // 2nd input element
     google.waitForElementVisible({selector:'@searchBar', index:1}, function(result){}); // 1st div
-      
+    <br>
     google.click('@submit');
-
+    <br>
     browser.end();
  });
 });
@@ -150,7 +151,7 @@ When using named page object elements (starting with '@') you can also use CSS p
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     google.waitForElementVisible('@searchBar:first-child');
-
+    <br>
     google.waitForElementVisible('@searchBar:nth-child(1)');
   }
 };

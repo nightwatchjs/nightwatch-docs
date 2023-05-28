@@ -1,7 +1,6 @@
 ---
 title: Safari Driver
 description: Learn about how to use Safari Driver with Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>SafariDriver</h2></div>

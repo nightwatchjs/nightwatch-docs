@@ -34,25 +34,25 @@ All you need to do is call the `browser.setDeviceDimensions()` command with the 
   </thead>
   <tbody>
     <tr>
-      <td>`width`</td>
+      <td><code>width</code></td>
       <td>number</td>
       <td>0</td>
       <td>Overriding width value in pixels (minimum 0, maximum 10000000). 0 disables the override.</td>
     </tr>
     <tr>
-      <td>`height`</td>
+      <td><code>height</code></td>
       <td>number</td>
       <td>0</td>
       <td>Overriding height value in pixels (minimum 0, maximum 10000000). 0 disables the override.</td>
     </tr>    
     <tr>
-      <td>`deviceScaleFactor`<br><span class="optional">optional</span></td>
+      <td><code>deviceScaleFactor</code><br><span class="optional">optional</span></td>
       <td>number</td>
       <td>0</td>
       <td>Overriding device scale factor value. 0 disables the override.</td>
     </tr>
     <tr>
-      <td>`mobile`<br><span class="optional">optional</span></td>
+      <td><code>mobile</code><br><span class="optional">optional</span></td>
       <td>boolean</td>
       <td>false</td>
       <td>Whether to emulate mobile device. This includes viewport meta tag, overlay scrollbars, text autosizing and more.</td>

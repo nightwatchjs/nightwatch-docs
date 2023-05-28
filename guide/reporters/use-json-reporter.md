@@ -65,7 +65,7 @@ To generate only the built-in JSON report, run the following command:
 
 <pre class="language-bash"><code class="language-bash">npx nightwatch examples/tests/duckDuckGo.js --env chrome --reporter=json </code></pre>
 
-<strong> Note : </strong> <em>If `output_folder’s` subfolder `nightwatch-examples` isn’t already present and the parameter --reporter=json supplied explicitly as seen above then the reports will be stored inside `output_folder` itself. </em>
+<strong> Note : </strong> <em>If <code>output_folder’s</code> subfolder <code>nightwatch-examples</code> isn’t already present and the parameter --reporter=json supplied explicitly as seen above then the reports will be stored inside <code>output_folder</code> itself. </em>
 
 To generate both the built-in JUnit-XML and JSON reports, run the following command (v2.2+):
 

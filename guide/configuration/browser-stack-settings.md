@@ -25,7 +25,7 @@ Use this example configuration to try running your tests on BrowserStack.
 <div class="sample-test"><i>nightwatch.conf.js</i>
 <pre class="line-numbers"><code class="language-javascript">module.exports = {
   src_folders: [],
-
+  <br>
   webdriver: {
     keep_alive: true,
     timeout_options: {
@@ -33,18 +33,18 @@ Use this example configuration to try running your tests on BrowserStack.
       retry_attempts: 3
     }
   },
-
+  <br>
   test_settings: {
     default: {
       launch_url: 'https://nightwatchjs.org'
     },
-
+    <br>
     browserstack: {
       selenium: {
         host: 'hub-cloud.browserstack.com',
         port: 443
       },
-    
+      <br>
       // More info on configuring capabilities can be found on:
       // https://www.browserstack.com/automate/capabilities?tag=selenium-4
       desiredCapabilities: {
@@ -55,7 +55,7 @@ Use this example configuration to try running your tests on BrowserStack.
         }
       }
     },
-  
+    <br>
     'browserstack.chrome': {
       extends: 'browserstack',
       desiredCapabilities: {
@@ -65,14 +65,14 @@ Use this example configuration to try running your tests on BrowserStack.
         }
       }
     },
-  
+    <br>
     'browserstack.firefox': {
       extends: 'browserstack',
       desiredCapabilities: {
         browserName: 'firefox'
       }
     },
-  
+    <br>
     'browserstack.ie': {
       extends: 'browserstack',
       desiredCapabilities: {
@@ -119,8 +119,8 @@ You can specify proxy settings in Nightwatch by adding the `proxy` key in your `
   }
 </code></pre></div>
 
-[1]:	https://browserstack.com
-[2]:	https://www.npmjs.com/package/dotenv
+[1]:    https://browserstack.com
+[2]:    https://www.npmjs.com/package/dotenv
 [3]:    https://github.com/browserstack/nightwatch-browserstack/blob/master/scripts/local.runner.js
 [4]:    https://www.npmjs.com/package/browserstack-local
 

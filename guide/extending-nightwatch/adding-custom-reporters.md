@@ -1,7 +1,6 @@
 ---
 title: Create custom reporters
 description: Learn how to extend Nightwatch capabilities by adding custom reporters.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Create custom reporters</h2></div>

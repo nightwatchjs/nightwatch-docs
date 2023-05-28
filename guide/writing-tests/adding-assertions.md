@@ -1,7 +1,6 @@
 ---
 title: Nightwatch assertions  
 description: Learn how to do assertions with Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Adding assertions to tests</h2></div>
@@ -41,12 +40,12 @@ The following example code snippet shows the `".not"` assertions:
 <div class="sample-test"><i>tests/sampleTest.js</i><pre data-language="javascript"><code class="language-javascript">describe('Demo .not assertion', function() {
   it('demo test', function(browser) {
     browser.init();
-    
+    <br>
     browser
       .assert.not.elementPresent('.not_present') // previously .assert.elementNotPresent()
       .assert.not.visible('.non_visible') // previously .assert.hidden()
       .assert.not.urlContains('http://');
-    
+    <br>
     // ...
   })
 })</code></pre></div>
@@ -61,11 +60,11 @@ The following example code snippet shows the `retryAssertionTimeout` property de
 
 <div class="sample-test"><i>nightwatch.conf.js</i><pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
   src_folders: ['tests'],
-
+  <br>
   test_settings: {
     default: {
       launch_url: 'https://nightwatchjs.org',
-
+      <br>
       globals: {
         myGlobalVar: 'some value',
         retryAssertionTimeout: 5000
@@ -88,22 +87,22 @@ Here a basic example that uses various `expect.element([...])` assertions:
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
   'Demo test Ecosia.org': function (browser) {
     browser.url('https://www.ecosia.org/');
-
+    <br>
     // expect element header to be present in 1000ms
     browser.expect.element('header').to.be.present.before(1000);
-
+    <br>
     // expect element header to have css property 'display'
     browser.expect.element('header').to.have.css('display');
-
+    <br>
     // expect element header to have attribute 'class' which contains text 'index-header'
     browser.expect.element('header').to.have.attribute('class').which.contains('index-header');
-
+    <br>
     // expect element .search-form to be an input tag
     browser.expect.element('.search-form').to.be.a('form');
-
+    <br>
     // expect element header to be visible
     browser.expect.element('header').to.be.visible;
-
+    <br>
     browser.end();
   }
 };
@@ -120,7 +119,7 @@ In this example, the test is expecting that a specified number of elements exist
       .url('https://www.ecosia.org/')
       .expect.elements('section').count.to.equal(5);
   },
-  
+  <br>
   after(browser) {
     browser.end();
   }
@@ -129,13 +128,15 @@ In this example, the test is expecting that a specified number of elements exist
 </div>
 
 <br>
+
 The `expect` interface provides a much more flexible and fluid language for defining assertions, significantly improved over the existing `assert` interface. The only downside is that it's not possible to chain assertions anymore.
 
 <br>
+
 For a complete list of available `expect` assertions, refer to the [API docs][13].
 
-[12]:	https://chaijs.com/api/bdd/
-[13]:	/api/#expect-api
+[12]:   https://chaijs.com/api/bdd/
+[13]:   /api/#expect-api
 
  <div class="doc-pagination pt-40">
   <div class="previous">

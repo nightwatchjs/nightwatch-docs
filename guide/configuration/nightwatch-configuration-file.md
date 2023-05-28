@@ -15,7 +15,7 @@ The Nightwatch test runner binary expects a configuration file located in the cu
 You can always specify a config file location via the `--config` CLI argument. Read more about CLI options on the [Reference > Nightwatch CLI](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html) page.
 
 <div class="alert alert-info">
-From Nightwatch 2, you can also specify the config file to return a Promise and the result will be `await`-ed.
+From Nightwatch 2, you can also specify the config file to return a Promise and the result will be <code>await</code>-ed.
 </div>
 
 ### Example
@@ -26,7 +26,7 @@ Here's an example config file which uses Firefox as target browser and assumes t
   // An array of folders (excluding subfolders) where your tests are located;
   // if this is not specified, the test source must be passed as the second argument to the test runner.
   src_folders: [],
-
+  <br>
   webdriver: {
     start_process: true,
     port: 4444,
@@ -36,7 +36,7 @@ Here's an example config file which uses Firefox as target browser and assumes t
       // '-vv'
     ]
   },
-
+  <br>
   test_settings: {
     default: {
       launch_url: 'https://nightwatchjs.org',
@@ -60,10 +60,10 @@ The following packages can be used from NPM and, if installed, Nightwatch will a
 - [chromedriver][3] – for running tests in Chrome
 - [@nightwatch/selenium-server][4] – for using Selenium Server
   
-[1]:	/gettingstarted/installation/#install-webdriver
-[2]:	https://www.npmjs.com/package/geckodriver
-[3]:	https://www.npmjs.com/package/chromedriver
-[4]:	https://www.npmjs.com/package/@nightwatch/selenium-server
+[1]:    /gettingstarted/installation/#install-webdriver
+[2]:    https://www.npmjs.com/package/geckodriver
+[3]:    https://www.npmjs.com/package/chromedriver
+[4]:    https://www.npmjs.com/package/@nightwatch/selenium-server
 
 
 ### Recommended content

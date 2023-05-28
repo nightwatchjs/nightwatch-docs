@@ -1,7 +1,6 @@
 ---
 title: Taking screenshots on failures/errors
 description: Learn how to enable taking screenshots on failures/errors in Nightwatch.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Taking screenshots on failures/errors</h1></div>

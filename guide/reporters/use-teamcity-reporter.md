@@ -41,7 +41,7 @@ You can run this test using the command:
 You can also define your reporter in a separate file (eg. ***nightwatch-reporter.js***) by including the following code, and then specify the path to the file using the --reporter cli argument.
 
 <pre class="line-numbers"><code class="language-javascript">const teamCityFormatter = require("nightwatch-teamcity").format;
-
+<br>
 module.exports = {
  reporter: (results,done)=>{
    teamCityFormatter(results);
@@ -64,13 +64,13 @@ In order to compose with another reporter (e.g. `nightwatch-html-reporter`), you
 
 <div class="sample-test"><i>nightwatch-reporter.js</i>
 <pre class="line-numbers"><code class="language-javascript">const HtmlReporter = require("nightwatch-html-reporter");
-
+<br>
 const teamCityFormatter = require("nightwatch-teamcity").format;
-
+<br>
 const reporter = new HtmlReporter({ 
     reportsDirectory: "./reports",
 });
-
+<br>
 module.exports = {
     write: function(results, options, done) {
         teamCityFormatter(results);

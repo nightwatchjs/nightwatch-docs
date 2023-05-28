@@ -1,7 +1,6 @@
 ---
 title: Vite Plugin for Nightwatch
 description: Learn how to do write and execute component tests in Nightwatch using Vite.
-summary\_image: /img/banners/component-testing-overview.png
 ---
 <div class="page-header"><h1>Component Testing with Vite</h1></div>
 
@@ -42,7 +41,7 @@ Update your [Vite configuration][5]:
 
 <div class="sample-test"><i>vite.config.js</i><pre class="line-numbers language-javascript"><code class="language-javascript">import { defineConfig } from 'vite'
 import nightwatchPlugin from 'vite-plugin-nightwatch'
-
+<br>
 export default defineConfig({
   plugins: [
     // ... other plugins, such as vue() or react()
@@ -105,7 +104,7 @@ This plugin provides a few Nightwatch commands which can be used while writing t
     store: '/src/lib/store.js',
     router: '/src/lib/router.js'
   },
-
+  <br>
   mocks: {
     '/api/get-user': {
       type: 'fetch',
@@ -155,14 +154,14 @@ Example `scriptToImport.js`:
 
 <div class="sample-test"><i>scriptToImport.js</i><pre class="line-numbers language-javascript"><code class="language-javascript">import {mount} from '/node_modules/@vue/test-utils/dist/vue-test-utils.esm-browser.js'
 import Component from '/test/components/vue/Form.vue'
-
+<br>
 let element = mount(Component, {
  attachTo: document.getElementById('app'),
  global: {
    plugins: []
  }
 });
-
+<br>
 // This will be used by Nightwatch to inspect properties of this component
 window['@@component_element'] = element;
 </code></pre></div>
@@ -183,13 +182,13 @@ window['@@component_element'] = element;
   </div>
 </div>
 
-[1]:	https://github.com/nightwatchjs/vite-plugin-nightwatch
-[2]:	https://vitejs.dev/
-[3]:	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
-[4]:	https://esbuild.github.io/ "ESBuild"
-[5]:	https://vitejs.dev/config/
-[6]:	https://sinonjs.org/
-[7]:	https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
-[8]:	https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/
+[1]:    https://github.com/nightwatchjs/vite-plugin-nightwatch
+[2]:    https://vitejs.dev/
+[3]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules
+[4]:    https://esbuild.github.io/ "ESBuild"
+[5]:    https://vitejs.dev/config/
+[6]:    https://sinonjs.org/
+[7]:    https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API
+[8]:    https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/
 
-[image-1]:	https://blog.nightwatchjs.org/content/images/2022/02/Screenshot-2022-02-05-at-16.37.10.png "esbuild performance metrics screenshot"
+[image-1]:  https://blog.nightwatchjs.org/content/images/2022/02/Screenshot-2022-02-05-at-16.37.10.png "esbuild performance metrics screenshot"
