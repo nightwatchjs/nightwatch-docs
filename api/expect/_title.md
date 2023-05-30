@@ -1,4 +1,4 @@
-<h2 id="expect-title-">expect.title()</h2>
+<h2 id="expect-title">expect.title()</h2>
 
 <div class="apimethod">
 

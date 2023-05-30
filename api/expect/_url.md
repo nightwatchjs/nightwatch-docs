@@ -1,4 +1,4 @@
-<h2 id="expect-url-">expect.url()</h3>
+<h2 id="expect-url">expect.url()</h3>
 <div class="apimethod">
 
 Retrieves the page url value in order to be used for performing `equal`, `match` or `contains` assertions on it.
