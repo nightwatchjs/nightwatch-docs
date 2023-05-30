@@ -12,17 +12,18 @@ Globals can be defined either as a `"globals"` property or as an external file w
 Here's an example definition using the `"globals"` property in `nightwatch.json`:
 
 <div class="sample-test"><i>nightwatch.conf.js</i>
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
+
+<pre data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
-  <br>
+
+  "globals": {
+    "myGlobalVar" : "some value",
+    "otherGlobal" : "some other value"
+  },
+
   "test_settings": {
     "default": {
       "launch_url": "https://nightwatchjs.org",
-      <br>
-      "globals": {
-        "myGlobalVar" : "some value",
-        "otherGlobal" : "some other value"
-      }
     }
   }
 }</code></pre>
@@ -46,7 +47,7 @@ The following global properties can be used to control the behaviour of the test
 
 <div class="sample-test"><i>nightwatch/globals.js</i>
 
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   // this controls whether to abort the test execution when an assertion failed and skip the rest
   // it's being used in waitFor commands and expect assertions
   abortOnAssertionFailure: true,
@@ -105,7 +106,7 @@ Like other test settings, globals have the ability to be overwritten per test en
 
 <div class="sample-test"><i>nightwatch.json</i>
 
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
+<pre data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
 
   "test_settings": {

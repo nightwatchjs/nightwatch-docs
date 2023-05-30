@@ -15,17 +15,18 @@ Globals can be defined either as a `"globals"` property in your config file or a
 Here's an example definition using the `globals` property in the `nightwatch.json` configuration file:
 
 <div class="sample-test"><i>nightwatch.json</i>
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
+
+<pre data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
-  <br>
+
+  "globals": {
+    "myGlobalVar" : "some value",
+    "otherGlobal" : "some other value"
+  },
+
   "test_settings": {
     "default": {
       "launch_url": "https://nightwatchjs.org",
-      <br>
-      "globals": {
-        "myGlobalVar" : "some value",
-        "otherGlobal" : "some other value"
-      }
     }
   }
 }</code></pre></div>
@@ -48,7 +49,7 @@ The `globals` object is loaded directly onto the Nightwatch API object which is 
 Test globals can also be defined in an external file, specified by the `globals_path` settings in your configuration file, like so:
 
 <div class="sample-test"><i>nightwatch.json</i>
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
+<pre data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
   "globals_path": "lib/globals.js",
   <br>
@@ -72,7 +73,10 @@ You can define these in two ways:
 - directly in your `nightwatch.conf.js` config file
 
 <div class="sample-test"><i>lib/globals.js</i>
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
+
+<pre data-language="javascript">
+<code class="language-javascript">
+module.exports = {
   // this controls whether to abort the test execution when an assertion failed and skip the rest
   // it's being used in waitFor commands and expect assertions
   abortOnAssertionFailure: true,
@@ -89,7 +93,7 @@ You can define these in two ways:
   // is logged in all cases, but this also enables skipping the rest of the testcase;
   // it's being used in element commands such as .click() or .getText()
   abortOnElementLocateError: false,
-  
+
   // this will cause waitFor commands on elements to throw an error if multiple
   // elements are found using the given locate strategy and selector
   throwOnMultipleElementsReturned: false,
@@ -152,8 +156,7 @@ You can define these in two ways:
   async onBrowserQuit(browser) {
     return Promise.resolve();
   }
-}  
-</code></pre></div>
+}</code></pre></div>
 
 ### Environment Specific Globals
 
@@ -162,7 +165,7 @@ Like other test settings, `globals` have the ability to be overwritten per test 
 Consider this configuration:
 
 <div class="sample-test"><i>nightwatch.json</i>
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
+<pre data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
   <br>
   "test_settings": {
@@ -187,7 +190,7 @@ Consider this configuration:
 Let's try this out with a very basic test:
 
 <div class="sample-test"><i>sampleTest.js</i>
-<pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = {
+<pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Demo test' : function (browser) {
     console.log('myGlobalVar is: "', browser.globals.myGlobalVar, '"');
   }
