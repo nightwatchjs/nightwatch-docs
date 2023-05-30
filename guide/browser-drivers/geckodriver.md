@@ -78,11 +78,11 @@ FLAGS:
     -v                        Set the level of verbosity. Pass once for debug level logging and twice for trace level logging
 
 OPTIONS:
-    -b, --binary <BINARY>           Path to the Firefox binary, if no binary capability provided
-        --log <LEVEL>               Set Gecko log level [values: fatal, error, warn, info, config, debug, trace]
-        --marionette-port <PORT>    Port to use to connect to gecko (default: random free port)
-        --host <HOST>               Host ip to use for WebDriver server (default: 127.0.0.1)
-    -p, --port <PORT>               Port to use for WebDriver server (default: 4444)
+    -b, --binary &lt;BINARY&gt;        Path to the Firefox binary, if no binary capability provided
+        --log &lt;LEVEL&gt;            Set Gecko log level [values: fatal, error, warn, info, config, debug, trace]
+        --marionette-port &lt;PORT&gt; Port to use to connect to gecko (default: random free port)
+        --host &lt;HOST&gt;            Host ip to use for WebDriver server (default: 127.0.0.1)
+    -p, --port &lt;PORT&gt;            Port to use for WebDriver server (default: 4444)
 </code></pre>
 
 ##### Firefox Capabilities

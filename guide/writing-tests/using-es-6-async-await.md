@@ -1,7 +1,6 @@
 ---
 title: ES6 async/await
 description: Learn how to use the `async` function with Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Using ES6 async/await</h2></div>
@@ -20,7 +19,7 @@ Use of `async` function greatly improves the readability and ease of writing of 
     // get the available window handles
     const result = await browser.windowHandles();
     console.log('result', result);
-
+    <br>
     // switch to the second window
     // await is not necessary here since we're not interested in the result
     browser.switchWindow(result.value[1]);
@@ -39,9 +38,9 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
       // we only want the value, not the entire result object
       return Promise.resolve(result.value);
     });
-    
+    <br>
     console.log('value', value);
-
+    <br>
     // switch to the second window
     browser.switchWindow(value[1]);
   }
@@ -53,8 +52,8 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
 - [Finding & interacting with DOM Elements](https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html)
 
 
-[8]:	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
-[9]:	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+[8]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+[9]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
 
  <div class="doc-pagination pt-40">
   <div class="previous">

@@ -7,9 +7,9 @@ module.exports = {
     // see https://github.com/nightwatchjs/nightwatch/blob/main/examples/globalsModule.js#L12
     browser.globals.waitForConditionTimeout = 5000;
   },
-
+  <br>
   'executeAsync example test' : function (browser) {
-
+    <br>
     browser
       .timeoutsAsyncScript(10000)
       .executeAsync(function (inputVal, done) {
@@ -22,7 +22,7 @@ module.exports = {
         }
       );
   },
-
+  <br>
   after : function(browser) {
     browser.end();
   }

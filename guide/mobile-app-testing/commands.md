@@ -1,7 +1,6 @@
 ---
 title: Commands for native mobile app tests
 description:  Introduction to commands that can be used for native mobile apps.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Commands for native mobile apps test</h2></div>
@@ -22,7 +21,7 @@ To click on an element,simply use `app.click('selector strategy','selector')`  o
 // Mention the selector strategy followed by the selector itself
 // Click on the element with id `org.wikipedia:id/search_container`
 app.click('id','org.wikipedia:id/search_container')
-
+<br>
 // Mention a selector object and index.
 // Click on the nth element with id `org.wikipedia:id/page_list_item_title`
 app.click({selector: 'org.wikipedia:id/page_list_item_title',locateStrategy: 'id',index: n})
@@ -32,7 +31,7 @@ app.click({selector: 'org.wikipedia:id/page_list_item_title',locateStrategy: 'id
 // Mention the selector strategy followed by the selector itself
 // Click on the element with id `org.wikipedia:id/search_container`
 app.click('id','org.wikipedia:id/search_container')
-
+<br>
 // Mention a selector object and index
 // Click on the nth element with id `org.wikipedia:id/page_list_item_title`
 app.click({selector: 'org.wikipedia:id/page_list_item_title',locateStrategy: 'id',index: n})
@@ -46,7 +45,7 @@ If your app contains fields that need text input,you can interact with such elem
 //Mention the selector strategy followed by the selector itself
 //Type the text 'Test' the element with id `org.wikipedia:id/search_container`
 app.sendKeys('id','org.wikipedia:id/search_src_text','Test')
-
+<br>
 //Mention a selector object and index
 //Type 'Test' in the nth element with id `org.wikipedia:id/search_src_text`
 app.sendKeys({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n},'Test')
@@ -55,7 +54,7 @@ app.sendKeys({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',
 //Mention the selector strategy followed by the selector itself
 //Type the text 'Test' the element with id `org.wikipedia:id/search_container`
 app.sendKeys('id','org.wikipedia:id/search_src_text','Test')
-
+<br>
 //Mention a selector object and index
 //Type 'Test' in the nth element with id `org.wikipedia:id/search_src_text`
 app.sendKeys({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n},'Test')
@@ -69,7 +68,7 @@ To clear the value of an element,simply use `app.clearValue('selector strategy',
 //Mention the selector strategy followed by the selector itself
 //Clear the value of the element with id `org.wikipedia:id/search_src_text`
 app.clearValue('id','org.wikipedia:id/search_src_text')
-
+<br>
 //Mention a selector object and index
 //Click on the nth element with id `org.wikipedia:id/search_src_text`
 app.clearValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n})
@@ -78,7 +77,7 @@ app.clearValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id
 //Mention the selector strategy followed by the selector itself
 //Clear the value of the element with id `org.wikipedia:id/search_src_text`
 app.clearValue('id','org.wikipedia:id/search_src_text')
-
+<br>
 //Mention a selector object and index
 //Click on the nth element with id `org.wikipedia:id/search_src_text`
 app.clearValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n})
@@ -92,7 +91,7 @@ You can directly set the value of an element by using `app.setValue('selector st
 //Mention the selector strategy followed by the selector itself
 //Type the text 'Value' the element with id `org.wikipedia:id/search_container`
 app.setValue('id','org.wikipedia:id/search_src_text','Value')
-
+<br>
 //Mention a selector object and index
 //Type 'Value' in the nth element with id `org.wikipedia:id/search_src_text`
 app.setValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n},'Value')
@@ -101,7 +100,7 @@ app.setValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',
 //Mention the selector strategy followed by the selector itself
 //Type the text 'Value' the element with id `org.wikipedia:id/search_container`
 app.setValue('id','org.wikipedia:id/search_src_text','Value')
-
+<br>
 //Mention a selector object and index
 //Type 'Value' in the nth element with id `org.wikipedia:id/search_src_text`
 app.setValue({selector: 'org.wikipedia:id/search_src_text',locateStrategy: 'id',index: n},'Value')
@@ -190,7 +189,7 @@ Retrieve the current activity name using `app.appium.getCurrentActivity()`
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Get current activity name
 const activity =  await app.appium.getCurrentActivity();
-</code></pre>
+</code></pre></div>
 
 ### Get Current Package
 
@@ -199,7 +198,7 @@ Retrieve the current package name using `app.appium.getCurrentPackage()`
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Get current package name
 const package =  await app.appium.getCurrentPackage();
-</code></pre>
+</code></pre></div>
 
 ### Get Orientation
 
@@ -208,7 +207,7 @@ Retrieve the current orientation of the device. The returned value will be `POTR
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Get current orientation
 const orientation =  await app.appium.getCurrentOrientation();
-</code></pre>
+</code></pre></div>
 
 ### Set Orientation
 
@@ -217,7 +216,7 @@ Set the orientation of the device to `LANDSCAPE` or `POTRAIT`
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Set current orientation to LANDSCAPE
 await app.appium.setOrientation('LANDSCAPE');
-</code></pre>
+</code></pre></div>
 
 ### Get Geolocation
 
@@ -226,7 +225,7 @@ Retrieve the current geolocation of the device. The returned value will contain 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Get current geolocation
 const geolocation =  await app.appium.getGeolocation();
-</code></pre>
+</code></pre></div>
 
 ### Set Geolocation
 
@@ -235,7 +234,7 @@ Set the geolocation of device using `latitude`,`longitude` & `altitude`
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Set current geolocation
 await app.appium.setGeolocation({latitude:23.03,longitude: 34.23,altitude: 35.03});
-</code></pre>
+</code></pre></div>
 
 ### Keyboard Related
 
@@ -246,7 +245,7 @@ Press a particular key on the keyboard using app.appium.pressKeyCode(key code). 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Press Keycode Back 
 await app.appium.pressKeyCode(4);
-</code></pre>
+</code></pre></div>
 
 <p class="alert alert-info">This works only on Android</p>
 
@@ -257,7 +256,7 @@ Long press a particular key on the keyboard using app.appium.longPressKeyCode(ke
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
 //Press Keycode Back 
 await app.appium.longPressKeyCode(4);
-</code></pre>
+</code></pre></div>
 
 <p class="alert alert-info">This works only on Android</p>
 
@@ -268,7 +267,7 @@ Hide the keyboard using app.appium.hideKeyboard()
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
  //Hide keyboard 
 await app.appium.hideKeyboard();
-</code></pre>
+</code></pre></div>
 
 #### Is Keyboard Shown
 
@@ -277,7 +276,7 @@ Check if the keyboard is shown or not using `app.appium.isKeyboardShown()`. This
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
  //Is keyboard shown 
 const keyboardShown = await app.appium.isKeyboardShown();
-</code></pre>
+</code></pre></div>
 
 ### Recommended next steps
 

@@ -11,7 +11,7 @@ This greatly improves the readability and ease of writing of tests. Chaining the
     // get the available window handles
     const result = await browser.windowHandles();
     console.log('result', result);
-
+    <br>
     // switch to the second window
     // await is not necessary here since we're not interested in the result
     browser.switchWindow(result.value[1]);
@@ -30,9 +30,9 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
       // we only want the value, not the entire result object
       return Promise.resolve(result.value);
     });
-    
+    <br>
     console.log('value', value);
-
+    <br>
     // switch to the second window
     browser.switchWindow(value[1]);
   }
@@ -41,5 +41,5 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
 - Previous: [Using BDD describe](https://nightwatchjs.org/guide/using-nightwatch/using-bdd-describe.html)
 - Next: [Finding & Interacting with Elements](https://nightwatchjs.org/guide/using-nightwatch/finding-and-interacting-with-elements.html)
 
-[8]:	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
-[9]:	https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
+[8]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
+[9]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await

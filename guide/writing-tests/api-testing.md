@@ -1,7 +1,6 @@
 ---
 title: API Testing in Nightwatch
-description: Nightwatch provides support for API testing with the official API testing plugin, build on top of supertest. 
-summary_image: https://nightwatchjs.org/img/banner.png
+description: Nightwatch provides support for API testing with the official API testing plugin, build on top of supertest.
 ---
 
 <div class="page-header"><h1>API Testing in Nightwatch</h1></div>
@@ -35,7 +34,7 @@ Update the Nightwatch configuration to add the plugin to the list:
 
 <div class="sample-test"><i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
   plugins: ['@nightwatch/apitesting']
-    
+  <br>
   // other Nightwatch settings...
 }
 </code></pre></div>
@@ -143,9 +142,9 @@ The `@nightwatch/apitesting` plugin also provides a built-in mock server based o
 Here's a sample mock server:
 
 <div class="sample-test"><i>mock-server.js</i><pre class="line-numbers"><code class="language-javascript">describe('api testing with supertest in nightwatch POST', function () {
-
+  <br>
   let server;
-
+  <br>
   before(async function(client) {
     server = await client.mockserver.create();
     server.setup((app) => {
@@ -155,14 +154,14 @@ Here's a sample mock server:
         });
       });
     });
-
+    <br>
     await server.start(3000);
   });
-
+  <br>
   after(() => {
     server.close();
   });
-
+  <br>
   it('demo test', async function(client) {
     const req = await server.request()
       .post('/api/v1/datasets/')
@@ -170,10 +169,10 @@ Here's a sample mock server:
       .set('Accept', 'application/json')
       .expect(200)
       .expect('Content-Type', /json/);
-
+    <br>
     await client.assert.deepStrictEqual(server.route.post('/api/v1/datasets/').requestBody, {name: 'medea'});
   });
-
+  <br>
 });
 </code></pre></div>
 
@@ -185,7 +184,7 @@ Here's a sample mock server:
 <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">await mockServer.setup((app) => {
       app.get('/api/v1/schemas', function (req, res) {
         console.log('GET /api/v1/schemas called');
-  
+        <br>
         res.status(200).json([
           {
             id: 'test-schema-id1'
@@ -221,7 +220,7 @@ We can also assert on the request headers, for example using the built-in `expec
 
 <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">it('demo test', async function(client) {
     const {requestHeaders} = mockServer.route.get('/api/v1/schemas');
-
+    <br>
     client.expect(requestHeaders).to.have.property('connection', 'close');
   });
 </code></pre></div>
@@ -245,7 +244,7 @@ We can also assert on the incoming post data:
 
 <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">it('demo test', async function(client) {
     const {requestBody} = mockServer.route.post('/api/v1/schemas');
-
+    <br>
     await client.assert.deepStrictEqual(requestBody, {name: 'medea'});
 });
 </code></pre></div>
@@ -257,17 +256,17 @@ Example using `waitUntil`:
 <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">it('demo test', async function(client) {
     const timeoutMs = 15000;
     const retryIntervalMs = 500;
-    
+    <br>
     await client.waitUntil(async function () {
       const spy = server.route.get('/api/v1/schemas');
-    
+      <br>
       if (spy) {
         return spy.calledOnce;
       }
-    
+      <br>
       return false;
     }, timeoutMs, retryIntervalMs, new Error(`time out reached (10000ms) while waiting for API call.`));
-
+    <br>
 });
 </code></pre></div>
 

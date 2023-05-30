@@ -11,13 +11,13 @@ Here's a basic example of a React component. It’s using Functional style of wr
 <div class="sample-test"><i>Form.jsx</i>
 <pre data-language="javascript"><code class="language-javascript">
 import React from 'react';
-
+<br>
 class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {name: ''};
   }
-
+  <br>
   handleSubmit = (e) => {
     e.preventDefault();
     if (!this.state.name.trim()) {
@@ -26,11 +26,11 @@ class Form extends React.Component {
     this.props.addTask(this.state.name);
     this.setState({name: ''});
   };
-
+  <br>
   handleChange = (e) => {
     this.setState({name: e.target.value});
   };
-
+  <br>
   render() {
     return (
       &lt;form onSubmit={this.handleSubmit} method='post'&gt;
@@ -55,7 +55,7 @@ class Form extends React.Component {
     );
   }
 }
-
+<br>
 export default Form;
 </code></pre>
 </div>
@@ -83,7 +83,7 @@ If you're not already using external globals with Nightwatch, go ahead and creat
 <div class="sample-test">
 <i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
   plugins: ['@nightwatch/react'],
-  
+  <br>
   globals_path: 'test/globals.js'
   // other nightwatch settings...
 }
@@ -93,7 +93,7 @@ Read more about [test globals](https://nightwatchjs.org/guide/concepts/test-glob
 
 <div class="sample-test">
 <i>test/globals.js</i><pre class="line-numbers"><code class="language-javascript">const {setup} = require('@nightwatch/react');
-
+<br>
 let viteServer;
 module.exports = {
   async before() {
@@ -101,11 +101,11 @@ module.exports = {
       // you can optionally pass an existing vite.config.js file
       // viteConfigFile: '../vite.config.js'
     });
-    
+    <br>
     // This will make sure the launch Url is set correctly when mounting the React component
     this.launchUrl = `http://localhost:${viteServer.config.server.port}`;
   },
-
+  <br>
   async after() {
     await viteServer.close();
   }
@@ -119,11 +119,11 @@ Below is a basic test for the Form component. In this test we mount a component 
 <div class="sample-test">
 <i>test/src/formTest.js</i><pre class="line-numbers"><code class="language-javascript">describe('form test', function() {
   let component;
-
+  <br>
   before(async () => {
     component = await browser.mountComponent('/test/components/Form.jsx');
   });
-
+  <br>
   it('should render functional components without error', async function() {
     await browser.expect(component).to.be.visible;
   })

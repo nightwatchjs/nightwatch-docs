@@ -1,7 +1,6 @@
 ---
 title: Selectors for native mobile app tests
 description:  Introduction to selectors to find elements for native mobile apps.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Selectors for native mobile apps test</h2></div>

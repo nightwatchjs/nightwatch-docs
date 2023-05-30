@@ -1,7 +1,6 @@
 ---
 title: Nightwatch global test hooks 
 description: Learn how to Nightwatch global test hooks that would be applicable to the entire test suite.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 
@@ -22,11 +21,11 @@ The methods are defined in the external `globals` file and invoked using the `gl
   'default' : {
     isLocal : true,
   },
-
+  <br>
   'integration' : {
     isLocal : false
   },
-
+  <br>
   // External before hook is ran at the beginning of the tests run, before creating the Selenium session
   before(done) {
     // run this only for the local-env
@@ -40,7 +39,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
       done();
     }
   },
-
+  <br>
   // External after hook is ran at the very end of the tests run, after closing the Selenium session
   after(done) {
     // run this only for the local-env
@@ -54,7 +53,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
       done();
     }
   },
-
+  <br>
   // This will be run before each test suite is started
   beforeEach(browser, done) {
     // getting the session info
@@ -63,18 +62,18 @@ The methods are defined in the external `globals` file and invoked using the `gl
       done();
     });
   },
-
+  <br>
   // This will be run after each test suite is finished
   afterEach(browser, done) {
     console.log(browser.currentTest);
     done();
   },
-  
+  <br>
   // Called right after the command .navigateTo() is finished
   async onBrowserNavigate(browser) {
     return Promise.resolve();
   },
-
+  <br>
   // Called right before the command .quite() is finished
   async onBrowserQuit(browser) {
     return Promise.resolve();

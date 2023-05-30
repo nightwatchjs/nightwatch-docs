@@ -15,7 +15,7 @@ You can overwrite globals per environment as needed. Say you have your tests run
   'default' : {
     isLocal : true,
   },
-
+  <br>
   'integration' : {
     isLocal : false
   }
@@ -35,48 +35,48 @@ Here's the entire global object with the default values, which can be overwritte
     // this controls whether to abort the test execution when an assertion failed and skip the rest
     // it's being used in waitFor commands and expect assertions
     abortOnAssertionFailure: true,
-
+    <br>
     // this controls whether to abort the test execution when an element cannot be located; an error
     // is logged in all cases, but this also enables skipping the rest of the testcase;
     // it's being used in element commands such as .click() or .getText()
     abortOnElementLocateError: false,
-
+    <br>
     // this will overwrite the default polling interval (currently 500ms) for waitFor commands
     // and expect assertions that use retry
     waitForConditionPollInterval: 500,
-
+    <br>
     // default timeout value in milliseconds for waitFor commands and implicit waitFor value for
     // expect assertions
     waitForConditionTimeout: 5000,
-
+    <br>
     // since 1.4.0 – this controls whether to abort the test execution when an element cannot be located; an error
     // is logged in all cases, but this also enables skipping the rest of the testcase;
     // it's being used in element commands such as .click() or .getText()
     abortOnElementLocateError: false,
-    
+    <br>
     // this will cause waitFor commands on elements to throw an error if multiple
     // elements are found using the given locate strategy and selector
     throwOnMultipleElementsReturned: false,
-
+    <br>
     // By default a warning is printed if multiple elements are found using the given locate strategy
     // and selector; set this to true to suppress those warnings
     suppressWarningsOnMultipleElementsReturned: false,
-
+    <br>
     // controls the timeout value for async hooks. Expects the done() callback to be invoked within this time
     // or an error is thrown
     asyncHookTimeout : 10000,
-
+    <br>
     // controls the timeout value for when running async unit tests. Expects the done() callback to be invoked within this time
     // or an error is thrown
     unitTestsTimeout : 2000,
-
+    <br>
     // controls the timeout value for when executing the global async reporter. Expects the done() callback to be invoked within this time
     // or an error is thrown
     customReporterCallbackTimeout: 20000,
-
+    <br>
     // Automatically retrying failed assertions - You can tell Nightwatch to automatically retry failed assertions until a given timeout is reached, before the test runner gives up and fails the test.
     retryAssertionTimeout: 5000,
-
+    <br>
     reporter: function(results, cb) {cb(results);}
   }
 };</code></pre>
@@ -99,11 +99,11 @@ The methods are defined in the external `globals` file and invoked using the `gl
   'default' : {
     isLocal : true,
   },
-
+  <br>
   'integration' : {
     isLocal : false
   },
-
+  <br>
   // External before hook is ran at the beginning of the tests run, before creating the Selenium session
   before(done) {
     // run this only for the local-env
@@ -117,7 +117,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
       done();
     }
   },
-
+  <br>
   // External after hook is ran at the very end of the tests run, after closing the Selenium session
   after(done) {
     // run this only for the local-env
@@ -131,7 +131,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
       done();
     }
   },
-
+  <br>
   // This will be run before each test suite is started
   beforeEach(browser, done) {
     // getting the session info
@@ -140,18 +140,18 @@ The methods are defined in the external `globals` file and invoked using the `gl
       done();
     });
   },
-
+  <br>
   // This will be run after each test suite is finished
   afterEach(browser, done) {
     console.log(browser.currentTest);
     done();
   },
-  
+  <br>
   // Called right after the command .navigateTo() is finished
   async onBrowserNavigate(browser) {
     return Promise.resolve();
   },
-
+  <br>
   // Called right before the command .quite() is finished
   async onBrowserQuit(browser) {
     return Promise.resolve();

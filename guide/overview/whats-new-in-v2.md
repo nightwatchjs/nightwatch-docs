@@ -1,17 +1,16 @@
 ---
 title: What's new in Nightwatch 2?
 description: Nightwatch 2.0 contains a wide range of new features and improvements for writing and running tests as well as full cross-browser testing support.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 
 <div class="page-header"><h2>What's new in Nightwatch v2?</h2></div>
 
-<p>Nightwatch v2 contains a wide range of new features and improvements for writing and running tests as well as full cross-browser testing support for [W3C WebDriver](https://w3c.github.io/webdriver/) compliant browsers.</p>
+Nightwatch v2 contains a wide range of new features and improvements for writing and running tests as well as full cross-browser testing support for [W3C WebDriver](https://w3c.github.io/webdriver/) compliant browsers.
 
-<p>We have reworked the underlying architecture, which communicates with the browsers, to build on top of the official [Selenium-Webdriver](https://www.npmjs.com/package/selenium-webdriver) Node.js library. It means that Nightwatch is now much better equipped for cross-browser integration and DOM element handling, and can deliver more stable and faster tests overall.</p>
+We have reworked the underlying architecture, which communicates with the browsers, to build on top of the official [Selenium-Webdriver](https://www.npmjs.com/package/selenium-webdriver) Node.js library. It means that Nightwatch is now much better equipped for cross-browser integration and DOM element handling, and can deliver more stable and faster tests overall.
 
-<p>Since Nightwatch v2 builds on top of [Selenium](https://www.selenium.dev/) now, it is never behind any new WebDriver API. </p>
+Since Nightwatch v2 builds on top of [Selenium](https://www.selenium.dev/) now, it is never behind any new WebDriver API.
 
 ### New Features
 

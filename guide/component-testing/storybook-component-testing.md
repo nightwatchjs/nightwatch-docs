@@ -1,7 +1,6 @@
 ---
 title: Storybook Integration
 description: Integrate Nightwatch into your Storybook and directly run your existing stories using the Nightwatch test runner.
-summary\_image: /img/banners/storybook-component-testing.png
 ---
 
 <div class="page-header"><h1>Storybook Component Testing</h1></div>
@@ -22,25 +21,25 @@ Nightwatch is able to detect and run any existing [interaction tests][2] (using 
 In addition, Nightwatch provides a `test()` function which has access to its own APIs. 
 
 <div class="sample-test"><i>test/form.stories.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import Form from '../components/Form.jsx';
-
+<br>
 export default {
   title: 'Form Stories',
   component: Form
 }
-
+<br>
 const Template = (args) =&lt; &lt;Form {...args} /&gt;
 export const FilledForm = Template.bind({});
-
+<br>
 // Runs in the browser context
 FilledForm.play = async ({ canvasElement }) =&lt; {
-
+<br>
 };
-
+<br>
 // Runs in the Nightwatch context
 FilledForm.test = async (browser, { component }) =&lt; {
-
+<br>
 }
-
+<br>
 </code></pre></div>
 
 ### Installation
@@ -105,46 +104,46 @@ Considering a basic `Form.jsx` component, here's how its `Form.stories.jsx` stor
 
 <div class="sample-test"><i>Form.stories.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import { userEvent, within } from '@storybook/testing-library';
 import Form from './Form.jsx';
-
+<br>
 export default {
   title: 'Form',
   component: Form,
-
+  <br>
   async setup(browser) {
     console.log('setup hook', browser.capabilities)
   },
-
+  <br>
   async preRender(browser) {
     console.log('preRender hook')
   },
-
+  <br>
   async postRender(browser) {
     console.log('postRender hook')
   },
-  
+  <br>
   async teardown(browser) {
     console.log('teardown hook')
   },
 }
-
+<br>
 const Template = (args) =&lt; &lt;Form {...args} /&gt;;
-
+<br>
 // Component story for an empty form
 export const EmptyForm = Template.bind({});
-
+<br>
 // Component story simulating filling in the form
 export const FilledForm = Template.bind({});
-
+<br>
 FilledForm.play = async ({ canvasElement }) =&lt; {
-
+  <br>
   // Starts querying the component from its root element
   const canvas = within(canvasElement);
-
+  <br>
   // 👇 Simulate interactions with the component
   await userEvent.type(canvas.getByTestId('new-todo-input'), 'outdoors hike');
   await userEvent.click(canvas.getByRole('button'));
 };
-
+<br>
 FilledForm.test = async (browser, { component }) =&lt; {
   // 👇 Run commands and assertions in the Nightwatch context
   await expect(component).to.be.visible;
@@ -168,7 +167,7 @@ The following options need to be set under the specific `'@nightwatch/storybook'
 
 <div class="sample-test"><i>nightwatch.conf.js</i><pre class="line-numbers language-javascript"><code class="language-javascript">module.exports = {
   src_folders: ['src/stories/*.stories.jsx'],
-  
+  <br>
   '@nightwatch/storybook': {
     start_storybook: false,
     storybook_url: 'http://localhost:6006/',
@@ -220,32 +219,32 @@ In addition to previewing the story, it's also possible to use Nightwatch to deb
 
 <div class="sample-test"><i>Form.stories.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import { userEvent, within } from '@storybook/testing-library';
 import Form from './Form.jsx';
-
+<br>
 export default {
   title: 'Form',
   component: Form,
 }
-
+<br>
 const Template = (args) =&lt; &lt;Form {...args} /&gt;
-
+<br>
 // Component story for an empty form
 export const EmptyForm = Template.bind({});
-
+<br>
 // Component story simulating filling in the form
 export const FilledForm = Template.bind({});
-
+<br>
 FilledForm.play = async ({ canvasElement }) =&lt; {
-
+  <br>
   // Starts querying the component from its root element
   const canvas = within(canvasElement);
-  
+  <br>
   debugger;
-  
+  <br>
   // 👇 Simulate interactions with the component
   await userEvent.type(canvas.getByTestId('new-todo-input'), 'outdoors hike');
   await userEvent.click(canvas.getByRole('button'));
 };
-
+<br>
 FilledForm.test = async (browser, { component }) =&lt; {
   // 👇 Run commands and assertions in the Nightwatch context
   await expect(component).to.be.visible;
@@ -287,22 +286,22 @@ Add the following rules for accessibility tests:
 
 <div class="sample-test"><i>stories/Button.stories.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import React from 'react';
 import { Button } from './Button';
-
+<br>
 export default {
   title: "Example/Button",
   component: Button,
   argTypes: {
     backgroundColor: { control: "color" },
   },
-
+  <br>
   parameters: {
     a11y: {
       // Optional selector to inspect
       element: '#root',
-
+      <br>
       // Show the individual axe-rules as Nightwatch assertions (can be verbose if there are many violations)
       runAssertions: false,
-      
+      <br>
       // Show the complete Acccessibilty test report (by default, only rule violations will be shown)
       verbose: false,
       config: {
@@ -332,32 +331,32 @@ export default {
     }
   }
 };
-
+<br>
 const Template = (args) =&lt; &lt;Button {...args} /&gt;;
-
+<br>
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
   label: 'Button',
 };
-
+<br>
 export const Secondary = Template.bind({});
 Secondary.args = {
   label: 'Button',
 };
-
+<br>
 export const Large = Template.bind({});
 Large.args = {
   size: 'large',
   label: 'Button',
 };
-
+<br>
 export const Small = Template.bind({});
 Small.args = {
   size: 'small',
   label: 'Button',
 };
-
+<br>
 </code></pre></div>
 
 Nightwatch will automatically pick up the A11y rules from the story config and use them to run its own accessibility test commands.
@@ -373,19 +372,19 @@ The output from Nightwatch should be:
 
 <pre class="hide-indicator"><code class="language-bash">  ️TEST FAILURE (2.947s):  
    - 1 assertions failed; 4 passed
-
+  <br>
    ✖ 1) Button.stories
    – "Primary" story (733ms)
-
+  <br>
    → ✖ NightwatchAssertError
    There are accessibility violations; please see the complete report for details.
-
+  <br>
     Read More : 
         https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md 
-
-
+<br>
+<br>
 Accessibility report for: example-button--primary.Primary
-
+<br>
 Accessibility violations for: example-button--primary.Primary
 ┌───────────────────────┬────────────┬───────────────────────────────────────────────────────────────────────────────────────────────────────────────────┬────────────┐
 │ ID                    │ Impact     │ Description                                                                                                       │ Nodes      │
@@ -396,14 +395,14 @@ Accessibility violations for: example-button--primary.Primary
 │ [".storybook-button"]              │ <button type="button" class="storybook-button storybook-button--medium storybook-button--primary">Button</button> │            │
 │                                                                                                                                                                     │
 ╚═════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
-
+<br>
 </code></pre>
 
 To view the entire report (which includes all the eveluated rules), pass `verbose: true` in the story parameters:
 
 <div class="sample-test"><i>stories/Button.stories.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import React from 'react';
 import { Button } from './Button';
-
+<br>
 export default {
   parameters: {
     a11y: {
@@ -431,17 +430,17 @@ export default {
   </div>
 </div>
 
-[1]:	https://storybook.js.org/docs/react/api/csf
-[2]:	https://storybook.js.org/docs/react/writing-tests/interaction-testing
-[3]:	https://storybook.js.org/docs/react/writing-tests/accessibility-testing
-[4]:	https://storybook.js.org/docs/react/get-started/install
-[5]:	https://storybook.js.org/addons/@storybook/addon-interactions/
-[6]:	https://storybook.js.org/addons/@storybook/addon-a11y
-[7]:	https://storybook.js.org/addons/@storybook/testing-react
-[8]:	https://storybook.js.org/docs/react/writing-tests/interaction-testing
-[9]:	https://storybook.js.org/docs/react/writing-stories/play-function
-[10]:	https://storybook.js.org/docs/react/writing-tests/test-runner#test-hook-api-experimental
-[11]:	https://storybook.js.org/docs/react/writing-tests/accessibility-testing
-[12]:	https://storybook.js.org/docs/react/api/csf
-[13]:	https://storybook.js.org/blog/component-story-format-3-0/
-[14]:	https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/
+[1]:    https://storybook.js.org/docs/react/api/csf
+[2]:    https://storybook.js.org/docs/react/writing-tests/interaction-testing
+[3]:    https://storybook.js.org/docs/react/writing-tests/accessibility-testing
+[4]:    https://storybook.js.org/docs/react/get-started/install
+[5]:    https://storybook.js.org/addons/@storybook/addon-interactions/
+[6]:    https://storybook.js.org/addons/@storybook/addon-a11y
+[7]:    https://storybook.js.org/addons/@storybook/testing-react
+[8]:    https://storybook.js.org/docs/react/writing-tests/interaction-testing
+[9]:    https://storybook.js.org/docs/react/writing-stories/play-function
+[10]:   https://storybook.js.org/docs/react/writing-tests/test-runner#test-hook-api-experimental
+[11]:   https://storybook.js.org/docs/react/writing-tests/accessibility-testing
+[12]:   https://storybook.js.org/docs/react/api/csf
+[13]:   https://storybook.js.org/blog/component-story-format-3-0/
+[14]:   https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/

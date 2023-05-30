@@ -1,7 +1,6 @@
 ---
 title: Migrating to Nightwatch 2.0
 description: Learn how to migrate to Nightwatch 2.0.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Migrating to Nightwatch 2</h2></div>

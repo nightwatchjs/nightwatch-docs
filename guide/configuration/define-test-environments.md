@@ -18,12 +18,14 @@ In this guide we're going to create a new test environment called `"chrome-local
 <pre class="language-bash"><code class="language-bash">mkdir ./test-project && cd ./test-project</code></pre>
 
 <p></p>
-<p>Install `nightwatch` and `chromedriver` from NPM (`chromedriver` is the W3C WebDriver implementation for running tests in the Google Chrome browser):</p>
+
+Install `nightwatch` and `chromedriver` from NPM (`chromedriver` is the W3C WebDriver implementation for running tests in the Google Chrome browser):
 
 <pre class="language-bash"><code class="language-bash">npm i nightwatch chromedriver</code></pre>
 
 <p></p>
-<p>Create an empty file named `nightwatch.conf.js`</p>
+
+Create an empty file named `nightwatch.conf.js`
 
 <pre class="language-bash"><code class="language-bash">nano nightwatch.conf.js</code></pre>
 
@@ -31,7 +33,7 @@ and paste the following:
 <div class="sample-test"><i>nightwatch.conf.js</i>
 <pre class="line-numbers language-javascript"><code class="language-javascript">module.exports = {
   src_folders: ['tests'],
-
+  <br>
   test_settings: {
     default: {
       launch_url: 'https://home.cern',
@@ -68,7 +70,7 @@ Now, open the `nightwatch.conf.js` file again and add the `chrome-local` object 
 <div class="sample-test"><i>nightwatch.conf.js</i>
 <pre class="line-numbers language-javascript"><code class="language-javascript">module.exports = {
   src_folders: ['tests'],
-
+  <br>
   test_settings: {
     default: {
       launch_url: 'https://home.cern',

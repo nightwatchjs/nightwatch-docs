@@ -54,19 +54,19 @@ You can find more details regarding capabilities and on [Appium docs](http://app
 Here is a demo test that searches for the term "Night Watch" on the [Rijks Museum](https://www.rijksmuseum.nl/en) website.
 
 <div class="sample-test"><i>tests/sampleTest.js</i><pre class="line-numbers"><code>describe('Nightwatch Website tests', function() {
- 
-  it('Searching the Rijksmuseum ', async function(){
+    <br>
+    it('Searching the Rijksmuseum ', async function(){
     browser.navigateTo('https://www.rijksmuseum.nl/en');
     const cookieDialogVisible = await browser.isVisible({
       selector: '.cookie-consent-bar-wrap',
       suppressNotFoundErrors: true
     });
- 
+    <br>
     if (cookieDialogVisible) {
       browser.click('.cookie-consent-bar-wrap button.link');
     }
     browser.pause(1000).click('a[aria-label="Search"]');
-
+    <br>
     return browser.setValue('input.search-bar-input[type=text]', ['night watch'])
       .click('button.button.search-bar-button')
       .pause(1000)
@@ -94,12 +94,12 @@ The [Actions API](https://nightwatchjs.org/api/useractions/) is very general and
     //Scroll down the page
     await  browser.perform(function(){
       const actions = this.actions();
-  
+      <br>
       return actions.move({x: 100, y: 100}).press().move({origin: 'pointer', y: -300, duration: 50}).release();
     });
-
+    <br>
     await browser.pause(2000);
-
+    <br>
     //Pinch zoom
     await browser.perform(function(){
       const actions= this.actions();
@@ -107,8 +107,8 @@ The [Actions API](https://nightwatchjs.org/api/useractions/) is very general and
       const pointer2 = new Device('finger-2', 'touch');
       actions.insert(pointer1, pointer1.move({duration: 0, x: 100, y: 70}), pointer1.press(), {type: 'pause', duration: 500}, pointer1.move({duration: 1000, origin: 'pointer', x: 0, y: -20}), pointer1.release());
       actions.insert(pointer2, pointer2.move({duration: 0, x: 100, y: 100}), pointer2.press(), {type: 'pause', duration: 500}, pointer2.move({duration: 1000, origin: 'pointer', x: 0, y: 20}), pointer2.release());
-
-      return actions;       
+      <br>
+      return actions; 
     });
   });
 });</code></pre></div>

@@ -1,7 +1,6 @@
 ---
 title: Using JSX in React component tests
 description: Learn how to do write and execute React component tests in Nightwatch using the JSX syntax.
-summary\_image: /img/banners/react-component-testing.png
 ---
 <div class="page-header"><h1>Using JSX in React component tests</h1></div>
 
@@ -18,34 +17,34 @@ A **story** is a named `export` which is an instance of the component, together 
 File names must use `.jsx` or `.tsx` as extension. In its simplest form, the component test looks as follows:
 
 <div class="sample-test"><i>test/sampleTest.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import Form from '../components/Form.jsx';
-
+<br>
 export default {
   title: 'Form',
   component: Form,
 }
-
+<br>
 export const FormStory = () => &lt;Form /&gt;
-
+<br>
 </code></pre></div>
 
 
 Considering the above example, let's add a second story for our component test:
 
 <div class="sample-test"><i>test/sampleTest.spec.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import Form from '../components/Form.jsx';
-
+<br>
 export default {
   title: 'Form Component',
   component: Form
 }
-
+<br>
 export const EmptyForm = () => &lt;Form /&gt;
-
+<br>
 export const AnotherForm = Object.assign(() => &lt;Form addTask={function(value) {
   console.log('Add Task', value);
 }} /&gt;, {
   // additional parameters
 });
-
+<br>
 </code></pre></div>
 
 ### Add interaction tests
@@ -65,69 +64,69 @@ In the example below, the `play()` function uses the DOM utilities from the [Tes
 
 <div class="sample-test"><i>test/sampleTest.spec.jsx</i><pre class="line-numbers language-javascript"><code class="language-javascript">import { fireEvent, within } from '@testing-library/dom';
 import Form from '../components/Form.jsx';
-
+<br>
 export default {
   title: 'Form Component',
   component: Form,
-
+  <br>
   // executed before all the individual component stories; runs in Node context
   async setup(browser) {
     console.log('global setup hook', browser.capabilities)
   },
-
+  <br>
   // executed after all the individual component stories; runs in Node context
   async teardown(browser) {
     console.log('global teardown hook')
   },
-
+  <br>
   // executed before each individual component story; runs in Node context
   async preRender(browser, context) {
     // context is made of {id, name, title}
     console.log('preRender', context.id);
   },
-
+  <br>
   // executed after each individual component story; runs in Node context
   async preRender(browser, context) {
     // context is made of {id, name, title}
     console.log('preRender', context.id);
   }
 }
-
+<br>
 export const AnotherForm = Object.assign(() => &lt;Form addTask={function(value) {
   console.log('Add Task', value);
 }} /&gt;, {
   async preRender() {},
-
+  <br>
   async postRender() {
     console.log('after mount', window);
   },
-
+  <br>
   async play({canvasElement, args}) {
     console.log('play function', args);
-
+    <br>
     const root = within(canvasElement);
     const input = root.getByTestId('new-todo-input');
-
-
+    <br>
+    <br>
     fireEvent.change(input, {
       target: {
         value: 'another one bites the dust'
       }
     });
-
+    <br>
     return {
       fromPlay: input
     }
   },
-
+  <br>
   test: async (browser, {component, result}) => {
     console.log('Result from play', result)
     await expect(component).to.be.visible;
-
+    <br>
     await expect(component.find('input')).to.have.property('value').equal('another one bites the dust');
   }
 });
-
+<br>
 </code></pre></div>
 
 ### Loading static assets
@@ -164,10 +163,10 @@ We've put together a basic To-do app written in React and built on top of Vite w
 
 
 
-[1]:	https://storybook.js.org/docs/react/api/csf
-[2]:	https://github.com/ComponentDriven/csf
-[3]:	https://storybook.js.org/
-[4]:	https://storybook.js.org/docs/react/writing-stories/introduction
-[5]:	http://local-new.nightwatchjs.org/guide/component-testing/vite-plugin.html#plugin-options
-[6]:	https://github.com/nightwatchjs-community/todo-react "nightwatchjs-community/todo-react"
-[7]:	https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/
+[1]:    https://storybook.js.org/docs/react/api/csf
+[2]:    https://github.com/ComponentDriven/csf
+[3]:    https://storybook.js.org/
+[4]:    https://storybook.js.org/docs/react/writing-stories/introduction
+[5]:    http://local-new.nightwatchjs.org/guide/component-testing/vite-plugin.html#plugin-options
+[6]:    https://github.com/nightwatchjs-community/todo-react "nightwatchjs-community/todo-react"
+[7]:    https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/

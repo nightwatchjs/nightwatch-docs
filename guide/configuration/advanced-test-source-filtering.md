@@ -18,7 +18,7 @@ The below settings can be used to define ways of filtering test files.
   </thead>
   <tbody>
     <tr>
-      <td>`exclude`</td>
+      <td><code>exclude</code></td>
       <td>array</td>
       <td></td>
       <td>An array of folders or file patterns to be skipped (relative to the main source folder).<br>
@@ -30,7 +30,7 @@ The below settings can be used to define ways of filtering test files.
     </tr>
 
   <tr>
-    <td>`filter`</td>
+    <td><code>filter</code></td>
     <td>string</td>
     <td></td>
     <td>Folder or file pattern to be used when loading the tests. Files that don't match this pattern will be ignored.<br>
@@ -40,14 +40,14 @@ The below settings can be used to define ways of filtering test files.
   </tr>    
 
   <tr>
-     <td>`skipgroup`<br></td>
+     <td><code>skipgroup</code><br></td>
      <td>string</td>
      <td></td>
      <td>Skip a group of tests (a subfolder); can be a list of comma-separated values (no space).</td>
   </tr>
 
   <tr>
-     <td>`skiptags`<br></td>
+     <td><code>skiptags</code><br></td>
      <td>string</td>
      <td></td>
      <td>Skip tests by tag name; can be a list of comma-separated values (no space).</td>

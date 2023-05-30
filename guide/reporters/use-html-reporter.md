@@ -40,7 +40,7 @@ Refer to the [CLI reference page](https://nightwatchjs.org/guide/nightwatch-cli/
 <pre class="language-bash"><code class="language-bash">mkdir ./test-project && cd ./test-project</code></pre>
 
 #### Step 1: install Nightwatch and chromedriver
-<p>Install `nightwatch` and `chromedriver` from NPM (`chromedriver` is the W3C WebDriver implementation for running tests in the Google Chrome browser; make sure you have the latest Chrome browser installed on your machine):</p>
+Install `nightwatch` and `chromedriver` from NPM (`chromedriver` is the W3C WebDriver implementation for running tests in the Google Chrome browser; make sure you have the latest Chrome browser installed on your machine):
 
 <pre class="language-bash"><code class="language-bash">npm i nightwatch chromedriver</code></pre>
 

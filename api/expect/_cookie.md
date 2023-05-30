@@ -1,5 +1,6 @@
-<h2 id="expect-cookie-">expect.cookie()</h2>
+<h2 id="expect-cookie">expect.cookie()</h2>
 <div class="apimethod">
+
 Expect assertions operating on a single cookie after retrieving the entire cookie string, using `.getCookies()`.
 
 <h5>Syntax:</h5>

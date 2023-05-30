@@ -15,24 +15,24 @@ All methods have the Nightwatch instance passed as argument.
   before : function(browser) {
     console.log('Setting up...');
   },
-
+  <br>
   after : function(browser) {
     console.log('Closing down...');
   },
-
+  <br>
   beforeEach : function(browser) {
-
+    <br>
   },
-
+  <br>
   afterEach : function(browser) {
-
+    <br>
   },
-
+  <br>
   'step one' : function (browser) {
     browser
      // ...
   },
-
+  <br>
   'step two' : function (browser) {
     browser
     // ...
@@ -61,7 +61,7 @@ The <code>done</code> function <strong>must be called</strong> as the last step 
       done();
     }, 100);
   },
-
+  <br>
   afterEach: function(browser, done) {
     // performing an async operation
     setTimeout(function() {

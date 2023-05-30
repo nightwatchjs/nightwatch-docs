@@ -11,9 +11,9 @@ module.exports = {
     // see https://github.com/nightwatchjs/nightwatch/blob/main/examples/globalsModule.js#L12
     browser.globals.waitForConditionTimeout = 5000;
   },
-
+  <br>
   'click example test' : function (browser) {
-
+    <br>
     browser
       .url('https://google.com')
       .waitForElementVisible('input[type=text]')
@@ -23,7 +23,7 @@ module.exports = {
       })
       .expect.element('#rcnt').text.to.contain('nightwatchjs.org/');
   },
-
+  <br>
   after : function(browser) {
     browser.end();
   }
@@ -38,9 +38,9 @@ module.exports = {
 ======================
 
 Running:  clearValue example test
- ✔ Element <input[type=text]> was visible after 67 milliseconds.
+ ✔ Element &lt;input[type=text]&gt; was visible after 67 milliseconds.
  ✔ Passed [strictEqual]: 0 === 0
- ✔ Expected element <#rcnt> text to contain: "nightwatchjs.org/" - condition was met in 768ms
+ ✔ Expected element &lt;#rcnt&gt; text to contain: "nightwatchjs.org/" - condition was met in 768ms
 
 OK. 3 assertions passed. (5.277s)
 </pre>
@@ -57,9 +57,9 @@ module.exports = {
     // see https://github.com/nightwatchjs/nightwatch/blob/main/examples/globalsModule.js#L12
     browser.globals.waitForConditionTimeout = 5000;
   },
-
+  <br>
   'click option from drop down list' : function (browser) {
-
+    <br>
     browser
       .url('https://www.w3.org/')
       .waitForElementVisible('#region_form')
@@ -69,7 +69,7 @@ module.exports = {
         this.assert.strictEqual(result.status, 0);
       });
   },
-
+  <br>
   after : function(browser) {
     browser.end();
   }
@@ -84,7 +84,7 @@ module.exports = {
 ==============================
 
 Running:  click option from drop down list
- ✔ Element <#region_form> was visible after 64 milliseconds.
+ ✔ Element &lt;#region_form&gt; was visible after 64 milliseconds.
  ✔ Passed [strictEqual]: 0 === 0
 
 OK. 2 assertions passed. (6.203s)

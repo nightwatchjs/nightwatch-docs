@@ -18,7 +18,7 @@ Define your custom reporter in a separate file (e.g. `custom_reporter.js`). Choo
 <pre class="line-numbers"><code class="language-javascript">module.exports = {
   write : function(results, options, done) {
     console.log('custom reporting...');
-
+    <br>
     done();
   }
 };</code></pre></div>
@@ -26,9 +26,9 @@ Define your custom reporter in a separate file (e.g. `custom_reporter.js`). Choo
 <div class="sample-test"><i>custom_reporter.js</i>
 <pre class="line-numbers"><code class="language-javascript">module.exports = {
   write: async function(results, options) {
-
+    <br>
     console.log('custom reporting...');    
-
+    <br>
   }
 };</code></pre></div>
 
@@ -67,9 +67,9 @@ The `index.js` file needs to implement the same interface as the file-based cust
 <div class="sample-test"><i>index.js</i>
 <pre class="line-numbers"><code class="language-javascript">module.exports = {
   write: async function(results, options) {
-
+    <br>
     console.log('custom reporting...');
-
+    <br>
   }
 };</code></pre></div>
 

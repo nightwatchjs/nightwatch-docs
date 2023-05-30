@@ -1,7 +1,6 @@
 ---
 title: Create and run a Nightwatch test with Selenium Server
 description: Learn how to create and run tests using Nightwatch with Selenium Server
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Using Selenium Server with Nightwatch</h1></div>
@@ -42,11 +41,11 @@ This installs Nightwatch, asks your preferences and sets up the `nightwatch.conf
   
 #### Test Runner
 
-Nightwatch also supports other test runners. You can also pick [Mocha][15] or [Cucumber JS][16] as a test runner apart from Nightwatch.
+Nightwatch also supports other test runners. You can also pick Mocha or Cucumber JS as a test runner apart from Nightwatch.
 
 #### Language - Javascript/Typescript
 
-Nightwatch [supports typescript][17] for test files after v1.6.0. So you can choose to have the test setup in Javascript or Typescript.
+Nightwatch supports typescript for test files after v1.6.0. So you can choose to have the test setup in Javascript or Typescript.
 
 <pre class="hide-indicator"><code>? What is your Language - Test Runner setup? (Use arrow keys)
 ❯ JavaScript - Nightwatch Test Runner
@@ -115,7 +114,8 @@ Once your setup is done, you can run tests with this command
 <pre><code class="language-bash">npx nightwatch tests/specs/basic/ecosia.js --env selenium.safari</code></pre>
 
 The output should look similar to this:
-<pre class="hide-indicator" ><code>
+
+<pre class="hide-indicator"><code>
 [Ecosia.org Demo] Test Suite
 ============================
 ℹ Connected to localhost on port 4444 (2153ms).
@@ -123,36 +123,36 @@ The output should look similar to this:
 
 ✔ Running Demo test ecosia.org:
 
-✔ Element <body> was visible after 24 milliseconds.
+✔ Element &lt;body&gt; was visible after 24 milliseconds.
 ✔ Testing if the page title contains 'Ecosia' (10ms)
-✔ Testing if element <input[type=search]> is visible (51ms)
-✔ Testing if element <button[type=submit]> is visible (12ms)
-✔ Testing if element <.mainline-results> contains text 'Nightwatch.js' (197ms)
+✔ Testing if element &lt;input[type=search]&gt; is visible (51ms)
+✔ Testing if element &lt;button[type=submit]&gt; is visible (12ms)
+✔ Testing if element &lt;.mainline-results&gt; contains text 'Nightwatch.js' (197ms)
 
 OK. 5 assertions passed. (1.838s)
 </code></pre>
 
 
 <div class="alert alert-info">
-For additional help you can jump on to our [Discord Server](https://discord.gg/SN8Da2X).
+For additional help you can jump on to our <a href="https://discord.gg/SN8Da2X">Discord Server</a>.
 </div>
 
-[1]:	https://nodejs.org/
-[2]:	https://nodejs.org/
-[3]:	https://npmjs.com
-[4]:	https://www.npmjs.com/package/geckodriver
-[5]:	https://github.com/mozilla/geckodriver/releases
-[6]:	https://www.npmjs.com/package/chromedriver
-[7]:	https://chromedriver.chromium.org/downloads
-[8]:	https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-driver
-[9]:	https://developer.apple.com/documentation/webkit/about_webdriver_for_safari/
-[10]:	https://selenium.dev/documentation/en/grid/
-[11]:	https://www.java.com/en/
-[12]:	https://www.npmjs.com/package/selenium-server
-[13]:	https://github.com/SeleniumHQ/selenium/releases
-[14]:	https://v2.nightwatchjs.org/guide/running-tests/nightwatch-runner.html
+[1]:    https://nodejs.org/
+[2]:    https://nodejs.org/
+[3]:    https://npmjs.com
+[4]:    https://www.npmjs.com/package/geckodriver
+[5]:    https://github.com/mozilla/geckodriver/releases
+[6]:    https://www.npmjs.com/package/chromedriver
+[7]:    https://chromedriver.chromium.org/downloads
+[8]:    https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-driver
+[9]:    https://developer.apple.com/documentation/webkit/about_webdriver_for_safari/
+[10]:   https://selenium.dev/documentation/en/grid/
+[11]:   https://www.java.com/en/
+[12]:   https://www.npmjs.com/package/selenium-server
+[13]:   https://github.com/SeleniumHQ/selenium/releases
+[14]:   https://v2.nightwatchjs.org/guide/running-tests/nightwatch-runner.html
 
-[image-2]:	/img/operation-cloud.png
+[image-2]:  /img/operation-cloud.png
 
 ### Recommended content
 - [Blog: Cross-browser Testing at Scale with Nightwatch and Selenium Grid](https://nightwatchjs.org/blog/cross-browser-testing-at-scale-with-nightwatch-and-selenium-grid/)

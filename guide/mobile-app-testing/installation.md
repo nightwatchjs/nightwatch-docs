@@ -1,7 +1,6 @@
 ---
 title: Mobile app testing installation
 description: Learn how to install Appium, SDKs, AVDs and all the other tools to run Nightwatch tests on mobile devices.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Mobile app testing installation for Nightwatch</h2></div>
@@ -192,7 +191,7 @@ describe('Wikipedia Android app test',function(){
             .waitUntil(async function() {
                 // wait for webview context to be available
                 const contexts = await this.appium.getContexts();
-
+                <br>
                 return contexts.includes('WEBVIEW_org.wikipedia');
             })
             .appium.setContext('WEBVIEW_org.wikipedia')
@@ -262,7 +261,7 @@ Add Nightwatch environments for iOS simulators and real devices
                 start_process: false
             }
         },
-
+        <br>
         'app.ios.simulator': {
             extends: 'app',
             'desiredCapabilities': {
@@ -284,7 +283,7 @@ Add Nightwatch environments for iOS simulators and real devices
                 }
             }
         },
-
+        <br>
         'app.ios.real': {
             extends: 'app',
             'desiredCapabilities': {
@@ -328,13 +327,13 @@ Add the following sample test file under the `nightwatch/examples/mobile-app-tes
             .waitUntil(async function() {
             // wait for webview context to be available
             const contexts = await this.appium.getContexts();
-
+            <br>
             return contexts.length > 1;
             },5000)
             .perform(async function() {
             // switch to webview context
             const contexts = await this.appium.getContexts();
-
+            <br>
             await this.appium.setContext(contexts[1]);
             })
             .useCss()
@@ -373,8 +372,8 @@ Now that you understand how mobile app testing works with Nightwatch,let's dive 
 [Run tests on virtual devices,real devices & cloud providers][6] </br>
 [Debug tests][7]
 
-[1]:	https://github.com/nightwatchjs/mobile-helper-tool
-[2]:	https://github.com/appium/appium-inspector/releases
+[1]:    https://github.com/nightwatchjs/mobile-helper-tool
+[2]:    https://github.com/appium/appium-inspector/releases
 [3]:    https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.apk
 [4]:    https://raw.githubusercontent.com/priyansh3133/wikipedia/main/wikipedia.zip
 [5]:    /guide/mobile-app-testing/introduction-writing-tests.html
@@ -382,7 +381,7 @@ Now that you understand how mobile app testing works with Nightwatch,let's dive 
 [7]:    /guide/mobile-app-testing/debug-tests.html
 
 
-[image-1]:	https://user-images.githubusercontent.com/1677755/220174481-f423292a-4577-4740-8518-503d1fa19dbd.png
+[image-1]:  https://user-images.githubusercontent.com/1677755/220174481-f423292a-4577-4740-8518-503d1fa19dbd.png
 
 
 <div class="doc-pagination pt-40">

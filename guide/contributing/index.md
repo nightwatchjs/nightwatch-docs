@@ -22,12 +22,12 @@ The following sections provide information about different elements of a page. U
 
 To ensure that each page can be correctly identified, we use the frontmatter. At the top of each docs page, include the following elements:
 
-| Variable | Description |
-| ----------- | ----------- |
-|`id`|A brief string that uniquely identifies the page within its parent folder.|
-|`title`|The main title of the page. 
-|`sidebar_label`|This is what will appear in the left hand navigation tree for the page.|
-|`description` (optional)|This is what appears when the page is referenced in a Google search result.|
+| Variable                 | Description                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `id`                     | A brief string that uniquely identifies the page within its parent folder.  |
+| `title`                  | The main title of the page.                                                 |
+| `sidebar_label`          | This is what will appear in the left hand navigation tree for the page.     |
+| `description` (optional) | This is what appears when the page is referenced in a Google search result. |
 
 When you are done, the document would look as follows:
 ```markdown
@@ -182,11 +182,11 @@ OK. 5 assertions passed. (1.838s)
 
 ✔ Running Demo test ecosia.org:
 
-✔ Element <body> was visible after 24 milliseconds.
+✔ Element &lt;body&gt; was visible after 24 milliseconds.
 ✔ Testing if the page title contains 'Ecosia' (10ms)
-✔ Testing if element <input[type=search]> is visible (51ms)
-✔ Testing if element <button[type=submit]> is visible (12ms)
-✔ Testing if element <.mainline-results> contains text 'Nightwatch.js' (197ms)
+✔ Testing if element &lt;input[type=search]&gt; is visible (51ms)
+✔ Testing if element &lt;button[type=submit]&gt; is visible (12ms)
+✔ Testing if element &lt;.mainline-results&gt; contains text 'Nightwatch.js' (197ms)
 
 OK. 5 assertions passed. (1.838s)
 </code></pre>

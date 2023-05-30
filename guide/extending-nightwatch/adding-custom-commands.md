@@ -1,7 +1,6 @@
 ---
 title: Define custom commands
 description: Learn how to extend Nightwatch capabilities by adding custom commands.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Define custom commands</h2></div>
@@ -48,18 +47,18 @@ You can also specify a return value, either as the argument with which the Promi
     if (!ms) {
       return;
     }
-    
+    <br>
     const returnValue = {
       value: 'something'
     };
-    
+    <br>
     return new Promise((resolve) => {
       setTimeout(() => {
         // if we have a callback, call it right before the complete event
         if (cb) {
           cb.call(this.api);
         }
-  
+        <br>
         resolve(returnValue);
       }, ms);
     });
@@ -83,7 +82,7 @@ Here's another example:
         error: err.message
       }
     }
-
+    <br>
     return returnValue;
   }
 }
@@ -93,7 +92,7 @@ Here's another example:
 
 <div class="sample-test"><i>nightwatch/commands/customPause.js</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">const Events = require('events');
-
+<br>
 module.exports = class CustomPause extends Events {
   command(ms, cb) {
     // If we don't pass the milliseconds, the client will
@@ -101,17 +100,17 @@ module.exports = class CustomPause extends Events {
     if (!ms) {
       return;
     }
-
+    <br>
     const returnValue = {
       value: 'something'
     };
-    
+    <br>
     setTimeout(() => {
       // if we have a callback, call it right before the complete event
       if (cb) {
         cb.call(this.api);
       }
-
+      <br>
       // This also works: this.complete(returnValue)
       this.emit('complete', returnValue);
     }, ms);
@@ -128,10 +127,10 @@ Here's an example:
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = class CustomCommand {
   async command() {
     let returnValue;
-    
+    <br>
     // list all the avaialble transport actions
     // console.log(this.transportActions);
-    
+    <br>
     try {
       returnValue = await this.transportActions.getCurrentUrl();
     } catch (err) {
@@ -141,7 +140,7 @@ Here's an example:
         error: err.message
       }
     }
-
+    <br>
     return returnValue;
   }
 }
@@ -159,24 +158,24 @@ Here's an example:
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">module.exports = class CustomCommand {
   async command() {
     let returnValue;
-    
+    <br>
     try {
       returnValue = await this.httpRequest({
         // the pathname of the endpoint to call
         path: '/session/:sessionId/url',
-        
+        <br>
         // the current Selenium/Webdriver sessionId
         sessionId: this.api.sessionId,
-        
+        <br>
         // host and port are normally not necessary, since it is the current Webdriver hostname/port
         //host: '',
         //port: '',
-        
+        <br>
         // the body of the request
         data: {
           url: 'http://localhost/test_url'
         },
-        
+        <br>
         method: 'POST'
       });
     } catch (err) {
@@ -186,7 +185,7 @@ Here's an example:
         error: err.message
       }
     }
-
+    <br>
     return returnValue;
   }
 }
@@ -202,7 +201,7 @@ The command module needs to export a `command` function, which needs to call at 
   var self = this;
   var imageData;
   var fs = require('fs');
-
+  <br>
   try {
     var originalData = fs.readFileSync(file);
     var base64Image = new Buffer(originalData, 'binary').toString('base64');
@@ -211,7 +210,7 @@ The command module needs to export a `command` function, which needs to call at 
     console.log(err);
     throw "Unable to open file: " + file;
   }
-
+  <br>
   this.execute(function(data) {
     // execute application specific code
     App.resizePicture(data);
@@ -223,7 +222,7 @@ The command module needs to export a `command` function, which needs to call at 
       callback.call(self, result);
     }
   });
-
+  <br>
   return this;
 };</code></pre>
 </div>
@@ -253,7 +252,7 @@ You can also use ES6 `async`/`await` syntax inside function-style custom command
   command: async function () {
     this.url('http://nightwatchjs.org');
     this.waitForElementVisible('section#index-container');
-
+    <br>
     const result = await this.elements('css selector', '#index-container ul.features li');
     this.assert.strictEqual(result.value.length, 7, 'Feature elements number is correct');
   }

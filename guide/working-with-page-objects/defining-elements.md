@@ -32,7 +32,7 @@ Or if you're creating elements with the same locate strategy as is default, you 
 </div>
 
 <br>
-Using the `elements` property allows you to refer to the element by its name with an _"@" prefix_, rather than selector, when calling element commands and assertions (`click`, etc).
+Using the <code>elements</code> property allows you to refer to the element by its name with an _"@" prefix_, rather than selector, when calling element commands and assertions (<code>click</code>, etc).
 
 Optionally, you can define an array of objects:
 
@@ -40,7 +40,7 @@ Optionally, you can define an array of objects:
 <pre data-language="javascript"><code class="language-javascript">var sharedElements = {
   mailLink: 'a[href*="mail.google.com"]'
 };
-
+<br>
 module.exports = {
   elements: [
     sharedElements,
@@ -51,7 +51,7 @@ module.exports = {
 </div>
 
 <br>
-Putting `elements` and `url` together, say you have the following defined above saved as a `google.js` file:
+Putting <code>elements</code> and <code>url</code> together, say you have the following defined above saved as a <code>google.js</code> file:
 
 <div class="sample-test">
 <pre data-language="javascript"><code class="language-javascript">module.exports = {
@@ -76,13 +76,13 @@ In your tests you will use it as follows:
 <pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     var google = browser.page.google();
-
+    <br>
     google.navigate()
       .assert.title('Google')
       .assert.visible('@searchBar')
       .setValue('@searchBar', 'nightwatch')
       .click('@submit');
-
+    <br>
     browser.end();
   }
 };
@@ -122,16 +122,16 @@ You can also override what is defined in the page element by specifying the elem
 <pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     var google = browser.page.google();
-
+    <br>
     google
       .navigate()
       .assert.title('Google');
-      
+    <br>
     google.waitForElementVisible('@searchBar') // 2nd input element
     google.waitForElementVisible({selector:'@searchBar', index:1}, function(result){}); // 1st div
-      
+    <br>
     google.click('@submit');
-
+    <br>
     browser.end();
   }
 };
@@ -148,7 +148,7 @@ When using named page object elements (starting with '@') you can also use CSS p
 <pre data-language="javascript"><code class="language-javascript">module.exports = {
   'Test': function (browser) {
     google.waitForElementVisible('@searchBar:first-child');
-    
+    <br>
     google.waitForElementVisible('@searchBar:nth-child(1)');
   }
 };

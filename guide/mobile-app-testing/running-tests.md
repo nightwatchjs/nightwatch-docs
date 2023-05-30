@@ -1,14 +1,13 @@
 ---
 title: Running native mobile app tests
 description:  Introduction to running native mobile app Nightwatch tests on real, virtual and cloud devices.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Run tests on real, virtual, and cloud devices</h2></div>
 
 ### Overview
 
-Nightwatch tests can be run on Android emulators, iOS simulators, real Android, and iOS devices as well as on cloud providers. Similar to web automation, native mobile app automation also leverages the concept of [environments][1 . To run your test suite anywhere, you just have to configure the environment once and use in the test run commands. 
+Nightwatch tests can be run on Android emulators, iOS simulators, real Android, and iOS devices as well as on cloud providers. Similar to web automation, native mobile app automation also leverages the concept of [environments][1] . To run your test suite anywhere, you just have to configure the environment once and use in the test run commands. 
 
 ### Android Emulator
 
@@ -43,7 +42,7 @@ Ensure that the environment is added in the `nightwatch.conf.js` file
         start_process: false
       }
   },
-  
+  <br>
    'app.android.emulator': {
       extends: 'app',
       'desiredCapabilities': {
@@ -276,8 +275,8 @@ test_settings:{
     },
     desiredCapabilities: {
       'bstack:options': {
-        userName: '<username>',
-        accessKey: '<access_key>',
+        userName: '&lt;username&gt;',
+        accessKey: '&lt;access_key&gt;',
         appiumVersion: '2.0.0'
       }
     },

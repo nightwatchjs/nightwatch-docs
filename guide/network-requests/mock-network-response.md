@@ -34,21 +34,21 @@ All you need to do is call the `browser.mockNetworkResponse()` command with the 
   </thead>
   <tbody>
     <tr>
-      <td>`status`</td>
+      <td><code>status</code></td>
       <td>number</td>
       <td>200</td>
       <td>HTTP status of the mocked response.</td>
     </tr>
     <tr>
-      <td>`headers`</td>
+      <td><code>headers</code></td>
       <td>object</td>
-      <td>`{}`</td>
-      <td>HTTP headers in the mocked response.<br>E.g.: `headers = {'Connection': 'Keep-Alive', 'Content-Type': 'UTF-8'}`</td>
+      <td><code>{}</code></td>
+      <td>HTTP headers in the mocked response.<br>E.g.: <code>headers = {'Connection': 'Keep-Alive', 'Content-Type': 'UTF-8'}</code></td>
     </tr>    
     <tr>
-      <td>`body`<br><span class="optional">optional</span></td>
+      <td><code>body</code><br><span class="optional">optional</span></td>
       <td>string</td>
-      <td>`''`</td>
+      <td><code>''</code></td>
       <td>Body of the mocked response.</td>
     </tr>
   </tbody>

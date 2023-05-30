@@ -33,19 +33,19 @@ All you need to do is call the `browser.setGeolocation()` command with the requi
   </thead>
   <tbody>
     <tr>
-      <td>`latitude`</td>
+      <td><code>latitude</code></td>
       <td>number</td>
       <td></td>
       <td>Latitude of the geolocation to be set.</td>
     </tr>
     <tr>
-      <td>`longitude`</td>
+      <td><code>longitude</code></td>
       <td>number</td>
       <td></td>
       <td>Longitude of the geolocation to be set.</td>
     </tr>
     <tr>
-      <td>`accuracy`<br><span class="optional">Optional</span></td>
+      <td><code>accuracy</code><br><span class="optional">Optional</span></td>
       <td>number</td>
       <td>100</td>
       <td>Expected accuracy while mocking the geolocation.</td>

@@ -5,7 +5,7 @@ To prevent a test module from running, simply set the `disabled` attribute in th
 <div class="sample-test">
 <pre><code class="language-javascript">module.exports = {
   '@disabled': true, // This will prevent the test module from running.
-
+  <br>
   'sample test': function (browser) {
     // test code
   }
@@ -22,14 +22,14 @@ Disabling/skipping individual testcases is supported only when using [BDD Descri
 ##### Example
 <div class="sample-test">
 <pre><code class="language-javascript">describe('homepage test with describe', function() {
-  
+  <br>
   // skipped testcase: equivalent to: test.skip(), it.skip(), and xit()
   xtest('async testcase', async browser => {
     const result = await browser.getText('#navigation');
     console.log('result', result.value)
   });
 });
-
+<br>
 </code></pre></div>
 
 
@@ -41,7 +41,7 @@ Here's an example:
   'sample test': function (browser) {
     // test code
   },
-
+  <br>
   // disabled
   'other sample test': ''+function (browser) {
     // test code
@@ -59,17 +59,17 @@ The below will only run the `startHomepage` testcase and ignore the rest.
 
 <div class="sample-test">
 <pre><code class="language-javascript">describe('homepage test with describe', function() {
-  
+  <br>
   test.only('startHomepage', () => {
     // ...
   });
-  
+  <br>
   test('other testcase', () => {
     // ...
   });
 });
-
+<br>
 </code></pre></div>
 
 - Previous: [Running in parallel](https://nightwatchjs.org/guide/running-tests/parallel-running.html)
-- Next: [Using the Nightwatch programmatic API ](https://nightwatchjs.org/guide/running-tests/programmatic-api.html)
+- Next: [Using the Nightwatch programmatic API](https://nightwatchjs.org/guide/running-tests/programmatic-api.html)

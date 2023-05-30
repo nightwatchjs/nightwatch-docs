@@ -1,7 +1,6 @@
 ---
 title: Running Nightwatch on remote machines or cloud providers
 description: Learn how to run Nightwatch tests on remote Selenium grids or Cloud providers such as BrowserStack and Sauce Labs
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Run a Nightwatch test with a cloud provider</h1></div>
@@ -32,7 +31,7 @@ If you are trying to run Nightwatch on BrowserStack for an existing project, you
                     accessKey: '${BROWSERSTACK_ACCESS_KEY}'
                 }
             },
-
+            <br>
             disable_error_log: true,
             webdriver: {
                     timeout_options: {
@@ -43,21 +42,21 @@ If you are trying to run Nightwatch on BrowserStack for an existing project, you
                     start_process: false
                 }
             },
-
+            <br>
             'browserstack.local': {
                 extends: 'browserstack',
                 desiredCapabilities: {
                     'browserstack.local': true
                 }
             },
-
+            <br>
             'browserstack.firefox': {
                 extends: 'browserstack',
                 desiredCapabilities: {
                     browserName: 'firefox'
                 }
             },
-
+            <br>
             'browserstack.local_firefox': {
                 extends: 'browserstack.local',
                 desiredCapabilities: {
@@ -67,8 +66,8 @@ If you are trying to run Nightwatch on BrowserStack for an existing project, you
         ...
     }
 }
-
-</code></pre></div>
+</code></pre>
+</div>
 
 Once the BrowerStack block is present in the Nightwatch configuration file, replace the BrowserStack username and access key with your credentials and you are ready to run your tests on the BrowserStack infrastructure.
 
@@ -102,7 +101,7 @@ If you are trying to run Nightwatch on LambdaTest for an existing project, you w
                 }
             }
         },
-
+        <br>
         'lambdatest.firefox': {
             extends: 'lambdatest',
             desiredCapabilities: {
@@ -117,8 +116,8 @@ If you are trying to run Nightwatch on LambdaTest for an existing project, you w
         ...
     }
 }
-
-</code></pre></div>
+</code></pre>
+</div>
 
 Once you have added LambdaTest configurations in the `nightwatch.conf.js` replace the LambdaTest username and access_key with your credentials and you are ready to run your tests on the LambdaTest Cloud grid.
 
@@ -163,7 +162,7 @@ If you are trying to run Nightwatch on Sauce Labs for an existing project, you w
                 start_process: false
             }
         },
-
+        <br>
         'saucelabs.firefox': {
             extends: 'saucelabs',
             desiredCapabilities: {
@@ -175,8 +174,8 @@ If you are trying to run Nightwatch on Sauce Labs for an existing project, you w
         ...
     }
 }
-
-</code></pre></div>
+</code></pre>
+</div>
 
 Once the Sauce Labs block is present in the Nightwatch configuration file, replace the Sauce Labs username and access key with your credentials.
 
@@ -197,19 +196,19 @@ If you are trying to set this up for an existing project, you will have to add t
             selenium: {
                 start_process: false,
                 server_path: '',
-                host: '<remote-hostname>',
+                host: '&lt;remote-hostname&gt;',
                 port: 4444
             },
-
+            <br>
             username: '${REMOTE_USERNAME}',
             access_key: '${REMOTE_ACCESS_KEY}',
-
+            <br>
             webdriver: {
                 keep_alive: true,
                 start_process: false
             }
         },
-
+        <br>
         'remote.firefox': {
             extends: 'remote',
             desiredCapabilities: {
@@ -225,13 +224,13 @@ If you are trying to set this up for an existing project, you will have to add t
         ...
     }
 }
-
-</code></pre></div>
+</code></pre>
+</div>
 
 Once the configuration block is added, replace the remote host, port & credentials with yours and get started!
 
 <div class="alert alert-info">
-For additional help you can jump on to our [Discord Server](https://discord.gg/SN8Da2X).
+For additional help you can jump on to our <a href="https://discord.gg/SN8Da2X">Discord Server</a>.
 </div>
 
 <div class="doc-pagination pt-40">

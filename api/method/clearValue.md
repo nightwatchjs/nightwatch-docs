@@ -9,21 +9,21 @@ module.exports = {
     // see https://github.com/nightwatchjs/nightwatch/blob/main/examples/globalsModule.js#L12
     browser.globals.waitForConditionTimeout = 5000;
   },
-
+  <br>
   'clearValue example test' : function (browser) {
-
+    <br>
     browser
       .url('https://google.com')
       .waitForElementVisible('input[type=text]')
       .setValue('input[type=text]', 'nightwatch.js')
       .click('button[type=submit]')
       .expect.element('#rcnt').text.to.contain('nightwatchjs.org/');
-
+    <br>
     browser
       .clearValue('input[type=text]')
       .expect.element('#rcnt').text.to.equal('');
   },
-
+  <br>
   after : function(browser) {
     browser.end();
   }
@@ -38,9 +38,9 @@ module.exports = {
 ============================
 
 Running:  clearValue example test
- ✔ Element <input[type=text]> was visible after 68 milliseconds.
- ✔ Expected element <#rcnt> text to contain: "nightwatchjs.org/" - condition was met in 763ms
- ✔ Expected element <#rcnt> text to equal: "" - condition was met in 36ms
+ ✔ Element &lt;input[type=text]&gt; was visible after 68 milliseconds.
+ ✔ Expected element &lt;#rcnt&gt; text to contain: "nightwatchjs.org/" - condition was met in 763ms
+ ✔ Expected element &lt;#rcnt&gt; text to equal: "" - condition was met in 36ms
 
 OK. 3 assertions passed. (7.593s)
 </pre>

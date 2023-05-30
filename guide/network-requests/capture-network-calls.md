@@ -35,16 +35,16 @@ All you need to do is call the `browser.captureNetworkRequests()` command with t
   </thead>
   <tbody>
     <tr>
-      <td>`timestamp`</td>
+      <td><code>timestamp</code></td>
       <td>number</td>
       <td>Time at which the network call was made.</td>
     </tr>    
     <tr>
-      <td>`request`<br></td>
+      <td><code>request</code><br></td>
       <td>object</td>
       <td>
-        The `request` object contains all the important details about the network call made, like URL, HTTP method used, HTTP headers, etc.<br>
-        All the properties available in the `request` object can be read from [here](https://chromedevtools.github.io/devtools-protocol/tot/Runtime/#type-RemoteObject).
+        The <code>request</code> object contains all the important details about the network call made, like URL, HTTP method used, HTTP headers, etc.<br>
+        All the properties available in the <code>request</code> object can be read from <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime/#type-RemoteObject">here</a>.
       </td>
     </tr>
   </tbody>

@@ -19,15 +19,15 @@ The BDD interface in Nightwatch provides the following functions:
 - `afterEach()` 
 
 <div class="alert alert-info">
-Nightwatch doesn't support nested `describe`/`context` declarations currently. You can only use `describe` to define the name for the test suite. 
+Nightwatch doesn't support nested <code>describe`/`context</code> declarations currently. You can only use <code>describe</code> to define the name for the test suite. 
 </div>
 
 ### Example
 
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">describe('Ecosia', function() {
-
+  <br>
   // test() and specify() is also available
-
+  <br>
   it('demo test', function(browser) {
     browser
       .url('https://www.ecosia.org/')
@@ -40,7 +40,7 @@ Nightwatch doesn't support nested `describe`/`context` declarations currently. Y
 </code></pre>
 <pre data-language="typescript"><code class="language-typescript">
 import {NightwatchTests} from 'nightwatch';
-
+<br>
 const Ecosia: NightwatchTests = {
   'demo test': () => {
     browser
@@ -51,7 +51,7 @@ const Ecosia: NightwatchTests = {
       .end();
   }
 };
-
+<br>
 export default Ecosia;
 </code></pre></div>
 
@@ -66,7 +66,7 @@ describe('homepage test with describe', function() {
   this.desiredCapabilities = {
     browserName: 'firefox'
   };
-  
+  <br>
   it('...', function() {...});
 });
 </code></pre></div>
@@ -78,7 +78,7 @@ describe('homepage test with describe', function() {
 describe('homepage test with describe', function() {
   // defining tags using bdd
   this.tags = ['login', 'authentication''];
-  
+  <br>
   it('...', function() {...});
 });
 </code></pre></div>
@@ -90,10 +90,10 @@ describe('homepage test with describe', function() {
 describe('homepage test with describe', function() {
   // how many time to retry a failed testcase inside this test suite
    this.retries(3);
-   
+   <br>
    // how many times to retry the current test suite in case of an assertion failure or error
    this.suiteRetries(2);
-   
+   <br>
    it('...', function() {...});
 });
 </code></pre></div>
@@ -105,7 +105,7 @@ All current settings are available via `this.settings`.
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   console.log('Settings', this.settings);
-  
+  <br>
   it('...', function() {
     // ...
   });
@@ -118,7 +118,7 @@ Testsuite specific capabilities.
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   this.desiredCapabilities = {};
-
+  <br>
   it('...', function() {
     // ...
   });
@@ -130,7 +130,7 @@ Enable this if the current test is a unit/integration test (i.e. no Webdriver se
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
    this.unitTest = true;
-
+   <br>
    it('...', function() {
      // ...
    });
@@ -142,7 +142,7 @@ Set this to `false` if you'd like the browser window to be kept open in case of 
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
    this.endSessionOnFail = false
-
+   <br>
    it('...', function() {
      // ...
    });
@@ -154,7 +154,7 @@ Set this to `false` if you'd like the rest of the test cases/test steps to be ex
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
    this.skipTestcasesOnFail = true
-
+   <br>
    it('...', function() {
      // ...
    });
@@ -166,7 +166,7 @@ Set this to true if you'd like this test suite to be skipped by the test runner
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
    this.disabled = true
-
+   <br>
    it('...', function() {
      // ...
    });
@@ -178,7 +178,7 @@ Set this to true if you'd like this test suite to be skipped by the test runner
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   this.retries(3);
   this.suiteRetries(2);
-
+  <br>
   it('...', function() {
     // ...
     });
@@ -190,7 +190,7 @@ Control the assertion and element commands timeout until when an element should 
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   this.timeout(1000)
-
+  <br>
   it('...', function() {
     // ...
   });
@@ -202,7 +202,7 @@ Control the polling interval between re-tries for assertions or element commands
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   this.retryInterval(100);
-
+  <br>
   it('...', function() {
     // ...
   });
@@ -214,7 +214,7 @@ Define tags for this test suite.
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   this.tags = ['login']
-
+  <br>
   it('...', function() {
     // ...
   });
@@ -224,37 +224,37 @@ Define tags for this test suite.
 #### Test functions and hooks
 
 <div class="sample-test"><pre class="line-numbers" data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
-
+  <br>
   before(function(browser) {
     this.homepage = browser.page.home();
   });
-
+  <br>
   it('startHomepage', () => {
     this.homepage.navigate();
     this.homepage.expect.section('@indexContainer').to.be.not.visible;
   });
-
-  
+  <br>
+  <br>
   // Run only this testcase
   //*
   it.only('startHomepage', () => {
     this.homepage.navigate();
   });
   *// 
-   
+  <br>
   // skipped testcase: equivalent to: test.skip(), it.skip(), and xit()
   xtest('async testcase', async browser => {
     const result = await browser.getText('#navigation');
     console.log('result', result.value)
   });
-
+  <br>
   test('version dropdown is enabled', browser => {
     const navigation = this.homepage.section.navigation;
     const navbarHeader = navigation.section.navbarHeader;
-
+    <br>
     navbarHeader.expect.element('@versionDropdown').to.be.enabled;
   });
-
+  <br>
   after(browser => browser.end());
 });</code></pre></div>
 
@@ -271,7 +271,7 @@ We've put together a complete [Github template repo](https://github.com/nightwat
 - [Using async/await](https://nightwatchjs.org/guide/writing-tests/using-es-6-async-await.html)
 - [Finding & interacting with DOM Elements](https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html)
 
-[1]:	https://www.ecosia.org/
+[1]:    https://www.ecosia.org/
 
 
  <div class="doc-pagination pt-40">

@@ -1,7 +1,6 @@
 ---
 title: Test globals
 description: Test globals are a useful concept that Nightwatch provides for persisting data between test suites and also to define global test hooks.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Test globals</h2></div>
@@ -18,11 +17,11 @@ Here's an example definition using the `globals` property in the `nightwatch.jso
 <div class="sample-test"><i>nightwatch.json</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
-
+  <br>
   "test_settings": {
     "default": {
       "launch_url": "https://nightwatchjs.org",
-
+      <br>
       "globals": {
         "myGlobalVar" : "some value",
         "otherGlobal" : "some other value"
@@ -32,15 +31,16 @@ Here's an example definition using the `globals` property in the `nightwatch.jso
 }</code></pre></div>
 
 <p></p>
-<p>The `globals` object is loaded directly onto the Nightwatch API object which is passed to the tests and is available via `browser.globals`.</p>
+
+The `globals` object is loaded directly onto the Nightwatch API object which is passed to the tests and is available via `browser.globals`.
 
 <div class="sample-test"><i>sampleTest.js</i>
 <pre data-language="javascript"><code class="language-javascript">describe('test globals example', function() {
-  
+  <br>
   it('Demo test', function(browser) {
     console.log(browser.globals.myGlobalVar); // myGlobalVar == "some value"
   });
-
+  <br>
 })</code></pre>
 </div>
 
@@ -51,7 +51,7 @@ Test globals can also be defined in an external file, specified by the `globals_
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
   "globals_path": "lib/globals.js",
-
+  <br>
   "test_settings": {
     "default": {
     "launch_url": "https://nightwatchjs.org"
@@ -164,17 +164,17 @@ Consider this configuration:
 <div class="sample-test"><i>nightwatch.json</i>
 <pre class="line-numbers" data-language="javascript"><code class="language-javascript">{
   "src_folders": [],
-
+  <br>
   "test_settings": {
     "default": {
       "launch_url": "https://nightwatchjs.org",
-
+      <br>
       "globals": {
         "myGlobalVar" : "some value",
         "otherGlobal" : "some other value"
       }
     },
-
+    <br>
     "integration": {
       "globals": {
         "myGlobalVar" : "integrated global"

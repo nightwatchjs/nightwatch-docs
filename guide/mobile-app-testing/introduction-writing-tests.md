@@ -1,7 +1,6 @@
 ---
 title: Introduction to writing tests for native mobile apps
 description:  Introduction to writing tests for native mobile/hybrid apps using Nightwatch
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h2>Write tests for native mobile apps</h2></div>
@@ -30,7 +29,7 @@ To start the **Appium Inspector**, start by adding the `.debug()` command at the
     before(function(app) {
         app.click('id', 'org.wikipedia:id/fragment_onboarding_skip_button');
     });
-
+    <br>
     it('Search for BrowserStack', async function(app) {
         app
             .click('id', 'org.wikipedia:id/search_container')
@@ -40,7 +39,7 @@ To start the **Appium Inspector**, start by adding the `.debug()` command at the
             .waitUntil(async function() {
                 // wait for webview context to be available
                 const contexts = await this.appium.getContexts();
-
+                <br>
                 return contexts.includes('WEBVIEW_org.wikipedia');
             })
             .appium.setContext('WEBVIEW_org.wikipedia')
@@ -142,13 +141,13 @@ Now that you understand the basics of writing tests for mobile apps, it's time t
 [Command][6] </br>
 [Assertions][7]
 
-[1]:	/guide/mobile-app-testing/installation.html
-[2]:	/guide/mobile-app-testing/installation.html#install-appium-inspector
-[3]:  /guide/mobile-app-testing/selectors.html
-[4]:  https://appium.io/docs/en/commands/device/activity/start-activity/
-[5]:  https://developer.android.com/reference/android/view/KeyEvent
-[6]:  /guide/mobile-app-testing/commands.html
-[7]:  /guide/mobile-app-testing/assertions.html
+[1]:    /guide/mobile-app-testing/installation.html
+[2]:    /guide/mobile-app-testing/installation.html#install-appium-inspector
+[3]:    /guide/mobile-app-testing/selectors.html
+[4]:    https://appium.io/docs/en/commands/device/activity/start-activity/
+[5]:    https://developer.android.com/reference/android/view/KeyEvent
+[6]:    /guide/mobile-app-testing/commands.html
+[7]:    /guide/mobile-app-testing/assertions.html
 
 [image-1]:  https://user-images.githubusercontent.com/1677755/220278494-7ca02bb0-6944-47bf-b459-92ffdc9ad38c.png
 

@@ -34,20 +34,20 @@ All you need to do is call the `browser.captureBrowserConsoleLogs()` command wit
   </thead>
   <tbody>
     <tr>
-      <td>`type`</td>
+      <td><code>type</code></td>
       <td>string</td>
-      <td>Type of the call.<br>E.g.: `log`, `debug`, `info`, `error`, etc.</td>
+      <td>Type of the call.<br>E.g.: <code>log</code>, <code>debug</code>, <code>info</code>, <code>error</code>, etc.</td>
     </tr>
     <tr>
-      <td>`timestamp`</td>
+      <td><code>timestamp</code></td>
       <td>number</td>
       <td>Time at which the console message was logged.</td>
     </tr>    
     <tr>
-      <td>`args`<br></td>
+      <td><code>args</code><br></td>
       <td>array[object]</td>
-      <td>`value` property of object contains the log.<br>E.g. usage: `args[0].value`.<br>
-        More details on the specifications of object available [here](https://chromedevtools.github.io/devtools-protocol/tot/Runtime/#type-RemoteObject).
+      <td><code>value</code> property of object contains the log.<br>E.g. usage: <code>args[0].value</code>.<br>
+        More details on the specifications of object available <a href="https://chromedevtools.github.io/devtools-protocol/tot/Runtime/#type-RemoteObject">here</a>.
       </td>
     </tr>
   </tbody>

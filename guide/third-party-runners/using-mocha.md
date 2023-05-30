@@ -45,7 +45,7 @@ The `test_runner` option can also be specified at test environment level:
     default: {
       test_runner: 'default'
     },
-
+    <br>
     mocha_tests: {
       test_runner : {
         type : "mocha",
@@ -82,60 +82,60 @@ Here's the complete syntax available when using Mocha in Nightwatch:
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">describe('homepage test with describe', function() {
   // All current settings are available via this.settings
   // console.log('Settings', this.settings);
-
+  <br>
   // All current cli arguments are available via this.argv
   // console.log('argv', this.argv);
-
+  <br>
   // The current mocha options object
   // console.log('mochaOptions', this.mochaOptions);
-
+  <br>
   // All current globals are available via this.globals
   // console.log('globals', this.globals);
-
+  <br>
   // testsuite specific capabilities
   // this.desiredCapabilities = {};
-
+  <br>
   // Enable this if the current test is a unit/integration test (i.e. no Webdriver session will be created)
   // this.unitTest = false
-
+  <br>
   // Set this to false if you'd like the browser window to be kept open in case of a failure or error (useful for debugging)
   // this.endSessionOnFail = true
-
+  <br>
   // Set this to false if you'd like the rest of the test cases/test steps to be executed in the event of an assertion failure/error
   // this.skipTestcasesOnFail = true
-
+  <br>
   // this.suiteRetries(2);
-
+  <br>
   // Control the assertion and element commands timeout until when an element should be located or assertion passed
   // this.waitForTimeout(1000)
-
+  <br>
   // Control the unit test timeout 
   // this.timeout(1000)
-
+  <br>
   // Controll the polling interval between re-tries for assertions or element commands
   // this.waitForRetryInterval(100);
-
+  <br>
   before(function(browser) {
     this.homepage = browser.page.home();
   });
-
+  <br>
   it('startHomepage', () => {
     this.homepage.navigate();
     this.homepage.expect.section('@indexContainer').to.be.not.visible;
   });
-
-
+  <br>
+  <br>
   // Run only this testcase
   // it.only('startHomepage', () => {
   //   this.homepage.navigate();
   // });
-
+  <br>
   // skipped testcase: equivalent to xit()
   it.skip('async testcase', async browser => {
     const result = await browser.getText('#navigation');
     console.log('result', result.value)
   });
-
+  <br>
   after(browser => browser.end());
 });</code></pre></div>
 
@@ -144,32 +144,32 @@ Writing a test in Mocha is the same as writing it in Nightwatch. Each testcase r
 
 <div class="sample-test">
 <pre><code class="language-javascript">describe('Google demo test for Mocha', function() {
-
+  <br>
   describe('with Nightwatch', function() {
-
+    <br>
     before(function(browser, done) {
       done();
     });
-
+    <br>
     after(function(browser, done) {
       browser.end(function() {
         done();
       });
     });
-
+    <br>
     afterEach(function(browser, done) {
       done();
     });
-
+    <br>
     beforeEach(function(browser, done) {
       done();
     });
-
+    <br>
     it('uses BDD to run the Google simple test', function(browser) {
       browser
         .url('https://google.com')
         .expect.element('body').to.be.present.before(1000);
-
+      <br>
       browser.setValue('input[type=text]', ['nightwatch', browser.Keys.ENTER])
         .pause(1000)
         .assert.containsText('#main', 'Night Watch');
@@ -249,33 +249,33 @@ Running Nightwatch tests with the standard Mocha is also possible, though a bit 
 <div class="sample-test">
 <pre><code class="language-javascript">
 var nightwatch = require('nightwatch');
-
+<br>
 describe('Github', function() {
   var client = nightwatch.initClient({
     silent : true
   });
-
+  <br>
   var browser = client.api();
-
+  <br>
   this.timeout(99999999);
-
+  <br>
   before(function() {
-
+    <br>
     browser.perform(function() {
       console.log('beforeAll')
     });
-
+    <br>
   });
-
+  <br>
   beforeEach(function(done) {
     browser.perform(function() {
       console.log('beforeEach')
     });
-
+    <br>
     client.start(done);
   });
-
-
+  <br>
+  <br>
   it('Demo test GitHub', function (done) {
     browser
       .url('https://github.com/nightwatchjs/nightwatch')
@@ -284,26 +284,26 @@ describe('Github', function() {
       .waitForElementVisible('body', 1000)
       .assert.visible('.container .breadcrumb a span')
       .assert.containsText('.container .breadcrumb a span', 'nightwatch', 'Checking project title is set to nightwatch');
-
+    <br>
     client.start(done);
   });
-
+  <br>
   afterEach(function() {
     browser.perform(function() {
       console.log('afterEach')
     });
   });
-
+  <br>
   after(function(done) {
     browser.end(function() {
       console.log('afterAll')
     });
-
+    <br>
     client.start(done);
   });
-
+  <br>
 });
-
+<br>
 </code></pre></div>
 
 - Previous: [Using the Nightwatch programmatic API ](https://nightwatchjs.org/guide/running-tests/programmatic-api.html)

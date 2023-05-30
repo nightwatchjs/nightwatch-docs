@@ -6,7 +6,7 @@ The purpose of a page object is to allow a software client to do anything and se
 A comprehensive introduction to Page Objects can be found in <a href="https://martinfowler.com/bliki/PageObject.html" target="_blank">this article</a>.
 
 <div class="alert alert-warning">
-As of version `1.0` Nightwatch does not support legacy page objects written prior to version `0.7`.
+As of version <code>1.0</code> Nightwatch does not support legacy page objects written prior to version <code>0.7</code>.
 </div>
 
 

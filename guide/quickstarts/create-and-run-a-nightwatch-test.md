@@ -1,7 +1,6 @@
 ---
 title: Getting Started
 description: Get started with Nightwatch and run your first end-to-end test.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Install Nightwatch</h1></div>
@@ -117,11 +116,11 @@ The output should look similar to this:
 
 ✔ Running Demo test ecosia.org:
 
-✔ Element <body> was visible after 24 milliseconds.
+✔ Element &lt;body&gt; was visible after 24 milliseconds.
 ✔ Testing if the page title contains 'Ecosia' (10ms)
-✔ Testing if element <input[type=search]> is visible (51ms)
-✔ Testing if element <button[type=submit]> is visible (12ms)
-✔ Testing if element <.mainline-results> contains text 'Nightwatch.js' (197ms)
+✔ Testing if element &lt;input[type=search]&gt; is visible (51ms)
+✔ Testing if element &lt;button[type=submit]&gt; is visible (12ms)
+✔ Testing if element &lt;.mainline-results&gt; contains text 'Nightwatch.js' (197ms)
 
 OK. 5 assertions passed. (1.838s)
 </code></pre>
@@ -132,26 +131,26 @@ OK. 5 assertions passed. (1.838s)
 Alternatively, Nightwatch provides tools to help you get started by recording your test actions on screen and generate Nightwatch test scripts automatically. See [Create Nightwatch test using Google Chrome DevTools Recorder](https://nightwatchjs.org/guide/writing-tests/chrome-devtools-recorder.html) for more information.
 
 <div class="alert alert-info">
-For additional help you can jump on to our [Discord Server](https://discord.gg/SN8Da2X).
+For additional help you can jump on to our <a href="https://discord.gg/SN8Da2X">Discord Server</a>.
 </div>
 
-[1]:	https://nodejs.org/
-[2]:	https://nodejs.org/
-[3]:	https://npmjs.com
-[4]:	https://www.npmjs.com/package/geckodriver
-[5]:	https://github.com/mozilla/geckodriver/releases
-[6]:	https://www.npmjs.com/package/chromedriver
-[7]:	https://chromedriver.chromium.org/downloads
-[8]:	https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-driver
-[9]:	https://developer.apple.com/documentation/webkit/about_webdriver_for_safari/
-[10]:	https://selenium.dev/documentation/en/grid/
-[11]:	https://www.oracle.com/technetwork/java/javase/downloads/index.html
-[12]:	https://www.npmjs.com/package/selenium-server
-[13]:	https://github.com/SeleniumHQ/selenium/releases
-[14]:	https://v2.nightwatchjs.org/guide/running-tests/nightwatch-runner.html
-[15]: https://nightwatchjs.org/guide/third-party-runners/using-mocha.html
-[16]: https://nightwatchjs.org/blog/running-cucumber-tests-with-nightwatch/
-[17]: https://github.com/nightwatchjs/nightwatch/releases/tag/v1.6.0
+[1]:    https://nodejs.org/
+[2]:    https://nodejs.org/
+[3]:    https://npmjs.com
+[4]:    https://www.npmjs.com/package/geckodriver
+[5]:    https://github.com/mozilla/geckodriver/releases
+[6]:    https://www.npmjs.com/package/chromedriver
+[7]:    https://chromedriver.chromium.org/downloads
+[8]:    https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-driver
+[9]:    https://developer.apple.com/documentation/webkit/about_webdriver_for_safari/
+[10]:   https://selenium.dev/documentation/en/grid/
+[11]:   https://www.oracle.com/technetwork/java/javase/downloads/index.html
+[12]:   https://www.npmjs.com/package/selenium-server
+[13]:   https://github.com/SeleniumHQ/selenium/releases
+[14]:   https://v2.nightwatchjs.org/guide/running-tests/nightwatch-runner.html
+[15]:   https://nightwatchjs.org/guide/third-party-runners/using-mocha.html
+[16]:   https://nightwatchjs.org/blog/running-cucumber-tests-with-nightwatch/
+[17]:   https://github.com/nightwatchjs/nightwatch/releases/tag/v1.6.0
 
 <div class="doc-pagination pt-40">
   <div class="previous">

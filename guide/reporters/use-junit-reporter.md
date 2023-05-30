@@ -50,7 +50,7 @@ The XML file name follows the pattern:
 <pre class="language-bash"><code class="language-bash">mkdir ./test-project && cd ./test-project</code></pre>
 
 #### Step 1: install Nightwatch and chromedriver
-<p>Install `nightwatch` and `chromedriver` from NPM (`chromedriver` is the W3C WebDriver implementation for running tests in the Google Chrome browser; make sure you have the latest Chrome browser installed on your machine):</p>
+<p>Install <code>nightwatch</code> and <code>chromedriver</code> from NPM (<code>chromedriver</code> is the W3C WebDriver implementation for running tests in the Google Chrome browser; make sure you have the latest Chrome browser installed on your machine):</p>
 
 <pre class="language-bash"><code class="language-bash">npm i nightwatch chromedriver</code></pre>
 

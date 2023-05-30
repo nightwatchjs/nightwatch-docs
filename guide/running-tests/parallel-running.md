@@ -1,7 +1,6 @@
 ---
 title: Run Nightwatch tests in parallel
 description: Learn how to run Nightwatch tests parallel via multiple test works or multiple environments.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Parallel testing in Nightwatch</h1></div>
@@ -37,13 +36,13 @@ The `workers` option configures how many child processes can run concurrently.
 - `{number}` - specifies an exact number of workers
 
 <br>
-Another way is to pass the `--workers` CLI switch which accept the number of desired parallel processes, e.g.:
+Another way is to pass the <code>--workers</code> CLI switch which accept the number of desired parallel processes, e.g.:
 <pre><code class="language-bash">nightwatch --workers=4</code></pre>
 
 Test concurrency is done at the file level. Each test file will fill a test worker slot. Individual tests/steps in a test file will not run concurrently.
 
 <div class="alert alert-warning">
-To improve support for displaying the output when running tests in parallel, we recommend setting `detailed_output` to `false` in your test settings (and also make sure `live_output` is enabled).
+To improve support for displaying the output when running tests in parallel, we recommend setting <code>detailed_output</code> to <code>false</code> in your test settings (and also make sure <code>live_output</code> is enabled).
 </div>
 
 ### Multiple environments
