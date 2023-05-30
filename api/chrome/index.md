@@ -25,12 +25,10 @@ Here's the full list of commands available on the `chrome` namespace on the `bro
 
 ### Example:
 <div class="sample-test"><pre data-language="javascript"><code class="language-javascript">describe('Chrome DevTools Example', function() {
-
-it ('using CDP DOM Snapshot', async function() {
-const dom = await browser.chrome.sendAndGetDevToolsCommand('DOMSnapshot.captureSnapshot', {
-computedStyles: []
-});
-
-    console.log('DOM', dom)
-})
+    it ('using CDP DOM Snapshot', async function() {
+        const dom = await browser.chrome.sendAndGetDevToolsCommand('DOMSnapshot.captureSnapshot', {
+            computedStyles: []
+        });
+        console.log('DOM', dom)
+    });
 });</code></pre></div>
