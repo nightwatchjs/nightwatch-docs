@@ -58,7 +58,7 @@ Answer the simple set of questions to complete the Nightwatch installation. In c
 
 #### Testing Types
 
-This will setup Nightwatch along with all the required dependencies for the type of testing selected. Nightwatch base version irrespective of the choice. 
+This will setup Nightwatch along with all the required dependencies for the type of testing selected. Nightwatch base version will be installed irrespective of the choice.
 
 <pre class="hide-indicator"><code>? Select testing type to setup for your project (Press &#60;space&#62; 
 to select, &#60;a&#62; to toggle all, &#60;i&#62; to invert selection, and 
