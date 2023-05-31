@@ -1,7 +1,6 @@
 ---
 title: Angular component testing
 description: Learn how to do write and execute Angular component tests in Nightwatch.
-summary\_image: /img/banners/angular-component-testing.png
 ---
 <div class="page-header"><h1>Angular component testing in Nightwatch</h1></div>
 
