@@ -19,7 +19,7 @@ Follow these to start the Nightwatch Inspector
 
 #### Step 1 - Add debug line
 
-Add browser.debug() in the test at a line where you want to start the Nightwatch inspector
+Add `browser.debug()` in the test at a line where you want to start the Nightwatch inspector
 
 #### Step 2 - Run test with debug flag
 
@@ -29,7 +29,7 @@ Run the specific Nightwatch test with `--debug` test
 
 #### Step 3 - Open Nightwatch selector
 
-Running the test would have opened up a browser and it would be paused at the line where `.debug()` was present. Now open dev-tools, click on &gt;&gt; & select Nightwatch Inspector
+Running the test would have opened up a browser and it would be paused at the line where `.debug()` was present. Now open dev-tools, click on __>>__ and select Nightwatch Inspector
 
 ![Nightwatch Inspector][image-1]
 
