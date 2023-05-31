@@ -1,7 +1,6 @@
 ---
 title: Test Doubles
 description: Nightwatch provides support for adding test doubles with the official test doubles plugin, build on top of sinonjs.
-summary_image: https://nightwatchjs.org/img/banner.png
 ---
 
 <div class="page-header"><h1>Test Doubles in Nightwatch</h1></div>
