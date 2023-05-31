@@ -31,7 +31,7 @@ Nightwatch can be installed with just one command line, either as a new project 
 
 To setup Nightwatch as a new project, simply run:
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm init nightwatch</code> <code style="color: #aaa9a2; font-size: 20px">&#60;directory-name&#62;</code></pre>
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash">npm init nightwatch</code> <code style="color: #aaa9a2; font-size: 20px">&#60;directory-name&#62;</code></pre>
 
 ##### 2. In an existing project:
 
@@ -39,7 +39,7 @@ To setup Nightwatch as a new project, simply run:
 npm init nightwatch
 </code></pre>
 
-Press `y` when you see the prompt to install create-nightwatch
+Press __y__ when you see the prompt to install create-nightwatch
 
 <pre class="hide-indicator"><code>❯ npm init nightwatch
 Need to install the following packages:
