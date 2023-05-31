@@ -20,7 +20,7 @@ For all types of testing, you have to start by installing Nightwatch itself. Let
 Make sure [Node][1] is installed on the system. 
 
 <div class="alert alert-info">
-Nightwatch supports all Node versions above V14
+Nightwatch supports all Node versions above V14.20
 </div>
 
 ### Setup Nightwatch
