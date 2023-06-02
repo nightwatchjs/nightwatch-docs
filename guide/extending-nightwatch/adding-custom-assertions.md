@@ -124,6 +124,51 @@ Assertions implement a simple interface which is shared between built-in asserti
 
 };</code></pre></div>
 
+
+Here is another example, it polls the browser for a specific object made by another program.  
+
+<div class="sample-test"><i>globalObjectReady.js</i>
+<pre class="line-numbers" data-language="javascript"><code class=" language-javascript">{
+//example of use: browser.assert.globalObjectReady("info");  
+
+GlobalObjectReady = function (info) {
+    this.message = `Testing if specificObject is on this page`;
+
+    this.expected = () => {
+        return true;
+    };
+
+    this.evaluate = (value) => {
+        return value;
+    };
+
+    this.value = (result) => {
+        return result.value;
+    };
+
+    this.command = (callback) => {
+        return this.api.execute(globalObjectCheck, [info], callback); 
+    };
+
+    async function globalObjectCheck(info){
+        //for illustrative purposes only
+        console.log(info);
+        
+        //check every 250 ms for the existence of a specific global object
+        for(let i=0; i<20; i++){
+            if(typeof specificObject === 'undefined'){
+                await new Promise(resolve => setTimeout(resolve, 250));
+            }else{
+                return true;
+            }
+        }
+        return false;
+    }
+};
+
+module.exports.assertion = GlobalObjectReady;
+</code></pre></div>
+
 ### Recommended content
 - [Define custom commands](https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html)
 
