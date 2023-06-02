@@ -1,13 +1,13 @@
 ---
 title: Nightwatch Inspector
-description: Learn how to use Nightwatch inspector to easily identify selectors for authoring tests
+description: Learn how to use Nightwatch Inspector to easily identify selectors for authoring tests
 ---
 
-<div class="page-header"><h2>Nightwatch Inspector</h2></div>
+<div class="page-header"><h1>Nightwatch Inspector</h1></div>
 
 ### Overview
 
-The Nightwatch inspector is designed to simplify authoring tests. Major advantages of using this are
+The Nightwatch inspector is designed to simplify authoring tests. Major advantages of using this are:
 
 1. Save time identifying selectors
 2. Build more robust tests 
@@ -15,21 +15,21 @@ The Nightwatch inspector is designed to simplify authoring tests. Major advantag
 
 ### Start Nightwatch Inspector
 
-Follow these to start the Nightwatch Inspector
+Follow these to start the Nightwatch Inspector:
 
 #### Step 1 - Add debug line
 
-Add `browser.debug()` in the test at a line where you want to start the Nightwatch inspector
+Add `browser.debug()` in the test at a line where you want to start the Nightwatch inspector.
 
 #### Step 2 - Run test with debug flag
 
-Run the specific Nightwatch test with `--debug` test
+Run the specific Nightwatch test with `--debug` test:
 
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch /test/inspector_demo.js --env chrome --debug</code></pre>
 
 #### Step 3 - Open Nightwatch selector
 
-Running the test would have opened up a browser and it would be paused at the line where `.debug()` was present. Now open dev-tools, click on __>>__ and select Nightwatch Inspector
+Running the test would have opened up a browser and it would be paused at the line where `.debug()` was present. Now open dev-tools, click on __>>__ and select Nightwatch Inspector.
 
 ![Nightwatch Inspector][image-1]
 
@@ -39,11 +39,11 @@ To get selector recommendations, you have to enable the explore mode.
 
 ![Explore mode][image-2]
 
-Once the explore mode is enabled and you point and click in the browser window, you will get selector recommendations as shown below
+Once the explore mode is enabled and you point and click in the browser window, you will get selector recommendations as shown below:
 
 ![Selector recommendations][image-3]
 
-Click on any element to get the suggestion in the selector history
+Click on any element to get the suggestion in the selector history.
 
 ![Selector history][image-4]
 
