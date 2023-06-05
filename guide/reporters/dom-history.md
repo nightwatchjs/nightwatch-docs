@@ -24,7 +24,7 @@ or
 
 ### View DOM history
 
-In the previous section you learnt how to tell Nightwatch to capture the DOM snapshots history. Inorder to debug, the main part is to analyse the DOM snapshots history. 
+In the previous section you learnt how to tell Nightwatch to capture the DOM snapshots history. In order to debug, the main part is to analyse the DOM snapshots history. 
 
 Steps
 1. Once your test execution completes, simply open up the report in the browser
@@ -36,7 +36,7 @@ Steps
 
 ### Debug using DOM history
 
-If a tests errors out, inspecting the DOM snapshot in the previous step can help with the debugging of the issue. If things in the previous snapshot are different from what you were expecting, the previous steps might need modification or the application behaviour has issues. If the previous snapshot is looking correct, then you can inspect the selector used or actionability for the step that errored out.
+Inspecting the DOM snapshot in the previous step can help with the debugging of the issue. If the previous snapshot is different from what you were expecting, the previous steps might need modification. If the previous snapshot looks correct, you can inspect the selector used or actionability for the errored step.
 
 Happy debugging!
 
