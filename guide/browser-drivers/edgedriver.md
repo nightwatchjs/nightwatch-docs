@@ -33,6 +33,30 @@ Run your Nightwatch.js tests in Edge can be achieved using the  [Microsoft Edge 
 }
 </code></pre>
 
+Alternatively, add the server_path in the "edge" configuration:
+<pre data-language="javascript"><code class="language-javascript">
+    edge: {
+      desiredCapabilities: {
+        browserName: 'MicrosoftEdge',
+        'ms:edgeOptions': {
+          w3c: true,
+          // More info on EdgeDriver: https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/capabilities-edge-options
+          args: [
+            //'--headless'
+          ]
+        }
+      },
+
+      webdriver: {
+        start_process: true,
+        // Follow https://docs.microsoft.com/en-us/microsoft-edge/webdriver-chromium/?tabs=c-sharp#download-microsoft-edge-webdriver
+        // to download the Edge WebDriver and set the location of extracted `msedgedriver` below:
+        server_path: 'C:\\Users\\user\\edgedriver\\msedgedriver.exe',
+        cli_args: [
+        ]
+      }
+    },
+</code></pre>
 ### Learn more
 
 For more information about the Microsoft Edge WebDriver refer to the [Official documentation](https://developer.microsoft.com/en-us/microsoft-edge/platform/documentation/dev-guide/tools/webDriver/).
