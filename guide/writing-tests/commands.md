@@ -17,13 +17,11 @@ Using commands, you can interact with web elements. Before using commands, it is
 
 To click on an element,simply use `browser.element.find('selector').click()`.
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Click on the sign in button
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Click on the sign in button
 browser.element.findByText('Sign In').click();
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Click on the sign in button
+<pre data-language="typescript"><code class="language-typescript">// Click on the sign in button
 browser.element.findByText('Sign In').click();
 </code></pre>
 </div>
@@ -32,13 +30,11 @@ browser.element.findByText('Sign In').click();
 
 To double click on an element,you can use `browser.element.find('selector').doubleClick()`.
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Double click on the sign in button
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Double click on the sign in button
 browser.element.findByText('Sign In').doubleClick();
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Double click on the sign in button
+<pre data-language="typescript"><code class="language-typescript">// Double click on the sign in button
 browser.element.findByText('Sign In').doubleClick();
 </code></pre>
 </div>
@@ -47,13 +43,11 @@ browser.element.findByText('Sign In').doubleClick();
 
 You can right click on an element using `browser.element.find('selector').rightClick()`.
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Right click on the options button
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Right click on the options button
 browser.element.findByText('options').rightClick();
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Right click on the options button
+<pre data-language="typescript"><code class="language-typescript">// Right click on the options button
 browser.element.findByText('options').rightClick();
 </code></pre>
 </div>
@@ -62,23 +56,20 @@ browser.element.findByText('options').rightClick();
 
 You can type values into input fields by using `browser.element.find('selector').sendKeys('text')`. Instead of passing text you can also pass an array of texts. To use key constants such as `Enter` or `Space`, you can use `browser.keys.CONSTANT_NAME`. You can find all key press constants [here][2]
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Type in 'Nightwatch' into input field search
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Type in 'Nightwatch' into input field search
 browser.element.findByPlaceholderText('search').sendKeys('Nightwatch');
 <br>
-or
+//or
 <br>
 // Type in 'John Doe' into the username field and press enter
 browser.element.findByLabelText('username').sendKeys(['Nightwatch', browser.Keys.ENTER]);
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Type in 'Nightwatch' into input field search
+<pre data-language="typescript"><code class="language-typescript">// Type in 'Nightwatch' into input field search
 browser.element.findByPlaceholderText('search').sendKeys('Nightwatch');
 <br>
 or
-<br>
-// Type in 'John Doe' into the username field and press enter
+<br>// Type in 'John Doe' into the username field and press enter
 browser.element.findByLabelText('username').sendKeys(['Nightwatch', browser.Keys.ENTER]);
 </code></pre>
 </div>
@@ -87,13 +78,11 @@ browser.element.findByLabelText('username').sendKeys(['Nightwatch', browser.Keys
 
 You can set the value attribute of an element by using `browser.element.find('selector').setValue('value')`.
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Set the value of input field search as 'Nightwatch'
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Set the value of input field search as 'Nightwatch'
 browser.element.findByPlaceholderText('search').setValue('Nightwatch');
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Set the value of input field search as 'Nightwatch'
+<pre data-language="typescript"><code class="language-typescript">// Set the value of input field search as 'Nightwatch'
 browser.element.findByPlaceholderText('search').setValue('Nightwatch');
 </code></pre>
 </div>
@@ -102,13 +91,11 @@ browser.element.findByPlaceholderText('search').setValue('Nightwatch');
 
 You clear the value of an element by using `browser.element.find('selector').clear()`.
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Clear the value of input field search
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Clear the value of input field search
 browser.element.find('#search').clear();
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Clear the value of input field search
+<pre data-language="typescript"><code class="language-typescript">// Clear the value of input field search
 browser.element.find('#search').clear();
 </code></pre>
 </div>

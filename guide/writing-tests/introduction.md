@@ -15,33 +15,44 @@ If you know very little or no coding, you can also use our [Chrome recorder exte
 
 ### Finding elements
 
-Before you can interact with elements or perform assertions, you will have to find the elements from the DOM tree using selectors. Nightwatch supports a variety of selectors to make finding elements a breeze. You can do so using `.find()` & `.findAll()` related commands
-
-1. CSS selector - `browser.element.find('css selector') or browser.element.findAll('css selector')`
-2. xPath selector - `browser.element.find(by.xpath(('xpath string')) or browser.element.findAll(by.xpath(('xpath string'))`
-3. By role -  `browser.element.findByRole('role') or browser.element.findAllByRole('role')`
-4. By  text - `browser.element.findByText('text') or browser.element.findAllByText('text')`
-5. By placeholder text - `browser.element.findByPlaceholderText('placeholder text') or browser.element.findAllByPlaceholderText('placeholder text')`
-6. By label text - `browser.element.findByLabelText('label text') or browser.element.findAllByLabelText('label text')`
-7. By alt text - `browser.element.findByAltText('alt text') or browser.element.findAllByAltText('alt text') `
+Before you can interact with elements or perform assertions, you will have to find the elements from the DOM tree using selectors. Nightwatch supports a variety of selectors to make finding elements a breeze. You can do so using `.find()` & `.findAll()` related commands:
+1. __CSS selectors__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.find('css selector');
+browser.element.findAll('css selector');</code></pre></div>
+2. __xPath selector__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.find(by.xpath(('xpath string'));
+browser.element.findAll(by.xpath(('xpath string'));
+</code></pre></div>
+3. __By role__ :
+<div class="sample-test"><pre ><code class="language-javascript">browser.element.findByRole('role');
+browser.element.findAllByRole('role');
+</code></pre></div>
+4. __By  text__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.findByText('text');
+browser.element.findAllByText('text');
+</code></pre></div>
+5. __By placeholder text__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.findByPlaceholderText('placeholder text');
+browser.element.findAllByPlaceholderText('placeholder text');
+</code></pre></div>
+6. __By label text__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.findByLabelText('label text');
+browser.element.findAllByLabelText('label text');
+</code></pre></div>
+7. __By alt text__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.findByAltText('alt text');
+browser.element.findAllByAltText('alt text');
+</code></pre></div>
 
 Along with the find commands, Nightwatch also provides with convenience methods that help finding methods in more complex scenarios
 
-1. Finding nth element from an array of elements `.nth(index)`
-2. Finding count of element array `.count()`
+1. Finding __nth__ element from an array of elements `.nth(index)`
+2. Finding __count__ of element array `.count()`
 
 ### Finding nested elements
 
-On top of this powerful set of selectors, Nightwatch also supports selector chaining. 
-
-For E.g.
-
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('CSS selector').findByText('text').click();
-</code></pre></div>
-
-or 
-
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.findAll('CSS selector').nth(2).findByText('text').click();
+On top of this powerful set of selectors, Nightwatch also supports selector chaining:<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('CSS selector').findByText('text').click();
+// or
+browser.element.findAll('CSS selector').nth(2).findByText('text').click();
 </code></pre></div>
 
 For a more detailed guide & examples on selectors, please refer to this [guide][2].

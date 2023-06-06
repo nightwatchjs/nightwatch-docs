@@ -17,8 +17,7 @@ You can easily find elements within the DOM tree using CSS selectors. There are 
 3. element class based
 4. nested
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Find an element which contains id = element-id
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Find an element which contains id = element-id
 browser.element.find('#element-id');
 <br>
 // Find all elements with CSS class active
@@ -31,8 +30,7 @@ browser.element.find('p.active');
 browser.element.find('#id &gt; .active');
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Find an element which contains id = element-id
+<pre data-language="typescript"><code class="language-typescript">// Find an element which contains id = element-id
 browser.element.find('#element-id');
 <br>
 // Find all elements with CSS class active
@@ -50,8 +48,7 @@ browser.element.find('#id &gt; .active');
 
 XPath is a query language for selecting nodes from an XML document based on their location and properties. You can use XPaths to locate elements within the DOM tree. 
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Find an element with XPath
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Find an element with XPath
 browser.element.find(by.xpath('xpath string'))
 <br>
 // Find all elements with XPath
@@ -72,16 +69,14 @@ You can learn more about XPath selectors [out here][1].
 
 Text based selectors are a very natural way of finding elements. 
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Find an element with text 'Sign In'
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Find an element with text 'Sign In'
 browser.element.findByText('Sign In');
 <br>
 // Find all elements with text 'Sign In'
 browser.element.findAllByText('Sign In');
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Find an element with text 'Sign In'
+<pre data-language="typescript"><code class="language-typescript">// Find an element with text 'Sign In'
 browser.element.findByText('Sign In');
 <br>
 // Find all elements with text 'Sign In'
@@ -96,16 +91,14 @@ browser.element.findAllByText('Sign In');
 
 Placeholder texts are common within form elements or search bars. Let's see how you can find elements which contain placeholder text 'Search here...'
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Find the search bar with placeholder text 'Search here...'
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Find the search bar with placeholder text 'Search here...'
 browser.element.findByPlaceholderText('Search here...');
 <br>
 // Find all elements with placeholder text 'Enter here'
 browser.element.findAllByPlaceholderText('Enter here');
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Find the search bar with placeholder text 'Search here...'
+<pre data-language="typescript"><code class="language-typescript">// Find the search bar with placeholder text 'Search here...'
 browser.element.findByPlaceholderText('Search here...');
 <br>
 // Find all elements with placeholder text 'Enter here'
@@ -117,16 +110,14 @@ browser.element.findAllByPlaceholderText('Enter here');
 
 Alt texts are common with media within a page. You can easily find such elements with alt text based methods. 
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Find the element with alt text 'cat-image'
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Find the element with alt text 'cat-image'
 browser.element.findByAltText('cat-image');
 <br>
 // Find all elements with alt text 'cat-image'
 browser.element.findAllByAltText('cat-image');
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Find the element with alt text 'cat-image'
+<pre data-language="typescript"><code class="language-typescript">// Find the element with alt text 'cat-image'
 browser.element.findByAltText('cat-image');
 <br>
 // Find all elements with alt text 'cat-image'
@@ -142,13 +133,11 @@ Sometimes form inputs might not contain text or placeholder text, but might cont
 
 You can easily find the input element related to the label `First Name` by using label based methods
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Find the input element associated with label 'First Name'
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Find the input element associated with label 'First Name'
 browser.element.findByLabelText('First Name');
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Find the input element associated with label 'First Name'
+<pre data-language="typescript"><code class="language-typescript">// Find the input element associated with label 'First Name'
 browser.element.findByLabelText('First Name');
 </code></pre>
 </div>
@@ -157,13 +146,11 @@ browser.element.findByLabelText('First Name');
 
 If you need to find an element at a specific index from a list of elements, Nightwatch provides a convenience method `.nth`
 
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">
-// Find the 2nd element from all ul elements
+<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">// Find the 2nd element from all ul elements
 browser.element.findAll('ul').nth(2);
 </code></pre>
 
-<pre data-language="typescript"><code class="language-typescript">
-// Find the 2nd element from all ul elements
+<pre data-language="typescript"><code class="language-typescript">// Find the 2nd element from all ul elements
 browser.element.findAll('ul').nth(2);
 </code></pre>
 </div>
@@ -188,7 +175,7 @@ Now that you understand selectors, you can use them to write commands & assertio
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Install Nightwatchs</span>
+          <span class="bigT">Install Nightwatch</span>
         </div>
     </a>
   </div>
