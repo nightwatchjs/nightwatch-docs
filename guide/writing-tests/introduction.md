@@ -81,6 +81,9 @@ Once you find elements, you can interact with them using commands
 
 Refer to this [guide][3] for detailed examples. 
 
+<div class="alert alert-info">You can also write custom commands with Nightwatch.<a href="/guide/extending-nightwatch/adding-custom-commands.html">Try now</a>
+</div>
+
 
 ### Assertions
 
@@ -98,7 +101,8 @@ You can use the built-in assertions
 9. URL matches - `browser.assert.urlMatches('regex')`
 10. Visible - `browser.element.find('selector').assert.visible()`
 
-If these assertions don’t suffice, you can write your own custom assertions. Learn how
+<div class="alert alert-info">If these assertions don’t suffice, you can write your own custom assertions. <a href="/guide/extending-nightwatch/adding-custom-assertions.html">Learn how</a>
+</div>
 
 ### Chai expects
 
@@ -138,7 +142,6 @@ Now that you understand the basics of writing tests for mobile apps, it's time t
 [3]:    /guide/writing-tests/commands.html
 [4]:    /guide/writing-tests/assertions.html
 [5]:    /guide/writing-tests/nightwatch-inspector.html
-
 
 
 [image-1]:  https://user-images.githubusercontent.com/1677755/220278494-7ca02bb0-6944-47bf-b459-92ffdc9ad38c.png
