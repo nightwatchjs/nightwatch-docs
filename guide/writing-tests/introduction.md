@@ -15,33 +15,44 @@ If you know very little or no coding, you can also use our [Chrome recorder exte
 
 ### Finding elements
 
-Before you can interact with elements or perform assertions, you will have to find the elements from the DOM tree using selectors. Nightwatch supports a variety of selectors to make finding elements a breeze. You can do so using `.find()` & `.findAll()` related commands
-
-1. CSS selector - `browser.element.find('css selector') or browser.element.findAll('css selector')`
-2. xPath selector - `browser.element.find(by.xpath(('xpath string')) or browser.element.findAll(by.xpath(('xpath string'))`
-3. By role -  `browser.element.findByRole('role') or browser.element.findAllByRole('role')`
-4. By  text - `browser.element.findByText('text') or browser.element.findAllByText('text')`
-5. By placeholder text - `browser.element.findByPlaceholderText('placeholder text') or browser.element.findAllByPlaceholderText('placeholder text')`
-6. By label text - `browser.element.findByLabelText('label text') or browser.element.findAllByLabelText('label text')`
-7. By alt text - `browser.element.findByAltText('alt text') or browser.element.findAllByAltText('alt text') `
+Before you can interact with elements or perform assertions, you will have to find the elements from the DOM tree using selectors. Nightwatch supports a variety of selectors to make finding elements a breeze. You can do so using `.find()` & `.findAll()` related commands:
+1. __CSS selectors__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.find('css selector');
+browser.element.findAll('css selector');</code></pre></div>
+2. __xPath selector__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.find(by.xpath(('xpath string'));
+browser.element.findAll(by.xpath(('xpath string'));
+</code></pre></div>
+3. __By role__ :
+<div class="sample-test"><pre ><code class="language-javascript">browser.element.findByRole('role');
+browser.element.findAllByRole('role');
+</code></pre></div>
+4. __By  text__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.findByText('text');
+browser.element.findAllByText('text');
+</code></pre></div>
+5. __By placeholder text__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.findByPlaceholderText('placeholder text');
+browser.element.findAllByPlaceholderText('placeholder text');
+</code></pre></div>
+6. __By label text__ :
+<div class="sample-test"><pre><code class="language-javascript">browser.element.findByLabelText('label text');
+browser.element.findAllByLabelText('label text');
+</code></pre></div>
+7. __By alt text__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.findByAltText('alt text');
+browser.element.findAllByAltText('alt text');
+</code></pre></div>
 
 Along with the find commands, Nightwatch also provides with convenience methods that help finding methods in more complex scenarios
 
-1. Finding nth element from an array of elements `.nth(index)`
-2. Finding count of element array `.count()`
+1. Finding __nth__ element from an array of elements `.nth(index)`
+2. Finding __count__ of element array `.count()`
 
 ### Finding nested elements
 
-On top of this powerful set of selectors, Nightwatch also supports selector chaining. 
-
-For E.g.
-
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('CSS selector').findByText('text').click();
-</code></pre></div>
-
-or 
-
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.findAll('CSS selector').nth(2).findByText('text').click();
+On top of this powerful set of selectors, Nightwatch also supports selector chaining:<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('CSS selector').findByText('text').click();
+// or
+browser.element.findAll('CSS selector').nth(2).findByText('text').click();
 </code></pre></div>
 
 For a more detailed guide & examples on selectors, please refer to this [guide][2].
@@ -52,32 +63,43 @@ Once you find elements, you can interact with them using commands
 
 #### Interaction commands
 
-1. Click - `browser.element.find('selector').click()`
-2. Double Click - `browser.element.find('selector').doubleClick()`
-3. Right Click  - `browser.element.find('selector').rightClick()`
-4. Type into an input - `browser.element.find('selector').sendKeys('text')`
-5. Set Value - `browser.element.find('selector').setValue()`
-6. Clear element.clear() - `browser.element.find('selector').clear()`
+1. __Click__ :
+<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').click();</code></pre></div>
+2. __Double Click__ : <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').doubleClick();
+</code></pre></div>
+1. __Right Click__ : <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').rightClick();
+</code></pre></div>
+1. __Type into an input__ : <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').sendKeys('text');
+</code></pre></div>
+1. __Set Value__ : <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').setValue();
+</code></pre></div>
+1. __Clear__ : <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').clear();
+</code></pre></div>
 
-<div class="alert alert-info">Instead of .find(), you could also have used other find related methods such as .findByText(), findByRole() followed by the command
+<div class="alert alert-info">Instead of <code>.find()</code>, you could also have used other find related methods such as <code>.findByText()</code>, <code>.findByRole()</code> followed by the command
 </div>
 
-#### Get element details
-1. Get text - `browser.element.find('selector').getText()`
-2. Get value - `browser.element.find('selector').getValue()`
-3. Get tag name - `browser.element.find('selector').getTagName()`
-4. Get attribute - `browser.element.find('selector').getAttribute()`
-5. Get CSS property - `browser.element.find('selector').getCssProperty()`
-6. Get ID - `browser.element.find('selector').getId()`
-7. Get Accessibility name - `browser.element.find('selector').getAccessibilityName()`
-8. Get rect - `browser.element.find('selector').getRect()`
+<br>
 
+#### Get element details
+1. __Get text__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getText();</code></pre></div>
+2. __Get value__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getValue();</code></pre></div>
+3. __Get tag name__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getTagName();</code></pre></div>
+4. __Get attribute__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getAttribute();</code></pre></div>
+5. __Get CSS property__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getCssProperty();</code></pre></div>
+6. __Get ID__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getId();</code></pre></div>
+7. __Get Accessibility name__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getAccessibilityName();</code></pre></div>
+8. __Get rect__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getRect();</code></pre></div>
+<br>
 #### Update element details
-1. Set text - `browser.element.find('selector').setText('text')`
-2. Set attribute - `browser.element.find('selector').setAttributes('attribute', 'attribute value')`
+1. __Set text__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').setText('text');</code></pre></div>
+2. __Set attribute__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').setAttributes('attribute', 'attribute value');</code></pre></div>
+
+<br>
 
 #### Setting browser context
-1. Set Geolocation - `browser.setGeolocation({latitude: <value>, longitude: <value>, accuracy: 100})`
+1. __Set Geolocation__ : <div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.setGeolocation({latitude: <value>, longitude: <value>, accuracy: 100});
+</code></pre></div>
 
 Refer to this [guide][3] for detailed examples. 
 
@@ -90,16 +112,16 @@ Refer to this [guide][3] for detailed examples.
 The main point of writing automated tests is setting assertions to pass. There are 2 ways to do assertions with Nightwatch
 
 You can use the built-in assertions
-1. Text equals - `browser.element.find('selector').assert.textEquals('text')`
-2. Text contains - `browser.element.find('selector').assert.textContains('text')`
-3. Text matches - `browser.element.find('selector').assert.textMatches('regex')`
-4. Value equals - `browser.element.find('selector').assert.valueEquals('text')`
-5. Value contains - `browser.element.find('selector').assert.valueContains('text')`
-6. Value matches - `browser.element.find('selector').assert.valueMatches('regex')`
-7. URL equals - `browser.assert.urlEquals('text')`
-8. URL contains - `browser.assert.urlContains('text')`
-9. URL matches - `browser.assert.urlMatches('regex')`
-10. Visible - `browser.element.find('selector').assert.visible()`
+1. __Text equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.textEquals('text');</code></pre></div>
+2. __Text contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.textContains('text');</code></pre></div>
+3. __Text matches__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.textMatches('regex');</code></pre></div>
+4. __Value equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.valueEquals('text');</code></pre></div>
+5. __Value contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.valueContains('text');</code></pre></div>
+6. __Value matches__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.valueMatches('regex');</code></pre></div>
+7. __URL equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.assert.urlEquals('text');</code></pre></div>
+8. __URL contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.assert.urlContains('text');</code></pre></div>
+9. __URL matches__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.assert.urlMatches('regex');</code></pre></div>
+10. __Visible__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.visible();</code></pre></div>
 
 <div class="alert alert-info">If these assertions don’t suffice, you can write your own custom assertions. <a href="/guide/extending-nightwatch/adding-custom-assertions.html">Learn how</a>
 </div>
@@ -108,16 +130,16 @@ You can use the built-in assertions
 
 If you prefer Chai style asserts, you can also use the expect() to perform assertions
 
-1. Text equals - `expect(element).text.to.equal()`
-2. Text contains - `expect(element).text.to.contain()`
-3. Text equals - `expect(element).text.to.match()`
-4. Value equals - `expect(element).value.to.equal()`
-5. Value contains - `expect(element).value.to.contain()`
-6. Value equals - `expect(element).value.to.match()`
-7. URL equals - `expect(brower.url()).to.equal()`
-8. URL contains - `expect(brower.url()).to.contain()`
-9. URL matches - `expect(brower.url()).to.match()`
-10. Visible - `expect(element).to.be.visible()`
+1. __Text equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(element).text.to.equal();</code></pre></div>
+2. __Text contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(element).text.to.contain();</code></pre></div>
+3. __Text equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(element).text.to.match();</code></pre></div>
+4. __Value equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(element).value.to.equal();</code></pre></div>
+5. __Value contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(element).value.to.contain();</code></pre></div>
+6. __Value equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(element).value.to.match();</code></pre></div>
+7. __URL equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(brower.url()).to.equal();</code></pre></div>
+8. __URL contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(brower.url()).to.contain();</code></pre></div>
+9. __URL matches__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(brower.url()).to.match();</code></pre></div>
+10. __Visible__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">expect(element).to.be.visible();</code></pre></div>
 
 For detailed examples around assertions, refer to this [article][4]
 

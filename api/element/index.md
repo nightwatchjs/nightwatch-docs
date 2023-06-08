@@ -1,7 +1,7 @@
-## element() global API
+## Element APIs
 
 ### Overview
-The newly added `element()` global object adds to Nightwatch 2 the functionality present in the [Selenium WebElement](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html) class.
+The newly added `element()` global object adds to Nightwatch 3 the functionality present in the [Selenium WebElement](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html) class.
 
 It supports all the usual ways of locating elements in Nightwatch, as well as the Selenium locators built using `By()`, which is also available in Nightwatch as a global named `by()`.
 
