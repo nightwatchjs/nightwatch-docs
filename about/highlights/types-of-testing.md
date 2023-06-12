@@ -1,4 +1,4 @@
-# Multple types of Testing
+# Multiple types of Testing
 <br>
 
 Nightwatch has extended its capabilities to beyond functional testing. Now you can perform visual regression testing, API testing & accessibility testing using Nightwatch. 
