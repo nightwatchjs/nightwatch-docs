@@ -6,22 +6,11 @@ Nightwatch framework is designed to work accross the test pyramid. Using a singl
 
 ## End to End Testing
 <br>
-Nightwatch has a lot of tools to enable you to test your web and mobile applications accross your entire workflow from writing tests to running them to debugging them. 
-
-#### Writing tests
+Nightwatch has a lot of tools to enable you to test your web and mobile applications accross your entire workflow from writing tests to running them to debugging them. The rich set of commands, selectors & assertions will help author any real world scenario that your users might face.
+<br>
 <br>
 
-Nightwatch's APIs are very intuitive and helps in authoring easy to understand and easy to maintain tests. The rich and powerful selectors combined with the ability to chain selectors makes finding elements very easy. Nightwatch intelligently handles auto-waiting so you don't have to break your head over it. The [Nightwatch inspector][1] also helps in finding durable selectors quickly.
-
-#### Running tests
-<br>
-
-Nightwatch is designed to run on real browsers and supports parallelism out of the box. Leverage the power of parallel execution on CI machines & cloud infrastructure providers such as BrowserStack to achieve faster deployment times by shortening your feedback loops.
-
-#### Debugging tests
-<br>
-
-Nightwatch comes with an in-built HTML report which gives a comprehensive environment level test execution summary & test level details. At a test level you can review each individual step. With DOM history you can inspect each element at every step of the test as it updated. 
+Know more about [E2E testing][9] with Nightwatch
 
 ## Component Testing
 <br>
@@ -53,6 +42,7 @@ Unit and integration testing are crucial for ensuring the quality and reliabilit
 [6]:    /guide/component-testing/introduction.html
 [7]:    /guide/writing-tests/write-nodejs-unit-integration-tests.html
 [8]:    /guide/writing-tests/test-doubles.html
+[9]:    /about/highlights/developer-experience.html
 
 [image-1]:  https://github.com/nightwatchjs/nightwatch-storybook-plugin/assets/1677755/71a1d916-43d1-410d-8ca2-723fd844097d
 
