@@ -7,14 +7,18 @@ description: Learn how to do assertions with Nightwatch
 
 ### Overview
 
-Nightwatch provides built-in extendable `assert`/`verify` library as two namespaces containing the same methods that perform assertions on elements.
+Nightwatch provides built-in extendable `assert`/`verify` library as two namespaces containing the same methods that perform assertions on elements. 
 
 ### .assert
 
 With the `.assert` namespace, when an assertion fails, the test ends, thus skipping all other assertions in the test.
 
 The following example code snippet uses the `assert` namespace to assert whether an element with class `non_existing` is visible on the page. If the assertion fails, the test ends:<br>
-<div class="sample-test"><pre data-language="javascript"><code class="language-javascript">browser.assert.visible('.non_existing');</code></pre></div> 
+<div class="sample-test">
+  <pre data-language="javascript">
+    <code class="language-javascript">browser.element.find('selector').assert.visible('.non_existing');</code>
+  </pre>
+</div> 
 
 ### .verify
 
@@ -42,8 +46,10 @@ The following example code snippet shows the `".not"` assertions:
     browser.init();
     <br>
     browser
-      .assert.not.elementPresent('.not_present') // previously .assert.elementNotPresent()
-      .assert.not.visible('.non_visible') // previously .assert.hidden()
+      .element.find('.not_present')
+      .assert.not.elementPresent();
+    <br>
+    browser 
       .assert.not.urlContains('http://');
     <br>
     // ...
@@ -89,19 +95,7 @@ Here a basic example that uses various `expect.element([...])` assertions:
     browser.url('https://www.ecosia.org/');
     <br>
     // expect element header to be present in 1000ms
-    browser.expect.element('header').to.be.present.before(1000);
-    <br>
-    // expect element header to have css property 'display'
-    browser.expect.element('header').to.have.css('display');
-    <br>
-    // expect element header to have attribute 'class' which contains text 'index-header'
-    browser.expect.element('header').to.have.attribute('class').which.contains('index-header');
-    <br>
-    // expect element .search-form to be an input tag
-    browser.expect.element('.search-form').to.be.a('form');
-    <br>
-    // expect element header to be visible
-    browser.expect.element('header').to.be.visible;
+    expect(browser.element.find('header')).to.be.present.before(1000);
     <br>
     browser.end();
   }
@@ -117,7 +111,7 @@ In this example, the test is expecting that a specified number of elements exist
   'demo test ecosia.org'(browser) {
     browser
       .url('https://www.ecosia.org/')
-      .expect.elements('section').count.to.equal(5);
+      .expect(browser.element.findAll('section').count()).to.equal(5);
   },
   <br>
   after(browser) {
@@ -138,24 +132,23 @@ For a complete list of available `expect` assertions, refer to the [API docs][13
 [12]:   https://chaijs.com/api/bdd/
 [13]:   /api/#expect-api
 
- <div class="doc-pagination pt-40">
+<div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/commands.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Find & interact with DOM elements</span>
+          <span class="bigT">Commands</span>
         </div>
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-xpath-selectors.html">
+    <a href="https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Use Xpath selectors</span>
+          <span class="bigT">Run tests</span>
         </div>
         <span>→</span>
     </a>
   </div>
 </div>
-
