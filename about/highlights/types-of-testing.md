@@ -1,13 +1,10 @@
 # Multiple types of Testing
-<br>
 
 Nightwatch has extended its capabilities to beyond functional testing. Now you can perform visual regression testing, API testing & accessibility testing using Nightwatch. 
 
 ![Multiple types of testing][image-2]
 
-
 ## Visual Regression Testing
-<br>
 
 Nightwatch v3 introduces [visual regression testing][1] as an in-house plugin. The plugin takes care of
 
@@ -21,7 +18,6 @@ VRT can be done on real desktop & mobile browsers. Also, VRT can be run on compo
 ![VRT][image-1]
 
 ## API testing
-<br>
 
 API testing is an important aspect of software testing that ensures the reliability and functionality of an application's API layer, enabling developers to build robust and scalable software applications. [API testing][3] is now available with Nightwatch since v2.6.4. The following functionality can be achieved with API testing
 
@@ -31,14 +27,8 @@ API testing is an important aspect of software testing that ensures the reliabil
 4. Mock server
 
 ## Accessibility testing
-<br>
 
 Nightwatch v3 packages the [aXe-core][4] package developed by [Deque Systems][5] as a plugin. It enables 90 different types of accessibility tests for [WCAG compliance][6].
-
-<br>
-<br>
-<br>
-<br>
 
 [1]: /guide/writing-tests/visual-regression-testing.html
 [2]: https://www.npmjs.com/package/jimp

@@ -1,18 +1,15 @@
 # Developer Experience
-<br>
 
 One of the core pillars of Nightwatch is to ensure developer delight. We always have one eye on trying to figure out how can we minimize friction accross your entire workflow from writing tests to running tests to debugging them.
 
 ![Developer Experience][image-1]
 
 ## Writing tests
-<br>
 
 ### Intuitive APIs
 Nightwatch's APIs are very intuitive and helps in authoring easy to understand and easy to maintain tests. Nightwatch supports a wide range of commands to interact with your website including complex interactions such as capturing network requests & setting Geolocation. Nightwatch intelligently handles auto-waiting so you don't have to break your head over it. [Start Now][1]
 
 ### Rich & powerful selectors
-<br>
 
 The rich and powerful [selectors][2] combined with the ability to chain selectors makes finding elements very easy. Nightwatch supports the following selector types
 1. CSS selector
@@ -23,29 +20,21 @@ The rich and powerful [selectors][2] combined with the ability to chain selector
 6. Finding inputs based on labels
 
 ### Nightwatch Inspector
-<br>
 
 The [Nightwatch inspector][3] is a productivity tool for quick authoring of tests as you can quickly identify durable selectors with simple clicks, right within the browser itself!
-<br>
 
 ![Nightwatch Inspector][image-2]
 
 ## Running tests
-<br>
 
 Nightwatch is designed to run on real browsers and supports parallelism out of the box. Leverage the power of parallel execution on CI machines such as [Jenkins][4] & cloud infrastructure providers such as [BrowserStack][5] to achieve faster deployment times by shortening your feedback loops.
 
 ## Debugging tests
-<br>
 
 Nightwatch comes with an in-built HTML report which gives a comprehensive environment level test execution summary & test level details. At a test level you can review each individual step. With [DOM history][6] you can inspect each element at every step of the test as it updated. 
 
 ![DOM History][image-3]
 
-<br>
-<br>
-<br>
-<br>
 
 [1]:    /guide/writing-tests/introduction.html
 [2]:    /guide/writing-tests/selectors.html

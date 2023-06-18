@@ -4,11 +4,12 @@ description: Nightwatch 3.0 contains a wide range of new features and improvemen
 ---
 
 
-<div class="page-header"><h2>What's new in Nightwatch v3?</h2></div>
+<div class="page-header"><h1>What's new in Nightwatch v3?</h1></div>
 
-Nightwatch v3 has lot of new features accross your testing workflow from authoring to executing to debugging tests. 
+Nightwatch v3 brings in plenty of new features accross your testing workflow from authoring to executing to debugging tests. 
 
 ### New Features
+<br>
 
 #### [Nightwatch inspector][1]
 
@@ -21,10 +22,6 @@ Nightwatch v3 has added support for Angular component testing to the [component 
 #### [Test doubles][4]
 
 With earlier versions, you could run [unit & integration tests][5] using Nightwatch. Nightwatch v3 introduces test doubles with in-build support for stubs, spies & mocks to achieve isolation in unit testing. 
-
-### Improvements
-
-Nightwatch v3 has been re-built to deliver an amazing experience around running your tests on mobile devices. 
 
 #### Brand new element APIs
 
@@ -40,25 +37,26 @@ New selectors are introduced as part of this latest versions
 
 You can also chain selectors to find elements that are more complex to find
 
-For E.g.
+**Example:**
 
-<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('CSS Selector').findByText('text').click();
+<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('#selector').findByText('text').click();
 </code></pre></div>
 
-#### Performance improvements
+### Performance improvements
 
 Nightwatch v3 has implemented worker threads for parallel runs and we have observed improvements of upto 25% between Nightwatch v2 & v3. [Try it now][6]
 
 ### Breaking changes
 We have tried to ensure that there are no breaking changes while upgrading to v3. However, in case you need migration assistance please reach out to us on our new [Nightwatch v3 channel on Discord][7]
 
-### Release notes
+#### Release notes
 Please refer to the release notes section for information about the latest changes.
 [Releases Notes](https://nightwatchjs.org/guide/overview/whats-new.html).
 
 ### Key highlights from Nightwatch v2
+<br>
 
-#### [Run your web tests on real & virtual mobile devices][8]
+#### [Run your tests on real & virtual mobile devices][8]
 
 Nightwatch v3 brings the mobile helper tool that will help you install everything needed to run web tests on mobile devices. Nightwatch supports real browsers on Android & iOS real & virtual devices. 
 
@@ -104,8 +102,7 @@ Nightwatch v3 packages the [aXe-core][16] package developed by [Deque Systems][1
 
 Relive the test as it happened by enabling DOM history. When this functionaity is enabled, DOM snapshots are captured after every test and displayed in the HTML report for better debugging.
 
-
-### Recommended content
+## Recommended content
 - [Nightwatch release notes](https://nightwatchjs.org/guide/overview/whats-new.html)
 
 [1]:    /guide/writing-tests/nightwatch-inspector.html

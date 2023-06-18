@@ -20,7 +20,7 @@ Component testing plays a vital role in verifying the functionality of individua
 
 To learn about component testing concepts, refer to this [guide][6].
 
-## Integration & Unit Testing
+## Integration &amp; Unit Testing
 
 Unit and integration testing are crucial for ensuring the quality and reliability of software by validating individual components and their interactions within a system. You can run [unit & integration tests][7] as well using Nightwatch. With v3 we also introduced [test doubles][8] with in-built support for stubs, spies & mocks to achieve isolation in unit testing.
 
