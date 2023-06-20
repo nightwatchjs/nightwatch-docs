@@ -77,7 +77,7 @@ WebDriver is implemented by all major browser vendors as a W3C compliant HTTP se
   <tr>
     <td><a class="local-nav" href="/gettingstarted/installation/#install-safaridriver">SafariDriver</a></td>
     <td class="browser"><img alt="Microsoft Edge" src="https://nightwatchjs.org/img/logos/safari_icon_large_2x.png"/></td>
-    <td>The <code>/usr/bin/safaridriver</code> binary comes pre-installed with recent versions of MacOS and it's available to use following the instructions on <a href="https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari">Apple Developer website</a>.
+    <td>The <strong>/usr/bin/safaridriver</strong> binary comes pre-installed with recent versions of MacOS and it's available to use following the instructions on <a href="https://developer.apple.com/documentation/webkit/testing_with_webdriver_in_safari">Apple Developer website</a>.
     <br><br>More information is available on <a href="https://developer.apple.com/documentation/webkit/about_webdriver_for_safari" target="_blank">About WebDriver for Safari</a> page.
     </td>
   </tr>
