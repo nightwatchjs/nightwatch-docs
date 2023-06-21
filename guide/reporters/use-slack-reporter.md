@@ -68,6 +68,7 @@ Make sure your `globals.js` is configured already; if not, please follow the [se
    // function or message string
    slack_message: function(results, options) {
      // Message payload or string  
+
      return {
        text: 'Test completed, passed ' + results.passed + ', failed ' + results.failed,
        username: 'Nightwatch',
