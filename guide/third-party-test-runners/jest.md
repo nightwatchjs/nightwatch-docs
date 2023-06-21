@@ -3,7 +3,7 @@ title: Jest Test Runner
 description: Learn how to use Jest Test Runner in Nightwatch.
 ---
 
-<div class="page-header"><h2>Using Jest as a test runner</h2></div>
+<div class="page-header"><h1>Using Jest as a test runner</h1></div>
 
 ### Overview
 **Jest** is a javascript testing framework which is used to easily write unit tests whereas ***Nightwatch.js*** is an integrated test framework for performing automated end-to-end testing on web applications and websites, across all major browsers.

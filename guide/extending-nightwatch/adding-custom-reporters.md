@@ -3,7 +3,7 @@ title: Create custom reporters
 description: Learn how to extend Nightwatch capabilities by adding custom reporters.
 ---
 
-<div class="page-header"><h2>Create custom reporters</h2></div>
+<div class="page-header"><h1>Create custom reporters</h1></div>
 
 ### Overview
 

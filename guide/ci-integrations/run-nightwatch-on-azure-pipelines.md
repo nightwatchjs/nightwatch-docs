@@ -3,7 +3,7 @@ title: Run Nightwatch tests on Azure Pipelines
 description: Learn how to run Nightwatch tests on Azure Pipelines
 ---
 
-<div class="page-header"><h2>Run Nightwatch tests on Azure Pipelines</h2></div>
+<div class="page-header"><h1>Run Nightwatch tests on Azure Pipelines</h1></div>
 
 ### Overview
 

@@ -2,7 +2,7 @@
 description: Learn how to use nightwatch with appium for mobile testing
 ---
 
-<div class="page-header"><h2>Use Nightwatch with Appium for mobile web testing</h2></div>
+<div class="page-header"><h1>Use Nightwatch with Appium for mobile web testing</h1></div>
 
 ### Overview
 [Appium](https://appium.io/) is an open-source tool for automating native, mobile web, and hybrid applications on iOS mobile, Android mobile, and Windows desktop platforms. This guide primarily focuses on runing Nightwatch tests on mobile devices.

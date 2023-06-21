@@ -3,7 +3,7 @@ title: Chrome Driver
 description: Learn about how to use Chrome Driver with Nightwatch
 ---
 
-<div class="page-header"><h2>ChromeDriver</h2></div>
+<div class="page-header"><h1>ChromeDriver</h1></div>
 
 ### Overview
 Run your Nightwatch.js tests in Chrome using ChromeDriver.

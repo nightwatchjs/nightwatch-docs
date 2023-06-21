@@ -3,7 +3,7 @@ title: Run Nightwatch tests on Gitlab CI
 description: Learn how to run Nightwatch tests on Gitlab CI
 ---
 
-<div class="page-header"><h2>Run Nightwatch tests on Gitlab CI</h2></div>
+<div class="page-header"><h1>Run Nightwatch tests on Gitlab CI</h1></div>
 
 In this article, you will learn how to create and run Nightwatch tests on Gitlab CI
 

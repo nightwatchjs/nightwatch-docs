@@ -4,7 +4,7 @@ description: Learn about how to find DOM elements and interact with them in Nigh
 ---
 
 
-<div class="page-header"><h2>Finding & interacting with DOM Elements</h2></div>
+<div class="page-header"><h1>Finding & interacting with DOM Elements</h1></div>
 
 ### Overview
 Finding elements on a page is by far one of the most common and critical functions during an end-to-end test. Nightwatch provides several techniques of locating elements and also an extensible assertion framework to perform verifications on them. 

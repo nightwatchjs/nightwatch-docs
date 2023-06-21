@@ -3,7 +3,7 @@ title: Nightwatch assertions
 description: Learn how to do assertions with Nightwatch
 ---
 
-<div class="page-header"><h2>Adding assertions to tests</h2></div>
+<div class="page-header"><h1>Adding assertions to tests</h1></div>
 
 ### Overview
 

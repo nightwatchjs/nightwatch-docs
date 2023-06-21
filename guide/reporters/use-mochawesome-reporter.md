@@ -3,7 +3,7 @@ title: Mochawesome reporter with Nightwatch
 description: Learn how to use the Mochawesome reporter with Nightwatch
 ---
 
-<div class="page-header"><h2>Mochawesome Reporter</h2></div>
+<div class="page-header"><h1>Mochawesome Reporter</h1></div>
 
 ### Overview
 [Mochawesome](https://github.com/adamgruber/mochawesome) is a very popular Mocha reporter and it works out of the box with Nightwatch as well, when Mocha is being used as a test runner.

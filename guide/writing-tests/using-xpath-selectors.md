@@ -1,4 +1,4 @@
-<div class="page-header"><h2>Find an element by Xpath</h2></div>
+<div class="page-header"><h1>Find an element by Xpath</h1></div>
 
 ### Overview
 <a href="https://developer.mozilla.org/en-US/docs/Web/XPath" target="_blank">XPath</a> stands for XML Path Language. It uses a non-XML syntax to provide a flexible way of finding elements in a web page.

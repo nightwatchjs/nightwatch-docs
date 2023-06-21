@@ -3,7 +3,7 @@ title: Run Nightwatch tests on Bamboo
 description: Learn how to run Nightwatch tests on Bamboo
 ---
 
-<div class="page-header"><h2>Run Nightwatch tests on Bamboo</h2></div>
+<div class="page-header"><h1>Run Nightwatch tests on Bamboo</h1></div>
 
 ### Overview
 

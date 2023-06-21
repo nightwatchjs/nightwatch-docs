@@ -4,7 +4,7 @@ description: Nightwatch 2.0 contains a wide range of new features and improvemen
 ---
 
 
-<div class="page-header"><h2>What's new in Nightwatch v2?</h2></div>
+<div class="page-header"><h1>What's new in Nightwatch v2?</h1></div>
 
 Nightwatch v2 contains a wide range of new features and improvements for writing and running tests as well as full cross-browser testing support for [W3C WebDriver](https://w3c.github.io/webdriver/) compliant browsers.
 

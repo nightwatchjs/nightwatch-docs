@@ -1,4 +1,4 @@
-<div class="page-header"><h2>Core Concepts</h2></div>
+<div class="page-header"><h1>Core Concepts</h1></div>
 
 ### Defining Test Environments
 It is likely you will run your tests against multiple environments and/or different browsers. Nightwatch provides a concept for defining different _environments_, in which you can set specific test settings.

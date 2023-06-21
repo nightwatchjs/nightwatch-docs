@@ -1,1 +1,1 @@
-<div class="page-header"><h2>Choosing a test runner</h2></div>
+<div class="page-header"><h1>Choosing a test runner</h1></div>

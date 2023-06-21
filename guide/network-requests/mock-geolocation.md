@@ -3,7 +3,7 @@ title: Mock Geolocation
 description: Learn how to mock or override the geolocation of your browser while running your Nightwatch tests.
 ---
 
-<div class="page-header"><h2>Mock Geolocation</h2></div>
+<div class="page-header"><h1>Mock Geolocation</h1></div>
 
 ### Overview
 When your website or web-application is changing based on the location from which it is being accessed, it becomes important to test your website for all these locations. With [Chrome DevTools Protocol support](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/) now available in Selenium 4, Nightwatch supports mocking the geolocation of the browser during the test run with just one command.

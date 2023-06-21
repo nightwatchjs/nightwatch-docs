@@ -3,7 +3,7 @@ title: Nightwatch DOM History
 description: Learn how to enable DOM history to debug tests with Nightwatch
 ---
 
-<div class="page-header"><h2>DOM History</h2></div>
+<div class="page-header"><h1>DOM History</h1></div>
 
 ### Overview
 

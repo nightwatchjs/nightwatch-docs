@@ -3,7 +3,7 @@ title: Using the programmatic API
 description: Learn how to build a custom test runner programmatically using Nightwatch APIs
 ---
 
-<div class="page-header"><h2>Using the programmatic API</h2></div>
+<div class="page-header"><h1>Using the programmatic API</h1></div>
 
 ### Overview
 When Nightwatch is imported as a regular library package, an API is exported so that you can use Nightwatch programmatically. When doing so, individual config settings can be supplied inline. So, there is no need to supply a configuration file. However, starting with version 1.3, a nightwatch.conf.js is created by default for your project.

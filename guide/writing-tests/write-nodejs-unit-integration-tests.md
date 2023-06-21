@@ -1,4 +1,4 @@
-<div class="page-header"><h2>Writing Unit Tests with Nightwatch</h2></div>
+<div class="page-header"><h1>Writing Unit Tests with Nightwatch</h1></div>
 
 ### Overview
 

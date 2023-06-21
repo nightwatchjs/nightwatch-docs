@@ -3,7 +3,7 @@ title: Assertions for native mobile app tests
 description:  How to write assertions when testing native mobile apps.
 ---
 
-<div class="page-header"><h2>Write assertions for native mobile apps tests</h2></div>
+<div class="page-header"><h1>Write assertions for native mobile apps tests</h1></div>
 
 ### Overview
 

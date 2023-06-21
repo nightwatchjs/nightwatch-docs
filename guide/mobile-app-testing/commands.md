@@ -3,7 +3,7 @@ title: Commands for native mobile app tests
 description:  Introduction to commands that can be used for native mobile apps.
 ---
 
-<div class="page-header"><h2>Commands for native mobile apps test</h2></div>
+<div class="page-header"><h1>Commands for native mobile apps test</h1></div>
 
 ### Overview
 

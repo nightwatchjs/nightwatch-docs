@@ -3,7 +3,7 @@ title: Using the pause() command
 description: Learn how to pause your test at specific points and debug by accessing the browser or executing commands using a REPL interface.
 ---
 
-<div class="page-header"><h2>Using the pause() command</h2></div>
+<div class="page-header"><h1>Using the pause() command</h1></div>
 
 ### Overview
 

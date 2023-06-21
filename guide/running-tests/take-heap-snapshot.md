@@ -3,7 +3,7 @@ title: Take heap snapshot
 description: Learn how to record heap snapshots right from your Nightwatch tests and use DevTools heap profiler to find memory leaks.
 ---
 
-<div class="page-header"><h2>Take heap snapshot</h2></div>
+<div class="page-header"><h1>Take heap snapshot</h1></div>
 
 ### Overview
 

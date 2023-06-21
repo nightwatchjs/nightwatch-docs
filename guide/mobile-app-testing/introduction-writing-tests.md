@@ -3,7 +3,7 @@ title: Introduction to writing tests for native mobile apps
 description:  Introduction to writing tests for native mobile/hybrid apps using Nightwatch
 ---
 
-<div class="page-header"><h2>Write tests for native mobile apps</h2></div>
+<div class="page-header"><h1>Write tests for native mobile apps</h1></div>
 
 ### Overview
 

@@ -3,7 +3,7 @@ title: Nightwatch test globals
 description: Learn how to use global variables with Nightwatch tests.
 ---
 
-<div class="page-header"><h2>Using test globals</h2></div>
+<div class="page-header"><h1>Using test globals</h1></div>
 
 Another useful concept that Nightwatch provides is test globals. In its most simple form, it is a dictionary of name-value pairs which is defined in your configuration file.
 

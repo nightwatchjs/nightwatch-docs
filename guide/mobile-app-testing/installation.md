@@ -3,7 +3,7 @@ title: Mobile app testing installation
 description: Learn how to install Appium, SDKs, AVDs and all the other tools to run Nightwatch tests on mobile devices.
 ---
 
-<div class="page-header"><h2>Mobile app testing installation for Nightwatch</h2></div>
+<div class="page-header"><h1>Mobile app testing installation for Nightwatch</h1></div>
 
 ### Overview
 

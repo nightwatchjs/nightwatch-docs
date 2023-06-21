@@ -3,7 +3,7 @@ title: TeamCity Reporter
 description: Learn how to use teamcity reporter in Nightwatch.
 ---
 
-<div class="page-header"><h2>TeamCity reporter</h2></div>
+<div class="page-header"><h1>TeamCity reporter</h1></div>
 
 ### Overview
 TeamCity formatter for ***Nightwatch.js*** end-to-end testing framework. Its output can be used by other tools to visualize the report. 

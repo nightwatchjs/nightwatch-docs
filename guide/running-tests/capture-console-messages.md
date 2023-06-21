@@ -3,7 +3,7 @@ title: Capture console messages
 description: Learn how to access/capture the console messages from the browser in your Nightwatch tests.
 ---
 
-<div class="page-header"><h2>Capture browser console messages</h2></div>
+<div class="page-header"><h1>Capture browser console messages</h1></div>
 
 ### Overview
 While developing your website, you might put some `console.log` statements in your code to help debug and then forget to remove those and now, you want to see all the console messages that gets logged into the DevTools console across different pages of your website.

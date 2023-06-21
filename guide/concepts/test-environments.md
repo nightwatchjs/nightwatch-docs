@@ -3,7 +3,7 @@ title: Nightwatch Test Environments
 description: Learn how to define, manage, & better large-scale projects with multiple test environments in Nightwatch.
 ---
 
-<div class="page-header"><h2>Test Environments</h2></div>
+<div class="page-header"><h1>Test Environments</h1></div>
 
 ### Overview
 

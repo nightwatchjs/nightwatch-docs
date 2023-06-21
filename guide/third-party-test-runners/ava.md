@@ -3,7 +3,7 @@ title: Ava Test Runner
 description: Learn how to use Ava Test Runner in Nightwatch.
 ---
 
-<div class="page-header"><h2>Using Ava as a test runner</h2></div>
+<div class="page-header"><h1>Using Ava as a test runner</h1></div>
 
 ### Overview
 **Ava** is a test runner for Node.js with a concise API, which embraces new language features, has detailed error output and process isolation. While Ava is mostly used to run unit tests, it can be configured with ***Nightwatch.js*** to function as an integrated test framework for performing automated end-to-end tests on web applications across all major browsers.

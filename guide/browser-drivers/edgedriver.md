@@ -3,7 +3,7 @@ title: Microsoft Edge WebDriver
 description: Learn about how to use Microsoft Edge WebDriver with Nightwatch
 ---
 
-<div class="page-header"><h2>EdgeDriver</h2></div>
+<div class="page-header"><h1>EdgeDriver</h1></div>
 
 Run your Nightwatch.js tests in Edge can be achieved using the  [Microsoft Edge WebDriver](https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/).
 

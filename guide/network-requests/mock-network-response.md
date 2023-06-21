@@ -3,7 +3,7 @@ title: Mock network response
 description: Learn how to intercept the network requests going out of your browser and mock their responses.
 ---
 
-<div class="page-header"><h2>Intercept network responses</h2></div>
+<div class="page-header"><h1>Intercept network responses</h1></div>
 
 ### Overview
 

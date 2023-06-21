@@ -3,7 +3,7 @@ title: Test globals
 description: Test globals are a useful concept that Nightwatch provides for persisting data between test suites and also to define global test hooks.
 ---
 
-<div class="page-header"><h2>Test globals</h2></div>
+<div class="page-header"><h1>Test globals</h1></div>
 
 ### Overview
 Nightwatch supports data persistence between test suites and global test hooks definitions via test globals. In its most simple form, it is a dictionary of name-value pairs which is defined in your configuration file.

@@ -3,7 +3,7 @@ title: Nightwatch test hooks
 description: Learn how to Nightwatch standard test hooks such as before, after, before each and after each.
 ---
 
-<div class="page-header"><h2>Using test hooks</h2></div>
+<div class="page-header"><h1>Using test hooks</h1></div>
 
 Nightwatch provides the standard `before`/`after` and `beforeEach`/`afterEach` hooks to be used in the tests.
 
