@@ -4,7 +4,7 @@ title: Contributing guidelines
 sidebar_label: Contributing guidelines
 description: Nightwatch Contribution Guidelines
 ---
-<div class="page-header"><h2>Overview</h2></div>
+<div class="page-header"><h1>Overview</h1></div>
 
 This document describes the options available for creating content for the site,
 along with some guidelines and conventions.
@@ -47,15 +47,15 @@ The first paragraph of the documentation is a window to setting expectation in t
 
 Apart from the standard markdown guidelines of heirarchical headers, for example, H2 must be nested under H1, H3 must be nested under H2, etc., use the following guidelines:
 
-* H2 header is used as title that appears as page header and on the left navigation pane. Use the `<div class="page-header"><h2>Adding custom assertions</h2></div>` format to differentiate a H2 header that will be used as the page title.
-* H2 header is used for SEO, so ensure that it is crafted concisely.
-* Each page includes only one H2 header.
+* H1 header is used as title that appears as page header and on the left navigation pane. Use the `<div class="page-header"><h1>Adding custom assertions</h1></div>` format to differentiate a H1 header that will be used as the page title.
+* H1 header is used for SEO, so ensure that it is crafted concisely.
+* Each page includes only one H1 header.
 * H3 headers are included in the page's table of contents on the right. Use H3 headers to add actionable content. All H3 headers are underlined by default.
 * H4 headers can be created using custom format <h4 id="install-geckodriver">GeckoDriver</h4>.
 
 Markdown Code:
 ```
-<div class="page-header"><h2>Adding custom assertions</h2></div>
+<div class="page-header"><h1>Adding custom assertions</h1></div>
 ```
 
 #### H3 Header

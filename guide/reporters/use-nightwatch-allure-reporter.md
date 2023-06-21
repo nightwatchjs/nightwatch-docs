@@ -3,7 +3,7 @@ title: Allure Reporter
 description: Learn how to use allure reporter in Nightwatch.
 ---
 
-<div class="page-header"><h2>Allure reporter</h2></div>
+<div class="page-header"><h1>Allure reporter</h1></div>
 
 ### Overview
 [Nightwatch Allure Reporter](https://github.com/kushmangal/Nightwatch-Allure-Reporter) is a custom reporter for nightwatch, which uses [allure](https://docs.qameta.io/allure/) reporter to generate reports.

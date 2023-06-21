@@ -3,7 +3,7 @@ title: Skipping or disabling tests
 description: Learn how to skip/disable a test module or individual test cases with Nightwatch.
 ---
 
-<div class="page-header"><h2>Skipping / disabling tests</h2></div>
+<div class="page-header"><h1>Skipping / disabling tests</h1></div>
 
 ### Overview
 To prevent a test module from running, simply set the `disabled` attribute in that module to `true`, like so:

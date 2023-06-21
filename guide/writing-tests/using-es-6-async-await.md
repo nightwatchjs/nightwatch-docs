@@ -3,7 +3,7 @@ title: ES6 async/await
 description: Learn how to use the `async` function with Nightwatch
 ---
 
-<div class="page-header"><h2>Using ES6 async/await</h2></div>
+<div class="page-header"><h1>Using ES6 async/await</h1></div>
 
 ### Overview
 Starting with Nightwatch version `1.1`, you can write tests as an ES6 [async function][8].

@@ -3,7 +3,7 @@ title: Debugging Native Mobile App Tests
 description: Learn how to debug native mobile app testing with Nightwatch.
 ---
 
-<div class="page-header"><h2>Debugging Native Mobile App Tests</h2></div>
+<div class="page-header"><h1>Debugging Native Mobile App Tests</h1></div>
 
 ### Overview
 

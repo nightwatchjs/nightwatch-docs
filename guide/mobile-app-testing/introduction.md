@@ -3,7 +3,7 @@ title: Native Mobile App Testing
 description: Introduction to native mobile app testing with Nightwatch. Learn how to automate native mobile apps on Android and iOS devices.
 ---
 
-<div class="page-header"><h2>Introduction to Native Mobile App Testing</h2></div>
+<div class="page-header"><h1>Introduction to Native Mobile App Testing</h1></div>
 
 ### Overview
 

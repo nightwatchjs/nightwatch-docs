@@ -1,4 +1,4 @@
-<div class="page-header"><h2>Contributing</h2></div>
+<div class="page-header"><h1>Contributing</h1></div>
 
 The Nightwatch project welcomes contributions from everyone. There are a
 number of ways you can help:

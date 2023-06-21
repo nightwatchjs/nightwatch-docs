@@ -3,7 +3,7 @@ title: JSON Reporter
 description: Learn how to use the integrated JSON report from Nightwatch.
 ---
 
-<div class="page-header"><h2>JSON Reporter</h2></div>
+<div class="page-header"><h1>JSON Reporter</h1></div>
 
 ### Overview
 JSON Reporter is one of the default reporters in Nightwatch along with the HTML and XML reporters. It outputs test results in JSON format which can then be used by other tools to visualize the report.

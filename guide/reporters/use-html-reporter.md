@@ -3,7 +3,7 @@ title: HTML Reporter
 description: Learn how to use the integrated HTML report from Nightwatch.
 ---
 
-<div class="page-header"><h2>HTML Reporter</h2></div>
+<div class="page-header"><h1>HTML Reporter</h1></div>
 
 ### Overview
 Nightwatch v2.2 brings its own integrated HTML reporter which better aggregate test results in a user-friendly HTML view. It provides test results, time taken by each test module, assertions made in each test case along with raw HTTP logs which help with debugging.

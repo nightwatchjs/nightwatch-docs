@@ -3,7 +3,7 @@ title: Create Nightwatch tests using the Chrome DevTools Recorder
 description: Learn how to do create nightwatch tests using the Google Chrome devtools recorder
 ---
 
-<div class="page-header"><h2>Create Nightwatch tests using the Chrome DevTools Recorder</h2></div>
+<div class="page-header"><h1>Create Nightwatch tests using the Chrome DevTools Recorder</h1></div>
 
 <iframe width="100%" height="515px" src="https://www.youtube.com/embed/eYj4vuEjlRM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

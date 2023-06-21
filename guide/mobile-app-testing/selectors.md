@@ -3,7 +3,7 @@ title: Selectors for native mobile app tests
 description:  Introduction to selectors to find elements for native mobile apps.
 ---
 
-<div class="page-header"><h2>Selectors for native mobile apps test</h2></div>
+<div class="page-header"><h1>Selectors for native mobile apps test</h1></div>
 
 ### Overview
 

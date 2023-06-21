@@ -3,7 +3,7 @@ title: Custom Reporter
 description: Learn how to create and use a custom reporter in Nightwatch.
 ---
 
-<div class="page-header"><h2>Create a custom reporter</h2></div>
+<div class="page-header"><h1>Create a custom reporter</h1></div>
 
 ### Overview
 You can generate your own reports by using the provided the results object. This can be done is at least two main ways:

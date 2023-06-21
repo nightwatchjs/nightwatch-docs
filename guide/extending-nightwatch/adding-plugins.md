@@ -3,7 +3,7 @@ title: Adding plugins
 description: Learn how to extend Nightwatch capabilities by adding plugins.
 ---
 
-<div class="page-header"><h2>Adding plugins</h2></div>
+<div class="page-header"><h1>Adding plugins</h1></div>
 
 ### Overview
 Nightwatch `v2.0` introduces a new interface for defining plugins and extending the base functionality of Nightwatch with your own custom commands and assertions. 

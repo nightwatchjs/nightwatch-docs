@@ -3,7 +3,7 @@ title: Selectors for websites & web apps
 description:  Introduction to selectors to find elements for websites & web apps.
 ---
 
-<div class="page-header"><h2>Selectors for websites & web apps</h2></div>
+<div class="page-header"><h1>Selectors for websites & web apps</h1></div>
 
 ### Overview
 

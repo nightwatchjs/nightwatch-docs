@@ -3,7 +3,7 @@ title: Slack Reporter
 description: Learn how to use Slack reporter in Nightwatch.
 ---
 
-<div class="page-header"><h2>Slack Reporter</h2></div>
+<div class="page-header"><h1>Slack Reporter</h1></div>
 
 ### Overview
 Slack Integration allows you to see your Nightwatch.js test results directly in your teams' Slack channels.

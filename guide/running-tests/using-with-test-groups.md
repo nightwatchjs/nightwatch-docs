@@ -3,7 +3,7 @@ title: Grouping tests with Nightwatch
 description: Learn how to group tests together for better organization of the test suite.
 ---
 
-<div class="page-header"><h2>Grouping tests with Nightwatch</h2></div>
+<div class="page-header"><h1>Grouping tests with Nightwatch</h1></div>
 
 ### Overview
 Nightwatch makes it possible to organize your test scripts into groups and run them as needed. To group tests together just place them in the same sub-folder. The folder name is the name of the group.

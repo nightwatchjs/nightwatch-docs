@@ -1,4 +1,4 @@
-<div class="page-header"><h2>Use 'exports' test syntax</h2></div>
+<div class="page-header"><h1>Use 'exports' test syntax</h1></div>
 
 ### Overview
 Nightwatch default interface for writing tests has been the `exports` syntax, which makes it very easy to write end-to-end tests. 

@@ -3,7 +3,7 @@ title: Catch JS Exceptions
 description: Learn how to listen to all the JavaScript exceptions happening during the run-time of your website, in your Nightwatch tests.
 ---
 
-<div class="page-header"><h2>Capture Browser JS Exceptions</h2></div>
+<div class="page-header"><h1>Capture Browser JS Exceptions</h1></div>
 
 ### Overview
 Since v2.2, Nightwatch allows you to listen to the JavaScript exceptions happening during the run-time of your website and make them available in the test itself via a callback. 

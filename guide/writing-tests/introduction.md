@@ -3,7 +3,7 @@ title: Introduction to writing tests for web applications
 description:  Introduction to writing tests for websites or web apps using Nightwatch
 ---
 
-<div class="page-header"><h2>Write tests for websites or web apps</h2></div>
+<div class="page-header"><h1>Write tests for websites or web apps</h1></div>
 
 ### Overview
 

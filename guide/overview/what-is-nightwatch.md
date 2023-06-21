@@ -3,7 +3,7 @@ title: What is Nightwatch?
 description: Nightwatch is an integrated framework for performing automated end-to-end testing on web applications and websites, across all major browsers.
 ---
 
-<div class="page-header"><h2>What is Nightwatch?</h2></div>
+<div class="page-header"><h1>What is Nightwatch?</h1></div>
 
 <img src="/images/nightwatch-circle.png" alt="Nightwatch.js" title="Nightwatch.js" id="whatis-logo" />Nightwatch.js is an integrated framework for performing automated end-to-end testing on web applications and websites, across all major browsers. It is written in [Node.js][1] and uses the [W3C WebDriver API][2] to interact with various browsers.
 

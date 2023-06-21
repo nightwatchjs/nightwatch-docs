@@ -3,7 +3,7 @@ title: Capture network requests
 description: Learn how to access/capture all the network calls going out of your browser, in your Nightwatch tests.
 ---
 
-<div class="page-header"><h2>Capture network requests</h2></div>
+<div class="page-header"><h1>Capture network requests</h1></div>
 
 ### Overview
 

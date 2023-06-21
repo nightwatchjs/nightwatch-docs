@@ -3,7 +3,7 @@ title: Firefox WebDriver (Gecko)
 description: Learn about how to use Gecko Driver with Nightwatch
 ---
 
-<div class="page-header"><h2>GeckoDriver (Firefox)</h2></div>
+<div class="page-header"><h1>GeckoDriver (Firefox)</h1></div>
 
 Firefox driver is included in the selenium-server-standalone.jar available in the Selenium downloads. The driver comes in the form of an xpi (firefox extension) which is added to the firefox profile when you start a new instance of FirefoxDriver.
 

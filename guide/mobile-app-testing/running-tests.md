@@ -3,7 +3,7 @@ title: Running native mobile app tests
 description:  Introduction to running native mobile app Nightwatch tests on real, virtual and cloud devices.
 ---
 
-<div class="page-header"><h2>Run tests on real, virtual, and cloud devices</h2></div>
+<div class="page-header"><h1>Run tests on real, virtual, and cloud devices</h1></div>
 
 ### Overview
 

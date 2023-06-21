@@ -3,7 +3,7 @@ title: Commands for websites or web apps
 description:  Introduction to commands that can be used for websites or web apps
 ---
 
-<div class="page-header"><h2>Commands for websites or web apps</h2></div>
+<div class="page-header"><h1>Commands for websites or web apps</h1></div>
 
 ### Overview
 

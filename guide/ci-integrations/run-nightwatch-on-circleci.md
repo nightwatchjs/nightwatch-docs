@@ -3,7 +3,7 @@ title: Run Nightwatch tests on CircleCI
 description: Learn how to run Nightwatch tests on CircleCI
 ---
 
-<div class="page-header"><h2>Run Nightwatch tests on CircleCI</h2></div>
+<div class="page-header"><h1>Run Nightwatch tests on CircleCI</h1></div>
 
 In this article, you will learn how to create and run Nightwatch tests on CircleCI
 

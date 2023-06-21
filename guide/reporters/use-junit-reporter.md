@@ -3,7 +3,7 @@ title: JUnit XML Reporter
 description: Learn how to use the integrated JUnit XML report from Nightwatch.
 ---
 
-<div class="page-header"><h2>JUnit XML Reporter</h2></div>
+<div class="page-header"><h1>JUnit XML Reporter</h1></div>
 
 ### Overview
 JUnit is a widespread XML format for generating test results and most CI system (e.g. Jenkins) have native support to plug this in so that more advanced reports can be displayed. 

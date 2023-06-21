@@ -3,7 +3,7 @@ title: Running tests filtered by tags
 description: Learn how to run specific tests that match particular tags.
 ---
 
-<div class="page-header"><h2>Filtering by test tags</h2></div>
+<div class="page-header"><h1>Filtering by test tags</h1></div>
 
 ### Overview
 You can also selectively target tests to run based on tags, such that a test may be belong to multiple tags. For example, you might have a login test that belongs to a login suite as well as a sanity suite.

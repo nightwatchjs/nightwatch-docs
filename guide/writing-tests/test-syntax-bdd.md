@@ -3,7 +3,7 @@ title: BDD test syntax
 description: Reference to complete BDD syantx.
 ---
 
-<div class="page-header"><h2>BDD test syntax</h2></div>
+<div class="page-header"><h1>BDD test syntax</h1></div>
 
 ### Overview
 Starting with Nightwatch version **1.3**, you can use the popular BDD interfaces for writing tests. You don't need additional configuration to use BDD interfaces. These are now supported out of the box.

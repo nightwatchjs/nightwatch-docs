@@ -3,7 +3,7 @@ title: Safari Driver
 description: Learn about how to use Safari Driver with Nightwatch
 ---
 
-<div class="page-header"><h2>SafariDriver</h2></div>
+<div class="page-header"><h1>SafariDriver</h1></div>
 
 Run your Nightwatch.js tests in Safari using SafariDriver.
 

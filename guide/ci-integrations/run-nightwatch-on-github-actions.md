@@ -3,7 +3,7 @@ title: Run Nightwatch tests on Github Actions
 description: Learn how to run Nightwatch tests on Github Actions
 ---
 
-<div class="page-header"><h2>Run Nightwatch tests on Github Actions</h2></div>
+<div class="page-header"><h1>Run Nightwatch tests on Github Actions</h1></div>
 
 ### Overview
 

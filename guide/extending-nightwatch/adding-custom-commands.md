@@ -3,7 +3,7 @@ title: Define custom commands
 description: Learn how to extend Nightwatch capabilities by adding custom commands.
 ---
 
-<div class="page-header"><h2>Define custom commands</h2></div>
+<div class="page-header"><h1>Define custom commands</h1></div>
 
 ### Overview
 Most of the time you will need to extend the Nightwatch commands to suit your own application needs. To do so, create a new folder (e.g. `nightwatch/commands`) and start defining your own commands inside, each in its own file.

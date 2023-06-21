@@ -3,7 +3,7 @@ title: Override device dimensions
 description: Learn how to test your website on different device dimensions, while running your tests on the same device.
 ---
 
-<div class="page-header"><h2>Override device dimensions</h2></div>
+<div class="page-header"><h1>Override device dimensions</h1></div>
 
 ### Overview
 

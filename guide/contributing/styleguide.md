@@ -1,5 +1,5 @@
 
-<div class="page-header"><h2>Style Guide</h2></div>
+<div class="page-header"><h1>Style Guide</h1></div>
 
 This style guide is for any one who is not part of the core documentation team. Use this document as a primer to make decisions about appropriate word choices.
 

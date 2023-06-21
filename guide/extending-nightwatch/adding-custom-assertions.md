@@ -3,7 +3,7 @@ title: Define custom assertions
 description: Learn how to extend Nightwatch capabilities by adding custom assertions.
 ---
 
-<div class="page-header"><h2>Define custom assertions</h2></div>
+<div class="page-header"><h1>Define custom assertions</h1></div>
 
 ### Overview
 Nightwatch allows you to even define your own assertions, extending the available `.assert` and `.verify` namespaces. To do so, create a new folder (e.g. `nightwatch/assertions`) and start defining your own assertions inside, each in its own file.
