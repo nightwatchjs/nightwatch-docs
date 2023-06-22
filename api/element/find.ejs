@@ -1,0 +1,7 @@
+<%
+const methodName = "find.js";
+const fileLink = "/lib/api/web-element/commands/find.js";
+const methods = await api;
+const {entities: [method]} = methods.find(({file}) => file.endsWith(fileLink));
+%>
+<%- include('api-method', { method, editLink: "https://github.com/nightwatchjs/nightwatch/edit/main/lib/api/web-element/commands/find.js?message=api-docs%20update" }); %>
