@@ -118,7 +118,7 @@ Below is a list of all public properties and methods that are made available on 
 
   Type: `function actions(options?: { async?: boolean; bridge?: boolean }): Actions`
 
-  Returns a new instance of the `Actions` class from Selenium. See the [User Actions API](https://v2.nightwatchjs.org/api/useractions/) section for details.
+  Returns a new instance of the `Actions` class from Selenium. See the [User Actions API](https://nightwatchjs.org/api/useractions/) section for details.
 
 - #### capabilities
 
@@ -182,7 +182,7 @@ Below is a list of all public properties and methods that are made available on 
 
   Type: `NightwatchDesiredCapabilities`
 
-  An object containing the capabilities sent by Nightwatch to WebDriver, as defined in the Nightwatch config file (see the [Configuration section](http://local-v2.nightwatchjs.org/guide/configuration/overview.html) for details).
+  An object containing the capabilities sent by Nightwatch to WebDriver, as defined in the Nightwatch config file (see the [Configuration section](https://nightwatchjs.org/guide/configuration/nightwatch-configuration-file.html) for details).
 
   ###### Example:
 
@@ -233,7 +233,7 @@ Below is a list of all public properties and methods that are made available on 
 
   Type: `NightwatchGlobals`
 
-  The processed Nightwatch globals object which contains all the currently global properties and methods. See the [Test Globals section](https://v2.nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals) for details.
+  The processed Nightwatch globals object which contains all the currently global properties and methods. See the [Test Globals section](https://nightwatchjs.org/guide/concepts/test-globals.html) for details.
   
 - #### options
 
@@ -252,40 +252,40 @@ Below is a list of all public properties and methods that are made available on 
   Type: `NightwatchPage & NightwatchCustomPageObjects`
 
   Contains a dictionary of the current page objects, created for the currently running testcase.
-  See [Working with Page Objects](https://v2.nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html) section for details.
+  See [Working with Page Objects](https://nightwatchjs.org/guide/concepts/page-object-model.html) section for details.
 
 - #### assert
 
   Type: `Assert`
 
-  See [Assert API](https://v2.nightwatchjs.org/api/assert/) section for details.
+  See [Assert API](https://nightwatchjs.org/api/assert/) section for details.
 
 - #### verify
 
   Type: `Assert`
 
-  See [Assert API](https://v2.nightwatchjs.org/api/verify/) section for details.
+  See [Assert API](https://nightwatchjs.org/api/assert/) section for details.
 
 - #### ensure
 
   Type: `Ensure`
 
-  See [Ensure API](https://v2.nightwatchjs.org/api/ensure/) section for details.
+  See [Ensure API](https://nightwatchjs.org/api/ensure/) section for details.
   
 - #### expect
 
   Type: `Expect`
 
-  See [Expect API](https://v2.nightwatchjs.org/api/expect/) section for details.
+  See [Expect API](https://nightwatchjs.org/api/expect/) section for details.
 
 - #### chrome
 
   Type: `object`
 
-  Chromium specific commands. See [API Commands](https://v2.nightwatchjs.org/api/commands/) section for details.
+  Chromium specific commands. See [API Commands](https://nightwatchjs.org/api/commands/) section for details.
 
 - #### firefox
 
   Type: `object`
 
-  Firefox specific commands. See [API Commands](https://v2.nightwatchjs.org/api/commands/) section for details.
+  Firefox specific commands. See [API Commands](https://nightwatchjs.org/api/commands/) section for details.

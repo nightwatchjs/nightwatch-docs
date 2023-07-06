@@ -58,7 +58,7 @@ The following example code snippet shows the `".not"` assertions:
 
 ### Automatic Retries
 
-By default, Nightwatch automatically retries failed assertions for up to `5000` milliseconds. This can be configured by setting the  `retryAssertionTimeout` (in milliseconds) property in your `globals` object in your `nightwatch.json` file. Check out [working with test globals](https://v2.nightwatchjs.org/guide/concepts/test-globals.html) for more details.  
+By default, Nightwatch automatically retries failed assertions for up to `5000` milliseconds. This can be configured by setting the  `retryAssertionTimeout` (in milliseconds) property in your `globals` object in your `nightwatch.json` file. Check out [working with test globals](https://nightwatchjs.org/guide/concepts/test-globals.html) for more details.  
 
 If the given timeout is reached, the test runner stops retrying and marks the assertion as failed.
 
