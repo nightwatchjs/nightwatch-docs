@@ -50,7 +50,7 @@ The newly added element() global object adds to Nightwatch 2 the commands from t
 - [.chrome specific commands](https://v2.nightwatchjs.org/api/commands/#using-chrome-devtools-protocol)
 
 ### Improvements
-- specify [page commands](guide/using-page-objects/writing-page-specific-commands.html) as an ES6 class ([details](guide/using-page-objects/writing-page-specific-commands.html))
+- specify [page commands](/guide/using-page-objects/writing-page-specific-commands.html) as an ES6 class ([details](/guide/using-page-objects/writing-page-specific-commands.html))
 - added `enable_fail_fast` setting and `--fail-fast` cli argument to abort the test runner after a failed test suite;
 - added support to use the config file as Promise
 - added support to use glob patterns in config for `src_folders`, `page_object_path`, `custom_commands_path`, `custom_assertion_path` options

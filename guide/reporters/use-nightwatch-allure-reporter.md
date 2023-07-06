@@ -11,7 +11,7 @@ description: Learn how to use allure reporter in Nightwatch.
 ### Example with Configuration
 
 #### Step 0: Install Nightwatch
-Follow the [guide](https://nightwatchjs.orghttps://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](​​https://vimeo.com/714406223) to install Nightwatch from scratch.
+Follow the [guide](https://nightwatchjs.orghttps://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
 
 #### Step 1: Installing Allure
 In order to use Allure reporter you must ensure that [Allure](https://docs.qameta.io/allure/) CLI is already installed in your machine; if not, follow Allure's installation [guide](https://docs.qameta.io/allure/#_installing_a_commandline).

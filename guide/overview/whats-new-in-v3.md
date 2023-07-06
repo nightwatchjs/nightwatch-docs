@@ -108,7 +108,7 @@ Relive the test as it happened by enabling DOM history. When this functionaity i
 [1]:    /guide/writing-tests/nightwatch-inspector.html
 [2]:    /guide/component-testing/testing-angular-components.html
 [3]:    /guide/component-testing/introduction.html 
-[4]:    /guide/writing-tests/test-doubles.md  
+[4]:    /guide/writing-tests/test-doubles.html  
 [5]:    /guide/writing-tests/write-nodejs-unit-integration-tests.html
 [6]:   https://github.com/nightwatchjs/performance_benchmarking
 [7]:   https://discord.com/channels/618399631038218240/1093179421508243596

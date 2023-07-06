@@ -162,7 +162,7 @@ Now that you understand the basics of writing tests for mobile apps, it's time t
 [1]:    /guide/writing-tests/chrome-devtools-recorder.html
 [2]:    /guide/writing-tests/selectors.html
 [3]:    /guide/writing-tests/commands.html
-[4]:    /guide/writing-tests/assertions.html
+[4]:    /guide/writing-tests/adding-assertions.html
 [5]:    /guide/writing-tests/nightwatch-inspector.html
 
 
