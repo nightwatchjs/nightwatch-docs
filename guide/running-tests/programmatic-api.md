@@ -69,7 +69,7 @@ const client = Nightwatch.createClient({
 
   <p>Given an existing <code>client</code> created using the <code>createClient()</code> method listed above, this can be used to create a new browser session.</p>
 
-The returned object will be the Nightwatch [browser API](https://v2.nightwatchjs.org/api/#the-browser-object) object.
+The returned object will be the Nightwatch [browser API](https://nightwatchjs.org/api/#the-browser-object) object.
 
 <h5>Syntax:</h5>
 

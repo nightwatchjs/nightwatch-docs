@@ -135,7 +135,7 @@ browser
   })
 ```
 
-> You can learn more about working with DOM elements in our [official documentation](https://v2.nightwatchjs.org/guide/using-nightwatch/finding-and-interacting-with-elements.html)
+> You can learn more about working with DOM elements in our [official documentation](https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html)
 
 ### Assertions
 
@@ -266,12 +266,10 @@ The best way to ask for questions or report issues related to Nightwatch Angular
 [AngualarRFC]:https://github.com/angular/protractor/issues/5502
 [NightwatchSchematicDocumentation]:https://github.com/nightwatchjs/nightwatch-schematics#readme
 [GithubIssueLink]:https://github.com/nightwatchjs/nightwatch-schematics/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
-[ElementDocumentationLink]:https://v2.nightwatchjs.org/api/element.html
-[ElementInteractionDocLink]:https://v2.nightwatchjs.org/api/commands/#elementinteraction-headline
-[AssertionLink]:https://v2.nightwatchjs.org/api/assert/
-[ExceptLink]:https://v2.nightwatchjs.org/api/expect/
-[PageObjectLink]:https://v2.nightwatchjs.org/api/pageobject/
-[APICommandsLink]:https://v2.nightwatchjs.org/api/commands/
+[AssertionLink]:https://nightwatchjs.org/api/assert/
+[ExceptLink]:https://nightwatchjs.org/api/expect/
+[PageObjectLink]:https://nightwatchjs.org/api/pageobject/
+[APICommandsLink]:https://nightwatchjs.org/api/commands/
 
 <div class="doc-pagination justify-content-start pt-40">
   <div class="previous">
