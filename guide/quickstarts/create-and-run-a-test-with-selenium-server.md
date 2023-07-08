@@ -150,7 +150,6 @@ For additional help you can jump on to our <a href="https://discord.gg/SN8Da2X">
 [11]:   https://www.java.com/en/
 [12]:   https://www.npmjs.com/package/selenium-server
 [13]:   https://github.com/SeleniumHQ/selenium/releases
-[14]:   https://v2.nightwatchjs.org/guide/running-tests/nightwatch-runner.html
 
 [image-2]:  /img/operation-cloud.png
 

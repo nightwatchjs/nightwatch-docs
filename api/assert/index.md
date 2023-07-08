@@ -38,7 +38,7 @@ And thus, assertions like `elementNotPresent`, `cssClassNotPresent`, `hidden` ar
 
 ### Automatic Retries
 
-By default, Nightwatch will automatically retry failed assertions for up to 5000ms. This can be configured by setting the property `retryAssertionTimeout` (in milliseconds) in your `globals` (see also [working with test globals](https://v2.nightwatchjs.org/guide/using-nightwatch/external-globals.html).  
+By default, Nightwatch will automatically retry failed assertions for up to 5000ms. This can be configured by setting the property `retryAssertionTimeout` (in milliseconds) in your `globals` (see also [working with test globals](https://nightwatchjs.org/guide/concepts/test-globals.html).  
 
 If the given timeout is reached test runner will give up retrying and will mark the assertion as failed.
 

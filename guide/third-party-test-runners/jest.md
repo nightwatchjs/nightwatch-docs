@@ -13,13 +13,13 @@ So to specifically use Jest and Nightwatch functionalities simultaneously, Night
 
 ### API
 #### global.browser
-The Nightwatch [browser API](https://v2.nightwatchjs.org/api/#the-browser-object) object. Unavailable when ***autoStartSession*** is off.
+The Nightwatch [browser API](https://nightwatchjs.org/api/#the-browser-object) object. Unavailable when ***autoStartSession*** is off.
 
 #### global.jestNightwatch
-The Jest environment used the Nightwatch [programmatic API](https://v2.nightwatchjs.org/api/programmatic/) to create the Nightwatch instance and export the browser API.
+The Jest environment used the Nightwatch [programmatic API](https://nightwatchjs.org/api/programmatic/) to create the Nightwatch instance and export the browser API.
 
 Available properties/methods:
-- `.element(<locator>)` - use the Nightwatch [.element() API](https://v2.nightwatchjs.org/api/element/) to locate elements in the page;
+- `.element(<locator>)` - use the Nightwatch [.element() API](https://nightwatchjs.org/api/element/) to locate elements in the page;
 
 - `.updateCapabilities({ capabilities })` - used when ***autoStartSession*** is off in order to update the capabilities at run-time;
 
