@@ -23,11 +23,12 @@ Refer to the [Configuration > Output settings](https://nightwatchjs.org/guide/co
 #### Via the CLI
 You can also configure the output folder at runtime via the CLI, using the `--output` flag :
 
-```js
+```javascript
 module.exports = { 
     output_folder: 'tests_output' 
 }
 ```
+
 
 <pre class="language-bash"><code class="language-bash">nightwatch --output ./tests-output</code></pre>
 
@@ -39,7 +40,7 @@ The JSON file name follows the pattern :
 
 ### Example
 #### Step 0: Install Nightwatch
-Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](​​https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
+Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
 
 #### Step 1: Run an example test
 Consider the `duckDuckGo.js` example test :
