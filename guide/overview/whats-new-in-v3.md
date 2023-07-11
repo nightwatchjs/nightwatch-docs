@@ -112,7 +112,7 @@ Relive the test as it happened by enabling DOM history. When this functionaity i
 [5]:    /guide/writing-tests/write-nodejs-unit-integration-tests.html
 [6]:   https://github.com/nightwatchjs/performance_benchmarking
 [7]:   https://discord.com/channels/618399631038218240/1093179421508243596
-[8]:    /guide/quickstarts/run-tests-on-mobile
+[8]:    /guide/mobile-web-testing/with-appium.html
 [9]:    /guide/mobile-app-testing/introduction.html
 [10]:    /guide/component-testing/testing-react-components.html
 [11]:    /guide/component-testing/vite-plugin.html

@@ -95,7 +95,7 @@ Here’s an extract from the `nightwatch.conf.js` config file available as part 
 }</code></pre></div>
 
 ### Recommended content
- - [Define and use test environments](https://nightwatchjs.org/guide/running-tests/define-test-environments.html)
+ - [Define and use test environments](/guide/configuration/define-test-environments.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">
