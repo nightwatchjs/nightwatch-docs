@@ -1,3 +1,8 @@
+---
+title: Developer experience
+description: Learn how Nightwatch cares about developer experience
+---
+
 # Developer Experience
 
 One of the core pillars of Nightwatch is to ensure developer delight. We always have one eye on trying to figure out how can we minimize friction accross your entire workflow from writing tests to running tests to debugging them.
