@@ -10,7 +10,7 @@ description: Learn how to use Ava Test Runner in Nightwatch.
 
 ### Configuration with Example
 #### Step 0: install Nightwatch
-Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](​​https://vimeo.com/714406223) to install Nightwatch from scratch.
+Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
 
 #### Step 1: Install Ava
 <div class="sample-test"><pre><code class="language-bash">npm i ava --save-dev</code></pre></div>

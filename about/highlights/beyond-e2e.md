@@ -1,3 +1,8 @@
+---
+title: Beyond E2E testing
+description: Go beyond E2E testing with Nightwatch
+---
+
 # Go beyond End-to-End Testing
 Nightwatch framework is designed to work accross the test pyramid. Using a single framework to do multiple types of testing will help you reduce your learning curve & test maintenance headaches. 
 

@@ -1,3 +1,7 @@
+---
+title: Nightwatch default settings
+description: Learn about the default settings that Nightwatch ships with
+---
 
 <div class="page-header"><h1>Default Settings</h1></div>
 

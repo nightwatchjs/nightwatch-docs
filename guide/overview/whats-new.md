@@ -1,3 +1,8 @@
+---
+title: Nightwatch release history
+description: Stay upto date with the release wise updates of the different versions of Nightwatch
+---
+
 # Release history
 
 <div class="doc-pagination pt-40">

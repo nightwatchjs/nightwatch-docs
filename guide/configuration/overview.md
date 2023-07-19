@@ -1,3 +1,9 @@
+---
+title: Nightwatch configuration overview
+description: An overview of the Nightwatch configuration and configuration file
+---
+
+
 <div class="page-header"><h1>Nightwatch Configuration</h1></div>
 
 ### nightwatch.conf.js

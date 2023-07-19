@@ -1,3 +1,8 @@
+---
+title: Nightwatch exports syntax
+description: Learn how to use exports syntax with Nightwatch
+---
+
 <div class="page-header"><h1>Use 'exports' test syntax</h1></div>
 
 ### Overview

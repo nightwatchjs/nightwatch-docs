@@ -125,7 +125,7 @@ OK. 1 assertions passed. (5.604s)
 
 ### Recommended content
 - [Concepts > Test environments](https://nightwatchjs.org/guide/concepts/test-environments.html)
-- [Reference > Browser Drivers > ChormeDriver](https://nightwatchjs.org/guide/browser-drivers/chrome-driver.html)
+- [Reference > Browser Drivers > ChormeDriver](/guide/configuration/define-test-environments.html)
 - [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
 - [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
 
