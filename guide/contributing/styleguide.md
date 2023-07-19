@@ -1,3 +1,7 @@
+---
+title: Contribution style guide
+description: Learn how to adhere to style guides while contributing to Nightwatch
+---
 
 <div class="page-header"><h1>Style Guide</h1></div>
 

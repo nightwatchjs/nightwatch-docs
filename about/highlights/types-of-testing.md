@@ -1,3 +1,8 @@
+---
+title: Multiple types of testing
+description: Nightwatch offers multiple types of testing such as functional, visual, accessibility and API testing
+---
+
 # Multiple types of Testing
 
 Nightwatch has extended its capabilities to beyond functional testing. Now you can perform visual regression testing, API testing & accessibility testing using Nightwatch. 

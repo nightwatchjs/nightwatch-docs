@@ -1,3 +1,8 @@
+---
+title: xPath selectors
+description: Learn how to use xPath selectors with Nightwatch
+---
+
 <div class="page-header"><h1>Find an element by Xpath</h1></div>
 
 ### Overview

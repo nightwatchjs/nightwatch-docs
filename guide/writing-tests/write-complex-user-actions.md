@@ -1,3 +1,8 @@
+---
+title: Nightwatch complex user actions
+description: Learn how to write complex user actions with Nightwatch
+---
+
 ## Write complex user actions
 
 ### Overview

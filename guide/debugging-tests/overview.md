@@ -1,6 +1,6 @@
 ---
 title: Debugging tests
-description: Learn how to pause your test at specific points and debug by accessing the browser or executing commands using a REPL interface.
+description: Learn how to debugs tests using Nightwatch tools
 ---
 
 <div class="page-header"><h1>Debugging tests</h1></div>
