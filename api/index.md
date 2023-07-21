@@ -229,6 +229,25 @@ Below is a list of all public properties and methods that are made available on 
   console.log(browser.sessionId); // e0b40362dcec8ec501ac2b42b62bdce2
   ```
 
+- #### frame
+  Change focus to another frame on the page.
+
+  Changes the focus of all future commands to another frame on the page. The
+  target frame may be specified as one of the following:
+
+  - A number that specifies a (zero-based) index into [window.frames](
+    https://developer.mozilla.org/en-US/docs/Web/API/Window.frames)
+  - An element (css selector) which correspond to a `frame` or `iframe`
+    DOM element
+  - The `null` value, to select the topmost frame on the page.
+
+  If the specified frame can not be found, a `NoSuchFrameError` will be thrown
+
+  ###### Example
+  this.demoTest = function (browser) {
+    await browser.frame('<ID>');
+  }
+
 - #### globals
 
   Type: `NightwatchGlobals`
