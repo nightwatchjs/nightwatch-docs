@@ -235,7 +235,7 @@ Now that you have installed Nightwatch
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html">
+    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-test-with-selenium-server.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Run a test with Selenium Server</span>
