@@ -115,7 +115,7 @@ Once your setup is done, you can run tests with this command
 
 The output should look similar to this:
 
-<pre class="hide-indicator"><code>
+<pre class="hide-indicator language-bash"><code>
 [Ecosia.org Demo] Test Suite
 ============================
 ℹ Connected to localhost on port 4444 (2153ms).
