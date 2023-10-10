@@ -6,6 +6,7 @@ description: Reference to list of settings received by nightwatch instance durin
 <div class="page-header"><h1>Config Settings</h1></div>
 
 ### Base settings
+
 Below are the default settings that will be passed to the Nightwatch instance during test execution.
 
 <table class="table table-bordered table-striped">
@@ -90,6 +91,7 @@ Below are the default settings that will be passed to the Nightwatch instance du
 </table>
 
 ### Test Runner settings
+
 The below settings are used to control the way the built-in CLI test runner works.
 <table class="table table-bordered table-striped">
   <thead>
@@ -105,7 +107,7 @@ The below settings are used to control the way the built-in CLI test runner work
       <td><code>test_runner</code></td>
       <td>string|object</td>
       <td>"default"</td>
-      <td>Specifies which test runner to use when running the tests. Values can be either <code>default</code> (built-in nightwatch runner) or <code>mocha</code>.  
+      <td>Specifies which test runner to use when running the tests. Values can be either <code>default</code> (built-in nightwatch runner) or <code>mocha</code>.
         <br><br>Example: <code>"test_runner" : {"type" : "mocha", "options" : {"ui" : "tdd"}}</code></td>
      </tr>
     <tr>
@@ -160,6 +162,7 @@ The below settings are used to control the way the built-in CLI test runner work
 These settings are used to fine tune the behaviour of a test session and define properties which may be available during the course of it.
 
 ### Setting the `baseUrl` property
+
 This `baseUrl` (or `launchUrl`) property will be made available to the main Nightwatch api which is used in the tests. Its value depends on which environment is used.
 More on test environments under the [Nightwatch Runner](https://nightwatchjs.org/guide/concepts/test-environments.html#defining-test-environments) section.
 
@@ -322,6 +325,7 @@ module.exports = {
 </table>
 
 ### Filtering Settings
+
 The below settings can be used to define ways of filtering test files.
 <table class="table table-bordered table-striped">
   <thead>
@@ -364,11 +368,12 @@ The below settings can be used to define ways of filtering test files.
      <td>string</td>
      <td></td>
      <td>Skip tests by tag name; can be a list of comma-separated values (no space).</td>
-  </tr>  
+  </tr>
   </tbody>
 </table>
 
 ### Output Settings
+
 The below settings can be used to control the output and logging when running tests.
 <table class="table table-bordered table-striped">
   <thead>
@@ -433,7 +438,7 @@ The below settings can be used to control the output and logging when running te
     <td>boolean</td>
     <td>false</td>
     <td>Used to enable showing the Base64 image data in the (verbose) log when taking screenshots.</td>
-  </tr>         
+  </tr>
   </tbody>
 </table>
 
@@ -458,7 +463,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>boolean</td>
    <td>false</td>
    <td>When this is enabled, the Webdriver server is run in background in a <a href="https://nodejs.org/api/child_process.html">child process</a> and started/stopped automatically.
-    <br>Nightwatch includes support for managing Chromedriver, Geckodriver (Firefox), Safaridriver, and Selenium Server. Please refer to the <a href="https://v2.nightwatchjs.org/gettingstarted/installation/#webdriver-service">Install Webdriver</a> section for details.  
+    <br>Nightwatch includes support for managing Chromedriver, Geckodriver (Firefox), Safaridriver, and Selenium Server. Please refer to the <a href="https://v2.nightwatchjs.org/gettingstarted/installation/#webdriver-service">Install Webdriver</a> section for details.
    </td>
  </tr>
 
@@ -577,7 +582,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
       <td><code>proxy</code></td>
       <td>string</td>
       <td>none</td>
-      <td>Proxy requests to the Webdriver (or Selenium) service. http, https, socks(v5), socks5, sock4, and pac are accepted. 
+      <td>Proxy requests to the Webdriver (or Selenium) service. http, https, socks(v5), socks5, sock4, and pac are accepted.
 <br>Uses <a href="https://www.npmjs.com/package/proxy-agent" target="_blank">proxy-agent</a> which needs to be installed as a separate package from NPM.
 <br><br>Example: <code>http://user:pass@host:port</code></td>
    </tr>
@@ -592,7 +597,6 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
 
  </tbody>
 </table>
-
 
 ### Selenium Server Settings
 
@@ -715,7 +719,6 @@ The following **NPM** packages are assumed to be installed in the current projec
     desiredCapabilities: {
       browserName: 'chrome',
       chromeOptions: {
-        w3c: false
       }
     }
   },
@@ -741,6 +744,7 @@ The following **NPM** packages are assumed to be installed in the current projec
 [Browserstack][9] is one of the most popular cloud testing platforms. Using it with Nightwatch is very straightforward and there is configuration in the auto-generated `nightwatch.conf.js` file.
 
 Once you have an account, you need to set the following environment variables. [Dotenv][10] files are also supported by Nightwatch.
+
 - `BROWSERSTACK_USER`
 - `BROWSERSTACK_KEY`
 
@@ -785,7 +789,6 @@ Remember to also enable HTTP keepalive for improved network performance.
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions : {
-          w3c: false
         }
       }
     },
@@ -814,8 +817,6 @@ Remember to also enable HTTP keepalive for improved network performance.
   }
 }</code></pre></div>
 
-
-
 [1]:    https://browserstack.com
 [2]:    https://saucelabs.com/
 [3]:    https://crossbrowsertesting.com/
@@ -827,8 +828,8 @@ Remember to also enable HTTP keepalive for improved network performance.
 [9]:    https://browserstack.com
 [10]:   https://www.npmjs.com/package/dotenv
 
-
 ### Recommended content
+
 - [Default configuration](https://nightwatchjs.org/guide/reference/defaults.html)
 - [CLI options](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html)
 

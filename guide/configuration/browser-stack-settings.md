@@ -8,12 +8,14 @@ description: Learn how to configure BrowserStack settings in Nightwatch
 [BrowserStack][1] is one of the most popular cloud testing platforms. Using it with Nightwatch is very straightforward and there is configuration in the auto-generated `nightwatch.conf.js` file.
 
 Once you have an account, you can set the following environment variables. [Dotenv][2] files are also supported by Nightwatch.
+
 - `BROWSERSTACK_USERNAME`
 - `BROWSERSTACK_ACCESS_KEY`
 
 Remember to also enable HTTP keepalive for improved network performance.
 
 Nightwatch supports these integration features out-of-the-box with BrowserStack:
+
 - setting test names on BrowserStack
 - marking tests as "passed" or "failed"
 - displaying the link to BrowserStack Build page at the end of the test run.
@@ -61,7 +63,6 @@ Use this example configuration to try running your tests on BrowserStack.
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions : {
-          w3c: false
         }
       }
     },
@@ -98,7 +99,6 @@ Note: BrowserStack Local needs to be instantiated only once at the beginning of 
 
 You can refer to this [sample implementation][3] maintained by the BrowserStack team.
 
-
 ### Connecting to BrowserStack via a proxy server
 
 You can specify proxy settings in Nightwatch by adding the `proxy` key in your `nightwatch.conf.js`
@@ -125,6 +125,7 @@ You can specify proxy settings in Nightwatch by adding the `proxy` key in your `
 [4]:    https://www.npmjs.com/package/browserstack-local
 
 ### Recommended content
+
 - [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
 - [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
 

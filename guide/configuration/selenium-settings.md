@@ -124,7 +124,6 @@ The following **NPM** packages are assumed to be installed in the current projec
     desiredCapabilities: {
       browserName: 'chrome',
       chromeOptions: {
-        w3c: false
       }
     }
   },
@@ -146,6 +145,7 @@ The following **NPM** packages are assumed to be installed in the current projec
 }</code></pre></div>
 
 ### Recommended content
+
 - [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
 - [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
 
