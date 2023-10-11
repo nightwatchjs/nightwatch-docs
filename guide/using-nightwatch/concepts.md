@@ -1,6 +1,7 @@
 <div class="page-header"><h1>Core Concepts</h1></div>
 
 ### Defining Test Environments
+
 It is likely you will run your tests against multiple environments and/or different browsers. Nightwatch provides a concept for defining different _environments_, in which you can set specific test settings.
 
 The environments are located under the `"test_settings"` dictionary in the configuration file. A `default` environment is always required from which the other environments inherit the settings. You can overwrite any test setting for each environment as needed.
@@ -32,12 +33,12 @@ Here’s an extract:
         server_path: '/usr/bin/safaridriver'
       }
     },
-    
+
     firefox: {
       desiredCapabilities : {
         browserName : 'firefox'
       },
-      
+
       webdriver: {
         start_process: true,
         port: 4444,
@@ -90,13 +91,12 @@ Here's the relevant extract. Notice the "`extends`" property:
         start_process: false
       }
     },
-    
+
     'selenium.chrome': {
       extends: 'selenium',
       desiredCapabilities: {
         browserName: 'chrome',
         chromeOptions : {
-          w3c: false
         }
       }
     },
@@ -117,6 +117,7 @@ With this setup, you can run the tests using Selenium Server and Firefox with th
 <pre><code class="language-bash">nightwatch --env selenium.firefox</code></pre>
 
 ## Using Test Globals
+
 Another useful concept that Nightwatch provides is test globals. In its most simple form, it is a dictionary of name-value pairs which is defined in your configuration file.
 
 Globals can be defined either as a `"globals"` property or as an external file which is specified as the `"globals_path"` property.
@@ -140,7 +141,7 @@ Here's an example definition using the `"globals"` property in `nightwatch.json`
   }
 }</code></pre>
 
-</div> 
+</div>
 
 Like the `launch_url` property, the `globals` object is made available directly on the Nightwatch api which is passed to the tests.
 
@@ -178,7 +179,7 @@ The following global properties can be used to control the behaviour of the test
     // is logged in all cases, but this also enables skipping the rest of the testcase;
     // it's being used in element commands such as .click() or .getText()
     abortOnElementLocateError: false,
-    
+
     // this will cause waitFor commands on elements to throw an error if multiple
     // elements are found using the given locate strategy and selector
     throwOnMultipleElementsReturned: false,
@@ -195,11 +196,11 @@ The following global properties can be used to control the behaviour of the test
     // or an error is thrown
     unitTestsTimeout : 2000,
 
-    // controls the timeout value for when executing the global async reporter. Expects the done() callback to be 
+    // controls the timeout value for when executing the global async reporter. Expects the done() callback to be
     // invoked within this time or an error is thrown
     customReporterCallbackTimeout: 20000,
 
-    // Automatically retrying failed assertions - You can tell Nightwatch to automatically retry failed assertions 
+    // Automatically retrying failed assertions - You can tell Nightwatch to automatically retry failed assertions
     // until a given timeout is reached, before the test runner gives up and fails the test.
     retryAssertionTimeout: 5000,
 
@@ -209,11 +210,10 @@ The following global properties can be used to control the behaviour of the test
       done(results);
     }
   }
-}  
+}
 </code></pre>
 
-</div> 
-
+</div>
 
 ### Environment Specific Globals
 
@@ -242,7 +242,7 @@ Like other test settings, globals have the ability to be overwritten per test en
   }
 }</code></pre>
 
-</div> 
+</div>
 
 If we still pass the `--env integration` option to the runner, then our globals object will look like below:
 
@@ -259,10 +259,10 @@ If we still pass the `--env integration` option to the runner, then our globals 
 </div>
 
 ### External Test Globals
+
 Test globals can also be defined in an external file, specified by the `"globals_path"` settings in your configuration file.
 
-The external globals file can also contain global test hooks, a custom reporter and other test specific settings. Refer to the [External Globals](https://nightwatchjs.org/guide/using-nightwatch/external-globals.html) section for more details. 
-
+The external globals file can also contain global test hooks, a custom reporter and other test specific settings. Refer to the [External Globals](https://nightwatchjs.org/guide/using-nightwatch/external-globals.html) section for more details.
 
 [1]:    https://nightwatchjs.org/guide/running-tests/
 [2]:    https://saucelabs.com
