@@ -61,9 +61,7 @@ Use this example configuration to try running your tests on BrowserStack.
     'browserstack.chrome': {
       extends: 'browserstack',
       desiredCapabilities: {
-        browserName: 'chrome',
-        chromeOptions : {
-        }
+        browserName: 'chrome'
       }
     },
     <br>
