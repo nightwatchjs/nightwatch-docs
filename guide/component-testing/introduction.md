@@ -17,8 +17,8 @@ Component testing in Nightwatch is built out of our vite-plugin-nightwatch plugi
 
 We also provide dedicated plugins for Vue and React which are built on top of the Vite plugin and which use the Vite dev server internally: 
 
-- [`@nigthwatch/react`][1] 
-- [`@nigthwatch/vue`][2]
+- [`@nightwatch/react`][1] 
+- [`@nightwatch/vue`][2]
 
 Our initial aim is to support React and Vue components and once Vue and React support is firmly in place, we will expand to add other frameworks like Svelte and Lit. 
 
