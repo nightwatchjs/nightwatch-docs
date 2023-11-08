@@ -45,7 +45,7 @@ export default {
   component: Form,
 }
 <br>
-const Template = (args) =&lt; &lt;Form {...args} /&gt;
+const Template = (args) =&gt; &lt;Form {...args} /&gt;
 <br>
 // Component story for an empty form
 export const EmptyForm = Template.bind({});
@@ -53,7 +53,7 @@ export const EmptyForm = Template.bind({});
 // Component story simulating filling in the form
 export const FilledForm = Template.bind({});
 <br>
-FilledForm.play = async ({ canvasElement }) =&lt; {
+FilledForm.play = async ({ canvasElement }) =&gt; {
   <br>
   // Starts querying the component from its root element
   const canvas = within(canvasElement);
@@ -65,7 +65,7 @@ FilledForm.play = async ({ canvasElement }) =&lt; {
   await userEvent.click(canvas.getByRole('button'));
 };
 <br>
-FilledForm.test = async (browser, { component }) =&lt; {
+FilledForm.test = async (browser, { component }) =&gt; {
   // 👇 Run commands and assertions in the Nightwatch context
   await expect(component).to.be.visible;
 }
