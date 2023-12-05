@@ -77,7 +77,7 @@ Assertions implement a simple interface which is shared between built-in asserti
    * @param {Object} result
    * @return {*}
    */
-   this.value = function(result) {
+   this.get = function(result) {
      return result.value;
    };
   <br>
@@ -111,7 +111,7 @@ Assertions implement a simple interface which is shared between built-in asserti
      // Example: this.api.getText(definition, callback);
      <br>
      setTimeout(function() {
-       // The object containing a "value" property will be passed to the .value() method to determine the value w
+       // The object containing a "value" property will be passed to the .getValue() method to determine the value w
        // which is to be evaluated (by the .evaluate() method)
        callback({
          value: ''
