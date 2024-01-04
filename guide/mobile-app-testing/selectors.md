@@ -66,7 +66,7 @@ Now that you understand selectors, you can use them to write commands & assertio
   </div>
   <div class="doc-pagination justify-content-end pt-40">
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/mobile-app-testing/selectors.html">
+    <a href="https://nightwatchjs.org/guide/mobile-app-testing/commands.html">
         <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Mobile App Commands</span></div>
         <span>→</span>
     </a>
