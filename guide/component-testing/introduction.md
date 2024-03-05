@@ -38,7 +38,7 @@ When testing web components, the crucial aspect is how the component is rendered
 The other popular approach is to use something like the [Karma Runner][4], which is a frontend testing tool created about 10 years ago at Google. There are also variations on this theme where [Puppetter][5] and browser-based Mocha is used.
 
 In this approach all files needed are loaded on the test renderer page where it all happens: the component is loaded together with dependencies and any testing tools needed, then the component is rendered and the test is executed in the same browser context. It looks a bit like this:
-![https://blog.nightwatchjs.org/content/images/size/w1000/2022/02/component-testing.002.png][image-1]
+![https://blog.nightwatchjs.org/content/images/size/w1000/2022/02/component-testing.002.png][image-2]
 
 ### Limitations
 
@@ -59,7 +59,7 @@ Here’s what Nightwatch does to run a component test:
 3. once the component has been successfully rendered a reference to the DOM element will be sent back to the Nightwatch CLI runner
 4. the CLI runner continues running the test in the same way it does for end-to-end testing; the assertions are run in the Node.js context
 
-![https://blog.nightwatchjs.org/content/images/2022/02/component-testing.003.png][image-2]
+![https://blog.nightwatchjs.org/content/images/2022/02/component-testing.003.png][image-3]
 
 ### Advantages
 
@@ -90,5 +90,6 @@ The only disadvantage would be that it’s going to be a bit slower than the *JS
 [5]:    https://pptr.dev/
 [6]:    https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/
 
-[image-1]:  https://blog.nightwatchjs.org/content/images/size/w1000/2022/02/component-testing.002.png
-[image-2]:  https://blog.nightwatchjs.org/content/images/2022/02/component-testing.003.png
+[image-1]:  https://blog.nightwatchjs.org/content/images/2022/02/component-testing.001.png
+[image-2]:  https://blog.nightwatchjs.org/content/images/size/w1000/2022/02/component-testing.002.png
+[image-3]:  https://blog.nightwatchjs.org/content/images/2022/02/component-testing.003.png
