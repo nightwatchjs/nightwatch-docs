@@ -65,7 +65,7 @@ The following table provides a list of all the Chrome-specific desired capabilit
 
 Nightwatch supports all arguments and capabilities that ChromeDriver provides.
 
-Check out [the official ChromeDriver documentation](https://sites.google.com/a/chromium.org/chromedriver/capabilities) to learn more about these capabilities.
+Check out [the official ChromeDriver documentation](https://chromedriver.chromium.org/capabilities) to learn more about these capabilities.
 
 You can refer to [this list of command line switches](http://peter.sh/experiments/chromium-command-line-switches/) that you can pass as `args` to the `chromeOptions` key under your `desiredCapabilities` key in your `nightwatch.json` file as follows: 
 

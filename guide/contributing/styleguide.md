@@ -7,7 +7,7 @@ description: Learn how to adhere to style guides while contributing to Nightwatc
 
 This style guide is for any one who is not part of the core documentation team. Use this document as a primer to make decisions about appropriate word choices.
 
-Apart from the guidelines mentioned here, if you are confused, defer on the [Google Style guide]() for any decisions. 
+Apart from the guidelines mentioned here, if you are confused, defer on the [Google Style guide](https://google.github.io/styleguide/) for any decisions. 
 
 ### Voice and tone
 
