@@ -38,7 +38,7 @@ With this your Gitlab CI project setup is complete.
 #### Step 2:  Update the nightwatch.conf.js file
 Add the `--no-sandbox` and `--disable-dev-shm-usage` args in the google chrome options under the chrome environment 
 
-<pre><code class="yml">chrome: {
+<pre><code class="yml" style="white-space: pre;" >chrome: {
     desiredCapabilities : {
     browserName : 'chrome',
     'goog:chromeOptions' : {
@@ -61,7 +61,7 @@ Add the `--no-sandbox` and `--disable-dev-shm-usage` args in the google chrome o
 
 Click on `CI/CD` -> `Editor`. Create a new gitlab-ci.yml file and copy the below file contents into the file
 
-<pre><code class="yml"># This file is a template, and might need editing before it works on your project.
+<pre><code class="yml" style="white-space: pre;"># This file is a template, and might need editing before it works on your project.
 # You can copy and paste this template into a new `.gitlab-ci.yml` file.
 # You should not add this template to an existing `.gitlab-ci.yml` file by using the `include:` keyword.
 #
