@@ -106,11 +106,11 @@ The same set of test hooks as per test suite is also available globally, outside
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-mocha.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/write-complex-user-actions.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Use Mocha as a test runner</span>
+          <span class="bigT">Complex user actions</span>
         </div>
     </a>
   </div>

@@ -72,7 +72,7 @@ All you need to do is call the `browser.captureNetworkRequests()` command with t
 
 Output from one of the network calls in the example above:
 
-```
+<code style="white-space: pre;" >
   Running Capture network calls:
 ───────────────────────────────────────────────────────────────────────────────────────────────────
 Request Number: 35
@@ -94,19 +94,18 @@ Request headers: {
   'sec-ch-ua-model': '',
   'sec-ch-ua-platform': '"macOS"'
 }
-```
-
+</code>
 ### Recommended content
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
 - [Intercept network responses](https://nightwatchjs.org/guide/network-requests/mock-network-response.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-circleci.html">
+    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-gitlab.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">CircleCI</span>
+          <span class="bigT">Gitlab CI</span>
         </div>
     </a>
   </div>

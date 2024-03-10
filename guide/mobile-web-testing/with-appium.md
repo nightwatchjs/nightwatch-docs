@@ -115,11 +115,11 @@ The [Actions API](https://nightwatchjs.org/api/useractions/) is very general and
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/reporters/create-custom-reporter.html">
+    <a href="https://nightwatchjs.org/guide/reporters/dom-history.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Add customer reporter</span>
+          <span class="bigT">DOM History</span>
         </div>
     </a>
   </div>

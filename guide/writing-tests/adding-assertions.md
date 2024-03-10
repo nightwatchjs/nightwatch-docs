@@ -134,19 +134,19 @@ For a complete list of available `expect` assertions, refer to the [API docs][13
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/commands.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/selectors.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Commands</span>
+          <span class="bigT">Selectors</span>
         </div>
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/test-syntax-bdd.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Run tests</span>
+          <span class="bigT">BDD Test Syntax</span>
         </div>
         <span>→</span>
     </a>

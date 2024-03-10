@@ -65,19 +65,19 @@ Happy debugging!
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.orghttps://nightwatchjs.org/guide/reporters/use-html-reporter.html">
+    <a href="https://nightwatchjs.org/guide/reporters/create-custom-reporter.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">HTML reporters</span>
+          <span class="bigT">Add custom reporter</span>
         </div>
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/reporters/create-custom-reporter.html">
+    <a href="https://nightwatchjs.org/guide/mobile-web-testing/with-appium.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Add custom reporter</span>
+          <span class="bigT">Use Nightwatch with Appium</span>
         </div>
         <span>→</span>
     </a>

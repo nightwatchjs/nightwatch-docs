@@ -163,7 +163,7 @@ For additional help you can jump on to our <a href="https://discord.gg/SN8Da2X">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Run your first end-to-end test</span>
+          <span class="bigT">Install Nightwatch</span>
         </div>
     </a>
   </div>

@@ -218,19 +218,19 @@ Now that you understand selectors and commands,you can proceed towards understan
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/selectors.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/introduction.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Selectors</span>
+          <span class="bigT">Write Tests</span>
         </div>
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/adding-assertions.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/selectors.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Assertions</span>
+          <span class="bigT">Selectors</span>
         </div>
         <span>→</span>
     </a>

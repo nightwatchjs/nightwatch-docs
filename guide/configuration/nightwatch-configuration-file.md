@@ -72,11 +72,11 @@ The following packages can be used from NPM and, if installed, Nightwatch will a
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/concepts/component-testing.html">
+    <a href="https://nightwatchjs.org/guide/mobile-app-testing/debug-tests.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Component Testing</span>
+          <span class="bigT">Debug Tests</span>
         </div>
     </a>
   </div>

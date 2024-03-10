@@ -109,19 +109,19 @@ If you find any situations where it generates unexpected results or something se
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/write-nodejs-unit-integration-tests.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-cucumberjs.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Write unit & integration test</span>
+          <span class="bigT">CucumberJS integration</span>
         </div>
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/using-page-objects/getting-started.html">
+    <a href="https://nightwatchjs.org/guide/component-testing/introduction.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Getting Started</span>
+          <span class="bigT">Component testing</span>
         </div>
         <span>→</span>
     </a>

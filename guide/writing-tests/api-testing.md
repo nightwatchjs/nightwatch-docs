@@ -276,7 +276,7 @@ Example using `waitUntil`:
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Visual Testing</span>
+          <span class="bigT">Visual regression testing</span>
         </div>
     </a>
   </div>

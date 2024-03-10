@@ -99,11 +99,11 @@ Nightwatch also publishes HTML reports which can be published to Jenkins
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/debugging-tests/using-debug.html">
+    <a href="https://nightwatchjs.org/guide/running-tests/take-heap-snapshot.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Use.debug()</span>
+          <span class="bigT">Take heap snapshot</span>
         </div>
     </a>
   </div>

@@ -78,11 +78,11 @@ The below will only run the `startHomepage` testcase and ignore the rest.
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-mocha.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Use the CLI test runner</span>
+          <span class="bigT">Mocha integration</span>
         </div>
     </a>
   </div>

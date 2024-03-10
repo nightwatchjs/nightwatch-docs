@@ -155,19 +155,19 @@ Using: firefox (92.0.1) on MAC (20.6.0).
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/write-complex-user-actions.html">
+    <a href="https://nightwatchjs.org/guide/running-tests/programmatic-api.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Write complex user actions</span>
+          <span class="bigT">Programmatic API</span>
         </div>
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-mocha.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/chrome-devtools-recorder.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Use Mocha as a test runner</span>
+          <span class="bigT">Chrome Devtools Recorder</span>
         </div>
         <span>→</span>
     </a>
