@@ -25,7 +25,7 @@ First go to Github Actions sections of your repository and then setup NodeJS plu
 #### Step 2 : Configure .yml file
 Now you have to write the steps inside the `node.js.yml` file to run your tests. 
 
-<pre><code class="yml"># This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+<pre><code class="yml" style="white-space: pre;"># This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
 
 name: Nightwatch Tests
