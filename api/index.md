@@ -1,11 +1,3 @@
-<%
-  const pageUrl = page.url.replace('html', 'md');
-  
-  const gitHubUrl = `https://github.com/nightwatchjs/nightwatch-docs/edit/versions/2.0${pageUrl}?message=docs%3A%20describe%20your%20change`;
-%>
-
-<h1 class="main-title">Nightwatch APIs <a title="Suggest edits" target="_blank" class="edit-source" href="<%= gitHubUrl %>">Suggest edits</a></h1>
-
 Nightwatch works by loading all the necessary commands, settings, and other properties on a single API object which is made available at runtime to all test scripts as the single argument.
 This is so that everything is ready to get started with writing the actual test script and not have to instantiate other objects.
 
