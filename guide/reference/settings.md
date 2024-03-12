@@ -87,6 +87,17 @@ Below are the default settings that will be passed to the Nightwatch instance du
      <td>false</td>
      <td>Disable the global apis like <code>"browser"</code>, <code>"element()"</code>, <code>"expect()"</code>; this might be needed if using Nightwatch with third-party libraries.</td>
    </tr>
+    <tr>
+     <td><code>usage_analytics</code><br><span class="optional">since v3.0</span></td>
+     <td>object</td>
+     <td></td>
+     <td>By default Nightwatch sends anonymous usage data to Browserstack for product planing purposes. This setting can be used to disable that.
+     
+Example: <code>
+  usage_analytics: {
+    enabled: false
+  }</code></td>
+   </tr>
   </tbody>
 </table>
 
@@ -673,6 +684,42 @@ The `"selenium"` settings should also be used when configuring connections to cl
        </li>
      </ul>
    </td>
+ </tr>
+ </tbody>
+</table>
+
+### Analytics Data Settings
+If your project is created using `npm init nightwatch`, then Nightwatch will send anonymous usage data to Browserstack by default.
+This behaviour can be modified using the `usage_analytics` property in `nightwatch.conf.js`. Following are the properties that can be configured.
+
+<table class="table table-bordered table-striped">
+<thead>
+ <tr>
+   <th style="width: 100px;">Name</th>
+   <th style="width: 100px;">type</th>
+   <th style="width: 50px;">default</th>
+   <th>description</th>
+ </tr>
+</thead>
+<tbody>
+ <tr>
+   <td><code>enabled</code></td>
+   <td>boolean</td>
+   <td>true</td>
+   <td>Whether or not send usage data.</td>
+ </tr>
+ <tr>
+   <td><code>log_path</code></td>
+   <td>string</td>
+   <td><code>./logs/analytics</code></td>
+   <td>Before sending the data to analytics server, it is saved locally in this location</td>
+ </tr>
+
+ <tr>
+   <td><code>client_id</code></td>
+   <td>string</td>
+   <td>some generated value</td>
+   <td>Unique client id generated during <code>npm init nightwatch</code> or during the first run.</td>
  </tr>
  </tbody>
 </table>
