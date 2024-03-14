@@ -125,3 +125,25 @@ You can view the execution output in the shell logs of the particular pipeline r
 
 ### Related articles
 - [How-to guides > Write tests > Run on CI Servers > Jenkins ](https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-jenkins.html)
+
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-circleci.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Circle CI</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/network-requests/capture-network-calls.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Capture network calls</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

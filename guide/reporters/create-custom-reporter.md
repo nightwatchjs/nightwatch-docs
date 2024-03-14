@@ -100,10 +100,10 @@ The `index.js` file needs to implement the same interface as the file-based cust
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/mobile-web-testing/with-appium.html">
+    <a href="https://nightwatchjs.org/guide/reporters/dom-history.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Use Nightwatch with Appium</span>
+          <span class="bigT">DOM history</span>
         </div>
         <span>→</span>
     </a>

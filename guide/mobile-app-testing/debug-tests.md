@@ -90,8 +90,16 @@ Pass Nightwatch commands/assertions to Nightwatch debug console open in the term
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Running Mobile App Tests</span>
+          <span class="bigT">Run Tests</span>
         </div>
     </a>
   </div>
+  <div class="doc-pagination justify-content-end pt-40">
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/configuration/nightwatch-configuration-file.html">
+        <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Nightwatch config file</span></div>
+        <span>→</span>
+    </a>
+  </div>
+</div>
 </div>

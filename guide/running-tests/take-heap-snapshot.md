@@ -73,10 +73,10 @@ describe('take heap snapshot with async/await', function() {
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/debugging-tests/overview.html">
+    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-jenkins.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Debugging tests</span>
+          <span class="bigT">Run on CI server Jenkins</span>
         </div>
         <span>→</span>
     </a>

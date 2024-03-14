@@ -92,10 +92,10 @@ Click on the pipeline build that just ran followed by the job name i.e. `test`. 
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/network-requests/capture-network-calls.html">
+    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-gitlab.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Capture network calls</span>
+          <span class="bigT">Gitlab CI</span>
         </div>
         <span>→</span>
     </a>

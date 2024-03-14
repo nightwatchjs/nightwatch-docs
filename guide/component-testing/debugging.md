@@ -83,11 +83,24 @@ You can also use the [integrated debug console](https://nightwatchjs.org/guide/d
 ### Recommended content
 - [Blog > Introducing Component Testing in Nightwatch](https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/)
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-	<a href="https://nightwatchjs.org/guide/component-testing/storybook-component-testing.html">
-	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">Storybook integration</span></div>
-	</a>
-  </div>
 
+<div class="doc-pagination pt-40" style="align-items: flex-end">
+ <div class="previous">
+    <a href="https://nightwatchjs.org/guide/component-testing/testing-angular-components.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Using Angular</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/mobile-app-testing/introduction.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Mobile App Testing</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
 </div>

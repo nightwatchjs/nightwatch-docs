@@ -65,19 +65,19 @@ You can directly copy paste these in your test files and complete your test auth
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/visual-regression-testing.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/test-doubles.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Visual Testing</span>
+          <span class="bigT">Test Doubles</span>
         </div>
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/write-nodejs-unit-integration-tests.html">
+    <a href="https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Unit &amp; integration testing</span>
+          <span class="bigT">CLI test runner</span>
         </div>
         <span>→</span>
     </a>

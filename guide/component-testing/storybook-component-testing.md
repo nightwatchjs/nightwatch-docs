@@ -424,8 +424,8 @@ export default {
 	</a>
   </div>
   <div class="next">
-	<a href="https://nightwatchjs.org/guide/component-testing/debugging.html">
-      <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Debugging component tests</span></div><span>→</span>
+	<a href="https://nightwatchjs.org/guide/component-testing/testing-angular-components.html">
+      <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Using Angular</span></div><span>→</span>
 	</a>
   </div>
 </div>

@@ -58,11 +58,11 @@ If you mostly are using XPath expressions and you want to avoid configuring the 
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/adding-assertions.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Add assertions</span>
+          <span class="bigT">Finding DOM elements</span>
         </div>
     </a>
   </div>
@@ -70,7 +70,7 @@ If you mostly are using XPath expressions and you want to avoid configuring the 
     <a href="https://nightwatchjs.org/guide/writing-tests/write-complex-user-actions.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Write complex user actions</span>
+          <span class="bigT">Complex user actions</span>
         </div>
         <span>→</span>
     </a>

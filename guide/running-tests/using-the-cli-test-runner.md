@@ -99,19 +99,19 @@ Info & help:
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/using-page-objects/writing-page-specific-commands.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/nightwatch-inspector.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Page objects</span>
+          <span class="bigT">Nightwatch Inspector</span>
         </div>
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/skipping-disabling-tests.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-mocha.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Skip / disable tests</span>
+          <span class="bigT">Mocha integration</span>
         </div>
         <span>→</span>
     </a>

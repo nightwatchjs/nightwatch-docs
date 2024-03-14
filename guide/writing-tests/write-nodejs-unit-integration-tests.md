@@ -174,4 +174,13 @@ For details on how an LCOV reporter should look like and how to integrate with y
         </div>
     </a>
   </div>
+     <div class="next">
+    <a href="https://nightwatchjs.org/guide/writing-tests/test-doubles.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Test Doubles</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
 </div>

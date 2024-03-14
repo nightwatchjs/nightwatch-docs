@@ -63,10 +63,10 @@ While doing that, users can also interact with the browser and use DevTools to d
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-jenkins.html">
+    <a href="https://nightwatchjs.org/guide/running-tests/capture-console-messages.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Jenkins</span>
+          <span class="bigT">Capture browser logs</span>
         </div>
         <span>→</span>
     </a>

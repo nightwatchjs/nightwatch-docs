@@ -126,3 +126,24 @@ Ensure that the API tests are run against an `environment` where the `start_sess
 <pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash">npx nightwatch &#60;path to tests&#62; --env testdoubles</code></pre>
 
 We hope these examples help you get started with using `@nightwatch/testdoubles` in your Nightwatch tests!
+
+<div class="doc-pagination pt-40">
+  <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/write-nodejs-unit-integration-tests.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Unit & integration testing</span>
+        </div>
+    </a>
+  </div>
+     <div class="next">
+    <a href="https://nightwatchjs.org/guide/writing-tests/nightwatch-inspector.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Nightwatch Inspector</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

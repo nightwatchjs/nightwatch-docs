@@ -116,10 +116,10 @@ module.exports = (async function() {
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/test-syntax-bdd.html">
+    <a href="https://nightwatchjs.org/guide/using-page-objects/getting-started.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">BDD test syntax</span>
+          <span class="bigT">Page Objects</span>
         </div>
         <span>→</span>
     </a>

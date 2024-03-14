@@ -84,7 +84,7 @@ You can find the complete list of the rule IDs on the [Axe Github page][7]
     <a href="https://nightwatchjs.org/guide/writing-tests/visual-regression-testing.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Visual testing</span>
+          <span class="bigT">Visual regression testing</span>
         </div>
         <span>→</span>
     </a>

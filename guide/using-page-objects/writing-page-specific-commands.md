@@ -121,10 +121,10 @@ And for a more elaborate example... You can reference the main page object via `
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.orghttps://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html">
+    <a href="https://nightwatchjs.org/guide/debugging-tests/overview.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Use the CLI test runner</span>
+          <span class="bigT">Debug tests</span>
         </div>
         <span>→</span>
     </a>

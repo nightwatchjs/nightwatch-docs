@@ -76,10 +76,23 @@ The only disadvantage would be that it’s going to be a bit slower than the *JS
 - [Blog \> Introducing Component Testing in Nightwatch][6]
 
 <div class="doc-pagination pt-40" style="align-items: flex-end">
-  <div class="next" style="margin-left: auto;">
-	<a href="https://nightwatchjs.org/guide/component-testing/vite-plugin.html">
-      <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Component Testing with Vite</span></div><span>→</span>
-	</a>
+ <div class="previous">
+    <a href="https://nightwatchjs.org/guide/writing-tests/chrome-devtools-recorder.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Chrome Devtools Recorder</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/component-testing/vite-plugin.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Using the Vite plugin</span>
+        </div>
+        <span>→</span>
+    </a>
   </div>
 </div>
 

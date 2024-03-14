@@ -103,3 +103,24 @@ The angular plugin uses webpack dev server to compile and render angular compone
 
 
 [1]:	https://github.com/nightwatchjs/nightwatch-plugin-angular
+
+<div class="doc-pagination pt-40" style="align-items: flex-end">
+ <div class="previous">
+    <a href="https://nightwatchjs.org/guide/component-testing/storybook-component-testing.html">
+      <span>←</span>
+        <div class="d-flex flex-column">
+          <span class="smallT">Back</span>
+          <span class="bigT">Storybook integration</span>
+        </div>
+    </a>
+  </div>
+  <div class="next">
+    <a href="https://nightwatchjs.org/guide/component-testing/debugging.html">
+        <div class="d-flex flex-column">
+          <span class="smallT">Next Page</span>
+          <span class="bigT">Debug component tests</span>
+        </div>
+        <span>→</span>
+    </a>
+  </div>
+</div>

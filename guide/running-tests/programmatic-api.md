@@ -89,10 +89,10 @@ const browser = await client.launchBrowser();
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/capture-console-messages.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/using-cucumberjs.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Capture browser logs</span>
+          <span class="bigT">CucumberJS integration</span>
         </div>
         <span>→</span>
     </a>

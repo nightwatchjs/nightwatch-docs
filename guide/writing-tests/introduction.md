@@ -170,19 +170,19 @@ Now that you understand the basics of writing tests for mobile apps, it's time t
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html">
+    <a href="https://nightwatchjs.org/guide/concepts/page-object-model.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Install Nightwatchs</span>
+          <span class="bigT">Page Object Model</span>
         </div>
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/selectors.html">
+    <a href="https://nightwatchjs.org/guide/writing-tests/commands.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Selectors</span>
+          <span class="bigT">Commands</span>
         </div>
         <span>→</span>
     </a>

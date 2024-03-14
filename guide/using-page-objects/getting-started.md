@@ -56,11 +56,11 @@ It can also be a function in case the URL is dynamic. One use case for this is t
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/chrome-devtools-recorder.html">
+    <a href="https://nightwatchjs.org/guide/configuration/aws-devicefarm-settings.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Using Chrome Devtools Recorder</span>
+          <span class="bigT">Configure AWS Device Farm</span>
         </div>
     </a>
   </div>
