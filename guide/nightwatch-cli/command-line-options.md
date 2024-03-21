@@ -221,7 +221,7 @@ write(results, options, done) {
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/browser-drivers/edgedriver.html">
+    <a href="/guide/browser-drivers/edgedriver.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -230,7 +230,7 @@ write(results, options, done) {
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/reference/settings.html">
+    <a href="/guide/reference/settings.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">All Settings</span>

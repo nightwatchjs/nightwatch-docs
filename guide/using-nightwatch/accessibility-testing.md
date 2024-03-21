@@ -72,7 +72,7 @@ You can find the complete list of the rule IDs on the [Axe Github page][7]
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/global-test-hooks.html">
+    <a href="/guide/writing-tests/global-test-hooks.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -81,7 +81,7 @@ You can find the complete list of the rule IDs on the [Axe Github page][7]
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/visual-regression-testing.html">
+    <a href="/guide/writing-tests/visual-regression-testing.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Visual testing</span>

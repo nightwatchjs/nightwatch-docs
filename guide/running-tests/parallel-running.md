@@ -80,7 +80,7 @@ The above will run two environments named `firefox` and `chrome` in parallel.
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/running-tests/skipping-disabling-tests.html">
+    <a href="/guide/running-tests/skipping-disabling-tests.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -89,7 +89,7 @@ The above will run two environments named `firefox` and `chrome` in parallel.
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/filtering-by-test-tags.html">
+    <a href="/guide/running-tests/filtering-by-test-tags.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Filter by test tags</span>

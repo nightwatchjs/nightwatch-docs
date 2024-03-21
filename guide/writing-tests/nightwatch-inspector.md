@@ -65,7 +65,7 @@ You can directly copy paste these in your test files and complete your test auth
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/visual-regression-testing.html">
+    <a href="/guide/writing-tests/visual-regression-testing.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -74,7 +74,7 @@ You can directly copy paste these in your test files and complete your test auth
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/write-nodejs-unit-integration-tests.html">
+    <a href="/guide/writing-tests/write-nodejs-unit-integration-tests.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Unit &amp; integration testing</span>

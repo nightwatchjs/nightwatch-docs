@@ -264,7 +264,7 @@ You can also use ES6 `async`/`await` syntax inside function-style custom command
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/mobile-web-testing/override-device-dimensions.html">
+    <a href="/guide/mobile-web-testing/override-device-dimensions.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -273,7 +273,7 @@ You can also use ES6 `async`/`await` syntax inside function-style custom command
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html">
+    <a href="/guide/extending-nightwatch/adding-custom-assertions.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Define custom assertions</span>

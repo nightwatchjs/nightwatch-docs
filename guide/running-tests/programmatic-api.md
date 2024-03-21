@@ -80,7 +80,7 @@ const browser = await client.launchBrowser();
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/running-tests/using-with-test-groups.html">
+    <a href="/guide/running-tests/using-with-test-groups.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -89,7 +89,7 @@ const browser = await client.launchBrowser();
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/capture-console-messages.html">
+    <a href="/guide/running-tests/capture-console-messages.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Capture browser logs</span>

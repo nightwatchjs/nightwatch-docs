@@ -72,7 +72,7 @@ The Selenium docs provide apple documentation on all the capabilities, both shar
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/concepts/test-globals.html">
+    <a href="/guide/concepts/test-globals.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -81,7 +81,7 @@ The Selenium docs provide apple documentation on all the capabilities, both shar
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/concepts/parallel-testing-in-nightwatch.html">
+    <a href="/guide/concepts/parallel-testing-in-nightwatch.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Parallel testing in Nightwatch</span>

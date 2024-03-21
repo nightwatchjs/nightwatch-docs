@@ -84,7 +84,7 @@ The JSON report should have been generated in the local `tests_output` folder in
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/reporters/use-html-reporter.html">
+    <a href="/guide/reporters/use-html-reporter.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -93,7 +93,7 @@ The JSON report should have been generated in the local `tests_output` folder in
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/reporters/use-mochawesome-reporter.html">
+    <a href="/guide/reporters/use-mochawesome-reporter.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Mochawesome Reporter</span>

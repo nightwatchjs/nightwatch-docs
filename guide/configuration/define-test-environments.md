@@ -131,7 +131,7 @@ OK. 1 assertions passed. (5.604s)
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/configuration/nightwatch-configuration-file.html">
+    <a href="/guide/configuration/nightwatch-configuration-file.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -140,7 +140,7 @@ OK. 1 assertions passed. (5.604s)
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/configuration/using-env-variables-in-your-config.html">
+    <a href="/guide/configuration/using-env-variables-in-your-config.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Use ENV variables</span>

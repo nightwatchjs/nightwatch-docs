@@ -113,7 +113,7 @@ You might also want to inspect the built-in setup file that Nightwatch uses for 
 When using the integrated Cucumber test runner, you need to use the Cucumber [formatters](https://github.com/cucumber/cucumber-js/blob/main/docs/formatters.md) for generating output.
 
 <div class="alert alert-warning">
-Nightwatch reporters (like JUnit XML reports or the <a href="https://nightwatchjs.org/guide/reporters/use-html-reporter.html">global custom reporter</a>) are not available. The main reason is that reporting is delegated to the Cucumber CLI. You can also <a href="https://github.com/cucumber/cucumber-js/blob/main/docs/custom_formatters.md">write your own</a> Cucumber formatter.
+Nightwatch reporters (like JUnit XML reports or the <a href="/guide/reporters/use-html-reporter.html">global custom reporter</a>) are not available. The main reason is that reporting is delegated to the Cucumber CLI. You can also <a href="https://github.com/cucumber/cucumber-js/blob/main/docs/custom_formatters.md">write your own</a> Cucumber formatter.
 </div>
 
 Nightwatch will forward `--format` and `--format-options` CLI arguments, if present, to Cucumber.
@@ -155,7 +155,7 @@ Using: firefox (92.0.1) on MAC (20.6.0).
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/write-complex-user-actions.html">
+    <a href="/guide/writing-tests/write-complex-user-actions.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -164,7 +164,7 @@ Using: firefox (92.0.1) on MAC (20.6.0).
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-mocha.html">
+    <a href="/guide/writing-tests/using-mocha.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Use Mocha as a test runner</span>

@@ -81,7 +81,7 @@ All you need to do is call the `browser.mockNetworkResponse()` command with the 
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/network-requests/capture-network-calls.html">
+    <a href="/guide/network-requests/capture-network-calls.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -90,7 +90,7 @@ All you need to do is call the `browser.mockNetworkResponse()` command with the 
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/network-requests/mock-geolocation.html">
+    <a href="/guide/network-requests/mock-geolocation.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Mock geolocation</span>

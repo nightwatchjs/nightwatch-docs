@@ -74,7 +74,7 @@ Happy debugging!
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/reporters/create-custom-reporter.html">
+    <a href="/guide/reporters/create-custom-reporter.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Add custom reporter</span>

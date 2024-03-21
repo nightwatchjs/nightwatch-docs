@@ -57,7 +57,7 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/test-syntax-exports.html">
+    <a href="/guide/writing-tests/test-syntax-exports.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -66,7 +66,7 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html">
+    <a href="/guide/writing-tests/finding-interacting-with-dom-elements.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Find & interact with DOM elements</span>

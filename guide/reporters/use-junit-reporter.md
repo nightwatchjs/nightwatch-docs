@@ -140,7 +140,7 @@ The reports can be disabled completely if desired by setting the `output_folder`
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/network-requests/mock-geolocation.html">
+    <a href="/guide/network-requests/mock-geolocation.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -149,7 +149,7 @@ The reports can be disabled completely if desired by setting the `output_folder`
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/reporters/use-html-reporter.html">
+    <a href="/guide/reporters/use-html-reporter.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">HTML Reporter</span>

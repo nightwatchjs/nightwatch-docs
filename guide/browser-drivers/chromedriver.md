@@ -111,7 +111,7 @@ If your tests require a Chrome instance running inside a [Docker](https://www.do
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/browser-drivers/geckodriver.html">
+    <a href="/guide/browser-drivers/geckodriver.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -120,7 +120,7 @@ If your tests require a Chrome instance running inside a [Docker](https://www.do
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/browser-drivers/safaridriver.html">
+    <a href="/guide/browser-drivers/safaridriver.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">SafariDriver</span>

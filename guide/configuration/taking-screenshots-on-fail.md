@@ -32,7 +32,7 @@ To enable screenshots for test failures/errors, set the `screenshots` property i
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/configuration/using-env-variables-in-your-config.html">
+    <a href="/guide/configuration/using-env-variables-in-your-config.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -41,7 +41,7 @@ To enable screenshots for test failures/errors, set the `screenshots` property i
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/configuration/customising-test-output.html">
+    <a href="/guide/configuration/customising-test-output.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Test output</span>

@@ -45,7 +45,7 @@ To skip multiple groups, just add them as comma-separated:
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/running-tests/filtering-by-test-tags.html">
+    <a href="/guide/running-tests/filtering-by-test-tags.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -54,7 +54,7 @@ To skip multiple groups, just add them as comma-separated:
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/programmatic-api.html">
+    <a href="/guide/running-tests/programmatic-api.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Use the programmatic API</span>

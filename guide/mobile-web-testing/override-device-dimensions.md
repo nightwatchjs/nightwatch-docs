@@ -109,7 +109,7 @@ To reset the device dimensions back to original, you can again call the `browser
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/mobile-web-testing/with-appium.html">
+    <a href="/guide/mobile-web-testing/with-appium.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -118,7 +118,7 @@ To reset the device dimensions back to original, you can again call the `browser
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html">
+    <a href="/guide/extending-nightwatch/adding-custom-commands.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Define custom commands</span>

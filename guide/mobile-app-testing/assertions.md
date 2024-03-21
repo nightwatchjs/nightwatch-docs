@@ -198,7 +198,7 @@ Learn [how to run native mobile tests on virtual,real and cloud devices][2]
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/mobile-app-testing/commands.html">
+    <a href="/guide/mobile-app-testing/commands.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -208,7 +208,7 @@ Learn [how to run native mobile tests on virtual,real and cloud devices][2]
   </div>
   <div class="doc-pagination justify-content-end pt-40">
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/mobile-app-testing/running-tests.html">
+    <a href="/guide/mobile-app-testing/running-tests.html">
         <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Running Mobile App Tests</span></div>
         <span>→</span>
     </a>

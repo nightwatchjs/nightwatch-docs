@@ -38,7 +38,7 @@ For more information about the Microsoft Edge WebDriver refer to the [Official d
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/browser-drivers/safaridriver.html">
+    <a href="/guide/browser-drivers/safaridriver.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -47,7 +47,7 @@ For more information about the Microsoft Edge WebDriver refer to the [Official d
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html">
+    <a href="/guide/nightwatch-cli/command-line-options.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Command-line Options</span>

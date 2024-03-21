@@ -106,7 +106,7 @@ The same set of test hooks as per test suite is also available globally, outside
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-mocha.html">
+    <a href="/guide/writing-tests/using-mocha.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -115,7 +115,7 @@ The same set of test hooks as per test suite is also available globally, outside
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-test-globals.html">
+    <a href="/guide/writing-tests/using-test-globals.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Use test globals</span>

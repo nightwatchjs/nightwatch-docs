@@ -212,7 +212,7 @@ myGlobalVar is: "integrated global"
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/concepts/test-environments.html">
+    <a href="/guide/concepts/test-environments.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -221,7 +221,7 @@ myGlobalVar is: "integrated global"
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/concepts/session-capabilities.html">
+    <a href="/guide/concepts/session-capabilities.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Session capabilities</span>

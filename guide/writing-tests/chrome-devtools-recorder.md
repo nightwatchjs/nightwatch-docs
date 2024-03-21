@@ -70,7 +70,7 @@ You can also export it as a Nightwatch test script right away. There are two way
 
 <br>
 - When you click on the option, you have successfully exported your current recording to Nightwatch tests.
-- Now you can <a href="https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html#tests-source">run your first tests</a> with Nightwatch
+- Now you can <a href="/guide/running-tests/using-the-cli-test-runner.html#tests-source">run your first tests</a> with Nightwatch
 
 <br><p>![Run first test](https://user-images.githubusercontent.com/2018070/185052499-44f3cde6-13d6-4809-9083-994575288264.gif)</p>
 <br>
@@ -109,7 +109,7 @@ If you find any situations where it generates unexpected results or something se
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/write-nodejs-unit-integration-tests.html">
+    <a href="/guide/writing-tests/write-nodejs-unit-integration-tests.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -118,7 +118,7 @@ If you find any situations where it generates unexpected results or something se
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/using-page-objects/getting-started.html">
+    <a href="/guide/using-page-objects/getting-started.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Getting Started</span>

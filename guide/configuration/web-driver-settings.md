@@ -167,7 +167,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/configuration/advanced-test-source-filtering.html">
+    <a href="/guide/configuration/advanced-test-source-filtering.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -176,7 +176,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/configuration/selenium-settings.html">
+    <a href="/guide/configuration/selenium-settings.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Selenium settings</span>

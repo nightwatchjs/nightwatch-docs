@@ -165,7 +165,7 @@ When using named page object elements (starting with '@') you can also use CSS p
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/using-page-objects/getting-started.html">
+    <a href="/guide/using-page-objects/getting-started.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -174,7 +174,7 @@ When using named page object elements (starting with '@') you can also use CSS p
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/using-page-objects/defining-sections.html">
+    <a href="/guide/using-page-objects/defining-sections.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Define sections</span>

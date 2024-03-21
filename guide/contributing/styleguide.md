@@ -71,7 +71,7 @@ items to make a list. In such cases, convert it to a sentence.
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/reference/defaults.html">
+    <a href="/guide/reference/defaults.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -80,7 +80,7 @@ items to make a list. In such cases, convert it to a sentence.
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/migrating-to-nightwatch/from-nightwatch-v1.html">
+    <a href="/guide/migrating-to-nightwatch/from-nightwatch-v1.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">From Nightwatch v1</span>

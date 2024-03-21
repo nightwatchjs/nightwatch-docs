@@ -82,7 +82,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-test-globals.html">
+    <a href="/guide/writing-tests/using-test-globals.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -91,7 +91,7 @@ The methods are defined in the external `globals` file and invoked using the `gl
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/using-nightwatch/accessibility-testing.html">
+    <a href="/guide/using-nightwatch/accessibility-testing.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Accessibility testing</span>

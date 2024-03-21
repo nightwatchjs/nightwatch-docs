@@ -25,7 +25,7 @@ The new [`.debug()`](https://nightwatchjs.org/api/debug.html) command provides a
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/running-tests/take-heap-snapshot.html">
+    <a href="/guide/running-tests/take-heap-snapshot.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -34,7 +34,7 @@ The new [`.debug()`](https://nightwatchjs.org/api/debug.html) command provides a
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/debugging-tests/using-pause.html">
+    <a href="/guide/debugging-tests/using-pause.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Use.pause()</span>

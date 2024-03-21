@@ -99,7 +99,7 @@ Here’s an extract from the `nightwatch.conf.js` config file available as part 
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html">
+    <a href="/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -108,7 +108,7 @@ Here’s an extract from the `nightwatch.conf.js` config file available as part 
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/concepts/test-globals.html">
+    <a href="/guide/concepts/test-globals.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Test globals</span>

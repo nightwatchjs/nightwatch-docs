@@ -61,7 +61,7 @@ While using the `pause()` command without any argument, the following operations
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/debugging-tests/overview.html">
+    <a href="/guide/debugging-tests/overview.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -70,7 +70,7 @@ While using the `pause()` command without any argument, the following operations
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/debugging-tests/using-debug.html">
+    <a href="/guide/debugging-tests/using-debug.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Use.debug()</span>

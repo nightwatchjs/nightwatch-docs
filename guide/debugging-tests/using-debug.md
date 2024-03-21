@@ -54,7 +54,7 @@ While doing that, users can also interact with the browser and use DevTools to d
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/debugging-tests/using-pause.html">
+    <a href="/guide/debugging-tests/using-pause.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -63,7 +63,7 @@ While doing that, users can also interact with the browser and use DevTools to d
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-jenkins.html">
+    <a href="/guide/ci-integrations/run-nightwatch-on-jenkins.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Jenkins</span>

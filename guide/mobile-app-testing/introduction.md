@@ -60,7 +60,7 @@ Now that you understand how mobile app testing works with Nightwatch, let's dive
 
 <div class="doc-pagination justify-content-end pt-40">
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/mobile-app-testing/installation.html">
+    <a href="/guide/mobile-app-testing/installation.html">
         <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Installation</span></div>
         <span>→</span>
     </a>

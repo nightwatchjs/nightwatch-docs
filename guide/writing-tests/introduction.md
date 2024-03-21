@@ -170,7 +170,7 @@ Now that you understand the basics of writing tests for mobile apps, it's time t
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html">
+    <a href="/guide/quickstarts/create-and-run-a-nightwatch-test.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -179,7 +179,7 @@ Now that you understand the basics of writing tests for mobile apps, it's time t
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/selectors.html">
+    <a href="/guide/writing-tests/selectors.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Selectors</span>

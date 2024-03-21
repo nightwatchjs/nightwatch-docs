@@ -99,7 +99,7 @@ Info & help:
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/using-page-objects/writing-page-specific-commands.html">
+    <a href="/guide/using-page-objects/writing-page-specific-commands.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -108,7 +108,7 @@ Info & help:
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/skipping-disabling-tests.html">
+    <a href="/guide/running-tests/skipping-disabling-tests.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Skip / disable tests</span>

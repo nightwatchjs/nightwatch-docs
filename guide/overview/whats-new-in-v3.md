@@ -127,7 +127,7 @@ Relive the test as it happened by enabling DOM history. When this functionaity i
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/overview/what-is-nightwatch.html">
+    <a href="/guide/overview/what-is-nightwatch.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -136,7 +136,7 @@ Relive the test as it happened by enabling DOM history. When this functionaity i
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/overview/whats-new.html">
+    <a href="/guide/overview/whats-new.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Release notes</span>

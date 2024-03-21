@@ -56,7 +56,7 @@ Then update your `nightwatch.conf.js` (or `nightwatch.json`) and add it to the `
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-reporters.html">
+    <a href="/guide/extending-nightwatch/adding-custom-reporters.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -65,7 +65,7 @@ Then update your `nightwatch.conf.js` (or `nightwatch.json`) and add it to the `
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/browser-drivers/geckodriver.html">
+    <a href="/guide/browser-drivers/geckodriver.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">GeckoDriver (Firefox)</span>

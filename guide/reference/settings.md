@@ -33,7 +33,7 @@ Below are the default settings that will be passed to the Nightwatch instance du
     <td><code>test_settings</code></td>
     <td>object</td>
     <td></td>
-    <td>An object in which all the test environments are defined, each overwriting test settings as needed. A <code>default</code> environment is always required, from which the other environments inherit settings from. <br><br>See <a href="https://nightwatchjs.org/guide/using-nightwatch/concepts.html#defining-test-environments">Defining Test Environments</a> for details.</td>
+    <td>An object in which all the test environments are defined, each overwriting test settings as needed. A <code>default</code> environment is always required, from which the other environments inherit settings from. <br><br>See <a href="/guide/using-nightwatch/concepts.html#defining-test-environments">Defining Test Environments</a> for details.</td>
   </tr>
   <tr>
     <td><code>webdriver</code></td>
@@ -835,7 +835,7 @@ Remember to also enable HTTP keepalive for improved network performance.
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html">
+    <a href="/guide/nightwatch-cli/command-line-options.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -844,7 +844,7 @@ Remember to also enable HTTP keepalive for improved network performance.
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/reference/defaults.html">
+    <a href="/guide/reference/defaults.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Default Settings</span>

@@ -78,7 +78,7 @@ The below will only run the `startHomepage` testcase and ignore the rest.
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html">
+    <a href="/guide/running-tests/using-the-cli-test-runner.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -87,7 +87,7 @@ The below will only run the `startHomepage` testcase and ignore the rest.
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/parallel-running.html">
+    <a href="/guide/running-tests/parallel-running.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Run tests in parallel</span>

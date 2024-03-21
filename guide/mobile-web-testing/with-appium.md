@@ -115,7 +115,7 @@ The [Actions API](https://nightwatchjs.org/api/useractions/) is very general and
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/reporters/create-custom-reporter.html">
+    <a href="/guide/reporters/create-custom-reporter.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -124,7 +124,7 @@ The [Actions API](https://nightwatchjs.org/api/useractions/) is very general and
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/mobile-web-testing/override-device-dimensions.html">
+    <a href="/guide/mobile-web-testing/override-device-dimensions.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Override device dimensions</span>

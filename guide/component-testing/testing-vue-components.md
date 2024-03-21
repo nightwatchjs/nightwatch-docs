@@ -11,7 +11,7 @@ description: Learn how to write, execute, and debug VueJS component tests using 
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/concepts/page-object-model.html">
+    <a href="/guide/concepts/page-object-model.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -20,7 +20,7 @@ description: Learn how to write, execute, and debug VueJS component tests using 
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/configuration/nightwatch-configuration-file.html">
+    <a href="/guide/configuration/nightwatch-configuration-file.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Nightwatch configuration file</span>

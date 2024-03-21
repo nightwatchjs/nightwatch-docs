@@ -120,7 +120,7 @@ Using a nested section in your test is straightforward:
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/using-page-objects/defining-elements.html">
+    <a href="/guide/using-page-objects/defining-elements.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -129,7 +129,7 @@ Using a nested section in your test is straightforward:
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/using-page-objects/writing-page-specific-commands.html">
+    <a href="/guide/using-page-objects/writing-page-specific-commands.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Add page-specific commands</span>
