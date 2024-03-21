@@ -64,7 +64,7 @@ describe('take heap snapshot with async/await', function() {
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/running-tests/catch-js-exceptions.html">
+    <a href="/guide/running-tests/catch-js-exceptions.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -73,7 +73,7 @@ describe('take heap snapshot with async/await', function() {
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/debugging-tests/overview.html">
+    <a href="/guide/debugging-tests/overview.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Debugging tests</span>

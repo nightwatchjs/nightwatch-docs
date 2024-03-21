@@ -87,7 +87,7 @@ No assertions ran.
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/running-tests/programmatic-api.html">
+    <a href="/guide/running-tests/programmatic-api.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -96,7 +96,7 @@ No assertions ran.
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/catch-js-exceptions.html">
+    <a href="/guide/running-tests/catch-js-exceptions.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Capture browser exceptions</span>

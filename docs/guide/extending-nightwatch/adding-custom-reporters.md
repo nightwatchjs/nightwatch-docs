@@ -38,7 +38,7 @@ See the provided [globalsModule.js](https://github.com/nightwatchjs/nightwatch/b
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html">
+    <a href="/guide/extending-nightwatch/adding-custom-assertions.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -47,7 +47,7 @@ See the provided [globalsModule.js](https://github.com/nightwatchjs/nightwatch/b
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html">
+    <a href="/guide/extending-nightwatch/adding-plugins.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Create Nightwatch plugins</span>

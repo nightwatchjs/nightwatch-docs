@@ -56,7 +56,7 @@ It can also be a function in case the URL is dynamic. One use case for this is t
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/chrome-devtools-recorder.html">
+    <a href="/guide/writing-tests/chrome-devtools-recorder.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -65,7 +65,7 @@ It can also be a function in case the URL is dynamic. One use case for this is t
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/using-page-objects/defining-elements.html">
+    <a href="/guide/using-page-objects/defining-elements.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Define elements</span>

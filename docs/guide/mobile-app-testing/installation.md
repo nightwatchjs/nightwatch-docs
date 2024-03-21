@@ -386,7 +386,7 @@ Now that you understand how mobile app testing works with Nightwatch,let's dive 
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/mobile-app-testing/introduction.html">
+    <a href="/guide/mobile-app-testing/introduction.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -396,7 +396,7 @@ Now that you understand how mobile app testing works with Nightwatch,let's dive 
   </div>
   <div class="doc-pagination justify-content-end pt-40">
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/mobile-app-testing/introduction-writing-tests.html">
+    <a href="/guide/mobile-app-testing/introduction-writing-tests.html">
         <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Writing Mobile App Tests</span></div>
         <span>→</span>
     </a>

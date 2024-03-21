@@ -143,7 +143,7 @@ E.g.:
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/using-nightwatch/accessibility-testing.html">
+    <a href="/guide/using-nightwatch/accessibility-testing.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -152,7 +152,7 @@ E.g.:
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/api-testing.html">
+    <a href="/guide/writing-tests/api-testing.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">API testing</span>

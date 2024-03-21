@@ -275,7 +275,7 @@ module.exports = {
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/reference/settings.html">
+    <a href="/guide/reference/settings.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -284,7 +284,7 @@ module.exports = {
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/contributing/styleguide.html">
+    <a href="/guide/contributing/styleguide.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Style guide</span>

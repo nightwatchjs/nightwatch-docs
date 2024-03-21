@@ -180,12 +180,12 @@ We've put together a basic To-do app written in React and built on top of Vite w
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-	<a href="https://nightwatchjs.org/guide/component-testing/vite-plugin.html">
+	<a href="/guide/component-testing/vite-plugin.html">
 	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">Using the Vite plugin</span></div>
 	</a>
   </div>
   <div class="next">
-	<a href="https://nightwatchjs.org/guide/component-testing/write-jsx-react-tests.html">
+	<a href="/guide/component-testing/write-jsx-react-tests.html">
       <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">JSX in React component tests</span></div><span>→</span>
 	</a>
   </div>

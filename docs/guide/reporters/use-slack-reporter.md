@@ -137,7 +137,7 @@ You don't need to do anything extra because you've configured the Slack reporter
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/reporters/use-mochawesome-reporter.html">
+    <a href="/guide/reporters/use-mochawesome-reporter.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -146,7 +146,7 @@ You don't need to do anything extra because you've configured the Slack reporter
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/reporters/use-nightwatch-allure-reporter.html">
+    <a href="/guide/reporters/use-nightwatch-allure-reporter.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Allure Reporter</span>

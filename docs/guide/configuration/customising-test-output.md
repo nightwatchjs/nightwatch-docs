@@ -95,7 +95,7 @@ The below settings can be used to control the output and logging when running te
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/configuration/taking-screenshots-on-fail.html">
+    <a href="/guide/configuration/taking-screenshots-on-fail.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -104,7 +104,7 @@ The below settings can be used to control the output and logging when running te
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/configuration/advanced-test-source-filtering.html">
+    <a href="/guide/configuration/advanced-test-source-filtering.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Advanced test source filtering</span>

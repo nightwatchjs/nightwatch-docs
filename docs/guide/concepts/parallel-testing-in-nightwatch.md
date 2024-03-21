@@ -32,7 +32,7 @@ From **v1.7** you are able to do just that.
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/concepts/session-capabilities.html">
+    <a href="/guide/concepts/session-capabilities.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -41,7 +41,7 @@ From **v1.7** you are able to do just that.
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/concepts/page-object-model.html">
+    <a href="/guide/concepts/page-object-model.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Page Object Model</span>

@@ -235,7 +235,7 @@ For additional help you can jump on to our <a href="https://discord.gg/SN8Da2X">
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-test-with-selenium-server.html">
+    <a href="/guide/quickstarts/create-and-run-a-test-with-selenium-server.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -244,7 +244,7 @@ For additional help you can jump on to our <a href="https://discord.gg/SN8Da2X">
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/concepts/test-environments.html">
+    <a href="/guide/concepts/test-environments.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Test environments</span>

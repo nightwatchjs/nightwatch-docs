@@ -166,7 +166,7 @@ For details on how an LCOV reporter should look like and how to integrate with y
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/api-testing.html">
+    <a href="/guide/writing-tests/api-testing.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>

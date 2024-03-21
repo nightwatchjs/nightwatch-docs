@@ -276,7 +276,7 @@ We've put together a complete [Github template repo](https://github.com/nightwat
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/configuration/aws-devicefarm-settings.html">
+    <a href="/guide/configuration/aws-devicefarm-settings.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -285,7 +285,7 @@ We've put together a complete [Github template repo](https://github.com/nightwat
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/test-syntax-exports.html">
+    <a href="/guide/writing-tests/test-syntax-exports.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Export test syntax</span>

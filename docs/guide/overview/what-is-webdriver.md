@@ -36,7 +36,7 @@ description: Webdriver is a general purpose library for automating web browsers
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/overview/what-is-nightwatch.html">
+    <a href="/guide/overview/what-is-nightwatch.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -45,7 +45,7 @@ description: Webdriver is a general purpose library for automating web browsers
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/overview/whats-new-in-v3.html">
+    <a href="/guide/overview/whats-new-in-v3.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">What's new in v3?</span>

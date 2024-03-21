@@ -85,7 +85,7 @@ You can also use the [integrated debug console](https://nightwatchjs.org/guide/d
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-	<a href="https://nightwatchjs.org/guide/component-testing/storybook-component-testing.html">
+	<a href="/guide/component-testing/storybook-component-testing.html">
 	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">Storybook integration</span></div>
 	</a>
   </div>

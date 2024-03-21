@@ -86,7 +86,7 @@ Pass Nightwatch commands/assertions to Nightwatch debug console open in the term
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/mobile-app-testing/running-tests.html">
+    <a href="/guide/mobile-app-testing/running-tests.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>

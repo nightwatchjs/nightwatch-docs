@@ -93,7 +93,7 @@ After installation, now you can sign in to the admin and create a plan after cli
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-github-actions.html">
+    <a href="/guide/ci-integrations/run-nightwatch-on-github-actions.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -102,7 +102,7 @@ After installation, now you can sign in to the admin and create a plan after cli
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-azure-pipelines.html">
+    <a href="/guide/ci-integrations/run-nightwatch-on-azure-pipelines.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Azure Pipelines</span>

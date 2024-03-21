@@ -205,8 +205,8 @@ Assuming you have downloaded or installed the ChromeDriver service, the simplest
 #### Further Reading
 
 <ul class="introduction">
-    <li><a href="https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals">Defining Test Environments</a></li>
-    <li><a href="https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals">Using Test Globals</a></li>
+    <li><a href="/guide/using-nightwatch/concepts.html#using-test-globals">Defining Test Environments</a></li>
+    <li><a href="/guide/using-nightwatch/concepts.html#using-test-globals">Using Test Globals</a></li>
 </ul>
 
 [1]:    /gettingstarted/installation/#install-webdriver

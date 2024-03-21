@@ -49,7 +49,7 @@ Here's an example from the generated `nightwatch.conf.js`:
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/configuration/define-test-environments.html">
+    <a href="/guide/configuration/define-test-environments.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -58,7 +58,7 @@ Here's an example from the generated `nightwatch.conf.js`:
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/configuration/taking-screenshots-on-fail.html">
+    <a href="/guide/configuration/taking-screenshots-on-fail.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Take screenshots on test failure</span>

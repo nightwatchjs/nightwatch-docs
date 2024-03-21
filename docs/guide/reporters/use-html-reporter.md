@@ -99,7 +99,7 @@ Use the `--open` command line argument to open the generated HTML report generat
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/reporters/use-junit-reporter.html">
+    <a href="/guide/reporters/use-junit-reporter.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -108,7 +108,7 @@ Use the `--open` command line argument to open the generated HTML report generat
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/reporters/use-json-reporter.html">
+    <a href="/guide/reporters/use-json-reporter.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">JSON Reporter</span>

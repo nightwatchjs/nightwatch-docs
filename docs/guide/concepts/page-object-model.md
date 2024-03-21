@@ -95,7 +95,7 @@ From Nightwatch 2 it is also possible to export the page commands as an ES6 clas
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/concepts/parallel-testing-in-nightwatch.html">
+    <a href="/guide/concepts/parallel-testing-in-nightwatch.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -104,7 +104,7 @@ From Nightwatch 2 it is also possible to export the page commands as an ES6 clas
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/concepts/component-testing.html">
+    <a href="/guide/concepts/component-testing.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Component testing</span>

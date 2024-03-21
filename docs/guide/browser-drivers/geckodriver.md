@@ -96,7 +96,7 @@ GeckoDriver is not yet feature complete, which means it does not yet offer full 
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/extending-nightwatch/adding-plugins.html">
+    <a href="/guide/extending-nightwatch/adding-plugins.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -105,7 +105,7 @@ GeckoDriver is not yet feature complete, which means it does not yet offer full 
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/browser-drivers/chromedriver.html">
+    <a href="/guide/browser-drivers/chromedriver.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">ChromeDriver</span>

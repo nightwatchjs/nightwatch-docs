@@ -516,7 +516,7 @@ This produces the following sequence of ticks:
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-xpath-selectors.html">
+    <a href="/guide/writing-tests/using-xpath-selectors.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -525,7 +525,7 @@ This produces the following sequence of ticks:
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-cucumberjs.html">
+    <a href="/guide/writing-tests/using-cucumberjs.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Use CucumberJS</span>

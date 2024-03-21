@@ -72,7 +72,7 @@ The following packages can be used from NPM and, if installed, Nightwatch will a
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/concepts/component-testing.html">
+    <a href="/guide/concepts/component-testing.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -81,7 +81,7 @@ The following packages can be used from NPM and, if installed, Nightwatch will a
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/configuration/define-test-environments.html">
+    <a href="/guide/configuration/define-test-environments.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Define test environments</span>

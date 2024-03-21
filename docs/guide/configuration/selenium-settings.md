@@ -151,7 +151,7 @@ The following **NPM** packages are assumed to be installed in the current projec
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/configuration/web-driver-settings.html">
+    <a href="/guide/configuration/web-driver-settings.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -160,7 +160,7 @@ The following **NPM** packages are assumed to be installed in the current projec
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/configuration/browser-stack-settings.html">
+    <a href="/guide/configuration/browser-stack-settings.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Configure BrowserStack settings</span>

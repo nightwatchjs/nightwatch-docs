@@ -95,7 +95,7 @@ Related articles
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-bamboo.html">
+    <a href="/guide/ci-integrations/run-nightwatch-on-bamboo.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -104,7 +104,7 @@ Related articles
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/ci-integrations/run-nightwatch-on-circleci.html">
+    <a href="/guide/ci-integrations/run-nightwatch-on-circleci.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">CircleCI</span>

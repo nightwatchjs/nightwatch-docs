@@ -171,12 +171,12 @@ window['@@component_element'] = element;
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-	<a href="https://nightwatchjs.org/guide/component-testing/introduction.html">
+	<a href="/guide/component-testing/introduction.html">
 	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">Introduction</span></div>
 	</a>
   </div>
   <div class="next">
-	<a href="https://nightwatchjs.org/guide/component-testing/testing-react-components.html">
+	<a href="/guide/component-testing/testing-react-components.html">
       <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Test React components</span></div><span>→</span>
 	</a>
   </div>

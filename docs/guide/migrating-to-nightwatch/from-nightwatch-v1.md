@@ -32,7 +32,7 @@ Changes in the result object:
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/contributing/styleguide.html">
+    <a href="/guide/contributing/styleguide.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -41,7 +41,7 @@ Changes in the result object:
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/migrating-to-nightwatch/from-protractor.html">
+    <a href="/guide/migrating-to-nightwatch/from-protractor.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">From Protractor</span>

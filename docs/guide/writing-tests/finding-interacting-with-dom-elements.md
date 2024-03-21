@@ -142,7 +142,7 @@ const ecosiaTest: NightwatchTests = {
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/writing-tests/using-es-6-async-await.html">
+    <a href="/guide/writing-tests/using-es-6-async-await.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -151,7 +151,7 @@ const ecosiaTest: NightwatchTests = {
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/writing-tests/adding-assertions.html">
+    <a href="/guide/writing-tests/adding-assertions.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Add assertions</span>

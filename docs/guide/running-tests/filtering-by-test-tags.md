@@ -54,7 +54,7 @@ Or to skip multiple tags, add each tag you want to skip as comma-separated:
 
  <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/running-tests/parallel-running.html">
+    <a href="/guide/running-tests/parallel-running.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -63,7 +63,7 @@ Or to skip multiple tags, add each tag you want to skip as comma-separated:
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/running-tests/using-with-test-groups.html">
+    <a href="/guide/running-tests/using-with-test-groups.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Use test groups</span>

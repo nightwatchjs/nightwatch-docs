@@ -1,7 +1,7 @@
 # User Actions API
 
 ### Overview
-The [Actions API](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Actions.html) from Selenium is available and ready to use in Nightwatch via the existing [`.perform()`](https://nightwatchjs.org/api/perform.html) command.
+The [Actions API](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/input_exports_Actions.html) from Selenium is available and ready to use in Nightwatch via the existing [`.perform()`](/api/perform.html) command.
 
 ### Available Actions
 

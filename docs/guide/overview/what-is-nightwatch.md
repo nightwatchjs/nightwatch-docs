@@ -115,7 +115,7 @@ WebDriver is implemented by all major browser vendors as a W3C compliant HTTP se
 
 <div class="doc-pagination justify-content-end pt-40">
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/overview/whats-new-in-v3.html">
+    <a href="/guide/overview/whats-new-in-v3.html">
         <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">What's new in v3?</span></div>
         <span>→</span>
     </a>

@@ -3,7 +3,7 @@
 ### Overview
 Page objects provide an additional layer of abstraction for test case creation. Page objects are defined in modules and parsed into factory functions that create page object instances. 
 
-For an introduction to the Page Object Model in Nightwatch, refer to the [Getting started](https://nightwatchjs.org/guide/using-page-objects/getting-started.html) guide.
+For an introduction to the Page Object Model in Nightwatch, refer to the [Getting started](/guide/using-page-objects/getting-started.html) guide.
 
 ### Page object module
 
@@ -176,7 +176,7 @@ Element instances encapsulate the definition used to handle element selectors. G
 
 #### Section Instances
 
-For an introduction to creating sections, see the [Define Sections](https://nightwatchjs.org/guide/using-page-objects/defining-sections.html) guide page.
+For an introduction to creating sections, see the [Define Sections](/guide/using-page-objects/defining-sections.html) guide page.
 
 Page object section instances are accessed from the `section` property of a page object instance (note that this is the singular version of "section" whereas the plural version, "sections", was used in the module definition). 
 
@@ -187,7 +187,7 @@ const mySection = myPageObject.section.MySection; // from a `sections: {}` block
 
 <h3 id="page-commands">Page Object Commands</h3>
 
-For an introduction to writing page object custom commands, see the [Writing page-specific commands](https://nightwatchjs.org/guide/using-page-objects/writing-page-specific-commands.html) guide page.
+For an introduction to writing page object custom commands, see the [Writing page-specific commands](/guide/using-page-objects/writing-page-specific-commands.html) guide page.
 
 <div class="table-responsive">
   <table class="table table-bordered table-striped">

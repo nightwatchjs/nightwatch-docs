@@ -226,7 +226,7 @@ Now that you have installed Nightwatch
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.org/guide/overview/whats-new.html">
+    <a href="/guide/overview/whats-new.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
@@ -235,7 +235,7 @@ Now that you have installed Nightwatch
     </a>
   </div>
   <div class="next">
-    <a href="https://nightwatchjs.org/guide/quickstarts/create-and-run-a-test-with-selenium-server.html">
+    <a href="/guide/quickstarts/create-and-run-a-test-with-selenium-server.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
           <span class="bigT">Run a test with Selenium Server</span>

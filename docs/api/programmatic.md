@@ -65,7 +65,7 @@ client.updateCapabilities({
   <h3>client.launchBrowser()</h3>
 
   <p>Given an existing `client` created using the `createClient()` method listed above, this can be used to create a new browser session.</p>
-<p>The returned object will be the Nightwatch [browser API](https://nightwatchjs.org/api/#the-browser-object) object.</p>
+<p>The returned object will be the Nightwatch [browser API](/api/#the-browser-object) object.</p>
 
 <h5>Syntax:</h5>
 
