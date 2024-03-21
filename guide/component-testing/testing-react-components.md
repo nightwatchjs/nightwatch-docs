@@ -64,7 +64,7 @@ export const FormStory = () => &lt;Form /&gt;
 
 In component testing terms, a "story" is representation of a particular component with props or args. In our concrete case, it is a single `export const` declaration. 
 
-- Read more about [writing tests in Component Story Format](https://nightwatchjs.org/guide/component-testing/write-jsx-react-tests.html)
+- Read more about [writing tests in Component Story Format](/guide/component-testing/write-jsx-react-tests.html)
 
 #### Without JSX
 
@@ -196,10 +196,10 @@ We've put together a basic To-do app written in React and built on top of Vite w
 - [Blog \> Introducing Component Testing in Nightwatch][8]
 
 [1]:    https://github.com/nightwatchjs/nightwatch-plugin-react
-[2]:    https://nightwatchjs.org/guide/component-testing/vite-plugin.html
+[2]:    /guide/component-testing/vite-plugin.html
 [3]:    https://storybook.js.org/docs/react/api/csf
 [4]:    https://github.com/ComponentDriven/csf
 [5]:    https://storybook.js.org/
-[6]:    http://local-new.nightwatchjs.org/guide/component-testing/vite-plugin.html#plugin-options
+[6]:    /guide/component-testing/vite-plugin.html#postdoc-plugin-options
 [7]:    https://github.com/nightwatchjs-community/todo-react "nightwatchjs-community/todo-react"
 [8]:    https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/

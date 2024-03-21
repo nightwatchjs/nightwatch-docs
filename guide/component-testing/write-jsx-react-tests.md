@@ -167,6 +167,6 @@ We've put together a basic To-do app written in React and built on top of Vite w
 [2]:    https://github.com/ComponentDriven/csf
 [3]:    https://storybook.js.org/
 [4]:    https://storybook.js.org/docs/react/writing-stories/introduction
-[5]:    http://local-new.nightwatchjs.org/guide/component-testing/vite-plugin.html#plugin-options
+[5]:    /guide/component-testing/vite-plugin.html#postdoc-plugin-options
 [6]:    https://github.com/nightwatchjs-community/todo-react "nightwatchjs-community/todo-react"
 [7]:    https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/

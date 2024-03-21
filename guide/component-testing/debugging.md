@@ -77,7 +77,7 @@ Run the example and observe the breakpoint in the Chrome devtools console.
 
 <a href="https://raw.githubusercontent.com/nightwatchjs/nightwatch-storybook-plugin/main/.github/assets/debugger.png"><img src="https://raw.githubusercontent.com/nightwatchjs/nightwatch-storybook-plugin/main/.github/assets/debugger.png" alt="Screenshot of the Chrome Devtools debugger paused at a breakpoint" style="max-width:800px"></a>
 
-You can also use the [integrated debug console](https://nightwatchjs.org/guide/debugging-tests/using-debug.html) to issue commands from Nightwatch.
+You can also use the [integrated debug console](/guide/debugging-tests/using-debug.html) to issue commands from Nightwatch.
 
 
 ### Recommended content
