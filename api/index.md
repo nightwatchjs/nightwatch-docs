@@ -4,44 +4,40 @@ This is so that everything is ready to get started with writing the actual test 
 ### The "browser" object
 We are referring to the main API object as `browser` – for consistency with other Selenium related JS test frameworks and also because since v2, it is also available as a `global`:
 
-```javascript
-module.exports = {
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">module.exports = {
   demoTest: function (browser) {
     browser.init();
   }
 };
-```
+</code></pre></div>
 
 You might also see examples from previous versions of Nightwatch, using `client`. It is of course perfectly fine, although it might be confusing to users who are new to JavaScript syntax. 
 
-```javascript
-module.exports = {
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">module.exports = {
   demoTest: function (client) {
     client.init();
   }
 };
-```
+</code></pre></div>
 
 #### Using as Global
 From Nightwatch 2, `browser` is available as a global, so this is also valid:
 
-```javascript
-module.exports = {
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">module.exports = {
   demoTest: function () {
     browser.init();
   }
 };
-```
+</code></pre></div>
 
 As well as this:
 
-```javascript
-describe('Nightwatch APIs', function() {
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">describe('Nightwatch APIs', function() {
   it('demoTest', function () {
     browser.init();
   })
 };
-```
+</code></pre></div>
 
 ### API Contents
 
@@ -124,7 +120,7 @@ Below is a list of all public properties and methods that are made available on 
   More on [WebDriver Capabilities](https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities).
   
   ###### Example:
-  ```javascript
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">
   {
     acceptInsecureCerts: false,
     browserName: 'chrome',
@@ -132,7 +128,7 @@ Below is a list of all public properties and methods that are made available on 
     'goog:chromeOptions': { debuggerAddress: 'localhost:50427' },
     // ... continued
   }
-  ```
+</code></pre></div>
 
 - #### currentTest
 
@@ -142,7 +138,7 @@ Below is a list of all public properties and methods that are made available on 
 
   ###### Available properties:
 
-  ```javascript
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">
   {
     // name of the current running testcase
     name: ' ... ',
@@ -168,7 +164,7 @@ Below is a list of all public properties and methods that are made available on 
     // the current timestamp, in the format: Wed, 01 Dec 2021 08:34:00 GMT
     timestamp: ''
   }
-  ```
+</code></pre></div>
 
 - #### desiredCapabilities
 
@@ -178,13 +174,13 @@ Below is a list of all public properties and methods that are made available on 
 
   ###### Example:
 
-  ```javascript
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">
   {
     browserName: 'chrome',
     'goog:chromeOptions': {},
     name: 'Example Test'
   }
-  ```
+</code></pre></div>
 
 - #### driver
 
@@ -197,7 +193,7 @@ Below is a list of all public properties and methods that are made available on 
 
   In the below example we will retrieve the [WebDriver Session](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/lib/session_exports_Session.html) instance.
 
-  ```javascript
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">
   describe('Nightwatch APIs', function() {
     it('driver demoTest', async function () {
       const session = await browser
@@ -207,7 +203,7 @@ Below is a list of all public properties and methods that are made available on 
         });
     })
   };
-  ```
+</code></pre></div>
 
 - #### sessionId
 
@@ -217,9 +213,9 @@ Below is a list of all public properties and methods that are made available on 
 
   ###### Example
 
-  ```javascript
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">
   console.log(browser.sessionId); // e0b40362dcec8ec501ac2b42b62bdce2
-  ```
+</code></pre></div>
 
 - #### globals
 
