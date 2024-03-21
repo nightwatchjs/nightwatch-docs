@@ -1,0 +1,32 @@
+<%
+const data = {
+    version: appSettings.version,
+    baseUrl: appSettings.baseUrl,
+    section: 'about',
+    pageContent: page.content,
+    pageUrl: page.url,
+    pageTitle: page.title || 'About | Nightwatch.js',
+    pageDescription: page.description || 'How to get in touch with the team, and where to submit bugs and feature requests.',
+    pageImage: '/img/banners/nightwatch.jpg'
+};
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include("fonts", data) %>
+    <%- include('header', data) %>
+    <link rel="canonical" href="<%- data.baseUrl + page.url %>"/>
+</head>
+
+<body>
+<%- include('navbar', data) %>
+
+<section id="about-container" class="secondary">
+  <%- include("sections/about", data) %>
+</section>
+
+<%- include("footer", data) %>
+<%- include("scripts") %>
+</body>
+</html>

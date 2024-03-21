@@ -1,0 +1,121 @@
+#guide-container {
+  padding: 20px;
+}
+
+.comparison-table {
+  width: 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.comparison-table thead {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.comparison-table .nightwatch-logo {
+  width: 60px;
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.comparison-table .cypress-logo {
+  width: 140px;
+  margin: 0 auto;
+}
+
+.comparison-table .playwright-logo {
+  width: 70px;
+  /* margin-right: 10px; */
+  display: inline-block;
+}
+
+.comparison-table .browser-ico {
+  width: 30px;
+  display: inline-block;
+  margin: 10px 5px;
+}
+
+/* .comparison-table .comp-yes {
+  font-size: 1.3em;
+} */
+
+.comparison-table ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+.comparison-table th {
+  padding: 15px 10px;
+  border-right: 1px solid #d88711;
+  font-size: 1.2em;
+}
+
+.comparison-table td {
+  border-right: 1px solid #d88711;
+  padding: 5px 10px;
+  vertical-align: top;
+}
+
+.comparison-table tr {
+  border-bottom: 1px solid #ffe8d9;
+}
+
+.comp-section {
+  background-color: #fff6f1;
+  font-weight: bold;
+  padding: 12px;
+}
+
+.nw-perf,
+.cypress-perf,
+.playwright-perf {
+  position: relative;
+}
+
+.nw-perf>div,
+.cypress-perf>div,
+.playwright-perf>div {
+  position: absolute;
+  z-index: 2;
+}
+
+.nw-perf::before,
+.cypress-perf::before,
+.playwright-perf::before {
+  content: '';
+  width: 100%;
+  height: 0%;
+  background: #ccc;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nw-perf::after,
+.cypress-perf::after,
+.playwright-perf::after {
+  content: '';
+  width: 5px;
+  height: 0%;
+  background: #d88711;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: calc(100% - 5px);
+}
+
+.nw-perf::before {
+  height: 60%;
+  background: #b6ffbe;
+}
+
+.cypress-perf::before {
+  height: 100%;
+  background: #ffe5e5;
+}
+
+.playwright-perf::before {
+  height: 75%;
+  background: #fff3a9;
+}

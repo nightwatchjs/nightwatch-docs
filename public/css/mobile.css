@@ -1,0 +1,293 @@
+@media screen and (max-width: 992px) {
+  body>header.navbar {
+    min-height: 92px;
+  }
+
+  #index-container .survey-banner-beta {
+    margin-left: 0;
+    left: 0;
+    top: 0px
+  }
+  .logo-home {
+    margin-top: -11px;
+    background-size: 70px, 101px;
+    height: 68px;
+    padding-top: 0;
+    padding-left: 120px;
+  }
+
+  .banner-visible #index-container .nw-navbar .container {
+    margin-top: 80px
+  }
+
+  .survey-banner-beta .close {
+    border: 1px solid #fff;
+    background: #ccc;
+  }
+  .banner-visible .nw-navbar .container {
+    margin-top: 0;
+  }
+  #navigation .nav>li>a,
+  #navbartop .nav>li>a {
+    padding: 4px 9px;
+    font-size: 18px;
+    font-weight: 400;
+    display: block;
+    border-top: 1px solid #F3F3F3;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+  #survey-banner-section {
+    display: none !important;
+  }
+  #index-container .download {
+    text-align: center;
+  }
+  #index-container .example h2 {
+    font-size: 45px;
+
+  }
+  .index-features {
+    margin-top: 0!important;
+  }
+  .parallax #index-container .index-features p {
+    padding: 0 10px!important;
+  }
+  #index-container .twitter .twitter-card p {
+    padding: 0 10px!important;
+  }
+  .nightcloud-container .container {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .nightcloud-container .intro {
+    padding: 10px 0;
+  }
+  #index-container .nightcloud-container .intro p {
+    margin-top: 80px;
+    padding-top: 20px;
+  }
+  ul.features h3 {
+    font-size: 25px;
+    font-weight: 300;
+    text-align: left;
+  }
+  ul.features li p, .twitter .container p, .twitter .container form legend {
+    font-size: 15px;
+    line-height: normal;
+  }
+  .feature-icon {
+    width: 90px;
+    height: 120px;
+  }
+  .vertical-line {
+    display: none;
+  }
+  .features-container .col-md-2 {
+    display: none;
+  }
+  ul.features li {
+    padding-left: 100px;
+    text-align: left;
+    background-repeat: no-repeat;
+    background-size: 94px;
+    background-position: 0 36px;
+  }
+  ul.features li.syntax {
+    padding-top: 10px;
+    background-image: url(../images/features-illustration1.svg);
+  }
+  ul.features li.testrunner {
+    padding-top: 10px;
+    background-image: url(../images/features-illustration2.svg);
+  }
+  ul.features li.cloudtesting {
+    padding-top: 10px;
+    background-image: url(../images/features-illustration4.svg);
+  }
+  ul.features li.selenium {
+    padding-top: 10px;
+    background-image: url(../images/features-illustration3.svg);
+  }
+  ul.features li.selectors {
+    padding-top: 10px;
+    background-image: url(../images/features-illustration5.svg);
+  }
+  ul.features li.junit {
+    padding-top: 10px;
+    background-image: url(../images/features-illustration6.svg);
+  }
+  ul.features li.plugins {
+    padding-top: 10px;
+    background-image: url(../images/features-illustration7.svg);
+  }
+  .feature-icon.syntax {
+    margin-top: 30px;
+  }
+
+  #index-container .example p {
+    padding: 0;
+  }
+  .row.overview {
+    padding: 0;
+  }
+  .jumbotron > .container .col-lg-5 {
+    display: none;
+  }
+
+  .jumbotron > .container .col-md-7 span {
+    font-size: 78px;
+    margin-top: 20px;
+  }
+  #top-section {
+    margin-top: 20px;
+  }
+  #index-container .btn-github,
+  #index-container .btn-download {
+    margin: 10px 10px 0 0
+  }
+  .jumbotron .container-carbon {
+    margin-left: auto;
+    margin-top: 20px;
+    background: #222;
+    margin-right: auto;
+    padding-right: 10px;
+  }
+  .secondary .jumbotron {
+    height:auto;
+  }
+  #blog-container.article {
+    margin-top: -280px;
+  }
+  #top-section h1,
+  .secondary .jumbotron h1 {
+    background-image: none;
+    padding-left: 0;
+    padding-top: 0;
+    font-size: 42px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .jumbotron .row {
+    margin-top: 0;
+  }
+  #top-section .houses-right h1 {
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: normal;
+    height: auto;
+  }
+  #top-section h1 + p {
+    line-height: normal;
+    text-align: center;
+    font-size: 24px;
+    padding-top: 10px;
+  }
+  #navbar {
+    position: relative;
+    z-index: 100;
+  }
+  .navbar-brand {
+    display: block;
+    /* margin: 0 auto; */
+  }
+  .navbar-dark .navbar-toggler {
+    margin: 0 15px;
+    order: 1;
+  }
+  body.navbar-visible .bs-sidebar {
+    height: auto;
+    position: static;
+    max-height: none!important;
+  }
+  .bs-sidebar .nav .active .nav {
+    display: block;
+    position: relative;
+  }
+  #navbartop {
+    position: absolute;
+    top: 58px;
+    background: rgb(34, 34, 34);
+    width: 95%;
+    padding: 10px 18px;
+    border-bottom: 1px solid rgb(85, 85, 85);
+    border-top: 1px solid rgb(85, 85, 85);
+  }
+
+  @media only screen and (max-width: 992px) {
+    #navbartop {
+      top: 103px;
+      background: rgb(0, 0, 0);
+      left: 0;
+      width: 100%;
+      padding: 0;
+    }
+}
+
+  .navbar-nav.navbar-right li.nav-item:first-child {
+    display: none;
+  }
+  .docs-section .page-header:first-child {
+    margin-top: 0;
+    padding-top: 20px;
+    font-size: 40px;
+  }
+  .docs-section .page-header:first-child h2 {
+    padding-top: 0;
+    margin-top: 0;
+  }
+  footer .footer-content {
+    padding-top: 0;
+  }
+  footer a.logo-home {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    background-size: contain;
+    height: 120px;
+    width: 120px;
+  }
+  footer .footer-text {
+    float: none;
+    width: auto;
+  }
+  footer .col-md-2 {
+    padding-top: 10px;
+  }
+  [data-uri^="/api/$method"] body.navbar-visible .bs-sidebar,
+  [data-uri^="/api/commands"] body.navbar-visible .bs-sidebar {
+    height: auto;
+  }
+
+  .jumbotron .col-md-4 {
+    padding-left: 0;
+  }
+  .navbar-nav .dropdown-menu {
+    position: absolute;
+    float: none;
+    right: 10px;
+    left: 100px;
+    top: 63px;
+  }
+  header .navbar-right .nav-item.dropdown {
+    text-align: right;
+    position: static;
+  }
+  header .navbar-right .nav-item:nth-child(2) {
+    display: none;
+  }
+
+}
+
+/* iPhone 6, 7, & 8 in portrait */
+@media screen and (max-width: 768px) {
+  .jumbotron .container-carbon {
+    margin-left: 0;
+    width: auto;
+  }
+
+}

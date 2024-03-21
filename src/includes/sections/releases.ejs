@@ -1,0 +1,17 @@
+<div class="docs-section releases">
+    <div class="page-header">
+        <h1>Release notes</h1>
+    </div>
+    <div class="list-group">
+        <% releases.forEach(function(release) { %>
+            <div class="d-flex justify-content-between">
+                <h3 id="<%- release['name'] %>" class="mb-1"><a name="<%- release['name'] %>" href="<%- release['html_url'] %>"><%- release['name'] %></a></h3>
+                <em><%- release['timeAgo'] %></em>
+            </div>
+            <div class="list-group-item">
+                <p class="mb-1"><%- release['body'].replace(/<h3 (.+)>(.+)<\/h3>/g, "<h4 $1>$2</h4>") %></p>
+            </div>
+        <% }); %>
+    </div>
+    <h5 class="list-group-item list-group-item-action all-releases"><a href="https://github.com/nightwatchjs/nightwatch/releases" target="_blank">All releases</a></h5>
+</div>

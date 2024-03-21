@@ -1,0 +1,92 @@
+<%
+const {getReleases} = await _import('../../js/app-node.js');
+
+const pageContent = page.url === "/guide/overview/whats-new.html"
+        ? await include("sections/releases", {releases: await getReleases(appSettings)})
+        : page.content;
+
+const defaultPageHeaders = {
+    'overview': 'Nightwatch Overview',
+    'quickstarts': 'Quickstarts',
+    'ci-integrations': 'CI Integrations',
+    'nightwatch-cli': 'Nightwatch CLI Runner',
+    'reference': 'Configuration Reference',
+    'concepts': 'Concepts',
+    'browser-drivers': 'Browser Drivers',
+    'contributing': 'Contributing',
+    'how-to-guides': 'How-to Guides',
+    'writing-tests': 'Writing Tests',
+    'running-tests': 'Running Tests',
+    'debugging-tests': 'Debugging Tests',
+    'mobile-web-testing': 'Mobile Web Testing',
+    'network-requests': 'Network Requests',
+    'configuration': 'Configuration',
+    'using-nightwatch': 'Using Nightwatch',
+    'mobile-app-testing': 'Mobile App Testing',
+    'third-party-test-runners': 'Configuration',
+    'using-page-objects': 'Using Page Objects',
+    'component-testing': 'Component Testing',
+    'reporters': 'Using Reporters',
+    'extending-nightwatch': 'Extending Nightwatch',
+    'migrating-to-nightwatch': 'Migrating to Nightwatch',
+    'resources': 'Reference'
+};
+
+const data = {
+    version: appSettings.version,
+    baseUrl: appSettings.baseUrl,
+    section: 'guide',
+    pageContent,
+    pageTitle: `${page.title || defaultPageHeaders[page.url.split('/')[2]]} | Developer Guide | Nightwatch.js`,
+    pageDescription: page.description || 'In depth guides on how to use Nightwatch to write and execute tests.',
+    pageImage: page.image || '/img/banners/nightwatch.jpg'
+};
+
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("fonts", data) %>
+    <%- include("header", data) %>
+    <link rel="canonical" href="<%- data.baseUrl + page.url %>"/>
+</head>
+
+<body>
+
+<%- include('navbar', data) %>
+
+<section id="guide-container" class="secondary background">
+    <div class="doc-container full-width top-border background">
+        <div class="clearfix">
+            <div class="row flex-xl-nowrap no-gutters">
+                <div class="col-md-3 col-xl-2 doc-sidebar bs-sidebar hidden-print" role="complementary">
+                    <%- guideSidebar() %>
+                </div>
+
+                <div class="col-md-9 col-xl-9 doc-main-body" role="main">
+                    <div class="docs-section" data-page-uri="<%- page.url %>">
+                        <div class="page-content"><%- pageContent %></div>
+                    </div>
+                </div>
+
+                <div class="d-none d-xl-block col-xl-2 doc-sideNav right-side-nav">
+                    <%- rightSidebarContent({}) %>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="index-container"></section>
+<section id="apimethod-container" class="secondary"></section>
+<section id="api-container" class="secondary"></section>
+<section id="about-container" class="secondary"></section>
+<section id="releases-container" class="secondary"></section>
+<section id="blog-container" class="secondary"></section>
+
+<%- include("footer", data) %>
+<%- include("scripts") %>
+</body>
+</html>

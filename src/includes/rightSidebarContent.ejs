@@ -1,0 +1,23 @@
+<%
+const pageContent = page.content || '';
+const content = [...pageContent.matchAll(/<h3[^>]*id="([^"]+)".*?>(?:<a[^>]*>([^<]+)<\/a>|([^<]+))<\/h3>/g)]
+                .map(([_, id, titleWithLink, titleWithoutLink]) => ({
+                    id,
+                    title: titleWithLink ? titleWithLink : titleWithoutLink
+                }));
+%>
+
+<div class="wrapper">
+    <h5>On this page</h5>
+    <nav class="main-side-nav">
+        <% content.forEach(({ id, title }) => { %>
+            <a href="#<%= id %>" class="nav-link"><%= title %></a>
+        <% }) %>
+    </nav>
+    <h5>Contribute</h5>
+    <a href="<%= `${appSettings.docsRepoUrl}${appSettings.docsRepoBranch}${page.url.replace('html', 'md')}` %>" target="_blank" class="contribute nav-link">Edit this page</a>
+    <h5>Community</h5>
+    <a href="https://discord.com/invite/SN8Da2X" target="_blank" class="nav-link">Join us on Discord</a>
+    <a href="https://nightwatchjs.org/blog/" class="nav-link">Read our blog</a>
+    <a href="https://github.com/nightwatchjs/nightwatch-docs" target="_blank" class="nav-link">Nightwatch Docs on Github</a>
+</div>

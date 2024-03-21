@@ -1,0 +1,180 @@
+@media screen and (min-width: 678px) and (max-width: 1007px) {
+    .main-heading h1
+    .subtitle1 {
+        text-align: center;
+    }
+    .hero-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .hero-section {
+        padding: 40px 20px;
+    }
+    .hero-left {
+        align-items: center;
+        width: 100%;
+    }
+    .hero-right {
+        width: 100%;
+    }
+    .brand-message {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+    }
+    .features-section {
+        padding: 40px 28px;
+    }
+    h4 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .features {
+        width: 45%;
+    }
+    .community-members {
+        gap: 20px;
+        justify-content: space-between;
+    }
+    .footerlinks {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-links-left {
+        width: 100%;
+        gap: 20px;
+    } 
+    .footer-links-right {
+        width: 70%;    
+    }
+    /* .email-section {
+        width: 60%;
+        flex-direction: column;
+    } */
+    .footer-content {
+        gap: 40px;
+    }
+    .capabilities-section {
+        display: none;
+    }
+    .capabilities-section-tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 40px 28px;
+        padding-bottom: 80px;
+        gap: 40px;
+        width: 100%;
+        background: #F9F9F9;
+    }
+    .features-section {
+        display: none;
+    }
+    .footer-section {
+        padding: 40px 28px;
+    }
+    .features-section-tablet {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 28px;
+        padding-bottom : 80px;
+        gap: 40px;
+        background: #FFFFFF;
+    }
+    .ready-section{
+        padding: 40px 28px;
+    }
+    .features-section-tablet .carousel-item {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 40px;
+
+    }
+    .capabilities-section {
+        padding: 40px 28px;
+    }
+    .capabilities-content .carousel-item{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 20px;
+    }
+    .capabilities {
+        width: 45%;
+    }
+    .action {
+        width: 75%;
+    }
+    .nav-links {
+        display: none;
+    }
+    .navigation-content {
+        flex-direction: column;
+    }
+    .integrations-section {
+        padding: 40px 28px;
+        padding-bottom: 80px;
+    }
+    .integrations-content {
+        gap: 40px;
+    }
+    .integrations-content #myTabContent {
+        width: 100%;
+    }
+    .integrations-content img {
+        max-width: none;
+    }
+    .navigation-links {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .nav-links-left {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    .action1 {
+        align-items: center;
+    }
+    .nav-links-right{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+    button[role="button"] {
+        width: 100px;
+    }
+    .integration-frameworks-content {
+        display: flex !important;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%;
+    }
+    .integration-frameworks-content .slick-track {
+        display: flex !important;
+        flex-direction: row !important;
+    }
+    .verticle-line1 {
+        display: none;
+    }
+    .carousel-control-prev-icon {
+        margin-right: 10vw;
+    }
+    .carousel-control-next-icon {
+        margin-left: 10vw;
+    }
+    body.navbar-visible .bs-sidebar {
+        position: unset !important;
+        height: auto !important;
+    }
+    
+}

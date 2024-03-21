@@ -1,0 +1,427 @@
+<%
+const data = {
+    version: appSettings.version,
+    baseUrl: appSettings.baseUrl,
+    section: 'guide',
+    pageTitle: `Comparison with leading frameworks | Developer Guide | Nightwatch.js`,
+    pageDescription: 'Learn how Nightwatch does against leading testing frameworks.',
+    pageImage: '/img/banners/nightwatch.jpg'
+};
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("header", data) %>
+    <link rel="stylesheet" href="/css/comparison-with-leading-frameworks.css">
+    <link rel="canonical" href="<%- data.baseUrl + page.url %>"/>
+</head>
+
+<body>
+<%- include("navbar", data) %>
+
+<section id="guide-container" class="secondary background">
+  <div class="page-header">
+    <h2>Comparison with leading frameworks</h2>
+  </div>
+
+  <table class="comparison-table">
+    <thead>
+      <tr>
+        <th></th>
+        <th>
+          <img src="https://expr.nightwatchjs.org/images/symbol-nightwatch.svg" class="nightwatch-logo" alt="Nightwatch Logo" />
+          Nightwatch
+        </th>
+        <th><img src="https://www.cypress.io/_astro/navbar-brand._O9_em9E.svg" class="cypress-logo" alt="Cypress Logo" /></th>
+        <th>
+          <img src="https://playwright.dev/img/playwright-logo.svg" class="playwright-logo" alt="Playwright Logo" />
+          Playwright
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="4" class="comp-section">Overview</td>
+      </tr>
+      <tr>
+        <td><b>Architecture</b></td>
+        <td>Uses HTTP protocol. Webdriver BiDi will become event-driven.</td>
+        <td>Cypress is executed in same run loop as your app. Has a node server process that syncs everything.</td>
+        <td>Playwright uses an event driven architecture. Uses browser debugger APIs.</td>
+      </tr>
+      <!-- <tr>
+        <td>
+          <b>Performance</b><br>
+          <p>200 tests on 2 core 5 VMs using Github Actions<br><a href="https://github.com/nightwatchjs/performance_benchmarking">Try it</a></p>
+        </td>
+        <td class="nw-perf"><div>~ 131s total<br>~ 94.6s for tests</div></td>
+        <td class="cypress-perf"><div>~ 210s total<br>~ 157s for tests</div></td>
+        <td class="playwright-perf"><div><br>~ 68s for tests</div></td>
+      </tr> -->
+      <tr>
+        <td>
+          <b>Web standards</b><br>
+          <p>Uses W3C compliant web drivers to communicate with browsers</p>
+        </td>
+        <td><span class="comp-yes">✅</span></td>
+        <td>❌</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td>
+          <b>Languages</b>
+        </td>
+        <td>Javascript, Typescript</td>
+        <td>Javascript, Typescript</td>
+        <td>Javascript, Typescript, Java, Python, .NET</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="comp-section">Support for desktop web, mobile web & mobile apps</td>
+      </tr>
+      <tr>
+        <td><b>Real Browsers & Browser Engines</b></td>
+        <td>
+          <div>
+            <img src="/img/logos/1200px-Google_Chrome_icon.svg.png" alt="Google Chrome" class="browser-ico">
+            Chrome
+          </div>
+          <div>
+            <img src="/img/logos/Firefox_Logo_2017.png" alt="Google Chrome" class="browser-ico">
+            Firefox
+          </div>
+          <div>
+            <img src="/img/logos/Microsoft_Edge_logo.svg.png" alt="Google Chrome" class="browser-ico">
+            Edge
+          </div>
+          <div>
+            <img src="/img/logos/safari_icon_large_2x.png" alt="Google Chrome" class="browser-ico">
+            Safari
+          </div>
+        </td>
+        <td>
+          <div>
+            <img src="/img/logos/1200px-Google_Chrome_icon.svg.png" alt="Google Chrome" class="browser-ico">
+            Chrome
+          </div>
+          <div>
+            <img src="/img/logos/Firefox_Logo_2017.png" alt="Google Chrome" class="browser-ico">
+            Firefox
+          </div>
+          <div>
+            <img src="/img/logos/Microsoft_Edge_logo.svg.png" alt="Google Chrome" class="browser-ico">
+            Edge
+          </div>
+          <div>
+            <img src="/img/logos/WebKit_logo_(2015)_2.png" alt="Google Chrome" class="browser-ico">
+            Webkit Engine (Safari)
+          </div>
+        </td>
+        <td>
+          <div>
+            <img src="/img/logos/1200px-Google_Chrome_icon.svg.png" alt="Google Chrome" class="browser-ico">
+            Chrome
+          </div>
+          <div>
+            <img src="/img/logos/Firefox_Logo_2017.png" alt="Google Chrome" class="browser-ico">
+            Firefox
+          </div>
+          <div>
+            <img src="/img/logos/Microsoft_Edge_logo.svg.png" alt="Google Chrome" class="browser-ico">
+            Edge
+          </div>
+          <div>
+            <img src="/img/logos/WebKit_logo_(2015)_2.png" alt="Google Chrome" class="browser-ico">
+            Webkit Engine (Safari)
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Mobile web</td>
+        <td>
+          <span class="comp-yes">✅</span> <br>
+          <p>Mobile web is just as easy to setup and supports everything from Desktop web.
+            <br><a href="https://nightwatchjs.org/guide/mobile-app-testing/introduction.html">Get Started</a>
+          </p>
+        </td>
+        <td>❌</td>
+        <td>⚠️ Android (experimental) <br>❌ iOS</td>
+      </tr>
+      <tr>
+        <td>Mobile apps</td>
+        <td><span class="comp-yes">✅</span></td>
+        <td>❌</td>
+        <td>❌</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="comp-section">Writing tests</td>
+      </tr>
+      <tr>
+        <td><b>Auto-waits and Auto-retries</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td><b>Low/No-Code Recorder</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td><b>Inspector</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="comp-section">Test Execution</td>
+      </tr>
+      <tr>
+        <td>
+          <b>Parallelism</b>
+          <p>on a single machine<br>using CPU cores</p>
+        </td>
+        <td>
+          <span class="comp-yes">✅</span> <br>
+          Single & Multiple browsers
+        </td>
+        <td>❌</td>
+        <td>
+          <span class="comp-yes">✅</span> <br>
+          Single & Multiple browsers
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>Parallelism</b>
+          <p>on CI machine</p>
+        </td>
+        <td><span class="comp-yes">✅</span></td>
+        <td>⚠️ Behind Paywall</td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="comp-section">Reporting & Debugging</td>
+      </tr>
+      <tr>
+        <td><b>In-built reporter</b><br>
+          <p>Users can view step by step execution of tests with error messages and DOM snapshots at each step</p>
+        </td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td><b>Screenshots</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td><b>DOM History</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="comp-section">Integerations</td>
+      </tr>
+      <tr>
+        <td><b>VS Code extension</b></td>
+        <td><span class="comp-yes">✅</span> <a href="https://marketplace.visualstudio.com/items?itemName=browserstackcom.nightwatch">Try now</a></td>
+        <td>❌</td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td><b>Test Runners</b></td>
+        <td>
+          <a href="https://nightwatchjs.org/guide/writing-tests/using-mocha.html#using-mocha-as-a-test-runner">Mocha</a>,
+          <a
+            href="https://nightwatchjs.org/guide/writing-tests/using-cucumberjs.html#using-cucumberjs-with-nightwatch">Cucumber</a>,
+          <a href="https://nightwatchjs.org/guide/third-party-test-runners/ava.html">Ava</a>, <a
+            href="https://nightwatchjs.org/guide/third-party-test-runners/jest.html">Jest</a>
+        </td>
+        <td>Cypress App</td>
+        <td>
+          Java - JUnit
+          <br>
+          .NET - NUnit, MSTest, xUnit support
+        </td>
+      </tr>
+      <tr>
+        <td><b>Reporters</b></td>
+        <td>
+          <ul>
+            <li>JUnit</li>
+            <li>Mocha</li>
+            <li>Allure</li>
+            <li>HTML</li>
+            <li>JSON</li>
+            <li>Team City</li>
+            <li>Slack</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>JUnit</li>
+            <li>Mocha</li>
+            <li>Team City</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>JUnit</li>
+            <li>In built - List / Line / Dot / JSON</li>
+            <li>Team City</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><b>Continuous Integration</b></td>
+        <td>
+          <ul>
+            <li>Github Actions</li>
+            <li>Circle CI</li>
+            <li>GitLab CI</li>
+            <li>Bamboo</li>
+            <li>Azure Pipelines</li>
+            <li>Jenkins</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>GitHub Actions</li>
+            <li>Circle CI</li>
+            <li>GitLab CI</li>
+            <li>Bitbucket Pipelines</li>
+            <li>AWS CodeBuild</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>GitHub Actions</li>
+            <li>Circle CI</li>
+            <li>GitLab CI</li>
+            <li>Docker</li>
+            <li>Bitbucket Pipelines</li>
+            <li>Azure Pipelines</li>
+            <li>Jenkins</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><b>Cloud Test Providers</b></td>
+        <td>
+          <ul>
+            <li>BrowserStack</li>
+            <li>Sauce Labs</li>
+            <li>Lambda Test</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>BrowserStack</li>
+            <li>Sauce Labs</li>
+            <li>Lambda Test</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>BrowserStack</li>
+            <li>Sauce Labs</li>
+            <li>Lambda Test</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="4" class="comp-section">Support for different testing types</td>
+      </tr>
+      <tr>
+        <td><b>API testing</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td><b>A11y testing</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td><b>Component testing</b></td>
+        <td>
+          <ul>
+            <li><a href="https://nightwatchjs.org/blog/test-your-react-components-with-nightwatch-and-testing-library/">React</a></li>
+            <li>Angular</li>
+            <li>Vue</li>
+            <li><a href="https://nightwatchjs.org/blog/component-driven-development-with-storybook-and-nightwatch/">Storybook</a></li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>React</li>
+            <li>Angular</li>
+            <li>Vue</li>
+            <li>Svelte</li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>React</li>
+            <li>Solid</li>
+            <li>Vue</li>
+            <li>Svelt</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td><b>VRT</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="comp-section">Other Feautes</td>
+      </tr>
+      <tr>
+        <td><b>Support for test doubles</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td><b>Multi domain testing</b></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td>
+          <b>Running AUT before testing</b>
+          <p>Users can start the AUT on specific ports before testing is started</p>
+        </td>
+        <td>❌</td>
+        <td>❌</td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+      <tr>
+        <td><b>Data persistence across tests</b></td>
+        <td><span class="comp-yes">✅</span> <a href="https://nightwatchjs.org/guide/concepts/test-globals.html">Guide</a></td>
+        <td><span class="comp-yes">✅</span></td>
+        <td><span class="comp-yes">✅</span></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+<script>
+  window.addEventListener("load", (e) => {
+    document.documentElement.scrollIntoView({ behavior: "instant" })
+  })
+</script>
+
+<%- include("footer", data) %>
+<%- include("scripts") %>
+</body>
+</html>

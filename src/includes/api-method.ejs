@@ -1,0 +1,149 @@
+<% if (method) { %>
+    <div class="page-header">
+        <% if (method.api === 'expect.element') { %>
+            <h1 id="<%= method.name %>">expect.element().<%= `${method.name + (['css', 'property', 'text', 'a'].includes(method.name) ? '()' : '')}` %> <a title="Suggest edits" target="_blank" class="edit-source" href="<%= editLink %>">Suggest edits</a></h1>
+        <% } else { %>
+            <h1 id="<%= method.name %>"><%= `.${method.name}()` %> <a title="Suggest edits" target="_blank" class="edit-source" href="<%= editLink %>">Suggest edits</a></h1>
+        <% } %>
+
+
+        <% if (method.since) { %>
+            <span class="since">Since: <%= method.since %></span>
+        <% } %>
+    </div>
+
+    <%- method.description %>
+
+    <% if (method.api === 'https://nightwatchjs.org/guide/cdp') { %>
+        <p class="alert alert-warning"><code><%- method.name %>()</code> is only available when using Chrome or Edge drivers.</p>
+    <% } %>
+
+    <% if (method.api === 'protocol.elementinteraction' || method.api === 'protocol.elementstate' || method.api === 'protocol.elementlocation') { %>
+        <p class="alert alert-info">The command <code><%- method.name %>()</code> will automatically wait for the element to be present (until the specified timeout). If the element is not found, an error is thrown which will cause the test to fail. You can suppress element not found errors by specifying the <code>selector</code> argument as an object and passing the <code>suppressNotFoundErrors = true</code> option.</p>
+    <% } %>
+
+    <% if (method.api === 'protocol.elements' || method.api === 'protocol.elementstate' || method.api === 'protocol.elementinteraction' || method.api === 'protocol.waitforelements') { %>
+        For more info on working with DOM elements in Nightwatch, refer to the <a href="https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html">Finding & interacting with DOM Elements</a> guide page.
+    <% } %>
+
+    <% if (method.internal) { %>
+        <p class="alert alert-warning">Please note that this command operates on a protocol level and accepts the <a href="https://www.w3.org/TR/webdriver1/#dfn-web-elements">Web Element ID</a> as the parameter. To retrieve it, use either the <code>.findElement()</code> or <code>.findElements()</code> command. Read more on <a href="https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html">Element retrieval</a>.</p>
+    <% } %>
+
+    <% if (method.jsonwire) { %>
+        <p class="alert alert-warning">This command has been deprecated and is not available when using <a href="https://www.w3.org/TR/webdriver1/">W3C Webdriver</a> clients (such as GeckoDriver). It's only available when using the Selenium <a href="https://github.com/SeleniumHQ/selenium/wiki/JsonWireProtocol" target="_blank">JSONWire Protocol</a>.</p>
+    <% } %>
+
+    <% if (method.syntax) { %>
+        <h3>Usage</h3>
+
+        <% method.syntax.forEach(syntax => { %>
+            <div class="sample-test">
+                <pre class="language-javascript" style="padding-top: 10px; margin-bottom: 10px">
+                    <code class="language-javascript"><%- syntax.replace(', callback', ', [callback]') %></code>
+                </pre>
+            </div>
+        <% }); %>
+    <% } %>
+
+    <% if (!method.exampleLink) { %>
+        <% if (method.example.length || method.tsexample.length) { %>
+            <h3>Example</h3>
+            <div class="sample-test">
+            <% if (method.example.length) { %>
+                <% for (let example of method.example) { %>
+                    <pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript"><%= example %></code></pre>
+                <% } %>
+            <% } %>
+
+            <% if (method.tsexample.length) { %>
+                <% for (let example of method.tsexample) { %>
+                    <pre class="line-numbers language-typescript" data-language="typescript"><code class="language-typescript"><%= example %></code></pre>
+                <% } %>
+            <% } %>
+            </div>
+        <% } %>
+    <% } %>
+
+    <% if (method.exampleLink) { %>
+        <h3>Example <a style="font-size: 18px; float: right" target="_blank" href="https://nightwatchjs.org/__examples/<%- method.name %>.html"><button style="line-height: 30px">Open in New Window</button></a></h3>
+        <div style="width: 100%; max-width: none; min-height: 550px" class="sample-test"><div id="embed-stackblitz"></div></div>
+        <script src="/__examples/<%- method.name %>.js"></script>
+
+
+        Or run locally with:
+
+        <div class="sample-test" style="max-width: none">
+        <pre class="hide-indicator language-bash"><code class="language-bash">git clone https://github.com/nightwatchjs/nightwatch-examples.git
+cd nightwatch-examples
+npm install
+npx nightwatch <%- method.exampleLink %></code></pre>
+        </div>
+
+        <a target="_blank" href="https://github.com/nightwatchjs/nightwatch-examples"><button>View on Github</button></a>
+    <% } %>
+
+    <% if (method.parameters.length) { %>
+    <h3>Parameters</h3>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th style="width: 100px;">Name</th>
+                <th style="width: 100px;">Type</th>
+                <th>description</th>
+            </tr>
+            </thead>
+            <tbody>
+            <% method.parameters.forEach((param) => { %>
+                <tr>
+                    <td><code><%= param.name %></code><% if (param.optional) { %><br><span class="optional">Optional</span><% } %></td>
+                    <td><%= param.types %></td>
+                    <td><%- param.description %></td>
+                </tr>
+            <% }); %>
+            </tbody>
+        </table>
+    </div>
+    <% } %>
+
+    <% if (method.returns) { %>
+        <h3>Returns</h3>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th style="width: 200px;">Type</th>
+                    <th>description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><%= method.returns.type %></td>
+                    <td><%- method.returns.description %></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    <% } %>
+
+    <% if (method.see && method.see.length > 0) { %>
+        <h3>See also</h3>
+        <ul class="api-related-links">
+            <% for (let link of method.see) { %>
+                <% if (link.startsWith('http')) { %>
+                    <li><code><a href="<%- link %>"><%= link %></a></code></li>
+                <% } else { %>
+                    <li><code><a href="<%- appSettings.baseUrl.replace(/\/$/, '') -%>/api/<%- link.split('.').join('/') %>.html"><%= link %></a></code></li>
+                <% } %>
+            <% } %>
+        </ul>
+    <% } %>
+
+    <% if (method.link) { %>
+        <h3>W3C WebDriver spec</h3>
+        <ul>
+            <li><code><a href="<%= method.link %>" target="_blank"><%- method.link %></a></code></li>
+        </ul>
+    <% } %>
+<% } %>
