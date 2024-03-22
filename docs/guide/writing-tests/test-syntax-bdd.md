@@ -267,9 +267,9 @@ We've put together a complete [Github template repo](https://github.com/nightwat
 </div>
 
 ### Recommended content
-- [Exports test syntax](https://nightwatchjs.org/guide/writing-tests/test-syntax-exports.html)
-- [Using async/await](https://nightwatchjs.org/guide/writing-tests/using-es-6-async-await.html)
-- [Finding & interacting with DOM Elements](https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html)
+- [Exports test syntax](/guide/writing-tests/test-syntax-exports.html)
+- [Using async/await](/guide/writing-tests/using-es-6-async-await.html)
+- [Finding & interacting with DOM Elements](/guide/writing-tests/finding-interacting-with-dom-elements.html)
 
 [1]:    https://www.ecosia.org/
 

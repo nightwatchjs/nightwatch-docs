@@ -13,13 +13,13 @@ So to specifically use Jest and Nightwatch functionalities simultaneously, Night
 
 ### API
 #### global.browser
-The Nightwatch [browser API](https://nightwatchjs.org/api/#the-browser-object) object. Unavailable when ***autoStartSession*** is off.
+The Nightwatch [browser API](/api/#the-browser-object) object. Unavailable when ***autoStartSession*** is off.
 
 #### global.jestNightwatch
-The Jest environment used the Nightwatch [programmatic API](https://nightwatchjs.org/api/programmatic/) to create the Nightwatch instance and export the browser API.
+The Jest environment used the Nightwatch [programmatic API](/api/programmatic/) to create the Nightwatch instance and export the browser API.
 
 Available properties/methods:
-- `.element(<locator>)` - use the Nightwatch [.element() API](https://nightwatchjs.org/api/element/) to locate elements in the page;
+- `.element(<locator>)` - use the Nightwatch [.element() API](/api/element/) to locate elements in the page;
 
 - `.updateCapabilities({ capabilities })` - used when ***autoStartSession*** is off in order to update the capabilities at run-time;
 
@@ -31,7 +31,7 @@ Available properties/methods:
 
 ### Configuration with Example
 #### Step 0: install Nightwatch
-Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
+Follow the [guide](/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
 
 #### Step 1: Install Jest
 <div class="sample-test"><pre><code class="language-bash">npm i jest --save-dev</code></pre></div>
@@ -245,5 +245,5 @@ Consider the below example test :
 
 
 ### Related articles
-- [How-to guides > Write tests > Use Jest as a test runner](https://nightwatchjs.org/guide/third-party-test-runners/ava.html)
-- [How-to guides > Write tests > Use Mocha as a test runner](https://nightwatchjs.org/guide/writing-tests/using-mocha.html)
+- [How-to guides > Write tests > Use Jest as a test runner](/guide/third-party-test-runners/ava.html)
+- [How-to guides > Write tests > Use Mocha as a test runner](/guide/writing-tests/using-mocha.html)

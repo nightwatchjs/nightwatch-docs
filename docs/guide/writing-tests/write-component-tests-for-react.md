@@ -89,7 +89,7 @@ If you're not already using external globals with Nightwatch, go ahead and creat
 }
 </code></pre></div>
 
-Read more about [test globals](https://nightwatchjs.org/guide/concepts/test-globals.html).
+Read more about [test globals](/guide/concepts/test-globals.html).
 
 <div class="sample-test">
 <i>test/globals.js</i><pre class="line-numbers"><code class="language-javascript">const {setup} = require('@nightwatch/react');
@@ -131,7 +131,7 @@ Below is a basic test for the Form component. In this test we mount a component 
 </code></pre></div>
 
 ### Recommended content
-- [Concepts > Component testing](https://nightwatchjs.org/guide/concepts/component-testing.html)
+- [Concepts > Component testing](/guide/concepts/component-testing.html)
 - [Nightwatch React plugin on Github](https://github.com/nightwatchjs/nightwatch-plugin-react)
 - [Sample todo app built with React and Vite and using Nightwatch for end-to-end & component tests](https://github.com/nightwatchjs-community/todo-react)
 - [Blog > Introducing Component Testing in Nightwatch](https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/)

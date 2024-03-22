@@ -249,7 +249,7 @@ We can also assert on the incoming post data:
 });
 </code></pre></div>
 
-For waiting for incoming requests tests, you can use the [`waitUntil()`](https://nightwatchjs.org/api/waitUntil.html) command.
+For waiting for incoming requests tests, you can use the [`waitUntil()`](/api/waitUntil.html) command.
 
 Example using `waitUntil`:
 

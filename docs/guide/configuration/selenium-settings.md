@@ -146,8 +146,8 @@ The following **NPM** packages are assumed to be installed in the current projec
 
 ### Recommended content
 
-- [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
-- [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">

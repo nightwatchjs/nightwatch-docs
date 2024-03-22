@@ -43,19 +43,19 @@ module.exports = (async function() {
    // if this is not specified, the test source must be passed as the second argument to the test runner.
    src_folders: [],
    <br>
-   // See https://nightwatchjs.org/guide/working-with-page-objects/using-page-objects.html
+   // See /guide/working-with-page-objects/using-page-objects.html
    page_objects_path: ['node_modules/nightwatch/examples/pages/'],
    <br>
-   // See https://nightwatchjs.org/guide/extending-nightwatch/custom-commands.html
+   // See /guide/extending-nightwatch/custom-commands.html
    custom_commands_path: ['node_modules/nightwatch/examples/custom-commands/'],
    <br>
-   // See https://nightwatchjs.org/guide/extending-nightwatch/custom-assertions.html
+   // See /guide/extending-nightwatch/custom-assertions.html
    custom_assertions_path: '',
    <br>
-   // See https://nightwatchjs.org/guide/extending-nightwatch/plugin-api.html
+   // See /guide/extending-nightwatch/plugin-api.html
    plugins: [],
    <br>
-   // See https://nightwatchjs.org/guide/#external-globals
+   // See /guide/#external-globals
    globals_path : '',
    <br>
    webdriver: {},
@@ -102,8 +102,8 @@ module.exports = (async function() {
 [1]:    https://aws.amazon.com/device-farm/
 
 ### Recommended content
-- [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
-- [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">

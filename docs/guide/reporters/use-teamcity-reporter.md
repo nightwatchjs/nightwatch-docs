@@ -11,7 +11,7 @@ TeamCity formatter for ***Nightwatch.js*** end-to-end testing framework. Its out
 ### Example with Configuration
 
 #### Step 0: Install Nightwatch
-Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
+Follow the [guide](/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
 
 #### Step 1: Installing Nightwatch Teamcity Reporter
 Install [nightwatch-teamcity](https://www.npmjs.com/package/nightwatch-teamcity) as a dependency in your nightwatch project.
@@ -82,8 +82,8 @@ module.exports = {
 </div>
 
 Recommended content
-- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
-- [How-to guides > Use reporters > Add custom reporter](https://nightwatchjs.org/guide/reporters/create-custom-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
+- [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
 - [Nightwatch Teamcity on github](https://www.npmjs.com/package/nightwatch-teamcity)
 
 <div class="doc-pagination pt-40">

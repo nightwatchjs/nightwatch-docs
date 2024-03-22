@@ -55,8 +55,8 @@ Mochawesome reporter options can be defined in main Nightwatch config under the 
 </code></pre></div>
 
 ### Recommended content
-- [How-to guides > Use reporters > Junit-XML reporter](https://nightwatchjs.org/guide/reporters/use-junit-reporter.html)
-- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html) 
+- [How-to guides > Use reporters > Junit-XML reporter](/guide/reporters/use-junit-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html) 
 - [Mochawesome on Github](https://github.com/adamgruber/mochawesome)
 
 <div class="doc-pagination pt-40">

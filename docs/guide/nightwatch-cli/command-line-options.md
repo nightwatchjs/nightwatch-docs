@@ -215,9 +215,9 @@ write(results, options, done) {
 </div>
 
 ### Recommended content
-- [CLI Test Runner](https://nightwatchjs.org/guide/running-tests/using-the-cli-test-runner.html)
-- [Configuration](https://nightwatchjs.org/guide/reference/settings.html)
-- [Nightwatch release notes](https://nightwatchjs.org/guide/overview/whats-new.html)
+- [CLI Test Runner](/guide/running-tests/using-the-cli-test-runner.html)
+- [Configuration](/guide/reference/settings.html)
+- [Nightwatch release notes](/guide/overview/whats-new.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">

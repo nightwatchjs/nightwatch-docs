@@ -124,7 +124,7 @@ Assertions implement a simple interface which is shared between built-in asserti
 };</code></pre></div>
 
 ### Recommended content
-- [Define custom commands](https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-commands.html)
+- [Define custom commands](/guide/extending-nightwatch/adding-custom-commands.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">

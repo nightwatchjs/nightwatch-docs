@@ -270,8 +270,8 @@ module.exports = {
 }</code></pre></div>
 
 ### Recommended content
-- [Configuration](https://nightwatchjs.org/guide/reference/settings.html)
-- [CLI options](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html)
+- [Configuration](/guide/reference/settings.html)
+- [CLI options](/guide/nightwatch-cli/command-line-options.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">

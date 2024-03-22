@@ -6,7 +6,7 @@ description: Learn how to use the command-line test runner with Nightwatch
 <div class="page-header"><h1>Using the CLI test runner</h1></div>
 
 ### Usage
-Nightwatch includes a command-line test runner which makes it easy to run tests and generate useful output. Please refer to the [Installation](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html) section for details on how to get the runner installed. There are a few different options on how to use the test runner, depending on your installation type.
+Nightwatch includes a command-line test runner which makes it easy to run tests and generate useful output. Please refer to the [Installation](/guide/quickstarts/create-and-run-a-nightwatch-test.html) section for details on how to get the runner installed. There are a few different options on how to use the test runner, depending on your installation type.
 
 #### Global
 If you have installed Nightwatch globally (with `-g` option), the binary `nightwatch` will be available anywhere:
@@ -94,7 +94,7 @@ Info & help:
 </code></pre>
 
 ### Recommended content
-- [Reference > Command-line Options](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html)
+- [Reference > Command-line Options](/guide/nightwatch-cli/command-line-options.html)
 
 
 <div class="doc-pagination pt-40">

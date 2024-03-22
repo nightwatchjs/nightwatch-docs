@@ -51,7 +51,7 @@ We have tried to ensure that there are no breaking changes while upgrading to v3
 
 #### Release notes
 Please refer to the release notes section for information about the latest changes.
-[Releases Notes](https://nightwatchjs.org/guide/overview/whats-new.html).
+[Releases Notes](/guide/overview/whats-new.html).
 
 ### Key highlights from Nightwatch v2
 <br>
@@ -103,7 +103,7 @@ Nightwatch v3 packages the [aXe-core][16] package developed by [Deque Systems][1
 Relive the test as it happened by enabling DOM history. When this functionaity is enabled, DOM snapshots are captured after every test and displayed in the HTML report for better debugging.
 
 ## Recommended content
-- [Nightwatch release notes](https://nightwatchjs.org/guide/overview/whats-new.html)
+- [Nightwatch release notes](/guide/overview/whats-new.html)
 
 [1]:    /guide/writing-tests/nightwatch-inspector.html
 [2]:    /guide/component-testing/testing-angular-components.html

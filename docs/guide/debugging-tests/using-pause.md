@@ -7,7 +7,7 @@ description: Learn how to pause your test at specific points to debug the test
 
 ### Overview
 
-The [`.pause()`](https://nightwatchjs.org/api/pause.html) command allows users to pause their test execution, either for a fixed amount of time (by passing the duration in milliseconds as an argument) or for an unrestricted amount of time with an option to resume anytime.
+The [`.pause()`](/api/pause.html) command allows users to pause their test execution, either for a fixed amount of time (by passing the duration in milliseconds as an argument) or for an unrestricted amount of time with an option to resume anytime.
 
 To suspend the text execution for a limited amount of time (e.g. 300ms), write:
 
@@ -55,8 +55,8 @@ While using the `pause()` command without any argument, the following operations
 <img width="1440" alt=".pause() command" src="https://user-images.githubusercontent.com/39924567/180314913-6f39a572-69a4-4593-b33c-dc2015395fd9.png">
 
 ### Recommended content
-- [API docs > `.pause()`](https://nightwatchjs.org/api/pause.html)
-- [API docs > `.debug()`](https://nightwatchjs.org/api/debug.html)
+- [API docs > `.pause()`](/api/pause.html)
+- [API docs > `.debug()`](/api/debug.html)
 
 
  <div class="doc-pagination pt-40">

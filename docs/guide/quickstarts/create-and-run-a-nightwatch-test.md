@@ -215,7 +215,7 @@ Now that you have installed Nightwatch
 [11]:   https://www.oracle.com/technetwork/java/javase/downloads/index.html
 [12]:   https://www.npmjs.com/package/selenium-server
 [13]:   https://github.com/SeleniumHQ/selenium/releases
-[15]:   https://nightwatchjs.org/guide/third-party-runners/using-mocha.html
+[15]:   /guide/third-party-runners/using-mocha.html
 [16]:   https://nightwatchjs.org/blog/running-cucumber-tests-with-nightwatch/
 [17]:   https://github.com/nightwatchjs/nightwatch/releases/tag/v1.6.0
 [18]:   /guide/writing-tests/introduction.html

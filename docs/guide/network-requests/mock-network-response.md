@@ -77,7 +77,7 @@ All you need to do is call the `browser.mockNetworkResponse()` command with the 
 
 ### Recommended content
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
-- [Capture network requests](https://nightwatchjs.org/guide/network-requests/capture-network-calls.html)
+- [Capture network requests](/guide/network-requests/capture-network-calls.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">

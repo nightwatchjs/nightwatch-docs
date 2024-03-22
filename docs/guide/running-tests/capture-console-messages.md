@@ -82,7 +82,7 @@ No assertions ran.
 ```
 
 ### Recommended content
-- [Capture Browser JS Exceptions](https://nightwatchjs.org/guide/running-tests/catch-js-exceptions.html)
+- [Capture Browser JS Exceptions](/guide/running-tests/catch-js-exceptions.html)
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
 
  <div class="doc-pagination pt-40">

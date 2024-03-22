@@ -192,7 +192,7 @@ If you are trying to set this up for an existing project, you will have to add t
         ...,
         remote: {
             // Info on all the available options with "selenium":
-            // https://nightwatchjs.org/guide/configuration/settings.html#selenium-server-settings
+            // /guide/configuration/settings.html#selenium-server-settings
             selenium: {
                 start_process: false,
                 server_path: '',

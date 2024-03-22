@@ -54,7 +54,7 @@ If you mostly are using XPath expressions and you want to avoid configuring the 
 </code></pre></div>
 
 [10]:   /gettingstarted/configuration/#extended-settings
-[11]:   https://nightwatchjs.org/guide/working-with-page-objects/#element-properties
+[11]:   /guide/working-with-page-objects/#element-properties
 
  <div class="doc-pagination pt-40">
   <div class="previous">

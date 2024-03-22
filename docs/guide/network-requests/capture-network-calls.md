@@ -98,7 +98,7 @@ Request headers: {
 
 ### Recommended content
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
-- [Intercept network responses](https://nightwatchjs.org/guide/network-requests/mock-network-response.html)
+- [Intercept network responses](/guide/network-requests/mock-network-response.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">

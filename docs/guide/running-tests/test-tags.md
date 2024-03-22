@@ -43,5 +43,5 @@ Or to skip multiple tags, add each tag you want to skip as comma-separated:
 
 <pre><code class="language-bash">nightwatch --skiptags login,something_else</code></pre>
 
-- Previous: [Using Test Groups](https://nightwatchjs.org/guide/running-tests/test-groups.html)
-- Next: [Running in Parallel](https://nightwatchjs.org/guide/running-tests/parallel-running.html)
+- Previous: [Using Test Groups](/guide/running-tests/test-groups.html)
+- Next: [Running in Parallel](/guide/running-tests/parallel-running.html)

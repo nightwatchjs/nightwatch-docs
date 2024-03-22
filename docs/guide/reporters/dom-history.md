@@ -65,7 +65,7 @@ Happy debugging!
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="https://nightwatchjs.orghttps://nightwatchjs.org/guide/reporters/use-html-reporter.html">
+    <a href="/guide/reporters/use-html-reporter.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>

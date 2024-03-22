@@ -12,7 +12,7 @@ The Nightwatch test runner binary expects a configuration file located in the cu
 - `nightwatch.conf.ts` (when using TypeScript)
 - `nightwatch.json`
 
-You can always specify a config file location via the `--config` CLI argument. Read more about CLI options on the [Reference > Nightwatch CLI](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html) page.
+You can always specify a config file location via the `--config` CLI argument. Read more about CLI options on the [Reference > Nightwatch CLI](/guide/nightwatch-cli/command-line-options.html) page.
 
 <div class="alert alert-info">
 From Nightwatch 2, you can also specify the config file to return a Promise and the result will be <code>await</code>-ed.
@@ -67,8 +67,8 @@ The following packages can be used from NPM and, if installed, Nightwatch will a
 
 
 ### Recommended content
-- [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
-- [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">

@@ -76,7 +76,7 @@ From **v1.7** you are able to do just that.
 The above will run two environments named `firefox` and `chrome` in parallel.
 
 ### Recommended content
-- [Define and use test environments](https://nightwatchjs.org/guide/configuration/define-test-environments.html)
+- [Define and use test environments](/guide/configuration/define-test-environments.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">

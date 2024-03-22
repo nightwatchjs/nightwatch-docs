@@ -49,6 +49,6 @@ A test can have multiple steps, if needed:<br><br>
   }
 };</code></pre></div>
 
-- Next: [Using BDD describe](https://nightwatchjs.org/guide/using-nightwatch/using-bdd-describe.html)
+- Next: [Using BDD describe](/guide/using-nightwatch/using-bdd-describe.html)
 
 [1]:    https://www.ecosia.org/

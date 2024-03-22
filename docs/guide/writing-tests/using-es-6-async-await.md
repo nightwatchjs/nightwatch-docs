@@ -47,9 +47,9 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
 };</code></pre></div>
 
 ### Recommended content
-- [Writing tests > BDD describe test syntax](https://nightwatchjs.org/guide/writing-tests/test-syntax-bdd.html)
-- [Writing tests > Exports test syntax](https://nightwatchjs.org/guide/writing-tests/test-syntax-exports.html)
-- [Finding & interacting with DOM Elements](https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html)
+- [Writing tests > BDD describe test syntax](/guide/writing-tests/test-syntax-bdd.html)
+- [Writing tests > Exports test syntax](/guide/writing-tests/test-syntax-exports.html)
+- [Finding & interacting with DOM Elements](/guide/writing-tests/finding-interacting-with-dom-elements.html)
 
 
 [8]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function

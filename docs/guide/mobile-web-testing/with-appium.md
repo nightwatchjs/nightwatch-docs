@@ -87,7 +87,7 @@ These APIs are platform specific. You can refer more on this on [Appium docs](ht
 
 ##### 2) Using the Actions API 
 
-The [Actions API](https://nightwatchjs.org/api/useractions/) is very general and platform independent. It relies on the concept of input sources (key, pointer, wheel). Following code generates a swipe and a pinch zoom gesture using Actions API:
+The [Actions API](/api/useractions/) is very general and platform independent. It relies on the concept of input sources (key, pointer, wheel). Following code generates a swipe and a pinch zoom gesture using Actions API:
 
 <div class="sample-test"><i>tests/sampleTest.js</i><pre class="line-numbers"><code>describe('W3C Actions API', function() {
   it('swipe down and zoom in the page - w3c actions api ', async function(){

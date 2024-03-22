@@ -1,6 +1,6 @@
 ## Using Test Environments
 
-Test environments are a useful concept which Nightwatch provides to be used for a better structure of configuration for using large-scale projects. For a complete overview of what test environments are and how they can be used, please refer to the [Defining test environments](https://nightwatchjs.org/guide/concepts/test-environments.html#defining-test-environments) page in the Getting Started section.
+Test environments are a useful concept which Nightwatch provides to be used for a better structure of configuration for using large-scale projects. For a complete overview of what test environments are and how they can be used, please refer to the [Defining test environments](/guide/concepts/test-environments.html#defining-test-environments) page in the Getting Started section.
 
 You can define multiple sections (environments) in `test_settings` so you could overwrite specific values per environment.
 <p class="alert alert-info">A "default" environment is required. All the other environments are inheriting from default and can overwrite settings as needed.</p>
@@ -36,5 +36,5 @@ This can be useful if you need to have different settings for your local machine
 
 ### Further Reading:
 - [Understanding Test Environments](/gettingstarted/concepts/#defining-test-environments)
-- Previous: [Command-line Options](https://nightwatchjs.org/guide/running-tests/command-line-options.html)
-- Next: [Using Test Groups](https://nightwatchjs.org/guide/running-tests/test-groups.html)
+- Previous: [Command-line Options](/guide/running-tests/command-line-options.html)
+- Next: [Using Test Groups](/guide/running-tests/test-groups.html)

@@ -95,8 +95,8 @@ You can find the complete list of the rule IDs on the [Axe Github page][7]
 [2]:    https://www.npmjs.com/package/axe-core
 [3]:    https://www.deque.com/
 [4]:    https://www.deque.com/blog/automated-testing-study-identifies-57-percent-of-digital-accessibility-issues/
-[5]:    https://nightwatchjs.org/api/axeInject.html
-[6]:    https://nightwatchjs.org/api/axeRun.html
+[5]:    /api/axeInject.html
+[6]:    /api/axeRun.html
 [7]:    https://github.com/dequelabs/axe-core/blob/develop/doc/rule-descriptions.md
-[8]:    https://nightwatchjs.org/api/axeInject.html
-[9]:    https://nightwatchjs.org/api/axeRun.html
+[8]:    /api/axeInject.html
+[9]:    /api/axeRun.html

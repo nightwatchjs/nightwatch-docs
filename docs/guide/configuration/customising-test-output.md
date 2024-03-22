@@ -90,8 +90,8 @@ The below settings can be used to control the output and logging when running te
 </table>
 
 ### Recommended content
-- [Reference > All configuration settings](https://nightwatchjs.org/guide/reference/settings.html)
-- [Reference > Configuration defaults](https://nightwatchjs.org/guide/reference/defaults.html)
+- [Reference > All configuration settings](/guide/reference/settings.html)
+- [Reference > Configuration defaults](/guide/reference/defaults.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">

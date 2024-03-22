@@ -89,8 +89,8 @@ Say in the example above, the `input[type=search]` element selector returns 3 el
 };</code></pre>
 </div>
 
-- Previous: [Using ES6 async/await](https://nightwatchjs.org/guide/using-nightwatch/using-es6-async.html)
-- Next: [Writing Assertions](https://nightwatchjs.org/guide/using-nightwatch/writing-assertions.html)
+- Previous: [Using ES6 async/await](/guide/using-nightwatch/using-es6-async.html)
+- Next: [Writing Assertions](/guide/using-nightwatch/writing-assertions.html)
 
 [2]:    https://www.w3.org/TR/webdriver/#locator-strategies
 [3]:    https://www.w3.org/TR/webdriver/#elements

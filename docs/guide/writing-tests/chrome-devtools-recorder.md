@@ -103,7 +103,7 @@ If you find any situations where it generates unexpected results or something se
 ### References
 
 - https://developers.google.com/codelabs/devtools-recorder#0
-- https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#run-a-test
+- /guide/quickstarts/create-and-run-a-nightwatch-test.html#run-a-test
 - https://github.com/nightwatchjs/nightwatch-recorder-extension
 - https://github.com/nightwatchjs/nightwatch-chrome-recorder
 

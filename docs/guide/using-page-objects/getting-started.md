@@ -49,10 +49,10 @@ It can also be a function in case the URL is dynamic. One use case for this is t
 </div>
 
 ### Recommended content
-- [Define page elements](https://nightwatchjs.org/guide/using-page-objects/defining-elements.html)
-- [Define sections](https://nightwatchjs.org/guide/using-page-objects/defining-sections.html)
-- [Add page-specific commands](https://nightwatchjs.org/guide/using-page-objects/writing-page-specific-commands.html)
-- [Concepts > Page object model](https://nightwatchjs.org/guide/concepts/page-object-model.html)
+- [Define page elements](/guide/using-page-objects/defining-elements.html)
+- [Define sections](/guide/using-page-objects/defining-sections.html)
+- [Add page-specific commands](/guide/using-page-objects/writing-page-specific-commands.html)
+- [Concepts > Page object model](/guide/concepts/page-object-model.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">

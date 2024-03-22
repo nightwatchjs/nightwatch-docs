@@ -7,7 +7,7 @@ description: Learn how to pause your test at specific points and debug by access
 
 ### Overview
 
-This is a new command added in Nightwatch v2.3.0, which allows users to pause the test at any point (by using [`.debug()`](https://nightwatchjs.org/api/debug.html) command as a breakpoint) and use a REPL interface (made available in the terminal) to try out the available Nightwatch commands and assertions and see them get executed against the running browser, in real-time. 
+This is a new command added in Nightwatch v2.3.0, which allows users to pause the test at any point (by using [`.debug()`](/api/debug.html) command as a breakpoint) and use a REPL interface (made available in the terminal) to try out the available Nightwatch commands and assertions and see them get executed against the running browser, in real-time. 
 
 While doing that, users can also interact with the browser and use DevTools to debug. The interface also supports multi-line code input and auto-complete feature.
 
@@ -49,8 +49,8 @@ While doing that, users can also interact with the browser and use DevTools to d
 <img width="100%" alt="debug() command output" src="https://user-images.githubusercontent.com/39924567/180314940-01ad594b-e27e-44af-a90b-91cd84d4196d.png">
 
 ### Recommended content
-- [API docs > `.pause()`](https://nightwatchjs.org/api/pause.html)
-- [API docs > `.debug()`](https://nightwatchjs.org/api/debug.html)
+- [API docs > `.pause()`](/api/pause.html)
+- [API docs > `.debug()`](/api/debug.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">

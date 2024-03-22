@@ -158,10 +158,10 @@ When using named page object elements (starting with '@') you can also use CSS p
 </code></pre></div>
 
 ### Recommended content
-- [Getting started with page objects](https://nightwatchjs.org/guide/using-page-objects/getting-started.html)
-- [Define sections](https://nightwatchjs.org/guide/using-page-objects/defining-sections.html)
-- [Add page-specific commands](https://nightwatchjs.org/guide/using-page-objects/writing-page-specific-commands.html)
-- [Concepts > Page object model](https://nightwatchjs.org/guide/concepts/page-object-model.html)
+- [Getting started with page objects](/guide/using-page-objects/getting-started.html)
+- [Define sections](/guide/using-page-objects/defining-sections.html)
+- [Add page-specific commands](/guide/using-page-objects/writing-page-specific-commands.html)
+- [Concepts > Page object model](/guide/concepts/page-object-model.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">

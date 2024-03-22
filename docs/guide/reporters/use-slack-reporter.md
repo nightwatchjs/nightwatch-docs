@@ -61,7 +61,7 @@ You must follow the steps to setup the app :
 `nightwatch-slack-reporter` requires an option object which will contain **slack_message** and **slack_webhook_url**. You can configure  **slack_message** accordingly either as a function or message and also to set the value of **slack_webhook_url** which you made in ***step 2***
 
 ##### via globals.js file 
-Make sure your `globals.js` is configured already; if not, please follow the [setup guide](https://nightwatchjs.org/guide/concepts/test-globals.html#external-test-globals).
+Make sure your `globals.js` is configured already; if not, please follow the [setup guide](/guide/concepts/test-globals.html#external-test-globals).
 
 <div class="sample-test"><i>globals.js</i>
 <pre class="line-numbers language-javascript"><code class="language-javascript">const options = {
@@ -104,7 +104,7 @@ module.exports = {
 
 ### Example
 #### Step 0: Install Nightwatch
-Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
+Follow the [guide](/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
 
 #### Step 1: Run an example test
 Consider the `duckDuckGo.js` example test :
@@ -131,8 +131,8 @@ You don't need to do anything extra because you've configured the Slack reporter
 ![reports](https://user-images.githubusercontent.com/94462364/185097245-963261e2-5253-43b5-975f-87a0c06cf1de.png)
 
 ### Recommended content
-- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
-- [How-to guides > Use reporters > Add custom reporter](https://nightwatchjs.org/guide/reporters/create-custom-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
+- [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
 - [Nightwatch Allure on github](https://github.com/kushmangal/Nightwatch-Allure-Reporter)
 
 <div class="doc-pagination pt-40">

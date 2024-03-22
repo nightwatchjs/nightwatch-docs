@@ -38,8 +38,8 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
   }
 };</code></pre></div>
 
-- Previous: [Using BDD describe](https://nightwatchjs.org/guide/using-nightwatch/using-bdd-describe.html)
-- Next: [Finding & Interacting with Elements](https://nightwatchjs.org/guide/using-nightwatch/finding-and-interacting-with-elements.html)
+- Previous: [Using BDD describe](/guide/using-nightwatch/using-bdd-describe.html)
+- Next: [Finding & Interacting with Elements](/guide/using-nightwatch/finding-and-interacting-with-elements.html)
 
 [8]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 [9]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await

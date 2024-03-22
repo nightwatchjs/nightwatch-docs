@@ -17,7 +17,7 @@ The `output_folder` config settings is used to specify the location where the JS
 <div class="sample-test"><i>nightwatch/.../lib/settings/defaults.js</i>
     <pre class="line-numbers language-javascript"><code class="language-javascript">module.exports = { output_folder: 'tests_output' }</code></pre></div>
 
-Refer to the [Configuration > Output settings](https://nightwatchjs.org/guide/configuration/customising-test-output.html) page for a complete list of test output related settings.
+Refer to the [Configuration > Output settings](/guide/configuration/customising-test-output.html) page for a complete list of test output related settings.
 
 
 #### Via the CLI
@@ -32,7 +32,7 @@ module.exports = {
 
 <pre class="language-bash"><code class="language-bash">nightwatch --output ./tests-output</code></pre>
 
-Refer to the [CLI reference page](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html) for a complete list of CLI flags that Nightwatch accepts.
+Refer to the [CLI reference page](/guide/nightwatch-cli/command-line-options.html) for a complete list of CLI flags that Nightwatch accepts.
 
 The JSON file name follows the pattern :
 
@@ -40,7 +40,7 @@ The JSON file name follows the pattern :
 
 ### Example
 #### Step 0: Install Nightwatch
-Follow the [guide](https://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
+Follow the [guide](/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
 
 #### Step 1: Run an example test
 Consider the `duckDuckGo.js` example test :
@@ -78,9 +78,9 @@ The JSON report should have been generated in the local `tests_output` folder in
 <img width="1266" src="https://user-images.githubusercontent.com/94462364/184344214-1932c43e-fb58-4e5b-8bc9-a2426eaa7cdc.png">
 
 ### Recommended content
-- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
-- [How-to guides > Use reporters > Add custom reporter](https://nightwatchjs.org/guide/reporters/create-custom-reporter.html)
-- [How-to guides > Use reporters > Mochawesome reporter reporter](https://nightwatchjs.org/guide/reporters/use-mochawesome-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
+- [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
+- [How-to guides > Use reporters > Mochawesome reporter reporter](/guide/reporters/use-mochawesome-reporter.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">

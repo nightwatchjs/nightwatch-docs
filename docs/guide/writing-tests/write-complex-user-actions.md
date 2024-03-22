@@ -16,7 +16,7 @@ The Actions API provides granular control over exactly what designated input dev
 More information is available on the [W3C Webdriver spec page](https://w3c.github.io/webdriver/#dfn-actions).
 
 ### Example
-The new API is available and ready to use in Nightwatch via the existing [`.perform()`](https://nightwatchjs.org/api/perform.html) command. The previous functionality of the `perform()` command is still there and working in the same way as before.
+The new API is available and ready to use in Nightwatch via the existing [`.perform()`](/api/perform.html) command. The previous functionality of the `perform()` command is still there and working in the same way as before.
 
 <div class="sample-test copy-to-clipboard-button line-numbers"><i>tests/sampleTest.js</i>
 <pre data-language="javascript"><code class="language-javascript">describe('user actions api', function() {

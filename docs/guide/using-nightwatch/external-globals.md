@@ -1,6 +1,6 @@
 ## External Globals
 
-Globals are a useful concept which Nightwatch provides to be used for data operations between or outside of test runs. For a complete overview of what globals are and how they can be used, please refer to the [Using test globals](https://nightwatchjs.org/guide/concepts/test-globals.html) page in the Getting Started section. 
+Globals are a useful concept which Nightwatch provides to be used for data operations between or outside of test runs. For a complete overview of what globals are and how they can be used, please refer to the [Using test globals](/guide/concepts/test-globals.html) page in the Getting Started section. 
 
 Most of the time it's more useful to have your globals defined in an external file, specified in the `globals_path` config settings, instead of having them defined directly in the config file.
 
@@ -172,5 +172,5 @@ The global reporter is invoked at the end of the test run, before calling the bu
 </div>
 
 ### Further Reading:
-- [Using Test Globals](https://nightwatchjs.org/guide/using-nightwatch/concepts.html#using-test-globals)
-- Previous: [Test Hooks](https://nightwatchjs.org/guide/using-nightwatch/using-test-hooks.html)
+- [Using Test Globals](/guide/using-nightwatch/concepts.html#using-test-globals)
+- Previous: [Test Hooks](/guide/using-nightwatch/using-test-hooks.html)

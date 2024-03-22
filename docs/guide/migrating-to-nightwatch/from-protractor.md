@@ -41,7 +41,7 @@ You will see these changes in your project, after you had run schematics on your
 
 1. Now, You need to modify your existing tests to Nightwatch. To being with you can start with [Assertions][AssertionLink], [Expect][ExceptLink], [Page Objects][PageObjectLink] and [API commands][APICommandsLink].
 
-2. We had added few examples in this guide, but if you need more information please visit: https://nightwatchjs.org/api/
+2. We had added few examples in this guide, but if you need more information please visit: /api/
 
 > Check out our [Nightwatch Schematic documentation][NightwatchSchematicDocumentation] for more details like running tests in a specific browser, etc.
 
@@ -135,7 +135,7 @@ browser
   })
 ```
 
-> You can learn more about working with DOM elements in our [official documentation](https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html)
+> You can learn more about working with DOM elements in our [official documentation](/guide/writing-tests/finding-interacting-with-dom-elements.html)
 
 ### Assertions
 
@@ -266,10 +266,10 @@ The best way to ask for questions or report issues related to Nightwatch Angular
 [AngualarRFC]:https://github.com/angular/protractor/issues/5502
 [NightwatchSchematicDocumentation]:https://github.com/nightwatchjs/nightwatch-schematics#readme
 [GithubIssueLink]:https://github.com/nightwatchjs/nightwatch-schematics/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
-[AssertionLink]:https://nightwatchjs.org/api/assert/
-[ExceptLink]:https://nightwatchjs.org/api/expect/
-[PageObjectLink]:https://nightwatchjs.org/api/pageobject/
-[APICommandsLink]:https://nightwatchjs.org/api/commands/
+[AssertionLink]:/api/assert/
+[ExceptLink]:/api/expect/
+[PageObjectLink]:/api/pageobject/
+[APICommandsLink]:/api/commands/
 
 <div class="doc-pagination justify-content-start pt-40">
   <div class="previous">

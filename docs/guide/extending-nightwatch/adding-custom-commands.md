@@ -260,7 +260,7 @@ You can also use ES6 `async`/`await` syntax inside function-style custom command
 </code></pre></div>
 
 ### Recommended content
-- [Define custom assertions](https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-assertions.html)
+- [Define custom assertions](/guide/extending-nightwatch/adding-custom-assertions.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">

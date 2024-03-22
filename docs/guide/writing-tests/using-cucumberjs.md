@@ -60,7 +60,7 @@ Parallel running using 2 workers:
 
 <div class="sample-test"><pre><code class="language-bash">nightwatch examples/cucumber-js/features/step_definitions --parallel 2</code></pre></div> 
 
-Use other [test runner options](https://nightwatchjs.org/guide/running-tests/command-line-options.html) as usual:
+Use other [test runner options](/guide/running-tests/command-line-options.html) as usual:
 
 <div class="sample-test"><pre><code class="language-bash">npx nightwatch examples/cucumber-js/features/step_definitions --headless</code></pre></div>
 

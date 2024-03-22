@@ -141,5 +141,5 @@ describe('homepage test with describe', function() {
   after(browser => browser.end());
 });</code></pre></div>
 
-- Previous: [Writing Tests](https://nightwatchjs.org/guide/using-nightwatch/writing-tests.html)
-- Next: [Using ES6 async/await](https://nightwatchjs.org/guide/using-nightwatch/using-es6-async.html)
+- Previous: [Writing Tests](/guide/using-nightwatch/writing-tests.html)
+- Next: [Using ES6 async/await](/guide/using-nightwatch/using-es6-async.html)

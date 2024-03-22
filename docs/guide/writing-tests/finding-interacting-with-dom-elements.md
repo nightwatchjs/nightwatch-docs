@@ -134,8 +134,8 @@ const ecosiaTest: NightwatchTests = {
 </div>
 
 ### Recommended content
-- [BDD test syntax](https://nightwatchjs.org/guide/writing-tests/test-syntax-bdd.html)
-- [Using async/await](https://nightwatchjs.org/guide/writing-tests/using-es-6-async-await.html)
+- [BDD test syntax](/guide/writing-tests/test-syntax-bdd.html)
+- [Using async/await](/guide/writing-tests/using-es-6-async-await.html)
 
 [2]:    https://www.w3.org/TR/webdriver/#locator-strategies
 [3]:    https://www.w3.org/TR/webdriver/#elements

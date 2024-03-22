@@ -46,7 +46,7 @@ Now that you understand selectors, you can use them to write commands & assertio
 
 
 [1]:  https://appium.io/docs/en/commands/element/find-elements/index.html#selector-strategies
-[2]:  https://nightwatchjs.org/guide/writing-tests/finding-interacting-with-dom-elements.html#element-properties
+[2]:  /guide/writing-tests/finding-interacting-with-dom-elements.html#element-properties
 [3]:  /guide/mobile-app-testing/commands.html
 [4]:  /guide/mobile-app-testing/assertions.html
 

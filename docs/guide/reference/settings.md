@@ -164,7 +164,7 @@ These settings are used to fine tune the behaviour of a test session and define 
 ### Setting the `baseUrl` property
 
 This `baseUrl` (or `launchUrl`) property will be made available to the main Nightwatch api which is used in the tests. Its value depends on which environment is used.
-More on test environments under the [Nightwatch Runner](https://nightwatchjs.org/guide/concepts/test-environments.html#defining-test-environments) section.
+More on test environments under the [Nightwatch Runner](/guide/concepts/test-environments.html#defining-test-environments) section.
 
 If you run your tests specifying the `integration` environment (with `--env integration`) the `baseUrl` will be set to `http://staging.host`, as per the configuration. Otherwise it will have the value defined in the `default` environment (i.e. `http://localhost`).
 
@@ -258,7 +258,7 @@ module.exports = {
        <td>An object which will be made available within the test and can be overwritten per environment. Example:<br><br>
 <code>"globals" : {<br>&nbsp;&nbsp;"myGlobal" : "some_global"<br>}</code>
 
-<br><br>Globals can also be defined in an external file. More on [External Globals](https://nightwatchjs.org/guide/concepts/test-globals.html).
+<br><br>Globals can also be defined in an external file. More on [External Globals](/guide/concepts/test-globals.html).
 </td>
 </tr>
     <tr>
@@ -830,8 +830,8 @@ Remember to also enable HTTP keepalive for improved network performance.
 
 ### Recommended content
 
-- [Default configuration](https://nightwatchjs.org/guide/reference/defaults.html)
-- [CLI options](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html)
+- [Default configuration](/guide/reference/defaults.html)
+- [CLI options](/guide/nightwatch-cli/command-line-options.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">

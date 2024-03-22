@@ -157,7 +157,7 @@ An empty `exclude` means we want to reset its value and rely only on `filter`.
 
 ### Code Coverage
 At the moment, Nightwatch doesn't provide a coverage reporter but it is something that's being planned for a future release.
-In the meantime you can write a custom reporter which will output coverage data. See the [custom reporter](https://nightwatchjs.org/guide/extending-nightwatch/adding-custom-reporters.html) section for details and the [Mocha HTMLCov](https://mochajs.org/#htmlcov) reporter for how the reporter should look like.
+In the meantime you can write a custom reporter which will output coverage data. See the [custom reporter](/guide/extending-nightwatch/adding-custom-reporters.html) section for details and the [Mocha HTMLCov](https://mochajs.org/#htmlcov) reporter for how the reporter should look like.
 
 #### 3rd party coverage service
 There are some hosted services which provide the reporting and metrics for you in a modern web interface. These services will typically require coverage data in LCOV format. Nightwatch uses [coveralls.io](https://coveralls.io/github/nightwatchjs/nightwatch?branch=main).

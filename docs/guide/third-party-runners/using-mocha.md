@@ -75,7 +75,7 @@ Here's the list of supported arguments presently:
 <div class="sample-test"><pre><code class="language-bash">npx nightwatch examples/tests/ --reporter mochawesome</code></pre></div>
 
 #### Extended describe() Syntax
-The new Mocha support in Nightwatch 2 has been built to match as close as possible the extended syntax which is available in the [built-in Nightwatch `describes()` syntax](https://nightwatchjs.org/guide/writing-tests/using-bdd-describe.html#complete-syntax).
+The new Mocha support in Nightwatch 2 has been built to match as close as possible the extended syntax which is available in the [built-in Nightwatch `describes()` syntax](/guide/writing-tests/using-bdd-describe.html#complete-syntax).
 
 Here's the complete syntax available when using Mocha in Nightwatch:
 
@@ -306,4 +306,4 @@ describe('Github', function() {
 <br>
 </code></pre></div>
 
-- Previous: [Using the Nightwatch programmatic API ](https://nightwatchjs.org/guide/running-tests/programmatic-api.html)
+- Previous: [Using the Nightwatch programmatic API ](/guide/running-tests/programmatic-api.html)

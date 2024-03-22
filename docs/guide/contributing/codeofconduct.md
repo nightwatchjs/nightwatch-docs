@@ -56,8 +56,8 @@ directly on top of `dev`.
 For making changes to the documentation site, go to the `/guide` folder. Each section on the left
 navigation pane is a separate folder. Use the following resources to learn about different on-page markdown elements and the style guide that we use.
 
-* [Markdown elements](https://nightwatchjs.org/guide/contributing/overview.html)
-* [Style guide](https://nightwatchjs.org/guide/contributing/styleguide.html)
+* [Markdown elements](/guide/contributing/overview.html)
+* [Style guide](/guide/contributing/styleguide.html)
 
 
 ### Step 4: Commit

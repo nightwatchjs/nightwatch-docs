@@ -22,7 +22,7 @@ The `output_folder` config settings is used to specify the location where the JU
   output_folder: 'tests_output'
 }</code></pre></div>
 
-Refer to the [Configuration > Output settings](https://nightwatchjs.org/guide/configuration/customising-test-output.html) page for a complete list of test output related settings.
+Refer to the [Configuration > Output settings](/guide/configuration/customising-test-output.html) page for a complete list of test output related settings.
 
 #### Via the CLI
 
@@ -30,7 +30,7 @@ You can also configure the output folder at runtime via the CLI, using the `--ou
 
 <pre class="language-bash"><code class="language-bash">nightwatch --output ./tests-output</code></pre>
 
-Refer to the [CLI reference page](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html) for a complete list of CLI flags that Nightwatch accepts.
+Refer to the [CLI reference page](/guide/nightwatch-cli/command-line-options.html) for a complete list of CLI flags that Nightwatch accepts.
 
 The XML file name follows the pattern:
 
@@ -133,10 +133,10 @@ The reports can be disabled completely if desired by setting the `output_folder`
 }</code></pre></div>
 
 ### Recommended content
-- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
-- [Configuration > Output settings](https://nightwatchjs.org/guide/configuration/customising-test-output.html)
-- [Configuration > Default settings](https://nightwatchjs.org/guide/reference/defaults.html)
-- [Reference > Nightwatch CLI](https://nightwatchjs.org/guide/nightwatch-cli/command-line-options.html)
+- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
+- [Configuration > Output settings](/guide/configuration/customising-test-output.html)
+- [Configuration > Default settings](/guide/reference/defaults.html)
+- [Reference > Nightwatch CLI](/guide/nightwatch-cli/command-line-options.html)
 
 <div class="doc-pagination pt-40">
   <div class="previous">

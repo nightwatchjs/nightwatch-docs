@@ -11,7 +11,7 @@ description: Learn how to use allure reporter in Nightwatch.
 ### Example with Configuration
 
 #### Step 0: Install Nightwatch
-Follow the [guide](https://nightwatchjs.orghttps://nightwatchjs.org/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
+Follow the [guide](/guide/quickstarts/create-and-run-a-nightwatch-test.html#guide-container) or watch the [video](https://www.youtube.com/watch?v=lTLQJ3tD0xc) to install Nightwatch from scratch.
 
 #### Step 1: Installing Allure
 In order to use Allure reporter you must ensure that [Allure](https://docs.qameta.io/allure/) CLI is already installed in your machine; if not, follow Allure's installation [guide](https://docs.qameta.io/allure/#_installing_a_commandline).
@@ -25,7 +25,7 @@ Install `nightwatch-allure` as a dependency in your nightwatch project.
 
 #### Step 3: Update globals
 Add the following code to nightwatch's `globals.js` file. 
-Note: Make sure your `globals.js` is configured already; if not please follow the [setup guide](https://nightwatchjs.org/guide/concepts/test-globals.html#external-test-globals).
+Note: Make sure your `globals.js` is configured already; if not please follow the [setup guide](/guide/concepts/test-globals.html#external-test-globals).
 
 <div class="sample-test"><i>globals.js</i>
 <pre class="line-numbers"><code class="language-javascript">const allureReporter = require('nightwatch-allure');
@@ -71,8 +71,8 @@ Visit the URL provided in the terminal to view the report :
 
 
 ### Recommended content
-- [How-to guides > Use reporters > HTML reporter](https://nightwatchjs.org/guide/reporters/use-html-reporter.html)
-- [How-to guides > Use reporters > Add custom reporter](https://nightwatchjs.org/guide/reporters/create-custom-reporter.html)
+- [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
+- [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
 - [Nightwatch Allure on github](https://github.com/kushmangal/Nightwatch-Allure-Reporter)
 
 <div class="doc-pagination pt-40">

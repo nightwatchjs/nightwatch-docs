@@ -89,9 +89,9 @@ Nightwatch will call the command on the context of the page or section. Client c
 From Nightwatch 2 it is also possible to export the page commands as an ES6 class.
 
 ### Recommended content
-- [Define page elements](https://nightwatchjs.org/guide/using-page-objects/defining-elements.html)
-- [Define sections](https://nightwatchjs.org/guide/using-page-objects/defining-sections.html)
-- [Add page-specific commands](https://nightwatchjs.org/guide/using-page-objects/writing-page-specific-commands.html)
+- [Define page elements](/guide/using-page-objects/defining-elements.html)
+- [Define sections](/guide/using-page-objects/defining-sections.html)
+- [Add page-specific commands](/guide/using-page-objects/writing-page-specific-commands.html)
 
  <div class="doc-pagination pt-40">
   <div class="previous">
