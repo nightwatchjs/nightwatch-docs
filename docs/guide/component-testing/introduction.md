@@ -83,8 +83,8 @@ The only disadvantage would be that it’s going to be a bit slower than the *JS
   </div>
 </div>
 
-[1]:    https://nightwatchjs.org/guide/component-testing/testing-react-components.html
-[2]:    https://nightwatchjs.org/guide/component-testing/testing-vue-components.html
+[1]:    /guide/component-testing/testing-react-components.html
+[2]:    /guide/component-testing/testing-vue-components.html
 [3]:    https://github.com/jsdom/jsdom
 [4]:    https://karma-runner.github.io/latest/index.html
 [5]:    https://pptr.dev/
