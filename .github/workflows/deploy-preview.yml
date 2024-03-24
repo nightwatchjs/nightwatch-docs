@@ -1,5 +1,5 @@
 name: Build and Deploy to Preview
-    
+
 on:
   push:
     branches:

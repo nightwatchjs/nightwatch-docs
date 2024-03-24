@@ -17,33 +17,61 @@ Documentation sources for [nightwatchjs.org](http://nightwatchjs.org) website.
 
 ***
 
-## Development
+## Overview
 
-The content is written in Markdown and it is located in the `docs` folder. The individual API command pages are generated from the Nightwatch source code. based on the JSDoc comments.  
+The website is built with **PostDoc** (a static site generator built with Vite and EJS). It supports Markdown, EJS, and front matter. It comes with a dev server with Hot module replacement (HMR).
+
+The content is written in Markdown and it is located in the `docs` folder. The individual API command pages are generated from the Nightwatch source code. based on the JSDoc comments.
 
 ### Run the website locally
 
-The website is built with **PostDoc** (a static site generator built with Vite and EJS). It supports Markdown, EJS, and front matter. 
-It comes with a dev server with Hot module replacement (HMR).
+First, simply clone the repository and install the dependencies.
+
+```bash
+git clone https://github.com/nightwatchjs/nightwatch-docs.git
+npm install
+```
 
 ### Configuration
 
-The website configuration is located in the `postdoc.config.js` file. In order to run the website locally, you need to have the Nightwatch source code repo clones and then specify the path to it in the `postdoc.config.js` file.
+Since the API documentation is generated directly from source code, you need to have the Nightwatch source code cloned locally.
 
-You can also set the `API_DOCS_FOLDER` environment variable to specify the path. You can also disable the API docs generation by setting the `apidocs` property to `false` in the `postdoc.config.js` file, e.g.:
+#### Step 1: Clone the Nightwatch repository
+
+```bash
+git clone https://github.com/nightwatchjs/nightwatch.git
+npm install
+```
+
+#### Step 2: Configure the path to the Nightwatch repository
+
+Next, you have specify the path to where the api commands are in the `postdoc.config.js` file. You can also set the `API_DOCS_FOLDER` environment variable.
 
 ```js
+// postdoc.config.js
+export default {
+  apidocs: {
+    source: '/path/to/nightwatch/lib/api/'
+}
+```
+
+You can also disable the API docs generation by setting the `apidocs` property to `false` in the `postdoc.config.js` file:
+
+```js
+// postdoc.config.js
 export default {
   apidocs: false
 }
 ```
 
-### Installation
+### Run the website dev server
 
 ```bash
-npm install
 npm start
 ```
+
+The website will be available at `http://127.0.0.1:5173/`.
+
 
 ### PostDoc CLI
 
@@ -67,7 +95,7 @@ To build the website, run:
 npm run build
 ```
 
-The generated files will be in the `out` folder. 
+The generated files will be in the `out` folder.
 
 Quickly serve the generated files with:
 
