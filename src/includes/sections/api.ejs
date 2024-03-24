@@ -1,0 +1,26 @@
+<%
+const pageUrl = page.url.replace('html', 'md');
+const gitHubUrl = `https://github.com/nightwatchjs/nightwatch-docs/edit/versions/3.0${pageUrl}?message=docs%3A%20describe%20your%20change`;
+%>
+
+<div class="doc-container full-width top-border background">
+    <div class="clearfix">
+        <div class="row flex-xl-nowrap no-gutters">
+
+            <div class="col-md-3 col-xl-2 doc-sidebar bs-sidebar hidden-print" role="complementary">
+                <%- include('api-sidebar') %>
+            </div>
+
+            <div class="col-md-9 col-xl-9 doc-main-body" role="main">
+                <div class="docs-section" data-page-uri="<%- page.url %>">
+                    <div class="page-content">
+                        <% if (page.url === '/api/index.html') { %>
+                        <h1 class="main-title">Nightwatch APIs <a title="Suggest edits" target="_blank" class="edit-source" href="<%= gitHubUrl %>">Suggest edits</a></h1>
+                        <% } %>
+                        <%- pageContent %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

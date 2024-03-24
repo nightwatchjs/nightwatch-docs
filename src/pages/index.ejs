@@ -1,0 +1,1013 @@
+<%
+const data = {
+  version: appSettings.version,
+  baseUrl: appSettings.baseUrl,
+  section: 'index',
+  pageTitle: 'Nightwatch V3 | Node.js powered End-to-End testing framework',
+  pageDescription: 'Write efficient end-to-end tests in Node.js and run them against W3C WebDriver.',
+  pageImage: '/img/banners/nightwatch.jpg'
+};
+
+function activeLink(urlPart) {
+  return page.url.includes(urlPart) ? 'active' : '';
+}
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <%- include("meta-tags", data) %>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com/">
+  <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com/">
+
+  <%- include('fonts') %>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3" />
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <link rel="stylesheet" href="/css/landing/style.css">
+  <title><%- data.pageTitle %></title>
+  <%- include('ga') %>
+  <%- include('header/scripts') %>
+</head>
+
+<body class="body">
+  <%- include('navbar', data) %>
+
+  <main>
+    <!-- Hero Section start -->
+    <section class="hero">
+      <div class="hero__content">
+        <h1 class="hero__heading">Introducing <span class="hero__heading--highlight">Nightwatch v3</span></h1>
+        <p class="hero__sub-heading">No-compromise test automation framework with a powerful set of tools to write, run and debug your tests across web and native mobile applications.
+        </p>
+      </div>
+
+      <div class="hero__action">
+        <div class="hero__action-copy-command">
+          <p class="hero__action-copy-command-text">npm init nightwatch</p>
+          <button class="hero__action-copy-command-button">Copy</button>
+        </div>
+        <a href="/guide/quickstarts/create-and-run-a-nightwatch-test.html" class="hero__action-button--get-started">Get Started</a>
+      </div>
+
+      <div class="hero__companies" role="region" aria-label="social proof">
+        <p class="hero__companies__text">Trusted by the best dev teams</p>
+        <div class="hero__companies__logos">
+          <img loading="lazy" src="/images/landing/company-logo/Amazon.svg" alt="Amazon">
+          <img loading="lazy" src="/images/landing/company-logo/Drupal.svg" alt="Drupal">
+          <img loading="lazy" src="/images/landing/company-logo/Apache.svg" alt="Apache">
+          <img loading="lazy" src="/images/landing/company-logo/PayPal.svg" alt="Paypal">
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section end -->
+
+    <!-- Nightwatch Feature section start -->
+    <section class="features">
+      <!-- Line Path -->
+      <div class="features__timeline-path" role="presentation"></div>
+
+      <h2 class="features__heading">Why<span class="features__heading--highlight">Nightwatch?</span></h2>
+
+      <!-- First Feature -->
+      <article class="features__content features__content--reverse">
+        <div class="features__content-wrapper">
+          <div class="features__timeline-dot" role="presentation"></div>
+          <h3 class="features__content-wrapper-heading">Web, mobile native</h3>
+          <div class="features__content-wrapper-description">
+            <p class="features__content-wrapper-description-title">One framework for all platforms</p>
+            <ul class="features__content-wrapper-description-list">
+              <li class="features__content-wrapper-description-list-item"><strong>Mobile web</strong>Test on your web apps on real mobile devices, and scale easily by connecting to cloud grids</li>
+              <li class="features__content-wrapper-description-list-item"><strong>Native mobile</strong>Test your native
+                iOS and Android apps with Nightwatch</li>
+              <li class="features__content-wrapper-description-list-item"><strong>Real desktop browsers</strong>Test on real browsers which accurately reflect your users’ environment</li>
+            </ul>
+          </div>
+        </div>
+        <div class="features__content-image">
+          <picture>
+            <source type="image/webp" srcset="
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_420.webp 420w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_871.webp 871w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_1385.webp 1385w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_1389.webp 1389w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_1748.webp 1748w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_1806.webp 1806w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_2000.webp 2000w">
+            <img sizes="(max-width: 2000px) 100vw, 2000px" srcset="
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_420.png 420w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_871.png 871w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_1385.png 1385w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_1389.png 1389w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_1748.png 1748w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_1806.png 1806w,
+                        images/landing/features/feature1/feature-1_h3xpny_c_scale_w_2000.png 2000w"
+              src="images/landing/features/feature1/feature-1.png"
+              alt="Nightwatch test running on a desktop browser and a real mobile device." loading="lazy" decoding="async"
+              width="100%" height="100%">
+          </picture>
+        </div>
+      </article>
+
+      <!-- Second feature -->
+      <article class="features__content">
+        <div class="features__content-wrapper">
+          <div class="features__timeline-dot features__timeline-dot--reverse" role="presentation"></div>
+          <h3 class="features__content-wrapper-heading">Powerful debugging</h3>
+          <div class="features__content-wrapper-description">
+            <p class="features__content-wrapper-description-title">Searching for bugs just got easy</p>
+            <ul class="features__content-wrapper-description-list">
+              <li class="features__content-wrapper-description-list-item"><strong>Pinpoint</strong>Identify the source with the built-in HTML reporter with test statuses and HTTP logs</li>
+              <li class="features__content-wrapper-description-list-item"><strong>Dig deeper</strong>Travel back in time and see DOM History before and after every command</li>
+              <li class="features__content-wrapper-description-list-item"><strong>Replicate</strong>Pause and debug your tests by trying out commands in a REPL interface</li>
+            </ul>
+          </div>
+        </div>
+        <div class="features__content-image">
+          <picture>
+            <source type="image/webp" srcset="
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_420.webp 420w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_888.webp 888w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_1216.webp 1216w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_1405.webp 1405w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_1661.webp 1661w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_1836.webp 1836w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_2000.webp 2000w">
+            <img sizes="(max-width: 2000px) 100vw, 2000px" srcset="
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_420.png 420w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_888.png 888w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_1216.png 1216w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_1405.png 1405w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_1661.png 1661w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_1836.png 1836w,
+                        images/landing/features/feature2/feature-2_wr5j5v_c_scale_w_2000.png 2000w"
+              src="images/landing/features/feature2/feature-2.png"
+              alt="Debugging a failed test using HTML reporter and DOM History." loading="lazy" decoding="async" width="100%" height="100%">
+          </picture>
+        </div>
+      </article>
+
+      <!-- Third Feature -->
+      <article class="features__content features__content--reverse">
+        <div class="features__content-wrapper">
+          <div class="features__timeline-dot" role="presentation"></div>
+          <h3 class="features__content-wrapper-heading">Designed for scale</h3>
+          <div class="features__content-wrapper-description">
+            <p class="features__content-wrapper-description-title">Millions of tests? No problem</p>
+            <ul class="features__content-wrapper-description-list">
+              <li class="features__content-wrapper-description-list-item"><strong>Default parallelization & orchestration</strong>Test faster with default parallelization across multiple browsers</li>
+              <li class="features__content-wrapper-description-list-item"><strong>Cloud grid support</strong>Scale with third-party grids —BrowserStack, or others</li>
+              <li class="features__content-wrapper-description-list-item"><strong>Complex gestures and
+                interactions</strong>Test everything from pinch-zoom to multi-tab and iFrames</li>
+            </ul>
+          </div>
+        </div>
+        <div class="features__content-image">
+          <picture>
+            <source type="image/webp" srcset="
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_300.webp 300w,
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_580.webp 580w,
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_758.webp 758w,
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_1070.webp 1070w,
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_1100.webp 1100w">
+            <img sizes="(max-width: 1400px) 100vw, 1400px" srcset="
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_300.png 300w,
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_580.png 580w,
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_758.png 758w,
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_1070.png 1070w,
+                        images/landing/features/feature3/feature3_tcbm76_c_scale_w_1100.png 1100w"
+              src="images/landing/features/feature3/feature-3.png"
+              alt="Tests running in multiple browsers on a local machine and on multiple machines remotely" loading="lazy"
+              decoding="async" width="100%" height="100%">
+          </picture>
+        </div>
+      </article>
+
+      <div class="features__community-stats-timeline-dot" role="presentation"></div>
+      <!-- Community section -->
+      <article class="features__community-stats-section">
+        <div class="features__community-stats" role="region" aria-label="Nightwatch stats">
+          <p class="features__community-stats__text">Loved by the community</p>
+          <div class="features__community-stats-container">
+            <div class="features__community-stats-wrapper">
+              <h3 class="features__community-stats-wrapper__heading">11.3K</h3>
+              <p class="features__community-stats-wrapper__sub-heading">GitHub Stars</p>
+            </div>
+            <div class="features__community-stats-wrapper">
+              <h3 class="features__community-stats-wrapper__heading">141K</h3>
+              <p class="features__community-stats-wrapper__sub-heading">Used by (repos)</p>
+            </div>
+            <div class="features__community-stats-wrapper">
+              <h3 class="features__community-stats-wrapper__heading">320</h3>
+              <p class="features__community-stats-wrapper__sub-heading">Versions released</p>
+            </div>
+            <div class="features__community-stats-wrapper">
+              <h3 class="features__community-stats-wrapper__heading">800K</h3>
+              <p class="features__community-stats-wrapper__sub-heading">Monthly downloads</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Nightwatch Feature section end -->
+
+    <!-- Nightwatch Capabilities section start -->
+    <section class="capabilities">
+      <div class="capabilities__timeline-path-mobile" role="presentation"></div>
+
+      <!-- Line Path -->
+      <div class="capabilities__timeline-path" role="presentation">
+        <div class="capabilities__timeline-dot" role="presentation"></div>
+      </div>
+
+
+      <h2 class="capabilities__heading">
+        <span class="capabilities__heading--highlight">Powerful capabilities</span>for everything you need
+      </h2>
+
+      <div class="capabilities--single-column">
+        <article class="capabilities__card">
+          <div class="capabilities__card-content">
+            <h3 class="capabilities__card-heading">Get started in 60 seconds</h3>
+            <div class="capabilities__card-text">
+              <ul class="capabilities__card-text-list">
+                <li class="capabilities__card-text-list-item"><strong>Create Nightwatch</strong>One command to
+                  install everything</li>
+                <li class="capabilities__card-text-list-item"><strong>IDE extension</strong>Write, run, and debug with VS
+                  Code</li>
+                <li class="capabilities__card-text-list-item"><strong>Record and replay</strong>No-code automation using Chrome recorder</li>
+              </ul>
+            </div>
+            <a href="/guide/quickstarts/create-and-run-a-nightwatch-test.html" class="capabilities__card-button">Get
+              Started
+              <svg role="img" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>The arrow icon indicates that you can visit this page</title>
+                <path d="M13.8411 5.88806L19.9689 12.0159M19.9689 12.0159L13.8411 18.1437M19.9689 12.0159L4.21167 12.0159"
+                  stroke-width="1.7508" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="capabilities__card__image">
+            <picture>
+              <source type="image/webp" srcset="
+                            images/landing/capabilities/cap1/cap1_qzycfd_c_scale_w_300.webp 300w,
+                            images/landing/capabilities/cap1/cap1_qzycfd_c_scale_w_1100.webp 1100w">
+              <img sizes="(max-width: 1040px) 100vw, 1040px" srcset="
+                            images/landing/capabilities/cap1/cap1_qzycfd_c_scale_w_300.png 300w,
+                            images/landing/capabilities/cap1/cap1_qzycfd_c_scale_w_1100.png 1100w"
+                src="images/landing/capabilities/cap1/cap1.png" alt="Create Nightwatch setup screen." loading="lazy"
+                decoding="async" width="100%" height="100%">
+            </picture>
+          </div>
+        </article>
+      </div>
+
+      <div class="capabilities--double-column">
+        <article class="capabilities__card">
+          <div class="capabilities__card-content">
+            <h3 class="capabilities__card-heading">Run all types of tests</h3>
+            <div class="capabilities__card-text">
+              <ul class="capabilities__card-text-list">
+                <li class="capabilities__card-text-list-item"><strong>API</strong>Test incoming requests, request headers,
+                  and post data</li>
+                <li class="capabilities__card-text-list-item"><strong>Accessibility</strong>Native integration with axe
+                </li>
+                <li class="capabilities__card-text-list-item"><strong>Visual testing</strong>Compare screenshots against
+                  baselines</li>
+              </ul>
+            </div>
+            <a href="/about/highlights/types-of-testing.html" class="capabilities__card-button">Learn More<svg role="img"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>The arrow icon indicates that you can visit this page</title>
+                <path d="M13.8411 5.88806L19.9689 12.0159M19.9689 12.0159L13.8411 18.1437M19.9689 12.0159L4.21167 12.0159"
+                  stroke-width="1.7508" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="capabilities__card__image">
+            <picture>
+              <source type="image/webp" srcset="
+                            images/landing/capabilities/cap2/cap2_njfkxf_c_scale_w_300.webp 300w,
+                            images/landing/capabilities/cap2/cap2_njfkxf_c_scale_w_1100.webp 1100w">
+              <img sizes="(max-width: 1080px) 100vw, 1080px" srcset="
+                            images/landing/capabilities/cap2/cap2_njfkxf_c_scale_w_300.png 300w,
+                            images/landing/capabilities/cap2/cap2_njfkxf_c_scale_w_1100.png 1100w"
+                src="images/landing/capabilities/cap2/cap2.png" alt="Looking at results of accessibility, API, and Visual tests."
+                loading="lazy" decoding="async" width="100%" height="100%">
+            </picture>
+          </div>
+        </article>
+        <article class="capabilities__card">
+          <div class="capabilities__card-content">
+            <h3 class="capabilities__card-heading">Go beyond E2E testing</h3>
+            <div class="capabilities__card-text">
+              <ul class="capabilities__card-text-list">
+                <li class="capabilities__card-text-list-item"><strong>Unit</strong>Unit testing mode with support for test-doubles.</li>
+                <li class="capabilities__card-text-list-item"><strong>Component</strong>Test components with Angular, React, and more.</li>
+                <li class="capabilities__card-text-list-item"><strong>Integration</strong>Write integration tests using Chai assertions.</li>
+              </ul>
+            </div>
+            <a href="/about/highlights/beyond-e2e.html" class="capabilities__card-button">Learn More<svg role="img"
+                width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <title>The arrow icon indicates that you can visit this page</title>
+                <path d="M13.8411 5.88806L19.9689 12.0159M19.9689 12.0159L13.8411 18.1437M19.9689 12.0159L4.21167 12.0159"
+                  stroke-width="1.7508" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+          <div class="capabilities__card__image">
+            <picture>
+              <source type="image/webp" srcset="
+                            images/landing/capabilities/cap3/cap3_uzdpil_c_scale_w_300.webp 300w,
+                            images/landing/capabilities/cap3/cap3_uzdpil_c_scale_w_849.webp 849w,
+                            images/landing/capabilities/cap3/cap3_uzdpil_c_scale_w_1100.webp 1100w">
+              <img sizes="(max-width: 550px) 100vw, 550px" srcset="
+                            images/landing/capabilities/cap3/cap3_uzdpil_c_scale_w_300.png 300w,
+                            images/landing/capabilities/cap3/cap3_uzdpil_c_scale_w_849.png 849w,
+                            images/landing/capabilities/cap3/cap3_uzdpil_c_scale_w_1100.png 1100w"
+                src="images/landing/capabilities/cap3/cap3.png"
+                alt="Testing pyramid with unit, component, integration and E2E tests." loading="lazy" decoding="async" width="100%" height="100%">
+            </picture>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Nightwatch Capabilities section end -->
+
+    <!-- Nightwatch Performance section start -->
+    <section class="performance">
+
+      <!-- Line Path -->
+      <div class="performance__timeline-path" role="presentation">
+        <div class="performance__timeline-dot" role="presentation"></div>
+      </div>
+
+      <div class="performance__timeline-dot-mobile" role="presentation"></div>
+
+      <h2 class="performance__heading"><span class="performance__heading--highlight">Faster</span> than ever</h2>
+
+      <article class="performance__content">
+        <div class="performance__content-image">
+          <picture>
+            <source type="image/webp" srcset="
+                        images/landing/performance/performance_vve109_c_scale_w_400.webp 400w,
+                        images/landing/performance/performance_vve109_c_scale_w_1600.webp 1600w">
+            <img sizes="(max-width: 800px) 100vw, 800px" srcset="
+                        images/landing/performance/performance_vve109_c_scale_w_400.png 400w,
+                        images/landing/performance/performance_vve109_c_scale_w_1600.png 1600w"
+              src="images/landing/performance/perfomance.png"
+              alt="Graph showing difference in test execution duration compared to Cypress" loading="lazy" decoding="async" width="100%" height="100%">
+          </picture>
+        </div>
+        <div class="performance__content-description">
+          <p class="performance__content-description-text">Experience lightning-fast tests with Nightwatch irrespective of
+            whether you run your tests on a single machine or multiple VMs.</p>
+          <a href="https://github.com/nightwatchjs/performance_benchmarking"
+            class="performance__content-description-button">Run Sample Tests</a>
+        </div>
+      </article>
+    </section>
+    <!-- Nightwatch Performance section end -->
+
+    <!-- Nightwatch Comparison section start -->
+    <section class="comparison">
+      <div class="comparison__timeline-dot" role="presentation"></div>
+      <h2 class="comparison__heading">No<span class="comparison__heading--highlight">compromises</span></h2>
+
+      <article class="comparison__content">
+        <div class="comparison__content-image">
+          <picture>
+            <source type="image/webp" srcset="
+                        images/landing/compromise/compromise_stzord_c_scale_w_500.webp 500w,
+                        images/landing/compromise/compromise_stzord_c_scale_w_1110.webp 1110w">
+            <img sizes="(max-width: 1110px) 100vw, 1110px" srcset="
+                        images/landing/compromise/compromise_stzord_c_scale_w_500.png 500w,
+                        images/landing/compromise/compromise_stzord_c_scale_w_1110.png 1110w" src="compromise.png"
+              alt="Test following the standard running on web and a real mobile device" loading="lazy" decoding="async" width="100%" height="100%">
+          </picture>
+        </div>
+        <div class="comparison__content-wrapper">
+          <div class="comparison__content-wrapper-container">
+            <article class="comparison__content-wrapper-card">
+              <div class="comparison__content-wrapper-card-image">
+                <svg role="img" width="47" height="36" viewBox="0 0 47 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                  <title>Browser Icon</title>
+                  <rect x="3.01953" y="0.714844" width="43.9253" height="32.0993" rx="4" fill="#DADDC6" />
+                  <rect x="1" y="4.70483" width="41.9253" height="30.0993" rx="3" fill="white" stroke="#333333"
+                    stroke-width="2" />
+                  <path
+                    d="M1 7.70483C1 6.04798 2.34315 4.70483 4 4.70483H39.9253C41.5822 4.70483 42.9253 6.04798 42.9253 7.70483V12.3943H1V7.70483Z"
+                    fill="white" stroke="#333333" stroke-width="2" />
+                  <circle cx="5.20067" cy="8.39281" r="1.26708" fill="#333333" />
+                  <circle cx="9.42333" cy="8.39281" r="1.26708" fill="#333333" />
+                  <circle cx="13.6479" cy="8.39281" r="1.26708" fill="#333333" />
+                  <path
+                    d="M31.406 23.7594C31.1411 23.6534 30.8385 23.7156 30.6367 23.9173C30.4349 24.1191 30.3728 24.4217 30.4788 24.6867L33.3322 31.8201C33.4365 32.0809 33.6842 32.2562 33.9648 32.2679C34.2455 32.2796 34.5069 32.1255 34.6325 31.8742L35.6166 29.9061L37.7701 32.0596C38.0487 32.3382 38.5004 32.3382 38.779 32.0596C39.0575 31.781 39.0575 31.3294 38.779 31.0508L36.6254 28.8972L38.5936 27.9132C38.8448 27.7875 38.999 27.5261 38.9873 27.2455C38.9756 26.9648 38.8003 26.7171 38.5395 26.6128L31.406 23.7594Z"
+                    fill="#333333" />
+                </svg>
+              </div>
+              <div class="comparison__content-wrapper-card-description">
+                <h3 class="comparison__content-wrapper-card-description-title">Real browsers</h3>
+                <p class="comparison__content-wrapper-card-description-subtitle">Run your tests on real desktop and mobile
+                  browsers
+                  instead of browser engines</p>
+              </div>
+            </article>
+            <article class="comparison__content-wrapper-card">
+              <div class="comparison__content-wrapper-card-image">
+                <svg role="img" width="46" height="40" viewBox="0 0 46 40" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                  <title>Icon showing mobile with magnifying lens</title>
+                  <rect y="4.38385" width="20" height="35" rx="4" fill="white" />
+                  <rect x="1" y="5.38385" width="18" height="33" rx="3" fill="white" stroke="#333333" stroke-width="2" />
+                  <path
+                    d="M1 30.6583H19V35.3839C19 37.0407 17.6569 38.3839 16 38.3839H4C2.34315 38.3839 1 37.0407 1 35.3839V30.6583Z"
+                    fill="white" stroke="#333333" stroke-width="2" />
+                  <circle cx="10" cy="34.5215" r="1.5" fill="#333333" />
+                  <circle cx="25.4187" cy="20.4463" r="9.68485" transform="rotate(11.3639 25.4187 20.4463)"
+                    fill="white" />
+                  <circle cx="27.8836" cy="16.375" r="9.68485" transform="rotate(11.3639 27.8836 16.375)"
+                    fill="#DADDC6" />
+                  <circle cx="25.366" cy="18.122" r="8.79395" transform="rotate(11.3639 25.366 18.122)" fill="white"
+                    stroke="#333333" stroke-width="1.78182" />
+                  <path
+                    d="M33.6052 22.0095L37.9566 25.5841C38.8459 26.3147 38.9745 27.6279 38.244 28.5172C37.5134 29.4065 36.2003 29.5352 35.311 28.8046L30.9596 25.2299L33.6052 22.0095Z"
+                    fill="white" stroke="#333333" stroke-width="1.78" />
+                  <path d="M42.6523 6.22168L38.7661 9.06084" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M34.5352 1.22949L33.7947 5.9851" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M44.9395 15.4697L40.1838 14.7293" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div class="comparison__content-wrapper-card-description">
+                <h3 class="comparison__content-wrapper-card-description-title">Native mobile testing</h3>
+                <p class="comparison__content-wrapper-card-description-subtitle">Test your native iOS and Android
+                  applications without
+                  any learning curve</p>
+              </div>
+            </article>
+            <article class="comparison__content-wrapper-card">
+              <div class="comparison__content-wrapper-card-image">
+                <svg role="img" width="49" height="39" viewBox="0 0 49 39" fill="none" xmlns="http://www.w3.org/2000/svg"
+                  shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+                  <title>Icon showing W3C compliance</title>
+                  <circle cx="19" cy="19.9429" r="18" stroke="#333333" stroke-width="2" />
+                  <path
+                    d="M28.0875 19.9429C28.0875 25.0593 26.9843 29.6418 25.2496 32.909C23.4916 36.2201 21.2339 37.9429 18.9997 37.9429C16.7654 37.9429 14.5078 36.2201 12.7497 32.909C11.0151 29.6418 9.91187 25.0593 9.91187 19.9429C9.91187 14.8264 11.0151 10.2439 12.7497 6.97678C14.5078 3.66561 16.7654 1.94287 18.9997 1.94287C21.2339 1.94287 23.4916 3.66561 25.2496 6.97678C26.9843 10.2439 28.0875 14.8264 28.0875 19.9429Z"
+                    stroke="#333333" stroke-width="2" />
+                  <path
+                    d="M28.0875 19.9429C28.0875 25.0593 26.9843 29.6418 25.2496 32.909C23.4916 36.2201 21.2339 37.9429 18.9997 37.9429C16.7654 37.9429 14.5078 36.2201 12.7497 32.909C11.0151 29.6418 9.91187 25.0593 9.91187 19.9429C9.91187 14.8264 11.0151 10.2439 12.7497 6.97678C14.5078 3.66561 16.7654 1.94287 18.9997 1.94287C21.2339 1.94287 23.4916 3.66561 25.2496 6.97678C26.9843 10.2439 28.0875 14.8264 28.0875 19.9429Z"
+                    stroke="#333333" stroke-width="2" />
+                  <path d="M2.00977 12.6685H35.887" stroke="#333333" stroke-width="2" />
+                  <path d="M2.00952 27.2184H35.8867" stroke="#333333" stroke-width="2" />
+                  <path
+                    d="M47.1875 8.46924C47.399 9.17617 47.952 9.72921 48.6589 9.94067C47.952 10.1521 47.399 10.7052 47.1875 11.4121C46.976 10.7052 46.423 10.1521 45.7161 9.94067C46.423 9.72921 46.976 9.17617 47.1875 8.46924Z"
+                    fill="#333333" />
+                  <path
+                    d="M43.416 0.942871C43.8921 2.53457 45.1373 3.77978 46.729 4.25589C45.1373 4.732 43.8921 5.97721 43.416 7.56892C42.9399 5.97721 41.6947 4.732 40.103 4.25589C41.6947 3.77978 42.9399 2.53457 43.416 0.942871Z"
+                    fill="#333333" />
+                  <rect x="16.5742" y="9.28259" width="29.6261" height="15.0901" rx="7.54504" fill="#DADDC6" />
+                  <rect x="14.498" y="12.4116" width="29.2525" height="14.8594" rx="7.42969" fill="white" stroke="#333333"
+                    stroke-width="2" />
+                  <path
+                    d="M21.4949 22.7738L19.8164 16.9078H21.1712L22.1422 20.9837H22.1909L23.2621 16.9078H24.4221L25.4905 20.9923H25.5421L26.513 16.9078H27.8678L26.1894 22.7738H24.9807L23.8636 18.9386H23.8178L22.7036 22.7738H21.4949Z"
+                    fill="#333333" />
+                  <path
+                    d="M30.6655 22.854C30.2378 22.854 29.8568 22.7805 29.5227 22.6335C29.1904 22.4845 28.9279 22.2802 28.735 22.0205C28.544 21.7589 28.4457 21.4572 28.44 21.1154H29.6888C29.6964 21.2586 29.7432 21.3847 29.8291 21.4935C29.917 21.6004 30.0335 21.6835 30.1786 21.7427C30.3237 21.8019 30.487 21.8315 30.6684 21.8315C30.8574 21.8315 31.0245 21.7981 31.1696 21.7312C31.3147 21.6644 31.4284 21.5718 31.5105 21.4534C31.5926 21.335 31.6336 21.1985 31.6336 21.0438C31.6336 20.8872 31.5897 20.7488 31.5019 20.6285C31.4159 20.5063 31.2918 20.4108 31.1295 20.3421C30.9691 20.2733 30.7782 20.239 30.5567 20.239H30.0096V19.3281H30.5567C30.7438 19.3281 30.909 19.2957 31.0522 19.2308C31.1973 19.1658 31.31 19.0761 31.3902 18.9615C31.4704 18.845 31.5105 18.7095 31.5105 18.5548C31.5105 18.4078 31.4751 18.2789 31.4045 18.1681C31.3357 18.0554 31.2384 17.9676 31.1123 17.9046C30.9882 17.8416 30.8431 17.8101 30.677 17.8101C30.5089 17.8101 30.3552 17.8406 30.2158 17.9017C30.0764 17.9609 29.9647 18.0459 29.8807 18.1567C29.7967 18.2674 29.7518 18.3973 29.7461 18.5462H28.5574C28.5631 18.2082 28.6596 17.9103 28.8467 17.6525C29.0338 17.3948 29.2859 17.1933 29.6029 17.0482C29.9218 16.9012 30.2817 16.8276 30.6827 16.8276C31.0875 16.8276 31.4417 16.9012 31.7453 17.0482C32.0489 17.1952 32.2848 17.3938 32.4528 17.644C32.6227 17.8922 32.7068 18.171 32.7049 18.4803C32.7068 18.8087 32.6046 19.0828 32.3984 19.3024C32.1941 19.522 31.9277 19.6613 31.5993 19.7205V19.7664C32.0308 19.8217 32.3592 19.9716 32.5846 20.2161C32.8118 20.4586 32.9245 20.7622 32.9225 21.1269C32.9245 21.4611 32.828 21.758 32.6333 22.0177C32.4404 22.2774 32.174 22.4817 31.8341 22.6306C31.4942 22.7796 31.1047 22.854 30.6655 22.854Z"
+                    fill="#333333" />
+                  <path
+                    d="M39.0241 18.9615H37.7696C37.7467 18.7992 37.6999 18.655 37.6292 18.529C37.5586 18.4011 37.4679 18.2922 37.3571 18.2025C37.2464 18.1127 37.1184 18.044 36.9733 17.9963C36.8301 17.9485 36.6745 17.9246 36.5064 17.9246C36.2028 17.9246 35.9384 18.0001 35.713 18.1509C35.4877 18.2999 35.313 18.5175 35.1889 18.804C35.0648 19.0885 35.0027 19.4341 35.0027 19.8408C35.0027 20.259 35.0648 20.6104 35.1889 20.8949C35.3149 21.1794 35.4906 21.3942 35.7159 21.5393C35.9412 21.6845 36.2019 21.757 36.4979 21.757C36.664 21.757 36.8177 21.7351 36.959 21.6911C37.1022 21.6472 37.2292 21.5833 37.3399 21.4992C37.4507 21.4133 37.5424 21.3092 37.6149 21.187C37.6894 21.0648 37.7409 20.9254 37.7696 20.7689L39.0241 20.7746C38.9917 21.0438 38.9105 21.3035 38.7807 21.5537C38.6527 21.8019 38.4799 22.0244 38.2622 22.221C38.0465 22.4158 37.7887 22.5705 37.4889 22.685C37.191 22.7977 36.854 22.854 36.4778 22.854C35.9546 22.854 35.4868 22.7356 35.0743 22.4989C34.6638 22.2621 34.3392 21.9193 34.1005 21.4706C33.8637 21.0219 33.7453 20.4786 33.7453 19.8408C33.7453 19.2012 33.8656 18.6569 34.1062 18.2082C34.3468 17.7595 34.6733 17.4177 35.0858 17.1828C35.4982 16.946 35.9622 16.8276 36.4778 16.8276C36.8177 16.8276 37.1328 16.8754 37.423 16.9708C37.7152 17.0663 37.9739 17.2057 38.1992 17.389C38.4245 17.5704 38.6079 17.7929 38.7492 18.0564C38.8924 18.3199 38.984 18.6216 39.0241 18.9615Z"
+                    fill="#333333" />
+                </svg>
+              </div>
+              <div class="comparison__content-wrapper-card-description">
+                <h3 class="comparison__content-wrapper-card-description-title">Web standards</h3>
+                <p class="comparison__content-wrapper-card-description-subtitle">Nightwatch follows W3C protocol so your
+                  interactions
+                  reflect a real user</p>
+              </div>
+            </article>
+          </div>
+          <a href="/guide/comparison-with-leading-frameworks.html" class="comparison__content-wrapper-button" aria-label="Compare with Cypress and Playwright"></a>
+        </div>
+      </article>
+    </section>
+    <!-- Nightwatch Comparison section end -->
+
+    <!--  Nightwatch Testimonial section start -->
+    <section class="testimonial">
+
+      <!-- Line Path -->
+      <div class="testimonial__timeline-path" role="presentation">
+        <div class="testimonial__timeline-dot" role="presentation"></div>
+      </div>
+
+      <div class="testimonial__timeline-path-mobile" role="presentation"></div>
+
+      <h2 class="testimonial__heading">Hear<span class="testimonial__heading--highlight">from the best</span></h2>
+
+      <div class="swiper">
+        <div class="testimonial__content swiper-wrapper">
+          <figure class="testimonial__content-card swiper-slide">
+            <blockquote class="testimonial__content-card-description">Nightwatch.js has been making remarkable strides since v2, with a steadfast commitment to enhancing the modern dev experience & providing aid to open-source users.</blockquote>
+            <footer class="testimonial__content-card-author">
+              <div class="testimonial__content-card-author-image">
+                <picture>
+                  <source type="image/webp" srcset="
+                                    images/landing/testimonial/timyao_oaifir_c_scale_w_80.webp 80w,
+                                    images/landing/testimonial/timyao_oaifir_c_scale_w_90.webp 90w">
+                  <img sizes="(max-width: 90px) 100vw, 90px" srcset="
+                                    images/landing/testimonial/timyao_oaifir_c_scale_w_80.png 80w,
+                                    images/landing/testimonial/timyao_oaifir_c_scale_w_90.png 90w" src="timyao.png"
+                    alt="Tim Yao image" loading="lazy" decoding="async" width="100%" height="100%">
+                </picture>
+              </div>
+              <cite class="testimonial__content-card-author-name">
+                <h3 class="testimonial__content-card-author-name-title">Tim Yao</h3>
+                <a href="https://twitter.com/timya0" target="_blank" rel="noopener noreferrer"
+                  class="testimonial__content-card-author-social">
+                  <svg role="img" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Twitter Logo</title>
+                    <path
+                      d="M0 17.6344C2.57077 17.8165 5.11852 17.0452 7.15667 15.4678C6.0379 15.4095 4.96632 14.9985 4.09552 14.2937C3.48791 13.7664 3.00966 13.1064 2.69773 12.3648C2.53698 11.9943 2.69773 11.9804 2.98427 12.0433C3.55779 12.1275 4.14289 12.0821 4.69656 11.9105C2.24345 11.0998 0.957484 9.51328 0.803727 6.97629C1.4761 7.31388 2.21179 7.50673 2.96331 7.5424C0.803728 5.68334 0.272568 3.54472 1.48165 0.916885C2.27599 1.84698 3.1688 2.68823 4.14444 3.42591C6.21265 4.94265 8.65581 5.86578 11.2102 6.09569C11.6436 6.13762 11.7414 6.01182 11.6995 5.59947C11.5378 4.42639 11.8071 3.23448 12.4574 2.24486C13.1078 1.25524 14.095 0.535089 15.2359 0.217992C16.0513 -0.0368794 16.9201 -0.0688892 17.7521 0.125284C18.5841 0.319458 19.349 0.732739 19.9674 1.32224C20.0578 1.41087 20.1705 1.47329 20.2936 1.50284C20.4167 1.53238 20.5455 1.52793 20.6663 1.48998C21.564 1.24943 22.4369 0.924148 23.2732 0.518516C22.9632 1.52231 22.3414 2.40118 21.498 3.02754C22.3582 2.95431 23.2021 2.74924 24 2.41951C23.4957 3.25628 22.839 3.99115 22.0641 4.58608C21.9161 4.69376 21.7984 4.83785 21.7225 5.00438C21.6466 5.17091 21.615 5.35423 21.6308 5.53657C21.4001 11.4073 18.8771 15.9291 13.4886 18.4661C9.0297 20.5628 4.52883 20.1994 0.209668 17.7672C0.13692 17.7276 0.0668768 17.6833 0 17.6344Z" />
+                  </svg>
+                  <span>@timya0</span>
+                </a>
+              </cite>
+            </footer>
+          </figure>
+          <figure class="testimonial__content-card swiper-slide">
+            <blockquote class="testimonial__content-card-description">Nightwatch’s intuitive API & syntax makes testing reliable & maintainable. Faster feedback loops via parallel testing lead to faster deployments. Highly recommended!</blockquote>
+            <footer class="testimonial__content-card-author">
+              <div class="testimonial__content-card-author-image">
+                <picture>
+                  <source type="image/webp" srcset="
+                                    images/landing/testimonial/davidmello_iofo3t_c_scale_w_80.webp 80w,
+                                    images/landing/testimonial/davidmello_iofo3t_c_scale_w_90.webp 90w">
+                  <img sizes="(max-width: 90px) 100vw, 90px" srcset="
+                                    images/landing/testimonial/davidmello_iofo3t_c_scale_w_80.png 80w,
+                                    images/landing/testimonial/davidmello_iofo3t_c_scale_w_90.png 90w" src="davidmello.png"
+                    alt="David Mello image" loading="lazy" decoding="async" width="100%" height="100%">
+                </picture>
+              </div>
+              <cite class="testimonial__content-card-author-name">
+                <h3 class="testimonial__content-card-author-name-title">David Mello</h3>
+                <a href="https://twitter.com/reallymello" target="_blank" rel="noopener noreferrer"
+                  class="testimonial__content-card-author-social">
+                  <svg role="img" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Twitter Logo</title>
+                    <path
+                      d="M0 17.6344C2.57077 17.8165 5.11852 17.0452 7.15667 15.4678C6.0379 15.4095 4.96632 14.9985 4.09552 14.2937C3.48791 13.7664 3.00966 13.1064 2.69773 12.3648C2.53698 11.9943 2.69773 11.9804 2.98427 12.0433C3.55779 12.1275 4.14289 12.0821 4.69656 11.9105C2.24345 11.0998 0.957484 9.51328 0.803727 6.97629C1.4761 7.31388 2.21179 7.50673 2.96331 7.5424C0.803728 5.68334 0.272568 3.54472 1.48165 0.916885C2.27599 1.84698 3.1688 2.68823 4.14444 3.42591C6.21265 4.94265 8.65581 5.86578 11.2102 6.09569C11.6436 6.13762 11.7414 6.01182 11.6995 5.59947C11.5378 4.42639 11.8071 3.23448 12.4574 2.24486C13.1078 1.25524 14.095 0.535089 15.2359 0.217992C16.0513 -0.0368794 16.9201 -0.0688892 17.7521 0.125284C18.5841 0.319458 19.349 0.732739 19.9674 1.32224C20.0578 1.41087 20.1705 1.47329 20.2936 1.50284C20.4167 1.53238 20.5455 1.52793 20.6663 1.48998C21.564 1.24943 22.4369 0.924148 23.2732 0.518516C22.9632 1.52231 22.3414 2.40118 21.498 3.02754C22.3582 2.95431 23.2021 2.74924 24 2.41951C23.4957 3.25628 22.839 3.99115 22.0641 4.58608C21.9161 4.69376 21.7984 4.83785 21.7225 5.00438C21.6466 5.17091 21.615 5.35423 21.6308 5.53657C21.4001 11.4073 18.8771 15.9291 13.4886 18.4661C9.0297 20.5628 4.52883 20.1994 0.209668 17.7672C0.13692 17.7276 0.0668768 17.6833 0 17.6344Z" />
+                  </svg>
+                  <span>@reallymello</span>
+                </a>
+              </cite>
+            </footer>
+          </figure>
+          <figure class="testimonial__content-card swiper-slide">
+            <blockquote class="testimonial__content-card-description">The component testing side of Nightwatch is so good there’s almost no point doing the other class of test in test/e2e. Game changer stuff.</blockquote>
+            <footer class="testimonial__content-card-author">
+              <div class="testimonial__content-card-author-image">
+                <picture>
+                  <source type="image/webp" srcset="
+                                    images/landing/testimonial/paulhammant_uowqen_c_scale_w_80.webp 80w,
+                                    images/landing/testimonial/paulhammant_uowqen_c_scale_w_90.webp 90w">
+                  <img sizes="(max-width: 90px) 100vw, 90px" srcset="
+                                    images/landing/testimonial/paulhammant_uowqen_c_scale_w_80.png 80w,
+                                    images/landing/testimonial/paulhammant_uowqen_c_scale_w_90.png 90w"
+                    src="paulhammant.png" alt="Paul Hammant image" loading="lazy" decoding="async" width="100%" height="100%">
+                </picture>
+              </div>
+              <cite class="testimonial__content-card-author-name">
+                <h3 class="testimonial__content-card-author-name-title">Paul Hammant</h3>
+                <a href="https://twitter.com/paul_hammant" target="_blank" rel="noopener noreferrer"
+                  class="testimonial__content-card-author-social">
+                  <svg role="img" width="24" height="20" viewBox="0 0 24 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <title>Twitter Logo</title>
+                    <path
+                      d="M0 17.6344C2.57077 17.8165 5.11852 17.0452 7.15667 15.4678C6.0379 15.4095 4.96632 14.9985 4.09552 14.2937C3.48791 13.7664 3.00966 13.1064 2.69773 12.3648C2.53698 11.9943 2.69773 11.9804 2.98427 12.0433C3.55779 12.1275 4.14289 12.0821 4.69656 11.9105C2.24345 11.0998 0.957484 9.51328 0.803727 6.97629C1.4761 7.31388 2.21179 7.50673 2.96331 7.5424C0.803728 5.68334 0.272568 3.54472 1.48165 0.916885C2.27599 1.84698 3.1688 2.68823 4.14444 3.42591C6.21265 4.94265 8.65581 5.86578 11.2102 6.09569C11.6436 6.13762 11.7414 6.01182 11.6995 5.59947C11.5378 4.42639 11.8071 3.23448 12.4574 2.24486C13.1078 1.25524 14.095 0.535089 15.2359 0.217992C16.0513 -0.0368794 16.9201 -0.0688892 17.7521 0.125284C18.5841 0.319458 19.349 0.732739 19.9674 1.32224C20.0578 1.41087 20.1705 1.47329 20.2936 1.50284C20.4167 1.53238 20.5455 1.52793 20.6663 1.48998C21.564 1.24943 22.4369 0.924148 23.2732 0.518516C22.9632 1.52231 22.3414 2.40118 21.498 3.02754C22.3582 2.95431 23.2021 2.74924 24 2.41951C23.4957 3.25628 22.839 3.99115 22.0641 4.58608C21.9161 4.69376 21.7984 4.83785 21.7225 5.00438C21.6466 5.17091 21.615 5.35423 21.6308 5.53657C21.4001 11.4073 18.8771 15.9291 13.4886 18.4661C9.0297 20.5628 4.52883 20.1994 0.209668 17.7672C0.13692 17.7276 0.0668768 17.6833 0 17.6344Z" />
+                  </svg>
+                  <span>@paul_hammant</span>
+                </a>
+              </cite>
+            </footer>
+          </figure>
+        </div>
+      </div>
+
+      <div class="swiper-pagination"></div>
+    </section>
+    <!--  Nightwatch Testimonial section end -->
+
+    <!-- Nightwatch Integrations section start -->
+    <section class="integration integration-swiper">
+
+      <div class="integration__timeline-dot" role="presentation"></div>
+
+      <h2 class="integration__heading">Seamlessly<span class="integration__heading--highlight">integrate with
+          Nightwatch</span></h2>
+
+      <div class="integration__content" role="region" aria-label="Nightwatch Integrations">
+        <a href="/guide/writing-tests/using-mocha.html#using-mocha-as-a-test-runner" class="integration__content-link" target="_blank" rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/mocha.svg" alt="Mocha Logo">
+            </div>
+            <div class="integration__content-card-title">Mocha</div>
+          </article>
+        </a>
+        <a href="/guide/writing-tests/using-cucumberjs.html#using-cucumberjs-with-nightwatch" class="integration__content-link" target="_blank" rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/cucumber.svg" alt="Cucumber Logo">
+            </div>
+            <div class="integration__content-card-title">Cucumber.js</div>
+          </article>
+        </a>
+        <a href="/guide/third-party-test-runners/ava.html" class="integration__content-link" target="_blank"
+          rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/ava.svg" alt="Ava Logo">
+            </div>
+            <div class="integration__content-card-title">Ava</div>
+          </article>
+        </a>
+        <a href="/guide/third-party-test-runners/jest.html" class="integration__content-link" target="_blank" rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/jest.svg" alt="Jest Logo">
+            </div>
+            <div class="integration__content-card-title">Jest</div>
+          </article>
+        </a>
+        <a href="/guide/reporters/use-junit-reporter.html" class="integration__content-link" target="_blank"
+          rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/junit.svg" alt="Junit Logo">
+            </div>
+            <div class="integration__content-card-title">JUnit</div>
+          </article>
+        </a>
+        <a href="/guide/reporters/use-html-reporter.html" class="integration__content-link" target="_blank"
+          rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/html.svg" alt="HTML5 Logo">
+            </div>
+            <div class="integration__content-card-title">HTML</div>
+          </article>
+        </a>
+        <a href="/guide/reporters/use-json-reporter.html" class="integration__content-link" target="_blank"
+          rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/json.svg" alt="JSON Logo">
+            </div>
+            <div class="integration__content-card-title">JSON</div>
+          </article>
+        </a>
+        <a href="/guide/reporters/use-teamcity-reporter.html" class="integration__content-link" target="_blank"
+          rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/teamcity.svg" alt="Teamcity Logo">
+            </div>
+            <div class="integration__content-card-title">Team City</div>
+          </article>
+        </a>
+        <a href="/guide/reporters/use-slack-reporter.html" class="integration__content-link" target="_blank"
+          rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/slack.svg" alt="Slack Logo">
+            </div>
+            <div class="integration__content-card-title">Slack</div>
+          </article>
+        </a>
+        <a href="/guide/ci-integrations/run-nightwatch-on-azure-pipelines.html" class="integration__content-link"
+          target="_blank" rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/azure.svg" alt="Azure Logo">
+            </div>
+            <div class="integration__content-card-title">Azure</div>
+          </article>
+        </a>
+        <a href="/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html#running-on-sauce-labs" class="integration__content-link"
+          target="_blank" rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/sauce.svg" alt="Saucelabs Logo">
+            </div>
+            <div class="integration__content-card-title">SauceLabs</div>
+          </article>
+        </a>
+        <a href="/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html#running-on-browserstack" class="integration__content-link"
+          target="_blank" rel="noopener noreferrer">
+          <article class="integration__content-card">
+            <div class="integration__content-card-image">
+              <img loading="lazy" src="/images/landing/integrations/browserstack.svg" alt="Browserstack Logo">
+            </div>
+            <div class="integration__content-card-title">Browserstack</div>
+          </article>
+        </a>
+      </div>
+
+      <div class="swiper-pagination-integrations"></div>
+    </section>
+    <!-- Nightwatch Integrations section end -->
+
+    <!-- Open Source section start -->
+    <section class="open-source">
+
+      <div class="open-source__timeline-dot" role="presentation"></div>
+
+      <h2 class="open-source__heading">Open Source<span class="open-source__heading--highlight">at its best</span>
+      </h2>
+
+      <div class="open-source-content">
+        <article class="open-source-content-card">
+          <div class="open-source-content-card-image">
+            <svg role="img" width="61" height="48" viewBox="0 0 61 48" fill="none" xmlns="http://www.w3.org/2000/svg"
+              shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+              <title>No credit card needed icon</title>
+              <rect x="2.99219" y="2.37207" width="57.0664" height="37.4014" rx="4" fill="#DADDC6" />
+              <rect x="1" y="6.42578" width="55.0664" height="35.4014" rx="3" fill="white" stroke="#333333"
+                stroke-width="2" />
+              <rect x="1" y="14.5674" width="55.0664" height="7.09277" fill="white" stroke="#333333" stroke-width="2" />
+              <path d="M41.0723 1L12.7656 46.625H18.7934L46.9805 1H41.0723Z" fill="white" />
+              <path d="M12.2227 46.625L40.5293 1" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </div>
+          <div class="open-source-content-card-text">
+            <h3 class="open-source-content-card-text--heading">No paywalls</h3>
+            <p class="open-source-content-card-text--paragraph">Nightwatch is committed to open source. Everything works
+              for
+              everyone.</p>
+          </div>
+        </article>
+        <article class="open-source-content-card">
+          <div class="open-source-content-card-image">
+            <svg role="img" width="70" height="56" viewBox="0 0 70 56" fill="none" xmlns="http://www.w3.org/2000/svg"
+              shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+              <title>A mountain with flag icon</title>
+              <path
+                d="M46.6188 5.76953L30.6447 1.30664L30.6444 12.2073C30.6444 12.9045 31.3399 13.3877 31.9933 13.1444L46.6986 7.66981C47.6063 7.33192 47.5516 6.03012 46.6188 5.76953Z"
+                fill="#DADDC6" />
+              <path
+                d="M31.3824 19.0438L3.947 48.6623C2.44028 50.2952 3.59845 52.9398 5.82027 52.9398H65.0711C66.8363 52.9398 67.7359 50.8197 66.5094 49.5502L42.9386 25.1525C42.5455 24.7456 41.8934 24.7456 41.5002 25.1525L40.8451 25.8306C40.452 26.2375 39.7998 26.2375 39.4067 25.8306L32.8352 19.0286C32.4363 18.6157 31.7725 18.6227 31.3824 19.0438Z"
+                fill="#DADDC6" />
+              <path d="M29.9919 22.9619V1" stroke="#333333" stroke-width="2" stroke-linecap="round" />
+              <path
+                d="M45.9665 7.94726L31.2614 3.83892C30.6239 3.66081 29.9924 4.14008 29.9923 4.80201L29.992 14.385C29.992 15.0822 30.6875 15.5654 31.3409 15.3222L46.0463 9.84755C46.9539 9.50965 46.8992 8.20786 45.9665 7.94726Z"
+                fill="white" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M4.73718 49.0415L4.73588 49.0429L2.8292 51.1092C1.64696 52.3904 2.55571 54.4655 4.29905 54.4655H60.7478C62.513 54.4655 63.4127 52.3454 62.1862 51.0759L40.4127 28.5386C39.6264 27.7247 38.3222 27.7247 37.5359 28.5386L37.1416 28.9467L31.5701 23.1797C30.7723 22.3539 29.4447 22.3679 28.6645 23.2102L29.3963 23.888L28.6645 23.2102L4.73718 49.0415Z"
+                fill="white" stroke="#333333" stroke-width="2" stroke-linecap="square" stroke-linejoin="round" />
+              <path d="M30.0078 23.4404L12.884 53.4658" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                stroke-linejoin="round" />
+              <path d="M39.1406 29.4307L30.645 53.7994" stroke="#333333" stroke-width="2" stroke-linecap="square"
+                stroke-linejoin="round" />
+              <path d="M30.0078 22.9619L30.0078 53.7995" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div class="open-source-content-card-text">
+            <h3 class="open-source-content-card-text--heading">Responsive support</h3>
+            <p class="open-source-content-card-text--paragraph">Get your questions answered quickly on our <a
+                href="https://discord.com/invite/SN8Da2X" target="_blank" rel="noopener noreferrer">Discord</a> server.
+            </p>
+          </div>
+        </article>
+        <article class="open-source-content-card">
+          <div class="open-source-content-card-image">
+            <svg role="img" width="58" height="64" viewBox="0 0 58 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+              shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+              <title>a black and white image of a wrench and gear</title>
+              <path
+                d="M50.7196 25.9743L50.7232 25.9714C51.5678 25.3045 51.7552 24.1385 51.2588 23.2282L51.2529 23.2173L51.2467 23.2066L46.6292 15.2167C46.0851 14.2342 44.9205 13.9269 44.0063 14.2595L43.9907 14.2651L43.9754 14.2713L38.7407 16.374C37.7579 15.6633 36.7133 15.0505 35.5968 14.5483L34.7991 8.98451C34.6594 7.90933 33.7283 7.14795 32.6756 7.14795H23.43C22.3772 7.14795 21.4462 7.90937 21.3064 8.98458L20.5087 14.5493C19.3881 15.0567 18.3454 15.6817 17.3706 16.3763L12.1302 14.2713L12.1302 14.2712L12.1219 14.268C11.137 13.8825 10.0038 14.2643 9.47641 15.2166L4.86096 23.203C4.29992 24.158 4.567 25.3276 5.38235 25.9714L5.38598 25.9743L9.82155 29.4436C9.75981 30.034 9.71732 30.6468 9.71732 31.2669C9.71732 31.8869 9.75981 32.4998 9.82155 33.0902L5.38598 36.5595L5.38598 36.5595L5.38235 36.5623C4.53777 37.2292 4.35036 38.3953 4.84677 39.3055L4.8527 39.3164L4.85889 39.3271L9.47641 47.3172C10.0205 48.2995 11.1851 48.6068 12.0993 48.2743L12.1148 48.2686L12.1302 48.2625L17.3648 46.1597C18.3477 46.8704 19.3923 47.4833 20.5088 47.9854L21.3064 53.5492C21.4461 54.6244 22.3772 55.3858 23.43 55.3858H32.6756C33.7283 55.3858 34.6594 54.6244 34.7991 53.5492L35.5969 47.9845C36.7175 47.4771 37.7601 46.852 38.735 46.1574L43.9754 48.2625L43.9753 48.2625L43.9836 48.2657C44.9686 48.6512 46.1019 48.2694 46.6292 47.317L51.2467 39.3271L51.2529 39.3164L51.2588 39.3055C51.7552 38.3953 51.5678 37.2292 50.7232 36.5623L50.7196 36.5595L46.2843 33.0904C46.3458 32.5068 46.3882 31.9036 46.3882 31.2669C46.3882 30.6301 46.3458 30.027 46.2843 29.4433L50.7196 25.9743ZM28.0528 38.3585C24.1443 38.3585 20.9629 35.1767 20.9629 31.2669C20.9629 27.357 24.1443 24.1752 28.0528 24.1752C31.9613 24.1752 35.1427 27.357 35.1427 31.2669C35.1427 35.1767 31.9613 38.3585 28.0528 38.3585Z"
+                fill="#DADDC6" stroke="#DADDC6" stroke-width="2" />
+              <circle cx="24.4834" cy="31.3662" r="7.37988" fill="white" />
+              <path
+                d="M47.1551 27.9416L47.1588 27.9387C48.0033 27.2718 48.1907 26.1058 47.6943 25.1955L47.6884 25.1846L47.6822 25.1739L43.0647 17.184C42.5207 16.2015 41.356 15.8942 40.4418 16.2267L40.4263 16.2324L40.4109 16.2386L35.1763 18.3413C34.1934 17.6306 33.1488 17.0177 32.0323 16.5156L31.2346 10.9518C31.0949 9.87662 30.1639 9.11523 29.1111 9.11523H19.8655C18.8127 9.11523 17.8817 9.87665 17.742 10.9519L16.9442 16.5165C15.8236 17.0239 14.781 17.649 13.8061 18.3436L8.56574 16.2386L8.56575 16.2385L8.55746 16.2353C7.57257 15.8498 6.4393 16.2316 5.91196 17.1839L1.2965 25.1703C0.735462 26.1253 1.00255 27.2949 1.81789 27.9387L1.82153 27.9416L6.25709 31.4109C6.19536 32.0012 6.15286 32.6141 6.15286 33.2342C6.15286 33.8542 6.19536 34.4671 6.25709 35.0574L1.82153 38.5268L1.82152 38.5267L1.81789 38.5296C0.973321 39.1965 0.785904 40.3625 1.28231 41.2728L1.28824 41.2837L1.29444 41.2944L5.91196 49.2844C6.45604 50.2668 7.62062 50.5741 8.5348 50.2416L8.55037 50.2359L8.56574 50.2297L13.8004 48.127C14.7832 48.8377 15.8278 49.4506 16.9443 49.9527L17.742 55.5164C17.8817 56.5917 18.8127 57.3531 19.8655 57.3531H29.1111C30.1639 57.3531 31.0949 56.5917 31.2346 55.5165L32.0324 49.9518C33.153 49.4444 34.1957 48.8193 35.1705 48.1247L40.4109 50.2297L40.4109 50.2298L40.4192 50.233C41.4041 50.6185 42.5375 50.2367 43.0648 49.2843L47.6822 41.2944L47.6884 41.2837L47.6943 41.2728C48.1907 40.3625 48.0033 39.1965 47.1588 38.5296L47.1551 38.5268L42.7199 35.0577C42.7814 34.474 42.8238 33.8709 42.8238 33.2342C42.8238 32.5974 42.7814 31.9943 42.7199 31.4106L47.1551 27.9416ZM24.4883 40.3258C20.5798 40.3258 17.3984 37.144 17.3984 33.2342C17.3984 29.3243 20.5798 26.1425 24.4883 26.1425C28.3968 26.1425 31.5782 29.3243 31.5782 33.2342C31.5782 37.144 28.3968 40.3258 24.4883 40.3258Z"
+                fill="white" stroke="#333333" stroke-width="2" />
+              <path
+                d="M49.0009 6.14071C49.0207 5.98218 49.0356 5.82365 49.0356 5.65521C49.0356 5.48677 49.0207 5.32824 49.0009 5.16971L50.046 4.3523C50.1401 4.27799 50.1649 4.14423 50.1054 4.03524L49.1148 2.32114C49.0554 2.21215 48.9217 2.17252 48.8127 2.21215L47.5794 2.70756C47.3219 2.5094 47.0445 2.34591 46.7424 2.22206L46.5542 0.909241C46.5393 0.790345 46.4353 0.701172 46.3115 0.701172H44.3303C44.2064 0.701172 44.1024 0.790345 44.0876 0.909241L43.8994 2.22206C43.5972 2.34591 43.3199 2.51435 43.0623 2.70756L41.829 2.21215C41.7151 2.16757 41.5863 2.21215 41.5269 2.32114L40.5363 4.03524C40.4719 4.14423 40.5016 4.27799 40.5957 4.3523L41.6408 5.16971C41.621 5.32824 41.6061 5.49173 41.6061 5.65521C41.6061 5.81869 41.621 5.98218 41.6408 6.14071L40.5957 6.95812C40.5016 7.03243 40.4769 7.16619 40.5363 7.27518L41.5269 8.98928C41.5863 9.09827 41.7201 9.1379 41.829 9.09827L43.0623 8.60286C43.3199 8.80102 43.5972 8.96451 43.8994 9.08836L44.0876 10.4012C44.1024 10.5201 44.2064 10.6092 44.3303 10.6092H46.3115C46.4353 10.6092 46.5393 10.5201 46.5542 10.4012L46.7424 9.08836C47.0445 8.96451 47.3219 8.79607 47.5794 8.60286L48.8127 9.09827C48.9266 9.14285 49.0554 9.09827 49.1148 8.98928L50.1054 7.27518C50.1649 7.16619 50.1401 7.03243 50.046 6.95812L49.0009 6.14071ZM45.3209 7.38912C44.3649 7.38912 43.5873 6.61134 43.5873 5.65521C43.5873 4.69908 44.3649 3.9213 45.3209 3.9213C46.2768 3.9213 47.0544 4.69908 47.0544 5.65521C47.0544 6.61134 46.2768 7.38912 45.3209 7.38912Z"
+                fill="#333333" />
+              <path
+                d="M56.7139 11.2897C56.7226 11.2206 56.729 11.1514 56.729 11.0779C56.729 11.0043 56.7226 10.9352 56.7139 10.866L57.1701 10.5092C57.2112 10.4768 57.222 10.4184 57.196 10.3709L56.7636 9.62277C56.7377 9.57521 56.6793 9.55791 56.6317 9.57521L56.0934 9.79142C55.981 9.70493 55.8599 9.63358 55.728 9.57953L55.6458 9.00658C55.6393 8.95469 55.5939 8.91577 55.5399 8.91577H54.6751C54.621 8.91577 54.5756 8.95469 54.5691 9.00658L54.487 9.57953C54.3551 9.63358 54.234 9.7071 54.1216 9.79142L53.5832 9.57521C53.5335 9.55575 53.4773 9.57521 53.4513 9.62277L53.0189 10.3709C52.9908 10.4184 53.0038 10.4768 53.0448 10.5092L53.501 10.866C53.4924 10.9352 53.4859 11.0065 53.4859 11.0779C53.4859 11.1492 53.4924 11.2206 53.501 11.2897L53.0448 11.6465C53.0038 11.6789 52.993 11.7373 53.0189 11.7849L53.4513 12.5329C53.4773 12.5805 53.5356 12.5978 53.5832 12.5805L54.1216 12.3643C54.234 12.4508 54.3551 12.5221 54.487 12.5762L54.5691 13.1491C54.5756 13.201 54.621 13.2399 54.6751 13.2399H55.5399C55.5939 13.2399 55.6393 13.201 55.6458 13.1491L55.728 12.5762C55.8599 12.5221 55.981 12.4486 56.0934 12.3643L56.6317 12.5805C56.6815 12.6 56.7377 12.5805 56.7636 12.5329L57.196 11.7849C57.222 11.7373 57.2112 11.6789 57.1701 11.6465L56.7139 11.2897ZM55.1075 11.8346C54.6902 11.8346 54.3507 11.4951 54.3507 11.0779C54.3507 10.6606 54.6902 10.3211 55.1075 10.3211C55.5248 10.3211 55.8642 10.6606 55.8642 11.0779C55.8642 11.4951 55.5248 11.8346 55.1075 11.8346Z"
+                fill="#333333" />
+              <path
+                d="M51.135 56.2033L41.162 48.9762C41.6652 46.6664 40.7851 44.1899 38.7028 42.6809C36.511 41.0925 33.6156 41.1674 31.5137 42.5695L36.2263 45.9845L33.8442 49.2731L29.0372 45.8731C28.2655 48.3228 29.1909 51.0828 31.3828 52.6712C33.4651 54.1802 36.092 54.2451 38.1296 53.0471L48.1027 60.2743C48.541 60.592 49.108 60.5014 49.4256 60.0629L51.2519 57.5417C51.664 57.0881 51.5583 56.4265 51.135 56.2033Z"
+                fill="white" />
+              <path
+                d="M52.8089 52.8764L42.8358 45.6493C43.3391 43.3395 42.459 40.863 40.3767 39.354C38.1848 37.7656 35.2895 37.8405 33.1876 39.2426L37.9001 42.6576L35.5181 45.9462L30.711 42.5462C29.9393 44.9959 30.8647 47.7559 33.0566 49.3443C35.1389 50.8533 37.7658 50.9182 39.8034 49.7202L49.7765 56.9474C50.2149 57.2651 50.7819 57.1745 51.0995 56.736L52.9257 54.2148C53.3378 53.7612 53.2321 53.0996 52.8089 52.8764Z"
+                fill="white" stroke="#333333" stroke-width="2" />
+            </svg>
+          </div>
+          <div class="open-source-content-card-text">
+            <h3 class="open-source-content-card-text--heading">Backed by BrowserStack</h3>
+            <p class="open-source-content-card-text--paragraph">Nightwatch is actively maintained by the BrowserStack Open
+              Source Program.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Open Source section end-->
+
+    <!-- Call to action section start -->
+    <section class="call-to-action-section">
+      <article class="call-to-action">
+        <div class="call-to-action-image">
+          <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 250" fill="none">
+            <title>Celebrating with a high five</title>
+            <g clip-path="url(#a)">
+              <path fill="#fff" stroke="#353535" stroke-width="2.845"
+                d="m191.667 185.349 31.005-31.005c2.067-2.325 4.737-1.615 5.814-.969 1.292.646 2.907 5.168 2.907 5.491 1.033 3.617 29.498 56.197 43.601 82.035h-56.843c-7.536-13.135-23.383-40.372-26.484-44.248-3.1-3.875-1.292-9.151 0-11.304Z" />
+              <path fill="#fff" stroke="#353535" stroke-linejoin="round" stroke-width="2.845"
+                d="m194.574 182.442 23.254-22.608c-2.26-1.937-8.72-12.272-2.583-20.347 6.136-8.074 6.459-20.347 7.105-22.931.517-2.067 3.23-3.875 4.522-4.521 2.067-1.809.861-3.553 0-4.199-5.943-2.325-10.228 3.337-11.627 6.459-.969 2.046-3.553 6.266-6.137 6.783-2.584.517-2.799-2.799-2.584-4.522 0-9.689 8.398-34.235 10.013-37.142.803-1.446.323-3.122 0-3.552-1.034-.775-2.584-.323-3.23 0-4.134 2.584-9.905 17.225-12.273 24.223 0-1.292 4.522-20.67 5.49-23.254.776-2.067 0-3.922-.968-4.199-2.261-.646-4.307 2.153-5.168 3.876.517-2.842-1.077-3.984-1.938-4.199-2.584 0-3.445 3.122-4.198 4.522.516-2.584-.862-3.876-1.615-4.199-2.261-.323-4.091 2.8-4.845 4.199-4.091 11.088-11.562 35.72-15.18 49.414-3.617 13.694 4.091 28.099 8.398 33.589l13.564 22.608Z" />
+              <path stroke="#353535" stroke-linejoin="round" stroke-width="2.845"
+                d="M194.575 76.185c-3.23 7.02-9.043 23.576-9.689 34.558m-2.261 0c3.983-.216 13.307.258 18.732 3.875" />
+              <path stroke="#353535" stroke-linejoin="round" stroke-width="2.845"
+                d="M200.711 75.862c-2.307 7.517-7.106 19.701-8.72 35.204M201.68 96.855c-.969 3.337-2.39 11.82-2.906 16.471M202.326 123.339c-4.414 2.153-12.919 9.043-11.627 19.378" />
+              <path fill="#F0F0F0"
+                d="M230.976 175.131c1.606 2.781 2.472 7.426 0 8.853-2.471 1.427-7.345-.905-8.95-3.685-1.605-2.781-.903-6.192 1.568-7.619 2.472-1.427 5.777-.329 7.382 2.451ZM230.976 206.783c1.606 2.78 2.472 7.426 0 8.853-2.471 1.427-7.345-.905-8.95-3.686-1.605-2.78-.903-6.191 1.568-7.618 2.472-1.427 5.777-.33 7.382 2.451ZM224.519 229.391c1.606 2.78 2.472 7.426 0 8.853-2.471 1.427-7.345-.905-8.95-3.686-1.605-2.78-.903-6.191 1.568-7.618 2.472-1.427 5.777-.33 7.382 2.451ZM263.275 222.285c1.606 2.781 2.472 7.426 0 8.853-2.471 1.427-7.345-.905-8.95-3.685-1.605-2.781-.903-6.192 1.568-7.619 2.472-1.427 5.777-.329 7.382 2.451ZM205.141 189.988c1.605 2.781 2.471 7.426 0 8.853-2.472 1.427-7.346-.905-8.951-3.685-1.605-2.781-.903-6.192 1.569-7.619 2.471-1.427 5.776-.329 7.382 2.451Z" />
+              <path fill="#fff" stroke="#353535" stroke-linejoin="round" stroke-width="2.845"
+                d="M126.75 137.872c2.842 17.311-4.414 39.726-8.397 48.769 10.227 3.014 30.618 8.333 30.359 5.49-.258-2.842 2.046-20.993 3.23-29.713 0-3.337 1.292-12.015 6.459-20.024 6.46-10.012 10.335-29.391 9.044-35.85-1.034-5.168 2.153-8.828 3.875-10.012.969-.431 2.778-1.68 2.261-3.23-.517-1.55-2.584-1.938-3.553-1.938-7.751.646-11.021 7.428-11.627 12.273-.107.861-.646 4.909-3.229 5.168-2.584.258-3.876-4.199-3.23-7.106 0-14.856-4.522-29.713-7.751-35.85-2.584-4.909-5.599-3.66-6.783-2.906-2.067.775-.861 5.06 0 7.105 2.842 8.526 4.306 23.47 4.845 31.005-2.584-8.785-8.398-22.608-10.981-28.421-.646-1.938-2.842-5.62-6.46-4.845-3.617.775-1.507 8.075 0 11.627-.861-1.83-3.423-5.167-6.782-3.876-3.359 1.292-1.4 7.429 0 10.336-2.067-3.876-4.952-3.338-6.137-2.584-2.067 1.292-.861 5.921 0 8.074 3.101 5.943 11.197 33.482 14.857 46.508Z" />
+              <path fill="#353535" stroke="#353535" stroke-width="1.423"
+                d="M110.657 149.657c-21.11 20.616-66.35 78.769-72.406 91.898 29.67 0 87.138.674 90.439 0 3.3-.675 1.795-.988 3.886-2.779 13.922-11.928 31.71-42.009 32.539-52.008.829-9.999-2.865-15.916-4.815-17.624-6.799-4.898-22.978-16.062-33.299-21.537-10.322-5.476-15.197-.915-16.344 2.05Z" />
+              <path stroke="#353535" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.845"
+                d="M124.813 79.091c2.368 4.522 7.493 16.084 9.043 26.161M117.061 84.258c1.83 2.584 7.105 12.209 10.981 28.745" />
+              <circle cx="118.676" cy="161.376" r="1.615" fill="#F0F0F0" />
+              <circle cx="129.658" cy="198.195" r="1.615" fill="#F0F0F0" />
+              <circle cx="157.433" cy="180.755" r="1.615" fill="#F0F0F0" />
+              <circle cx="93.484" cy="201.425" r="1.615" fill="#F0F0F0" />
+              <circle cx="112.218" cy="235.66" r="1.615" fill="#F0F0F0" />
+              <circle cx="63.771" cy="235.66" r="1.615" fill="#F0F0F0" />
+              <path stroke="#353535" stroke-linecap="round" stroke-linejoin="round" stroke-width="5.69"
+                d="M171.969 15v15.826M204.738 19.906l-7.912 13.706M140.701 19.906l7.913 13.706" />
+              <circle cx="78.625" cy="123.338" r="15.711" fill="#F0F0F0" />
+              <circle cx="78.491" cy="123.351" r="18.881" stroke="#353535" stroke-width="2.324" />
+              <path fill="#fff" stroke="#353535" stroke-width="1.743"
+                d="M80.216 115.153c-.5-1.539-2.678-1.539-3.178 0l-1.53 4.71h-4.952c-1.619 0-2.292 2.071-.982 3.023l4.005 2.91-1.53 4.709c-.5 1.54 1.262 2.82 2.572 1.869l4.006-2.911 4.006 2.911c1.31.951 3.072-.329 2.571-1.869l-1.53-4.709 4.006-2.91c1.31-.952.637-3.023-.982-3.023h-4.952l-1.53-4.71Zm1.546 4.759Z" />
+              <path fill="#353535"
+                d="m251.135 63.368.372 1.242a14.225 14.225 0 0 0 9.552 9.553l1.242.372-1.242.371a14.224 14.224 0 0 0-9.552 9.553l-.372 1.242-.372-1.242a14.224 14.224 0 0 0-9.552-9.553l-1.242-.371 1.242-.372a14.225 14.225 0 0 0 9.552-9.552l.372-1.243ZM260.576 100.356a7.384 7.384 0 0 0 4.96 4.959 7.387 7.387 0 0 0-4.96 4.96 7.384 7.384 0 0 0-4.959-4.96 7.38 7.38 0 0 0 4.959-4.959Z" />
+              <path stroke="#353535" stroke-linecap="round" stroke-width="2.847" d="M334 241.198H5" />
+            </g>
+            <defs>
+              <clipPath id="a">
+                <path fill="#fff" d="M0 0h340v250H0z" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div class="call-to-action-content">
+          <div class="call-to-action-content-wrapper">
+            <h2 class="call-to-action-content--heading">Ready to try out?</h2>
+            <p class="call-to-action-content--paragraph">Trusted by over 100k repositories for their test automation!</p>
+          </div>
+          <div class="call-to-action-content-action">
+            <div class="call-to-action-content-action-copy-command">
+              <p class="call-to-action-content-action-copy-command-text">npm init nightwatch</p>
+              <button class="call-to-action-content-action-copy-command-button">Copy</button>
+            </div>
+            <a href="/guide/quickstarts/create-and-run-a-nightwatch-test.html"
+              class="call-to-action-content-action-button--get-started">Get Started</a>
+          </div>
+        </div>
+      </article>
+    </section>
+    <!-- Call to action section end -->
+  </main>
+
+  <%- include('footer') %>
+
+  <script type="module" src="/src/js/landing.js"></script>
+
+  <noscript id="mobile-integration-content">
+    <div class="swiper-slide">
+      <a href="https://mochajs.org/" class="integration__content-link" target="_blank" rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/mocha.svg" alt="Mocha Logo">
+          </div>
+          <div class="integration__content-card-title">Mocha</div>
+        </article>
+      </a>
+      <a href="https://cucumber.io/" class="integration__content-link" target="_blank" rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/cucumber.svg" alt="Cucumber Logo">
+          </div>
+          <div class="integration__content-card-title">Cucumber.js</div>
+        </article>
+      </a>
+      <a href="https://github.com/avajs/ava" class="integration__content-link" target="_blank"
+        rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/ava.svg" alt="Ava Logo">
+          </div>
+          <div class="integration__content-card-title">Ava</div>
+        </article>
+      </a>
+      <a href="https://jestjs.io/" class="integration__content-link" target="_blank" rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/jest.svg" alt="Jest Logo">
+          </div>
+          <div class="integration__content-card-title">Jest</div>
+        </article>
+      </a>
+      <a href="/guide/reporters/use-junit-reporter.html" class="integration__content-link" target="_blank"
+        rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/junit.svg" alt="Junit Logo">
+          </div>
+          <div class="integration__content-card-title">JUnit</div>
+        </article>
+      </a>
+      <a href="/guide/reporters/use-html-reporter.html" class="integration__content-link" target="_blank"
+        rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/html.svg" alt="HTML5 Logo">
+          </div>
+          <div class="integration__content-card-title">HTML</div>
+        </article>
+      </a>
+    </div>
+    <div class="swiper-slide">
+      <a href="/guide/reporters/use-json-reporter.html" class="integration__content-link" target="_blank"
+        rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/json.svg" alt="JSON Logo">
+          </div>
+          <div class="integration__content-card-title">JSON</div>
+        </article>
+      </a>
+      <a href="/guide/reporters/use-teamcity-reporter.html" class="integration__content-link" target="_blank"
+        rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/teamcity.svg" alt="Teamcity Logo">
+          </div>
+          <div class="integration__content-card-title">Team City</div>
+        </article>
+      </a>
+      <a href="/guide/reporters/use-slack-reporter.html" class="integration__content-link" target="_blank"
+        rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/slack.svg" alt="Slack Logo">
+          </div>
+          <div class="integration__content-card-title">Slack</div>
+        </article>
+      </a>
+      <a href="/guide/ci-integrations/run-nightwatch-on-azure-pipelines.html" class="integration__content-link"
+        target="_blank" rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/azure.svg" alt="Azure Logo">
+          </div>
+          <div class="integration__content-card-title">Azure</div>
+        </article>
+      </a>
+      <a href="/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html#running-on-sauce-labs" class="integration__content-link"
+        target="_blank" rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/sauce.svg" alt="Saucelabs Logo">
+          </div>
+          <div class="integration__content-card-title">SauceLabs</div>
+        </article>
+      </a>
+      <a href="/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html#running-on-browserstack" class="integration__content-link"
+        target="_blank" rel="noopener noreferrer">
+        <article class="integration__content-card">
+          <div class="integration__content-card-image">
+            <img loading="lazy" src="/images/landing/integrations/browserstack.svg" alt="Browserstack Logo">
+          </div>
+          <div class="integration__content-card-title">Browserstack</div>
+        </article>
+      </a>
+    </div>
+  </noscript>
+
+</body>
+</html>

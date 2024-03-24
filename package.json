@@ -1,10 +1,36 @@
 {
-  "name": "nightwatch-docs",
+  "name": "nightwatchjs.org",
+  "type": "module",
   "version": "0.0.1",
-  "description": "Documentation source for nightwatchjs.org website",
-  "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
-  "author": "Andrei Rusu",
-  "license": "MIT"
+  "description": "Nightwatch.js website - https://nightwatchjs.org",
+  "scripts": {
+    "start": "postdoc run",
+    "serve": "postdoc preview",
+    "clone:docs": "rm -rf nightwatch-docs/ && git clone https://github.com/nightwatchjs/nightwatch-docs.git",
+    "clone:nightwatch": "rm -rf nightwatch/ && git clone https://github.com/nightwatchjs/nightwatch.git",
+    "build": "postdoc build",
+    "optimize": "node build/optimize.js",
+    "netlify": "npm run clone:docs && npm run clone:nightwatch && npm run build",
+    "partytown": "partytown copylib public/~partytown",
+    "eslint": "eslint src test --quiet"
+  },
+  "author": "Andrei Rusu <andrei@pineview.io>",
+  "license": "MIT",
+  "dependencies": {
+    "@builder.io/partytown": "^0.8.0",
+    "ejs": "^3.1.9",
+    "isomorphic-fetch": "^3.0.0",
+    "marked": "^4.3.0",
+    "prismjs": "^1.29.0",
+    "swiper": "^10.0.3"
+  },
+  "devDependencies": {
+    "@halo-lab/stream": "0.0.1",
+    "bootstrap": "^5.3.3",
+    "critical": "^7.1.0",
+    "eslint": "^8.32.0",
+    "html-minifier": "^4.0.0",
+    "nightwatch-examples": "nightwatchjs-community/nightwatch-examples",
+    "postdoc": "0.3.0-preview4"
+  }
 }

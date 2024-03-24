@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /v09/
+Disallow: /v17/
+Disallow: /v26/
+
+
+Sitemap: https://nightwatchjs.org/sitemap.xml

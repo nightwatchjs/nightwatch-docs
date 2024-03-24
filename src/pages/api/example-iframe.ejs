@@ -1,0 +1,146 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title><%- pageTitle %></title>
+  <meta name="description" content="<%- pageDescription %>"/>
+  <meta name="twitter:title" content="<%- pageTitle %>">
+  <meta name="twitter:description" content="<%- pageDescription %>">
+  <meta name="twitter:image" content="<%- pageImage %>">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/style.css" rel="stylesheet">
+  <style>
+    body {
+      background: var(--background-color-dark);
+    }
+    iframe {
+      border: 0;
+      margin: 0;
+      padding: 0;
+    }
+  </style>
+  <script src="https://unpkg.com/@stackblitz/sdk@1/bundles/sdk.umd.js"></script>
+</head>
+<body>
+<div id="container" style="height: 100vh; border: 0;"></div>
+<script>
+StackBlitzSDK.embedProject(
+  'container',
+  // Payload:
+  {
+    files: {
+    'test/<%- name %>.js': `<%- contents %>`,
+    'README.md': `# .<%- name %>() example
+`,
+    'package.json': `{
+  "name": "nightwatch-<%- name %>",
+  "version": "0.0.0",
+  "scripts": {
+    <% if (editorOnly) { } else { %> "start": "nightwatch test/<%- name %>.js --env stackblitz"<% } %>
+  },
+  "dependencies": {<% if (editorOnly) { } else { %>
+    "nightwatch": "latest",
+    "serve-handler": "^6.1.3",
+    "chromedriver": "^103.0.0"<% } %>
+  }
+
+}`,
+    'nightwatch.conf.js': `
+module.exports = {
+  src_folders: ['test'],
+
+  test_settings: {
+    default: {
+      launch_url: 'https://nightwatchjs.org',
+
+      screenshots: {
+        enabled: true,
+        path: 'screens',
+        on_failure: true
+      },
+
+      desiredCapabilities: {},
+
+      webdriver: {
+        start_process: true,
+        host: 'localhost'
+      }
+    },
+
+    stackblitz: {
+      webdriver: {
+        default_path_prefix: '',
+        start_process: false,
+        host: 'remotedriver.nightwatchjs.org',
+        port: 443
+      },
+
+      globals: {
+        after(done) {
+          const handler = require('serve-handler');
+          const http = require('http');
+
+          const server = http.createServer((request, response) => {
+            return handler(request, response, {
+              public: './tests_output/nightwatch-html-report',
+            });
+          });
+
+          server.listen(3000, () => {
+            console.log('Server running at http://localhost:3000. Make sure to enable third-party cookies for nightwatchjs.org in order to view the HTML report.');
+          });
+          done();
+        }
+      },
+
+      desiredCapabilities: {
+        browserName: 'chrome',
+        'goog:chromeOptions': {}
+      }
+    },
+
+    chrome: {
+      desiredCapabilities: {
+        browserName: 'chrome'
+      }
+    }
+  }
+};`
+  },
+    template: 'node',
+    title: 'Nightwatch <%- name %>() example',
+    description: `Try the <%- name %>() example directly in your browser.`,
+  },
+
+  // Options
+  {
+    clickToLoad: false,
+    hideNavigation: true,
+    hideExplorer: <% if (editorOnly) { %>true<% } else { %> false <% } %>,
+    terminalHeight: <% if (editorOnly) { %>0<% } else { %> 45 <% } %>,
+    height: document.body.clientHeight - 100,
+    showSidebar: false,
+    view: <% if (editorOnly) { %>'editor'<% } else { %> 'both'<% } %>,
+    openFile: 'test/<%- name %>.js'
+  }
+);
+
+</script>
+<footer class="footer-section" style="padding: 0">
+  <div class="container">
+
+      <div style="text-align: center; padding: 10px 5px">
+
+          <img loading="lazy"  src="/images/images1/nightwatch-browserstack.svg" alt="nightwatch-browserstack" style="height: 40px;">
+
+            <p style="margin: 10px">
+              © 2023 <a href="https://browserstack.com" target="_blank" style="text-decoration: underline !important;">BrowserStack</a> Limited • Code licensed under the <a rel="noreferrer" href="https://github.com/nightwatchjs/nightwatch/blob/main/LICENSE.md" target="_blank" style="text-decoration: underline !important;">MIT License.</a>
+            </p>
+
+
+
+    </div>
+  </div>
+</footer>
+</body>
+</html>

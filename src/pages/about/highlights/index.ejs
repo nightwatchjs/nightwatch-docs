@@ -1,0 +1,140 @@
+<%
+const data = {
+    version: appSettings.version,
+    baseUrl: appSettings.baseUrl,
+    section: 'about',
+    pageContent: page.content,
+    pageUrl: page.url,
+    pageTitle: page.title || 'About | Nightwatch.js',
+    pageDescription: page.description || 'How to get in touch with the team, and where to submit bugs and feature requests.',
+    pageImage: '/img/banners/nightwatch.jpg'
+};
+%>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <%- include("fonts", data) %>
+    <%- include('header', data) %>
+    <link rel="canonical" href="<%- data.baseUrl + page.url %>"/>
+</head>
+
+<body>
+<%- include('navbar', data) %>
+
+<section id="about-container" class="secondary">
+    <div class="doc-container full-width top-border background">
+        <div class="clearfix">
+            <div class="row flex-xl-nowrap no-gutters">
+                <div class="col-md-3 col-xl-2 doc-sidebar about-sidebar hidden-print" role="complementary">
+                    <div class="clearfix">
+                        <button class="btn btn-link d-md-none collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#doc-sidebar-nav" aria-controls="doc-sidebar-nav" aria-expanded="false"
+                                aria-label="Toggle docs navigation">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+                                <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                            </svg>
+                        </button>
+                        <span class="mobile-sidebar-title">About pages</span>
+                    </div>
+                    <nav class="doc-links collapse clearfix nav-fix" id="doc-sidebar-nav">
+                        <ul class="nav bs-sidenav">
+                            <li>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#about-collapse" aria-expanded="false">
+                                    <a>About</a>
+                                </button>
+
+                                <div class="collapse" id="about-collapse" data-section-url="/about/">
+                                    <ul class="btn-toggle-nav">
+                                        <li><a href="/about/#motivation">Vison</a></li>
+                                        <li><a href="/about/#roadmap">Roadmap</a></li>
+                                        <li><a href="/about/#the-team">The Team</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#contribute-collapse" aria-expanded="false" href="/about/contribute/">
+                                    <a>Contributing</a>
+                                </button>
+                                <div class="collapse" id="contribute-collapse" data-section-url="/about/contribute/">
+                                    <ul class="btn-toggle-nav">
+                                        <li><a href="/about/contribute/#documentation">Documentation</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#community-collapse" aria-expanded="false">
+                                    <a>Community  Resources</a>
+                                </button>
+                                <div class="collapse" id="community-collapse" data-section-url="/about/community/">
+                                    <ul class="btn-toggle-nav">
+                                        <li><a href="/about/community/#community-assistance">Getting Assistance</a></li>
+                                        <li><a href="/about/community/#community-articles">Articles & Guides</a></li>
+                                        <li><a href="/about/community/#community-projects">Open-source Projects</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                            <li>
+                                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#highlights-collapse" aria-expanded="false">
+                                    <a>Highlights</a>
+                                </button>
+                                <div class="collapse" id="highlights-collapse" data-section-url="/about/highlights/">
+                                    <ul class="btn-toggle-nav">
+                                        <li><a href="/about/highlights/developer-experience.html">Developer Experience</a></li>
+                                        <li><a href="/about/highlights/beyond-e2e.html">Go beyond E2E</a></li>
+                                        <li><a href="/about/highlights/types-of-testing.html">Multiple types of testing</a></li>
+                                    </ul>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-md-9 col-xl-9 doc-main-body" role="main">
+                    <div class="docs-section" data-page-uri="<%- data.pageUrl %>">
+                        <div class="docs-sub-section">
+                            <div class="page-content"><%- data.pageContent %></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<%- include("footer", data) %>
+<%- include("scripts") %>
+<script type="module">
+  import {onRender, onLeave} from 'postdoc/page';
+
+  onRender((url) => {
+    const activeLink = document.querySelector(`.nav .btn-toggle-nav a[href$="${url.pathname}"]`);
+
+    if (activeLink) {
+      activeLink.classList.add('active');
+
+      let parentElement = activeLink.parentElement;
+      while (parentElement) {
+        if (parentElement.matches('.collapse')) {
+          parentElement.classList.add('show');
+          const parentButton = parentElement.previousElementSibling;
+          if (parentButton && parentButton.matches('button')) {
+            parentButton.classList.remove('collapsed');
+            parentButton.setAttribute('aria-expanded', 'true');
+          }
+        }
+        parentElement = parentElement.parentElement; // Move up to the next parent element
+      }
+    }
+  }, {forPage: /(\/about\/highlights\/)/});
+
+</script>
+</body>
+</html>

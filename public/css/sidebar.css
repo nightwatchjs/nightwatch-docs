@@ -1,0 +1,535 @@
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+  position: static;
+}
+
+/* First level of nav */
+.bs-sidenav,
+.doc-sideNav {
+  font-size: 16px;
+  display: block;
+  font-family: var(--font-family-three);
+  font-weight: var(--font-weight-three-regular);
+}
+
+.bs-sidebar>.nav>li>a {
+  font-size: 17px !important;
+  font-weight: 400 !important;
+}
+
+/* All levels of nav */
+.bs-sidebar .nav>li>a {
+  display: block;
+  padding: 5px 10px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c7254e;
+}
+
+.bs-sidebar .nav>li>a:hover,
+.bs-sidebar .nav>li>a:focus {
+  color: #444444;
+}
+
+.bs-sidebar .nav .nav>li>a.active+ul {
+  display: block;
+}
+
+.bs-sidebar .nav .nav>li>a.active {
+  color: #222;
+  background: #f2f2f2;
+}
+
+.bs-sidebar .nav>.active>a,
+.bs-sidebar .nav>.active:hover>a,
+.bs-sidebar .nav>.active:focus>a {
+  font-weight: 400;
+  color: #222;
+  background: #f2f2f2;
+}
+
+.bs-sidenav h5 a {
+  color: #c7254e;
+  font-size: 18px;
+  padding-bottom: 6px;
+  display: block;
+  padding-top: 0;
+  padding-left: 0 !important;
+}
+
+.bs-sidenav h5:hover a {
+  color: #111
+}
+
+/* Nav: second level (shown on .active) */
+.bs-sidebar .nav .nav {
+  /*display: none; !* Hide by default, but at >768px, show it *!*/
+  margin-left: 16px;
+  font-size: 90%;
+  margin-top: 15px;
+}
+
+.bs-sidebar .nav .nav>li.active>a {
+  color: #444
+}
+
+.bs-sidebar .nav {
+  display: block;
+}
+
+.doc-sidebar {
+  border-right: 1px solid rgba(0, 0, 0, 0.09);
+  height: 100vh;
+  position: sticky;
+}
+
+.mobile-sidebar-title {
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .doc-sidebar {
+    border: none;
+    background: #f5f5f5;
+    top: 78px;
+    padding: 10px 0 !important;
+    z-index: 9;
+    height: 100%;
+  }
+
+  .doc-sidebar .btn {
+    color: #fff;
+    background: #502d17;
+    margin: 0 15px;
+    padding: 5px 5px;
+    border-radius: 50%;
+  }
+
+  .mobile-sidebar-title {
+    display: inline;
+  }
+}
+
+/* List style fix for safari  */
+.nav li {
+  list-style: none;
+}
+
+#doc-sidebar-nav > ul > li {
+  border-bottom: 1px solid var(--color-light-black);
+  padding: 8px 0;
+}
+
+#doc-sidebar-nav > ul > li:last-child {
+  border-bottom: none
+}
+
+.bs-sidebar .nav li .nav li {
+  display: block;
+}
+
+.bs-sidebar ul.nav>li.active ul.nav>li>ul.nav {
+  margin-left: 25px;
+}
+
+.bs-sidebar ul.nav>li.active ul.nav>li>ul.nav>li>a {
+  font-size: 16px;
+  padding-top: 6px;
+}
+
+.bs-sidebar .nav .nav>li>a span.internal {
+  font-size: 90%;
+  display: inline-block;
+  margin: 0 0 5px 5px;
+  background: #f2f2f2;
+  padding: 0 2px;
+}
+
+.bs-sidebar .nav>li>a {
+  font-weight: 400;
+}
+
+.nav.bs-sidenav h5 {
+  padding: 5px;
+  color: #222;
+  font-weight: 400;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+ul.nav.bs-sidenav a:hover {
+  color: #222;
+}
+
+ul li ul li ul li a.active {
+  background-color: transparent !important;
+  text-decoration: underline;
+}
+
+ul.nav.bs-sidenav .nav button>a,
+ul.nav.bs-sidenav .nav button>a:hover {
+  font-size: 16px;
+}
+
+/* Show and affix the side nav when space allows it */
+@media (min-width: 992px) {
+  .bs-sidebar .nav>.active>ul {
+    display: block;
+  }
+
+  /* Widen the fixed sidebar */
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+
+  .bs-sidebar.affix {
+    position: fixed;
+    /* Undo the static from mobile first approach */
+    top: 75px;
+    bottom: 0;
+    overflow-y: auto;
+  }
+
+  [data-uri="/gettingstarted"] .bs-sidebar.affix,
+  [data-uri="/guide"] .bs-sidebar.affix {
+    bottom: 56px;
+  }
+
+  .bs-sidebar.affix-bottom {
+    position: absolute;
+    /* Undo the static from mobile first approach */
+  }
+
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    padding-bottom: 15px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  /* Widen the fixed sidebar again */
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 330px;
+  }
+
+  .bs-sidenav {
+    font-size: 18px;
+  }
+
+  .doc-main-body {}
+
+  .doc-sidebar {}
+}
+
+@media (min-width: 1400px) {
+  .doc-sidebar {
+    min-width: 320px;
+  }
+
+  [data-uri^="/guide"] .doc-main-body {
+    max-width: 870px;
+  }
+
+  #apimethod-container .doc-main-body {
+    max-width: 1150px;
+  }
+
+  #apimethod-container .doc-main-body .sample-test {
+    max-width: 1070px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .doc-sidebar {
+    min-width: 320px;
+  }
+
+  .doc-main-body {
+    max-width: 1070px;
+  }
+}
+
+.bs-sidebar.affix-top {
+  margin-bottom: 50px;
+}
+
+.bs-sidebar>ul.bs-sidenav>li {
+  display: block;
+}
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.nav-flush .nav-link {
+  border-radius: 0;
+}
+
+.btn-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: .25rem .5rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, .65);
+  background-color: transparent;
+  border: 0;
+  text-align: left;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  outline: none;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+  box-shadow: none;
+}
+
+.btn-toggle::before {
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+  background: transparent;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav {
+  padding-left: .5rem;
+}
+
+.btn-toggle-nav a {
+  display: inline-flex;
+  padding: 3px;
+  margin-left: 0;
+  text-decoration: none;
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {}
+
+.btn-toggle-nav li {
+  margin-left: 0;
+}
+
+ul.nav .btn-toggle-nav li h5 {
+  margin-left: 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+ul.nav .btn-toggle-nav li {
+  margin-bottom: 5px;
+}
+
+ul.nav .btn-toggle-nav li .btn-toggle {
+  margin-left: 5px;
+}
+
+ul.nav .btn-toggle-nav li ul li {
+  margin-bottom: 0px;
+  margin-left: 3px;
+}
+
+.toggle-nav-inner li .btn-toggle {
+  padding: 0 5px 0 18px;
+}
+
+ul.nav .btn-toggle-nav li a {
+  font-size: 15px;
+  color: #555;
+  display: block;
+  padding: 2px 10px 2px 5px;
+  line-height: 20px;
+}
+
+ul.nav .btn-toggle-nav li ul.local-nav li a {
+  padding: 4px 10px 4px 8px;
+}
+
+.btn-toggle-nav li a.section {
+  color: #2A2A2A;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+ul.nav .btn-toggle-nav li>a {
+  margin-left: 15px;
+}
+
+ul.nav ul.toggle-nav-inner .btn-toggle-nav li a {
+  margin: 4px 0px 4px 25px;
+  line-height: 18px;
+  padding: 4px 4px 4px 9px;
+}
+
+ul.nav .btn-toggle-nav li a:hover {
+  color: #C7254E;
+  text-decoration: underline;
+}
+
+ul.nav .btn-toggle-nav li a.active {
+  background: #DDA562 !important;
+  color: #fff;
+  text-decoration: none;
+}
+
+ul.nav .btn-toggle-nav li a.active:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+.bs-sidebar {
+  position: sticky;
+  top: 110px;
+}
+
+@media only screen and (max-width: 767px) {
+  .bs-sidebar {
+    top: 102px;
+  }
+}
+
+.bs-sidebar ul.nav .btn-toggle-nav li.overview a {
+  padding-left: 5px;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+.bs-sidebar a,
+.bs-sidebar a:hover {
+  text-decoration: none;
+}
+
+.bs-sidenav button a {
+  font-weight: 500;
+  display: block;
+  position: relative;
+  line-height: 30px;
+  font-size: 16px;
+  color: #2A2A2A;
+  cursor: pointer;
+  padding-left: 7px;
+}
+
+.bs-sidenav button a:hover {
+  color: #222;
+  text-decoration: none;
+}
+
+.bs-sidenav ul li a {
+  font-size: 16px;
+}
+
+.bs-sidebar ul li::marker {
+  content: none;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+body.navbar-visible .bs-sidebar {
+  height: calc(100vh - 100px);
+}
+
+.right-side-nav {
+  position: fixed;
+  right: 10px;
+  top: 120px;
+}
+
+@media screen and (max-width: 1600px) {}
+
+.doc-container.top-border .doc-sidebar {
+  padding-top: 10px;
+  padding-left: 0;
+  padding-right: 0px;
+}
+
+/* @media screen and (max-width: 1400px) {
+  [data-uri$="/api"] .bs-sidebar {
+    top: 85px !important;
+  } */
+
+[data-uri^="/api"] body.navbar-visible .bs-sidenav {
+  margin-top: 0 !important;
+}
+
+body.navbar-visible .bs-sidebar {
+  /* max-height: 590px; */
+}
+
+.toggle-nav-inner li button a {
+  font-weight: 400;
+  padding-left: 10px !important;
+}
+
+ul.nav .btn-toggle-nav.toggle-nav-inner li button a.active {
+  background: none !important;
+  color: #767676 !important;
+}
+
+#sidebar-filter {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  width: 98%;
+  height: 32px;
+  font-size: 16px;
+}
+
+.filter-container {
+  position: relative;
+  width: 100%;
+}
+
+.filter-list {
+  display: none;
+}
+
+.filter-list a {
+  color: var(--color-muted-brown);
+}
+
+.filter-container .filter-list {
+  position: absolute;
+  background: white;
+  box-shadow: 0px 11px 8px 1px #d1d1d1;
+  z-index: 1000;
+  top: 49px;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 0;
+}
+
+.filter-container .filter-list .list-group-item {
+  border: 0;
+  border-bottom: 1px solid var(--color-light-black);
+  padding: 15px 20px;
+}
+
+.filter-container .filter-list .list-group-item:last-child {
+  border: 0;
+}
+
+.filter-container .filter-list .list-group-item:hover, li.keyactive {
+  background-color: #eeeeee;
+}
+
+.filter-container .filter-list .list-group-item:hover a, li.keyactive a {
+  color: var(--color-orange) !important;
+}

@@ -2,5 +2,23 @@
 node_modules
 .idea
 *.plist
+.idea/
+.vscode/
 
-api/**/*.ejs
+# Dependency directories
+node_modules/
+logs
+
+# Postdoc output directory
+out/
+output/
+
+# dotenv environment variables file
+.env
+.env.local
+
+# Nightwatch output directory
+tests_output
+/public/__examples/
+package-lock.json
+.pd*

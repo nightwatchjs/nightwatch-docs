@@ -1,0 +1,33 @@
+<script type="module">
+  const id = 'GTM-MWC4FHS';
+  const dataLayer = window.dataLayer || [];
+
+  dataLayer.push({
+    'gtm.start': new Date().getTime(),
+    event: 'gtm.js'
+  });
+
+  function injectScript() {
+    let j = document.createElement('script');
+    j.async = true;
+    j.src = 'https://www.googletagmanager.com/gtm.js?id=' + id;
+
+    let f = document.getElementsByTagName('script')[0];
+
+    if (f && document.head.contains(f)) {
+      document.head.insertBefore(j, f);
+    } else {
+      document.head.appendChild(j);
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function onDomContentReady() {
+      injectScript();
+
+      document.removeEventListener('DOMContentLoaded', onDomContentReady);
+    });
+  } else {
+    injectScript();
+  }
+</script>

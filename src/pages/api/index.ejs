@@ -1,0 +1,68 @@
+<%
+const path = require('path');
+
+let commandName = path.basename(page.url, path.extname(page.url));
+let commandDescr = '';
+
+if (commandName === 'index') {
+  commandName = '';
+}
+
+if (commandName) {
+  const namespace = page.url.split('/').slice(2);
+  namespace.pop();
+  const commandNamespace = namespace.join('.');
+
+  if (namespace.length) {
+    commandName = `${commandNamespace}.${commandName}`;
+  }
+
+  commandDescr = `Complete API reference for the ${commandName} Nightwatch command/assertion.`;
+  commandName = `${commandName} | API Reference | Nightwatch.js`;
+}
+
+let pageContent = page.content;
+
+if (page.comments) {
+  // Each API file contains exactly 1 doc comment, so we can safely get it.
+  const method = page.comments[0];
+
+  const fileLink = /\/lib.+$/.exec(page.commentsSourcePath)[0];
+  const editLink = `${appSettings.apiRepoUrl}/${appSettings.githubRepo}/edit/main${fileLink}?message=api-docs%20update`;
+
+  pageContent = await include('api-method', {
+    method,
+    editLink,
+  });
+}
+
+const data = {
+    version: appSettings.version,
+    baseUrl: appSettings.baseUrl,
+    section: 'api',
+    pageContent: pageContent,
+    pageTitle: commandName ? commandName : (page.title || 'API Reference | Nightwatch.js'),
+    pageDescription: commandDescr ? commandDescr : (page.description || 'Complete reference of the Nightwatch commands and assertions.'),
+    pageImage: page.image || '/img/banners/nightwatch.jpg'
+};
+%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("fonts", data) %>
+    <%- include("header", data) %>
+    <link rel="canonical" href="<%- data.baseUrl + page.url %>"/>
+</head>
+
+<body>
+<%- include("navbar", data) %>
+
+<section id="api-container" class="secondary">
+  <%-  include("sections/api", data) %>
+</section>
+
+<%- include("footer", data) %>
+<%- include("scripts") %>
+</body>
+</html>

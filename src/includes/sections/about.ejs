@@ -1,0 +1,568 @@
+<div class="doc-container full-width top-border background">
+  <div class="clearfix">
+    <div class="row flex-xl-nowrap no-gutters">
+      <div class="col-md-3 col-xl-2 doc-sidebar about-sidebar hidden-print" role="complementary">
+        <div class="clearfix">
+          <button class="btn btn-link d-md-none collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#doc-sidebar-nav" aria-controls="doc-sidebar-nav" aria-expanded="false"
+                  aria-label="Toggle docs navigation">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-border-width" viewBox="0 0 16 16">
+                    <path d="M0 3.5A.5.5 0 0 1 .5 3h15a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-2zm0 5A.5.5 0 0 1 .5 8h15a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1zm0 4a.5.5 0 0 1 .5-.5h15a.5.5 0 0 1 0 1H.5a.5.5 0 0 1-.5-.5z"/>
+                  </svg>
+          </button>
+          <span class="mobile-sidebar-title">About pages</span>
+        </div>
+        <nav class="doc-links collapse clearfix nav-fix" id="doc-sidebar-nav">
+          <ul class="nav bs-sidenav">
+            <li>
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#about-collapse" aria-expanded="false">
+                <a>About</a>
+              </button>
+
+              <div class="collapse" id="about-collapse" data-section-url="/about/">
+                <ul class="btn-toggle-nav">
+                  <li><a href="/about/#motivation">Vison</a></li>
+                  <li><a href="/about/#roadmap">Roadmap</a></li>
+                  <li><a href="/about/#the-team">The Team</a></li>
+                </ul>
+              </div>
+
+            </li>
+            <li>
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#contribute-collapse" aria-expanded="false" href="/about/contribute/">
+                <a>Contributing</a>
+              </button>
+              <div class="collapse" id="contribute-collapse" data-section-url="/about/contribute/">
+                <ul class="btn-toggle-nav">
+                  <li><a href="/about/contribute/#documentation">Documentation</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#community-collapse" aria-expanded="false">
+                <a>Community  Resources</a>
+              </button>
+              <div class="collapse" id="community-collapse" data-section-url="/about/community/">
+                <ul class="btn-toggle-nav">
+                  <li><a href="/about/community/#community-assistance">Getting Assistance</a></li>
+                  <li><a href="/about/community/#community-articles">Articles & Guides</a></li>
+                  <li><a href="/about/community/#community-projects">Open-source Projects</a></li>
+                </ul>
+              </div>
+
+            </li>
+            <li>
+              <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse"
+                      data-bs-target="#highlights-collapse" aria-expanded="false">
+                <a>Highlights</a>
+              </button>
+              <div class="collapse" id="highlights-collapse" data-section-url="/about/highlights/">
+                <ul class="btn-toggle-nav">
+                  <li><a href="/about/highlights/developer-experience.html">Developer Experience</a></li>
+                  <li><a href="/about/highlights/beyond-e2e.html">Go beyond E2E</a></li>
+                  <li><a href="/about/highlights/types-of-testing.html">Multiple types of testing</a></li>
+                </ul>
+              </div>
+
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col-md-9 col-xl-9 doc-main-body" role="main">
+        <div class="docs-section" data-page-uri="/about">
+          <div class="docs-sub-section">
+            <div class="">
+              <h2 id="motivation" name="motivation">About Nightwatch</h2>
+            </div>
+            <p>Nightwatch was published in January 2014, initially created by <a rel="noreferrer"
+                                                                                 href="https://twitter.com/andreirusu_" target="_blank">Andrei Rusu</a> as a tool to enable writing of
+              automated UI tests in a straightforward way, and which will require as little configuration and additional
+              libraries as possible.</p>
+            <p>
+              Right after it was published, <strong>Nightwatch</strong> has seen steady growth and has now become one of
+              the most popular Node.js end-to-end testing solutions for web applications and websites.
+            </p>
+
+            <p>
+              From the very <a href="https://github.com/nightwatchjs/nightwatch/issues/1" rel="noreferrer"
+                               target="_blank">first Github Issue</a> opened by Evan You (creator of <a href="https://vuejs.org"
+                                                                                                        rel="noopener" target="_blank">Vue.js</a>) and seamless integration with the Vue.js framework, to being
+              featured on the <a href="https://twitter.com/nightwatchjs/status/920585197137088512" rel="noreferrer"
+                                 target="_blank">2017 ThoughtWorks Technology Radar</a>,
+              <strong>Nightwatch</strong> has become an established household name in the wider automated testing
+              industry.
+            </p>
+          </div>
+
+          <div class="docs-sub-section">
+            <h3>Our Vision</h3>
+            <p>
+              Instead of building a highly flexible tool which supports a lot of plugins and customization we aim to
+              deliver a tool that is packed with everything you need out of the box.
+            </p>
+
+            <p>
+              We believe that in order to write tests you should only focus on writing tests and not have to add
+              multiple external plugins and dependencies. In our experience, this usually leads to increasingly more
+              time spent on maintaining dependencies and solving configuration issues, instead of writing actual
+              tests.
+            </p>
+            <p>
+              We do however provide mechanisms to <a href="/guide/extending-nightwatch/">extend the existing API
+                commands and assertions</a> when needed and you can also <a
+                      href="/guide/running-tests/#programmatic-api">use Nightwatch programmatically</a> if you wish.
+              We also do our best to ensure that Nightwatch follows an industry agreed upon practice and we try to be
+              compatible with other existing tools.
+            </p>
+
+            <p>
+              You can even write <a href="/guide/unit-testing-with-nightwatch/">Node.js unit tests</a> in Nightwatch
+              to
+              test your backend APIs. These tests are using the same assertion libraries and the same syntax and
+              runner.
+              We can even combine end-to-end tests with unit/integration tests in the same test run.
+            </p>
+          </div>
+
+          <div class="docs-sub-section" id="roadmap" name="roadmap">
+            <h3>Roadmap</h3>
+            <h4>Current Version – 1.7</h4>
+
+            <p>This version adds integrated support for the latest Microsoft Edge browser, improved parallelism
+              support,
+              and a few other features and improvements (such as making the API work with both chaining and promises).
+            </p>
+
+            <h4>Version 2</h4>
+            <p>We are working towards releasing the next major version which will be built on top of the <a
+                      href="https://www.npmjs.com/package/selenium-webdriver" target="_blank">Selenium Webdriver</a>, which
+              will be making test run significantly more stable and more reliable.</p>
+            <p>We'll also add a few new capabilities, such as support for <a
+                      href="https://chromedevtools.github.io/devtools-protocol/" target="_blank">Chrome Dev Tools
+                Protocol</a>, file uploads, and a new APIs.</p>
+          </div>
+
+          <div class="docs-sub-section">
+            <h3 id="the-team" name="the-team">The Team</h3>
+            <div class="row" id="team">
+              <div class="col-md-3">
+                <div class="profile andreirusu">
+                  <div class="profile-pic"></div>
+                  <h4>Andrei Rusu</h4>
+                  <h6>Maintainer</h6>
+                  <p>
+                    <span class="twitter social"><a href="https://twitter.com/andreirusu_/" target="_blank"
+                                                    title="Andrei Rusu on Twitter"></a></span>
+                    <span class="github social"><a href="https://github.com/beatfactor" target="_blank"
+                                                   title="Andrei Rusu on Github"></a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="profile vaibhav">
+                  <div class="profile-pic"></div>
+                  <h4>Vaibhav Singh</h4>
+                  <h6>Contributor</h6>
+                  <p>
+                    <span class="twitter social"><a href="https://twitter.com/vaibhavsingh97" target="_blank"
+                                                    title="Vaibhav Singh on Twitter"></a></span>
+                    <span class="github social"><a href="https://github.com/vaibhavsingh97" target="_blank"
+                                                   title="Vaibhav Singh on Github"></a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="profile ravi">
+                  <div class="profile-pic"></div>
+                  <h4>Ravi Sawlani</h4>
+                  <h6>Contributor</h6>
+                  <p>
+                    <span class="twitter social"><a href="https://twitter.com/gravity_vi" target="_blank"
+                                                    title="Ravi Sawlani on Twitter"></a></span>
+                    <span class="github social"><a href="https://github.com/gravityvi" target="_blank"
+                                                   title="Ravi Sawlani on Twitter"></a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="profile dharin">
+                  <div class="profile-pic"></div>
+                  <h4>Dharin Shah</h4>
+                  <h6>Contributor</h6>
+                  <p>
+                    <span class="github social"><a href="https://github.com/Dharin-shah" target="_blank"
+                                                   title="Dharin Shah on Twitter"></a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="profile binayak">
+                  <div class="profile-pic"></div>
+                  <h4>Binayak</h4>
+                  <h6>Contributor</h6>
+                  <p>
+                    <span class="twitter social"><a href="https://twitter.com/binayak_ghosh" target="_blank"
+                      title="Binayak on Twitter"></a></span>
+<span class="github social"><a href="https://github.com/swrdfish" target="_blank"
+                     title="Binayak on Github"></a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="profile harshit">
+                  <div class="profile-pic"></div>
+                  <h4>Harshit Agarwal</h4>
+                  <h6>Contributor</h6>
+                  <p>
+                    <span class="twitter social"><a href="https://twitter.com/Harshit12155982" target="_blank"
+                      title="Harshit on Twitter"></a></span>
+<span class="github social"><a href="https://github.com/harshit-bs" target="_blank"
+                     title="Harshit on Github"></a></span>
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="profile priyansh">
+                  <div class="profile-pic"></div>
+                  <h4>Priyansh Garg</h4>
+                  <h6>Contributor</h6>
+                  <p>
+                    <span class="twitter social"><a href="https://twitter.com/priyansh3133" target="_blank"
+                      title="Priyansh on Twitter"></a></span>
+<span class="github social"><a href="https://github.com/garg3133" target="_blank"
+                     title="Priyansh on Github"></a></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <p style="margin-top: 50px">
+              <a href="/about/contribute" class="btn btn-primary btn-lg btn-twitter">Become a Contributor</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="docs-section" data-page-uri="/about/contribute">
+          <div class="docs-sub-section">
+            <h2 id="contributing-guidelines">Contributing to Nightwatch</h2>
+            <p>Report any bugs or feature requests on <a href="https://github.com/nightwatchjs/nightwatch/issues"
+                                                         target="_blank">GitHub</a>.
+              Please review the <a href="https://github.com/nightwatchjs/nightwatch/blob/main/CONTRIBUTING.md"
+                                   target="_blank">Contributing Guidelines</a> before submitting a new issue.</p>
+          </div>
+          <div class="docs-sub-section">
+            <h3 id="documentation">Documentation</h3>
+
+            <p>Issues with the documentation, such as inconsistencies, typos or mistakes can be reported on the <a
+                      href="https://github.com/nightwatchjs/nightwatch-docs" target="_blank">Docs Github repository</a>.</p>
+
+            <p>
+              If you'd like to contribute API command examples, you can do so by adding them in this folder:
+              <a
+                      href="https://github.com/nightwatchjs/nightwatch-docs/tree/main/api/method">github.com/nightwatchjs/nightwatch-docs/tree/main/api/method</a>.
+              These are automatically built into the individual API command pages.
+            </p>
+            <p>
+              For example, the
+              <a href="https://nightwatchjs.org/api/clearValue.html">clearValue</a> page is built out of: <a
+                      href="https://github.com/nightwatchjs/nightwatch-docs/blob/main/api/method/clearValue.md"
+                      target="_blank">github.com/nightwatchjs/nightwatch-docs/blob/main/api/method/clearValue.md</a>.
+            </p>
+          </div>
+
+        </div>
+
+        <div class="docs-section" data-page-uri="/about/community" id="community-content">
+
+          <div class="docs-sub-section">
+            <h2 id="community-assistance" name="community-assistance">Getting Assistance</h2>
+            <h4>On Github</h4>
+            <p>You're encouraged to ask any questions you might have regarding the usage of Nightwatch or its APIs on
+              the
+              <a href="https://github.com/nightwatchjs/nightwatch/discussions" target="_blank">Github Discussions</a>
+              page.
+
+              For reporting bugs, please submit a new <a
+                      href="https://github.com/nightwatchjs/nightwatch/issues/new?assignees=&labels=&template=bug_report.md&title="
+                      target="_blank">Bug report</a> on Github. <a
+                      href="https://github.com/nightwatchjs/nightwatch/issues/new?assignees=&labels=&template=feature_request.md&title=%5BEnhancement%5D"
+                      target="_blank">Feature requests</a> are also welcome.
+            </p>
+            <p>New contributors: please also have a look at these resources:</p>
+            <ul>
+              <li><a href="https://github.com/nightwatchjs/nightwatch/blob/main/CONTRIBUTING.md"
+                     target="_blank">Contributing to Nightwatch</a></li>
+              <li><a href="https://github.com/nightwatchjs/nightwatch/blob/main/CODE_OF_CONDUCT.md" target="_blank">Code
+                  of Conduct</a></li>
+            </ul>
+            <h4>On Discord Chat</h4>
+
+            <p>We have setup a new chat server on Discord where you can chat with Nightwatch team members and other
+              users.
+              Please use this link to get in:<br><a href="https://discord.gg/SN8Da2X"
+                                                    target="_blank">https://discord.gg/SN8Da2X</a></p>
+
+            <h4>On Twitter</h4>
+            <p>We are on Twitter at <a href="https://twitter.com/nightwatchjs" target="_blank">@nightwatchjs</a> where
+              we
+              post updates about releases and other type of announcements.</p>
+            <h4>On StackOverflow</h4>
+            <p>In addition, there is a <a href="https://stackoverflow.com/questions/tagged/nightwatch.js">StackOverflow
+                Nightwatch.js tag</a> at your disposal.</p>
+
+          </div>
+
+          <div class="docs-sub-section">
+            <h2 id="community-articles" name="community-articles">Articles &amp; Tutorials</h2>
+
+            <p>
+              A curated list of articles, guides, and video tutorials from the wider Nightwatch community.
+              Please note that the videos and articles listed here aren't created by the Nightwatch team and we cannot
+              guarantee their full accuracy.
+            </p>
+
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://www.davidmello.com/static/c1591e1a57d42702a2a7d9e25086290c/dd090/nightwatch-api-testing.webp" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Tutorial</strong>
+                <h3><a href="https://www.davidmello.com/api-testing-with-nightwatch-supertest/" target="_blank">Add API Testing to your Nightwatch Test Automation</a></h3>
+                <div class="mb-1 text-muted">Published on January 13, 2023 by <a href="https://twitter.com/reallymello" target="_blank">David Mello</a></div>
+                <p class="card-text mb-auto">When the software being tested exposes REST API endpoints it can be more efficient to test the APIs directly instead of going through the UI.</p>
+              </div>
+            </article>
+
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://www.davidmello.com/static/7b14821120634c832c64aaa32dbf83c2/dd090/nightwatch-typescript-banner.webp" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Tutorial + Video</strong>
+                <h3><a href="https://www.davidmello.com/using-nightwatch-with-typescript/" target="_blank">Using TypeScript to write Nightwatch.js Automated Tests</a></h3>
+                <div class="mb-1 text-muted">Published on May 2, 2022 by <a href="https://twitter.com/reallymello" target="_blank">David Mello</a></div>
+                <p class="card-text mb-auto">This guide will show you step-by-step how to create a TypeScript-enabled Nightwatch automated test suite.</p>
+              </div>
+            </article>
+
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://img.youtube.com/vi/LrI4HMXoZeM/0.jpg" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Video Course</strong>
+                <h3><a href="https://testautomationu.applitools.com/nightwatchjs-tutorial/" target="_blank">Introduction to NightwatchJS</a></h3>
+                <div class="mb-1 text-muted">Published on Apr 28, 2020 by <a href="https://twitter.com/irtimid_harding" target="_blank">Dimitri Hardin</a></div>
+                <p class="card-text mb-auto">A complete video course on learning to automate web UI tests with Nightwatch from the <a href="https://testautomationu.applitools.com/" target="_blank">Test Automation University</a>.</p>
+              </div>
+            </article>
+
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://i.ytimg.com/vi/gJvAbGYP-H8/hqdefault.jpg" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Video</strong>
+                <h3><a href="https://www.youtube.com/watch?v=gJvAbGYP-H8" target="_blank">Advanced Nightwatch.js testing
+                    using the Page Object Model and Command API</a></h3>
+                <div class="mb-1 text-muted">Published on Apr 27, 2020 by <a href="https://twitter.com/reallymello"
+                                                                             target="_blank">David Mello</a></div>
+                <p class="card-text mb-auto">A step-by-step guide on how to refactor Nightwatch test cases to use the
+                  Page
+                  Object model API and page commands.</p>
+              </div>
+            </article>
+
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://i.ytimg.com/vi/nSodkqB-838/hqdefault.jpg" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Video</strong>
+                <h3><a href="https://www.youtube.com/watch?v=nSodkqB-838" target="_blank">Accessibility testing using
+                    Nightwatch.js automation with Axe</a></h3>
+                <div class="mb-1 text-muted">Published on Jan 27, 2020 by <a href="https://twitter.com/reallymello"
+                                                                             target="_blank">David Mello</a></div>
+                <p class="card-text mb-auto">Learn how to write automated accessibility tests using Nightwatch and the
+                  <a href="https://www.deque.com/axe/" target="_blank">Axe accessibility tool</a>. The tutorial will
+                  explain how to write assertions for web content accessibility guidelines and detect elements which are
+                  failing accessibility rules.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://i.ytimg.com/vi/EeIsAoxvwxo/hqdefault.jpg" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Video</strong>
+                <h3><a href="https://www.youtube.com/watch?v=EeIsAoxvwxo" target="_blank">Why is (end-to-end) testing
+                    important (to me)?</a></h3>
+                <div class="mb-1 text-muted">Published on Mar 24, 2019 by <a href="https://twitter.com/aberonni"
+                                                                             target="_blank">Domenico Gemoli</a></div>
+                <p class="card-text mb-auto">Nightwatch collaborator Domenico explains why end-to-end testing (and also
+                  other forms of testing) is an important topic to him.
+                  A good explanation of the testing pyramid concept and a good introduction to automated testing.</p>
+              </div>
+            </article>
+
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img
+                        src="https://i.ytimg.com/vi/EIyOmmqeODA/hqdefault.jpg?sqp=-oaymwEjCPYBEIoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLButmxlUzXmMxJeBWEPf8s6BMa4RQ"
+                        alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Video</strong>
+                <h3><a href="https://www.youtube.com/watch?v=EIyOmmqeODA" target="_blank">End-to-end testing with
+                    NightwatchJS #6: Running tests in Browserstack</a></h3>
+                <div class="mb-1 text-muted">Published on Mar 24, 2019 by <a href="https://twitter.com/aberonni"
+                                                                             target="_blank">Domenico Gemoli</a></div>
+                <p class="card-text mb-auto">Domenico demonstrates how to run end-to-end tests with Nightwatch using the
+                  <a href="https://www.browserstack.com/" target="_blank">Browserstack</a> cloud testing platform.
+                  You can find other Nightwatch-related coding videos on his <a
+                          href="https://www.youtube.com/channel/UC1bvBZB7iL2goVOxSALVbCg/videos" target="_blank">Youtube
+                    channel</a>.
+                </p>
+              </div>
+            </article>
+
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://miro.medium.com/max/700/0*hs2aSPnZBMu33QcR" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Article</strong>
+                <h3><a
+                          href="https://medium.com/better-programming/testing-content-security-policy-headers-with-nightwatch-and-express-5a62c5329ba8"
+                          target="_blank">Testing Content Security Policy Headers With Nightwatch and Express</a></h3>
+                <div class="mb-1 text-muted">Published on Sep 2, 2020 by <a href="https://twitter.com/HarryEMartland"
+                                                                            target="_blank">Harry Martland</a></div>
+                <p class="card-text mb-auto">An extented guide on how to improve the security of Express apps using
+                  Nightwatch.</p>
+              </div>
+            </article>
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://www.lambdatest.com/blog/wp-content/uploads/2020/06/Nightwatch-JS-1.jpg" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Article</strong>
+                <h3><a href="https://www.lambdatest.com/blog/introduction-to-nightwatch-js-for-selenium-testing/"
+                       target="_blank">Introduction To Nightwatch.js For Selenium Testing</a></h3>
+                <div class="mb-1 text-muted">Published on Jun 29, 2020 by Rahul Rana</div>
+                <p class="card-text mb-auto">A rundown of the main features, how it works, and capabilities of
+                  Nightwatch.
+                </p>
+              </div>
+            </article>
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://miro.medium.com/max/660/1*PMx1-QDiFpgPkP4n-o6NyQ.png" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Article</strong>
+                <h3><a href="https://medium.com/kaliop/end-to-end-testing-with-nightwatch-js-a821ad787fa4"
+                       target="_blank">End-to-end testing with Nightwatch.js</a></h3>
+                <div class="mb-1 text-muted">Published on Mar 6, 2019 by <a href="https://medium.com/@cavalet.pierre" target="_blank">Pierre Cavalet</a></div>
+                <p class="card-text mb-auto">A good introductory article of the main features and capabilities of
+                  Nightwatch.</p>
+              </div>
+            </article>
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img src="https://miro.medium.com/max/2048/1*Mf1_soL6gjVany4H_WX1EQ.png" alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Article</strong>
+                <h3><a href="https://www.browserstack.com/guide/visual-regression-testing-in-nightwatchjs#toc3"
+                       target="_blank">Visual testing in Nightwatch.js with Percy</a></h3>
+                <div class="mb-1 text-muted">Published on Dec 13, 2018 by <a href="https://twitter.com/d_jones"
+                                                                             target="_blank">David Jones</a></div>
+                <p class="card-text mb-auto"><a href="https://percy.io" target="_blank">Percy.io</a> engineer, David
+                  Jones, gives an introduction on how you can add Percy snapshots to your Nightwatch.js tests for
+                  automated visual testing.</p>
+              </div>
+            </article>
+            <article class="row border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col-auto d-none d-lg-block">
+                <img
+                        src="https://www.lullabot.com/sites/default/files/styles/promo_medium/public/eagle-owl-bubo-bubo-pysgekj.jpg?itok=wazWUi3h"
+                        alt="" />
+              </div>
+              <div class="col p-4 d-flex flex-column position-static">
+                <strong class="d-inline-block mb-2">Article</strong>
+                <h3><a href="https://www.lullabot.com/articles/nightwatch-in-drupal-core" target="_blank">Nightwatch in
+                    Drupal Core</a></h3>
+                <div class="mb-1 text-muted">Published on May 11, 2018 by <a href="https://twitter.com/justafish"
+                                                                             target="_blank">Sally Young</a></div>
+                <p class="card-text mb-auto">Core JavaScript maintainer for popular <a href="https://www.drupal.org/"
+                                                                                       target="_blank">Drupal CMS</a>, Sally Young gives an account about integrating Nightwatch in Drupal
+                  8.6.</p>
+              </div>
+            </article>
+          </div>
+          <div class="docs-sub-section">
+            <h2 id="community-projects" name="community-projects">Open-Source Projects</h2>
+            <article class="row">
+              <div class="col-xs-9">
+                <h3><a href="https://github.com/mozilla/ensemble" target="_blank">Ensemble by Mozilla</a></h3>
+                <p>The platform that powers the <a href="https://data.firefox.com/" target="_blank">Firefox Public Data
+                    Report</a>, a weekly public report on the activity, behavior, and hardware configuration of Firefox
+                  Desktop users.
+                  Built with React and using Nightwatch <strong>v1.2</strong></p>
+              </div>
+            </article>
+            <article class="row">
+              <div class="col-xs-9">
+                <h3><a href="https://github.com/ansible/awx/tree/devel/awx/ui/test/e2e" target="_blank">AWX by
+                    Ansible</a></h3>
+                <p><a href="https://github.com/ansible/awx" target="_blank">AWX</a> provides a web-based user interface,
+                  REST API, and task engine built on top of <a href="https://github.com/ansible/ansible"
+                                                               target="_blank">Ansible</a>. AWX is built in Python and uses Nightwatch <strong>v0.9</strong>.</p>
+              </div>
+            </article>
+            <article class="row">
+              <div class="col-xs-9">
+                <h3><a href="https://github.com/nasa-gibs/worldview" target="_blank">Worldview by NASA</a></h3>
+                <p><a href="https://worldview.earthdata.nasa.gov/" target="_blank">Worldview</a> is an interactive
+                  interface for browsing global, full-resolution satellite imagery. Built with React and using
+                  Nightwatch <strong>v0.9</strong>.</p>
+              </div>
+            </article>
+            <article class="row">
+              <div class="col-xs-9">
+                <h3><a href="https://github.com/webrtc/samples" target="_blank">WebRTC Samples by WebRTC Group</a></h3>
+                <p>The <a href="https://webrtc.github.io/samples/" target="_blank">WebRTC samples</a> This is a
+                  collection of small samples demonstrating various parts of the WebRTC APIs. Uses Nightwatch
+                  <strong>v1.1</strong>.
+                </p>
+              </div>
+            </article>
+            </article>
+            <article class="row">
+              <div class="col-xs-9">
+                <h3><a href="https://github.com/browserstack/nightwatch-browserstack"
+                       target="_blank">nightwatch-browserstack by BrowserStack</a></h3>
+                <p>Examples for running Nightwatch tests against <a href="https://www.browserstack.com"
+                                                                    target="_blank">BrowserStack Automate</a> infrastructure. Uses Nightwatch <strong>v1.0</strong></p>
+              </div>
+            </article>
+          </div>
+          <p>Feel free to <a href="https://twitter.com/nightwatchjs">tip us off</a> about any articles or open source
+            projects that we should list on this page.</p>
+        </div>
+
+        <div class="docs-section" data-page-uri="<%- pageUrl %>">
+          <div class="docs-sub-section">
+            <div class="page-content"><%- pageContent %></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
