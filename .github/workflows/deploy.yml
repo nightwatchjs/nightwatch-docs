@@ -1,15 +1,14 @@
-name: Build and Deploy to Preview
-    
+name: Build and Deploy
+
 on:
   push:
     branches:
-      - 'preview'
+      - 'versions/3.0'
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      BASE_URL: https://dev.nightwatchjs.org
       REMOTE_SERVER: ${{ secrets.REMOTE_SERVER }}
       REMOTE_USER: ${{ secrets.REMOTE_USER }}
       API_DOCS_FOLDER: ${{ github.workspace }}/nightwatch/lib/api
@@ -47,4 +46,4 @@ jobs:
           echo "${{ secrets.PROD_DEPLOY_SECRET }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan ${{ env.REMOTE_SERVER }} >> ~/.ssh/known_hosts
-          rsync -azP --delete ./out/ ${{ env.REMOTE_USER }}@${{ env.REMOTE_SERVER }}:${{ secrets.REMOTE_PREVIEW_DIRECTORY }}
+          rsync -azP --delete ./out/ ${{ env.REMOTE_USER }}@${{ env.REMOTE_SERVER }}:${{ secrets.REMOTE_DIRECTORY }}

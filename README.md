@@ -19,7 +19,7 @@ Documentation sources for [nightwatchjs.org](http://nightwatchjs.org) website.
 
 ## Development
 
-The docs content is written in Markdown and it is located in the `docs` folder. The individual API command pages are generated from the Nightwatch source code. based on the JSDoc comments.  
+The content is written in Markdown and it is located in the `docs` folder. The individual API command pages are generated from the Nightwatch source code. based on the JSDoc comments.  
 
 ### Run the website locally
 
