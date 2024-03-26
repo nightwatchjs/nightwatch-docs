@@ -25,7 +25,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    <td>boolean</td>
    <td>false</td>
    <td>When this is enabled, the Webdriver server is run in background in a <a href="https://nodejs.org/api/child_process.html">child process</a> and started/stopped automatically.
-    <br>Nightwatch includes support for managing Chromedriver, Geckodriver (Firefox), Safaridriver, and Selenium Server. Please refer to the <a href="https://v2.nightwatchjs.org/gettingstarted/installation/#webdriver-service">Install Webdriver</a> section for details.  
+    <br>Nightwatch includes support for managing Chromedriver, Geckodriver (Firefox), Safaridriver, and Selenium Server.
    </td>
  </tr>
 

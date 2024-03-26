@@ -3044,6 +3044,7 @@
   line-height: var(--line-height-h7-s);
   padding: 12px 20px;
   text-decoration: none;
+  text-wrap: nowrap;
 }
 
 .call-to-action-content-action-button--get-started:hover {
