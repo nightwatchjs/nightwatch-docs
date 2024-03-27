@@ -134,7 +134,7 @@ npx nightwatch <%- method.exampleLink %></code></pre>
                 <% if (link.startsWith('http')) { %>
                     <li><code><a href="<%- link %>"><%= link %></a></code></li>
                 <% } else { %>
-                    <li><code><a href="<%- appSettings.baseUrl -%>/api/<%- link.split('.').join('/') %>.html"><%= link %></a></code></li>
+                    <li><code><a href="/api/<%- link.split('.').join('/') %>.html"><%= link %></a></code></li>
                 <% } %>
             <% } %>
         </ul>
