@@ -6,7 +6,8 @@ const {
   BASE_URL = 'https://nightwatchjs.org',
   MD_DOCS_FOLDER =  './docs',
   API_DOCS_FOLDER = resolve('../nightwatch/lib/api'),
-  EXAMPLES_FOLDER = 'node_modules/nightwatch-examples/tests'
+  EXAMPLES_FOLDER = 'node_modules/nightwatch-examples/tests',
+  WEBDRIVER_SPEC = 'https://www.w3.org/TR/webdriver',
 } = env;
 
 export default {
@@ -87,6 +88,7 @@ export default {
   appSettings: {
     version: NIGHTWATCH_VERSION,
     baseUrl: BASE_URL,
+    webdriverSpec : WEBDRIVER_SPEC,
     apiRepoUrl: 'https://github.com',
     githubRepo: 'nightwatchjs/nightwatch',
     docsRepoUrl: 'https://github.com/nightwatchjs/nightwatch-docs/blob/',
