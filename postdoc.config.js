@@ -16,7 +16,7 @@ export default {
 
     ]
   },
-  
+
   session: {
     enable_prefetch: false,
     disable_spa: false
