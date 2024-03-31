@@ -81,5 +81,3 @@ The JSON report should have been generated in the local `tests_output` folder in
 - [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
 - [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
 - [How-to guides > Use reporters > Mochawesome reporter reporter](/guide/reporters/use-mochawesome-reporter.html)
-
-

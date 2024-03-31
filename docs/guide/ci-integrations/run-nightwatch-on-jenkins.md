@@ -96,5 +96,3 @@ Nightwatch also publishes HTML reports which can be published to Jenkins
 <strong>3.</strong> Run your tests to see the HTML report under `Status->HTML Report`.
 
 ![Jenkins HTML report](https://user-images.githubusercontent.com/1677755/178733403-8205f8ad-81a0-47d7-99aa-676e6e211aa2.png)
-
-

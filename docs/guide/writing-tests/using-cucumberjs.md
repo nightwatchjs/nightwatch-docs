@@ -152,5 +152,3 @@ Using: firefox (92.0.1) on MAC (20.6.0).
 10 steps (10 passed)
 0m13.024s (executing steps: 0m12.998s)
 </pre></div>
-
- 

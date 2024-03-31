@@ -134,5 +134,3 @@ You don't need to do anything extra because you've configured the Slack reporter
 - [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
 - [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
 - [Nightwatch Allure on github](https://github.com/kushmangal/Nightwatch-Allure-Reporter)
-
-

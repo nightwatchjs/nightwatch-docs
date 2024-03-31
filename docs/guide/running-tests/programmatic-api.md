@@ -77,5 +77,3 @@ The returned object will be the Nightwatch [browser API](/api/#the-browser-objec
 const browser = await client.launchBrowser();
 </code></pre></div>
 </div>
-
- 

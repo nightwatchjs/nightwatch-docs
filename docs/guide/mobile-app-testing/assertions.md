@@ -194,7 +194,3 @@ Learn [how to run native mobile tests on virtual,real and cloud devices][2]
 [2]:  /guide/mobile-app-testing/running-tests.html
 
 [image-1]:  https://user-images.githubusercontent.com/1677755/220315555-6668b4c9-91c3-4221-a126-a14472bb4824.png
-
-
-
-

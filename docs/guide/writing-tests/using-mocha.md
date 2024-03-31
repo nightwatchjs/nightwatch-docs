@@ -236,5 +236,3 @@ You only need to install it from NPM and it's ready to go. You may optionally co
 To use it as a reporter simply pass the `--reporter mocha-junit-reporter` argument as follows:
 
 <div class="sample-test"><pre><code class="language-bash">npx nightwatch examples/tests/ --reporter mocha-junit-reporter</code></pre></div>
-
- 

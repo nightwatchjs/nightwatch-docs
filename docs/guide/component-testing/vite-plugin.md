@@ -169,8 +169,6 @@ window['@@component_element'] = element;
 ### Recommended content
 - [Blog \> Introducing Component Testing in Nightwatch][8]
 
-
-
 [1]:    https://github.com/nightwatchjs/vite-plugin-nightwatch
 [2]:    https://vitejs.dev/
 [3]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules

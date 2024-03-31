@@ -98,5 +98,3 @@ No assertions ran.
 ### Recommended content
 - [Capture browser console messages](/guide/running-tests/capture-console-messages.html)
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
-
- 

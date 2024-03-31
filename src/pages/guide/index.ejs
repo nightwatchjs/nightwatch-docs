@@ -32,6 +32,255 @@ const defaultPageHeaders = {
     'resources': 'Reference'
 };
 
+const navItems = [
+    {
+        title: 'Overview',
+        collapseId: 'index-collapse',
+        links: [
+            { title: 'What is Nightwatch?', url: '/guide/overview/what-is-nightwatch.html' },
+            { title: "What's new in v3?", url: '/guide/overview/whats-new-in-v3.html' },
+            { title: 'Release notes', url: '/guide/overview/whats-new.html' }
+        ]
+    },
+    {
+        title: 'Get started',
+        collapseId: 'quickstarts-collapse',
+        links: [
+            { title: 'Install Nightwatch', url: '/guide/quickstarts/create-and-run-a-nightwatch-test.html' },
+            { title: 'Using Selenium server', url: '/guide/quickstarts/create-and-run-a-test-with-selenium-server.html' },
+            { title: 'Using cloud providers', url: '/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html' }
+        ]
+    },
+    {
+        title: 'Concepts',
+        collapseId: 'concepts-collapse',
+        links: [
+            { title: 'Test environments', url: '/guide/concepts/test-environments.html' },
+            { title: 'Test globals', url: '/guide/concepts/test-globals.html' },
+            { title: 'Session capabilities', url: '/guide/concepts/session-capabilities.html' },
+            { title: 'Parallel testing', url: '/guide/concepts/parallel-testing-in-nightwatch.html' },
+            { title: 'Page object model', url: '/guide/concepts/page-object-model.html' }
+        ]
+    },
+    {
+        title: 'Write tests',
+        collapseId: 'writing-tests-collapse',
+        links: [
+            { title: 'Introduction', url: '/guide/writing-tests/introduction.html' },
+            { title: 'Commands', url: '/guide/writing-tests/commands.html' },
+            { title: 'Selectors', url: '/guide/writing-tests/selectors.html' },
+            { title: 'Assertions', url: '/guide/writing-tests/adding-assertions.html' },
+            { title: 'BDD test syntax', url: '/guide/writing-tests/test-syntax-bdd.html' },
+            { title: 'Exports test syntax', url: '/guide/writing-tests/test-syntax-exports.html' },
+            { title: 'ES6 async/await', url: '/guide/writing-tests/using-es-6-async-await.html' },
+            { title: 'Finding DOM elements', url: '/guide/writing-tests/finding-interacting-with-dom-elements.html' },
+            { title: 'Xpath selectors', url: '/guide/writing-tests/using-xpath-selectors.html' },
+            { title: 'Complex user actions', url: '/guide/writing-tests/write-complex-user-actions.html' },
+            { title: 'Using test hooks', url: '/guide/writing-tests/using-test-hooks.html' },
+            { title: 'Test globals', url: '/guide/writing-tests/using-test-globals.html' },
+            { title: 'Global hooks', url: '/guide/writing-tests/global-test-hooks.html' },
+            { title: 'Accessibility testing', url: '/guide/using-nightwatch/accessibility-testing.html' },
+            { title: 'Visual regression testing', url: '/guide/writing-tests/visual-regression-testing.html' },
+            { title: 'API testing', url: '/guide/writing-tests/api-testing.html' },
+            { title: 'Unit & integration testing', url: '/guide/writing-tests/write-nodejs-unit-integration-tests.html' },
+            { title: 'Test Doubles', url: '/guide/writing-tests/test-doubles.html' },
+            { title: 'Nightwatch Inspector', url: '/guide/writing-tests/nightwatch-inspector.html' }
+        ]
+    },
+    {
+        title: 'Run tests',
+        collapseId: 'runningtests-collapse',
+        links: [
+            { title: 'CLI test runner', url: '/guide/running-tests/using-the-cli-test-runner.html' },
+            { title: 'Mocha integration', url: '/guide/writing-tests/using-mocha.html' },
+            { title: 'Skip / disable tests', url: '/guide/running-tests/skipping-disabling-tests.html' },
+            { title: 'Running in parallel', url: '/guide/running-tests/parallel-running.html' },
+            { title: 'Filter by test tags', url: '/guide/running-tests/filtering-by-test-tags.html' },
+            { title: 'Test groups', url: '/guide/running-tests/using-with-test-groups.html' },
+            { title: 'Programmatic API', url: '/guide/running-tests/programmatic-api.html' },
+            { title: 'CucumberJS integration', url: '/guide/writing-tests/using-cucumberjs.html' },
+            { title: 'Chrome Devtools Recorder', url: '/guide/writing-tests/chrome-devtools-recorder.html' }
+        ]
+    },
+    {
+        title: 'Component testing',
+        collapseId: 'component-test-collapse',
+        links: [
+            { title: 'Introduction', url: '/guide/component-testing/introduction.html' },
+            { title: 'Using the Vite plugin', url: '/guide/component-testing/vite-plugin.html' },
+            { title: 'Test React components', url: '/guide/component-testing/testing-react-components.html' },
+            { title: 'Write JSX React tests', url: '/guide/component-testing/write-jsx-react-tests.html' },
+            { title: 'Storybook integration', url: '/guide/component-testing/storybook-component-testing.html' },
+            { title: 'Using Angular', url: '/guide/component-testing/testing-angular-components.html' },
+            { title: 'Debug component tests', url: '/guide/component-testing/debugging.html' }
+        ]
+    },
+    {
+        title: 'Mobile App Testing',
+        collapseId: 'mobile-apptesting-collapse',
+        links: [
+            { title: 'Introduction', url: '/guide/mobile-app-testing/introduction.html' },
+            { title: 'Installation', url: '/guide/mobile-app-testing/installation.html' },
+            { title: 'Write Tests', url: '/guide/mobile-app-testing/introduction-writing-tests.html' },
+            { title: 'Using Selectors', url: '/guide/mobile-app-testing/selectors.html' },
+            { title: 'Using Commands', url: '/guide/mobile-app-testing/commands.html' },
+            { title: 'Using Assertions', url: '/guide/mobile-app-testing/assertions.html' },
+            { title: 'Run Tests', url: '/guide/mobile-app-testing/running-tests.html' },
+            { title: 'Debug Tests', url: '/guide/mobile-app-testing/debug-tests.html' }
+        ]
+    },
+    {
+        title: 'Configuration',
+        collapseId: 'configuration-collapse',
+        links: [
+            { title: 'Nightwatch config file', url: '/guide/configuration/nightwatch-configuration-file.html' },
+            { title: 'Define test environments', url: '/guide/configuration/define-test-environments.html' },
+            { title: 'Use ENV variables', url: '/guide/configuration/using-env-variables-in-your-config.html' },
+            { title: 'Take screenshots on test failure', url: '/guide/configuration/taking-screenshots-on-fail.html' },
+            { title: 'Test output', url: '/guide/configuration/customising-test-output.html' },
+            { title: 'Advanced test source filtering', url: '/guide/configuration/advanced-test-source-filtering.html' },
+            { title: 'WebDriver settings', url: '/guide/configuration/web-driver-settings.html' },
+            { title: 'Selenium settings', url: '/guide/configuration/selenium-settings.html' },
+            { title: 'Configure BrowserStack settings', url: '/guide/configuration/browser-stack-settings.html' },
+            { title: 'Configure AWS Device Farm', url: '/guide/configuration/aws-devicefarm-settings.html' }
+        ]
+    },
+    {
+        title: 'How-to guides',
+        collapseId: 'howto-collapse',
+        links: [
+            {
+                title: 'Page Objects',
+                collapseId: 'pageobjects-collapse',
+                links: [
+                    { title: 'Getting started', url: '/guide/using-page-objects/getting-started.html' },
+                    { title: 'Define elements', url: '/guide/using-page-objects/defining-elements.html' },
+                    { title: 'Define sections', url: '/guide/using-page-objects/defining-sections.html' },
+                    { title: 'Add page-specific commands', url: '/guide/using-page-objects/writing-page-specific-commands.html' }
+                ]
+            },
+            {
+                title: 'Debug tests',
+                collapseId: 'debugtests-collapse',
+                links: [
+                    { title: 'Overview', url: '/guide/debugging-tests/overview.html' },
+                    { title: 'Use .pause()', url: '/guide/debugging-tests/using-pause.html' },
+                    { title: 'Use .debug()', url: '/guide/debugging-tests/using-debug.html' },
+                    { title: 'Capture browser logs', url: '/guide/running-tests/capture-console-messages.html' },
+                    { title: 'Capture browser exceptions', url: '/guide/running-tests/catch-js-exceptions.html' },
+                    { title: 'Take heap snapshot', url: '/guide/running-tests/take-heap-snapshot.html' }
+                ]
+            },
+            {
+                title: 'Run on CI Servers',
+                collapseId: 'ci-integrations-collapse',
+                links: [
+                    { title: 'Jenkins', url: '/guide/ci-integrations/run-nightwatch-on-jenkins.html' },
+                    { title: 'Github Actions', url: '/guide/ci-integrations/run-nightwatch-on-github-actions.html' },
+                    { title: 'Bamboo', url: '/guide/ci-integrations/run-nightwatch-on-bamboo.html' },
+                    { title: 'Azure Pipelines', url: '/guide/ci-integrations/run-nightwatch-on-azure-pipelines.html' },
+                    { title: 'CircleCI', url: '/guide/ci-integrations/run-nightwatch-on-circleci.html' },
+                    { title: 'Gitlab CI', url: '/guide/ci-integrations/run-nightwatch-on-gitlab.html' }
+                ]
+            },
+            {
+                title: 'Network requests',
+                collapseId: 'networkrequests-collapse',
+                links: [
+                    { title: 'Capture network calls', url: '/guide/network-requests/capture-network-calls.html' },
+                    { title: 'Mock network response', url: '/guide/network-requests/mock-network-response.html' },
+                    { title: 'Mock geolocation', url: '/guide/network-requests/mock-geolocation.html' }
+                ]
+            },
+            {
+                title: 'Reporters',
+                collapseId: 'reporters-collapse',
+                links: [
+                    { title: 'JUnit XML reporter', url: '/guide/reporters/use-junit-reporter.html' },
+                    { title: 'HTML reporter', url: '/guide/reporters/use-html-reporter.html' },
+                    { title: 'JSON reporter', url: '/guide/reporters/use-json-reporter.html' },
+                    { title: 'Mochawesome reporter', url: '/guide/reporters/use-mochawesome-reporter.html' },
+                    { title: 'Slack reporter', url: '/guide/reporters/use-slack-reporter.html' },
+                    { title: 'Allure reporter', url: '/guide/reporters/use-nightwatch-allure-reporter.html' },
+                    { title: 'Teamcity reporter', url: '/guide/reporters/use-teamcity-reporter.html' },
+                    { title: 'Add custom reporter', url: '/guide/reporters/create-custom-reporter.html' },
+                    { title: 'DOM history', url: '/guide/reporters/dom-history.html' }
+                ]
+            },
+            {
+                title: 'Test on mobile',
+                collapseId: 'mobiletesting-collapse',
+                links: [
+                    { title: 'Use Nightwatch with Appium', url: '/guide/mobile-web-testing/with-appium.html' },
+                    { title: 'Override device dimensions', url: '/guide/mobile-web-testing/override-device-dimensions.html' }
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Extend Nightwatch',
+        collapseId: 'extending-collapse',
+        links: [
+            { title: 'Define custom commands', url: '/guide/extending-nightwatch/adding-custom-commands.html' },
+            { title: 'Define custom assertions', url: '/guide/extending-nightwatch/adding-custom-assertions.html' },
+            { title: 'Create custom reporters', url: '/guide/extending-nightwatch/adding-custom-reporters.html' },
+            { title: 'Plugins', url: '/guide/extending-nightwatch/adding-plugins.html' }
+        ]
+    },
+    {
+        title: 'Reference',
+        collapseId: 'reference-collapse',
+        links: [
+            {
+                title: 'Browser Drivers',
+                collapseId: 'browserdrivers-collapse',
+                links: [
+                    { title: 'GeckoDriver (Firefox)', url: '/guide/browser-drivers/geckodriver.html' },
+                    { title: 'ChromeDriver', url: '/guide/browser-drivers/chromedriver.html' },
+                    { title: 'SafariDriver', url: '/guide/browser-drivers/safaridriver.html' },
+                    { title: 'EdgeDriver', url: '/guide/browser-drivers/edgedriver.html' }
+                ]
+            },
+            {
+                title: 'Nightwatch CLI',
+                collapseId: 'nightwatchcli-collapse',
+                links: [
+                    { title: 'Command-line Options', url: '/guide/nightwatch-cli/command-line-options.html' }
+                ]
+            },
+            {
+                title: 'Config settings',
+                collapseId: 'refconfiguration-collapse',
+                links: [
+                    { title: 'All settings', url: '/guide/reference/settings.html' },
+                    { title: 'Default settings', url: '/guide/reference/defaults.html' }
+                ]
+            }
+        ]
+    },
+    {
+        title: 'Resources',
+        collapseId: 'resources-collapse',
+        links: [
+            { title: 'Comparison With Leading Frameworks', url: '/guide/comparison-with-leading-frameworks.html' },
+            {
+                title: 'Contribute guide',
+                collapseId: 'contributing-collapse',
+                links: [
+                    { title: 'Style guide', url: '/guide/contributing/styleguide.html' }
+                ]
+            },
+            {
+                title: 'Migrating to Nightwatch 2',
+                collapseId: 'migrating-collapse',
+                links: [
+                    { title: 'From Nightwatch v1', url: '/guide/migrating-to-nightwatch/from-nightwatch-v1.html' },
+                    { title: 'From Protractor', url: '/guide/migrating-to-nightwatch/from-protractor.html' }
+                ]
+            }
+        ]
+    }
+];
 const data = {
     version: appSettings.version,
     baseUrl: appSettings.baseUrl,
@@ -61,25 +310,20 @@ const data = {
         <div class="clearfix">
             <div class="row flex-xl-nowrap no-gutters">
                 <div class="col-md-3 col-xl-2 doc-sidebar bs-sidebar hidden-print" role="complementary">
-                    <%- guideSidebar() %>
+                    <%- guideSidebar({navItems: navItems}) %>
                 </div>
-
                 <div class="col-md-9 col-xl-9 doc-main-body" role="main">
                     <div class="docs-section" data-page-uri="<%- page.url %>">
                         <div class="page-content"><%- pageContent %></div>
-                        <%- pageNavigator() %>
+                        <%- pageNavigator({navItems:navItems})%>
                     </div>
                 </div>
-
                 <div class="d-none d-xl-block col-xl-2 doc-sideNav right-side-nav">
                     <%- rightSidebarContent({}) %>
                 </div>
-
             </div>
         </div>
-
     </div>
-
 </section>
 
 <section id="index-container"></section>

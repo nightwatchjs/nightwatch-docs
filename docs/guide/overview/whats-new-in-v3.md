@@ -124,5 +124,3 @@ Relive the test as it happened by enabling DOM history. When this functionaity i
 [17]:   https://www.deque.com/
 [18]:   https://www.w3.org/WAI/standards-guidelines/wcag/
 [19]:   /guide/reporters/dom-history.html
-
-

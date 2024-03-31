@@ -832,5 +832,3 @@ Remember to also enable HTTP keepalive for improved network performance.
 
 - [Default configuration](/guide/reference/defaults.html)
 - [CLI options](/guide/nightwatch-cli/command-line-options.html)
-
-

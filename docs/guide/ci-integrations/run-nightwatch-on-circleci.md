@@ -80,5 +80,3 @@ Click on the pipeline build that just ran followed by the job name i.e. `test`. 
 
 ### Related articles
 - [How-to guides > Write tests > Run on CI Servers > Jenkins ](/guide/ci-integrations/run-nightwatch-on-jenkins.html)
-
-

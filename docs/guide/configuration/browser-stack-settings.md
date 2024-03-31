@@ -126,5 +126,3 @@ You can specify proxy settings in Nightwatch by adding the `proxy` key in your `
 
 - [Reference > All configuration settings](/guide/reference/settings.html)
 - [Reference > Configuration defaults](/guide/reference/defaults.html)
-
-

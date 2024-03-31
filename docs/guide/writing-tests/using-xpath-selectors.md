@@ -55,5 +55,3 @@ If you mostly are using XPath expressions and you want to avoid configuring the 
 
 [10]:   /gettingstarted/configuration/#extended-settings
 [11]:   /guide/working-with-page-objects/#element-properties
-
- 

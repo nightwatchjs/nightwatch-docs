@@ -58,5 +58,3 @@ Mochawesome reporter options can be defined in main Nightwatch config under the 
 - [How-to guides > Use reporters > Junit-XML reporter](/guide/reporters/use-junit-reporter.html)
 - [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html) 
 - [Mochawesome on Github](https://github.com/adamgruber/mochawesome)
-
-

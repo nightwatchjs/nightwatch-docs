@@ -85,5 +85,3 @@ Recommended content
 - [How-to guides > Use reporters > HTML reporter](/guide/reporters/use-html-reporter.html)
 - [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
 - [Nightwatch Teamcity on github](https://www.npmjs.com/package/nightwatch-teamcity)
-
-

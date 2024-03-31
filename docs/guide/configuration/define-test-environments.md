@@ -128,5 +128,3 @@ OK. 1 assertions passed. (5.604s)
 - [Reference > Browser Drivers > ChormeDriver](/guide/configuration/define-test-environments.html)
 - [Reference > All configuration settings](/guide/reference/settings.html)
 - [Reference > Configuration defaults](/guide/reference/defaults.html)
-
- 

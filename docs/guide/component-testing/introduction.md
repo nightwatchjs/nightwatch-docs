@@ -75,8 +75,6 @@ The only disadvantage would be that it’s going to be a bit slower than the *JS
 ### Recommended content
 - [Blog \> Introducing Component Testing in Nightwatch][6]
 
-
-
 [1]:    /guide/component-testing/testing-react-components.html
 [2]:    /guide/component-testing/testing-vue-components.html
 [3]:    https://github.com/jsdom/jsdom

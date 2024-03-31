@@ -33,5 +33,3 @@ description: Webdriver is a general purpose library for automating web browsers
 - [Selenium WebDriver Docs](https://www.selenium.dev/documentation/webdriver/)
 - [WebDriver Docs on MDN](https://developer.mozilla.org/en-US/docs/Web/WebDriver)
 - [W3C WebDriver spec](https://www.w3.org/TR/webdriver1/)
-
-

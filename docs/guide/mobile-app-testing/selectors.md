@@ -53,6 +53,3 @@ Now that you understand selectors, you can use them to write commands & assertio
 [image-1]:  https://user-images.githubusercontent.com/1677755/220292896-8acdac83-47a2-447c-924b-95240959e695.png
 [image-2]:  https://user-images.githubusercontent.com/1677755/220293322-e0db2a87-ffd4-4009-8738-709cd91b2be5.png
 
-
-
-

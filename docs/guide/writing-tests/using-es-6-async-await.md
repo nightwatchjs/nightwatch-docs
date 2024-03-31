@@ -54,5 +54,3 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
 
 [8]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 [9]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
-
- 

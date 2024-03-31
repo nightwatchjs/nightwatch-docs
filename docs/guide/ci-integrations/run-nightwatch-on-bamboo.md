@@ -90,5 +90,3 @@ After installation, now you can sign in to the admin and create a plan after cli
 
 ### Related articles
 - [How-to guides > Write tests > Run on CI Servers > Jenkins ](/guide/ci-integrations/run-nightwatch-on-jenkins.html)
-
-

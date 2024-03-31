@@ -209,5 +209,3 @@ myGlobalVar is: "integrated global"
 ### Recommended content
 - [Use external globals in tests](/guide/writing-tests/using-test-globals.html)
 - [Use global test hooks in tests](/guide/writing-tests/global-test-hooks.html)
-
- 

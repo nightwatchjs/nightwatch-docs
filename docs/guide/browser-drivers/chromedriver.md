@@ -107,6 +107,3 @@ If your tests require a Chrome instance running inside a [Docker](https://www.do
   "args" : ["--no-sandbox"]
 } 
 </code></pre>
-
-
-

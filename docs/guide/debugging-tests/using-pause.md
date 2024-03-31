@@ -57,6 +57,3 @@ While using the `pause()` command without any argument, the following operations
 ### Recommended content
 - [API docs > `.pause()`](/api/pause.html)
 - [API docs > `.debug()`](/api/debug.html)
-
-
- \

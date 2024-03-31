@@ -69,5 +69,3 @@ The Selenium docs provide apple documentation on all the capabilities, both shar
 - [Capabilities specific to Safari](https://www.selenium.dev/documentation/webdriver/capabilities/safari/)
 - [Capabilities specific to Internet Explorer](https://www.selenium.dev/documentation/webdriver/capabilities/internet_explorer/)
 - [Capabilities negotiation](https://developer.mozilla.org/en-US/docs/Web/WebDriver/Capabilities#capabilities_negotiation)
-
-

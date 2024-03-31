@@ -417,8 +417,6 @@ export default {
 ### Recommended content
 - [Blog \> Introducing Component Testing in Nightwatch][14]
 
-
-
 [1]:    https://storybook.js.org/docs/react/api/csf
 [2]:    https://storybook.js.org/docs/react/writing-tests/interaction-testing
 [3]:    https://storybook.js.org/docs/react/writing-tests/accessibility-testing

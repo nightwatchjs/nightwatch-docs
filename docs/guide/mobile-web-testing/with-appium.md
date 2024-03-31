@@ -112,5 +112,3 @@ The [Actions API](/api/useractions/) is very general and platform independent. I
     });
   });
 });</code></pre></div>
-
-

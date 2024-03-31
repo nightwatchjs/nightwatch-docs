@@ -103,5 +103,3 @@ Failing the test intentionally in a test hook can be achieved by calling `done` 
 ### Global Test Hooks
 
 The same set of test hooks as per test suite is also available globally, outside the scope of the test. Refer to the next section for details.
-
- 

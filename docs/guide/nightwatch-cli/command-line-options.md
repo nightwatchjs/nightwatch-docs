@@ -218,5 +218,3 @@ write(results, options, done) {
 - [CLI Test Runner](/guide/running-tests/using-the-cli-test-runner.html)
 - [Configuration](/guide/reference/settings.html)
 - [Nightwatch release notes](/guide/overview/whats-new.html)
-
-

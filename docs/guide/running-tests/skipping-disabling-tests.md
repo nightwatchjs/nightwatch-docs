@@ -75,5 +75,3 @@ The below will only run the `startHomepage` testcase and ignore the rest.
 });
 <br>
 </code></pre></div>
-
- 

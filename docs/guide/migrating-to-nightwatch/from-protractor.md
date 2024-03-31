@@ -270,5 +270,3 @@ The best way to ask for questions or report issues related to Nightwatch Angular
 [ExceptLink]:/api/expect/
 [PageObjectLink]:/api/pageobject/
 [APICommandsLink]:/api/commands/
-
-

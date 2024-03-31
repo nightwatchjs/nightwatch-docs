@@ -137,6 +137,3 @@ The reports can be disabled completely if desired by setting the `output_folder`
 - [Configuration > Output settings](/guide/configuration/customising-test-output.html)
 - [Configuration > Default settings](/guide/reference/defaults.html)
 - [Reference > Nightwatch CLI](/guide/nightwatch-cli/command-line-options.html)
-
-
-

@@ -164,5 +164,3 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
 ### Recommended content
 - [Reference > All configuration settings](/guide/reference/settings.html)
 - [Reference > Configuration defaults](/guide/reference/defaults.html)
-
- 

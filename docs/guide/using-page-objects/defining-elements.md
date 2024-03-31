@@ -162,5 +162,3 @@ When using named page object elements (starting with '@') you can also use CSS p
 - [Define sections](/guide/using-page-objects/defining-sections.html)
 - [Add page-specific commands](/guide/using-page-objects/writing-page-specific-commands.html)
 - [Concepts > Page object model](/guide/concepts/page-object-model.html)
-
- 

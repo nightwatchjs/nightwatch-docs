@@ -287,7 +287,3 @@ Now that you understand selectors and commands,you can proceed towards understan
 [1]:  /guide/mobile-app-testing/selectors.html
 [2]:  https://developer.android.com/reference/android/view/KeyEvent
 [3]:  /guide/mobile-app-testing/assertions.html
-
-
-
-

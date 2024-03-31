@@ -42,5 +42,3 @@ Also, if you would want to skip running the `smoketests` group you would do the 
 To skip multiple groups, just add them as comma-separated:
 
 <pre><code class="language-bash">nightwatch --skipgroup addressbook,chat</code></pre>
-
- 

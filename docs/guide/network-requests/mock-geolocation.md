@@ -101,6 +101,3 @@ After overriding the geolocation of your browser, if you now want to reset the g
 
 ### Recommended content
 - [Chrome DevTools Protocol in Selenium 4](https://www.selenium.dev/documentation/webdriver/bidirectional/chrome_devtools/)
-
-
-

@@ -104,5 +104,3 @@ module.exports = (async function() {
 ### Recommended content
 - [Reference > All configuration settings](/guide/reference/settings.html)
 - [Reference > Configuration defaults](/guide/reference/defaults.html)
-
- 

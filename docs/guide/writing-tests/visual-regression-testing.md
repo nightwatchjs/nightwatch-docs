@@ -140,5 +140,3 @@ E.g.:
 
 [image-1]:  https://user-images.githubusercontent.com/1677755/222640496-99bff9fd-406e-4600-b4eb-a4426e521e64.png
 [image-2]:  https://user-images.githubusercontent.com/1677755/222640717-a0a98555-d704-479a-9529-4561ef2a5727.png
-
- 

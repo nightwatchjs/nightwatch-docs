@@ -51,5 +51,3 @@ To skip running tests with a specific tag, use the `--skiptags` flag:
 Or to skip multiple tags, add each tag you want to skip as comma-separated:
 
 <pre><code class="language-bash">nightwatch --skiptags login,something_else</code></pre>
-
- 

@@ -96,5 +96,3 @@ Here’s an extract from the `nightwatch.conf.js` config file available as part 
 
 ### Recommended content
  - [Define and use test environments](/guide/configuration/define-test-environments.html)
-
-

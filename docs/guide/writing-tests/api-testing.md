@@ -270,8 +270,6 @@ Example using `waitUntil`:
 });
 </code></pre></div>
 
-
-
 [1]:  https://github.com/nightwatchjs/nightwatch-plugin-apitesting
 [2]:  https://www.npmjs.com/package/supertest
 [3]:  https://www.npmjs.com/package/express

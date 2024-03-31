@@ -139,5 +139,3 @@ const ecosiaTest: NightwatchTests = {
 
 [2]:    https://www.w3.org/TR/webdriver/#locator-strategies
 [3]:    https://www.w3.org/TR/webdriver/#elements
-
- 

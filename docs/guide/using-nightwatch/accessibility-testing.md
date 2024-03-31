@@ -70,8 +70,6 @@ You can find the complete list of the rule IDs on the [Axe Github page][7]
 - [API Reference: axeInject()][8]
 - [API Reference: axeRun()][9]
 
-
-
 [1]:    https://www.w3.org/WAI/standards-guidelines/wcag/
 [2]:    https://www.npmjs.com/package/axe-core
 [3]:    https://www.deque.com/

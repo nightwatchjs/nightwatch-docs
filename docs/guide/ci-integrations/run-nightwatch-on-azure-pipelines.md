@@ -92,5 +92,3 @@ Once you push your changes and click on save and run button, the pipeline will s
  
 Related articles
 - [How-to guides > Write tests > Run on CI Servers > Jenkins ](/guide/ci-integrations/run-nightwatch-on-jenkins.html)
-
-

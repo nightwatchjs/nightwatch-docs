@@ -125,5 +125,3 @@ Assertions implement a simple interface which is shared between built-in asserti
 
 ### Recommended content
 - [Define custom commands](/guide/extending-nightwatch/adding-custom-commands.html)
-
-

@@ -150,7 +150,3 @@ Now that you understand the basics of writing tests for mobile apps, it's time t
 [7]:    /guide/mobile-app-testing/assertions.html
 
 [image-1]:  https://user-images.githubusercontent.com/1677755/220278494-7ca02bb0-6944-47bf-b459-92ffdc9ad38c.png
-
-
-
-

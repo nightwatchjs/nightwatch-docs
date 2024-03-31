@@ -58,5 +58,3 @@ The below settings can be used to define ways of filtering test files.
 ### Recommended content
 - [Reference > All configuration settings](/guide/reference/settings.html)
 - [Reference > Configuration defaults](/guide/reference/defaults.html)
-
-

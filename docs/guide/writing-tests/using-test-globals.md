@@ -142,5 +142,3 @@ If we still pass the `--env integration` option to the runner, then our globals 
 };</code></pre>
 
 </div>
-
- 

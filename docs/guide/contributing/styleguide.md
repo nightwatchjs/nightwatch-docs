@@ -68,5 +68,3 @@ Apart from the guidelines mentioned here, if you are confused, defer on the [Goo
     * Embed BrowserStack test results in your job results
 * Do not use a bullet (number or symbol) when there is only one item; there must be a least two
 items to make a list. In such cases, convert it to a sentence.
-
-
