@@ -152,23 +152,5 @@ Now that you understand the basics of writing tests for mobile apps, it's time t
 [image-1]:  https://user-images.githubusercontent.com/1677755/220278494-7ca02bb0-6944-47bf-b459-92ffdc9ad38c.png
 
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/mobile-app-testing/installation.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Mobile App Testing Installation</span>
-        </div>
-    </a>
-  </div>
-  <div class="doc-pagination justify-content-end pt-40">
-  <div class="next">
-    <a href="/guide/mobile-app-testing/selectors.html">
-        <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Mobile App Selectors</span></div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-</div>
+
 

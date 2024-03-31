@@ -163,23 +163,4 @@ When using named page object elements (starting with '@') you can also use CSS p
 - [Add page-specific commands](/guide/using-page-objects/writing-page-specific-commands.html)
 - [Concepts > Page object model](/guide/concepts/page-object-model.html)
 
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/using-page-objects/getting-started.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Getting Started</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/using-page-objects/defining-sections.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Define sections</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
+ 

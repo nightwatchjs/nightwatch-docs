@@ -75,13 +75,7 @@ The only disadvantage would be that it’s going to be a bit slower than the *JS
 ### Recommended content
 - [Blog \> Introducing Component Testing in Nightwatch][6]
 
-<div class="doc-pagination pt-40" style="align-items: flex-end">
-  <div class="next" style="margin-left: auto;">
-	<a href="/guide/component-testing/vite-plugin.html">
-      <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Component Testing with Vite</span></div><span>→</span>
-	</a>
-  </div>
-</div>
+
 
 [1]:    /guide/component-testing/testing-react-components.html
 [2]:    /guide/component-testing/testing-vue-components.html

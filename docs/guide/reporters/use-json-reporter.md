@@ -82,23 +82,4 @@ The JSON report should have been generated in the local `tests_output` folder in
 - [How-to guides > Use reporters > Add custom reporter](/guide/reporters/create-custom-reporter.html)
 - [How-to guides > Use reporters > Mochawesome reporter reporter](/guide/reporters/use-mochawesome-reporter.html)
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/reporters/use-html-reporter.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">HTML Reporter</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/reporters/use-mochawesome-reporter.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Mochawesome Reporter</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
+

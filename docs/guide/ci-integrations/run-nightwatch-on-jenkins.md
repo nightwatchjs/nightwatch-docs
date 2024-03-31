@@ -97,23 +97,4 @@ Nightwatch also publishes HTML reports which can be published to Jenkins
 
 ![Jenkins HTML report](https://user-images.githubusercontent.com/1677755/178733403-8205f8ad-81a0-47d7-99aa-676e6e211aa2.png)
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/debugging-tests/using-debug.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Use.debug()</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/ci-integrations/run-nightwatch-on-github-actions.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Github Actions</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
+

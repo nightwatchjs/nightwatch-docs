@@ -169,18 +169,7 @@ window['@@component_element'] = element;
 ### Recommended content
 - [Blog \> Introducing Component Testing in Nightwatch][8]
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-	<a href="/guide/component-testing/introduction.html">
-	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">Introduction</span></div>
-	</a>
-  </div>
-  <div class="next">
-	<a href="/guide/component-testing/testing-react-components.html">
-      <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Test React components</span></div><span>→</span>
-	</a>
-  </div>
-</div>
+
 
 [1]:    https://github.com/nightwatchjs/vite-plugin-nightwatch
 [2]:    https://vitejs.dev/

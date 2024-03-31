@@ -70,26 +70,7 @@ You can find the complete list of the rule IDs on the [Axe Github page][7]
 - [API Reference: axeInject()][8]
 - [API Reference: axeRun()][9]
 
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/global-test-hooks.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Global Test Hooks</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/visual-regression-testing.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Visual testing</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
+
 
 [1]:    https://www.w3.org/WAI/standards-guidelines/wcag/
 [2]:    https://www.npmjs.com/package/axe-core

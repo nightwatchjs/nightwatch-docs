@@ -233,23 +233,3 @@ Once the configuration block is added, replace the remote host, port & credentia
 For additional help you can jump on to our <a href="https://discord.gg/SN8Da2X">Discord Server</a>.
 </div>
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/quickstarts/create-and-run-a-test-with-selenium-server.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Run a test with Selenium server</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/concepts/test-environments.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Test environments</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

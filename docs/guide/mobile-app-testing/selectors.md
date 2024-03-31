@@ -54,23 +54,5 @@ Now that you understand selectors, you can use them to write commands & assertio
 [image-2]:  https://user-images.githubusercontent.com/1677755/220293322-e0db2a87-ffd4-4009-8738-709cd91b2be5.png
 
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/mobile-app-testing/introduction-writing-tests.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Writing Mobile App Tests</span>
-        </div>
-    </a>
-  </div>
-  <div class="doc-pagination justify-content-end pt-40">
-  <div class="next">
-    <a href="/guide/mobile-app-testing/selectors.html">
-        <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Mobile App Commands</span></div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-</div>
+
 

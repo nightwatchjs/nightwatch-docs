@@ -168,23 +168,3 @@ Now that you understand the basics of writing tests for mobile apps, it's time t
 
 [image-1]:  https://user-images.githubusercontent.com/1677755/220278494-7ca02bb0-6944-47bf-b459-92ffdc9ad38c.png
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/quickstarts/create-and-run-a-nightwatch-test.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Install Nightwatchs</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/selectors.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Selectors</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

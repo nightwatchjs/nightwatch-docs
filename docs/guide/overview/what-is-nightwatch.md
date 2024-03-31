@@ -113,12 +113,4 @@ WebDriver is implemented by all major browser vendors as a W3C compliant HTTP se
 - [Selenium WebDriver Docs](https://www.selenium.dev/documentation/webdriver/)
 - [WebDriver Docs on MDN](https://developer.mozilla.org/en-US/docs/Web/WebDriver)
 
-<div class="doc-pagination justify-content-end pt-40">
-  <div class="next">
-    <a href="/guide/overview/whats-new-in-v3.html">
-        <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">What's new in v3?</span></div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
 

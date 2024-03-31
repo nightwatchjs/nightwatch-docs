@@ -417,18 +417,7 @@ export default {
 ### Recommended content
 - [Blog \> Introducing Component Testing in Nightwatch][14]
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-	<a href="/guide/component-testing/write-jsx-react-tests.html">
-	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">JSX in React component tests</span></div>
-	</a>
-  </div>
-  <div class="next">
-	<a href="/guide/component-testing/debugging.html">
-      <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Debugging component tests</span></div><span>→</span>
-	</a>
-  </div>
-</div>
+
 
 [1]:    https://storybook.js.org/docs/react/api/csf
 [2]:    https://storybook.js.org/docs/react/writing-tests/interaction-testing

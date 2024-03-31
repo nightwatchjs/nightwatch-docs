@@ -97,24 +97,4 @@ Use the `--open` command line argument to open the generated HTML report generat
 - [Configuration > Default settings](/guide/reference/defaults.html)
 - [Reference > Nightwatch CLI](/guide/nightwatch-cli/command-line-options.html)
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/reporters/use-junit-reporter.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">JUnit XML Reporter</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/reporters/use-json-reporter.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">JSON Reporter</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
 

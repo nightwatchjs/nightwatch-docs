@@ -224,23 +224,3 @@ Now that you have installed Nightwatch
 [21]:   /guide/writing-tests/visual-regression-testing.html
 [22]:   /guide/using-nightwatch/accessibility-testing.html
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/overview/whats-new.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Release notes</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/quickstarts/create-and-run-a-test-with-selenium-server.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Run a test with Selenium Server</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

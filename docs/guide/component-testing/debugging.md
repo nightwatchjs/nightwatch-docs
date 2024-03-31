@@ -83,11 +83,3 @@ You can also use the [integrated debug console](/guide/debugging-tests/using-deb
 ### Recommended content
 - [Blog > Introducing Component Testing in Nightwatch](https://nightwatchjs.org/blog/introducing-component-testing-in-nightwatch/)
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-	<a href="/guide/component-testing/storybook-component-testing.html">
-	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">Storybook integration</span></div>
-	</a>
-  </div>
-
-</div>

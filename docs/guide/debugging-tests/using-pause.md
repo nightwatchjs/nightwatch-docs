@@ -59,23 +59,4 @@ While using the `pause()` command without any argument, the following operations
 - [API docs > `.debug()`](/api/debug.html)
 
 
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/debugging-tests/overview.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Overview</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/debugging-tests/using-debug.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Use.debug()</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
+ \

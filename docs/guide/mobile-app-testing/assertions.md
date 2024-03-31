@@ -196,23 +196,5 @@ Learn [how to run native mobile tests on virtual,real and cloud devices][2]
 [image-1]:  https://user-images.githubusercontent.com/1677755/220315555-6668b4c9-91c3-4221-a126-a14472bb4824.png
 
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/mobile-app-testing/commands.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Mobile App Commands</span>
-        </div>
-    </a>
-  </div>
-  <div class="doc-pagination justify-content-end pt-40">
-  <div class="next">
-    <a href="/guide/mobile-app-testing/running-tests.html">
-        <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Running Mobile App Tests</span></div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-</div>
+
 

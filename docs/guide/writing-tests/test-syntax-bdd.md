@@ -273,25 +273,3 @@ We've put together a complete [Github template repo](https://github.com/nightwat
 
 [1]:    https://www.ecosia.org/
 
-
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/configuration/aws-devicefarm-settings.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Configure AWS Device Farm</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/test-syntax-exports.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Export test syntax</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-

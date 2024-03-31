@@ -271,14 +271,4 @@ The best way to ask for questions or report issues related to Nightwatch Angular
 [PageObjectLink]:/api/pageobject/
 [APICommandsLink]:/api/commands/
 
-<div class="doc-pagination justify-content-start pt-40">
-  <div class="previous">
-    <a href="/guide/migrating-to-nightwatch/from-nightwatch-v1.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">From Nightwatch v1</span>
-        </div>
-    </a>
-  </div>
-</div>
+

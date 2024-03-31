@@ -169,24 +169,3 @@ Now that you understand selectors, you can use them to write commands & assertio
 
 [image-1]:  https://github.com/nightwatchjs/nightwatch/assets/1677755/00a723d4-c244-4103-aae4-a705ba397302
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/quickstarts/create-and-run-a-nightwatch-test.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Install Nightwatch</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/selectors.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Selectors</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-

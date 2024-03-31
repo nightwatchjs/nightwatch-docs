@@ -237,25 +237,4 @@ To use it as a reporter simply pass the `--reporter mocha-junit-reporter` argume
 
 <div class="sample-test"><pre><code class="language-bash">npx nightwatch examples/tests/ --reporter mocha-junit-reporter</code></pre></div>
 
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/using-cucumberjs.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Use CucumberJS</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/using-test-hooks.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Use test hooks</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-
-
+ 

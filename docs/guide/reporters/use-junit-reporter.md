@@ -138,24 +138,5 @@ The reports can be disabled completely if desired by setting the `output_folder`
 - [Configuration > Default settings](/guide/reference/defaults.html)
 - [Reference > Nightwatch CLI](/guide/nightwatch-cli/command-line-options.html)
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/network-requests/mock-geolocation.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Mock geolocation</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/reporters/use-html-reporter.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">HTML Reporter</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
+
 

@@ -69,23 +69,4 @@ Please refer to the release notes section for information about the latest chang
 - [A First Look at Nightwatch v2.0](https://nightwatchjs.org/blog/a-first-look-at-nightwatch-v2.html)
 - [Nightwatch v2 is Now in Beta](https://nightwatchjs.org/blog/nightwatch-v2-beta-is-available.html)
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/overview/what-is-nightwatch.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">What is Nightwatch?</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/overview/whats-new.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Release notes</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
+

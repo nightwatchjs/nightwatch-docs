@@ -96,25 +96,3 @@ Info & help:
 ### Recommended content
 - [Reference > Command-line Options](/guide/nightwatch-cli/command-line-options.html)
 
-
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/using-page-objects/writing-page-specific-commands.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Page objects</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/running-tests/skipping-disabling-tests.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Skip / disable tests</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-

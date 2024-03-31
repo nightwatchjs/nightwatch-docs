@@ -127,23 +127,4 @@ You can specify proxy settings in Nightwatch by adding the `proxy` key in your `
 - [Reference > All configuration settings](/guide/reference/settings.html)
 - [Reference > Configuration defaults](/guide/reference/defaults.html)
 
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/configuration/selenium-settings.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Selenium settings</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/configuration/aws-devicefarm-settings.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Configure AWS Device Farm</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
+

@@ -8,6 +8,7 @@ const {
   API_DOCS_FOLDER = resolve('../nightwatch/lib/api'),
   EXAMPLES_FOLDER = 'node_modules/nightwatch-examples/tests',
   WEBDRIVER_SPEC_URL = 'https://w3c.github.io/webdriver'
+
 } = env;
 
 export default {

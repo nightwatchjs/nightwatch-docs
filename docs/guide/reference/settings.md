@@ -833,23 +833,4 @@ Remember to also enable HTTP keepalive for improved network performance.
 - [Default configuration](/guide/reference/defaults.html)
 - [CLI options](/guide/nightwatch-cli/command-line-options.html)
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/nightwatch-cli/command-line-options.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Command-line Options</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/reference/defaults.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Default Settings</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
+
