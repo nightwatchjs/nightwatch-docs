@@ -142,8 +142,12 @@ npx nightwatch <%- method.exampleLink %></code></pre>
 
     <% if (method.link) { %>
         <h3>W3C WebDriver spec</h3>
-        <ul>
-            <li><code><a href="<%= method.link %>" target="_blank"><%- method.link %></a></code></li>
+        <ul class="webdriver-spec-link">
+            <% if (method.link.startsWith('http')) { %>
+                <li><code><a href="<%- method.link %>" target="_blank"><%= method.link %></a></code></li>
+            <% } else { %>
+                <li><code><a href="<%- appSettings.webdriverSpecUrl + method.link %>" target="_blank"><%= method.link %></a></code></li>
+            <% } %>            
         </ul>
     <% } %>
 <% } %>
