@@ -1,0 +1,123 @@
+{
+  "root": true,
+  "extends": [
+    "eslint:recommended"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 13,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": false
+    }
+  },
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "eqeqeq": [
+      "error",
+      "smart"
+    ],
+    "no-extra-boolean-cast": 0,
+    "quotes": [
+      "error",
+      "single"
+    ],
+    "curly": [
+      "error",
+      "all"
+    ],
+    "no-console": [
+      "error",
+      {
+        "allow": [
+          "error"
+        ]
+      }
+    ],
+    "no-debugger": 1,
+    "semi": [
+      "error",
+      "always",
+      {
+        "omitLastInOneLineBlock": true
+      }
+    ],
+    "no-trailing-spaces": 1,
+    "no-else-return": 2,
+    "no-extra-bind": 0,
+    "no-implicit-coercion": 0,
+    "no-useless-call": 0,
+    "no-return-assign": 0,
+    "eol-last": 1,
+    "no-unused-vars": 0,
+    "no-extra-semi": 0,
+    "comma-dangle": 2,
+    "no-underscore-dangle": 0,
+    "no-lone-blocks": 0,
+    "array-bracket-spacing": 2,
+    "object-curly-spacing": 2,
+    "brace-style": [
+      2,
+      "1tbs",
+      {
+        "allowSingleLine": true
+      }
+    ],
+    "comma-spacing": 2,
+    "comma-style": 2,
+    "key-spacing": 2,
+    "one-var": [
+      "error",
+      "never"
+    ],
+    "semi-style": [
+      "error",
+      "last"
+    ],
+    "space-in-parens": [
+      "error",
+      "never"
+    ],
+    "keyword-spacing": [
+      2,
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "space-infix-ops": 1,
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ],
+    "indent": [
+      "error",
+      2,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "prefer-const": [
+      "warn"
+    ]
+  },
+  "globals": {
+    "Promise": true,
+    "Proxy": true,
+    "Set": true,
+    "Reflect": true,
+    "$": true,
+    "gsap": true,
+    "Power2": true,
+    "TweenLite": true,
+    "globalThis": true,
+    "fuzzysort": true,
+    "appSettings": "readonly"
+  }
+}

@@ -1,4 +1,4 @@
-import { onRender } from 'postdoc/page';
+import {onRender} from 'postdoc/page';
 
 class MenuButtonActions {
   constructor(domNode, performMenuAction) {
@@ -331,10 +331,10 @@ function activateDropdown() {
   function performMenuAction(node) {
     window.location.href = node.children[0].href;
   }
-    
+
   for (var i = 0; i < menuButtons.length; i++) {
     new MenuButtonActions(menuButtons[i], performMenuAction);
-  }  
+  }
 }
 
 onRender(() => {

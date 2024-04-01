@@ -9,17 +9,17 @@ function docReady(fn) {
 }
 
 function addScript(src, id, module, callback) {
-  let tag = document.createElement('script');
+  const tag = document.createElement('script');
   if (typeof id !== 'undefined' && id !== null) {
     tag.id = id;
   }
   tag.src = src;
   if (module) {
-    tag.type = "module";
+    tag.type = 'module';
   }
   tag.defer = true;
 
-  let firstScriptTag = document.getElementsByTagName('script')[0];
+  const firstScriptTag = document.getElementsByTagName('script')[0];
   let parent = document.head;
   if (parent && firstScriptTag && parent.contains(firstScriptTag)) {
     parent.insertBefore(tag, firstScriptTag);
@@ -37,9 +37,9 @@ function addScript(src, id, module, callback) {
 
 
 function addStylesheet(src) {
-  let link = document.createElement('link');
+  const link = document.createElement('link');
   link.rel = 'stylesheet';
-  link.href = src
+  link.href = src;
   document.head.appendChild(link);
 }
 

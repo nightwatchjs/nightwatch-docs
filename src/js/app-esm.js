@@ -1,5 +1,5 @@
 import Stream from '@halo-lab/stream';
-import { navigateTo, onRender, onLeave} from 'postdoc/page';
+import {navigateTo, onRender, onLeave} from 'postdoc/page';
 
 // File State
 const appSidebarState = Object.freeze({
