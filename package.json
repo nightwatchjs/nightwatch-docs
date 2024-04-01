@@ -12,7 +12,7 @@
     "optimize": "node build/optimize.js",
     "netlify": "npm run clone:docs && npm run clone:nightwatch && npm run build",
     "partytown": "partytown copylib public/~partytown",
-    "eslint": "eslint src --quiet"
+    "eslint": "eslint src postdoc.config.js --quiet"
   },
   "author": "Andrei Rusu <andrei@pineview.io>",
   "license": "MIT",

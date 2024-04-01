@@ -7,7 +7,7 @@ const {
   MD_DOCS_FOLDER =  './docs',
   API_DOCS_FOLDER = resolve('../nightwatch/lib/api'),
   EXAMPLES_FOLDER = 'node_modules/nightwatch-examples/tests',
-  WEBDRIVER_SPEC_URL = 'https://w3c.github.io/webdriver',
+  WEBDRIVER_SPEC_URL = 'https://w3c.github.io/webdriver'
 } = env;
 
 export default {
@@ -31,7 +31,7 @@ export default {
     output: './out',
     includes: 'src/includes',
     layouts: 'src/pages',
-    content: MD_DOCS_FOLDER,
+    content: MD_DOCS_FOLDER
   },
 
   ignore: {
@@ -45,7 +45,7 @@ export default {
     layout: 'api/index.ejs',
 
     createUrl(filePath) {
-      let fileName = basename(filePath, extname(filePath));
+      const fileName = basename(filePath, extname(filePath));
 
       if (filePath.startsWith(sep + join('expect', 'assertions', 'elements'))) {
         return `/api/expect/elements/${fileName}.html`;
@@ -88,7 +88,7 @@ export default {
   appSettings: {
     version: NIGHTWATCH_VERSION,
     baseUrl: BASE_URL,
-    webdriverSpecUrl : WEBDRIVER_SPEC_URL,
+    webdriverSpecUrl: WEBDRIVER_SPEC_URL,
     apiRepoUrl: 'https://github.com',
     githubRepo: 'nightwatchjs/nightwatch',
     docsRepoUrl: 'https://github.com/nightwatchjs/nightwatch-docs/blob/',
