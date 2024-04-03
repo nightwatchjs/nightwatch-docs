@@ -67,7 +67,7 @@ Use the `browser.captureBrowserExceptions()` command with the required parameter
 
 Output of the example above:
 
-```
+<pre class="language-bash line-numbers">
   Running captureBrowserExceptions():
 ───────────────────────────────────────────────────────────────────────────────────────────────────
 {
@@ -93,7 +93,7 @@ Output of the example above:
   timestamp: 2022-06-10T13:14:52.722Z
 }
 No assertions ran.
-```
+</pre>
 
 ### Recommended content
 - [Capture browser console messages](/guide/running-tests/capture-console-messages.html)
