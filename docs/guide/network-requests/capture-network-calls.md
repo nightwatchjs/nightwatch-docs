@@ -72,7 +72,7 @@ All you need to do is call the `browser.captureNetworkRequests()` command with t
 
 Output from one of the network calls in the example above:
 
-<pre class="language-bash line-numbers">
+<pre class="language-bash plaintext">
   Running Capture network calls:
 ───────────────────────────────────────────────────────────────────────────────────────────────────
 Request Number: 35

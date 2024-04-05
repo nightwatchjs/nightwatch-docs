@@ -74,7 +74,7 @@ All you need to do is call the `browser.captureBrowserConsoleLogs()` command wit
 
 Output of the example above:
 
-<pre class="language-bash line-numbers">
+<pre class="language-bash nocode-space">
   Running Capture console messages:
 ───────────────────────────────────────────────────────────────────────
 error 2022-06-10T13:38:22.082Z here
