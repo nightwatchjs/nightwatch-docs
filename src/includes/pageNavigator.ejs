@@ -11,27 +11,21 @@ function arrayFlatten(navItems) {
 
 function findNextAndPrevUrl(navItems, currentUrl) {
     let items = arrayFlatten(navItems)
-    let prevUrl, prevTitle, nextUrl, nextTitle;
+    let prev,next;
 
     for (let i = 0; i < items.length; i++) {
         if (items[i].url === currentUrl) {
-            if (i > 0) {
-                prevUrl = items[i - 1].url;
-                prevTitle = items[i - 1].title;
-            }
-            if (i < items.length - 1) {
-                nextUrl = items[i + 1].url;
-                nextTitle = items[i + 1].title;
-            }
+            if (i > 0)
+                prev = items[i - 1];
+            if (i < items.length - 1)
+                next = items[i + 1];
             break;
         }
     }
 
     return {
-        prevUrl,
-        prevTitle,
-        nextUrl,
-        nextTitle
+        prev,
+        next
     };
 }
 
@@ -41,23 +35,29 @@ const result=findNextAndPrevUrl(navItems, page.url);
 
  <div>
     <div class="doc-pagination pt-40">
-        <%if (result.prevUrl){%>
+        <%if (result.prev){%>
             <div class="previous">
-                <a href= <%- result.prevUrl%> >
+                <a href= <%- result.prev.url%> >
                     <span>←</span>
                     <div class="d-flex flex-column">
                         <span class="smallT">Back</span>
-                        <span class="bigT"><%- result.prevTitle%></span>
+                        <span class="bigT">
+                            <% let titlePrev= result.prev.alt ? result.prev.alt : result.prev.title %>
+                            <%- titlePrev%>
+                        </span>
                     </div>
                 </a>
             </div>
         <%}%>
-        <%if (result.nextUrl){%>
+        <%if (result.next){%>
             <div class="next">
-                <a href= <%- result.nextUrl%>>
+                <a href= <%- result.next.url%>>
                     <div class="d-flex flex-column">
                         <span class="smallT">Next Page</span>
-                        <span class="bigT"><%- result.nextTitle%></span>
+                        <span class="bigT">
+                            <% let titleNext= result.next.alt ? result.next.alt : result.next.title %>
+                            <%- titleNext%>
+                        </span>
                     </div>
                     <span>→</span>
                 </a>
