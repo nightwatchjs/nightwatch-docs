@@ -124,24 +124,3 @@ Relive the test as it happened by enabling DOM history. When this functionaity i
 [17]:   https://www.deque.com/
 [18]:   https://www.w3.org/WAI/standards-guidelines/wcag/
 [19]:   /guide/reporters/dom-history.html
-
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/overview/what-is-nightwatch.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">What is Nightwatch?</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/overview/whats-new.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Release notes</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

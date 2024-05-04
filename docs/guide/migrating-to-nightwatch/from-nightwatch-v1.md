@@ -30,23 +30,3 @@ Changes in the result object:
 
 <ul style="display: none"></ul>
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/contributing/styleguide.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Style Guide</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/migrating-to-nightwatch/from-protractor.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">From Protractor</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

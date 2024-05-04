@@ -178,19 +178,6 @@ We've put together a basic To-do app written in React and built on top of Vite w
 <a href="https://github.com/nightwatchjs-community/todo-react"><img class="github-embed" src="https://opengraph.githubassets.com/default/nightwatchjs-community/todo-react" alt="nightwatch-react-plugin on Github" /></a>
 </div>
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-	<a href="/guide/component-testing/vite-plugin.html">
-	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">Using the Vite plugin</span></div>
-	</a>
-  </div>
-  <div class="next">
-	<a href="/guide/component-testing/write-jsx-react-tests.html">
-      <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">JSX in React component tests</span></div><span>→</span>
-	</a>
-  </div>
-</div>
-
 
 ### Recommended content
 - [Blog \> Introducing Component Testing in Nightwatch][8]

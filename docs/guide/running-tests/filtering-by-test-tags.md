@@ -51,24 +51,3 @@ To skip running tests with a specific tag, use the `--skiptags` flag:
 Or to skip multiple tags, add each tag you want to skip as comma-separated:
 
 <pre><code class="language-bash">nightwatch --skiptags login,something_else</code></pre>
-
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/running-tests/parallel-running.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Run tests in parallel</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/running-tests/using-with-test-groups.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Use test groups</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

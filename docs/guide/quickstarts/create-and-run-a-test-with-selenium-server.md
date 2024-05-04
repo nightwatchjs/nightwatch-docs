@@ -157,23 +157,3 @@ For additional help you can jump on to our <a href="https://discord.gg/SN8Da2X">
 - [Blog: Cross-browser Testing at Scale with Nightwatch and Selenium Grid](https://nightwatchjs.org/blog/cross-browser-testing-at-scale-with-nightwatch-and-selenium-grid/)
 
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/quickstarts/create-and-run-a-nightwatch-test.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Run your first end-to-end test</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/quickstarts/create-and-run-a-test-with-cloud-providers.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Run a test with a cloud provider</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

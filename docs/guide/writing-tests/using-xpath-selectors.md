@@ -55,24 +55,3 @@ If you mostly are using XPath expressions and you want to avoid configuring the 
 
 [10]:   /gettingstarted/configuration/#extended-settings
 [11]:   /guide/working-with-page-objects/#element-properties
-
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/adding-assertions.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Add assertions</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/write-complex-user-actions.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Write complex user actions</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

@@ -63,28 +63,6 @@ All successful commands will show up in Command History as shown below
 
 You can directly copy paste these in your test files and complete your test authoring very easily. Enjoy authoring tests with the Nightwatch inspector!
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/visual-regression-testing.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Visual Testing</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/write-nodejs-unit-integration-tests.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Unit &amp; integration testing</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-
-
 [image-1]:  https://github.com/nightwatchjs/nightwatch-docs/assets/1677755/167f04bd-4bbc-46c7-b582-cff875eae7ac 
 [image-2]:  https://github.com/nightwatchjs/nightwatch-docs/assets/1677755/a4b0f1e3-72a6-4d4e-8e34-bdf0d744c8e7
 [image-3]:  https://github.com/nightwatchjs/nightwatch-docs/assets/1677755/63e7dd88-2df4-4f5a-b842-81bff3c2aa9f

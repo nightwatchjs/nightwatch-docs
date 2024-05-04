@@ -270,27 +270,6 @@ Example using `waitUntil`:
 });
 </code></pre></div>
 
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/visual-regression-testing.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Visual Testing</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/write-nodejs-unit-integration-tests.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Unit &amp; integration testing</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-
 [1]:  https://github.com/nightwatchjs/nightwatch-plugin-apitesting
 [2]:  https://www.npmjs.com/package/supertest
 [3]:  https://www.npmjs.com/package/express

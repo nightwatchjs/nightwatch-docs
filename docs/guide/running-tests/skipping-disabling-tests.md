@@ -75,25 +75,3 @@ The below will only run the `startHomepage` testcase and ignore the rest.
 });
 <br>
 </code></pre></div>
-
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/running-tests/using-the-cli-test-runner.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Use the CLI test runner</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/running-tests/parallel-running.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Run tests in parallel</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-

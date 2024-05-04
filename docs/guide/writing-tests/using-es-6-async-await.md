@@ -54,24 +54,3 @@ Callbacks can still be used as before and if the callback returns a `Promise`, t
 
 [8]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
 [9]:    https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/await
-
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/test-syntax-exports.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Exports test syntax</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/finding-interacting-with-dom-elements.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Find & interact with DOM elements</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

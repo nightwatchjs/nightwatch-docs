@@ -139,24 +139,3 @@ const ecosiaTest: NightwatchTests = {
 
 [2]:    https://www.w3.org/TR/webdriver/#locator-strategies
 [3]:    https://www.w3.org/TR/webdriver/#elements
-
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/using-es-6-async-await.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Use ES6 async/await</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/adding-assertions.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Add assertions</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

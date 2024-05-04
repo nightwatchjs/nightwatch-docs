@@ -112,24 +112,3 @@ The [Actions API](/api/useractions/) is very general and platform independent. I
     });
   });
 });</code></pre></div>
-
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/reporters/create-custom-reporter.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Add customer reporter</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/mobile-web-testing/override-device-dimensions.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Override device dimensions</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

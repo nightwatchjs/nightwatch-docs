@@ -121,24 +121,3 @@ Or to skip multiple tags, add each tag you want to skip as comma-separated:
 - [Using async/await](/guide/writing-tests/using-es-6-async-await.html)
 
 [1]:    https://www.ecosia.org/
-
- <div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/test-syntax-bdd.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">BDD test syntax</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/using-es-6-async-await.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Use ES6 async/await</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

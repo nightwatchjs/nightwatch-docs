@@ -84,14 +84,3 @@ Pass Nightwatch commands/assertions to Nightwatch debug console open in the term
 [image-2]:  https://user-images.githubusercontent.com/1677755/220332377-66b95105-25fe-4b56-a06b-5e5019fe592e.png
 [image-3]:  https://user-images.githubusercontent.com/1677755/220332726-824dd227-fd11-43f3-9247-ecc20779f94e.png
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/mobile-app-testing/running-tests.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Running Mobile App Tests</span>
-        </div>
-    </a>
-  </div>
-</div>

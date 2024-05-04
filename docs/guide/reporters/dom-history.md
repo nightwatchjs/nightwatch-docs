@@ -63,23 +63,3 @@ Happy debugging!
 [image-1]:  https://github.com/nightwatchjs/nightwatch-docs/assets/1677755/034456b3-7f06-4660-b546-b8ad606a56d4
 [image-2]:  https://github.com/nightwatchjs/nightwatch-docs/assets/1677755/709bdfc8-5380-496d-afc2-6adfd55c79a8
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/reporters/use-html-reporter.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">HTML reporters</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/reporters/create-custom-reporter.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Add custom reporter</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>

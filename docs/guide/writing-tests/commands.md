@@ -216,24 +216,3 @@ Now that you understand selectors and commands,you can proceed towards understan
 
 
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/selectors.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Selectors</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/writing-tests/adding-assertions.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Assertions</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-

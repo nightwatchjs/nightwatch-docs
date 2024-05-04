@@ -287,25 +287,3 @@ Now that you understand selectors and commands,you can proceed towards understan
 [1]:  /guide/mobile-app-testing/selectors.html
 [2]:  https://developer.android.com/reference/android/view/KeyEvent
 [3]:  /guide/mobile-app-testing/assertions.html
-
-
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/mobile-app-testing/selectors.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Mobile App Selectors</span>
-        </div>
-    </a>
-  </div>
-  <div class="doc-pagination justify-content-end pt-40">
-  <div class="next">
-    <a href="/guide/mobile-app-testing/assertions.html">
-        <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Mobile App Assertions</span></div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-</div>
-

@@ -148,18 +148,6 @@ We've put together a basic To-do app written in React and built on top of Vite w
 ### Recommended content
 - [Blog \> Introducing Component Testing in Nightwatch][7]
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-	<a href="/guide/component-testing/testing-react-components.html">
-	  <span>←</span><div class="d-flex flex-column"><span class="smallT">Back</span><span class="bigT">Test React components</span></div>
-	</a>
-  </div>
-  <div class="next">
-	<a href="/guide/component-testing/storybook-component-testing.html">
-      <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Storybook integration</span></div><span>→</span>
-	</a>
-  </div>
-</div>
 
 
 

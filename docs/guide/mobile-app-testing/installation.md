@@ -384,23 +384,4 @@ Now that you understand how mobile app testing works with Nightwatch,let's dive 
 [image-1]:  https://user-images.githubusercontent.com/1677755/220174481-f423292a-4577-4740-8518-503d1fa19dbd.png
 
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/mobile-app-testing/introduction.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Introduction to Mobile App Testing</span>
-        </div>
-    </a>
-  </div>
-  <div class="doc-pagination justify-content-end pt-40">
-  <div class="next">
-    <a href="/guide/mobile-app-testing/introduction-writing-tests.html">
-        <div class="d-flex flex-column"><span class="smallT">Next Page</span><span class="bigT">Writing Mobile App Tests</span></div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
-</div>
 

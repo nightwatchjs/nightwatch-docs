@@ -132,23 +132,3 @@ For a complete list of available `expect` assertions, refer to the [API docs][13
 [12]:   https://chaijs.com/api/bdd/
 [13]:   /api/#expect-api
 
-<div class="doc-pagination pt-40">
-  <div class="previous">
-    <a href="/guide/writing-tests/commands.html">
-      <span>←</span>
-        <div class="d-flex flex-column">
-          <span class="smallT">Back</span>
-          <span class="bigT">Commands</span>
-        </div>
-    </a>
-  </div>
-  <div class="next">
-    <a href="/guide/running-tests/using-the-cli-test-runner.html">
-        <div class="d-flex flex-column">
-          <span class="smallT">Next Page</span>
-          <span class="bigT">Run tests</span>
-        </div>
-        <span>→</span>
-    </a>
-  </div>
-</div>
