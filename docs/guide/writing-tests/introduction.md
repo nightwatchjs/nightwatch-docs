@@ -112,12 +112,12 @@ Refer to this [guide][3] for detailed examples.
 The main point of writing automated tests is setting assertions to pass. There are 2 ways to do assertions with Nightwatch
 
 You can use the built-in assertions
-1. __Text equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.textEquals('text');</code></pre></div>
-2. __Text contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.textContains('text');</code></pre></div>
-3. __Text matches__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.textMatches('regex');</code></pre></div>
-4. __Value equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.valueEquals('text');</code></pre></div>
-5. __Value contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.valueContains('text');</code></pre></div>
-6. __Value matches__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').assert.valueMatches('regex');</code></pre></div>
+1. __Text equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getText().assert.equals('text');</code></pre></div>
+2. __Text contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getText().assert.contains('text');</code></pre></div>
+3. __Text matches__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getText().assert.matches('regex');</code></pre></div>
+4. __Value equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getValue().assert.equals('text');</code></pre></div>
+5. __Value contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getValue().assert.contains('text');</code></pre></div>
+6. __Value matches__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.element.find('selector').getValue().assert.matches('regex');</code></pre></div>
 7. __URL equals__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.assert.urlEquals('text');</code></pre></div>
 8. __URL contains__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.assert.urlContains('text');</code></pre></div>
 9. __URL matches__ :<div class="sample-test"><pre class="line-numbers"><code class="language-javascript">browser.assert.urlMatches('regex');</code></pre></div>
