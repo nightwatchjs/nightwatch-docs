@@ -11,7 +11,7 @@ So far, if you’re following through the docs, you’ve set up the mobile testi
 
 Now, it’s time to write your own tests.
 
-Nightwatch has native commands to automate the testing of your native mobile apps. Under the hood, Nightwatch wraps Appium methods so that users can enjoy the familiarity & ease of using Nightwatch.All the commands and assertions are available on `app` global variable. To inspect the elements and figure out the selectors, you can use Appium Inspector. 
+Nightwatch has native commands to automate the testing of your native mobile apps. Under the hood, Nightwatch wraps Appium methods so that users can enjoy the familiarity & ease of using Nightwatch. All the commands and assertions are available on `app` global variable. To inspect the elements and figure out the selectors, you can use Appium Inspector. 
 
 ### Appium Inspector
 
