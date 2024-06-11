@@ -179,6 +179,56 @@ If you are trying to run Nightwatch on Sauce Labs for an existing project, you w
 
 Once the Sauce Labs block is present in the Nightwatch configuration file, replace the Sauce Labs username and access key with your credentials.
 
+### Running on TestingBot
+
+You can use TestingBot to run Nightwatch tests on browsers in the cloud. You will need to add a `testingbot` block in the `nightwatch.conf.js` file as a child property to `test_settings`.
+
+<div class="sample-test">
+<i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
+    ...,
+    test_settings: {
+        ...,
+        testingbot: {
+            selenium: {
+                host: 'hub.testingbot.com',
+                port: 443
+            },
+            'username': '${TB_KEY}',
+            'access_key': '${TB_SECRET}',
+        },
+        'testingbot.chrome': {
+            extends: 'testingbot',
+            desiredCapabilities: {
+                browserName: 'chrome',
+                'tb:options': {
+                    'platformName': 'Windows 10',
+                    'version': 'latest',
+                    'name': 'First Nightwatch test',
+                }
+            }
+        },
+        <br>
+        'testingbot.firefox': {
+            extends: 'testingbot',
+            desiredCapabilities: {
+                browserName: 'firefox',
+                'tb:options': {
+                    'platformName': 'Windows 10',
+                    'version': 'latest',
+                    'name': 'First Nightwatch test',
+                }
+            }
+        },
+        ...
+    }
+}
+</code></pre>
+</div>
+
+After you've added the TestingBot configuration(s) in `nightwatch.conf.js`, please replace the TestingBot username and access_key with your credentials, which are available in the TestingBot member area.
+
+There are other [capabilities](https://testingbot.com/support/other/test-options) you can use to customize your tests on TestingBot.
+
 ### Running on remote Selenium server
 
 If you are installing Nightwatch using the `create-nightwatch` utility and you select to run against a remote selenium server or other cloud providers, the remote host settings will be automatically added to test_settings with place holder values.
