@@ -8,17 +8,19 @@ also adding new capabilities over the classic `assert` interface.
 
 It uses a chain-able language to construct assertions given an element specified by a css/xpath selector. A simple example looks like the following:
 
-```javascript
-describe('expect example', function() {
-  it('sample test', function (browser) {
+<div class="sample-test" style="max-width:800px">
+    <pre data-language="javascript" class="language-javascript">
+<code class="language-javascript">describe('expect example', function() {
+    it('sample test', function (browser) {
     // start with identifying the element
     // and then assert the element is present
     browser.expect.element('#main').to.be.present;
     // or assert the element is visible
     browser.expect.element('#main').to.be.visible;
   });
-}
-```
+}</code>
+    </pre>
+</div>
 
 <h3 id="expect-chains">Language Chains</h3>
 
@@ -43,13 +45,15 @@ The following are provided as chainable getters to improve the readability of yo
 
 These methods will perform assertions on the specified target on the current element. The targets can be an attribute value, the element's inner text and a css property.
 
-```javascript
-this.demoTest = function (browser) {
+<div class="sample-test" style="max-width:800px">
+    <pre data-language="javascript" class="language-javascript">
+<code class="language-javascript">this.demoTest = function (browser) {
   browser.expect.element('#main').text.to.equal('The Night Watch');
   browser.expect.element('#main').text.to.contain('The Night Watch');
   browser.expect.element('#main').to.have.css('display').which.equals('block');
-};
-```
+};</code>
+    </pre>
+</div>
 
 <div class="apimethod">
 <h3 id="expect-startend">.startWith(<code>value</code>)/.endWith(<code>value</code>)</h3>
@@ -96,9 +100,79 @@ this.demoTest = function (browser) {
   </div>
 </div>
 
-<%- include('./_cookie.md') %>
+<h2 id="expect-cookie">expect.cookie()</h2>
+<div class="apimethod">
+
+Expect assertions operating on a single cookie after retrieving the entire cookie string, using `.getCookies()`.
+
+<h5>Syntax:</h5>
+<div class="sample-test" style="max-width:600px">
+  <pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">browser.expect.cookie('cookie-name', ['cookie-domain'])</code></pre>
+</div>
+
+<div class="sample-test">
+ <pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
+  browser.expect.cookie('cookie-name').to.contain('cookie-value');
+  browser.expect.cookie('cookie-name').to.match(/regex/);
+  browser.expect.cookie('loginCookie', 'example.org').to.contain('cookie-value');
+};</code></pre>
+</div>
+
+<h5>Parameters:</h5>
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th style="width: 100px;">Name</th>
+      <th style="width: 100px;">Type</th>
+      <th>description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><code>name</code></td>
+      <td>String</td>
+      <td>The name of the cookie to be inspected.</td>
+    </tr>
+    <tr>
+      <td><code>domain</code><br><span class="optional">Optional</span></td>
+      <td>String</td>
+      <td>The domain name on which the cookie is set to.</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+</div>
 
 <h2 id="expect-element">expect.element()</h2>
+
+Expect assertions operating on a single element, specified by its CSS/Xpath selector.
+
+##### Syntax:
+<div class="sample-test" style="max-width:600px">
+  <pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">browser.element('#selector')</code></pre>
+</div>
+
+##### Parameters:
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th style="width: 100px;">Name</th>
+      <th style="width: 100px;">Type</th>
+      <th>description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><code>selector</code></td>
+      <td>String</td>
+      <td>The CSS/XPath selector of the element to be inspected.</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
 
 ### Assertions:
 - [to.be.active](/api/expect/element/active.html)
@@ -115,8 +189,76 @@ this.demoTest = function (browser) {
 
 <h2 id="expect-elements">expect.elements()</h2>
 
+Expect assertions operating on a collection of elements, specified by a CSS/Xpath selector.
+So far only `.count` is available.
+
+##### Syntax:
+<div class="sample-test" style="max-width:600px">
+  <pre data-language="javascript" style="padding-top: 10px" class="default-theme language-javascript"><code class="default-theme language-javascript">browser.elements('#selector')</code></pre>
+</div>
+
+##### Parameters:
+<div class="table-responsive">
+  <table class="table table-bordered table-striped">
+    <thead>
+    <tr>
+      <th style="width: 100px;">Name</th>
+      <th style="width: 100px;">Type</th>
+      <th>description</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td><code>selector</code></td>
+      <td>String</td>
+      <td>The CSS/XPath selector of the collection of elements to be inspected.</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="apimethod">
+  <h3 id="expect-elements-count">.elements().count</h3>
+  <p>Checks if the number of elements specified by a selector is equal or not to a given value.</p>
+
+<h5>Usage:</h5>
+  <div class="sample-test">
+<pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
+  browser.expect.elements('div').count.to.equal(10);
+  browser.expect.elements('p').count.to.not.equal(1);
+}</code></pre>
+  </div>
+</div>
+
+
 ### Assertions:
 - [count()](/api/expect/elements/count.html)
 
-<%- include('./_title.md') %>
-<%- include('./_url.md') %>
+<h2 id="expect-title">expect.title()</h2>
+
+<div class="apimethod">
+
+Retrieves the page title value in order to be used for performing `equal`, `match` or `contains` assertions on it.
+
+<h5>Usage:</h5>
+<div class="sample-test">
+<pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
+  browser.expect.title().to.contain('value');
+  browser.expect.title().to.match(/value/);
+};</code></pre>
+</div>
+</div>
+
+<h2 id="expect-url">expect.url()</h3>
+<div class="apimethod">
+
+Retrieves the page url value in order to be used for performing `equal`, `match` or `contains` assertions on it.
+
+<h5>Usage:</h5>
+<div class="sample-test">
+<pre class="line-numbers" data-language="javascript"><code class="language-javascript">this.demoTest = function (browser) {
+  browser.expect.url().to.contain('https://');
+  browser.expect.url().to.endWith('.org');
+};</code></pre>
+</div>
+</div>

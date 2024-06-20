@@ -8,8 +8,8 @@ also adding new capabilities over the classic `assert` interface.
 
 It uses a chain-able language to construct assertions given an element specified by a css/xpath selector. A simple example looks like the following:
 
-```javascript
-describe('expect example', function() {
+
+<div class="sample-test" style="max-width:800px"><pre data-language="javascript" class="language-javascript"><code class="language-javascript">describe('expect example', function() {
   it('sample test', function (browser) {
     // start with identifying the element
     // and then assert the element is present
@@ -18,4 +18,4 @@ describe('expect example', function() {
     browser.expect.element('#main').to.be.visible;
   });
 }
-```
+</code></pre></div>
