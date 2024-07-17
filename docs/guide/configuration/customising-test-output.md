@@ -28,7 +28,7 @@ The below settings can be used to control the output and logging when running te
      <td><code>folder_format</code></td>
      <td>string/function</td>
      <td>undefined</td>
-     <td>Used as a prefix for HTML report folder. This can be utilised to retain HTML report across test runs</td>
+     <td>Used as a prefix for HTML report folder. This can be utilised to [retain HTML report across test runs](https://github.com/nightwatchjs/nightwatch-docs/issues/310#issuecomment-2233833015)</td>
    </tr>
     
    <tr>
