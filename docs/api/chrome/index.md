@@ -4,7 +4,7 @@ Both [ChromeDriver](https://www.selenium.dev/selenium/docs/api/javascript/module
 
 When using ChromeDriver or EdgeDriver it is now possible to execute commands via the [Chrome DevTools protocol](https://chromedevtools.github.io/devtools-protocol/).
 
-Here's the full list of commands available on the `chrome` namespace on the `browser` object:
+Here's the full list of commands available on the `.chrome` namespace on the `browser` object:
 
 **browser.chrome:**
 
@@ -23,8 +23,9 @@ Here's the full list of commands available on the `chrome` namespace on the `bro
 
 **More info:**
 
-- [selenium-webdriver/chrome](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/chrome.html)
-- [selenium-webdriver/edge](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/edge.html)
+- [selenium-webdriver/chromium](https://www.selenium.dev/selenium/docs/api/javascript/module-selenium-webdriver_chromium.html) (class [Driver](https://www.selenium.dev/selenium/docs/api/javascript/module-selenium-webdriver_chromium-Driver.html))
+- [selenium-webdriver/chrome](https://www.selenium.dev/selenium/docs/api/javascript/module-selenium-webdriver_chrome.html) (class [Driver](https://www.selenium.dev/selenium/docs/api/javascript/module-selenium-webdriver_chrome-Driver.html))
+- [selenium-webdriver/edge](https://www.selenium.dev/selenium/docs/api/javascript/module-selenium-webdriver_edge.html) (class [Driver](https://www.selenium.dev/selenium/docs/api/javascript/module-selenium-webdriver_edge-Driver.html))
 
 ### Example
 
