@@ -1,9 +1,66 @@
 ## Element APIs
 
-### Overview
-The newly added `element()` global object adds to Nightwatch 3 the functionality present in the [Selenium WebElement](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html) class.
+### Introduction
+
+The New V3 Element API allows locating one or more elements on the page using a chainable syntax where it's possible to use multiple element locator commands in a chain.
+We can further add action commands (like click, sendKeys, submit, etc) that perform an action on the current selected Elements.
+
+The V3 Element API can be accessed using the `element()` global object. The return value of the element() command is a Promise which also contains all the available element commands and the `assert` and `expect` namespaces. This object adds the functionality present in [Selenium WebElement](https://www.selenium.dev/selenium/docs/api/javascript/module/selenium-webdriver/index_exports_WebElement.html) class.
 
 It supports all the usual ways of locating elements in Nightwatch, as well as the Selenium locators built using `By()`, which is also available in Nightwatch as a global named `by()`.
+
+This allows great flexibility in locating elements and also makes the syntax clean and concise.
+
+
+### New Element API vs Older Element API
+
+Older Element API was designed in such a way that after every command a browser instance was returned. This made infinite chaining of commands and assertions possible.
+
+![html-skeleton](/public/img/html-skeleton.png)
+
+A simple example of a Contact Us form. We would need to write complicated selectors using the old element API. The search space for the selector is always the DOM root.
+
+```
+  browser
+    .assert.textEquals('#title-text', 'Contact Us Form')
+    .sendKeys('#my-form > input', 'hello@example.com')
+    .assert.textEquals('#my-form > input', 'hello@example.com')
+    .click('#my-form > #submit')
+    .sendKeys('#my-form-2 :nth-child(1)', 'John Doe')
+    .sendKeys('#my-form-2 :nth-child(2)', 'Hello World')
+    .assert.textEquals('#my-form-2 :nth-child(1)', 'John Doe')
+    .assert.textEquals('#my-form-2 :nth-child(2)', 'Hello World')
+    .click('#submit');
+```
+
+While using the New Element API we can make use of the new element object to select various objects to the dom. This allows users to find child elements to certain elements easily and directly perform actions on them or get their state instead of writing complicated selectors (to get the child elements) and repeating those selectors to perform actions on them or get their state.
+
+```
+  const title = browser.element('.hero__title');
+    title.getText().assert.equals('The greenest way to search');
+
+
+    const form1 = browser.element('#my-form');
+    const emailInput = form1.find('input');
+    emailInput.sendKeys('hello@example.com');
+    emailInput.getValue().assert.equals('hello@example.com');
+
+
+    const form2 = browser.element('#my-form-2');
+    const nameInput = form2.getFirstElementChild();
+    const messageInput = nameInput.getNextElementSibling();
+
+
+    nameInput.sendKeys('John Doe');
+    messageInput.sendKeys('Hello World');
+
+
+    nameInput.assert.equals('John Doe');
+    messageInput.assert.equals('Hello World');
+
+
+    browser.element('#submit').click();
+```
 
 ### Usage
 
