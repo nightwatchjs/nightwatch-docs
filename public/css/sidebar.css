@@ -449,7 +449,7 @@ body.navbar-visible .bs-sidebar {
 
 .right-side-nav {
   position: fixed;
-  right: 5px;
+  right: 10px;
   top: 120px;
 }
 
@@ -459,7 +459,6 @@ body.navbar-visible .bs-sidebar {
   padding-top: 10px;
   padding-left: 0;
   padding-right: 0px;
-  
 }
 
 /* @media screen and (max-width: 1400px) {
