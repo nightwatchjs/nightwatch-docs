@@ -31,6 +31,7 @@ function activeLink(urlPart) {
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/landing/style.css">
   <title><%- data.pageTitle %></title>
+  <%- include('gtm') %>
   <%- include('ga') %>
   <%- include('header/scripts') %>
 </head>
@@ -1009,5 +1010,6 @@ function activeLink(urlPart) {
     </div>
   </noscript>
 
+  <%- include('gtm_body') %>
 </body>
 </html>
