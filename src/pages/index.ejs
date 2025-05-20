@@ -31,11 +31,13 @@ function activeLink(urlPart) {
   <link rel="stylesheet" href="/css/base.css">
   <link rel="stylesheet" href="/css/landing/style.css">
   <title><%- data.pageTitle %></title>
+  <%- include('gtm') %>
   <%- include('ga') %>
   <%- include('header/scripts') %>
 </head>
 
 <body class="body">
+  <%- include('gtm_body') %>
   <%- include('navbar', data) %>
 
   <main>
