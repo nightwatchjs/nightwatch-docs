@@ -69,6 +69,10 @@ The setup is done. You can execute the tests by updating the test exection shell
 
 Once you build, the tests will be executed on BrowserStack.
 
+<div class="alert alert-warning">
+If you're experiencing missing line breaks in the output when running tests in parallel mode in CI environments, see the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
+</div>
+
 ### View JUnit XML reports
 Nightwatch publishes XML reports after test-run the same can be used in Jenkins to publish test reports.
 

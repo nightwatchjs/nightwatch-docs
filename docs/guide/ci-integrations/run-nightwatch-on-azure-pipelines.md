@@ -89,6 +89,9 @@ Once you push your changes and click on save and run button, the pipeline will s
 
 **Note:** ***After saving and running, you may encounter an error stating that no hosted parallelism has been purchased or granted. Please fill out the [form](https://aka.ms/azpipelines-parallelism-request) to request a free parallelism grant.***
 
+<div class="alert alert-warning">
+If you're experiencing missing line breaks in the output when running tests in parallel mode in CI environments, see the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
+</div>
  
 Related articles
 - [How-to guides > Write tests > Run on CI Servers > Jenkins ](/guide/ci-integrations/run-nightwatch-on-jenkins.html)

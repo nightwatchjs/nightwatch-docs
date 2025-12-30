@@ -87,6 +87,9 @@ After installation, now you can sign in to the admin and create a plan after cli
 
 ![Bamboo-results](https://user-images.githubusercontent.com/94462364/184720721-734423c4-bd4d-4efc-b265-304792e77473.png)
 
+<div class="alert alert-warning">
+If you're experiencing missing line breaks in the output when running tests in parallel mode in CI environments, see the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
+</div>
 
 ### Related articles
 - [How-to guides > Write tests > Run on CI Servers > Jenkins ](/guide/ci-integrations/run-nightwatch-on-jenkins.html)
