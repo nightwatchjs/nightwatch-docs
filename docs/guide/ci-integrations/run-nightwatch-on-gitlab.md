@@ -123,7 +123,7 @@ You can view the execution output in the shell logs of the particular pipeline r
 ![Gitlab CI Results](https://user-images.githubusercontent.com/1677755/191442560-0973bf79-8b45-4a25-bb34-44f72757554a.png)
 
 <div class="alert alert-warning">
-If you're experiencing missing line breaks in the output when running tests in parallel mode in CI environments, see the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
+<strong>Known Issue:</strong> When running tests in parallel mode in CI environments, line breaks may be missing from the output, making it difficult to read. See the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
 </div>
 
 ### Related articles

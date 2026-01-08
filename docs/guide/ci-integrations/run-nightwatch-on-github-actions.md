@@ -74,7 +74,7 @@ You can either skip the above steps and can also directly push your .yml from lo
 Once you push your changes to Github and will raise a Pull Request the pipeline will start and your tests will run automatically.
 
 <div class="alert alert-warning">
-If you're experiencing missing line breaks in the output when running tests in parallel mode in CI environments, see the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
+<strong>Known Issue:</strong> When running tests in parallel mode in CI environments, line breaks may be missing from the output, making it difficult to read. See the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
 </div>
 
 ### Related articles

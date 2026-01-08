@@ -45,6 +45,10 @@ Test concurrency is done at the file level. Each test file will fill a test work
 To improve support for displaying the output when running tests in parallel, we recommend setting <code>detailed_output</code> to <code>false</code> in your test settings (and also make sure <code>live_output</code> is enabled).
 </div>
 
+<div class="alert alert-warning">
+<strong>Known Issue:</strong> When running tests in parallel mode in CI environments (such as GitLab CI), line breaks may be missing from the output, making it difficult to read. See the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
+</div>
+
 ### Multiple environments
 
 Nightwatch supports running tests across multiple browsers in parallel. The below command will run two environments named `firefox` and `chrome` in parallel:
@@ -74,10 +78,6 @@ From **v1.7** you are able to do just that.
 <pre><code class="language-bash">nightwatch -e firefox,chrome --workers=4</code></pre>
 
 The above will run two environments named `firefox` and `chrome` in parallel.
-
-<div class="alert alert-warning">
-If you're experiencing missing line breaks in the output when running tests in parallel mode in CI environments (such as GitLab CI), see the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
-</div>
 
 ### Recommended content
 - [Define and use test environments](/guide/configuration/define-test-environments.html)

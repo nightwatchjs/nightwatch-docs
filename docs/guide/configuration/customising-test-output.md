@@ -124,8 +124,7 @@ These settings can be added at the top level of your Nightwatch config (same lev
     <td><code>disable_output_boxes</code></td>
     <td>boolean</td>
     <td>false</td>
-    <td>Set this to true if you'd like to disable bounding boxes on terminal output.<br> <strong>Known Issue:</strong> When running tests in parallel mode in CI environments (such as GitLab CI), line breaks may be missing from the output, making it difficult to read. This issue does not occur when running locally. See <a href="https://github.com/nightwatchjs/nightwatch/issues/4396" target="_blank">issue #4396</a> for more details.
-</td>
+    <td>Set this to true if you'd like to disable bounding boxes on terminal output.</td>
   </tr>      
   </tbody>
 </table>
