@@ -375,6 +375,41 @@ The below settings can be used to define ways of filtering test files.
 ### Output Settings
 
 The below settings can be used to control the output and logging when running tests.
+
+These settings can be added at the top level of your Nightwatch config (same level as <code>src_folders</code>) or inside a specific environment object within <code>test_settings</code>. When set at the top level, they apply to all environments. When set inside a specific environment, they only apply to that environment.
+
+**Examples:**
+<ul>
+  <li>Set <code>disable_output_boxes: true</code> at the top level of your Nightwatch config (same level as <code>src_folders</code>):<br><pre data-language="javascript"><code class="language-javascript">module.exports = {
+  src_folders: ['tests'],
+  disable_output_boxes: true,
+  
+      test_settings: {
+        default: {
+          // ... your settings
+        }
+      }
+    };
+</code>
+</pre>
+</li>
+  <li>Set <code>disable_output_boxes: true</code> inside a specific environment object (e.g., inside the <code>chrome</code> environment if you use separate environments for CI):<br><pre data-language="javascript"><code class="language-javascript">module.exports = {
+  src_folders: ['tests'],
+  
+      test_settings: {
+        chrome: {
+          disable_output_boxes: true,
+          desiredCapabilities: {
+            browserName: 'chrome'
+          }
+        }
+      }
+    };
+</code>
+</pre>
+</li>
+</ul>
+
 <table class="table table-bordered table-striped">
   <thead>
    <tr>
@@ -444,38 +479,8 @@ The below settings can be used to control the output and logging when running te
     <td><code>disable_output_boxes</code></td>
     <td>boolean</td>
     <td>false</td>
-    <td>Set this to true if you'd like to disable bounding boxes on terminal output.<br> <strong>Known Issue:</strong> When running tests in parallel mode in CI environments (such as GitLab CI), line breaks may be missing from the output, making it difficult to read. This issue does not occur when running locally. See <a href="https://github.com/nightwatchjs/nightwatch/issues/4396" target="_blank">issue #4396</a> for more details. Following either of the examples below will solve this problem:
-      <ul>
-        <li>Set <code>disable_output_boxes: true</code> at the top level of your Nightwatch config (same level as <code>src_folders</code>):<br><pre data-language="javascript"><code class="language-javascript">module.exports = {
-  src_folders: ['tests'],
-  disable_output_boxes: true,
-  
-      test_settings: {
-        default: {
-          // ... your settings
-        }
-      }
-    };
-  </code>
-  </pre>
-  </li>
-        <li>Set <code>disable_output_boxes: true</code> inside a specific environment object (e.g., inside the <code>chrome</code> environment if you use separate environments for CI):<br><pre data-language="javascript"><code class="language-javascript">module.exports = {
-  src_folders: ['tests'],
-  
-      test_settings: {
-        chrome: {
-          disable_output_boxes: true,
-          desiredCapabilities: {
-            browserName: 'chrome'
-          }
-        }
-      }
-    };
-  </code>
-  </pre>
-  </li>
-      </ul>
-</td>
+    <td>Set this to true if you'd like to disable bounding boxes on terminal output.<br> <strong>Known Issue:</strong> When running tests in parallel mode in CI environments (such as GitLab CI), line breaks may be missing from the output, making it difficult to read. This issue does not occur when running locally. See <a href="https://github.com/nightwatchjs/nightwatch/issues/4396" target="_blank">issue #4396</a> for more details.
+    </td>
   </tr> 
   </tbody>
 </table>
