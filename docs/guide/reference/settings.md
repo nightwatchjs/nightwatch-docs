@@ -480,7 +480,7 @@ These settings can be added at the top level of your Nightwatch config (same lev
     <td>boolean</td>
     <td>false</td>
     <td>Set this to true if you'd like to disable bounding boxes on terminal output.</td>
-  </tr> 
+  </tr>
   </tbody>
 </table>
 
