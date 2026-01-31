@@ -353,7 +353,7 @@ Once your installation is complete,validate the setup with the following command
 
 or on iOS simulators using
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch./nightwatch/examples/mobile-app-tests/wikipedia-ios.js --env app.ios.simulator
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch nightwatch/examples/mobile-app-tests/wikipedia-ios.js --env app.ios.simulator
 </code></pre>
 
 
