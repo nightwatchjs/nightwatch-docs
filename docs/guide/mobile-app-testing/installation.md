@@ -219,7 +219,7 @@ After verification if all requirementss are not met or if there is an error,foll
 <b>Step 4</b></br>
 After this,setup Appium 2 in your project using
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium@next --save-dev</code></pre>
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium --save-dev</code></pre>
 
 <b>Step 5</b></br>
 Install Appium XCUITest driver for iOS using
