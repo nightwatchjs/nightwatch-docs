@@ -72,7 +72,7 @@ After verification if all requirements are not met or if there is an error, foll
 <b>Step 4</b></br>
 Next, setup Appium 2 in your project with the following command.
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium@next --save-dev</code></pre>
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium --save-dev</code></pre>
 
 <b>Step 5</b></br>
 Install Appium UiAutomator2 driver for Android
