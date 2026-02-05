@@ -72,7 +72,7 @@ After verification if all requirements are not met or if there is an error, foll
 <b>Step 4</b></br>
 Next, setup Appium 2 in your project with the following command.
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium@next --save-dev</code></pre>
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium --save-dev</code></pre>
 
 <b>Step 5</b></br>
 Install Appium UiAutomator2 driver for Android
@@ -207,7 +207,7 @@ And done! 🎉 Your Android setup is now complete.
 <b>Step 1</b></br>
 Go the to the Nightwatch project directory and run the following command
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx @nightwatch/mobile-helper ios --setups
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx @nightwatch/mobile-helper ios --setup
 </code></pre>
 
 <b>Step 2</b></br>
@@ -219,7 +219,7 @@ After verification if all requirementss are not met or if there is an error,foll
 <b>Step 4</b></br>
 After this,setup Appium 2 in your project using
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium@next --save-dev</code></pre>
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npm i appium --save-dev</code></pre>
 
 <b>Step 5</b></br>
 Install Appium XCUITest driver for iOS using
@@ -353,7 +353,7 @@ Once your installation is complete,validate the setup with the following command
 
 or on iOS simulators using
 
-<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch./nightwatch/examples/mobile-app-tests/wikipedia-ios.js --env app.ios.simulator
+<pre style="max-width: 800px; border-radius: 10px; padding: 10px 20px"><code class="language-bash" style="font-size: 20px">npx nightwatch nightwatch/examples/mobile-app-tests/wikipedia-ios.js --env app.ios.simulator
 </code></pre>
 
 
