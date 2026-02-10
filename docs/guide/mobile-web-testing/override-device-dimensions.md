@@ -118,10 +118,10 @@ To reset the device dimensions back to original, you can again call the `browser
     </a>
   </div>
   <div class="next">
-    <a href="/guide/extending-nightwatch/adding-custom-commands.html">
+    <a href="/guide/mobile-web-testing/upgrade-chrome-on-emulator.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Define custom commands</span>
+          <span class="bigT">Upgrade Chrome on Android Emulator</span>
         </div>
         <span>→</span>
     </a>
