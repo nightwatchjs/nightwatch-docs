@@ -1,15 +1,15 @@
 ---
-title: Install Custom Chrome Browser on Android Emulator
-description: Learn how to install a custom version of Google Chrome browser on Android emulators for mobile web testing.
+title: Upgrade Chrome Browser on Android Emulator
+description: Learn how to upgrade Google Chrome browser on Android emulators for mobile web testing.
 ---
 
-<div class="page-header"><h1>Install Custom Chrome Browser on Android Emulator</h1></div>
+<div class="page-header"><h1>Upgrade Chrome Browser on Android Emulator</h1></div>
 
 ### Overview
 
-Android emulators come with an older version of Google Chrome browser pre-installed. For mobile web testing, you may need to install a newer or specific version of Chrome to match your testing requirements or to access modern web features.
+Android emulators come with an older version of Google Chrome browser pre-installed. For mobile web testing, you may need to install a newer version of Chrome to match your testing requirements or to access modern web features.
 
-This guide covers two methods to install a custom Chrome browser on your Android emulator:
+This guide covers two methods to upgrade Chrome browser on your Android emulator:
 
 1. **Using Google Play Store** - Easiest method, but requires a system image with Play Store support
 2. **Using APK Mirror** - More flexible, allows installing specific Chrome versions
@@ -18,9 +18,11 @@ This guide covers two methods to install a custom Chrome browser on your Android
 
 - Android SDK and AVD Manager installed
 - `ANDROID_HOME` environment variable set
-- `@nightwatch/mobile-helper` package installed (or use `npx`)
 
-### Method 1: Install Chrome via Google Play Store
+If your system does not meet the above prerequisites, run the below command to setup android emulator.
+<div class="sample-test"><i>Terminal</i><pre class="line-numbers"><code>npx @nightwatch/mobile-helper android</code></pre></div>
+
+### Method 1: Upgrade Chrome via Google Play Store
 
 This is the simplest method, but it requires an Android Virtual Device (AVD) that includes Google Play Store support.
 
@@ -73,32 +75,25 @@ Creating AVD...</code></pre>
 #### Step 3: Connect to Emulator and Update Chrome
 
 1. Connect to your emulator using the mobile helper:
-
    <div class="sample-test"><i>Terminal</i><pre class="line-numbers"><code>npx @nightwatch/mobile-helper android connect --emulator</code></pre></div>
-
    When prompted, select the AVD you created (e.g., `nightwatch-android-14`).
-
    Example output:
    <pre class="line-numbers"><code>Checking the value of ANDROID_HOME environment variable...
      ✔ ANDROID_HOME is set to '/Users/shubhamkumar/Library/Android/sdk' (taken from .env)
-
    Connected Emulators:
      1. udid/deviceId: emulator-5554 / state: device (online)
-
    ? Select the AVD to connect: nightwatch-android-14
-
    Connecting to AVD: nightwatch-android-14</code></pre>
-
 2. **Sign in to Google Play Store** with your Google account
 3. Open the Play Store app on the emulator
 4. Search for "Google Chrome"
 5. Click **Update** to install the latest version of Chrome
 
 <div class="alert alert-info">
-  <strong>Note:</strong> The first time you use Play Store on an emulator, you'll need to complete the Google account sign-in process. This is a one-time setup.
+  <strong>Note:</strong> The first time you use Play Store on an emulator, you'll need to complete the Google account sign-in process. This is a one-time setup. You can remove your Google account later.
 </div>
 
-### Method 2: Install Chrome via APK Mirror
+### Method 2: Upgrade Chrome via APK Mirror
 
 This method allows you to install a specific version of Chrome without requiring Play Store support. It's useful when you need a particular Chrome version or when using system images without Play Store.
 
@@ -128,11 +123,11 @@ This will extract all APK files into the `chrome_bundle` directory.
 Example:
 <pre class="line-numbers"><code>unzip ~/Downloads/com.android.chrome_144.0.7559.109-755910933_26lang_5feat_9f83e13585051a7774655d06b7189713_apkmirror.com.apkm -d chrome_bundle</code></pre>
 
-#### Step 3: Install Chrome APK on Emulator
+#### Step 3: Upgrade Chrome APK on Emulator
 
 Use the mobile helper to install the extracted APK files:
 
-<div class="sample-test"><i>Terminal</i><pre class="line-numbers"><code>npx @nightwatch/mobile-helper android.adb install-multiple ~/chrome_bundle/*.apk</code></pre></div>
+<div class="sample-test"><i>Terminal</i><pre class="line-numbers"><code>npx @nightwatch/mobile-helper android.adb install-multiple chrome_bundle/*.apk</code></pre></div>
 
 Make sure your emulator is running before executing this command.
 
@@ -162,33 +157,33 @@ After installation, verify that Chrome is installed correctly:
 #### Issue: Play Store not available
 
 **Solution**: Use Method 2 (APK Mirror) instead, which doesn't require Play Store support.
-
 #### Issue: APK installation fails with "INSTALL_FAILED_INVALID_APK"
 
-**Possible causes**:
+###### **Possible causes**:
 - Architecture mismatch between APK and system image
 - Corrupted APK file
 - Incomplete extraction of APKM bundle
 
-**Solution**: 
+###### **Solution**: 
 - Verify you downloaded the correct architecture variant
 - Re-download the APK file
 - Ensure all APK files from the bundle are extracted
 
+
 #### Issue: Chrome crashes after installation
 
-**Possible causes**:
+###### **Possible causes**:
 - Version incompatibility with Android version
 - Missing dependencies
 
-**Solution**:
+###### **Solution**:
 - Try a different Chrome version
 - Ensure you're using a compatible Android API level
 - Check if the system image has all required components
 
 #### Issue: Cannot find Chrome after installation
 
-**Solution**:
+###### **Solution**:
 - Restart the emulator
 - Check if Chrome appears in Settings → Apps
 - Try installing again with `--force` flag if available
@@ -197,13 +192,14 @@ After installation, verify that Chrome is installed correctly:
 
 **Error message**: `No Chromedriver found that can automate Chrome 'X.X.X'. You could also try to enable automated chromedrivers download as a possible workaround.`
 
-**Possible causes**:
+###### **Possible causes**:
 - The installed Chrome version is not in Appium's ChromeDriver mappings
 - Appium cannot automatically download the matching ChromeDriver version
 
-**Solution**: You have two options:
+###### **Solution**: You have two options:  
 
-**Option 1: Download ChromeDriver manually**
+
+###### **Option 1: Download ChromeDriver manually**
 
 1. Check your Chrome version on the emulator (Settings → About Chrome)
 2. Visit the [Appium ChromeDriver mappings](https://github.com/appium/appium-chromedriver/blob/master/config/mapping.json) to find the corresponding ChromeDriver version
@@ -233,31 +229,23 @@ Alternatively, you can set it directly in `desiredCapabilities`:
   }
 }</code></pre></div>
 
-**Option 2: Update Chrome to latest version**
+###### **Option 2: Update Chrome to latest version**
 
 Update Chrome on your emulator to the latest version, which typically has better Appium support and automatic ChromeDriver download capabilities.
 
-<div class="alert alert-info">
-  <strong>Note:</strong> For Appium v1, you may need to remove the `appium:options` wrapper and add the `appium:` prefix directly to capabilities (e.g., `appium:chromedriverExecutable`).
-</div>
 
 ### Best Practices
 
 1. **Match Architecture**: Always ensure the Chrome APK architecture matches your system image architecture
 2. **Version Compatibility**: Use Chrome versions that are compatible with your Android API level
 3. **ChromeDriver Compatibility**: Consider using the latest Chrome version for better Appium/ChromeDriver support. Older or specific Chrome versions may require manual ChromeDriver installation
-4. **Keep Backups**: Save the APK files and ChromeDriver binaries for future use to avoid re-downloading
-5. **Test After Installation**: Always verify Chrome works correctly and that ChromeDriver is available before running your Nightwatch tests
+4. **Test After Installation**: Always verify Chrome works correctly and that ChromeDriver is available before running your Nightwatch tests
 
 ### Next Steps
 
-After installing Chrome on your emulator, you can:
+After upgrading Chrome on your emulator, you can now configure Nightwatch to use the emulator for mobile web testing.
 
-- Configure Nightwatch to use the emulator for mobile web testing
-- Set up your test environment with the desired Chrome version
-- Run your mobile web tests using the updated Chrome browser
-
-For more information on mobile web testing with Nightwatch, see the [Mobile Web Testing Guide](/guide/mobile-web-testing/with-appium.html).
+For more information on mobile web testing with Nightwatch, see the [Mobile Web Testing Guide](https://github.com/nightwatchjs/mobile-helper-tool/blob/main/docs/mobile-web-testing.md).
 
 <div class="doc-pagination pt-40">
   <div class="previous">
