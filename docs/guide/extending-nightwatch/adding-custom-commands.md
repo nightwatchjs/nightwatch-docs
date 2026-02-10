@@ -267,11 +267,11 @@ You can also use ES6 `async`/`await` syntax inside function-style custom command
 
 <div class="doc-pagination pt-40">
   <div class="previous">
-    <a href="/guide/mobile-web-testing/override-device-dimensions.html">
+    <a href="/guide/mobile-web-testing/upgrade-chrome-on-emulator.html">
       <span>←</span>
         <div class="d-flex flex-column">
           <span class="smallT">Back</span>
-          <span class="bigT">Override device dimensions</span>
+          <span class="bigT">Upgrade Chrome on Android Emulator</span>
         </div>
     </a>
   </div>
