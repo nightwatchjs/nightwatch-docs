@@ -479,7 +479,7 @@ These settings can be added at the top level of your Nightwatch config (same lev
     <td><code>disable_output_boxes</code></td>
     <td>boolean</td>
     <td>false</td>
-    <td>Set this to true if you'd like to disable bounding boxes on terminal output.</td>
+    <td>Set this to true to disable bounding boxes around testsuite terminal output. This can resolve missing line break issues in CI environments when running tests in parallel mode.</td>
   </tr>
   </tbody>
 </table>
