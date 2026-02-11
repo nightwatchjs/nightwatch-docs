@@ -7,6 +7,40 @@ description: Learn how to customize output settings in Nightwatch.
 
 The below settings can be used to control the output and logging when running tests.
 
+These settings can be added at the top level of your Nightwatch config (same level as <code>src_folders</code>) or inside a specific environment object within <code>test_settings</code>. When set at the top level, they apply to all environments. When set inside a specific environment, they only apply to that environment.
+
+**Examples:**
+<ul>
+  <li>Set <code>disable_output_boxes: true</code> at the top level of your Nightwatch config (same level as <code>src_folders</code>):<br><pre data-language="javascript"><code class="language-javascript">module.exports = {
+  src_folders: ['tests'],
+  disable_output_boxes: true,
+  
+      test_settings: {
+        default: {
+          // ... your settings
+        }
+      }
+    };
+</code>
+</pre>
+</li>
+  <li>Set <code>disable_output_boxes: true</code> inside a specific environment object (e.g., inside the <code>chrome</code> environment if you use separate environments for CI):<br><pre data-language="javascript"><code class="language-javascript">module.exports = {
+  src_folders: ['tests'],
+  
+      test_settings: {
+        chrome: {
+          disable_output_boxes: true,
+          desiredCapabilities: {
+            browserName: 'chrome'
+          }
+        }
+      }
+    };
+</code>
+</pre>
+</li>
+</ul>
+
 <table class="table table-bordered table-striped">
   <thead>
    <tr>
@@ -85,7 +119,13 @@ The below settings can be used to control the output and logging when running te
     <td>boolean</td>
     <td>false</td>
     <td>Used to enable showing the Base64 image data in the (verbose) log when taking screenshots.</td>
-  </tr>         
+  </tr>
+  <tr>
+    <td><code>disable_output_boxes</code></td>
+    <td>boolean</td>
+    <td>false</td>
+    <td>Set this to true to disable bounding boxes around testsuite terminal output. This can resolve missing line break issues in CI environments when running tests in parallel mode.</td>
+  </tr>
   </tbody>
 </table>
 

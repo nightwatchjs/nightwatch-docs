@@ -77,6 +77,9 @@ Click on the pipeline build that just ran followed by the job name i.e. `test`. 
 
 ![Circle CI Results](https://user-images.githubusercontent.com/1677755/189831161-c08ee3e0-e1ce-4e92-90be-92c1ab61e02b.png)
 
+<div class="alert alert-warning">
+<strong>Known Issue:</strong> When running tests in parallel mode in CI environments, line breaks may be missing from the output, making it difficult to read. See the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
+</div>
 
 ### Related articles
 - [How-to guides > Write tests > Run on CI Servers > Jenkins ](/guide/ci-integrations/run-nightwatch-on-jenkins.html)
