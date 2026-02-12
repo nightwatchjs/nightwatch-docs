@@ -9,13 +9,18 @@ description: Learn how to pause your test at specific points and debug by access
 
 This is a new command added in Nightwatch v2.3.0, which allows users to pause the test at any point (by using [`.debug()`](/api/debug.html) command as a breakpoint) and use a REPL interface (made available in the terminal) to try out the available Nightwatch commands and assertions and see them get executed against the running browser, in real-time. 
 
-While doing that, users can also interact with the browser and use DevTools to debug. The interface also supports multi-line code input and auto-complete feature.
+While doing that, users can also interact with the browser and use DevTools to debug. The interface also supports multi-line code input and auto-complete feature. Users can also expose local variables and helper functions from their test to the REPL.
 
 ### Usage
 
 **Note:** Please use `async/await` while using the `.debug()` command, otherwise proper results won't be returned back to the interface.
 
 <pre class="language-javascript"><code class="language-javascript">it('demos debug command', async function(browser) {
+  const someLocalVariable = 'something random';
+  function someLocalFunction() {
+    return 'local function result';
+  }
+
   await browser.debug();
 
   // with no auto-complete
@@ -24,6 +29,12 @@ While doing that, users can also interact with the browser and use DevTools to d
   // with a timeout of 6000 ms (time for which the interface
   // would wait for a result, default is 5500ms).
   await browser.debug({timeout: 6000})
+
+  // expose local variables/functions to the debug REPL
+  browser.debug({
+    // both values below will be directly available in the debug REPL
+    context: {someLocalVariable, someLocalFunction}
+  });
 });
 </code></pre>
 
