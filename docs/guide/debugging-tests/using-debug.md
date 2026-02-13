@@ -20,7 +20,7 @@ While doing that, users can also interact with the browser and use DevTools to d
   function someLocalFunction() {
     return 'local function result';
   }
-
+  // with default options
   await browser.debug();
 
   // with no auto-complete
