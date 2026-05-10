@@ -49,6 +49,25 @@ To improve support for displaying the output when running tests in parallel, we 
 <strong>Known Issue:</strong> When running tests in parallel mode in CI environments (such as GitLab CI), line breaks may be missing from the output, making it difficult to read. See the <code>disable_output_boxes</code> output setting in the <a href="/guide/configuration/customising-test-output.html">Test Output</a> page to resolve this.
 </div>
 
+#### Retaining Webdriver logs from workers
+
+When tests run in parallel via test workers, each worker spawns its own Webdriver process. By default, the Webdriver server logs from these worker processes are not written to disk — only the main process writes its log file. If you need the per-worker Webdriver logs (for debugging driver-level issues across workers, for example), set `retain_logs_in_parallel_run` to `true` under the `webdriver` section of your config:
+
+<div class="sample-test"><i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
+  webdriver: {
+    log_path: './logs',
+    retain_logs_in_parallel_run: true
+  },
+
+  test_workers: {
+    enabled: true,
+    workers: 'auto'
+  }
+}
+</code></pre></div>
+
+With this enabled, each worker writes its own Webdriver log file to the configured `log_path`. See the <a href="/guide/configuration/web-driver-settings.html">Webdriver settings</a> reference for the full list of options.
+
 ### Multiple environments
 
 Nightwatch supports running tests across multiple browsers in parallel. The below command will run two environments named `firefox` and `chrome` in parallel:
