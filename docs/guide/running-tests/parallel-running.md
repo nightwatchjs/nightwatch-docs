@@ -58,7 +58,6 @@ When tests run in parallel via test workers, each worker spawns its own Webdrive
     log_path: './logs',
     retain_logs_in_parallel_run: true
   },
-
   test_workers: {
     enabled: true,
     workers: 'auto'
