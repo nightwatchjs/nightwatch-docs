@@ -72,6 +72,13 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
    </tr>
 
    <tr>
+     <td><code>retain_logs_in_parallel_run</code></td>
+     <td>boolean</td>
+     <td>false</td>
+     <td>When running tests in parallel via test workers, each worker spawns its own Webdriver process but their logs are not written to disk by default. Set this to <code>true</code> to retain the Webdriver server logs from worker processes when running in parallel mode.</td>
+   </tr>
+
+   <tr>
      <td><code>cli_args</code></td>
      <td>object</td>
      <td>none</td>
