@@ -150,7 +150,7 @@ If you are running from a Mac, safaridriver is present by default but must be en
 
 Once your setup is done, you can run example tests with this command
 
-<pre><code class="language-bash">npx nightwatch ./nightwatch/examples</code></pre>
+<pre><code class="language-bash">npx nightwatch ./nightwatch</code></pre>
 
 The output should look similar to this:
 
