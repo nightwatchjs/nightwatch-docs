@@ -13,22 +13,19 @@ Here's an example definition using the `"globals"` property in `nightwatch.json`
 
 <div class="sample-test"><i>nightwatch.conf.js</i>
 
-<pre data-language="javascript"><code class="language-javascript">{
-  "src_folders": [],
+<pre data-language="javascript"><code class="language-javascript">
+myGlobal = 3000;
+myGlobal2 = 'hello world';
 
-  "globals": {
-    "myGlobalVar" : "some value",
-    "otherGlobal" : "some other value"
-  },
+// Refer to the online docs for more details:
+// https://nightwatchjs.org/gettingstarted/configuration/
+//
 
-  "test_settings": {
-    "default": {
-      "launch_url": "https://nightwatchjs.org",
-    }
-  }
-}</code></pre>
+  
+</code></pre>
 
 </div> 
+Note how the variables can be defined at the top of the config file.
 
 Like the `launch_url` property, the `globals` object is made available directly on the Nightwatch api which is passed to the tests.
 
