@@ -17,7 +17,7 @@ The [`.pause()`](/api/pause.html) command now provides the ability to resume pau
 
 The new [`.debug()`](/api/debug.html) command provides a [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) interface where users can try out any of the available Nightwatch commands or assertions and see them get executed in the running browser, in real-time.
 
-<iframe src="https://player.vimeo.com/video/732086808?loop=1&byline=0&portrait=0&title=0" style="width:100%;height:560px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/732086808?loop=1&byline=0&portrait=0&title=0&dnt=1" style="width:100%;height:560px" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ### Recommended content
 - [API docs > `.pause()`](/api/pause.html)

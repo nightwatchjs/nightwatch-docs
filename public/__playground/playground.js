@@ -1,3 +1,6 @@
+// Loaded only after the visitor clicks "Load playground": StackBlitz sets
+// third-party cookies, so nothing is fetched from it before that.
+function loadPlayground() {
 StackBlitzSDK.embedProject(
   'container',
   // Payload:
@@ -203,3 +206,4 @@ module.exports = {
     openFile: 'README.md'
   }
 );
+}
