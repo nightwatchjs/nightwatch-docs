@@ -180,10 +180,10 @@ Now that you understand selectors, you can use them to write commands & assertio
     </a>
   </div>
   <div class="next">
-    <a href="/guide/writing-tests/selectors.html">
+    <a href="/guide/writing-tests/adding-assertions.html">
         <div class="d-flex flex-column">
           <span class="smallT">Next Page</span>
-          <span class="bigT">Selectors</span>
+          <span class="bigT">Adding assertions to tests</span>
         </div>
         <span>→</span>
     </a>
