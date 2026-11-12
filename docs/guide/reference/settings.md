@@ -644,7 +644,7 @@ If you'd like to enable this, set `start_process` to `true` and specify the loca
 
 If Selenium Server is being used, then the connection related settings should be placed under the `"selenium""`. If both `webdriver` and `selenium` dictionaries are present, the `selenium` options will be merged with the `webdriver` ones.
 
-The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers, such as [BrowserStack][1], [SauceLabs][2], [CrossBrowserTesting][3], [LambdaTest][4] or [TestingBot][11].
+The `"selenium"` settings should also be used when configuring connections to cloud-based testing providers, such as [BrowserStack][1], [SauceLabs][2], [CrossBrowserTesting][3], [TestMu AI (formerly LambdaTest)][4] or [TestingBot][11].
 
 <table class="table table-bordered table-striped">
 <thead>
@@ -862,7 +862,7 @@ Remember to also enable HTTP keepalive for improved network performance.
 [1]:    https://browserstack.com
 [2]:    https://saucelabs.com/
 [3]:    https://crossbrowsertesting.com/
-[4]:    https://www.lambdatest.com/
+[4]:    https://www.testmuai.com/
 [5]:    https://www.npmjs.com/package/geckodriver
 [6]:    https://www.npmjs.com/package/chromedriver
 [7]:    https://www.npmjs.com/package/selenium-server

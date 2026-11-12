@@ -39,7 +39,7 @@ Internally, Nightwatch uses the [W3C WebDriver API][6] to perform the browser au
 
 Nightwatch can also be used for distributed cross-browser end-to-end testing at scale together with the [Selenium Server][13] (also known as **Selenium Grid**), which is an open-source project written in Java that manages a network of WebDriver nodes.
 
-Nightwatch also can be integrated with cloud-based testing platforms like [Browserstack][14], [SauceLabs][15], [CrossBrowserTesting][16], [LambdaTest][17] or [TestingBot][20].
+Nightwatch also can be integrated with cloud-based testing platforms like [Browserstack][14], [SauceLabs][15], [CrossBrowserTesting][16], [TestMu AI (formerly LambdaTest)][17] or [TestingBot][20].
 
 ![Selenium Server Operation][image-2]
 
@@ -101,7 +101,7 @@ WebDriver is implemented by all major browser vendors as a W3C compliant HTTP se
 [14]:   https://www.browserstack.com/
 [15]:   https://saucelabs.com/
 [16]:   https://crossbrowsertesting.com/
-[17]:   https://www.lambdatest.com/
+[17]:   https://www.testmuai.com/
 [18]:   https://selenium.dev/downloads/
 [19]:   https://selenium.dev/downloads/
 [20]:   https://testingbot.com/

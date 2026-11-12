@@ -71,9 +71,9 @@ If you are trying to run Nightwatch on BrowserStack for an existing project, you
 
 Once the BrowerStack block is present in the Nightwatch configuration file, replace the BrowserStack username and access key with your credentials and you are ready to run your tests on the BrowserStack infrastructure.
 
-### Running on LambdaTest
+### Running on TestMu AI (formerly LambdaTest)
 
-If you are trying to run Nightwatch on LambdaTest for an existing project, you will have to add a `lambdatest` block in the `nightwatch.conf.js` file as a child property to `test_settings`.
+If you are trying to run Nightwatch on TestMu AI (formerly LambdaTest) for an existing project, you will have to add a `lambdatest` block in the `nightwatch.conf.js` file as a child property to `test_settings`.
 
 <div class="sample-test">
 <i>nightwatch.conf.js</i><pre class="line-numbers"><code class="language-javascript">module.exports = {
@@ -89,7 +89,7 @@ If you are trying to run Nightwatch on LambdaTest for an existing project, you w
             'access_key': '${LAMBDATEST_ACCESS_KEY}',
         },
         // More info on configuring capabilities can be found on:
-        // https://www.lambdatest.com/capabilities-generator/
+        // https://www.testmuai.com/capabilities-generator/
         'lambdatest.chrome': {
             extends: 'lambdatest',
             desiredCapabilities: {
@@ -119,9 +119,9 @@ If you are trying to run Nightwatch on LambdaTest for an existing project, you w
 </code></pre>
 </div>
 
-Once you have added LambdaTest configurations in the `nightwatch.conf.js` replace the LambdaTest username and access_key with your credentials and you are ready to run your tests on the LambdaTest Cloud grid.
+Once you have added TestMu AI configurations in the `nightwatch.conf.js` replace the TestMu AI username and access_key with your credentials and you are ready to run your tests on the TestMu AI Cloud grid.
 
-You can also configure and add your desired capabilities with the help of [automation capabilty generator](https://www.lambdatest.com/capabilities-generator/).
+You can also configure and add your desired capabilities with the help of [automation capabilty generator](https://www.testmuai.com/capabilities-generator/).
 
 ### Running on Sauce Labs
 
